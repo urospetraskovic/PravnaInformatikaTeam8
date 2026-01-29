@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xsi:schemaLocation="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/schemas/akomantoso30.xsd">
+    <act name="Закон о безбедности саобраћаја на путевима">
+        <meta>
+            <identification source="#gostojic">
+                <FRBRWork>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/!main"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404"/>
+                    <FRBRdate date="2009-05-29"/>
+                    <FRBRauthor href="#ns" as="#author"/>
+                    <FRBRcountry value="rs"/>
+                    <FRBRsubtype value="act"/>
+                    <FRBRnumber value="2009-41-1404"/>                    
+                    <FRBRname value="Закон о безбедности саобраћаја на путевима"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/sr@2018-05-25/!main"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404/sr@2018-05-25"/>
+                    <FRBRdate date="2018-05-25"/>
+                    <FRBRauthor href="#sg" as="#editor"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/sr@2018-05-31/!main.xml"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404/sr@2018-05-31/!main.akn"/>
+                    <FRBRdate date="2018-11-08"/>
+                    <FRBRauthor href="#gostojic" as="#generator"/>
+		    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <publication name="sg" date="2009-06-02" showAs="Службени гласник Републике Србије" number="41/2009"/>
+            <classification source="#gostojic">
+                <keyword value="traffic" showAs="Саобраћај, везе и енергетика" dictionary="RS"/>
+            </classification>
+            <references source="#gostojic">
+                <TLCRole eId="author" href="/akn/rs/ontology/role/author" showAs="Author"/>
+                <TLCRole eId="editor" href="/akn/rs/ontology/role/editor" showAs="Editor"/>
+                <TLCRole eId="generator" href="/akn/rs/ontology/role/generator" showAs="Generator"/>
+                <TLCOrganization eId="ns" href="/akn/rs/ontology/organization/ns" showAs="Народна скупштина Републике Србије"/>
+                <TLCOrganization eId="sg" href="/akn/rs/ontology/organization/sg" showAs="Службени гласник Републике Србије"/>
+                <TLCPerson eId="gostojic" href="/akn/rs/ontology/person/somebody" showAs="Стеван Гостојић"/>
+            </references>
+        </meta>
+        <body>
+	<!-- ... -->
+        <chapter eId="chp_4">
+        	<num>IV.</num>
+                <heading>ПРАВИЛА САОБРАЋАЈА</heading>
+		<!-- ... -->
+		<section eId="chp_4__sec_20">
+                	<num>20.</num>
+                	<heading>Посебне одредбе о саобраћају бицикала, мопеда, трицикала, четвороцикала и мотоцикала</heading>
+			<!-- ... -->
+			<article eId="art_88">
+			        <num>Члан 89.</num>
+        			<paragraph eId="art_88__para_1">
+            				<content eId="art_88__para_1__content">
+                				<p>Дете млађе од 12 година не сме да управља бициклом на јавним путевима.</p>
+            				</content>
+        			</paragraph>
+        			<paragraph eId="art_88__para_2">
+            				<content eId="art_88__para_2__content">
+                				<p>Изузетно у пешачкој зони, зони успореног саобраћаја, зони „30”, зони школе и некатегорисаном путу, бициклом може управљати и дете са навршених девет година.</p>
+            				</content>
+        			</paragraph>
+        			<paragraph eId="art_88__para_3">
+            				<content eId="art_88__para_3__content">
+                				<p>Изузетно у пешачкој зони и зони успореног саобраћаја, бициклом може да управља и дете млађе од девет година ако је под надзором лица старијег од 16 година..</p>
+            				</content>
+        			</paragraph>
+			</article>
+			<!-- ... -->
+		</section>
+		<!-- ... -->
+	</chapter>
+	<!-- ... -->
+	<chapter eId="chp_21">
+        	<num>XXI.</num>
+                <heading>КАЗНЕНЕ ОДРЕДБЕ</heading>
+		<!-- ... -->
+		<section eId="chp_21__sec_9">
+			<num>9.</num>
+			<heading>Прекршајне казне за физичко лице</heading>
+			<!-- ... -->
+		    	<article eId="art_332">
+			        <num>Члан 332.</num>
+				<paragraph eId="art_332__para_1">
+					<intro eId="art_332__para_1__intro">
+						<p>Новчаном казном у износу од 10.000 до 20.000 динара казниће се за прекршај лице које поступи супротно одредбама из следећих чланова овог закона:</p>
+					</intro>
+					<!-- ... -->
+					<point eId="art_332__para_1__point_34">
+						<num>34)</num>
+						<content>
+							<p><ref href="/akn/rs/act/2009-41-1404#art_88">члана 88</ref>,</p>
+						</content>
+					</point>
+					<!-- ... -->
+				</paragraph>
+			</article>
+			<!-- ... -->
+		</section>
+	<!-- ... -->
+	</chapter>
+	<!-- ... -->
+        </body>
+    </act>
+</akomaNtoso>

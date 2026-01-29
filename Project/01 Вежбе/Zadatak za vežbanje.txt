@@ -1,0 +1,4 @@
+Zadatak za vežbanje
+
+1. Dopuniti xml dokument sa vežbi anotacijama za ostatak članova iz 20. odeljka.
+2. Odabrati sudsku presudu sa sajta https://sudovi.me/sdvi/odluke i anotirati glavne celine. Pomoć za anotiranje možete pronaći na https://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part1-vocabulary.html

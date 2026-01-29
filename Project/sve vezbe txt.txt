@@ -1,0 +1,166 @@
+3 coveka po timu, prvi rok u aprilu.
+Anotiranje doukmenata, ne mozemo da uzmemo temu zakon o saobracaju jer nju imamo na vezbama, uzimamo neki drugi zakon, tu ima mnogo clanova, mi ne mozemo da pokrijemo 1.2 clanak koji je radjen na vezbama, rasudjivanje po pravilima I po slucajevima, to su 2 vezbe, 2 celine, to ne mozemo da biramo, ali sve sto ne radimo na vezbama mozemo da radimo. 
+Sudovi.me/sdvi, to je crnogorski, mi koristimo njihvo sajt jer oni to objavljuju.
+Mozemo I da nadjemo negde drugde ako mozemo da pribavimo, ali tesko je naci dovoljnu kolicinu. 
+Imamo presude, imamo napredna pretraga u Odluke. I sad mozemo da kucamo droga I onda kliknemo pretraga, I mozemo da stavimo da je nrp presuda, da je osnovni sud, krivicno odeljenje itd, I onda vidimo sta se radi. Mi cemo ovde dokumente anotirati, to ce nam biti izvor podataka u nasem projektu, ne moramo da povezujemo, trebaju nam dokumenti I deo zakona za presude, onda trazimo presude I idiomo da ne postoji ni jedna presuda, I zato mora da prvo nadjemo presude. Ako nadjemo 20 presuda iz cliana 301 302 303, to je onda sasvim dovoljno.
+Kucamo na google krivicni zakonik, I onda mozemo da nadjemo, to nece biti problem, znaci drzimo se crne gore.
+Presuda sluzi da vidimo cinjenice o krivicnom delu, a na osnovu cinjenice iz presuda vidimo sta je skrivljeno, imamo rasudjivanje po pravilima gde mi modelujemo clanove zakona, ako vozimo brzinom vise od 60 kmh u naseljenom mestu to je prekrsaj I kazna je toliko I toliko, to je neki if then statement. Mi to procitamo u presudu, anotiramo eto. Zato nam trebaju pravila.
+Imamo xml vokabular tj standard za anotiranje ovih dokumenata, to je standard koji je koriscen od italijanskog parlamenta, ako imamo u celom svetu slicne dokumente mozemo da ih parsiramo I imamo neke komercijalne alate za parsiranje tih dokumenata.
+Imacemo fajl koji ima akomanToso, on je anotiran u tom vokabularu, imamo tag koji naznacuje da je to anotiran zakon, da tu imamo @ onda bi bila presuda, tj judgment, moze da pise journal, kao pravni magazine, bilo koji document vezan za pravo moze tu da se anotira, imamo tu name I tu pisemo naziv tog zakona. Imamo metapodatke, kad je izdato, kako se zove, koji je jezik, kad je nacinjena izmena, da li je hard kopija, sve te sitnice ce biti u meta tagu. 
+Nakon sto se meta tag zatvori imamo body tag, on sluzi da popuni sadrzaj zakona, imamo glava 4. Pravila saobracaja clan 20 I tu nam pise sta se desava, to nam je prekopiran tekst tog tu zakona, mi kad budemo unosili mi cemo ili rucno (ne preporucuje), ako necemo da koristimo ai alat, ili vecina kolega se odluci da proba da koristi Gemini ili chat gpt da kada se ubaci tekst da on izbaci xml file. 
+Kaze da ne krecemo nista dok se ne dogovirmo. 
+Dva tima su 3 zakona birali jer nije bilo dovoljno dokumenata, ne treba da radimo sa 3 zakona bez obzira koliko su mala, ona oce da nam spasi zivot, dobra zena, bice ovo okay.
+FRBRWork je neka skracenia, tu nas zanimaju nivoi, work experession I manifestation, koja je razlika, work je knjiga neka od orvela od 84, to je abstraktni document, ovde pisemo samo podatke radi se o knjizi toj I toj, radi se o nekom zakoniku imamo sifru kada se to moze pronaci, imamo document kada je prvi izdat, imamo tag za drzavu, mozemo imati tag za jezik za posebno izdanje, kad se menja jedna rec mora ponovo da se izdaje nova verzija zakonika, ovo nece sad zvanicno objasnjavati to sledeci cas.
+Dokumenti koji su anotirani akomaNtoso imaju neki uri, tako bilo ko sa strane moze da pristupi nasem dokumentu, !main znaci da pristupamo konkretno ovom dokumentu, znaci referencira nas na sadrzinu dokumenta, preskacemo meta podatke. 
+Presuda kaze kriv je sto je nesto uradio zbog zakona tog I tog, mi kada kliknemo na projekat I on treba da nas prebaci na taj zakon. Imamo dosta komercijalnih editor koji se bave tim parsiranjem. 
+Ideja je da mi probamo da napravimo automatsko parsiranje tih dokumenata, 
+Expression je tacno odredjena izmena, imamo reference na izmenjeni document 2018. Godine, I imamo jezik na kom je napisan document, mozemo da imamo document sa istim izmenama koji je promenjen te iste godine ali na italijanski npr. 
+Manifestacija kaze na koji tacno tip dokumenta se misli, da li je html, da li je neka knjiga, da li je xml document, ovo kod nas je xml document, kome mozemo svi da pristupimo.
+Ako stavimo tu xml to se odnosi na bilo koji primerak koji je u xml-u, sledeci nivo je item, govorimo o nekoj koloni, mi kad vec skinemo kod nas document to nije ista kopija, zato je malo besmisleno.
+Necemo nista raditi sa tim meta podacima, ali je bitno da razumemo kako se anotira.
+Ovo gde su reference, gde god imamo neki resurs u nasem kodu, imamo negde referenca href I tu nam treba neki uri, npr referenciramo act tj zakon koji je izdat ove godine, taraba je link #, #art_88, to je neki clanak, to je clan 88. 
+Chapter ja glava, section je poglavlje, article je clan.
+Gde god da nam se nalazi neki element gde god imamo id art_88, to znaci da kada parsiramo taj document on treba da nas odvede na document gde je taj id, mi stavljamo te id-jeve da kada on naidje na href I ref id da on zna da kada to vidi da zna tamo da nas prebaci. Ako imamo ref tag, rekli bi smo da je taj element link, mozemo da pravimo aplikaciju bilo kog tipa, moze biti web, desktop, moze biti bilo koja tehnologija, imamo jedan deo koji mora da se pokrene iz jave, treba nam windows, ima neki nakaradni stari alat koji mora da koristimo. 
+Chapter 4 je cetvrta glava, eid je chp_4, <num> IV. </num> I onda imamo heading pravila saobracaja.
+<section eId = “chp_4__sec_20”>
+	<num>20.</num>
+	<heading> Posebne odredbe za bicikle </heading>
+<article eId = “art_88_para_1”>
+Artikli I onda paragraphi, paragraphi se samo tovare unutar artikla
+<p> je obican tag z atext, imamo <num> za number, obicno da anotiramo redni broj.
+Nemamo primer za presudu, nece da nam kaci nego da probamo sami.
+Imamo zadatak da pronadjemo neku presudu I da probamo da je anotiramo u akomanitozo xml fajlu, ne moramo podatke da anotiramo, interesuje je kako da je rasporedimo o body tagu, ona ima onaj uvod gde se price sta je pocinjeno, onda imamo raspravu o sudije sta je uradjeno, pa neku raspravu, I onda na kraju neki zakljucak. Poglavlje 6.6, tu pise sve lepo, judgment pa body, pa onda ono vezano za pocinioca u background, imamo motivation, decision I tako to, moramo da vidimo stat u ima smisla, ako bas omasimo neki concept I smisao ne veruje da mozemo ovde da pogresimo, imamo party to su obe strane, imamo optuzenog I tuzioca, imamo sudiju, imamo advokata tako da nesto od ovoga mozemo koristiti, imamo person tag, to mozemo da koristimo, I onda da anotiramo te osobe koje postoje sa posebnim tagovima, kako se datum referencira, kako se ubacuju id-jevi.
+Section je poglavlje to jos uvek nije clan, onda ispod je clan, npr clan 332. Stuktura zakona je takva da sve sto pocinje uvuceno je jedan stav, to pisemo kao tekst stava, ako imamo rimski broj sa zagradom tu pisemo tacku, tekst provog stave pisemo <p>, I onda nakon uvoda imamo tacku to je <point> ako imamo stav clan tacku sta vec moraom da pominjemo te ID-jeve opet
+Pre glave tj chaptera mozemo da imamo druge delove, unutar svakog od tih segmenata mozemo imati reference na druge delove segmenata, mogu da se pomniju ministarstva I sta god, to bi sve trebalo da imamo u referencama npr ako postoji neka organizacija, npr narodna skupstina je kreirana pod nekim id-jem ns,  
+
+
+ 
+Individue mogu da se shvate kao instance klase. Imamo klase i instance, pokazuje nam neki projekat sto je ona prezentovala. Ima tu neki zatvor, zatvorska kazna, dugotrajni zatvor preko 20 godina i on je stavljen kao podklasa. Imamo i stav tacku i clan i to su elementi zakona.
+Deskriptivna logika, nacin da se iskazu ogranicenja unutar ontologija.
+Ako neka individua ima pocinioca koji je iz klase pocinica znaci bilo koji pocinilac, i ako ima minimum jednu instancu ukradene stvari, i pocinilac i ukradena stvar su klase, ako imamo bilo koju individuu koja je povezana sa predikatom klase pocinilac i da je ukradena minimalno jedna ukradena stvar onda je to krivicni slucaj. 
+Moze biti da ima zrtva ali da se zrtva ne spominje, ne mora uvek da bude nacinjeno zlo, nemamo slucaj ako nemamo pocinioca i ako nemamo da je nesto ukrdeno.
+Naslovi klasa trebaju da budu citljivi coveku zato je ona dodala i pocinjeno delo i tu je dodata kradja, teska kradja itd.
+Deskriptivnoa logika je jako ogranicena, Instanca clana 240, pripada seme glava 22, clan, pripada je predikat.
+Imamo klasu 240 i imamo instancu 240.
+Klasa je abstraktni opis clana 240, ista je logika bila posto imamo puno izmena, ako ima puno slucajeva, ti clanovi se menjaju, mi svakoj instanci mozemo da dodelimo neke atribute, datume promene mi mozemo da naznacimo kad se desavaju te promene, zato koristimo instance, svaki put kad se nesto menja nova instanca, valjda.
+Ako se neki zakon promeni mi onda pravimo novu njegovu instancu, sve sto je promenljivo u toku vremena se prikaze uz pomoc instance, to je njena ideja, ona misli da je to tako najlakse odraditi.
+Elementi presude, nesto od tih stvari su mogle biti i instance nisu sve morale biti klase.
+Sta tu ima od klasa, to su elementi izvuceni iz samih presuda da bi se predstavile presude tipa kradje, ona je procitala bezbroj tih presuda i izvrsila neka zakljucivanja. 
+Ostavila je namere kao instance a ne kao klase, Da nebi sve bile posebne klase ona pravi instance.
+Razlicite su kazne ako je nesto ukradeno do 150 evra, negde imamo da je neko ukrao da zardzi za sebe a negde neko ukrade da bi prodao i to su sve drugacije instance klase Namena. 
+Namena za prisvajanje stvari, namena da se proda, namena za to i to i to… To su sve instance
+Sve te instance su onako kako pisu u zakonu, okolnosti je ona izmislila, da li je negde bio pozar ili tako nesto.
+Posebno su odvojeno orudje i oruzje, ona je razdvojila tako, orudje je korisceno za obijanje, ne za napad na coveka, pomocno sredstvo da se dodje do necega, a oruzje se koristi da nekoga povredimo.
+Klasa posledica, ima instance lisavanje zivota i teska telesna povreda.
+Ako je to namera necega mi mozemo to da prebacimo u klasu namena, a moze i podeljeno ovako, to sad zavisi koji model kako pravimo. 
+Ovo je bitno da kada pravimo pravila kako se ovo rezonuje je bitno da li to bilo posledica ili namena.
+Saucesnistvo je jako pipava stvar u zakonu, saucesnicstvo da li je podstrakivanje pomaganje ili saizvrsilastvo, posetoji i organizacija saizvrsilastvo u kriminalnim grupama. 
+Pomaganje moze biti olaksavajuca okolnost.
+Imamo stanje osobe, fizicko stanje to se misli na zrtvu, da li je iskoriscena bezpomocna osoba ili je iskoriceno neki fizicki nedostatak, postoji i mentalno stanje, da li je umisljaj ili nije, imamo i psihicko stanje da li je osoba bila neuracunjliva u tom delu.
+Ukradena stvar, elektricna energija se isto ubraja kao kada ukrademo nekom sesir. 
+Kradja novca je posebno odvoejena, nije isto kao kada ukrademo neki predmet.
+Bilo sta sto nije struja novac javni uredjaj i kulturno dobro.
+Predikat nam kaze da subjekat ako ima kaznu je povezan sa bilo kojom instancom klase kazna, 
+Clanovi tacke i stavovi sva 3 mogu da budu povezae sa kaznom, zato ovde nema range za kaznu jer moramo da idemo u dubinu.
+Ima nameru je predikat sa strane pocinioca, ako mi ubacimo neki slucaj koji ima pocinica i ima nameru bespomocnost.
+Tamo gde ima smisla ona je popunjavala domen i range, imamo neka pravila i onda pokrenemo reasoner i onda gleda da li su nase instance u skladu sa semom koju smo opisali uz pomoc deskriptivne logike, imamo neku nameru, marko markovic ima nameru bespomocnost ima da nam padne reasoner i onda nam padne sisitem.
+Ovaj sistem treba da uz pomoc chat gptja da izvuce opise dela, da li pocinilac ima nameru da prisvoji stvar i jos dosta pitanja sa odgovorima da ne da ne. 
+Gpt je probrljao nesto i onda nam se javio reasoner da kaze da su bile neke nekonzistentnosti.
+To radimo zbog nas da proverimo da je nas model dobar.
+Jedan dokument moze da ima vise pocinoca, sve sto je vezano za pocinioca i osobu je prikaceno za samog pocinioca, on je mozda ukrao nesto, mozda je imao neku nameru, mozda je imao nekog saucesnika, to je sve za osobu povezano bas zato sto moze da bude vise pocinioca.
+Pocinilac moze imati pomocno sredstvo, to je zapravo orudje il oruzje i to je nadklasa tu iskoriscena.
+Neke mini osobinice, data properties, imamo boolean vrednost da li je krivicno vrednost odradjeno do kraja, da ili ne.
+Nije isto ukrasti ili samo zadrzati neku tudju stvar, to je neka instanca.
+Imamo da li je preceno zrtvi, to je boolean koji se odnosi samo na zrtvu.
+Upotrebljena sila nad zrtvom, da li je upotrebljena nad objektom, ili nad cime vec.
+Monotona logika – imamo neko pravilo i ono ne moze da bude pobijeno.
+Ako je zatecen na delu nesto se desava, ako nije zatecen onda se ne desava.
+Ako zakljucimo da je bilo pocinjeno neko delo i kazemo da je delo u pokusaju mi mozemo staviti da je pocinilac hteo da ukrade to je 239 ali ako je to samo bio pokusaj to je 239 stav 2.
+Nama ce uvek biti zakljuceno prvo, a mozemo da dodamo neki boolean, tu ne postoji pobijanje. To je monotona logika.
+Treba da se zakljuci zasto se to radi, da je to bio samo pokusaj i da je to drugi stav. 
+Ako je nesto obijeno onda ce stav da izbaci 239, 239 stav 2, i 240, i sad nam treba neka druga logika da vidimo sta je tu zapravo tacno.
+Predpostavka otvorenog sveta: to je da onoga cega nema ne predpostavlja se da je nesto netacno.
+Ako je nesto bio pokusaj zakljuci drugaicje, ako nesto nije bilo pokusaj to ne znaci da nije bio pokusaj, to je samo ne navedeno.
+Ako imamo nesto da je izostavljeno to ne znaci da nije tacno.
+To je problem sa negacijama, moramo da napravimo neki boolean da kzemo da nesto ne postoji, i mozemo da imamo da nesto postoji.
+Ako zelimo da iskazemo da je noesto bio pokusaj staviomo da je pokusaj true.
+Nije dovoljno da kzemo ako zelimo da nesto nije bilo pokusaj
+Ako nema navedeno da je pokusaj true, ne znaci da je tacno ili netacno, znaci samo da nije navedeno.
+Ako nije nesto eksplicitno navedeno to ne znaci da ne postoji nego samo da je nepoznat podatak.
+Predpostavka da necega nema nije problem, ona je samo dodavala booleane i tako je resila to, moze i drugacije da se radi, preko relacione baze i kljuceva, ovo je bio pokusaj da se vidi koliko moze da se stigne sa ontologijama.
+
+
+
+
+Obicno ljudi odaberu krivicni zakoni, mogu i zakoni za saobracaj ali onda da ne uzimamo zakone koje vidimo na vezbama, ne mozemo ni da predlazemo alkoholisano stanje, jer je to zadatko za domaci.
+Imamo neka SVRL pravila, u ontologijama smo imali neku predstavu zakona i predstavu nekih presuda, i ideja je bila da na osnovu cinjenicnog stanja presuda izvucemo atribute, ako su oni zadovoljeni onda ispunjavamo praivlo, ako je osoba ukrala predmet, ona je prekrsila clan 239 clan 1 i onda sledi neka kazna, to je neko pravilo.
+Neki grk je pravio nesto, profesor markovic je sa ovim pravio doktorat, imamo alat koji je on prilagodio za pravnu logiku, pravilo je ponistivo ako je npr bio maloletnik.
+Kako pisemo unutar samog alata, imamo dr device, to je alat, vecina nas ne zanima, ima tu dosta podesavanja za kompajliranje i prevodjenje, radimo u legal rule ML jeziku koji je poznat sa predavanja, sta nam je bitno od alata, sta nam je bitno, alat se pokrece na start, on se pokrece u command promptu, dobijamo export file u kome su rezultati koje nam je alat doneo, mi cemo morati u projektu da to prebacimo u nesto.
+Kao rezultat dobijamo sta je tracno prekrseno, ovo je nasumicno napisan naziv a mi cemo pisati tacno koji stav koji clanak je prekrsen. Mi bi tu napisali to je pravilo vezano za clan 239 stav 1 itd itd a ovde je neki on town road with accident samo kao primer.
+Onda imamo kaznu, koja je minimalna, koja je maksimalna, imamo brojcane vrednosti koje se odnose, imamo dinare i broj dana, ovo je sve proizvoljno, treba da osmislimo kako to treba da izgleda i sta treba da izbacuje. 
+Kolege su pokretale iz skriptice projekat, onda su ako je tu neki naslov oni su izvlacili iz zakona neki tekst da znamo na sta se odnosi i onda nam pokazu sta je alat skontao.
+Ideja je da imamo neke ulazne podatke, alat treba da izbaci sta je prekrseno i koje su kazne, to je jedino sto radimo za projekat, a sta ce biti od teme je ono na engleskom, svakome treba da se razlikuje taj deo, sta su ulazni podaci, imamo cinjenice.
+Treba nam ime slucaja, ime osobe, konkretni podaci, brzina kojom se tuzeni kretao, imamo koja je bila dozvoljena brzina, imamo na kom tipu puta je vozio i da li je prouzrokovao nesrecu, imacemo 10ak atributa i mi popunjavamo ono sto treba za nas zakon.
+MI cemo svakako te atribute sve izvuci u zavisnosti sta nama treba i onda cemo to da popunimo sa podacima.
+Na kraju prikazujemo sta je tacno za sankcije i prekrsaje.
+Na start se pokrece iz terminala, ako hocemo da pobrisemo onda pokrenemo clean, a najbtinija stvar nam je rulebase.lrml file, tu imamo statements i predispozicije, svaki taj prescriptive statement je jedno pravilo, ovi kljucevi nam nece trebati, jedino ako koristimo neke druge alate, na logiku smo vec navikli, imaomo ako je nesto zakljuceno je nesto, imamo ime tacke stava sta je prekrseno.
+Defendant tj okrivljeni ima brzinu kretanja, postoji dozvoljena brzina, ako je njegova brzina veca od dozvoljene onda je prekoracio. Neki primer. To bi nam bilo jedno pravilo.
+U projektu treba da nam izbaci sta jeste prekrseno tako da ne moramo da se trudimo previse sa taj Negation za te negacije, ako ne stignemo ne moramo to da radimo kaze, te negacije kao. On **Nije** prekoracio brzinu.
+Kao sto smo imali perscriptive statement tako imamo penalty statement, imamo tip kazne da plati novac od 10000 dinara. 
+Reparation statement, koja kazna je vezana za koju repoziciju.
+Kada uzimamo zakone ne treba da uzimamo 5-6 clanova, kazemo sta smo odabrali, kazemo sta smo konkretno, jednom su kolege uzeli neku glavu i imali 3000 linija koda, ako znamo da napravimo 15 pravila znamo da napravimo i 300.
+Kreiramo perscriptive statement, depozicija.
+Imamo i neki deo gde da li neko pravilo ponistava neko drugo pravilo, to radimo sa tagom override statement, koristimo sve te kljuceve, ps1 ps2, gledamo da je citljivo da bude sto lakse, necemo ici u sitna crevca.
+Zakone i presude moramo da imamo u comantosu i u kodu da se mogu pregledati, zakone i presude moraju biti predstavljane ovako preko pravila, znaci prvo biramo zakon, i predstavimo na ovaj nacin za rasudjivanje po pravilima, kao izlaz iz ovog alata treba da dobijemo predlog da zakljucimo sta je pregledamo, naravno taj fajl nije ljudski citljiv, trebalo bi da sredimo i da na nasem projektu zapisemo to da bude citljivo za korisnika, taj export treba da uvucemo nazad u projekat, prekrsenu kaznu izvucemo i to je to.
+Mmamo xsl i moramo da odemo rucno u RuleML i onda da napisemo da unutar xls 2ruleuml da dodamo neke predispozicije, xsl:attribute name rdf export classes Is speeding on town road with accident is spoeeding on town road, ona kaze da to moramo da menjamo, mozemo da menjamo meta podatka i da pravimo nova pravila, to nije niko do sad pokusavao, to su nam meta fajlovi, mozemo da se igramo sa tim pravilima ali ne trazimo to od nas, ako imamo sabiranje oduzimanje treba da se snadjemo, obicno imamo boolean podatke i stringove. Ako bude nesto drugo mozemo slobodno da joj se javimo.
+Treba da imamo java 8, radi na osmici, na staroj verziji jave. 
+Ulaz se nalazi u facts, menjamo rulebase legal uml file i to je to.
+
+Kada odaberemo zakon odaberemo presude za taj zakon, izvucemo ih, namontiramo, i onda gledamo koje substance su u pitanju, ko je koristio, koja je kolicina substance, imamo dosta atributa za samo donosenje presude, jedan slucaj, svi meta podaci ko je ucesnik, imena svih ucenika sudija, imamo i neke atribute na osnovu kojih moramo da donesemo neki zakljucak.
+Mozemo konkretan projekat da nadogradjujemo ili mozemo da prevucemo samo neki ja dzar file, sta god to bilo, 
+Imamo retrieved cases, dobavljeni slucajevi, imamo strelicu koja kaze koliko je nas slucaj slicam onome koji se razmatra, imamo presude, primenjene propise, telesne provrede, lake, ili teske, imamo atribute, mi cemo imati min 10 atributa, imamo slicnost 1, slicnost 0.66, znaci za svaku presudu dobijamo slicnost.
+Kako izgledaju podaci, mi mozemo da za bazu koristimo sta god zelimo,  ID koji je sud u pitanju, tuzilac, okrivljeni, krivicno delo, tip povrede, bla bla, oni su sve strpali na vezabama u CSV da bude sto prostije, a mi mozemo kako ocemo.
+Mozemo sami da implementiramo funkcije slicnosti ako ocemo, ideja je da ipak ako mzoemo da probamo da koristimo taj alat jer se on koristi u pravu, ona nece da objasnjava ugradjene klase, znaci to je u cbr folderu, ona ce samo objasniti sta je to tu, znaci preko simConfiga treba da odaberemo algoritamo za grupisanje presuda, ovde se koristi KNN grupisanje samih presuda, mozemo da izaberemo razlicite konfiguracije, ako imamo 15 presuda dobijemo vrednost slicnosti funkcija. Najbitnije je da kada dobijemo atribute kako da ih prebacujemo.
+Kada imamo novi slucaj trebamo da ga ubacimo, napraivmo novi atribut, nazovemo ga kako zelimo, i iammo ovo new Equal, vrati 1 ako je absolutno jednako, vrati 0 ako nije jednako. 
+Drugi atribut za slicnost povreda, koriscena je tabela slicnosti koju je profesor kucao, mozemo mi da napravimo tabelu slicnosti, pravljenja ja matrica, npr 3x3, pravljeno je laka sa lakom koliko je slicno, 1, onda je unutar matrice unoseno koliko se laka poredi sa teskom, ideja je znaci da uzmamo presude, odaberemo atribute, da onda objasnimo zasto je to tako, ako je 0.5 onda je to laka-teska, da imamo razlog da objasnimo zasto je laka-teska.
+Ako pise da je neko prodavao kokain a neko marihuanu i to je 0.1 slicnost, mi moramo da kazemo zasto je to tako, to oni traze od nas, a brojeve proizvoljno odredjuemo i gledamo kada je kazna nekad teza nekad laksa. 
+TabularSimilarity klasu je kucao profesor, on je tu mrljavio, ako poredimo lakse as teskim i stavimo 0.5 znaci da je laka-teska.
+
+Izlaz iz ovoga alata tj ovih slicnosti treba da bude predlog sta je prekrseno, mi ne znamo ovde kada ubacimo elemente da kazemo sta je prekrseno, ubacujemo samo atribute, izlaz treba da bude clan koji je prekrsen, to cisto da nas ne buni.
+Imamo zakomentarisane sve funkcije slicnosti, ako je ukro 1000 evra to je slicnost 0.2, ako je ukrao 1001 onda je to 0.3, imamo neki rad a strinogivma, enumima, i ono rucno.
+Imamo neki csv, neku bazu, sa izvucenim atributima tj metaopdacima slucajeva, atributi su ono sto zakljucimo da je neko na osnovu toga davao nesto i da je nesto prekrseno, to je ono sto nam je dala za drogu, ulaz mora da bude editabilan da moze za novi slucaj da se ubacuju novi podaci i da se pokrecu slicnost, imamo cycle metodu, i kazemo koliko slucajeva zelimo da dobijemo, sve mzoemo da menjamo, iz main funkcije moramo da prilagodimo da moze da prima sa forme kada budemo pravili projekat. 
+Trebalo bi da isti novi slucaj koji dobijemo imamo neku formu ili prozor u kome ce on da ukuca naknadno sta je prekrseno i koja sankcija je doneta, onda to ubacimo u csv bazu, anotiramo, i onda prikazemo korisniku i vidimo slucaj, to je ceo taj zavrsen krug tj postCycle().
+
+Ulaz, rezultat sta je prekreseno, izlaz, slucajevi koje sudija moze da pregleda, u post cycle zapisemo te atrbiute u neku bazu, izgenerisemo neki PDF i onda radimo anotaciju komantoso i onda prikazujemo taj slucaj kao sve ostale slucajeve sa crnogorskog sajta i to je to.
+
+Mi generisemo presudu, iznosimo cinjenice u vidu neke forme, taj tip droge, bio je loseg statusa materijalnog, bla bla, ubacimo sve te podatke u bazu ili neki csv fajl, i onda kada popunimo to, pokrenemo DR device, i onda dobijemo neke rezultate, dobijemo sta je prekrseno, koja je sankcija, i onda za rasudjivanje po slicnosti dobijemo top 5 presuda i vidimo po kojim atributima je nesto slicno, nigde ne zakucavamo koja je presuda, mi treba da ostavimo sudiji koja je presuda, 
+I onda cemo imati neku formu da mi kao sudija pisemo, dobijemo neki predlog, kazna od 5 do 50 hiljada i onda mi kao sudija mozemo da napisemo koja je tacno bila kazna, onda na kraju imamo generisanje, to je deo gde mozemo da radimo sta god zelimo, imamo neki ai neki salbon da na osnovu toga sto nam je izbaceno imamo meta podatke imamo mini deo gde sve pise sta je presudjeno u cemu se radi i onda da sve to generisemo u vidu nekog PDFa i onda da to anotiramo kao sto smo prethodno radili kao neki pdf i onda taj dokuemnt da bude ukljucen kada se OPET bude rasudjivalo po slicnost. 
+Treba da imamo odvonovanja rezonovanja, jedno je citamo iz zakona, citamo iz zakona i predstavljamo po pravilima, a drugo je da gledamo presude, bilo bi smesno da izjednacimo marihuanu sa heroinom a ako imamo slicne kazne onda kazemo da je slicnost 1  i tako imamo razlicite izlaze za rasudjivanje po pravilima i po (necemo nisam stigo da zapisem ahhh).
+
+Ako ne koristimo csv ovo ce biti potpuno drugacije, nije kao csv, a ako menjamo jos drugih stvari onda mzemo i druge stvari da donesemo, ali moze lagano da se radi kao csv, ona samo lagano prodje kroz kod kad ga predamo da vidi jel sve ok, i onda mi samo prezentujemo, svaki clan tima treba da prica deo koji je radio, ako je neko radio commantoso ovaj drui ne mora da zna ovo prvo i lepo da podelimo posao ko je sta radio, mi podelimo se po timu i raspodelimo se kako ko zeli.
+
+Rasudjivanje po pravilima je 1 na 1 prevodjenje zakonima, ako se osoba krece vise od 30 km na h vise od dozvoljene to je 100 dana zatvora, mi to prenosimo 1 na 1 pravilima,
+Rasudjivanje po slicnosti, ne gledamo zakon, nego gledamo po presudi, da li mozemo da uocimo da neki atribut kada citamo da neki atribut utice ili ne utice na kaznu, da li je prvi prekrsaj, da li je neko prethodno osudjivan, u kakvom je materijalnom stanju, da li je to motiv mozda.
+Bitno je da svaki atribut znamo zasto smo ga odabrali.
+Slicnost nema veze sa pravilima, novi slucaj ide u CSV u istu bazu podataka i koristimo ga za rasudjivanje, to je taj jedan zatvoreni ciklus, mozemo bilo koji LLM model da koristimo, ako vidimo da se nesto na neki nacim pise, ne mora da bude AI, samo da opisemo sta smo radili, ako koristimo ai za izvlacenje atributa mozemo da kazemo uspeli smo 95% atributa da izvucemo ali smo morali da popravimo nesto malo da bi to valjalo, i kazemo lepo sta nismo uspeli da uradimo, to je ok to je sve dobro za istrazivanje, vole oni da cuju to. 
+
+ 
+
+
+
+Moramo da iskoristimo jedan model AI-ja da vide da smo primenili neki od LLMova, mozemo I vise modela, ideja je da nadjemo na crnogorskom sajtu sudovi.me biramo uvek krivicno odeljenje, biramo zacetak procesa, biramo neki sud, godina nije bitna, bitno je da prvostepeni krivicni predmet, I tu mozemo da odradimo pretragu, trebamo da smislimo neku temu, povrede zivota I tela, imamo krivicne prijave za brak I porodicu, imamo krivicne, za secu suma, za krivolov, poseban deo za cigare, poseban deo za drogu.
+Bitno je da prvo pronadjemo iz nekog zakonika neku pravnu oblast kojom zelimo da se bavimo, 
+Opis da nam izvuce attribute, ono pravila I slicnost, treba mi da odredimo sta su atributi koji dovode do odredjivanja kazne. Da li je telesno povredjena, da li je laka ili teska, mi moramo da smislimo upite za LLM da dobijemo nesto sto ce biti u konstantnom formatu, kada isparsiramo da mozemo da ga sacuvamo u CSV, da mozemo automatski da ga ubacimo.
+
+
+
+
+
+
+
+
+
+
+
+
+

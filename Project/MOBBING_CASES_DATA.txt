@@ -1,0 +1,347 @@
+================================================================================
+MOBBING CRIMINAL CASES - DATA COLLECTION SHEET
+================================================================================
+
+PROJECT: Pravna Informatika - Mobbing (Workplace Harassment) Analysis
+LEGAL AREA: Criminal Law - Articles covering harassment, intimidation, threats
+SOURCE: https://sudovi.me/sdvi/ - Montenegro Courts Database
+
+================================================================================
+IDENTIFIED CRIMINAL CASES (11 CASES TOTAL)
+================================================================================
+
+CASE #1: K 22/2022 (Podgorica)
+----------------------------------------
+Court: Osnovni sud u Podgorici
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 16. Maj 2023
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #2: K 98/2018 (Podgorica)
+----------------------------------------
+Court: Osnovni sud u Podgorici
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 28. Maj 2018
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #3: K 664/2022 (Podgorica)
+----------------------------------------
+Court: Osnovni sud u Podgorici
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 11. Novembar 2022
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #4: K 592/2022 (Podgorica)
+----------------------------------------
+Court: Osnovni sud u Podgorici
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 21. Novembar 2022
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #5: K 217/2024 (Beranama) - MOST RECENT
+----------------------------------------
+Court: Osnovni sud u Beranama
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 07. Maj 2025
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES: Most recent case - likely has good documentation
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #6: K 277/2012 (Bijelo Polje)
+----------------------------------------
+Court: Osnovni sud u Bijelom Polju
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 23. Oktobar 2012
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #7: K 292/2014 (Bijelo Polje)
+----------------------------------------
+Court: Osnovni sud u Bijelom Polju
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 18. Septembar 2015
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #8: K 13/2015 (Cetinja)
+----------------------------------------
+Court: Osnovni sud u Cetinju
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 15. Jul 2015
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #9: K 277/2012 (Cetinja)
+----------------------------------------
+Court: Osnovni sud u Cetinju
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 05. Jul 2013
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #10: K 375/2014 (Kotor)
+----------------------------------------
+Court: Osnovni sud u Kotoru
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 03. Februar 2015
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #11: K 140/2015 (Nikšić)
+----------------------------------------
+Court: Osnovni sud u Nikšicu
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 03. Maj 2017
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #12: K 30/2020 (Pljevljima)
+----------------------------------------
+Court: Osnovni sud u Pljevljima
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 23. Novembar 2020
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+---
+
+CASE #13: K 128/2015 (Rožaja)
+----------------------------------------
+Court: Osnovni sud u Rožajama
+Department: Krivično odjeljenje
+Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+Verdict Date: 26. Oktobar 2015
+URL: https://sudovi.me/sdvi/odluke
+STATUS: TO BE RESEARCHED
+NOTES:
+
+Case Summary:
+Perpetrator(s):
+Victim(s):
+Workplace/Context:
+Alleged Harassment Type:
+Articles Violated:
+Sentence/Verdict:
+Key Facts:
+
+================================================================================
+LEGAL FRAMEWORK - MONTENEGRIN CRIMINAL CODE ARTICLES
+================================================================================
+
+Common Articles for Mobbing/Harassment Charges:
+
+Article 228 (KZ) - "Threatening or Humiliating"
+- Covers acts that threaten, humiliate, or demean a person
+- Frequently used in workplace harassment cases
+
+Article 229 (KZ) - "Harassment, Threats, Intimidation"
+- Covers systematic harassment or threats
+- Can include repeated unwanted contact
+
+Article 131 (KZ) - "Persecution/Persecution by Officials"
+- Covers systematic persecution
+- Can apply to abuse of power in workplace context
+
+Article 289-297 (KZ) - "Bodily Injuries"
+- May be charged if harassment led to physical harm
+- Range from light to serious injuries
+
+Article 55 (General Provisions) - "Mitigating/Aggravating Circumstances"
+- Modifies sentences based on circumstances
+- Often related to employment relationship
+
+================================================================================
+ATTRIBUTES FOR CBR SYSTEM (Case-Based Reasoning)
+================================================================================
+
+Based on these cases, we will define attributes such as:
+
+1. Perpetrator Type (employer, supervisor, colleague, multiple)
+2. Victim Type (employee, subordinate, vulnerable person)
+3. Harassment Type (verbal abuse, threats, discrimination, physical, psychological)
+4. Duration (single incident, repeated over period)
+5. Workplace Environment (private sector, public sector, state institution)
+6. Power Dynamics (superior-subordinate, peer-to-peer, mob harassment)
+7. Witnesses (yes/no, how many)
+8. Documented Evidence (yes/no, type)
+9. Prior Incidents (first offense, repeat offender)
+10. Physical Harm (none, minor, serious)
+11. Mental/Psychological Harm (mild, moderate, severe)
+12. Articles Violated (primary, secondary)
+13. Sentence Type (fine, imprisonment, conditional)
+14. Sentence Duration (if applicable)
+15. Aggravating Circumstances (abuse of authority, particularly vulnerable victim, etc.)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. Access each case on sudovi.me
+2. Download or read the full verdict text
+3. Extract key information into the template above
+4. Identify common articles violated
+5. Extract attribute values for each case
+6. Create CSV database for CBR system
+7. Annotate verdicts in AkomaNtoso XML
+8. Create ontology in Protégé
+9. Define rules for rule-based reasoning
+10. Implement similarity functions for CBR
+
+================================================================================

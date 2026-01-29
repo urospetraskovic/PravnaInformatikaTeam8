@@ -1,0 +1,484 @@
+================================================================================
+GUIDE: HOW TO EXTRACT INFORMATION FROM COURT VERDICTS
+================================================================================
+
+This guide helps you efficiently extract the key data from each mobbing verdict
+for use in our CBR (Case-Based Reasoning) and rule-based reasoning systems.
+
+================================================================================
+STEP-BY-STEP PROCESS
+================================================================================
+
+1. LOCATE THE VERDICT
+   - Go to: https://sudovi.me/sdvi/odluke
+   - Use Advanced Search (NAPREDNA PRETRAGA)
+   - Court: Osnovni sud (Select the appropriate city)
+   - Department: Krivično odjeljenje
+   - Case Type: PRVOSTEPENI KRIVIČNI PREDMETI
+   - Enter Case Number (e.g., K 22/2022)
+   - Click on the result to open the full verdict
+
+2. DOWNLOAD THE VERDICT
+   - Look for a PDF or text download link
+   - Save locally or read directly on screen
+   - Verdicts typically have these sections:
+     * HEADER (Court, Judge, Case Number, Date)
+     * PARTIES (Prosecutor, Defendant, Judge)
+     * FACTS (What happened - key section)
+     * LAW (Articles applied)
+     * REASONING (Why judge applied these articles)
+     * DECISION (Verdict/Sentence)
+
+3. EXTRACT KEY INFORMATION
+
+================================================================================
+SECTION 1: CASE IDENTIFICATION
+================================================================================
+
+Case ID: [Look at top of verdict]
+  Example: K 22/2022
+
+Court: [Which court issued this verdict]
+  Options: Osnovni sud u Podgorici, u Beranama, u Bijelom Polju, etc.
+
+Verdict Date: [Date the verdict was issued]
+  Format: DD.MM.YYYY
+  Example: 16. Maj 2023
+
+Judge Name: [Name of the judge who decided]
+  Usually found at end of verdict
+  Format: Judge Name (optional: title)
+
+================================================================================
+SECTION 2: PARTIES INVOLVED
+================================================================================
+
+PERPETRATOR (DEFENDANT/OKRIVLJENI):
+  
+  Full Name: [From verdict header]
+  Age: [If mentioned]
+  Occupation: [What did they do? Supervisor, manager, director, etc.]
+  Employer: [Which company/organization]
+  
+  Perpetrator Type (SELECT ONE):
+    □ Employer/Owner
+    □ Supervisor/Manager
+    □ Colleague/Coworker
+    □ Group/Multiple persons
+    □ Other: ________________
+
+VICTIM (INJURED PARTY/OŠTEĆENA STRANA):
+  
+  Full Name: [Usually partially anonymized, e.g., "A.B."]
+  Position/Role: [What was their job?]
+  Employer: [Same as perpetrator or different?]
+  
+  Vulnerability Factors (CHECK ALL THAT APPLY):
+    □ Subordinate to perpetrator
+    □ Lone worker/isolated
+    □ Minority/vulnerable group
+    □ Health issues
+    □ Gender-based targeting
+    □ Age-based targeting
+    □ None noted
+
+WITNESSES:
+  
+  Were there witnesses? 
+    □ Yes - How many? _____
+    □ No
+  
+  Types of witnesses (if any):
+    □ Coworkers
+    □ Clients/Customers
+    □ Management
+    □ Other: ________________
+
+================================================================================
+SECTION 3: FACTS OF THE CASE
+================================================================================
+
+CONTEXT:
+  
+  Workplace Type (SELECT ONE):
+    □ Private sector company
+    □ Public sector/Government
+    □ Educational institution
+    □ Healthcare facility
+    □ Other: ________________
+  
+  Department/Area: [Where did harassment occur?]
+    Example: HR Department, Factory Floor, Customer Service, etc.
+  
+  Timeframe:
+    Start Date (approximately): ________________
+    End Date (approximately): ________________
+    Duration: □ Single incident  □ Days  □ Weeks  □ Months  □ Years
+
+WHAT HAPPENED - Harassment Description:
+
+Read the FACTS section carefully. Answer these:
+
+1. What specifically did the perpetrator do?
+   [Write 2-3 sentences describing the actions]
+   
+2. How many times did it happen?
+   [Once / Specific number / Repeated over period]
+
+3. What words were used? (if verbal harassment)
+   [Note any insults, threats, or degrading language mentioned]
+
+4. Did it involve:
+   □ Verbal abuse (insults, yelling, humiliation)
+   □ Threats (physical, job, other)
+   □ Intimidation (implied threats, coercion)
+   □ Discrimination (based on protected characteristic)
+   □ Physical aggression (pushing, hitting, etc.)
+   □ Sexual harassment
+   □ Exclusion from work activities
+   □ Sabotage of work
+   □ Other: ________________
+
+5. Was there documented evidence?
+   □ Yes - Type: [emails, recordings, messages, formal complaints, etc.]
+   □ No
+   □ Unclear
+
+6. Did anyone report it before court?
+   □ Yes - To whom? [HR, police, labor inspectorate, etc.]
+   □ No
+   □ Unclear
+
+CONSEQUENCES TO VICTIM:
+
+Physical Harm:
+  □ None
+  □ Minor (bruises, scratches)
+  □ Moderate (fractures, sprains)
+  □ Serious (hospitalization required)
+  Details: ________________
+
+Psychological/Mental Health Impact:
+  □ None noted
+  □ Mild (temporary distress)
+  □ Moderate (anxiety, sleep problems, noted in verdict)
+  □ Severe (depression, PTSD, medical treatment)
+  Details: ________________
+
+Work Impact:
+  □ Continued working
+  □ Took leave
+  □ Lost job
+  □ Medical leave
+  Details: ________________
+
+================================================================================
+SECTION 4: LEGAL ANALYSIS
+================================================================================
+
+ARTICLES VIOLATED:
+
+Read the LAW/LEGAL BASIS section. List all articles cited:
+
+Primary Article (main charge): 
+  Article Number: _______ 
+  Article Name: _____________________________________________
+  
+Secondary Articles (if multiple charges):
+  Article: _______ - Name: _________________________________
+  Article: _______ - Name: _________________________________
+  Article: _______ - Name: _________________________________
+
+For Mobbing Cases, Look For:
+  • Article 228 (KZ) - Threatening or Humiliating
+  • Article 229 (KZ) - Harassment, Threats, Intimidation
+  • Article 131 (KZ) - Persecution
+  • Article 289-297 (KZ) - Bodily Injuries (if physical)
+  • Article 55 (KZ) - Circumstances (aggravating/mitigating)
+  • Labor Code articles (if applicable)
+
+EVIDENCE USED BY COURT:
+
+What evidence did the court rely on? (CHECK ALL MENTIONED):
+  □ Witness testimony
+  □ Documentary evidence (emails, messages, records)
+  □ Medical evidence (psychological report, injury assessment)
+  □ Police report
+  □ Victim testimony
+  □ Perpetrator confession
+  □ Video/Audio recordings
+  □ Expert report
+  □ Other: ________________
+
+AGGRAVATING CIRCUMSTANCES:
+
+Did the verdict mention any factors that INCREASED the sentence?
+(Read the REASONING section)
+
+Examples: abuse of authority, vulnerable victim, repeat offender, planning, etc.
+
+List found: 
+  1. _________________________________________________
+  2. _________________________________________________
+  3. _________________________________________________
+
+MITIGATING CIRCUMSTANCES:
+
+Did the verdict mention any factors that DECREASED the sentence?
+
+Examples: first offense, good behavior, cooperation, mental illness, etc.
+
+List found:
+  1. _________________________________________________
+  2. _________________________________________________
+  3. _________________________________________________
+
+================================================================================
+SECTION 5: SENTENCE/VERDICT
+================================================================================
+
+VERDICT TYPE (SELECT ONE):
+  □ Guilty - Sentence imposed
+  □ Not Guilty - Acquitted
+  □ Partial conviction (some charges sustained)
+
+SENTENCE IMPOSED (if convicted):
+
+Type of Sentence (may be multiple):
+  □ Fine
+    Amount: _________ (Currency: EUR/CZK/Other)
+  
+  □ Imprisonment
+    Duration: _________ (Years/Months)
+    Conditional (suspended)? □ Yes □ No
+  
+  □ Probation
+    Duration: _________ (Years/Months)
+  
+  □ Restraining order
+    Details: _________________________________________
+  
+  □ Other: _________________________________________
+
+RIGHTS/PROTECTIONS ORDERED (if any):
+  □ Restraining order preventing contact
+  □ No harassment for period of: _______
+  □ Compensation to victim (amount): _______
+  □ Other: _________________________________________
+
+IS THIS GUILTY OR NOT GUILTY?
+  □ Guilty/Convicted
+  □ Not Guilty/Acquitted
+  □ Mixed (convicted on some, acquitted on others)
+
+================================================================================
+SECTION 6: POWER DYNAMICS & CONTEXT
+================================================================================
+
+RELATIONSHIP BETWEEN PARTIES:
+
+Prior Relationship:
+  □ No prior relationship (first encounter leading to incident)
+  □ Supervisor - Subordinate
+  □ Employer - Employee
+  □ Coworkers/Peers
+  □ Management hierarchy
+  □ Other: ________________
+
+Power Dynamic (SELECT BEST FIT):
+  □ Superior-Subordinate (perpetrator had authority over victim)
+  □ Peer (equal positions)
+  □ Multiple perpetrators vs. single victim
+  □ Institutional power (representative of organization)
+  □ Other: ________________
+
+Prior History:
+  □ First offense by perpetrator
+  □ Known repeat offender
+  □ Prior complaints against this person
+  □ Prior incidents between these parties
+  □ Unclear from verdict
+
+================================================================================
+SECTION 7: CASE CHARACTERISTICS SUMMARY
+================================================================================
+
+Based on the verdict, fill in these key attributes:
+
+Harassment Type (PRIMARY):
+  □ Verbal Abuse    □ Threats    □ Intimidation    □ Discrimination
+  □ Physical        □ Psychological    □ Sexual      □ Work Sabotage
+  □ Other: ________________
+
+Duration Pattern:
+  □ Single Incident    □ Recurring (pattern of incidents)
+
+Workplace Context:
+  □ Private Sector    □ Public/Government    □ Education    □ Healthcare
+  □ Other: ________________
+
+Severity Level (YOUR ASSESSMENT):
+  □ Low (minor harassment, minimal impact)
+  □ Medium (repeated, some impact)
+  □ High (severe, significant impact, physical harm, or systemic)
+
+Conviction Status:
+  □ Convicted    □ Not Convicted    □ Partially Convicted
+
+Sentence Severity:
+  □ Light (fine only, or minimal prison)
+  □ Medium (moderate prison, substantial fine)
+  □ Heavy (significant prison time)
+
+================================================================================
+TIPS FOR EFFICIENT EXTRACTION
+================================================================================
+
+1. READ THE FACTS SECTION CAREFULLY
+   - This is usually 50% of the verdict
+   - Contains all details about what happened
+   - Judge's reasoning for decision comes after
+
+2. LOOK FOR DATES
+   - When did incidents start/end?
+   - When was complaint filed?
+   - When was verdict rendered?
+
+3. IDENTIFY KEY ACTORS
+   - Who is perpetrator? (name, position)
+   - Who is victim? (name, position)
+   - Who witnessed? (number, relation to parties)
+
+4. EXTRACT ARTICLES
+   - Usually listed in "Legal Basis" or "Law Applied" section
+   - May cite specific paragraphs/subsections
+   - Note both primary and secondary charges
+
+5. UNDERSTAND SENTENCE
+   - Fine amount and currency
+   - Prison time in months or years
+   - Whether sentence is conditional (suspended)
+   - Any other orders (restraining order, compensation, etc.)
+
+6. NOTE SPECIAL CIRCUMSTANCES
+   - Aggravating factors (why sentence might be higher)
+   - Mitigating factors (why sentence might be lower)
+   - Relationship between parties
+   - History of prior incidents
+
+================================================================================
+WHAT IF INFORMATION IS MISSING?
+================================================================================
+
+Many verdicts won't have all information. Mark unclear fields as:
+  □ N/A (Not Applicable)
+  □ Not mentioned in verdict
+  □ Unclear from text
+  □ Partially mentioned: [describe]
+
+This is normal! Not all verdicts have complete information about everything.
+Document what IS available and move on.
+
+================================================================================
+EXAMPLE: How Information Might Appear in Verdict
+================================================================================
+
+TYPICAL VERDICT STRUCTURE IN MONTENEGRO:
+
+---
+OSNOVNA SUD U PODGORICI
+Krivično odjeljenje
+Broj predmeta: K 22/2022
+Presuda od: 16. maja 2023.
+
+STRANKE:
+- Tužilac: Osnovno državno tužilaštvo Podgorica
+- Okrivljeni: M.J., rodi 1975., stanovnik Podgorica, završio srednju školu
+- Oštećena strana: A.P., stanovnica Podgorica
+
+RADNJA:
+U periodu od januara 2022. godine do marta 2022. godine, okrivljeni M.J., koji je 
+zaposlen kao rukovodilac odeljenja u privrednom društvu "XYZ", je neprekidno 
+maltretirao oštećenu stranu A.P., zaposlenu kao pomoćnica u istom odeljenju, 
+prozivajući je javno, huškanjem pred ostalim zaposlenima...
+
+KVALIFIKACIJA:
+Okrivljeni je neprekidno u periodu od tri meseca nanosio telesne povrede 
+oštećenoj strani i to sklapanjem, pa je izvršio delo iz člana 289 st. 1 
+Krivičnog zakonika, iz člana 228 Krivičnog zakonika...
+
+DOKAZI:
+Sud je utvrdio činjenice na osnovu: 
+- Iskaza oštećene strane
+- Iskaza svedoka (tri kolege zaposlene u istom odeljenju)
+- Medicinski izveštaj koji potvrđuje povrede
+- Email-a koji su dostavljeni kao dokaz zlostavljanja
+
+ČINJENICE:
+Sud je utvrdio da je okrivljeni:
+1. Redovno vikao na oštećenu, a posebno je jedan put krenuo ka njoj sa pesnicama
+2. Zapisao je na oglasnoj tabli uvredljive napomene upućene oštećenoj
+3. Sprečavao je oštećenu da učestvuje u timskim sastancima
+4. Pretio je da će je otpustiti ako se ne ponaša kako on želi
+
+ZAKLJUCAK:
+Dokazi su nedvosmisleno dokazali da je okrivljeni izvršio dela iz čl. 289 st. 1
+i čl. 228 KZ. Sud je smatrao da je agrivarajuća okolnost činjenica što je 
+okrivljeni u vremenu izvršavanja dela bio na poziciji nadređenog, što je dalo 
+dodatnu težinu delima. Sudu nije poznato da je okrivljeni prethodno osuđivan.
+
+PRESUDA:
+Okrivljeni M.J. je KRIV što je izvršio dela iz čl. 228 st. 1 i čl. 289 st. 1 
+Krivičnog zakonika i zato ga sud osud̄uje na:
+
+- 3 meseca zatvora (uslovno oslobođen na period od 2 godine)
+- Novčanu kaznu od 1.000 EUR
+- Obaveza nadoknađivanja štete oštećenoj strani u iznosu od 2.000 EUR
+- Zabrana približavanja oštećenoj u radiusu od 100 metara tokom 6 meseci
+
+Presuda je konačna.
+
+Podgorica, 16.05.2023.
+Sudija: Dr. Veljko Jovanović
+---
+
+TO EXTRACT FROM THIS:
+
+Case ID: K 22/2022
+Court: Osnovni sud u Podgorici
+Verdict Date: 16.05.2023
+Judge: Dr. Veljko Jovanović
+
+Perpetrator: M.J., rodi 1975., position: Rukovodilac odeljenja (Manager)
+Victim: A.P., position: Pomoćnica (Assistant)
+Workplace: Privredna društva "XYZ" (Private company)
+
+Perpetrator Type: Supervisor
+Duration: 3 months (januar-mart 2022)
+Harassment Type: Verbal abuse, threats, intimidation, work exclusion
+Power Dynamic: Superior-subordinate
+
+Articles Violated: 
+  - Article 289 st. 1 KZ (Bodily Injury)
+  - Article 228 KZ (Threatening/Humiliating)
+
+Aggravating Factors: Perpetrator was in position of authority
+
+Sentence:
+  - Prison: 3 months (conditional, suspended 2 years)
+  - Fine: 1,000 EUR
+  - Compensation to victim: 2,000 EUR
+  - Restraining order: 100m radius, 6 months
+
+Result: GUILTY
+
+================================================================================
+NOW YOU'RE READY!
+================================================================================
+
+Use this guide for each of the 13 cases. You can fill them in using the
+MOBBING_CASES_DATA.txt template, then enter the data into case_processor.py
+to generate CSV and JSON exports for the CBR system.
+
+Questions? Review the guide section that matches your question!
+

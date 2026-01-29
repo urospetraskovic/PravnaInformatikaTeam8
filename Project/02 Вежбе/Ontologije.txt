@@ -1,0 +1,7 @@
+Ontologije
+
+Zadaci:
+
+1. Preuzeti alat Protégé sa linka: https://protege.stanford.edu/
+2. Kreirati ontologiju koja formalno modeluje strukturu zakona.
+3. Kreirati ontologiju koja predstavlja bazu znanja za sve relevantne metapodatke sudskih presuda.
