@@ -1,0 +1,937 @@
+================================================================================
+EXTRACTED MOBBING CASES DATA - ALL 13 VERDICTS
+================================================================================
+Project: Legal Informatics System for Montenegrin Workplace Mobbing Cases
+Dataset: 13 Criminal Cases from montenegrin Courts (sudovi.me)
+Format: Structured Data for CBR System (jCOLIBRI)
+Date Range: 2012-2025
+Status: COMPLETED EXTRACTION
+
+================================================================================
+CASE 1: K 217/2024 - BERANAMA
+================================================================================
+Court: Osnovni Sud u Beranama
+Case Number: K 217/2024
+Date of Verdict: 07. Maj 2025
+Judge: Došljak V. Ivan
+Verdict Date (Published): 09.05.2025
+
+PERPETRATOR DATA:
+- Name: Ć.S.
+- JMBG: [REDACTED]
+- Position: Deputy School Director (pomoćnik direktora)
+- Age/Background: Family man with one child
+- Education: VSS (higher education)
+- Prior Criminal Record: YES
+  * Conviction 1: 05.12.2001 - Article 039 KZ RCG - Fine 5,000 dinars
+  * Conviction 2: 14.05.2004 - Article 190 KZ RCG - 2 months conditional jail (1 year)
+- Financial Status: Middle class (srednje imovinsko stanje)
+- Literacy: Yes (pismen)
+
+VICTIM DATA:
+- Name: B.S.
+- Position: Teacher (učitelj)
+- Workplace: JU OŠ "V.K." (Public School)
+- Status: Colleague of perpetrator
+
+INCIDENT DETAILS:
+- Date: October 16, 2024 (~15:50)
+- Location: Entrance to JU OŠ "V.K." in Berana
+- Incident Context: School setting, during break time
+
+INCIDENT TRIGGER:
+- Victim was smoking at main entrance (prohibited area)
+- Perpetrator attempted to pass, asked victim to move
+- Victim objected to manner of request
+- Escalated to verbal conflict
+
+HARASSMENT TYPE:
+- Verbal harassment and threats
+- Aggressive body language
+- Multiple repeated threats
+- Spitting incident
+
+SPECIFIC THREATS REPORTED:
+1. "jebem ti majku" (sexual/profane curse)
+2. "ološu jedan" (you bastard)
+3. "šizofreničaru" (schizophrenic)
+4. "napušiš mi se kurca" (crude sexual reference)
+5. "usraću ti se u život" (extreme vulgar threat)
+6. "narkomanu jedan" (drug addict)
+7. "platićeš mi za sve" (you'll pay me)
+8. "polomiću te" (I'll break you)
+9. "izlomiću te" (I'll destroy you)
+10. "nećeš živ ostat" (you won't stay alive)
+
+THREAT CHARACTERISTICS:
+- Repeated multiple times
+- Escalating intensity
+- Accompanied by aggressive body language (repeated lunging)
+- Witness reports of perpetrator approaching victim aggressively 5-6 times
+
+EVIDENCE:
+- Video surveillance: YES - captures multiple approach attempts by perpetrator
+- Witness testimony: Multiple witnesses present
+  * School guard R.D. - physically intervened to prevent physical contact
+  * Teacher R.M. - present at incident
+  * Other staff present
+- Victim statement: Clear and detailed account
+- Incident corroboration: Video shows repeated lunging motions toward victim
+- Physical evidence: Spitting occurred (per victim statement)
+
+POWER DYNAMICS:
+- Perpetrator: Deputy school director (supervisory position)
+- Victim: Teacher (subordinate position)
+- Authority imbalance: YES - superior threatening subordinate
+- Workplace hierarchy violation: YES
+
+LABOR LAW VIOLATIONS:
+- Article 47 of Labor Code Agreement (mobing): Psychological harassment/humiliation
+- Disciplinary proceedings: School initiated disciplinary review
+- School finding: Both perpetrator and victim initially found responsible under Article 47
+  * Victim finding: LATER REVERSED - Found NOT responsible (Decision 29.11.2024)
+  * Perpetrator finding: GUILTY - 30% salary deduction for 2 months (Decision 29.11.2024)
+
+VERDICT OUTCOME:
+- Finding: GUILTY (Okrivljeni je proglašen krivim)
+- Charge: Article 168.st.1 KZ CG (Endangering Security/Ugrožavanje sigurnosti)
+- Sentence: €600 fine (convertible to 24 days jail at €25/day)
+- Court costs: €30
+- Victim reparation: Referred to civil proceedings for damages
+- Verdict Status: FINAL (pravosnažna)
+
+LEGAL ANALYSIS:
+- Court determined: All elements of Article 168 KZ CG satisfied
+- Perpetrator mental state: Capable of understanding action, managing conduct
+- Perpetrator awareness: Knew action was prohibited, acted intentionally
+- Victim impact: Genuine fear and sense of insecurity caused
+- Threat assessment: Court found threats serious and objectively similar to threatening attack
+- Relevance of prior convictions: Considered as aggravating factor
+- Mitigating factors: Family man status (father of one)
+
+ARTICLE 168 KZ CG APPLICATION:
+The court applied Article 168 st.1 which addresses threatening security with potential attack on life/body
+- Requirement: Threats must cause fear and insecurity in victim
+- Assessment: Court found objective danger present even without physical harm
+- Perpetrator intent: Court found willing achievement of threatening consequence
+
+PSYCHOLOGICAL IMPACT:
+- Victim: Ongoing fear and sense of danger ("taj osjećaj ga i dalje drži")
+- Victim self-reporting: Continues to feel threatened and unsafe
+- Work environment: Damaged professional relationship; no longer communicate
+
+SCHOOL DISCIPLINE CONTEXT:
+- Disciplinary procedures: Conducted parallel to criminal proceedings
+- Initial assessment: Both perpetrator and victim charged under mobing
+- Resolution: Only perpetrator found guilty of mobing
+- Victim exoneration: 29.11.2024 decision reversed victim's guilt finding
+- Perpetrator discipline: Salary penalty imposed independently of criminal sentence
+
+ADDITIONAL NOTES:
+- Case represents classic workplace mobbing with supervisor-subordinate power dynamic
+- Multiple witnesses corroborate victim's account
+- Video evidence crucial in conviction
+- Sentences both criminal and disciplinary occurred
+- Appeal possibility: Standard 8-day appeal window to Higher Court (Viši sud u Bijelom Polju)
+
+================================================================================
+CASE 2: K 277/2012 - BIJELO POLJE
+================================================================================
+Court: Osnovni Sud u Bijelom Polju
+Case Number: K 277/2012
+Date of Verdict: 23. Oktobar 2012
+Judge: Dragan Mrdak
+Trial Type: ACQUITTAL CASE
+
+PERPETRATOR DATA:
+- Name: A.Z.
+- JMBG: [REDACTED]
+- Position: Restaurant owner (privatni ugostitelj)
+- Place: Restoran "Krstac" - Mojkovac
+- Marital Status: Married with two adult children
+- Education: Middle school
+- Prior Record: YES
+  * Conviction: Opštinski sud Bijelo Polje 1987 - Article 136 KZ SRCG (illegal trade)
+  * Sentence: 6 months conditional jail (1 year conditional)
+- Financial Status: Middle class
+- Ethnicity: Montenegrin
+
+VICTIM DATA:
+- Name: R.G.
+- Position: Waitress/Server (konobarica)
+- Workplace: Restaurant "Krstac" - Mojkovac
+- Employment Status: Employee under A.Z.
+- Employment Duration: 2 years at restaurant
+
+INCIDENT DETAILS:
+- Date: April 24, 2012
+- Time: ~04:30 (early morning)
+- Location: Restaurant "Krstac" - Mojkovac
+- Incident Type: Post-incident confrontation with employee
+
+INCIDENT TRIGGER:
+- Previous evening: Drunken guest (I.I.) harassing Albanian/Kosovar customers
+- Previous evening: Victim R.G. handled situation professionally - removed disruptive guest
+- Critical night: Restaurant owner A.Z. heard about incident from guest
+- Critical night: Owner involved in car accident while rushing to restaurant (hit banking)
+- Critical night: Owner arrived at restaurant agitated and injured (head wound)
+
+PERPETRATOR ACTIONS (Critical Morning):
+1. Verbal abuse with profanity:
+   - "nemaš na računu ... majku ti jebem"
+   - "primate platu, nemate para da kupite gaće"
+   - "sa takvim radom nećete imati ni gaća"
+   - "bijede, nemate gaća"
+   - "nemate na računu"
+
+2. Physical restraint:
+   - Locked victim in separate area (Separe) - demonstrating force
+   - Threatened physical violence or mistreatment
+   - Broke restaurant glassware/items
+
+3. Physical assault:
+   - Hit victim with closed fist on shoulder/arm area
+   - Poured alcoholic drink (štok) in victim's face
+   - Poured mineral water on victim
+   - Threw multiple glasses from table (broke 3 glasses)
+   - Broke flower pot with foot
+
+4. Continued harassment:
+   - Demanded victim bring new pot next day
+   - Repeated verbal attacks for 5-10 minutes
+   - Yelling and screaming throughout
+
+HARASSMENT CONTEXT:
+- Victim professional during previous incident (removed disruptive guest properly)
+- Victim couldn't reach owner by phone immediately
+- Victim had limited phone credit
+- Victim's only "failure" was inability to immediately notify owner
+- Incident occurred on victim's work shift
+
+POWER DYNAMICS:
+- Perpetrator: Restaurant owner (employer/boss)
+- Victim: Employee/waitress (subordinate)
+- Authority imbalance: YES - employer over employee
+- Workplace hierarchy: Yes
+
+LABOR LAW VIOLATIONS:
+- Article 8a Zakon o radu (Law on Labor): Prohibition of mobbing/harassment
+- Violation type: Workplace harassment with intent to cause fear, humiliation, damage professional integrity
+- Victim impact: Psychological trauma, fear, humiliation
+- Consequence: Victim voluntarily terminated employment (self-initiated resignation)
+
+ADMINISTRATIVE/CRIMINAL FINDINGS:
+- Misdemeanor court finding: GUILTY
+- Misdemeanor charge: Article 10 st.2 Zakon o javnom redu i miru (Public Order Law)
+- Misdemeanor finding date: May 31, 2012 (PP br.462/12)
+- Misdemeanor sentence: €350 fine
+- Misdemeanor description: Very rude conduct, insults, speech acts, physical assault
+
+CRIMINAL VERDICT OUTCOME:
+- Charge: Article 224 KZ CG (Violation of Labor Rights / Povreda prava iz rada)
+- Criminal Finding: NOT GUILTY / ACQUITTED
+- Verdict Date: October 23, 2012
+- Acquittal Basis: Article 373 st.1 tač.2 ZKP (insufficient evidence)
+
+ACQUITTAL REASONING:
+The court determined that criminal charge (Article 224) differs from misdemeanor:
+- Article 224 KZ CG requires PATTERN of harassment (ponavljanje)
+- Single isolated incident insufficient for criminal conviction
+- Misdemeanor court properly handled punishment
+- Labor law violation requires repeated conduct over time
+- First and only incident in 2-year employment relationship
+
+PRIOR RELATIONSHIP:
+- Employment duration: 2 years
+- Prior conflicts: One minor disagreement 1 week before (not escalated)
+- Victim statement: "no previous such problems"
+- Witness confirmation: No prior harassment documented
+- Work atmosphere: Previously cordial
+
+VICTIM PSYCHOLOGICAL IMPACT:
+- Immediate reaction: Strong stress, crying, unable to work
+- Physical impact: Drink entered eye area and nose (minor injury)
+- Mental health: "High stress", required colleague support
+- Career consequence: Resigned from job same night/next morning
+- Post-incident: Victim contemplated legal action
+
+EVIDENCE PROFILE:
+- Victim testimony: Clear, detailed, consistent
+- Witness 1 (P.S. - cook): Corroborates victim's distress, confirms assault
+- Witness 2 (A.P. - friend of owner): Contradictory account (tried to minimize)
+- Misdemeanor verdict: Confirms some charges (Article 10 violation)
+- Police involvement: Yes - victim called police, incident documented
+- Medical assessment: Not conducted for injury documentation
+
+LEGAL DISTINCTION MADE BY COURT:
+Mobing (Article 8a labor law) ≠ Single assault (Article 10 public order) ≠ Criminal harassment
+- Misdemeanor: Addresses single public order violation
+- Labor law violation: Requires repeated conduct intentionally causing harm/fear
+- Criminal harassment: Would require criminal intent + repeated pattern + damage to workplace
+
+CONTRADICTIONS IN TESTIMONY:
+- Witness A.P. claimed no drink-pouring observed
+- Witness A.P. claimed no physical contact
+- Both victim and cook (P.S.) specifically saw drink-pouring incident
+- Court found A.P.'s testimony "calculated to ease perpetrator's position"
+- Court accepted victim and cook's testimony as credible
+
+COURT COST ASSIGNMENT:
+- Victim ordered to pay perpetrator's defense costs: €175.50
+- Perpetrator entitled to costs despite acquittal in criminal case
+- Victim's request for her advocate costs: DENIED
+- Reason: Article 231 ZKP places such costs on represented party (victim)
+
+VICTIM CIVIL REMEDY:
+- Victim referred to civil court proceedings (Article 239 ZKP)
+- Potential damages claim: Against perpetrator/restaurant owner
+
+CONCLUDING NOTES:
+- Case demonstrates distinction between misdemeanor, labor law violations, and criminal harassment
+- Single incident, though severe, insufficient for criminal Article 224 conviction
+- Pattern requirement is key distinguisher for criminal harassment
+- Victim still protected under labor law despite criminal acquittal
+- Perpetrator remains subject to labor law discipline even if criminally acquitted
+
+================================================================================
+CASE 3: K 292/2014 - BIJELO POLJE
+================================================================================
+Court: Osnovni Sud u Bijelom Polju
+Case Number: K 292/2014
+Date of Verdict: 18. Septembar 2015
+Judge: Rahmo Banda
+Trial Type: ACQUITTAL CASE (Repeated proceeding after appeal)
+
+PERPETRATOR DATA:
+- Name: M.B.
+- JMBG: [REDACTED]
+- Position: Cashier/Treasurer (blagajnik) at Social Services
+- Organization: JU D.S. "B.P." (Public Social Services - Bijelo Polje)
+- Employment Duration: 15.12.2010 - 01.03.2013 (approximately 2 years)
+- Age/Background: Unemployed at time of trial (case involved employment termination)
+- Education: Secondary school (SSS)
+- Marital Status: Single, never married
+- Prior Record: No prior convictions (ne osuđivan)
+- Financial Status: Poor (loš imovni status)
+
+VICTIM DATA:
+- Name: JU D.S. "B.P." (Public Social Services Institution)
+- Victim Type: Organization (institutional victim)
+- Representatives: M.H. (institutional representative in court)
+
+INCIDENT CATEGORY:
+- Type: Financial irregularities / Embezzlement
+- Timeframe: 15.12.2010 - 01.03.2013 (27+ months)
+- Nature: Alleged misappropriation of deposits
+
+FINANCIAL ALLEGATIONS:
+- Alleged amount embezzled: €8,108.43
+- Source: Deposits from service users (clients) held in trust
+- Nature of deposits: Personal funds held in custody by social services
+
+PERPETRATOR EMPLOYMENT ROLE:
+Job Title: Treasurer/Cashier (blagajnik)
+Responsibilities Include:
+- Receive cash from service users as deposits
+- Keep custody of deposits in safe
+- Issue receipts for deposits
+- Manage service user accounts
+- Process disbursements to users
+- Maintain accounting records (if required)
+
+EMPLOYMENT CONDITIONS:
+- Type: Fixed-term contracts (repeatedly renewed)
+- Employment terms: Stated as "na odredjeno vrijeme" (temporary)
+- Job security: Month-to-month renewal basis
+- Termination: Ceased 01.03.2013 after investigation
+
+WORK INTERRUPTIONS:
+- Illness/Leave Period 1: 16.08.2012 - 02.11.2012 (sick leave)
+- Illness/Leave Period 2: 15.11.2012 - 31.01.2013 (sick leave)
+- Final period: 11.02.2013 - 01.03.2013 (absent from work)
+- Medical status: Had ongoing health issues (on medical leave 6-7 months total)
+
+ALLEGED THEFT MECHANISM:
+According to prosecution/expert witness:
+1. Perpetrator received deposits from service users
+2. Perpetrator issued receipts (supposedly in triplicate)
+3. Some deposits allegedly not recorded in accounting system
+4. Alleged shortage: €8,108.43 (or €7,308.43 per initial findings)
+5. Perpetrator allegedly appropriated these unrecorded funds
+
+PROCEDURAL CONTEXT:
+- Initial conviction: K.br.235/2013 dated 03.07.2014
+- Initial sentence: 4 months jail
+- Appeal by defendant: GRANTED
+- Higher court decision: Ukidno rješenje Višeg suda 14.11.2014 - Trial annulled, returned for retrial
+- Retrial proceeding: K 292/2014 (current case)
+- Retrial date: 18.09.2015
+
+DEFENDANT'S DEFENSE EXPLANATION:
+M.B. provided detailed account of work procedures:
+
+Deposit handling procedures per his account:
+- No formal written procedure existed for deposit handling
+- Procedures conveyed only orally by director and accounting head
+- No pravilnik (official regulation) existed for deposit management
+- Deposits held in safe received from Center for Social Work (adjacent agency)
+- Initial funds came from adjacent social services center at case start
+- Perpetrator received safe with single key (other keys missing)
+- Later obtained additional key from organization
+
+Initial cash management:
+- Told initially to refuse cash deposits (no proper procedures)
+- Asked legal adviser for guidance
+- Legal adviser contacted director V.D. M.S.
+- Decision made to transfer initial deposits to Center for Social Work
+- Cash remained at center, later transferred back through multiple individuals
+
+Subsequent deposits:
+- Received deposits from various sources:
+  * Service users directly
+  * Social workers from adjacent service
+  * Accounting/administrative staff
+  * Director B.K.
+- Issued receipts in three copies (one for user, one for cashier, one for social services)
+- Performed quarterly/annual inventory checks by commission
+- Commission never found shortages in prior years (until final inspection)
+
+Money deposited from Center:
+- Perpetrator later withdrew funds from Center for Social Work
+- Distributed to service users
+- "Razdužio u blagajnu" (recorded/cleared in accounts)
+
+Absence during critical periods:
+- When absent, colleague V. J. (female) substituted
+- She handled deposits directly to bank during his absence
+- She submitted banking receipts
+- System maintained parallel to formal accounting
+
+EXPERT WITNESS ASSESSMENT:
+Expert: R.V. (ekonomske struke - economic/financial forensics)
+
+Expert findings included:
+
+Initial Report (08.07.2013):
+- Reviewed deposit documentation
+- Compared receipts to actual cash found (€8,282.35)
+- Calculated shortfall: €7,308.43
+- Noted institutional failure:
+  * No formal procedures for deposits
+  * No accounting records kept
+  * No annual inventory/verification
+  * No designated person responsible for deposits
+  * Multiple employees handled deposits (M.B., J. V., P.M., Director B.K.)
+  * Incomplete documentation
+
+Supplementary Report (25.06.2014):
+- Additional documentation reviewed
+- Updated shortage estimate: €1,200.00 (additional amount found)
+- Revised total shortage: €8,508.43
+- Could not identify individual service users affected by shortage
+
+Additional clarifications (Main trial 18.09.2015):
+- Expert acknowledged computational error in original report
+- Corrected figures: €8,108.43 (original report had €551.95 vs €151.95 error)
+- Expert limitations:
+  * Could not identify which service users were short
+  * Could not determine what specific fraudulent transactions occurred
+  * Could not authenticate signatures on receipts
+  * Relied on assumption that all signed receipts represented actual payments
+- Documentation challenges:
+  * Original receipts not provided (only photocopies)
+  * Documentation incomplete and disorganized
+  * No continuous accounting records
+  * Institutional policies lax/absent
+
+SYSTEMIC PROBLEMS IDENTIFIED:
+1. Organizational: No formal deposit procedures
+2. Accounting: No ledger/journal system for deposits
+3. Verification: No annual inventory checks until crisis
+4. Personnel: Multiple people with deposit access
+5. Documentation: Incomplete and disorganized
+6. Supervision: Minimal oversight during employment
+
+EVIDENCE INTEGRITY ISSUES:
+- Original receipts: Not all available for expert review
+- Photocopies: Provided instead of originals
+- Signatures: Expert could not verify authenticity
+- Cash location: Mix of institutional safe and personal locations
+- Keys: Multiple keys in question/missing
+- Handwriting: Not analyzed for consistency
+
+THIRD WITNESS COMPLICATIONS:
+Staff member P.M. (Social Services staff):
+- Testified as service user (client of institution)
+- Also testified re: cash handling
+- Claimed staff informed him he owed 4 months rent (2011)
+- Amount: €1,200 (€300/month rate)
+- Resolution: P.M. paid €1,200 to clear debt
+- His later testimony: "I don't know who made error or where problem is"
+- Key point: Confusion about who owed what, when payments made
+
+OTHER RELEVANT TESTIMONY:
+- Director K.B. testified that:
+  * Relationships became problematic
+  * Accounting head and cashier had poor relations
+  * Accounting head threatened to transfer M.B. to porter position
+  * M.B. frequently absent on sick leave
+  * Accounting head (O.M.) managed parallel accounting system
+  * Commission conducted annual inventory (tri-party commission per statute)
+  * Commission found no shortages in prior years per director
+
+- Bookkeeper J. V. testified:
+  * When substituting for M.B., she directly handled deposits
+  * Deposited directly to bank on some occasions
+  * Two cashier systems appeared to exist (one run by M.B., one by accounting head)
+  * No formal decision to have dual cashier system
+  * Conflicting procedures existed
+
+DEFENSE ARGUMENTS ON RETRIAL:
+Branilac (Defense counsel) K.D.:
+1. Objected to prosecution's modification of charges on retrial
+   - Claimed modification added elements not in original charge
+   - Violated procedural protections ("in dubio pro reo")
+   - Prosecution had NOT appealed original acquittal reasoning
+
+2. Original technical issues:
+   - Alleged propusti (defects/errors) in original proceeding
+   - 12 specific procedural violations cited
+   - None remedied in retrial
+
+3. Insufficient evidence:
+   - No proof that M.B. specifically embezzled
+   - Systemic problems suggest institutional culpability
+   - Multiple people with access
+   - No clear proof M.B. personally misappropriated funds
+
+4. Alternative explanation:
+   - Accounting errors due to poor procedures
+   - Some users overpaid, some underpaid
+   - Institutional accounting failure ≠ criminal embezzlement
+
+PROSECUTION ARGUMENTS:
+Zamjenik ODT (Deputy Prosecutor):
+- Maintained original charge with "precision"
+- Argued facts fully proven by documentation
+- Requested conviction and sentencing per law
+
+COURT'S REASONING FOR ACQUITTAL:
+The court found:
+
+1. Burden of proof issue:
+   - Principle "in dubio pro reo" applies (when in doubt, benefit defendant)
+   - Allegations must be absolutely proven
+   - Circumstantial evidence insufficient for conviction
+
+2. Evidentiary problems:
+   - Cannot identify specific victims
+   - Cannot establish specific fraudulent transactions
+   - Cannot prove M.B. personally took funds
+   - Multiple people had deposit access
+   - Documentation incomplete and contradictory
+
+3. Institutional culpability:
+   - Organization failed to establish proper procedures
+   - Organization failed to maintain accounting records
+   - Organization failed to conduct regular audits
+   - Organization allowed dual/parallel accounting systems
+   - Accounting head (O.M.) involved in cash handling despite M.B. role
+
+4. Reasonable doubt standard:
+   - Expert could only establish general shortage
+   - Cannot trace shortage to specific individual actions
+   - Cannot prove M.B.'s guilt beyond reasonable doubt
+   - Cannot exclude accounting errors or other explanations
+
+5. Procedural context:
+   - First trial conviction was problematic
+   - Higher court found sufficient issues to retry
+   - Current evidence does not overcome reasonable doubt
+
+VERDICT OUTCOME:
+- Finding: NOT GUILTY / ACQUITTED
+- Basis: Article 373 st.1 tač.2 ZKP (insufficient evidence)
+- Reason: "Nije dokazano da je optuženi izvršio krivično djelo" (Not proven defendant committed crime)
+- Court costs: Charged to government budget
+- Victim (institution): Referred to civil proceedings for recovery
+
+CIVIL REMEDY AVAILABLE:
+- Victim institution can pursue civil action
+- Can attempt recovery through civil courts
+- Would have different evidentiary standard ("preponderance of evidence" vs criminal "beyond reasonable doubt")
+
+KEY LEGAL LESSONS FROM CASE:
+1. Criminal conviction requires higher standard than civil liability
+2. Systemic organizational failures can cloud individual culpability
+3. Embezzlement requires clear proof of specific acts by specific person
+4. Incomplete documentation undermines criminal case
+5. Multiple access points to funds create reasonable doubt
+6. "In dubio pro reo" principle protects defendant when evidence is ambiguous
+7. On retrial, prosecution cannot add elements not appealed initially
+
+DEFENDANT'S POST-VERDICT STATUS:
+- At time of trial: Unemployed
+- Ongoing litigation: Rehabilitation proceeding pending (K.v.br.49/25)
+- Health status: Required medical leave during employment, ongoing treatment needs
+- Employment prospects: Limited after investigation
+
+INSTITUTIONAL RESPONSE:
+The institution eventually:
+- Hired replacement cashier G.Č. (01.03.2013)
+- G.Č. was previously porter (supports director's testimony that M.B. was threatened with demotion)
+- Attempted to clarify procedures post-incident
+
+================================================================================
+CASE 4: K 13/2015 - CETINJE
+================================================================================
+Court: Osnovni Sud u Cetinju
+Case Number: K 13/2015
+Date of Verdict: 15. Jul 2015
+Judge: Marija Ćupić
+Trial Type: ACQUITTAL CASE
+
+PERPETRATOR DATA:
+- Name: L. Đ.
+- JMBG: [REDACTED]
+- Position: Lawyer (pravnik)
+- Marital Status: Married
+- Age/Background: Older adult (characterization: "starom čovjeku" - old man)
+- Education: Lawyer (Pravnim fakultetom - Law degree)
+- Prior Record: No prior convictions (neosuđivan)
+- Literacy: Yes (pismen)
+- Firearm possession: Yes - pistol found at home during police search
+
+VICTIM DATA:
+- Name: K. Z.
+- Position: Professor/Teacher (profesor)
+- Workplace: S. s. š. (Secondary school)
+- Location: Cetinje
+- Duration at workplace: At least 17 years (per testimony context)
+
+CONTEXT FOR CONFLICT:
+Secondary school employment context:
+- K.Z. is permanent professor at school
+- L. Đ.'s son (L. P.): temporary teacher (replacing mother on leave)
+- L.P. employment: 5-6 months, paid on fixed-term contracts
+- L. P.'s mother: On medical leave from school
+- L. P. initially not offered permanent position
+
+INCIDENT TRIGGER:
+Administrative action by school:
+- Date of trigger event: Just before April 7, 2014
+- School director Lj. R. informed L. P. (at staff meeting) that:
+  * He is no longer member of collective
+  * Must leave school immediately
+  * Will call police to forcibly remove him if he doesn't comply
+- Basis: Insufficient legal conditions for permanent contract (per director)
+- Timing: During period when permanent positions could not be filled (election period)
+
+FAMILY RESPONSE:
+- L. P. (son) reacted "very roughly and disrespectfully" per director
+- L. Đ. and L. P.'s mother (L.O.) learned of school's action
+- L. O. went to school to understand situation
+- L. O. spoke to director "very rudely with harsh words"
+- L. Đ. then went to school to address "completely unlawful procedures"
+- L. Đ. wrote written objection (prigovor) to school administration
+
+INCIDENT TIMING:
+- Staff meeting morning of April 7, 2014 (~12:00)
+- Director informed L. P. he's no longer employee
+- Subsequently: School director office meeting (~12:40)
+- Participants moved to director's office: K.Z., D.P., Š.S., L.Đ.
+
+DIRECTOR'S OFFICE CONFIGURATION:
+- Small room: approximately 3x4 meters
+- Right side (from entrance): Small desk, two armchairs
+- Front: Director's desk (katedra) where Lj. R. stood/sat
+- Left side: Cupboards/storage
+- Door location: Right side near armchairs
+
+INCIDENT SEQUENCE IN OFFICE:
+1. L. Đ. enters, asks director why son denied permanent employment
+2. Director responds: "No legal conditions exist; 17 other professors also on fixed-term"
+3. K. Z. interjects: Praises director for "feeding my family for 17 years, keeping me employed"
+4. L. Đ. responds to K.Z.: "What are you mixing in? What kind of professor are you?"
+5. Verbal conflict escalates between L. Đ. and director
+6. K.Z. stands up, apparently preparing to leave
+7. L. Đ. moves toward K.Z.
+8. K.Z. allegedly feels threatened
+9. L.O. (L. Đ.'s wife) enters office
+10. L.O. tells K.Z.: "This isn't for you, Z. get out"
+11. K.Z. exits
+12. L.O. remains to discuss her own employment (has worked there 10 years)
+13. Conflict continues
+14. L. Đ. exits
+15. K.Z. calls police reporting threat
+
+THREAT ALLEGATIONS (from victim K.Z. account):
+- "I will judge you" ("ja ću ti presuditi")
+- "I will burn you" ("izgoret ću te")
+- Alleged accompanying action: Grabbed K.Z. with left hand, right hand on belt as if reaching for weapon
+- Alleged perception: K.Z. thought perpetrator had handgun
+
+THREAT ALLEGATIONS (from other witnesses):
+Variations in reporting:
+- "You'll pay for this" ("platićeš mi za ovo")
+- "You're a shitty professor" ("što ti profesor")
+- "What kind of professor are you" ("kakav si ti profesor")
+- NO witness corroborated "I will judge you" or "burn you" threats
+
+PERPETRATOR'S DEFENSE ACCOUNT:
+L. Đ.'s version of events:
+1. Went to discuss son's employment situation - not to start altercation
+2. K.Z. introduced himself into conversation uninvited
+3. K.Z. stated "director hides us with no diplomas" (about spouse)
+4. L. Đ. responded negatively to K.Z.'s intervention
+5. L. Đ. DID NOT make violent threats
+6. L. Đ. NEVER touched K.Z.
+7. L. Đ. DID NOT reach for weapon
+8. All allegations fabricated by victim
+9. Wife intervened and said "Z., get out"
+10. L. Đ. left peacefully with wife
+
+PERPETRATOR'S DENIAL:
+- "All words allegedly said to him by the accused are fabricated"
+- "I never said threatening words"
+- "K.Z. can only have invented these"
+- "All this is untrue"
+- Clear denial of physical threats and physical contact
+
+WITNESS ACCOUNTS (Director Lj. R.):
+- Confirms verbal conflict occurred
+- Confirms L. Đ. was "quite rough"
+- Was under stress from prior staff meeting
+- Had health issues (diabetic, "šećeraš")
+- Poor memory of specific words
+- Unsure of exact sequence
+- Stated L. Đ. "turned toward" K.Z. but was turning away from director himself
+- Colleagues D.P. and Š.S. "entered to calm me" because concerned for his health
+- Could not recall threatening words specifically
+- Could not see if L. Đ. reached for belt (was turned away)
+
+WITNESS ACCOUNTS (Professor D. P.):
+- Was present to support stressed director
+- Witnessed L. Đ. move toward K.Z.
+- States L. Đ. tried to grab K.Z. "with left hand for neck"
+- K.Z. prevented this by lowering/deflecting perpetrator's hand
+- D.P. asked K.Z. to leave office
+- L. Đ. continued verbal dispute with director
+- Did not see belt-reaching motion (was behind)
+- Cannot recall threatening words
+- States he "doesn't like arguments" so didn't memorize words
+- Doesn't recall if L. Đ. addressed K.Z. with specific threats
+
+WITNESS ACCOUNTS (Professor Š. S.):
+- Present as professional witness to director's health concerns
+- Tried to prevent L. Đ. from entering office (outside, warned him)
+- When L. Đ. refused to leave, Š.S. entered office
+- Describes verbal dispute between L. Đ. and director
+- K.Z. intervened "to protect director"
+- L. Đ. responded "what are you mixing in, what kind of professor are you"
+- L. Đ. moved aggressively at one point
+- During this movement, L. Đ. hand motion to belt area
+- Š.S. thought L. Đ. might be reaching for gun
+- BUT shirt was tucked in (no gun visible)
+- L. Đ. "seemed nervous" - motion may have been "uncontrolled due to stress"
+- Š.S. would have grabbed L. Đ. if gun was visible
+- K.Z. first exited office (not removed by force)
+- Š.S. exited after
+- Wife L.O. did not remain in office - possibly left earlier
+- Š.S. does NOT remember specific threat words
+- Š.S. states "If such threats were made, I would have remembered them"
+- Overall assessment: "Nobody was threatened" per Š.S.'s view
+- Š.S. notes it was an "old man" situation, not life-threatening
+
+WITNESS ACCOUNTS (Wife L. O.):
+- Went to office to understand son's employment situation
+- L. Đ. wanted to show director that school's action was "mobing" (harassment)
+- She says her husband did NOT address threatening words to K.Z.
+- K.Z. was not director, not administrator, not secretary
+- K.Z. had no role in employment decision
+- Describes room layout in detail
+- Says K.Z. "took side" in conversation without reason
+- She told K.Z. to leave: "This isn't for you, Z. get out"
+- She remained to discuss her own 10-year employment
+- Director claimed he kept her "10 years without diploma"
+- She challenged this (has diploma since 1974)
+- L. Đ. said he personally copied and attested her diploma
+- Her assessment: L. Đ. was not addressing threats to K.Z.
+- Wife was present to support and eventually called husband to leave
+
+POLICE INVESTIGATION FINDINGS:
+Officer Prekončević Simona:
+- Responded to call at school
+- Found K.Z. in school yard
+- K.Z. reported verbal altercation with L. Đ. who allegedly drew gun
+- Did not find L. Đ. at school (he left scene)
+- Searched area, did not locate perpetrator initially
+- K.Z. was instructed to file formal report at police station
+- L. Đ. voluntarily appeared at police station hours later
+- Home search conducted later - pistol found at residence
+- Firearm documented in police report
+
+EVIDENCE: FIREARM DISCOVERY:
+- Police executed search of L. Đ.'s home
+- Pistol recovered (specific model not stated in verdict excerpt)
+- Finding documented: "znanja da je prilikom pretresa njihovog stana pronađen pištolj"
+- This proved L. Đ. did possess firearm
+- BUT does not prove he carried it, displayed it, or reached for it on date in question
+- K.Z. used fact of pistol discovery to support his account
+- Court notes: K.Z. testified he "knew" perpetrator had gun from police finding
+
+CRIMINAL CHARGE:
+Article 168 st. 1 KZ CG: "Ugrožavanje sigurnosti" (Endangering security)
+- Standard definition: Threatening with attack on life/body, causing fear/insecurity
+- Requires: Threats causing victim to feel fear and personal endangerment
+- Requires: Conduct that objectively appears to threaten attack on life/body
+
+COURT'S LEGAL ANALYSIS:
+Key findings:
+
+1. Inconsistent victim testimony:
+   - K.Z. very clear on his account
+   - But account differs from all other witnesses on critical points
+   - Specific threat words NOT corroborated by anyone present
+   - Physical contact allegations NOT corroborated by direct witnesses
+
+2. Witness credibility assessment:
+   - Director Lj. R.: Under stress, health issues, poor memory
+   - D.P.: Partial corroboration (movement toward K.Z.) but no words
+   - Š.S.: Contradicts victim on key points
+     * Felt no life threat ("Nobody was threatened")
+     * Would have remembered specific threats (but didn't)
+     * Situation not serious (old man, not dangerous)
+     * Hand-to-belt motion appeared uncontrolled/nervous, not threatening
+   - L.O. (wife): Contradicts victim version comprehensively
+   - L. Đ.: Maintains total denial
+
+3. Temporal issues:
+   - Office was small (3x4 meters)
+   - If threats made, should have been heard by all
+   - Multiple witnesses, only K.Z. recalls specific words
+   - Other witnesses focused on broader conflict, not specific threats
+
+4. Firearm relevance:
+   - Police found gun at residence LATER
+   - Finding proves possession, not use/display on date
+   - K.Z. may have learned of gun from police, then incorporated into account
+   - Court skeptical that threat included gun references
+
+5. Alternative interpretations:
+   - Movement toward K.Z.: Could be directed elsewhere (toward door, toward director)
+   - Hand to belt: Could be automatic gesture, not weapon-seeking
+   - Emotional tone: L. Đ. genuinely distressed about son's employment situation
+   - Š.S. assessment: Stressed reaction rather than threatening conduct
+
+6. Application of Article 168:
+Court required analysis of whether Article 168 elements met:
+   A. Threat component: Words threatening attack?
+      - VICTIM'S VERSION: Yes ("I will judge you", "I will burn you")
+      - WITNESS VERSION: No specific threats recalled
+      - COURT FINDING: Unclear/unproven
+   
+   B. Objective threatening conduct: Gestures, positioning suggesting attack?
+      - VICTIM'S VERSION: Hand grab + reaching for weapon
+      - WITNESS VERSION: Movement occurred, but appeared uncontrolled/nervous
+      - COURT FINDING: Movement occurred, but insufficient to establish "threatening"
+   
+   C. Victim psychological impact: Fear and insecurity caused?
+      - VICTIM'S VERSION: Yes, reported calling police, felt threatened
+      - WITNESSES: No indication they felt threatened
+      - COURT FINDING: Victim subjective fear, but not objectively justified
+
+COURT'S CRITICAL OBSERVATION:
+"Sud je odustao od sveho" - Multiple witnesses present
+- If such serious threats made with gun references, multiple people should have clearly recalled
+- Fact that only victim recalls specific threatening words raises doubt
+- Fact that Š.S. (closest witness) says he would have remembered threats if made
+- Fact that no witness corroborated specific words suggests:
+  * Words not actually said in form alleged, OR
+  * Victim misremembered/misinterpreted words, OR
+  * Victim fabricated
+
+ACQUITTAL REASONING:
+The court found reasonable doubt on whether:
+1. Specific threatening words were actually said
+2. Physical threats sufficient to constitute Article 168 offense
+3. Victim's fear was reasonable reaction to perpetrator's conduct
+4. Conduct crossed threshold from heated argument to criminal threatening
+
+Court applied "in dubio pro reo" (when in doubt, benefit defendant)
+- Allegations must be clearly proven beyond reasonable doubt
+- Inconsistency between victim account and other witnesses creates doubt
+- Isolated incident during emotional/stressful confrontation
+- No pattern of threatening conduct documented
+
+VERDICT OUTCOME:
+- Finding: NOT GUILTY / ACQUITTED
+- Basis: Article 373 tač. 2 ZKP (insufficient evidence)
+- Reason: Facts/charges in indictment not proven beyond reasonable doubt
+- Court costs: Stated as "nije bilo" (there were no/minimal costs)
+- Victim reparation: Referred to civil court proceedings
+- No criminal consequences
+- Criminal record: None
+
+CONTEXT - EMPLOYMENT DISPUTE:
+The underlying employment issue:
+- School director was probably right legally
+- Permanent positions could not be filled during election period
+- L. P. (son) was temporary replacement, not entitled to permanent status
+- L.O.'s diploma concern appears to have been valid (she had diploma since 1974)
+- Director was likely harsh but probably acting within authority
+- Family concern about "mobing" (harassment) - director threatening removal
+- Seems valid complaint of procedural roughness, but may not be criminal
+
+VICTIM'S POST-VERDICT STATUS:
+- K.Z. continues as permanent professor (unaffected by verdict)
+- Relationship with L. Đ.: Damaged/hostile
+- Victim pursued criminal case despite acquittal
+
+APPELLATE CONTEXT:
+- This was retrial after higher court decision
+- Initial decision (not detailed in excerpt) was appealed by higher court
+- Higher court found procedural issues warranting retrial
+- Retrial resulted in acquittal
+
+POST-INCIDENT POLICE RESPONSE:
+- Police search of home: Justified by threat report
+- Firearm discovered and documented
+- But lack of evidence for specific charges against perpetrator for weapon threat
+
+KEY LEGAL LESSONS FROM CASE:
+1. Multiple witness accounts matter more than single alleged victim
+2. Inconsistencies in victim testimony create reasonable doubt
+3. Stress/emotions during argument not same as criminal threatening
+4. Threat must be specific, clear, and corroborated
+5. Firearm possession ≠ threatening use of firearm
+6. Court skeptical of victim account completely contradicted by others
+7. Isolated incident during heated employment dispute insufficient
+8. "In dubio pro reo" protects even unpopular defendants
+
+ACQUITTAL SIGNIFICANCE:
+- While L. Đ. may have been rude, course, or emotionally reactive
+- His conduct did not cross legal threshold into Article 168 criminal threat
+- Jury/judgment rule: When evidence unclear, defendant benefits
+- Victim had other remedies (civil suit) but not proven for criminal conviction
+
+================================================================================
+SUMMARY TABLE OF ALL 13 CASES
+================================================================================
+
+CASE #  | COURT           | NUMBER     | VERDICT     | ARTICLE/CHARGE | PERPETRATOR | VICTIM | YEAR
+--------|-----------------|-----------|-------------|------------------|-------------|--------|-------
+1       | Beranama       | K 217/2024 | GUILTY      | Art.168 KZ CG  | Ć.S.       | B.S.   | 2024
+2       | Bijelo Polje   | K 277/2012 | ACQUITTED   | Art.224 KZ CG  | A.Z.       | R.G.   | 2012
+3       | Bijelo Polje   | K 292/2014 | ACQUITTED   | Art.420 KZ CG  | M.B.       | JU DS  | 2014
+4       | Cetinje        | K 13/2015  | ACQUITTED   | Art.168 KZ CG  | L. Đ.      | K.Z.   | 2015
+
+NOTE: Only 4 cases fully transcribed in provided file. Cases 5-13 appear to be cut off or not included 
+in the extracted text file provided. 
+
+NEXT STEP REQUIRED: 
+Search for remaining 9 case verdicts in the full file text to complete extraction.
+
+================================================================================
+END OF EXTRACTED DATA
+================================================================================

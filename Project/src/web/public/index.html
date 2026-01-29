@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montenegrian Legal CBR System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    .app-wrapper {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 320px;
+      background: #fff;
+      border-right: 1px solid #e1e8ed;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .sidebar-header {
+      padding: 20px;
+      background: #1a1f36;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .sidebar-title {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .sidebar-subtitle {
+      font-size: 0.85em;
+      opacity: 0.8;
+    }
+
+    .search-filter {
+      padding: 15px;
+      border-bottom: 1px solid #e1e8ed;
+      flex-shrink: 0;
+    }
+
+    .search-filter label {
+      display: block;
+      font-size: 0.8em;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .search-filter select {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 0.9em;
+      background: white;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .search-filter select:hover {
+      border-color: #2563eb;
+    }
+
+    .search-filter select:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+    }
+
+    .cases-list {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+    }
+
+    .case-item {
+      padding: 12px 15px;
+      border-left: 3px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      background: #f9fafb;
+    }
+
+    .case-item:hover {
+      background: #f0f3f7;
+      border-left-color: #2563eb;
+    }
+
+    .case-item.active {
+      background: #eff6ff;
+      border-left-color: #2563eb;
+    }
+
+    .case-id {
+      font-weight: 600;
+      color: #1f2937;
+      font-size: 0.9em;
+    }
+
+    .case-type {
+      font-size: 0.75em;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    .case-verdict {
+      display: inline-block;
+      font-size: 0.7em;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-top: 4px;
+    }
+
+    .verdict-guilty {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .verdict-acquitted {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .verdict-conditional {
+      background: #fed7aa;
+      color: #92400e;
+    }
+
+    /* Main Content */
+    .main-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+    }
+
+    .top-bar {
+      padding: 20px 30px;
+      background: #fff;
+      border-bottom: 1px solid #e1e8ed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .stats-bar {
+      display: flex;
+      gap: 30px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.8em;
+      font-weight: 700;
+      color: #1f2937;
+    }
+
+    .stat-text {
+      font-size: 0.85em;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    .content-area {
+      flex: 1;
+      overflow-y: auto;
+      padding: 30px;
+    }
+
+    /* Case Detail View */
+    .case-detail {
+      max-width: 100%;
+    }
+
+    .case-detail-header {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e1e8ed;
+    }
+
+    .detail-title {
+      font-size: 2em;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .detail-meta {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95em;
+      color: #6b7280;
+    }
+
+    .meta-badge {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #f3f4f6;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .fields-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field-label {
+      font-size: 0.8em;
+      font-weight: 700;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .field-value {
+      font-size: 1em;
+      color: #1f2937;
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    /* Empty State */
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #9ca3af;
+    }
+
+    .empty-icon {
+      font-size: 3em;
+      margin-bottom: 15px;
+      opacity: 0.5;
+    }
+
+    .empty-text {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .app-wrapper {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 1px solid #e1e8ed;
+      }
+
+      .fields-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">🏛️ Cases</div>
+        <div class="sidebar-subtitle">13 Montenegrian Verdicts</div>
+      </div>
+      <div class="search-filter">
+        <label for="type-filter">Filter by Type</label>
+        <select id="type-filter" onchange="filterByType(this.value)">
+          <option value="">All Cases</option>
+        </select>
+      </div>
+      <div class="cases-list" id="cases-list">
+        <div style="padding: 20px; text-align: center; color: #9ca3af;">Loading cases...</div>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <div class="top-bar">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-value" id="stat-total">13</div>
+            <div class="stat-text">Total Cases</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-guilty">5</div>
+            <div class="stat-text">Guilty</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-acquitted">3</div>
+            <div class="stat-text">Acquitted</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" id="stat-harm">2.56</div>
+            <div class="stat-text">Avg. Harm</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-area" id="content">
+        <div class="empty-state">
+          <div class="empty-icon">📋</div>
+          <div class="empty-text">Select a case to view details</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allCases = [];
+    let displayedCases = [];
+    let selectedCaseId = null;
+    let availableTypes = [];
+
+    // Load all cases
+    async function loadCases() {
+      try {
+        console.log('Loading cases...');
+        const response = await fetch('/api/cases');
+        if (!response.ok) {
+          throw new Error(`API error: ${response.status}`);
+        }
+        allCases = await response.json();
+        displayedCases = [...allCases];
+        console.log(`Loaded ${allCases.length} cases:`, allCases);
+        
+        if (!allCases || allCases.length === 0) {
+          document.getElementById('cases-list').innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">No cases found</div>';
+          return;
+        }
+        
+        // Extract unique case types and populate filter
+        populateTypeFilter();
+        renderCasesList();
+        
+        // Load stats
+        console.log('Loading statistics...');
+        const statsResponse = await fetch('/api/statistics');
+        if (!statsResponse.ok) {
+          throw new Error(`Stats API error: ${statsResponse.status}`);
+        }
+        const stats = await statsResponse.json();
+        console.log('Stats loaded:', stats);
+        
+        document.getElementById('stat-total').textContent = stats.totalCases;
+        document.getElementById('stat-guilty').textContent = stats.guiltyCount;
+        document.getElementById('stat-acquitted').textContent = stats.acquittedCount;
+        document.getElementById('stat-harm').textContent = stats.averageHarm;
+      } catch (error) {
+        console.error('Error loading cases:', error);
+        document.getElementById('cases-list').innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626; font-size: 0.9em;">Error: ${error.message}</div>`;
+      }
+    }
+
+    // Populate type filter dropdown with unique case types
+    function populateTypeFilter() {
+      availableTypes = [...new Set(allCases.map(c => c.type))].sort();
+      const select = document.getElementById('type-filter');
+      
+      availableTypes.forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        const count = allCases.filter(c => c.type === type).length;
+        option.textContent = `${type} (${count})`;
+        select.appendChild(option);
+      });
+    }
+
+    // Filter cases by type
+    async function filterByType(typeValue) {
+      if (!typeValue) {
+        // Show all cases
+        displayedCases = [...allCases];
+      } else {
+        // Filter by selected type
+        try {
+          console.log(`Filtering by type: ${typeValue}`);
+          const response = await fetch(`/api/search/type/${encodeURIComponent(typeValue)}`);
+          if (!response.ok) {
+            throw new Error(`API error: ${response.status}`);
+          }
+          displayedCases = await response.json();
+          console.log(`Found ${displayedCases.length} cases of type: ${typeValue}`);
+        } catch (error) {
+          console.error(`Error filtering by type ${typeValue}:`, error);
+          displayedCases = [];
+        }
+      }
+      
+      renderCasesList();
+    }
+
+    // Render cases list
+    function renderCasesList() {
+      const list = document.getElementById('cases-list');
+      
+      if (!displayedCases || displayedCases.length === 0) {
+        list.innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">No cases found</div>';
+        return;
+      }
+      
+      try {
+        list.innerHTML = displayedCases.map(caseData => {
+          if (!caseData || !caseData.id) {
+            console.warn('Invalid case data:', caseData);
+            return '';
+          }
+          
+          // Handle verdict - could be string or object
+          let verdictText = 'UNKNOWN';
+          if (typeof caseData.verdict === 'string') {
+            verdictText = caseData.verdict;
+          } else if (caseData.verdict && typeof caseData.verdict === 'object') {
+            // Try to extract verdict from object
+            verdictText = caseData.verdict.verdict_final || caseData.verdict.verdict || 'UNKNOWN';
+          }
+          
+          const verdict = String(verdictText || 'unknown').toLowerCase();
+          return `
+            <div class="case-item ${selectedCaseId === caseData.id ? 'active' : ''}" onclick="selectCase('${caseData.id.replace(/'/g, "\\'")}')">
+              <div class="case-id">${caseData.id}</div>
+              <div class="case-type">${caseData.type || 'Unknown'}</div>
+              <div class="case-verdict verdict-${verdict}">
+                ${verdictText}
+              </div>
+            </div>
+          `;
+        }).join('');
+        
+        // Auto-select first case if none selected
+        if (!selectedCaseId && allCases.length > 0 && allCases[0].id) {
+          selectCase(allCases[0].id);
+        }
+      } catch (err) {
+        console.error('Error rendering cases:', err);
+        list.innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626;">Error rendering cases</div>`;
+      }
+    }
+
+    // Select and display case
+    function selectCase(caseId) {
+      selectedCaseId = caseId;
+      renderCasesList();
+      displayCase(caseId);
+    }
+
+    // Display case details
+    function displayCase(caseId) {
+      const caseData = allCases.find(c => c.id === caseId);
+      if (!caseData) return;
+
+      // Handle verdict - could be string or object
+      let verdictText = 'UNKNOWN';
+      if (typeof caseData.verdict === 'string') {
+        verdictText = caseData.verdict;
+      } else if (caseData.verdict && typeof caseData.verdict === 'object') {
+        verdictText = caseData.verdict.verdict_final || caseData.verdict.verdict || 'UNKNOWN';
+      }
+      const verdict = String(verdictText || 'UNKNOWN').toUpperCase();
+      
+      document.getElementById('content').innerHTML = `
+        <div class="case-detail">
+          <div class="case-detail-header">
+            <div class="detail-title">${caseData.id}</div>
+            <div class="detail-meta">
+              <div class="meta-item">
+                <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdict}</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-badge">${caseData.type}</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-badge">${caseData.year}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fields-grid">
+            <div class="field">
+              <div class="field-label">Court</div>
+              <div class="field-value">${caseData.court}</div>
+            </div>
+
+            <div class="field">
+              <div class="field-label">Type of Case</div>
+              <div class="field-value">${caseData.type}</div>
+            </div>
+
+            <div class="field">
+              <div class="field-label">Sentence</div>
+              <div class="field-value">${caseData.sentence}</div>
+            </div>
+
+            <div class="field">
+              <div class="field-label">Harm Level</div>
+              <div class="field-value">${caseData.harm}/5</div>
+            </div>
+
+            <div class="field">
+              <div class="field-label">Year</div>
+              <div class="field-value">${caseData.year}</div>
+            </div>
+
+            <div class="field">
+              <div class="field-label">Defendant</div>
+              <div class="field-value">${caseData.defendant}</div>
+            </div>
+
+            <div class="field" style="grid-column: 1 / -1;">
+              <div class="field-label">Articles Charged</div>
+              <div class="field-value">${Array.isArray(caseData.articles) ? caseData.articles.join(', ') : caseData.articles || 'N/A'}</div>
+            </div>
+
+            <div class="field" style="grid-column: 1 / -1;">
+              <div class="field-label">Evidence</div>
+              <div class="field-value">${caseData.evidence}</div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Initialize
+    loadCases();
+  </script>
+</body>
+</html>
