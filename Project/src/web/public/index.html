@@ -261,6 +261,75 @@
       word-break: break-word;
     }
 
+    /* Sections */
+    .section {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 2px solid #e5e7eb;
+    }
+
+    .section-title {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-icon {
+      font-size: 1.2em;
+    }
+
+    .info-box {
+      background: #f9fafb;
+      border-left: 4px solid #3b82f6;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .info-box.warning {
+      border-left-color: #f59e0b;
+      background: #fffbeb;
+    }
+
+    .info-box-label {
+      font-size: 0.75em;
+      font-weight: 700;
+      color: #6b7280;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .info-box-value {
+      font-size: 0.95em;
+      color: #1f2937;
+      font-weight: 500;
+    }
+
+    .harm-indicator {
+      display: inline-block;
+      font-size: 1.2em;
+      margin-left: 8px;
+    }
+
+    .articles-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .article-tag {
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+
     /* Empty State */
     .empty-state {
       display: flex;
@@ -521,6 +590,183 @@
       }
       const verdict = String(verdictText || 'UNKNOWN').toUpperCase();
       
+      // Helper to render harm level with visual indicators
+      const harmStars = (level) => {
+        return '★'.repeat(level) + '☆'.repeat(5 - level);
+      };
+
+      // Build victim information section
+      const victimSection = caseData.fullData?.victim ? `
+        <div class="section">
+          <div class="section-title"><span class="section-icon">👤</span>Victim Information</div>
+          <div class="fields-grid">
+            <div class="field">
+              <div class="field-label">Victim Name</div>
+              <div class="field-value">${caseData.fullData.victim.name || 'Not specified'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Status</div>
+              <div class="field-value">${caseData.fullData.victim.status || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Relationship to Defendant</div>
+              <div class="field-value">${caseData.fullData.victim.workplace_relationship === 'Yes' || caseData.fullData.victim.workplace_relationship === true ? 'Workplace' : 'Personal/Other'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Age</div>
+              <div class="field-value">${caseData.fullData.victim.age || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Physical Harm</div>
+              <div class="field-value">${caseData.fullData.victim.harm_physical || 0}/5 ${harmStars(caseData.fullData.victim.harm_physical || 0)}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Psychological Harm</div>
+              <div class="field-value">${caseData.fullData.victim.harm_psychological || 0}/5 ${harmStars(caseData.fullData.victim.harm_psychological || 0)}</div>
+            </div>
+          </div>
+        </div>
+      ` : '';
+
+      // Build defendant information section
+      const defendantSection = caseData.fullData?.defendant ? `
+        <div class="section">
+          <div class="section-title"><span class="section-icon">⚖️</span>Defendant Information</div>
+          <div class="fields-grid">
+            <div class="field">
+              <div class="field-label">Defendant Name</div>
+              <div class="field-value">${caseData.fullData.defendant.name || 'Not specified'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Age</div>
+              <div class="field-value">${caseData.fullData.defendant.age || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Gender</div>
+              <div class="field-value">${caseData.fullData.defendant.gender || 'Not specified'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Occupation</div>
+              <div class="field-value">${caseData.fullData.defendant.occupation || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Employment Status</div>
+              <div class="field-value">${caseData.fullData.defendant.employment_status || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Education</div>
+              <div class="field-value">${caseData.fullData.defendant.education || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Marital Status</div>
+              <div class="field-value">${caseData.fullData.defendant.marital_status || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Financial Status</div>
+              <div class="field-value">${caseData.fullData.defendant.financial_status || 'Not specified'}</div>
+            </div>
+            ${caseData.fullData.defendant.prior_convictions > 0 ? `
+              <div class="field">
+                <div class="field-label">Prior Convictions</div>
+                <div class="field-value">
+                  <span class="info-box warning">
+                    <div class="info-box-label">Warning</div>
+                    <div class="info-box-value">${caseData.fullData.defendant.prior_convictions} prior convictions</div>
+                  </span>
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      ` : '';
+
+      // Build incident information section
+      const incidentSection = caseData.fullData?.incident ? `
+        <div class="section">
+          <div class="section-title"><span class="section-icon">📍</span>Incident Details</div>
+          <div class="fields-grid">
+            <div class="field">
+              <div class="field-label">Incident Date</div>
+              <div class="field-value">${caseData.fullData.incident.date || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Location</div>
+              <div class="field-value">${caseData.fullData.incident.location || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Duration</div>
+              <div class="field-value">${caseData.fullData.incident.duration || 'Unknown'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Workplace Context</div>
+              <div class="field-value">${caseData.fullData.incident.workplace_context === 'Yes' || caseData.fullData.incident.workplace_context === true ? '✓ Yes' : '✗ No'}</div>
+            </div>
+            <div class="field" style="grid-column: 1 / -1;">
+              <div class="field-label">Incident Classification</div>
+              <div class="field-value">${caseData.fullData.incident.context_indicator || 'Unknown'}</div>
+            </div>
+            <div class="field" style="grid-column: 1 / -1;">
+              <div class="field-label">Narrative</div>
+              <div class="field-value">${caseData.fullData.incident.narrative || 'No narrative provided'}</div>
+            </div>
+          </div>
+        </div>
+      ` : '';
+
+      // Build legal information section
+      const legalSection = caseData.fullData?.legal ? `
+        <div class="section">
+          <div class="section-title"><span class="section-icon">⚖️</span>Legal Information</div>
+          <div class="fields-grid">
+            <div class="field">
+              <div class="field-label">Legal Theory</div>
+              <div class="field-value">${caseData.fullData.legal.legal_theory || 'Not specified'}</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Charges Count</div>
+              <div class="field-value">${caseData.fullData.legal.charges_count || 'N/A'}</div>
+            </div>
+            <div class="field" style="grid-column: 1 / -1;">
+              <div class="field-label">Articles Charged</div>
+              <div class="field-value">
+                <div class="articles-list">
+                  ${Array.isArray(caseData.fullData.legal.articles_charged) 
+                    ? caseData.fullData.legal.articles_charged.map(a => `<span class="article-tag">${a}</span>`).join('')
+                    : `<span class="article-tag">${caseData.fullData.legal.articles_charged || 'N/A'}</span>`}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ` : '';
+
+      // Build evidence section
+      const evidenceSection = caseData.fullData?.evidence ? `
+        <div class="section">
+          <div class="section-title"><span class="section-icon">🔍</span>Evidence</div>
+          <div class="fields-grid">
+            ${caseData.fullData.evidence.summary ? `
+              <div class="field" style="grid-column: 1 / -1;">
+                <div class="field-label">Evidence Summary</div>
+                <div class="field-value">${caseData.fullData.evidence.summary}</div>
+              </div>
+            ` : ''}
+            ${caseData.fullData.evidence.description ? `
+              <div class="field" style="grid-column: 1 / -1;">
+                <div class="field-label">Evidence Description</div>
+                <div class="field-value">${caseData.fullData.evidence.description}</div>
+              </div>
+            ` : ''}
+            ${Array.isArray(caseData.fullData.evidence.documentary) && caseData.fullData.evidence.documentary.length > 0 ? `
+              <div class="field" style="grid-column: 1 / -1;">
+                <div class="field-label">Documentary Evidence</div>
+                <div class="field-value">${caseData.fullData.evidence.documentary.join(', ') || 'None'}</div>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      ` : '';
+
       document.getElementById('content').innerHTML = `
         <div class="case-detail">
           <div class="case-detail-header">
@@ -556,7 +802,7 @@
 
             <div class="field">
               <div class="field-label">Harm Level</div>
-              <div class="field-value">${caseData.harm}/5</div>
+              <div class="field-value">${caseData.harm}/5 <span class="harm-indicator">${harmStars(caseData.harm)}</span></div>
             </div>
 
             <div class="field">
@@ -569,9 +815,20 @@
               <div class="field-value">${caseData.defendant}</div>
             </div>
 
+            <div class="field">
+              <div class="field-label">Victim</div>
+              <div class="field-value">${caseData.victim || 'Not specified'}</div>
+            </div>
+
             <div class="field" style="grid-column: 1 / -1;">
               <div class="field-label">Articles Charged</div>
-              <div class="field-value">${Array.isArray(caseData.articles) ? caseData.articles.join(', ') : caseData.articles || 'N/A'}</div>
+              <div class="field-value">
+                <div class="articles-list">
+                  ${Array.isArray(caseData.articles) 
+                    ? caseData.articles.map(a => `<span class="article-tag">${a}</span>`).join('')
+                    : caseData.articles ? `<span class="article-tag">${caseData.articles}</span>` : '<span>N/A</span>'}
+                </div>
+              </div>
             </div>
 
             <div class="field" style="grid-column: 1 / -1;">
@@ -579,6 +836,12 @@
               <div class="field-value">${caseData.evidence}</div>
             </div>
           </div>
+
+          ${victimSection}
+          ${defendantSection}
+          ${incidentSection}
+          ${legalSection}
+          ${evidenceSection}
         </div>
       `;
     }

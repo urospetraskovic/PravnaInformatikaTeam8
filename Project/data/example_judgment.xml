@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17"
+            xsi:schemaLocation="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/schemas/akomantoso30.xsd">
+    
+    <judgment name="Case K 217/24">
+        
+        <!-- METADATA SECTION -->
+        <meta>
+            <identification source="#court">
+                
+                <!-- FRBR WORK (Abstract intellectual work) -->
+                <FRBRWork>
+                    <FRBRthis value="/akn/me/judgment/2024-K-217-24/!main"/>
+                    <FRBRuri value="/akn/me/judgment/2024-K-217-24"/>
+                    <FRBRdate date="2024-06-15"/>
+                    <FRBRauthor href="#judge1" as="#judge"/>
+                    <FRBRcountry value="me"/>
+                    <FRBRsubtype value="judgment"/>
+                    <FRBRnumber value="K 217/24"/>
+                    <FRBRname value="Judgment in Case of Workplace Harassment"/>
+                </FRBRWork>
+                
+                <!-- FRBR EXPRESSION (Specific version/language) -->
+                <FRBRExpression>
+                    <FRBRthis value="/akn/me/judgment/2024-K-217-24/sr@2024-06-15/!main"/>
+                    <FRBRuri value="/akn/me/judgment/2024-K-217-24/sr@2024-06-15"/>
+                    <FRBRdate date="2024-06-15"/>
+                    <FRBRauthor href="#court" as="#issuer"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                
+                <!-- FRBR MANIFESTATION (Physical format - XML) -->
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/me/judgment/2024-K-217-24/sr@2024-06-15/!main.xml"/>
+                    <FRBRuri value="/akn/me/judgment/2024-K-217-24/sr@2024-06-15/!main.akn"/>
+                    <FRBRdate date="2024-06-15"/>
+                    <FRBRauthor href="#court" as="#generator"/>
+                    <FRBRformat value="xml"/>
+                </FRBRManifestation>
+                
+            </identification>
+            
+            <!-- PUBLICATION INFO -->
+            <publication name="court" date="2024-06-15" 
+                         showAs="Higher Court of Podgorica" 
+                         number="K 217/24"/>
+            
+            <!-- CLASSIFICATION -->
+            <classification source="#court">
+                <keyword value="harassment" showAs="Workplace Harassment (Mobbing)" dictionary="ME"/>
+                <keyword value="article168" showAs="Article 168/1a Criminal Code" dictionary="ME"/>
+            </classification>
+            
+            <!-- REFERENCES TO ROLES, ORGANIZATIONS, PERSONS -->
+            <references source="#court">
+                <TLCRole eId="judge" href="/akn/me/ontology/role/judge" showAs="Judge"/>
+                <TLCRole eId="author" href="/akn/me/ontology/role/author" showAs="Author"/>
+                <TLCRole eId="issuer" href="/akn/me/ontology/role/issuer" showAs="Issuer"/>
+                <TLCRole eId="generator" href="/akn/me/ontology/role/generator" showAs="Generator"/>
+                
+                <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" 
+                                showAs="Higher Court of Podgorica"/>
+                <TLCOrganization eId="police" href="/akn/me/ontology/organization/police" 
+                                showAs="Police of Montenegro"/>
+                
+                <TLCPerson eId="judge1" href="/akn/me/ontology/person/judge1" 
+                          showAs="Judge Marko Marković"/>
+                <TLCPerson eId="defendant" href="/akn/me/ontology/person/defendant" 
+                          showAs="Nikola Nikolić"/>
+                <TLCPerson eId="victim" href="/akn/me/ontology/person/victim" 
+                          showAs="Ana Anić"/>
+            </references>
+        </meta>
+        
+        <!-- BODY SECTION -->
+        <body>
+            
+            <!-- CHAPTER I: BACKGROUND -->
+            <chapter eId="chp_1">
+                <num>I.</num>
+                <heading>BACKGROUND AND FACTS</heading>
+                
+                <!-- Section 1: Defendant Information -->
+                <section eId="chp_1__sec_1">
+                    <num>1.</num>
+                    <heading>Defendant Information</heading>
+                    
+                    <article eId="art_bg_1">
+                        <num>1.1</num>
+                        <heading>Personal Details</heading>
+                        <paragraph eId="art_bg_1__para_1">
+                            <content eId="art_bg_1__para_1__content">
+                                <p>The defendant is <ref href="#defendant">Nikola Nikolić</ref>, male, 
+                                   age 38, employed as a Department Manager at the State University.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_bg_1__para_2">
+                            <content eId="art_bg_1__para_2__content">
+                                <p>JMBG: 1234567890001</p>
+                                <p>Education: University degree in Administration</p>
+                                <p>Employment status: Full-time employed</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_bg_2">
+                        <num>1.2</num>
+                        <heading>Prior Criminal Record</heading>
+                        <paragraph eId="art_bg_2__para_1">
+                            <content eId="art_bg_2__para_1__content">
+                                <p>The defendant has no prior criminal convictions.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <!-- Section 2: Victim Information -->
+                <section eId="chp_1__sec_2">
+                    <num>2.</num>
+                    <heading>Victim Information</heading>
+                    
+                    <article eId="art_bg_3">
+                        <num>2.1</num>
+                        <heading>Personal Details</heading>
+                        <paragraph eId="art_bg_3__para_1">
+                            <content eId="art_bg_3__para_1__content">
+                                <p>The victim is <ref href="#victim">Ana Anić</ref>, female, 
+                                   age 32, employed as a Colleague/Co-worker in the same department.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_bg_3__para_2">
+                            <content eId="art_bg_3__para_2__content">
+                                <p>JMBG: 2345678900002</p>
+                                <p>Education: University degree in Education</p>
+                                <p>Employment status: Full-time employed</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_bg_4">
+                        <num>2.2</num>
+                        <heading>Harm Assessment</heading>
+                        <paragraph eId="art_bg_4__para_1">
+                            <content eId="art_bg_4__para_1__content">
+                                <p>The victim suffered significant harm:</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_bg_4__para_2">
+                            <intro eId="art_bg_4__para_2__intro">
+                                <p>Physical Harm (Level 3/5):</p>
+                            </intro>
+                            <point eId="art_bg_4__para_2__point_1">
+                                <num>-</num>
+                                <content>Sleep disturbances and headaches</content>
+                            </point>
+                        </paragraph>
+                        <paragraph eId="art_bg_4__para_3">
+                            <intro eId="art_bg_4__para_3__intro">
+                                <p>Psychological Harm (Level 4/5):</p>
+                            </intro>
+                            <point eId="art_bg_4__para_3__point_1">
+                                <num>-</num>
+                                <content>Anxiety, depression, social withdrawal</content>
+                            </point>
+                            <point eId="art_bg_4__para_3__point_2">
+                                <num>-</num>
+                                <content>Loss of professional confidence</content>
+                            </point>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <!-- Section 3: Incident Details -->
+                <section eId="chp_1__sec_3">
+                    <num>3.</num>
+                    <heading>Incident Details</heading>
+                    
+                    <article eId="art_bg_5">
+                        <num>3.1</num>
+                        <heading>Circumstances of the Incident</heading>
+                        <paragraph eId="art_bg_5__para_1">
+                            <content eId="art_bg_5__para_1__content">
+                                <p>Date: January 15, 2023</p>
+                                <p>Time: 14:30 hours</p>
+                                <p>Location: Department Office, State University, Podgorica</p>
+                                <p>Duration: Approximately 20 minutes of sustained harassment</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_bg_6">
+                        <num>3.2</num>
+                        <heading>Factual Narrative</heading>
+                        <paragraph eId="art_bg_6__para_1">
+                            <content eId="art_bg_6__para_1__content">
+                                <p>On the date in question, the defendant, acting in his capacity as Department Manager, 
+                                   approached the victim at her workplace. The defendant began making threatening statements 
+                                   toward the victim regarding her job security and performance, using insulting language and 
+                                   raising his voice in an aggressive manner.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_bg_6__para_2">
+                            <content eId="art_bg_6__para_2__content">
+                                <p>The defendant made explicit threats such as "You will be fired if you don't comply with my demands" 
+                                   and "I will make sure you never work in this institution again." The defendant continued this behavior 
+                                   despite the victim's verbal objections and requests to stop.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_bg_6__para_3">
+                            <content eId="art_bg_6__para_3__content">
+                                <p>This incident occurred in the presence of several co-workers who witnessed the interaction.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_bg_7">
+                        <num>3.3</num>
+                        <heading>Power Dynamics</heading>
+                        <paragraph eId="art_bg_7__para_1">
+                            <content eId="art_bg_7__para_1__content">
+                                <p>A clear superior-subordinate relationship existed between the defendant and victim. 
+                                   The defendant, as Department Manager, held authority over the victim's employment and working conditions, 
+                                   creating an imbalance of power that made the victim vulnerable to the threats and harassment.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+            </chapter>
+            
+            <!-- CHAPTER II: MOTIVATION (Legal Reasoning) -->
+            <chapter eId="chp_2">
+                <num>II.</num>
+                <heading>MOTIVATION AND LEGAL ANALYSIS</heading>
+                
+                <!-- Section 1: Articles Charged -->
+                <section eId="chp_2__sec_1">
+                    <num>1.</num>
+                    <heading>Applicable Criminal Law</heading>
+                    
+                    <article eId="art_mot_1">
+                        <num>1.1</num>
+                        <heading>Articles Charged</heading>
+                        <paragraph eId="art_mot_1__para_1">
+                            <intro eId="art_mot_1__para_1__intro">
+                                <p>The defendant is charged with violating the following provision of the Criminal Code:</p>
+                            </intro>
+                            <point eId="art_mot_1__para_1__point_1">
+                                <num>1)</num>
+                                <content><ref href="#cc_168">Article 168, Paragraph 1a</ref> - Threats and Harassment</content>
+                            </point>
+                        </paragraph>
+                        <paragraph eId="art_mot_1__para_2">
+                            <content eId="art_mot_1__para_2__content">
+                                <p>Statutory basis: Criminal Code of Montenegro, Article 168/1a (Threats, harassment, stalking)</p>
+                                <p>Penalty range: Imprisonment from 3 to 12 months</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <!-- Section 2: Evidence Analysis -->
+                <section eId="chp_2__sec_2">
+                    <num>2.</num>
+                    <heading>Evidence Presented</heading>
+                    
+                    <article eId="art_mot_2">
+                        <num>2.1</num>
+                        <heading>Documentary Evidence</heading>
+                        <paragraph eId="art_mot_2__para_1">
+                            <intro eId="art_mot_2__para_1__intro">
+                                <p>The following documentary evidence was presented:</p>
+                            </intro>
+                            <point eId="art_mot_2__para_1__point_1">
+                                <num>1)</num>
+                                <content>Written complaint filed by victim on January 15, 2023</content>
+                            </point>
+                            <point eId="art_mot_2__para_1__point_2">
+                                <num>2)</num>
+                                <content>Email correspondence between victim and HR department</content>
+                            </point>
+                            <point eId="art_mot_2__para_1__point_3">
+                                <num>3)</num>
+                                <content>University incident report filed on January 16, 2023</content>
+                            </point>
+                            <point eId="art_mot_2__para_1__point_4">
+                                <num>4)</num>
+                                <content>Medical records documenting victim's psychological evaluation</content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_mot_3">
+                        <num>2.2</num>
+                        <heading>Witness Testimony</heading>
+                        <paragraph eId="art_mot_3__para_1">
+                            <content eId="art_mot_3__para_1__content">
+                                <p>Three co-workers testified under oath regarding their observations of the incident. 
+                                   All three witnesses confirmed the defendant's aggressive behavior, the threatening statements, 
+                                   and the elevated voice and hostile manner of the defendant.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_mot_4">
+                        <num>2.3</num>
+                        <heading>Expert Assessment</heading>
+                        <paragraph eId="art_mot_4__para_1">
+                            <content eId="art_mot_4__para_1__content">
+                                <p>A licensed psychologist examined the victim and submitted an expert report 
+                                   documenting the psychological consequences of the harassment, including anxiety disorder 
+                                   and symptoms of post-traumatic stress.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <!-- Section 3: Legal Analysis -->
+                <section eId="chp_2__sec_3">
+                    <num>3.</num>
+                    <heading>Legal Assessment</heading>
+                    
+                    <article eId="art_mot_5">
+                        <num>3.1</num>
+                        <heading>Elements of the Crime</heading>
+                        <paragraph eId="art_mot_5__para_1">
+                            <intro eId="art_mot_5__para_1__intro">
+                                <p><ref href="#cc_168">Article 168/1a</ref> requires the following elements:</p>
+                            </intro>
+                            <point eId="art_mot_5__para_1__point_1">
+                                <num>1)</num>
+                                <content>Threatening statements or actions directed at another person</content>
+                            </point>
+                            <point eId="art_mot_5__para_1__point_2">
+                                <num>2)</num>
+                                <content>Intent to frighten, intimidate, or harm the recipient</content>
+                            </point>
+                            <point eId="art_mot_5__para_1__point_3">
+                                <num>3)</num>
+                                <content>Causation of psychological harm or distress to the recipient</content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_mot_6">
+                        <num>3.2</num>
+                        <heading>Application of Law to Facts</heading>
+                        <paragraph eId="art_mot_6__para_1">
+                            <content eId="art_mot_6__para_1__content">
+                                <p>All elements of <ref href="#cc_168">Article 168/1a</ref> have been proven beyond reasonable doubt:</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_mot_6__para_2">
+                            <intro eId="art_mot_6__para_2__intro">
+                                <p>Element 1 - Threatening Statements:</p>
+                            </intro>
+                            <content eId="art_mot_6__para_2__content">
+                                <p>Multiple witnesses confirmed the defendant's explicit threats regarding job loss and professional consequences. 
+                                   The statements were clear, direct, and unambiguous.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_mot_6__para_3">
+                            <intro eId="art_mot_6__para_3__intro">
+                                <p>Element 2 - Intent:</p>
+                            </intro>
+                            <content eId="art_mot_6__para_3__content">
+                                <p>The defendant's aggressive demeanor, elevated voice, and threatening language demonstrate clear intent 
+                                   to frighten and intimidate the victim. The superior-subordinate relationship amplified the threatening nature 
+                                   of the statements.</p>
+                            </content>
+                        </paragraph>
+                        <paragraph eId="art_mot_6__para_4">
+                            <intro eId="art_mot_6__para_4__intro">
+                                <p>Element 3 - Causation:</p>
+                            </intro>
+                            <content eId="art_mot_6__para_4__content">
+                                <p>Expert psychological testimony and medical documentation establish that the victim suffered significant 
+                                   psychological harm as a direct result of the defendant's conduct, including anxiety, depression, and 
+                                   post-traumatic stress symptoms.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+            </chapter>
+            
+            <!-- CHAPTER III: DECISION -->
+            <chapter eId="chp_3">
+                <num>III.</num>
+                <heading>COURT DECISION</heading>
+                
+                <section eId="chp_3__sec_1">
+                    <num>1.</num>
+                    <heading>Verdict</heading>
+                    
+                    <article eId="art_dec_1">
+                        <num>1.1</num>
+                        <heading>Finding of Guilt</heading>
+                        <paragraph eId="art_dec_1__para_1">
+                            <content eId="art_dec_1__para_1__content">
+                                <p><strong>THE DEFENDANT IS FOUND GUILTY</strong> of violating <ref href="#cc_168">Article 168, Paragraph 1a</ref> 
+                                   of the Criminal Code of Montenegro (Threats and Harassment).</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <section eId="chp_3__sec_2">
+                    <num>2.</num>
+                    <heading>Sentence</heading>
+                    
+                    <article eId="art_dec_2">
+                        <num>2.1</num>
+                        <heading>Imposed Penalty</heading>
+                        <paragraph eId="art_dec_2__para_1">
+                            <content eId="art_dec_2__para_1__content">
+                                <p>The defendant is sentenced to <strong>6 months imprisonment</strong>.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_dec_3">
+                        <num>2.2</num>
+                        <heading>Sentencing Rationale</heading>
+                        <paragraph eId="art_dec_3__para_1">
+                            <intro eId="art_dec_3__para_1__intro">
+                                <p>The sentence of 6 months imprisonment is imposed taking into account the following factors:</p>
+                            </intro>
+                            <point eId="art_dec_3__para_1__point_1">
+                                <num>1)</num>
+                                <content>Severity of the threat and psychological harm caused to the victim</content>
+                            </point>
+                            <point eId="art_dec_3__para_1__point_2">
+                                <num>2)</num>
+                                <content>Abuse of position of authority (superior-subordinate relationship)</content>
+                            </point>
+                            <point eId="art_dec_3__para_1__point_3">
+                                <num>3)</num>
+                                <content>Public nature of the offense (witnessed by multiple co-workers)</content>
+                            </point>
+                            <point eId="art_dec_3__para_1__point_4">
+                                <num>4)</num>
+                                <content>Defendant's lack of prior criminal record (mitigating factor)</content>
+                            </point>
+                            <point eId="art_dec_3__para_1__point_5">
+                                <num>5)</num>
+                                <content>General deterrence and protection of workplace safety</content>
+                            </point>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <section eId="chp_3__sec_3">
+                    <num>3.</num>
+                    <heading>Additional Orders</heading>
+                    
+                    <article eId="art_dec_4">
+                        <num>3.1</num>
+                        <heading>Protective Measures</heading>
+                        <paragraph eId="art_dec_4__para_1">
+                            <intro eId="art_dec_4__para_1__intro">
+                                <p>The court orders the following protective measures:</p>
+                            </intro>
+                            <point eId="art_dec_4__para_1__point_1">
+                                <num>1)</num>
+                                <content>Defendant shall have no contact with the victim for a period of 2 years</content>
+                            </point>
+                            <point eId="art_dec_4__para_1__point_2">
+                                <num>2)</num>
+                                <content>Defendant's employment position shall be suspended pending completion of sentence</content>
+                            </point>
+                        </paragraph>
+                    </article>
+                    
+                    <article eId="art_dec_5">
+                        <num>3.2</num>
+                        <heading>Compensation to Victim</heading>
+                        <paragraph eId="art_dec_5__para_1">
+                            <content eId="art_dec_5__para_1__content">
+                                <p>The defendant is ordered to pay compensation to the victim in the amount of €5,000 
+                                   for non-pecuniary damage (moral injury) resulting from the psychological harm suffered.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+                
+                <section eId="chp_3__sec_4">
+                    <num>4.</num>
+                    <heading>Appeal Rights</heading>
+                    
+                    <article eId="art_dec_6">
+                        <num>4.1</num>
+                        <heading>Right of Appeal</heading>
+                        <paragraph eId="art_dec_6__para_1">
+                            <content eId="art_dec_6__para_1__content">
+                                <p>This judgment may be appealed to the Supreme Court of Montenegro within 15 days 
+                                   of notification to the parties.</p>
+                            </content>
+                        </paragraph>
+                    </article>
+                </section>
+            </chapter>
+        </body>
+        
+        <!-- CONCLUSIONS -->
+        <conclusions>
+            <p>The evidence presented has proven beyond reasonable doubt that the defendant committed the offense 
+               of threats and harassment against the victim. The court finds the defendant guilty and imposes a sentence 
+               of 6 months imprisonment, as well as protective measures and compensation as outlined above.</p>
+            
+            <p>This judgment is pronounced in the presence of the parties on June 15, 2024.</p>
+        </conclusions>
+        
+        <!-- SIGNATURE BLOCK -->
+        <signature>
+            <p><strong>Judge Marko Marković</strong></p>
+            <p>Higher Court of Podgorica</p>
+            <p>June 15, 2024</p>
+        </signature>
+    </judgment>
+</akomaNtoso>

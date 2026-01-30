@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Case K 664/2022" xml:lang="sr" xsi:schemaLocation="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/schemas/akomantoso30.xsd">
+    <meta>
+        <identification source="#court">
+            <FRBRWork>
+                <FRBRthis value="/akn/me/judgment/Case_010/!main"/>
+                <FRBRuri value="/akn/me/judgment/Case_010"/>
+                <FRBRdate date="2022-11-14"/>
+                <FRBRauthor href="#judge" as="#judge"/>
+                <FRBRcountry value="me"/>
+                <FRBRsubtype value="judgment"/>
+                <FRBRnumber value="K 664/2022"/>
+                <FRBRname value="Workplace Assault / Zlostavljanje"/>
+            </FRBRWork>
+            <FRBRExpression>
+                <FRBRthis value="/akn/me/judgment/Case_010/sr@2022-11-14/!main"/>
+                <FRBRuri value="/akn/me/judgment/Case_010/sr@2022-11-14"/>
+                <FRBRdate date="2022-11-14"/>
+                <FRBRauthor href="#court" as="#issuer"/>
+                <FRBRlanguage language="sr"/>
+            </FRBRExpression>
+            <FRBRManifestation>
+                <FRBRthis value="/akn/me/judgment/Case_010/sr@2022-11-14/!main.xml"/>
+                <FRBRuri value="/akn/me/judgment/Case_010/sr@2022-11-14/!main.akn"/>
+                <FRBRdate date="2026-01-30"/>
+                <FRBRauthor href="#court" as="#generator"/>
+                <FRBRformat value="xml"/>
+            </FRBRManifestation>
+        </identification>
+        <publication name="court" date="2022-11-14" showAs="Osnovni Sud u Podgorici" number="K 664/2022"/>
+        <classification source="#court">
+            <keyword value="workplace_assault_/_zlostavljanje" showAs="Workplace Assault / Zlostavljanje" dictionary="ME"/>
+        </classification>
+        <references source="#court">
+            <TLCRole eId="judge" href="/akn/me/ontology/role/judge" showAs="Judge"/>
+            <TLCRole eId="author" href="/akn/me/ontology/role/author" showAs="Author"/>
+            <TLCRole eId="issuer" href="/akn/me/ontology/role/issuer" showAs="Issuer"/>
+            <TLCRole eId="generator" href="/akn/me/ontology/role/generator" showAs="Generator"/>
+            <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Podgorici"/>
+            <TLCPerson eId="judge" href="/akn/me/ontology/person/judge" showAs="Larisa Mijušković-Stamatović"/>
+        </references>
+    </meta>
+    <body>
+        <chapter eId="chp_1">
+            <num>I</num>
+            <heading>BACKGROUND AND FACTS</heading>
+            <section eId="chp_1__sec_1">
+                <num>1</num>
+                <heading>Defendant Information</heading>
+                <article eId="art_bg_1">
+                    <num>1.1</num>
+                    <heading>Personal Details</heading>
+                    <paragraph eId="art_bg_1__para_1">
+                        <content eId="art_bg_1__para_1__content">
+                            <p>Defendant: E.K., Age: 37, Occupation: Viši savjetnik - administrative office employee, Employment: Employed</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_2">
+                    <num>1.2</num>
+                    <heading>Prior Criminal Record</heading>
+                    <paragraph eId="art_bg_2__para_1">
+                        <content eId="art_bg_2__para_1__content">
+                            <p>Prior convictions: 0</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_1__sec_2">
+                <num>2</num>
+                <heading>Victim Information</heading>
+                <article eId="art_bg_3">
+                    <num>2.1</num>
+                    <heading>Personal Details</heading>
+                    <paragraph eId="art_bg_3__para_1">
+                        <content eId="art_bg_3__para_1__content">
+                            <p>Victim: M.B., Relationship: Direct supervisor, Workplace relation: Yes</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_4">
+                    <num>2.2</num>
+                    <heading>Harm Assessment</heading>
+                    <paragraph eId="art_bg_4__para_1">
+                        <content eId="art_bg_4__para_1__content">
+                            <p>Physical Harm: 2/5, Psychological Harm: 3/5</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_1__sec_3">
+                <num>3</num>
+                <heading>Incident Details</heading>
+                <article eId="art_bg_5">
+                    <num>3.1</num>
+                    <heading>Circumstances</heading>
+                    <paragraph eId="art_bg_5__para_1">
+                        <content eId="art_bg_5__para_1__content">
+                            <p>Date: 2022-09-26, Location: Victim's office - M. P. administrative building, Podgorica, Context: Workplace assault by subordinate on supervisor</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_6">
+                    <num>3.2</num>
+                    <heading>Factual Narrative</heading>
+                    <paragraph eId="art_bg_6__para_1">
+                        <content eId="art_bg_6__para_1__content">
+                            <p>Defendant entered supervisor's office, verbally confronted with accusations, struck victim with open hand on right side of head/ear, victim fell to floor, defendant continued striking with feet/legs while victim on ground (4-6 kicks)</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+        <chapter eId="chp_2">
+            <num>II</num>
+            <heading>MOTIVATION AND LEGAL ANALYSIS</heading>
+            <section eId="chp_2__sec_1">
+                <num>1</num>
+                <heading>Articles Charged</heading>
+                <article eId="art_mot_1">
+                    <num>1.1</num>
+                    <heading>Applicable Criminal Law</heading>
+                    <paragraph eId="art_mot_1__para_1">
+                        <content eId="art_mot_1__para_1__content">
+                            <p>Charged under: Article 166a st.1 KZ CG</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_mot_2">
+                    <num>1.2</num>
+                    <heading>Legal Theory</heading>
+                    <paragraph eId="art_mot_2__para_1">
+                        <content eId="art_mot_2__para_1__content">
+                            <p>Abuse/mistreatment - physical assault violating human dignity</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_2__sec_2">
+                <num>2</num>
+                <heading>Evidence Presented</heading>
+                <article eId="art_mot_3">
+                    <num>2.1</num>
+                    <heading>Evidence Summary</heading>
+                    <paragraph eId="art_mot_3__para_1">
+                        <content eId="art_mot_3__para_1__content">
+                            <p>Witnesses: 5, Documentary evidence: 1, Expert findings: 1</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+        <chapter eId="chp_3">
+            <num>III</num>
+            <heading>COURT DECISION</heading>
+            <section eId="chp_3__sec_1">
+                <num>1</num>
+                <heading>Verdict</heading>
+                <article eId="art_dec_1">
+                    <num>1.1</num>
+                    <heading>Finding</heading>
+                    <paragraph eId="art_dec_1__para_1">
+                        <content eId="art_dec_1__para_1__content">
+                            <p>THE DEFENDANT IS FOUND GUILTY</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_3__sec_2">
+                <num>2</num>
+                <heading>Sentence</heading>
+                <article eId="art_dec_2">
+                    <num>2.1</num>
+                    <heading>Imposed Penalty</heading>
+                    <paragraph eId="art_dec_2__para_1">
+                        <content eId="art_dec_2__para_1__content">
+                            <p>Prison: 4 months</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+    </body>
+    <conclusions>
+        <p>The court finds the defendant guilty as charged and imposes the penalties as outlined above in case K 664/2022.</p>
+    </conclusions>
+</judgment>

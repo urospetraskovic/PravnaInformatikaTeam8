@@ -1,0 +1,187 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Case K 128/15" xml:lang="sr" xsi:schemaLocation="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/schemas/akomantoso30.xsd">
+    <meta>
+        <identification source="#court">
+            <FRBRWork>
+                <FRBRthis value="/akn/me/judgment/Case_012/!main"/>
+                <FRBRuri value="/akn/me/judgment/Case_012"/>
+                <FRBRdate date="2015-10-26"/>
+                <FRBRauthor href="#judge" as="#judge"/>
+                <FRBRcountry value="me"/>
+                <FRBRsubtype value="judgment"/>
+                <FRBRnumber value="K 128/15"/>
+                <FRBRname value="Threatening / Endangering Safety"/>
+            </FRBRWork>
+            <FRBRExpression>
+                <FRBRthis value="/akn/me/judgment/Case_012/sr@2015-10-26/!main"/>
+                <FRBRuri value="/akn/me/judgment/Case_012/sr@2015-10-26"/>
+                <FRBRdate date="2015-10-26"/>
+                <FRBRauthor href="#court" as="#issuer"/>
+                <FRBRlanguage language="sr"/>
+            </FRBRExpression>
+            <FRBRManifestation>
+                <FRBRthis value="/akn/me/judgment/Case_012/sr@2015-10-26/!main.xml"/>
+                <FRBRuri value="/akn/me/judgment/Case_012/sr@2015-10-26/!main.akn"/>
+                <FRBRdate date="2026-01-30"/>
+                <FRBRauthor href="#court" as="#generator"/>
+                <FRBRformat value="xml"/>
+            </FRBRManifestation>
+        </identification>
+        <publication name="court" date="2015-10-26" showAs="Osnovni Sud u Rožaje" number="K 128/15"/>
+        <classification source="#court">
+            <keyword value="threatening_/_endangering_safety" showAs="Threatening / Endangering Safety" dictionary="ME"/>
+        </classification>
+        <references source="#court">
+            <TLCRole eId="judge" href="/akn/me/ontology/role/judge" showAs="Judge"/>
+            <TLCRole eId="author" href="/akn/me/ontology/role/author" showAs="Author"/>
+            <TLCRole eId="issuer" href="/akn/me/ontology/role/issuer" showAs="Issuer"/>
+            <TLCRole eId="generator" href="/akn/me/ontology/role/generator" showAs="Generator"/>
+            <TLCOrganization eId="court" href="/akn/me/ontology/organization/court" showAs="Osnovni Sud u Rožaje"/>
+            <TLCPerson eId="judge" href="/akn/me/ontology/person/judge" showAs="Not specified"/>
+        </references>
+    </meta>
+    <body>
+        <chapter eId="chp_1">
+            <num>I</num>
+            <heading>BACKGROUND AND FACTS</heading>
+            <section eId="chp_1__sec_1">
+                <num>1</num>
+                <heading>Defendant Information</heading>
+                <article eId="art_bg_1">
+                    <num>1.1</num>
+                    <heading>Personal Details</heading>
+                    <paragraph eId="art_bg_1__para_1">
+                        <content eId="art_bg_1__para_1__content">
+                            <p>Defendant: N.V., Age: Unknown, Occupation: Volunteer in local government, Employment: Unknown</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_2">
+                    <num>1.2</num>
+                    <heading>Prior Criminal Record</heading>
+                    <paragraph eId="art_bg_2__para_1">
+                        <content eId="art_bg_2__para_1__content">
+                            <p>Prior convictions: 0</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_1__sec_2">
+                <num>2</num>
+                <heading>Victim Information</heading>
+                <article eId="art_bg_3">
+                    <num>2.1</num>
+                    <heading>Personal Details</heading>
+                    <paragraph eId="art_bg_3__para_1">
+                        <content eId="art_bg_3__para_1__content">
+                            <p>Victim: H.K., Relationship: Professional acquaintance, Workplace relation: No - different employment</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_4">
+                    <num>2.2</num>
+                    <heading>Harm Assessment</heading>
+                    <paragraph eId="art_bg_4__para_1">
+                        <content eId="art_bg_4__para_1__content">
+                            <p>Physical Harm: 0/5, Psychological Harm: 3/5</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_1__sec_3">
+                <num>3</num>
+                <heading>Incident Details</heading>
+                <article eId="art_bg_5">
+                    <num>3.1</num>
+                    <heading>Circumstances</heading>
+                    <paragraph eId="art_bg_5__para_1">
+                        <content eId="art_bg_5__para_1__content">
+                            <p>Date: 2015-08-27, Location: Health center - Rožaje, Context: Workplace conflict escalation</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_bg_6">
+                    <num>3.2</num>
+                    <heading>Factual Narrative</heading>
+                    <paragraph eId="art_bg_6__para_1">
+                        <content eId="art_bg_6__para_1__content">
+                            <p>Defendant made verbal threats of violence against victim, allegedly mentioning possession of deadly weapons. Context: Long-standing workplace conflict between defendant's mother (employee) and health center director regarding work performance.</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+        <chapter eId="chp_2">
+            <num>II</num>
+            <heading>MOTIVATION AND LEGAL ANALYSIS</heading>
+            <section eId="chp_2__sec_1">
+                <num>1</num>
+                <heading>Articles Charged</heading>
+                <article eId="art_mot_1">
+                    <num>1.1</num>
+                    <heading>Applicable Criminal Law</heading>
+                    <paragraph eId="art_mot_1__para_1">
+                        <content eId="art_mot_1__para_1__content">
+                            <p>Charged under: Article 168 st.1 KZ CG</p>
+                        </content>
+                    </paragraph>
+                </article>
+                <article eId="art_mot_2">
+                    <num>1.2</num>
+                    <heading>Legal Theory</heading>
+                    <paragraph eId="art_mot_2__para_1">
+                        <content eId="art_mot_2__para_1__content">
+                            <p>Threatening to attack life or body</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_2__sec_2">
+                <num>2</num>
+                <heading>Evidence Presented</heading>
+                <article eId="art_mot_3">
+                    <num>2.1</num>
+                    <heading>Evidence Summary</heading>
+                    <paragraph eId="art_mot_3__para_1">
+                        <content eId="art_mot_3__para_1__content">
+                            <p>Witnesses: 5, Documentary evidence: 0, Expert findings: 0</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+        <chapter eId="chp_3">
+            <num>III</num>
+            <heading>COURT DECISION</heading>
+            <section eId="chp_3__sec_1">
+                <num>1</num>
+                <heading>Verdict</heading>
+                <article eId="art_dec_1">
+                    <num>1.1</num>
+                    <heading>Finding</heading>
+                    <paragraph eId="art_dec_1__para_1">
+                        <content eId="art_dec_1__para_1__content">
+                            <p>THE DEFENDANT IS FOUND GUILTY</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+            <section eId="chp_3__sec_2">
+                <num>2</num>
+                <heading>Sentence</heading>
+                <article eId="art_dec_2">
+                    <num>2.1</num>
+                    <heading>Imposed Penalty</heading>
+                    <paragraph eId="art_dec_2__para_1">
+                        <content eId="art_dec_2__para_1__content">
+                            <p>Conditional imprisonment: 60 months</p>
+                        </content>
+                    </paragraph>
+                </article>
+            </section>
+        </chapter>
+    </body>
+    <conclusions>
+        <p>The court finds the defendant guilty as charged and imposes the penalties as outlined above in case K 128/15.</p>
+    </conclusions>
+</judgment>

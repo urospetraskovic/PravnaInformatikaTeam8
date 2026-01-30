@@ -345,7 +345,15 @@ app.get('/api/cases/:id(*)', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`\n✅ Legal CBR Web UI running at http://localhost:${PORT}`);
   console.log('📊 Database loaded with 13 Montenegrian cases\n');
+  
+  // Automatically open browser
+  try {
+    const open = await import('open');
+    await open.default(`http://localhost:${PORT}`);
+  } catch (err) {
+    console.warn('Could not automatically open browser. Please visit http://localhost:' + PORT);
+  }
 });
