@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 26/2020" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_26_2020/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_26_2020"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 26/2020"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+    </identification>
+    <references source="application"/>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u HERCEG NOVOM. Datum: None.</p>
+    </background>
+    <narrative>
+      <p>Incident: Neutvrđenog dana u junu mjesecu 2011. godine, iako je znao da je pribavljanje lažnog novca u namjeri da se stavi u opticaj kao pravi zabranjeno, voljno pribavio lažan novac u ukupnom iznosu od 2.100,00 USD dolara, u namjeri da ga stavi u opticaj kao pravi, i to dvadeset jednu novčanicu u apoenima od po 100 USD dolara, serijskih brojeva: AD50711528D, AA12971527D, BB98971522A, AA17071522D, BB98971577A, AD02711528D, B87820132D, B25170921D, B25170921D, B25170921D, B25170921D, B87820132D, B63703169D,</p>
+    </narrative>
+    <motivation>
+      <p>Na osnovu člana .</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 4/2019" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_4_2019_CS/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_4_2019_CS"/>
+        <FRBRdate date="2019-04-22"/>
+        <FRBRnumber value="K 4/2019"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_4_2019_CS/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_4_2019_CS"/>
+        <FRBRdate date="2019-04-22"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_4_2019_CS"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_4_2019_CS"/>
+        <FRBRdate date="2019-04-22"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st2" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2"/>
+      <TLCReference eId="ref_Član_49" href="/akn/me/act/criminal-code/glava#Član 49" showAs="Član 49 st. 1"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Cetinju</p>
+      <p><strong>Sudija:</strong> Ćupić Marija</p>
+      <p><strong>Zapisničar:</strong> Martinović Aleksandra</p>
+      <p><strong>Datum presude:</strong> 22. April 2019</p>
+      <p><strong>Predmet:</strong> K.br.4/2019</p>
+      <p><strong>Vrsta:</strong> Krivično djelo falsifikovanje novca u produženom trajanju</p>
+      <p><strong>Optužnica:</strong> Osnovnog državnog tužilaštva u Cetinju Kt.br.151/18 od 05.02.2019, izmijenjena na glavnom pretresu 22.04.2019</p>
+    </background>
+    <narrative>
+      <p><strong>Okrivljeni:</strong> C.S.</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca u produženom trajanju iz čl. 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika Crne Gore</p>
+      <p><strong>Priroda slučaja:</strong> Produženo krivično djelo - više radnji stavljanja u opticaj lažnog novca</p>
+      <p><strong>Opis:</strong> Okrivljeni C.S. je izvršio produženo krivično djelo falsifikovanja novca stavljajući u opticaj više falsifikovanih novčanica</p>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika Crne Gore, te članova 32, 36, 42, 45, 46 Krivičnog zakonika</p>
+      <p><strong>Kvalifikacija:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 st. 1 KZCG</p>
+      <p><strong>Zaključak suda:</strong> Okrivljeni je izvršio krivično djelo falsifikovanja novca sa direktnim umišljajem</p>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Okrivljeni C.S. je OSUĐEN:</strong></p>
+      <ul>
+        <li><strong>Za krivično djelo:</strong> Falsifikovanje novca u produženom trajanju iz čl. 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika CG</li>
+        <li><strong>Mjera bezbjednosti:</strong> Oduzimanje falsifikovanih novčanica na osnovu čl. 75 Krivičnog zakonika</li>
+      </ul>
+      <p><strong>Stanje nakon presude:</strong> Presuda je donesena nakon usmenog, glavnog i javnog pretresa dne 22. aprila 2019. godine</p>
+    </decision>
+  </body>
+</judgment>

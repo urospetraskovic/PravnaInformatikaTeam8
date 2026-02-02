@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 406/2011" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_406_2011_DS/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_406_2011_DS"/>
+        <FRBRdate date="2011-11-24"/>
+        <FRBRnumber value="K 406/2011"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_406_2011_DS/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_406_2011_DS"/>
+        <FRBRdate date="2011-11-24"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_406_2011_DS"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_406_2011_DS"/>
+        <FRBRdate date="2011-11-24"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st2" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75 st. 3"/>
+      <TLCReference eId="ref_Član_32" href="/akn/me/act/criminal-code/glava#Član 32" showAs="Član 32"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Bijelom Polju</p>
+      <p><strong>Sudija:</strong> Rahmo Banda (sudija pojedinac)</p>
+      <p><strong>Zapisničar:</strong> Popović Ljiljana</p>
+      <p><strong>Datum presude:</strong> 24. Novembar 2011</p>
+      <p><strong>Predmet:</strong> K. br. 406/2011</p>
+      <p><strong>Optužnica:</strong> ODT-a iz Bijelog Polja Kt. br. 414/11-2 od 03.10.2011</p>
+      <p><strong>Zamjenik ODT-a:</strong> Nišavić Tanja</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi:</strong> D.S. iz Bijelog Polja</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca iz čl. 258 st. 2 Krivičnog zakonika</p>
+      <p><strong>Datum incijenta:</strong> Neutvrdjena dana u decembru mjesecu 2009 godine</p>
+      <p><strong>Mjesto incijenta:</strong> Sarajevo</p>
+      <p><strong>Falsificirane novčanice:</strong></p>
+      <ul>
+        <li>1 novčanica u apoenu od 50 KM, serijskog broja D4197836</li>
+        <li>6 novčanica u apoenu od 20 KM, serijskog broja C3007738</li>
+        <li>1 novčanica u apoenu od 20 KM, serijskog broja C3007628</li>
+      </ul>
+      <p><strong>Opis incijenta:</strong> Optuženi je pribavio falsifikovanu novčanicu i u namjeri da je stavi u opticaj kao pravu, nosio je prilikom legitimisanja od strane policijske uprave u Sarajevu. Dana 18.12.2009 godine, tijekom kontrole od strane policije, optuženi je iz džepa na desnoj strani jakne desnom rukom izvadio omot od papira i odbacio ga. Policajci su pronašli omot sa novčanicama (1 od 50 KM i 7 od 20 KM). Optuženi je negirao da je odbacio novčanice.</p>
+      <p><strong>Ključni svjedoci i dokazi:</strong></p>
+      <ul>
+        <li>Iskaz svjedoka U.S.a - policajac MUP-a koji je vidio kako je optuženi odbacio omot sa novčanicama</li>
+        <li>Iskaz svjedoka B.A.a - policajac koji je preuzeo omot i pronašao novčanice</li>
+        <li>Potvrda o privremenom oduzimanju predmeta od 18.12.2009</li>
+        <li>Nalaz i mišljenje vještaka od 03.06.2010 - potvrđeno da su novčanice falsifikovane</li>
+        <li>Izvod iz kaznene evidencije - neosuđivan do tada</li>
+      </ul>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 2 Krivičnog zakonika, te čl. 2, 4, 5, 13, 15, 32, 36, 42, 45, 46 st. 1 tač. 3 Krivičnog zakonika, te čl. 226 i 374 ZKP-a</p>
+      <p><strong>Kvalifikacija:</strong> Falsifikovanje novca iz čl. 258 st. 2 Krivičnog zakonika</p>
+      <p><strong>Razlozi za sažimanje protiv optuženog:</strong></p>
+      <ul>
+        <li>Optuženi je negirao krivicu, tvrdeći da ga je policija zaustavila i da je tada od njega odbio novac, koji je policajac postavio pored njegovog novca.</li>
+        <li>Suprotno odbrani, svjedoci su potvrdi da je optuženi iz džepa izvadio omot i odbacio ga iza sebe</li>
+        <li>Iskaz svjedoka U.S.a koji je rekao: "On je stajao pored njega i to je vidio" - optuženi je desnom rukom iz džepa na desnoj strani jakne izvadio nepoznati omot od papira i odbacio ga iza sebe"</li>
+        <li>Iskaz svjedoka B.A.a potvrđuje da je on uzeo omot, odmotao ga i pronašao novčanice</li>
+        <li>Sud je zaključio: "Optuženi je cijenio kao neutemeljenu i kontradiktornu i očito datu sa namjerom izbjegavanja krivice"</li>
+      </ul>
+      <p><strong>Dokazi o falsifikaciji:</strong> Nalaz i mišljenje vještaka kriminalističke struke od 03.06.2010 potvrđuje da su dostavljene sporne novčanice (8 novčanica) falsifikovane, mogu se svrstati u grupu lošijih i prostijih krivotvorina, i "svaki prosječni gradjanin mogao prepoznati da su sporne novčanice krivotvorene"</p>
+      <p><strong>Zaključak suda:</strong> "Optuženi je u konkretnom slučaju postupao s umišljajem tj. bio je svjestan da vrši krivično djelo i htio je njegovo izvršenje"</p>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Optuženi D.S. je OSUĐEN:</strong></p>
+      <ul>
+        <li><strong>Na kaznu zatvora:</strong> 6 (šest) mjeseci</li>
+        <li><strong>Za krivično djelo:</strong> Falsifikovanje novca iz čl. 258 st. 2 Krivičnog zakonika</li>
+      </ul>
+      <p><strong>Mjera bezbjednosti:</strong> Nema navedene mjere bezbjednosti u dostupnom dijeluтекста</p>
+      <p><strong>Troškovi postupka:</strong> Optuženi je obavezan da plati ovom sudu na ime paušala iznos od 30€ u roku od 15 dana po pravosnažnosti presude</p>
+      <p><strong>Primijenjeni artikli pri ublažavanju kazne:</strong> Članova 45 i 46 Krivičnog zakonika - kao olakšavajuće okolnosti sud je cijenio da se radi o porodičnom licu, oca jednog maloljetnog djeteta, lošeg imovnog stanja, nezaposlen. Kao otežavajuću okolnost sud je cijenio raniju osudjivanost.</p>
+      <p><strong>Stanje nakon presude:</strong> Presuda postaje izvršna nakon isteka roka za žalbu</p>
+    </decision>
+  </body>
+</judgment>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 395/16" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_395_16/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_395_16"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 395/16"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_395_16/sr@2000-01-01/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_395_16/sr@2000-01-01"/>
+        <FRBRdate date="None"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_395_16/sr@2000-01-01/!main.xml"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_395_16/sr@2000-01-01/!main.akn"/>
+        <FRBRdate date="2026-02-02"/>
+        <FRBRformat value="xml"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code#Član 258" showAs="Član 258"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Kotoru</p>
+      <p><strong>Broj predmeta:</strong> K 395/16</p>
+      <p><strong>Datum presude:</strong> Unknown</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi:</strong> Defendant</p>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi zakona:</strong></p>
+      <p>Član 258
+    </motivation>
+    <decision>
+      <p><strong>Presuda:</strong> Oslobođen</p>
+      <p><strong>Kazna:</strong> Not specified</p>
+      <p><strong>Odluka:</strong> ACQUITTED</p>
+    </decision>
+  </body>
+</judgment>

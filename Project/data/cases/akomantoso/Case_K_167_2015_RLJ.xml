@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 167/2015" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_167_2015_RLJ/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_167_2015_RLJ"/>
+        <FRBRdate date="2015-11-27"/>
+        <FRBRnumber value="K 167/2015"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_167_2015_RLJ/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_167_2015_RLJ"/>
+        <FRBRdate date="2015-11-27"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_167_2015_RLJ"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_167_2015_RLJ"/>
+        <FRBRdate date="2015-11-27"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st2" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2"/>
+      <TLCReference eId="ref_Član_49" href="/akn/me/act/criminal-code/glava#Član 49" showAs="Član 49"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
+      <TLCReference eId="ref_Član_32" href="/akn/me/act/criminal-code/glava#Član 32" showAs="Član 32"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Beranama</p>
+      <p><strong>Sudija:</strong> Dubravka Popović</p>
+      <p><strong>Zapisničar:</strong> Dijana Djurišić</p>
+      <p><strong>Datum presude:</strong> 27. Novembar 2015 (donesena), 30. Novembar 2015 (objavljena)</p>
+      <p><strong>Predmet:</strong> K.br.167/15</p>
+      <p><strong>Optužnica:</strong> ODT-a u Beranama Kt.br.270/13 od 18.12.2013, izmijenjena 13.06.2014 i 09.06.2015</p>
+    </background>
+    <narrative>
+      <p><strong>Okrivljeni:</strong> R.Lj., JMBG.... od oca V. i majke M. rodjene M., rodjen ... godine u Beranama, sa prebivalištem u B., ul. G.P., br. ..., sa boravištem u ul. "M.S." br. ..., državljanin Republike S., zaposlen, oženjen, otac troje djece, pismen, apsolvent istorije, srednjeg imovnog stanja, neosudjivan (do ovog predmeta)</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 Krivičnog zakonika CG</p>
+      <p><strong>Vrijeme izvršenja:</strong> Juli i novembar 2015 godine</p>
+      <p><strong>Mjesto izvršenja:</strong> Berane - razni kioski i prodavnice</p>
+      <p><strong>Broj lažnih novčanica:</strong> 6 (šest) novčanica u apoenima od 200,00 eura, serijskih brojeva U..., Z..., V..., V..., S... i U..., sve iste serije P73734420404/P66734423443</p>
+      <p><strong>Tačke optužbe (kao prilagođeno na glavnom pretresu):</strong></p>
+      <ul>
+        <li><strong>Tačka 1:</strong> Dana ... godine oko ... časova u kiosku "Š" ul. "S.S." u Beranama - kupio cigarete marke "P." i "D." i elektronsku dopunu od 10€ - platio falsifikovanom novčanicom od 200€ ser.br. U...</li>
+        <li><strong>Tačka 2:</strong> Dana ... godine oko ... časa u kiosku str. "S." vlasništvo R.S. - kupio cigarete marke "P." i "B." i 500gr. kafe - platio falsifikovanom novčanicom od 200€ ser.br. U...</li>
+        <li><strong>Tačka 3:</strong> Dana ... godine oko ... časova u kiosku DOO "M.L." vlasništvo S.D. ul. M.Z. - kupio cigarete marke "A.b." i "V." i kafu "B." - platio falsifikovanom novčanicom od 200€ ser.br. Z....</li>
+        <li><strong>Tačka 4:</strong> Dana ... godine oko ... časova u prodavnici "M.k." vlasništvo P.M. ul. P. - kupio flašu viskija "C.r." - platio falsifikovanom novčanicom od 200€ ser.br. V...</li>
+        <li><strong>Tačka 5:</strong> Dana ... godine oko ... časova u kiosku str. M. "II" vlasništvo M.Ž. ul. M.Z. - kupio dopunu od 5€ i cigarete - platio falsifikovanom novčanicom od 200€ ser.br. V...</li>
+        <li><strong>Tačka 6:</strong> Dana ... godine oko ... časova u kiosku DOO "K." vlasništvo R.V. ul. D.V. - kupio cigarete marke V., kafu marke B. i muški parfem marke F. - platio falsifikovanom novčanicom od 200€ ser.br. S...</li>
+      </ul>
+      <p><strong>Opis incijenta - odbrana okrivljenog:</strong> Okrivljeni je tvrdio da je pribavio lažne novčanice na automobilskoj pumpi u blizini Rožaja gdje je susreo nepoznatog čovjeka sa vozilom sa Kosovskim registarskim tablicama. Taj čovjek mu je, prema tvrdnji okrivljenog, sityao dvije novčanice od 500€ u 3 novčanice od 200€ i ostatak u sitnim apoenima. Okrivljeni je takođe tvrdio da je kod sebe imao 1.100 do 1.200€ u sitnim apoenima.</p>
+      <p><strong>Odbacivanje odbrane - sud zaključio je:</strong> Sud je prihvatio da su sve 9 novčanica (6 stavljenih u opticaj i 3 odbačenih) identične po opštim karakteristikama i serijskom broju, što čini nepitim da je okrivljeni slučajno dobio samo dvije od njih kao kusur. Sud je zaključio da je okrivljeni svjesno pribavio lažne novčanice i da ih je svjesno stavio u opticaj.</p>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 2 u vezi čl. 49 Krivičnog zakonika CG, te čl. 32, 36, 42, 45, 46 i 49 Krivičnog zakonika i čl. 374 ZKP-a</p>
+      <p><strong>Kvalifikacija:</strong> Produženo krivično djelo falsifikovanje novca</p>
+      <p><strong>Ključni dokazi:</strong></p>
+      <ul>
+        <li>Iskazi saslušanih svjedoka K.S., M. Ž., R.S., V.M., P.M., B.Z., Z.B., S.D., D.Ž., R.V., R.Ž. i R.D.</li>
+        <li>Potvrde Uprave Policije o privremeno oduzetim predmetima</li>
+        <li>Zapisnik o prepoznavanju lica - okrivljeni prepoznat kao osoba koja je predala novčanice</li>
+        <li>Izvještaji Centralne banke Crne Gore o tehničkoj analizi novčanica - sve su utvrđene kao falsifikati loše izrade</li>
+        <li>Izvod iz graničke policije - okrivljeni je sa vozilom marke Pežo teget boje, b. registarskih tablica, prolazio kroz graničnog prelaza</li>
+        <li>Video snimak sa objekta DOO K. gdje je vidljivo okrivljenog kako daje novčanicu</li>
+        <li>Psihijatrijski pregled i nalaz vještaka - zaključeno da okrivljeni nije bio pod djelovanjem droga u vrijeme izvršenja djela i da je bio uračunljiv</li>
+      </ul>
+      <p><strong>Analiza fakta od strane suda:</strong></p>
+      <ul>
+        <li>Svih 9 novčanica je identično po svim karakteristikama i nosi isti serijski broj P73734420404/P66734423443 - što ukazuje da su štampane na istom mjestu</li>
+        <li>Okrivljeni je tri novčanice stavio u opticaj u vremenskom inervalu od 15:00h do 18:00h dana 29.08.2016 godine</li>
+        <li>Oduzete novčanice kod okrivljenog: ser. br. U...; Z...; V...; V...; S... i U...</li>
+        <li>6 novčanica je pronađeno pored puta Bijelo Polje-Mojkovac, u mjestu Tutići, ispod potpornog zida - što ukazuje da je okrivljeni odbacio ostatak novčanica kada je shvatio da je otkriven</li>
+        <li>Svjedok N.M. je zaustavio okrivljenog nakon što je primjetio falsifikat i direktno ga je pitao "Zašto si mi dao falsifikovanu novčanicu" na šta je okrivljeni odgovorio "O čemu ti pričaš" i udaljio se vozilom</li>
+        <li>Okrivljeni je odbio da vrati kusur (10,00 eura) i proizvod svjedoku</li>
+      </ul>
+      <p><strong>Zaključak suda o umišljaju:</strong> "Okrivljeni je, po ocjeni suda, predmetno djelo izvršio sa umišljajem, koji se sastojao u svijesti da pribavlja lažan novac, koji zatim u Beranama stavlja u opticaj, stvarajući opasnost za postojeći finansijski sistem, platni promet i privredno poslovanje"</p>
+      <p><strong>Odbacivanje odbrane o slučajnosti:</strong> Sud je odbacio odbranu okrivljenog da je slučajno dobio samo dvije novčanice jer su sve 9 identične, te što je okrivljeni direktno optužen od strane svjedoka N.M. koji je video novčanicu i odmah je prepoznao kao falsifikat</p>
+      <p><strong>Odbacivanje tvrdnje o drogama:</strong> Psihijatrijski pregled je pokazao da okrivljeni nije bio pod djelovanjem droga u vrijeme izvršenja djela (heroin je mogao biti uzet 2-6 dana prije testa), što znači da je bio svjesno prihvatila njeg novčanica i znao je šta čini</p>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Okrivljeni R.Lj. je OSUĐEN:</strong></p>
+      <ul>
+        <li><strong>Na kaznu zatvora:</strong> 1 (jedne) godine, sa uračunatim vremenom u pritvoru od 29.08.2016 do 10.10.2016 i od... do...</li>
+        <li><strong>Za krivično djelo:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 Krivičnog zakonika CG</li>
+      </ul>
+      <p><strong>Mjera bezbjednosti:</strong></p>
+      <ul>
+        <li>Trajno oduzimanje 9 (devet) novčanica u apoenima od po 20,00 eura, svaka serijskog broja P73734420404/P66734423443, kao predmeta izvršenja krivičnog djela (beleška: u presudi se nalaze kao 200 eura novčanice)</li>
+      </ul>
+      <p><strong>Troškovi postupka:</strong></p>
+      <ul>
+        <li>Paušal: 50€</li>
+        <li>Ostali troškovi krivičnog postupka: 100€</li>
+        <li>Zakonskom zastupniku maloljetne oštećene J.C. (oca V.C.): 20,00€ na ime imovinsko-pravnog zahtjeva</li>
+        <li>Svi troškovi dospijevaju u roku od 15 dana po pravosnažnosti presude</li>
+      </ul>
+      <p><strong>Odsustva na sudu:</strong> Oštećeni R.S., S.D., P.M. i R.V. se upućuju na parnicu za ostvarivanje imovinsko-pravnog zahtjeva za naknadu štete. Oštećeni M.Ž. se ne pridružuje i ne postavlja zahtjev (okrivljeni mu je nadoknadio štetu).</p>
+      <p><strong>Stanje nakon presude:</strong> Presuda postaje izvršna nakon isteka roka za žalbu</p>
+      <p><strong>Pravna pouka:</strong> Protiv ove presude može se izjaviti žalba Višem sudu u Podgorici u roku od 15 dana od dana prijema pismenog otpravka, preko ovog suda u dva primjerka</p>
+    </decision>
+  </body>
+</judgment>

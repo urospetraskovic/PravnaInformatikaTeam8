@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 344/09" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_344_09/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_344_09"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 344/09"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_art_258" href="/akn/me/act/criminal-code/glava-23#258" showAs="Član 258 st.4 KZ CG"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u Bijelom Polju. Datum: None.</p>
+    </background>
+    <narrative>
+      <p>Incident: -dana 08.12.2008. godine oko 10,00 časova u Mojkovcu, na kiosku S. ''M.'', vlasništvo M.M.a, lažan novac - jednu novčanicu od 20,00 € serijskog broja H 21021233832 koju je primio kao pravu, pa saznavši da je lažna, stavio u opticaj, na način što je istu prilikom kupovine dva vaučera 068 za mobilni telefon u vrijednosti od po 5,00 €, predao prodavačici K.O., -ćime je izvršio krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog Zakonika CG. -</p>
+    </narrative>
+    <motivation>
+      <p>Na osnovu člana Član 258 st.4 KZ CG.</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>

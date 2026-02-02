@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 9/12" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_9_12/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_9_12"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 9/12"/>
+        <FRBRname value="Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </FRBRWork>
+    </identification>
+    <references source="application"/>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u BERANAMA. Datum: None.</p>
+    </background>
+    <motivation>
+      <p>Na osnovu člana .</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>

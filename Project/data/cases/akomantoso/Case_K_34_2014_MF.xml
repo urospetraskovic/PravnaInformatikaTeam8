@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 34/2014 - M.F." xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_34_2014_MF/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_34_2014_MF"/>
+        <FRBRdate date="2016-07-06"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 34/2014"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_34_2014_MF/sr@2016-07-06/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_34_2014_MF/sr@2016-07-06"/>
+        <FRBRdate date="2016-07-06"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_34_2014_MF/sr@2016-07-06/!main.xml"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_34_2014_MF/sr@2016-07-06/!main.akn"/>
+        <FRBRdate date="2026-02-02"/>
+        <FRBRformat value="xml"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2 Krivičnog zakonika"/>
+      <TLCReference eId="ref_Član_372" href="/akn/me/act/criminal-code#Član 372" showAs="Član 372 Zakona o krivičnom postupku"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Baru</p>
+      <p><strong>Broj predmeta:</strong> K 34/2014</p>
+      <p><strong>Datum presude:</strong> 06. Juli 2016</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi:</strong> M. F.</p>
+      <p><strong>Otac:</strong> N., Majka: H. (rodjene C.)</p>
+      <p><strong>Rodjen:</strong> u R.</p>
+      <p><strong>Državljanin:</strong> Crne Gore</p>
+      <p><strong>Zanimanje:</strong> Keramičar</p>
+      <p><strong>Bračno stanje:</strong> Neoženjen</p>
+      <p><strong>Obrazovanje:</strong> Završena osnovna škola</p>
+      <p><strong>Financijsko stanje:</strong> Lošeg imovnog stanja</p>
+      <p><strong>Prethodne osude:</strong> Pravosnažno osuđen presudom Osnovnog suda u Ulcinju K.br.122/12 od 10.04.2013.godine na 6 mjeseci zatvora za falsifikovanje novca</p>
+      <p><strong>Incident:</strong></p>
+      <p>Dana 21.06.2012.godine u Baru - pribavio tri lažne novčanice i dao ih na upotrebu, uključujući upotrebu za plaćanje seksualnih usluga.</p>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi zakona:</strong></p>
+      <p>Član 258 st.2 Krivičnog zakonika - Falsifikovanje novca</p>
+      <p>Član 372 st.1 tač.2 Zakona o krivičnom postupku - Odbijanje optužbe zbog pravosuđene stvari</p>
+      <p><strong>Dokazi:</strong></p>
+      <p>Iskaz optuženog M. F. - dajući detaljnu odbranu</p>
+      <p>Iskaz optuženog H. G. - potvrđujući da je znao za falsifikovane novčanice</p>
+      <p>Presudom Osnovnog suda u Ulcinju K.br.122/12 od 10.04.2013.godine utvrđeno je da je optuženi M. F. pravosnažno osuđen za identično djelo (stavljanje u opticaj dvije lažne novčanice od 50 eura istoga dana)</p>
+      <p><strong>Pravno rešenje:</strong></p>
+      <p>Radnja koja se stavlja na teret optuženom M. Feridu po novoj optužnici predstavlja samo sastavni dio krivičnog djela za koje je već pravosnažno osuđen. Ovo narušava принцип "ne bis in idem" (nikoga dva puta za isto djelo).</p>
+    </motivation>
+    <decision>
+      <p><strong>Presuda:</strong> Optužba prema optuženom M. F. se odbija</p>
+      <p><strong>Osnov:</strong> Član 372 st.1 tač.2 Zakona o krivičnom postupku - jer je za isto djelo već pravosnažno osudjen</p>
+      <p><strong>Troškovi:</strong> Troškovi postupka u odnosu na optuženog M. F. padaju na teret budžetskih sredstava suda</p>
+      <p><strong>Odluka:</strong> ACQUITTED - Odbija se optužba jer je pravosuđena stvar - već osudjen presudom K.br.122/12</p>
+    </decision>
+  </body>
+</judgment>

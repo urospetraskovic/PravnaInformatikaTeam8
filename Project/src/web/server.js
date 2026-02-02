@@ -1,258 +1,136 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const { DOMParser } = require('@xmldom/xmldom');
 const app = express();
 
-// Load case database from JSON file
-const dbPath = path.join(__dirname, '../../data/cases/DB/EXTRACTED_CASES_DATABASE.json');
-let fullDatabase = [];
+// Load case database from XML files
+const casesDir = path.join(__dirname, '../../data/cases/akomantoso');
+let caseDatabase = [];
 
-try {
-  const rawData = fs.readFileSync(dbPath, 'utf8');
-  const jsonData = JSON.parse(rawData);
-  
-  // Transform the database to a simpler format for the web UI
-  fullDatabase = jsonData.map((caseData, index) => {
-    try {
-      const harmLevel = Math.min(5, Math.max(0, 
-        (caseData.victim?.harm_psychological || 0) + 
-        (caseData.victim?.harm_physical || 0)
-      ));
+function parseXMLFile(filePath) {
+  try {
+    const xmlContent = fs.readFileSync(filePath, 'utf8');
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xmlContent);
+    
+    // Extract information from XML
+    const judgment = doc.documentElement;
+    const meta = doc.getElementsByTagNameNS('*', 'meta')[0];
+    const body = doc.getElementsByTagNameNS('*', 'body')[0];
+    
+    if (!meta || !body) return null;
+    
+    // Get identification info
+    const FRBRnumber = meta.getElementsByTagNameNS('*', 'FRBRnumber')[0];
+    const FRBRname = meta.getElementsByTagNameNS('*', 'FRBRname')[0];
+    const caseNumber = FRBRnumber ? FRBRnumber.getAttribute('value') : 'Unknown';
+    const crimeType = FRBRname ? FRBRname.getAttribute('value') : 'Unknown';
+    
+    // Get background info (court, date, etc)
+    const backgroundElement = body.getElementsByTagNameNS('*', 'background')[0];
+    const backgroundPs = backgroundElement ? backgroundElement.getElementsByTagNameNS('*', 'p') : [];
+    let court = 'Unknown';
+    let caseDate = 'Unknown';
+    
+    for (let i = 0; i < backgroundPs.length; i++) {
+      const p = backgroundPs[i];
+      const text = p.textContent;
+      if (text.includes('Sud:')) {
+        court = text.replace(/.*Sud:\s*/i, '').trim();
+      }
+      if (text.includes('Datum presude:')) {
+        caseDate = text.replace(/.*Datum presude:\s*/i, '').trim();
+      }
+    }
+    
+    // Get articles referenced
+    const references = meta.getElementsByTagNameNS('*', 'TLCReference');
+    const articles = [];
+    for (let i = 0; i < references.length; i++) {
+      const ref = references[i];
+      const showAs = ref.getAttribute('showAs');
+      if (showAs && showAs.includes('Član')) {
+        articles.push(showAs);
+      }
+    }
+    
+    // Get decision
+    const decisionElement = body.getElementsByTagNameNS('*', 'decision')[0];
+    const decisionPs = decisionElement ? decisionElement.getElementsByTagNameNS('*', 'p') : [];
+    let verdict = 'UNKNOWN';
+    let sentenceText = 'Not specified';
+    
+    for (let i = 0; i < decisionPs.length; i++) {
+      const p = decisionPs[i];
+      const text = p.textContent;
+      if (text.includes('GUILTY')) verdict = 'GUILTY';
+      else if (text.includes('ACQUITTED')) verdict = 'ACQUITTED';
+      else if (text.includes('CONDITIONAL')) verdict = 'CONDITIONAL';
       
-      // Extract verdict from boolean flags
-      let verdictString = 'UNKNOWN';
-      if (typeof caseData.verdict === 'object' && caseData.verdict !== null) {
-        if (caseData.verdict.guilty === true) {
-          verdictString = 'GUILTY';
-        } else if (caseData.verdict.acquitted === true) {
-          verdictString = 'ACQUITTED';
-        } else if (caseData.verdict.conditional === true) {
-          verdictString = 'CONDITIONAL';
-        }
-      } else if (typeof caseData.verdict === 'string') {
-        verdictString = caseData.verdict.toUpperCase();
+      if (text.includes('Presuda:') || text.includes('presuda:')) {
+        sentenceText = text.trim();
       }
-
-      // Extract evidence summary
-      let evidenceText = 'No evidence documented';
-      if (typeof caseData.evidence === 'object' && caseData.evidence !== null) {
-        if (caseData.evidence.summary) {
-          evidenceText = caseData.evidence.summary;
-        } else if (caseData.evidence.description) {
-          evidenceText = caseData.evidence.description;
-        }
-      } else if (typeof caseData.evidence === 'string') {
-        evidenceText = caseData.evidence;
-      }
-
-      // Extract sentence from verdict object or fallback to other fields
-      let sentenceText = 'Not specified';
-      if (caseData.verdict && typeof caseData.verdict === 'object') {
-        const sentenceType = caseData.verdict.sentence_type || '';
-        const sentenceDuration = caseData.verdict.sentence_duration_months || '';
-        if (sentenceType || sentenceDuration) {
-          sentenceText = `${sentenceType}${sentenceDuration ? ' - ' + sentenceDuration + ' months' : ''}`.trim();
-        }
-      } else if (caseData.sentence_text || caseData.sentence) {
-        sentenceText = caseData.sentence_text || caseData.sentence;
-      }
-
-      return {
-        id: caseData.case_number || `Case_${index + 1}`,
-        type: caseData.case_type || 'Unknown',
-        court: (caseData.court || 'Unknown')
-          .replace('Osnovni Sud u ', '')
-          .replace('Osnovni Sud ', '')
-          .replace('Osnovna škola ', '')
-          .trim() || 'Unknown Court',
-        verdict: verdictString,
-        sentence: sentenceText,
-        articles: Array.isArray(caseData.legal?.articles_charged) 
-          ? caseData.legal.articles_charged 
-          : (caseData.legal?.articles_charged ? [caseData.legal.articles_charged] : []),
-        defendant: caseData.defendant?.name || 'Unknown',
-        victim: caseData.victim?.name || 'Unknown',
-        harm: harmLevel,
-        evidence: evidenceText,
-        year: parseInt(caseData.verdict_date) || 2024,
-        fullData: caseData
-      };
-    } catch (err) {
-      console.warn(`Warning: Error processing case ${index + 1}:`, err.message);
-      return {
-        id: `Case_${index + 1}`,
-        type: 'Unknown',
-        court: 'Unknown',
-        verdict: 'UNKNOWN',
-        sentence: 'Not specified',
-        articles: [],
-        defendant: 'Unknown',
-        victim: 'Unknown',
-        harm: 0,
-        evidence: 'No information',
-        year: 2024,
-        fullData: caseData
-      };
     }
-  });
-  console.log(`✅ Successfully loaded ${fullDatabase.length} cases from database`);
-} catch (error) {
-  console.error('Error loading database:', error.message);
-  console.log('Using fallback database...');
-  
-  // Fallback database if JSON loading fails
-  fullDatabase = [
-    {
-      id: 'K 217/24',
-      type: 'Workplace Harassment',
-      court: 'Berané',
-      verdict: 'GUILTY',
-      sentence: '6 months',
-      articles: ['168'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 3,
-      evidence: 'Witness testimony',
-      year: 2024
-    },
-    {
-      id: 'K 277/12',
-      type: 'Labor Rights Violation',
-      court: 'Bijelo Polje',
-      verdict: 'GUILTY',
-      sentence: 'Suspended',
-      articles: ['169'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 2,
-      evidence: 'Documentation',
-      year: 2012
-    },
-    {
-      id: 'K 98/2018',
-      type: 'Stalking',
-      court: 'Podgorica',
-      verdict: 'GUILTY',
-      sentence: '1 year',
-      articles: ['168a'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 4,
-      evidence: 'Phone records, 20+ calls',
-      year: 2018
-    },
-    {
-      id: 'K 664/2022',
-      type: 'Workplace Assault',
-      court: 'Podgorica',
-      verdict: 'GUILTY',
-      sentence: '2 years 4 months',
-      articles: ['215'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 5,
-      evidence: 'Medical records, witness testimony',
-      year: 2022
-    },
-    {
-      id: 'K 64/14',
-      type: 'Threatening/Safety',
-      court: 'Cetinje',
-      verdict: 'ACQUITTED',
-      sentence: 'None',
-      articles: ['168'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 1,
-      evidence: 'Insufficient evidence',
-      year: 2014
-    },
-    {
-      id: 'K 292/2014',
-      type: 'Embezzlement',
-      court: 'Bijelo Polje',
-      verdict: 'GUILTY',
-      sentence: '4 years',
-      articles: ['271'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 3,
-      evidence: 'Financial records',
-      year: 2014
-    },
-    {
-      id: 'K 30/2020',
-      type: 'Coal Theft',
-      court: 'Pljevlja',
-      verdict: 'ACQUITTED',
-      sentence: 'None',
-      articles: ['199'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 0,
-      evidence: 'Insufficient evidence',
-      year: 2020
-    },
-    {
-      id: 'K 22/2022',
-      type: 'Social Insurance Fraud',
-      court: 'Podgorica',
-      verdict: 'ACQUITTED',
-      sentence: 'None',
-      articles: ['264'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 1,
-      evidence: 'Lack of proof',
-      year: 2022
-    },
-    {
-      id: 'K 375/14',
-      type: 'Domestic Violence',
-      court: 'Kotor',
-      verdict: 'CONDITIONAL',
-      sentence: 'Suspended',
-      articles: ['215'],
-      defendant: 'Unknown',
-      victim: 'Unknown',
-      harm: 4,
-      evidence: 'Injury reports',
-      year: 2014
-    }
-  ];
+    
+    return {
+      id: caseNumber,
+      case_id: path.basename(filePath, '.xml'),
+      type: crimeType,
+      court: court,
+      date: caseDate,
+      verdict: verdict,
+      articles: articles,
+      sentence: sentenceText,
+      harm: Math.floor(Math.random() * 5) + 1, // placeholder
+      year: 2024,
+      xmlFile: filePath
+    };
+  } catch (error) {
+    console.error(`Error parsing ${filePath}:`, error.message);
+    return null;
+  }
 }
 
-const caseDatabase = fullDatabase;
+// Load all XML case files
+try {
+  if (fs.existsSync(casesDir)) {
+    const files = fs.readdirSync(casesDir).filter(f => f.endsWith('.xml'));
+    console.log(`Found ${files.length} case XML files`);
+    
+    for (const file of files) {
+      const filePath = path.join(casesDir, file);
+      const caseData = parseXMLFile(filePath);
+      if (caseData) {
+        caseDatabase.push(caseData);
+      }
+    }
+    
+    console.log(`✅ Loaded ${caseDatabase.length} cases from XML files`);
+  } else {
+    console.log(`Cases directory not found at ${casesDir}`);
+  }
+} catch (error) {
+  console.error('Error loading case database:', error.message);
+}
 
-// Similarity calculation (simplified version of Java algorithm)
-function calculateSimilarity(queryCase, dbCase) {
-  let score = 0;
-  
-  // Type match (40%)
-  const typeSimilarity = queryCase.type === dbCase.type ? 1.0 : 
-                         (queryCase.type.includes('Harassment') && dbCase.type.includes('Harassment')) ? 0.85 :
-                         (queryCase.type.includes('Assault') && dbCase.type.includes('Assault')) ? 0.85 : 0.3;
-  score += typeSimilarity * 0.40;
-  
-  // Verdict match (25%)
-  const verdictSimilarity = queryCase.verdict === dbCase.verdict ? 1.0 : 0.3;
-  score += verdictSimilarity * 0.25;
-  
-  // Harm match (15%)
-  const harmDiff = Math.abs(queryCase.harm - dbCase.harm);
-  const harmSimilarity = harmDiff === 0 ? 1.0 : Math.max(0, 1 - (harmDiff * 0.1));
-  score += harmSimilarity * 0.15;
-  
-  // Evidence match (10%)
-  const evidenceSimilarity = queryCase.evidence === dbCase.evidence ? 1.0 : 0.7;
-  score += evidenceSimilarity * 0.10;
-  
-  // Year proximity (10%)
-  const yearDiff = Math.abs(queryCase.year - dbCase.year);
-  const yearSimilarity = Math.max(0, 1 - (yearDiff / 100));
-  score += yearSimilarity * 0.10;
-  
-  return score;
+// Fallback database if no XML files found
+if (caseDatabase.length === 0) {
+  console.log('Using fallback database...');
+  caseDatabase = [
+    {
+      id: 'K 05/1336',
+      case_id: 'Case_05_1336',
+      type: 'Falsifikovanje novca',
+      court: 'Osnovni Sud u BIJELOM POLJU',
+      date: 'Unknown',
+      verdict: 'ACQUITTED',
+      articles: ['Član 339', 'Član 256', 'Član 258'],
+      sentence: 'ACQUITTED',
+      harm: 3,
+      year: 2024
+    }
+  ];
 }
 
 // Routes - API MUST come before static files!
@@ -278,7 +156,7 @@ app.get('/api/statistics', (req, res) => {
     guiltyCount: caseDatabase.filter(c => c.verdict === 'GUILTY').length,
     acquittedCount: caseDatabase.filter(c => c.verdict === 'ACQUITTED').length,
     conditionalCount: caseDatabase.filter(c => c.verdict === 'CONDITIONAL').length,
-    averageHarm: (caseDatabase.reduce((sum, c) => sum + c.harm, 0) / caseDatabase.length).toFixed(2),
+    averageHarm: caseDatabase.length > 0 ? (caseDatabase.reduce((sum, c) => sum + c.harm, 0) / caseDatabase.length).toFixed(2) : 0,
     courts: [...new Set(caseDatabase.map(c => c.court))].length
   };
   res.json(stats);
@@ -294,6 +172,82 @@ app.get('/api/case-types', (req, res) => {
   res.json(typesWithCounts);
 });
 
+// API: Get Glava 23 (Criminal Code Chapter 23) articles
+app.get('/api/glava23', (req, res) => {
+  const glava23Path = path.join(__dirname, '../../data/glava23/criminal_code.xml');
+  
+  try {
+    if (!fs.existsSync(glava23Path)) {
+      return res.status(404).json({ error: 'Glava 23 file not found' });
+    }
+    
+    const xmlContent = fs.readFileSync(glava23Path, 'utf8');
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xmlContent);
+    
+    // Extract all articles from the XML
+    const articles = [];
+    const articleElements = doc.getElementsByTagNameNS('*', 'article');
+    
+    for (let i = 0; i < articleElements.length; i++) {
+      const article = articleElements[i];
+      const eId = article.getAttribute('eId');
+      const heading = article.getElementsByTagNameNS('*', 'heading')[0]?.textContent || 'Unknown';
+      const paragraphs = article.getElementsByTagNameNS('*', 'paragraph');
+      const content = [];
+      
+      for (let j = 0; j < paragraphs.length; j++) {
+        const p = paragraphs[j].getElementsByTagNameNS('*', 'p')[0];
+        if (p) {
+          content.push(p.textContent);
+        }
+      }
+      
+      articles.push({
+        eId: eId,
+        heading: heading,
+        content: content.join('\n\n')
+      });
+    }
+    
+    res.json({ articles: articles });
+  } catch (error) {
+    console.error('Error reading Glava 23:', error);
+    res.status(500).json({ error: 'Error reading Glava 23' });
+  }
+});
+
+// API: Get AkomaNtoso XML for a specific case
+app.get('/api/akomantoso/:caseId', (req, res) => {
+  const caseId = req.params.caseId;
+  
+  // Convert case ID format: "K 34/14" -> "Case_34_14"
+  let xmlFileName = caseId;
+  if (caseId.includes('/')) {
+    // Format like "K 34/14" -> extract "34" and "14"
+    const match = caseId.match(/(\d+)\/(\d+)/);
+    if (match) {
+      xmlFileName = `Case_${match[1]}_${match[2]}`;
+    }
+  }
+  
+  const xmlPath = path.join(__dirname, '../../data/cases/akomantoso', `${xmlFileName}.xml`);
+  
+  try {
+    if (!fs.existsSync(xmlPath)) {
+      console.warn(`AkomaNtoso file not found: ${xmlPath}`);
+      return res.status(404).json({ error: 'AkomaNtoso file not found for case ' + caseId });
+    }
+    
+    const xmlContent = fs.readFileSync(xmlPath, 'utf8');
+    res.header('Content-Type', 'application/xml; charset=utf-8');
+    res.send(xmlContent);
+  } catch (error) {
+    console.error('Error reading AkomaNtoso file:', error);
+    res.status(500).json({ error: 'Error reading AkomaNtoso file' });
+  }
+});
+
 // API: Search cases by type
 app.get('/api/search/type/:type', (req, res) => {
   const type = req.params.type.toLowerCase();
@@ -302,21 +256,7 @@ app.get('/api/search/type/:type', (req, res) => {
   res.json(results);
 });
 
-// API: Search similar cases
-app.post('/api/search/similar', (req, res) => {
-  const queryCase = req.body;
-  const results = caseDatabase
-    .map(dbCase => ({
-      ...dbCase,
-      similarityScore: calculateSimilarity(queryCase, dbCase)
-    }))
-    .filter(c => c.similarityScore > 0.5)
-    .sort((a, b) => b.similarityScore - a.similarityScore)
-    .slice(0, 5);
-  res.json(results);
-});
-
-// API: Get case by ID - decode URL-encoded spaces
+// API: Get case by ID
 app.get('/api/cases/:id(*)', (req, res) => {
   try {
     const caseId = decodeURIComponent(req.params.id);
@@ -347,13 +287,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, async () => {
   console.log(`\n✅ Legal CBR Web UI running at http://localhost:${PORT}`);
-  console.log('📊 Database loaded with 13 Montenegrian cases\n');
-  
-  // Automatically open browser
-  try {
-    const open = await import('open');
-    await open.default(`http://localhost:${PORT}`);
-  } catch (err) {
-    console.warn('Could not automatically open browser. Please visit http://localhost:' + PORT);
-  }
+  console.log(`📊 Database loaded with ${caseDatabase.length} Montenegrian cases\n`);
 });

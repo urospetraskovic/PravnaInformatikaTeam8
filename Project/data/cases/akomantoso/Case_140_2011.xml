@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 140/2011" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_140_2011/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_140_2011"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 140/2011"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_140_2011/sr@2000-01-01/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_140_2011/sr@2000-01-01"/>
+        <FRBRdate date="None"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_140_2011/sr@2000-01-01/!main.xml"/>
+        <FRBRuri value="/akn/me/judgment/Case_140_2011/sr@2000-01-01/!main.akn"/>
+        <FRBRdate date="2026-02-02"/>
+        <FRBRformat value="xml"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+                <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code/glava-23#Član 258" showAs="Član 258"/>
+                <TLCReference eId="ref_Član_2" href="/akn/me/act/criminal-code/glava-23#Član 2" showAs="Član 2"/>
+                <TLCReference eId="ref_Član_226" href="/akn/me/act/criminal-code/glava-23#Član 226" showAs="Član 226"/>
+                <TLCReference eId="ref_Član_370" href="/akn/me/act/criminal-code/glava-23#Član 370" showAs="Član 370"/>
+                <TLCReference eId="ref_Član_42" href="/akn/me/act/criminal-code/glava-23#Član 42" showAs="Član 42"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Sud: Osnovni Sud u B</p>
+      <p><strong>Broj predmeta:</strong> K 140/2011</p>
+      <p><strong>Datum presude:</strong> None</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi:</strong> Unknown</p>
+      <p><strong>Lokacija incidenta:</strong> Unknown</p>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi zakona:</strong></p>
+      <p>Član 258, Član 2, Član 226, Član 370, Član 42</p>
+    </motivation>
+    <decision>
+      <p><strong>Presuda:</strong> ACQUITTED</p>
+      <p><strong>Opis kazne:</strong> Not specified</p>
+      <p><strong>Odluka:</strong> ACQUITTED</p>
+    </decision>
+  </body>
+</judgment>

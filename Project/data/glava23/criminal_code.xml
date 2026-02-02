@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Criminal Code - Chapter 23" xml:lang="sr">
+  <meta>
+    <identification source="legislation">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/act/criminal-code/glava-23/!main"/>
+        <FRBRuri value="/akn/me/act/criminal-code/glava-23"/>
+        <FRBRdate date="2023-01-01"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="GLAVA_23"/>
+        <FRBRname value="GLAVA DVADESET TREĆA - KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANjA"/>
+      </FRBRWork>
+    </identification>
+  </meta>
+  <body>
+    <chapter eId="chp_23">
+      <heading>GLAVA DVADESET TREĆA - KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANjA</heading>
+      
+      <article eId="art_258">
+        <heading>Član 258 - Falsifikovanje novca</heading>
+        <paragraph eId="art_258_st1">
+          <p><strong>(1)</strong> Ko napravi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko u istoj namjeri preinači pravi novac, kazniće se zatvorom od dvije do dvanaest godina.</p>
+        </paragraph>
+        <paragraph eId="art_258_st2">
+          <p><strong>(2)</strong> Ko pribavlja, drži ili prenosi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko lažan novac stavlja u opticaj, kazniće se zatvorom od dvije do deset godina.</p>
+        </paragraph>
+        <paragraph eId="art_258_st3">
+          <p><strong>(3)</strong> Ako je djelom iz st. 1 i 2 ovog člana napravljen, preinačen, stavljen u promet ili pribavljen lažan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajući iznos u stranom novcu, učinilac će se kazniti zatvorom od pet do petnaest godina.</p>
+        </paragraph>
+        <paragraph eId="art_258_st4">
+          <p><strong>(4)</strong> Ko lažan novac koji je primio kao pravi, pa saznavši da je lažan, stavi u opticaj ili ko zna da je načinjen lažan novac ili da je lažan novac stavljen u opticaj, pa to ne prijavi, kazniće se novčanom kaznom ili zatvorom do jedne godine.</p>
+        </paragraph>
+        <paragraph eId="art_258_st5">
+          <p><strong>(5)</strong> Lažan novac oduzeće se.</p>
+        </paragraph>
+        <paragraph eId="art_258_st6">
+          <p><strong>(6)</strong> Lažnim novcem, u smislu ovog krivičnog djela, smatra se i novac izrađen na način i od materijala kao pravi novac, suprotno propisima kojima se uređuje izrada novca.</p>
+        </paragraph>
+      </article>
+
+      <article eId="art_259">
+        <heading>Član 259 - Falsifikovanje hartija od vrijednosti</heading>
+        <paragraph eId="art_259_st1">
+          <p><strong>(1)</strong> Ko napravi lažne hartije od vrijednosti ili preinači prave hartije od vrijednosti u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lažne hartije upotrijebi kao prave ili ih u toj namjeri pribavi, kazniće se zatvorom od jedne do pet godina.</p>
+        </paragraph>
+        <paragraph eId="art_259_st2">
+          <p><strong>(2)</strong> Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog člana prelazi tri hiljade eura, učinilac će se kazniti zatvorom od jedne do osam godina.</p>
+        </paragraph>
+        <paragraph eId="art_259_st3">
+          <p><strong>(3)</strong> Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog člana prelaza trideset hiljada eura, učinilac će se kazniti zatvorom od dvije do deset godina.</p>
+        </paragraph>
+        <paragraph eId="art_259_st4">
+          <p><strong>(4)</strong> Ko lažne hartije od vrijednosti koje je primio kao prave, pa saznavši da su lažne, stavi u promet, kazniće se novčanom kaznom ili zatvorom do jedne godine.</p>
+        </paragraph>
+        <paragraph eId="art_259_st5">
+          <p><strong>(5)</strong> Lažne hartije od vrijednosti oduzeće se.</p>
+        </paragraph>
+      </article>
+
+      <article eId="art_260">
+        <heading>Član 260 - Falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje</heading>
+        <paragraph eId="art_260_st1">
+          <p><strong>(1)</strong> Ko napravi lažnu platnu karticu ili ko preinači pravu platnu karticu u namjeri da je upotrijebi kao pravu, ili ko takvu lažnu platnu karticu ili tuđu pravu platnu karticu koja je neovlašćeno pribavljena nabavi, drži ili prenese radi upotrebe ili takvu karticu upotrijebi, kazniće se zatvorom do tri godine.</p>
+        </paragraph>
+        <paragraph eId="art_260_st2">
+          <p><strong>(2)</strong> Ako je učinilac djela iz stava 1 ovog člana upotrebom kartice pribavio protivpravnu imovinsku korist, kazniće se zatvorom od šest mjeseci do pet godina.</p>
+        </paragraph>
+        <paragraph eId="art_260_st3">
+          <p><strong>(3)</strong> Ako je učinilac djela iz stava 1 ovog člana pribavio protivpravnu imovinsku korist u iznosu koji prelaza tri hiljade eura, kazniće se zatvorom od jedne do osam godina.</p>
+        </paragraph>
+        <paragraph eId="art_260_st4">
+          <p><strong>(4)</strong> Ako je učinilac djela iz stava 1 ovog člana pribavio protivpravnu imovinsku korist u iznosu koji prelaza trideset hiljada eura, kazniće se zatvorom od dvije do deset godina.</p>
+        </paragraph>
+      </article>
+
+      <article eId="art_261">
+        <heading>Član 261 - Falsifikovanje znakova za vrijednost</heading>
+        <paragraph eId="art_261_st1">
+          <p><strong>(1)</strong> Ko napravi lažne ili preinači prave znakove za vrijednost u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lažne znakove upotrijebi kao prave ili ih u toj namjeri pribavi, kazniće se zatvorom do tri godine.</p>
+        </paragraph>
+        <paragraph eId="art_261_st2">
+          <p><strong>(2)</strong> Ako ukupna vrijednost znakova iz stava 1 ovog člana prelaza iznos od tri hiljade eura, učinilac će se kazniti zatvorom od šest mjeseci do pet godina.</p>
+        </paragraph>
+        <paragraph eId="art_261_st3">
+          <p><strong>(3)</strong> Ako ukupna vrijednost znakova iz stava 1 ovog člana prelaza iznos od trideset hiljada eura, učinilac će se kazniti zatvorom od jedne do osam godina.</p>
+        </paragraph>
+      </article>
+
+      <article eId="art_262">
+        <heading>Član 262 - Pravljenje, nabavljanje i davanje drugom sredstava i materijala za falsifikovanje</heading>
+        <paragraph eId="art_262_st1">
+          <p><strong>(1)</strong> Ko pravi, nabavlja, prodaje, drži radi upotrebe ili daje drugom na upotrebu sredstva i materijal za pravljenje lažnog novca, platnih kartica ili lažnih hartija od vrijednosti, kazniće se zatvorom od šest mjeseci do pet godina.</p>
+        </paragraph>
+        <paragraph eId="art_262_st2">
+          <p><strong>(2)</strong> Kaznom iz stava 1 ovog člana kazniće se i ko, radi pravljenja lažnog novca, pravi, nabavlja, prodaje, drži radi upotrebe, drži ili daje drugom holograme ili druge sastavne dijelove novca koji služe za zaštitu od falsifikovanja.</p>
+        </paragraph>
+        <paragraph eId="art_262_st3">
+          <p><strong>(3)</strong> Ko pravi, nabavlja, prodaje, drži radi upotrebe ili daje drugom na upotrebu sredstva za pravljenje lažnih znakova za vrijednost, kazniće se novčanom kaznom ili zatvorom do dvije godine.</p>
+        </paragraph>
+      </article>
+
+    </chapter>
+  </body>
+</akomaNtoso>

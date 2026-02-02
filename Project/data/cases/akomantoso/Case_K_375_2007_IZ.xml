@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 375/2007" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_375_2007_IZ/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_375_2007_IZ"/>
+        <FRBRdate date="2008-07-09"/>
+        <FRBRnumber value="K 375/2007"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_375_2007_IZ/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_375_2007_IZ"/>
+        <FRBRdate date="2008-07-09"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_375_2007_IZ"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_375_2007_IZ"/>
+        <FRBRdate date="2008-07-09"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st4" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 4" showAs="Član 258 st. 4"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75 st. 1" showAs="Član 75 st. 1"/>
+      <TLCReference eId="ref_Član_32" href="/akn/me/act/criminal-code/glava#Član 32" showAs="Član 32"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Baru</p>
+      <p><strong>Vijeće:</strong> Sudija Aleksandra Leković (predsjedavajući), Dragutina Radović (porotnik), Josipa Filipovića (porotnik)</p>
+      <p><strong>Zapisničar:</strong> Ana Ćirović</p>
+      <p><strong>Datum presude:</strong> 09. Jul 2008</p>
+      <p><strong>Predmet:</strong> K. broj 375/07</p>
+      <p><strong>Optužnica:</strong> ODT-a Baru Kt.br. 249/07 od 07.08.2007</p>
+    </background>
+    <narrative>
+      <p><strong>Okrivljeni:</strong> I.Z., od oca D. i majke R. rodjene V., rodjen u Š. (Republika S.), stalno nastanjen u Baru, po zanimanju gradjevinski radnik, razveden, pismen, završio srednju školu, lošeg imovnog stanja</p>
+      <p><strong>Prethodne osude:</strong> Osudjen presudom Višeg suda u Podgorici K br. 77/03 od 23.09.2004 godine na 5 godina zatvora za silovanje (čl. 86 st. 2 Krivičnog zakonika)</p>
+      <p><strong>Objekt incijenta:</strong> Falsifikovana novčanica u apoenu od 50,00 eura, serijskog broja S...</p>
+      <p><strong>Datum incijenta:</strong> 06. maja 2007. godine oko 11,00 časova</p>
+      <p><strong>Mjesto incijenta:</strong> Kiosk "I." vlasništva M. Ć., u Baru, ul. J.S.</p>
+      <p><strong>Opis incijenta:</strong> Okrivljeni je dana 06. maja 2007. godine oko 11,00 časova u kiosku "I." kupio dva vaučera za mobilni telefon od po 5,00 eura. Predao je radnici D.S. falsifikovanu novčanicu u apoenu od 50,00 eura. Radnica je primjetila da novčanica nije originalna jer nije imala svježu boju, zaštitu i djelovala je kao isprana. Okrivljeni je tvrdio da je novčanicu dobio kao kusur prije dva dana sa istog kioska, što je vlasnik M. Ć. negirao.</p>
+      <p><strong>Ključni dokazi:</strong></p>
+      <ul>
+        <li>Iskaz svjedoka D.S. - radnica u kiosku koja je primila novčanicu i primijetila falsifikat</li>
+        <li>Iskaz svjedoka M.Ć. - vlasnik kioska koji je negirao da je dao takvu novčanicu kao kusur</li>
+        <li>Iskaz svjedoka P.Z. - radnica na drugoj lokaciji koja je 4. maja odbila da prima novčanicu jer je bila sumnjiva</li>
+        <li>Nalaz i mišljenje vještaka grafologa N.V. od maja 2007. godine - utvrđeno da je novčanica falsifikat</li>
+        <li>Potvrda o oduzimanju stvari CB Baru KU br. ... od 06.05.2007 - novčanica serijskog broja S... privremeno oduzeta</li>
+        <li>Izvod iz kaznene evidencije za okrivljenog</li>
+      </ul>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 4 Krivičnog zakonika, Član 75 st. 1, Član 32, 36, 42 Krivičnog zakonika i čl. 359, 360, 364 ZKP-a</p>
+      <p><strong>Kvalifikacija:</strong> Krivično djelo - Falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika</p>
+      <p><strong>Razlozi za sažimanje protiv optuženog:</strong></p>
+      <ul>
+        <li>Okrivljeni je u početnoj odbrani negirao izvršenje krivičnog djela, tvrdjeći da je novčanicu dobio kao kusur na trafici kod fontane dana 30.04.2007.</li>
+        <li>Tokom proceduren okrivljeni se ponašao kontradiktorno - u istrazi je naveo da je pokušao da kupi vaučere, a na glavnom pretresu navodi da je došao samo da vrati novčanicu</li>
+        <li>Iskazi svjedoka P.Z. dokazuju da je okrivljeni 4. maja pokušao da kupi vaučere sa istom novčanicom, koju je P.Z. odbila jer je bila sumnjiva, što znači da je okrivljeni u tom trenutku već znao da je novčanica falsifikovana</li>
+        <li>Dana 06. maja, okrivljeni je stu novčanicu ponovo upotrijebio sa istim ciljem - kupovine vaučera - što dokazuje da je znao za njen falsifikovani karakter</li>
+        <li>Sud je prihvatio odbanu okrivljenog kao neutemeljenu i kontradiktorna, sračunatu na izbjegavanje krivične odgovornosti</li>
+      </ul>
+      <p><strong>Dokazi o kvalifikaciji kao čl. 258 st. 4 (umjesto st. 2):</strong></p>
+      <ul>
+        <li>Okrivljeni je predmetnu novčanicu primio kao pravu (dobio je kao kusur 30.04.2007)</li>
+        <li>Dana 4. maja (nakon 4-5 dana) saznao je od P.Z. da je novčanica falsifikovana</li>
+        <li>Dana 6. maja (nakon još 2 dana) upotrijebio je novčanicu svjesno da je lažna</li>
+        <li>Sud je zaključio: "Okrivljeni je dakle, kada je pokušao da kupi vaučere na kiosku "I.", znao da je predmetna novčanica lažna"</li>
+      </ul>
+      <p><strong>Dostignuće penalnog cilja:</strong> Djelo je svršeno stavljanjem u opticaj falsifikovanog novca - predajom novčanice radnici D.S. kao prave, bez obzira što je novčanica otkrivena prije nego što je novac zamijen.</p>
+      <p><strong>Subjektivna obilježja:</strong> Okrivljeni je krivično djelo izvršio sa direktnim umišljajem - znao je da novčanica falsifikovana i htio je njeno stavljanje u opticaj</p>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Okrivljeni I.Z. je OSUĐEN:</strong></p>
+      <ul>
+        <li><strong>Na kaznu zatvora:</strong> 3 (tri) mjeseca</li>
+        <li><strong>Za krivično djelo:</strong> Falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika</li>
+      </ul>
+      <p><strong>Mjera bezbjednosti:</strong></p>
+      <ul>
+        <li>Oduzimanje jedne lažne novčanice u apoenu od 50 eura, serijskog broja S..., kao predmeta upotrijebljenog za izvršenje krivičnog djela</li>
+      </ul>
+      <p><strong>Troškovi postupka:</strong> Okrivljeni je dužan da plati troškove krivičnog postupka u iznosu od 700 eura u roku od 15 dana od dana pravosnažnosti presude pod prijetnjom izvršenja</p>
+      <p><strong>Stanje nakon presude:</strong> Presuda postaje izvršna nakon isteka roka za žalbu</p>
+      <p><strong>Pravna pouka:</strong> Protiv ove presude može se izjaviti žalba Višem sudu u Podgorici u roku od 15 dana od dana prijema pismenog otpravka, preko ovog suda u dva primjerka</p>
+    </decision>
+  </body>
+</judgment>

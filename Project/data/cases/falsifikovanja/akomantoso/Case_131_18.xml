@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 131/18" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_131_18/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_131_18"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 131/18"/>
+        <FRBRname value="Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </FRBRWork>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_art_260" href="/akn/me/act/criminal-code/glava-23#260" showAs="Član 260 st.2 KZ CG"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u BARU. Datum: None.</p>
+    </background>
+    <motivation>
+      <p>Na osnovu člana Član 260 st.2 KZ CG.</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>

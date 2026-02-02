@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 140/2011" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_140_2011_SN_MV/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_140_2011_SN_MV"/>
+        <FRBRdate date="2011-04-14"/>
+        <FRBRnumber value="K 140/2011"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_140_2011_SN_MV/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_140_2011_SN_MV"/>
+        <FRBRdate date="2011-04-14"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_140_2011_SN_MV"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_140_2011_SN_MV"/>
+        <FRBRdate date="2011-04-14"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st2" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2"/>
+      <TLCReference eId="ref_Član_49" href="/akn/me/act/criminal-code/glava#Član 49" showAs="Član 49 st. 1"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75 st. 1"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Bijelom Polju</p>
+      <p><strong>Vijeće:</strong> Sudija Rahmo Banda (predsjedavajući), Sudija porotnik Pešić Miljana, Sudija porotnik Bećirović Gana</p>
+      <p><strong>Zapisničar:</strong> Popović Ljiljana</p>
+      <p><strong>Datum pretresa:</strong> 14. April 2011</p>
+      <p><strong>Datum presude:</strong> 14. April 2011</p>
+      <p><strong>Predmet:</strong> K. br. 140/2011</p>
+      <p><strong>Optužnica:</strong> ODT-a iz Bijelog Polja Kt. br. 75/2011 od 17.03.2011</p>
+      <p><strong>Zamjenik ODT-a:</strong> Šćepanović Vesna</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi 1:</strong> S.N.A, od oca P. i majke S. rodjene V., rodjen ... godine u Beogradu, živi u Beogradu ul. S.M. 81 A, Srbin, državljanin Srbije, pismen, završio srednju školu, neoženjen, vojsku nije služio, lošeg imovnog stanja, neosudjivan</p>
+      <p><strong>Optuženi 2:</strong> M.V.A, od oca M. i majke O. rodjene N., rodjen ... godine u Pirotu, živi u Pirotu ul. S.S. br. 50/38, Srbin, državljanin Srbije, pismen, završio srednju školu, oženjen, otac dvoje maloljetno djece od kojih jedno boluje od cerebralne paralize, vojsku služio u Nišu 2000-te godine, lošeg imovnog stanja, neosudjivan</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika</p>
+      <p><strong>Datum incijenta:</strong> 18. Februar 2011 godine</p>
+      <p><strong>Mjesto incijenta:</strong> Granični prelaz Dračenovac (Opština Rožaje), Berane, Bijelo Polje</p>
+      <p><strong>Falsificirane novčanice - ukupno 5 novčanica u apoenima od 200€:</strong></p>
+      <ul>
+        <li>Ser.br. X00452407123</li>
+        <li>Ser.br. X1648390854</li>
+        <li>Ser.br. Y10331327605</li>
+        <li>Ser.br. X00452408243</li>
+        <li>Ser.br. X00452407842</li>
+      </ul>
+      <p><strong>Opis incijenta - optuženi S.N.:</strong> Dana 18.02.2011 oko 20:43h na graničnom prelazu Dračenovac, optuženi S.N. je prenio iz Srbije u Crnu Goru 5 novčanica u apoenima od 200€, u namjeri da ih stavi u opticaj kao prave. Istog dana oko 22:30h u K. "L.-D" u Beranama, vlasništvo D.V., stavio je u opticaj jednu novčanicu od 200€ (ser.br. X00452408243), plaćajući robu vrijednosti 5€, te dobio kusur od 195€.</p>
+      <p><strong>Opis incijenta - optuženi S.N. (nastavak):</strong> Nakon toga u Bijelom Polju, oko 24:00h, u maloprodajnom objektu D. "M.C." iz Bijelog Polja ul. Nedeljka Merdovića, vlasništvo H.E.a, stavio je u opticaj drugu novčanicu od 200€ (ser.br. X01648390854), conhecendo da su novčanice lažne.</p>
+      <p><strong>Opis incijenta - optuženi M.V.:</strong> Dana 18.02.2011 oko 22:20h u K. "P." u Beranama, stavio je u opticaj lažan novac - jednu novčanicu od 200€ (ser.br. X00452407842), koju mu je predao optuženi S.N., plaćajući račun vrijednosti 15€, dobivši kusur od 180€.</p>
+      <p><strong>Opis incijenta - optuženi M.V. (nastavak):</strong> Po dolasku u Bijelo Polje oko 24:00h, držao je kod sebe lažan novac - jednu novčanicu od 200€ (ser.br. X00452407123), koju mu je također predao optuženi S.N., u namjeri da ga stavi u opticaj kao pravi.</p>
+      <p><strong>Boravio u pritvoru:</strong> Od 19.02.2011 do 14.04.2011 godine (55 dana)</p>
+      <p><strong>Ključni dokazi:</strong></p>
+      <ul>
+        <li>Iskaz svjedoka - oštećenih D.V.a i S.R.a</li>
+        <li>Iskaz svjedokinje V.Z.e - prodavačica</li>
+        <li>Iskaz svjedoka H.E.a - vlasnika prodavnice</li>
+        <li>Zapisnik o prepoznavanju lica - M.V. prepoznat kao osoba koja je platila novčanicom</li>
+        <li>Potvrde o privremenom oduzimanju predmeta od UP PJ Berane i Bijelo Polje</li>
+        <li>Izvještaj Forezničkog centra Danilovgrad - potvrđeno da su novčanice falsifikovane</li>
+        <li>Izvod iz kaznene evidencije - neosudjivani do tada</li>
+      </ul>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika, te čl. 2, 4, 5, 13, 15, 32, 36, 42, 45, 46 st. 1 tač. 3, 49 i 51 i 75 Krivičnog zakonika, te čl. 199, 202, 212 i 364 ZKP-a</p>
+      <p><strong>Kvalifikacija:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika</p>
+      <p><strong>Razlozi za sažimanje protiv optuženih:</strong></p>
+      <ul>
+        <li>Optuženi S.N. je priznao izvršenje krivičnog djela, navodeći da je novčanice dobio od NN osoba u Beogradu pri prodaji vozila, i da se kajao za izvršeno djelo</li>
+        <li>Optuženi M.V. je tvrdio da nije znao da su novčanice falsifikovane jer mu je S.N. dao bez objašnjenja</li>
+        <li>Sud je odbacio odbranu M.V. jer je on znao ili trebao znati da su novčanice sumnjive</li>
+        <li>Dokazi potvrduju da su se novčanice stavljale u opticaj, što je utvrđeno kroz iskaze oštećenih i zapisnike</li>
+      </ul>
+      <p><strong>Olakšavajuće okolnosti:</strong></p>
+      <ul>
+        <li>Oba optužena su mlada lica</li>
+        <li>Obojica su lošeg imovnog stanja</li>
+        <li>Izrazili su kajanje za izvršeno krivično djelo</li>
+        <li>Neosudjivani do tada</li>
+        <li>Nepridruživanje oštećenih krivičnom gonjenju</li>
+        <li>M.V. je porodičan - otac dvoje maloljetne djece, od kojih je jedno bolesno od cerebralne paralize</li>
+      </ul>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Optuženi S.N. i M.V. su OSUĐENI:</strong></p>
+      <ul>
+        <li><strong>Na kaznu zatvora:</strong> Po 6 (šest) mjeseci, sa uračunatim vremenom provedenim u pritvoru od 19.02.2011 do 14.04.2011 godine</li>
+        <li><strong>Za krivično djelo:</strong> Produženo krivično djelo falsifikovanje novca iz čl. 258 st. 2 u vezi čl. 49 st. 1 Krivičnog zakonika</li>
+      </ul>
+      <p><strong>Mjera bezbjednosti:</strong> Na osnovu čl. 75 Krivičnog zakonika optuženim je izrečena mjera bezbjednosti - oduzimanje 5 falsifikovanih novčanica u apoenima od 200€, serijskih brojeva X00452407123, X1648390854, Y10331327605, X00452408243 i X00452407842</p>
+      <p><strong>Troškovi postupka:</strong></p>
+      <ul>
+        <li>Paušal od po 50€ za oba optužena</li>
+        <li>Troškovi krivičnog postupka - S.N. 9,73€ (liječenje u pritvoru)</li>
+        <li>Troškovi krivičnog postupka - M.V. 15,51€ (liječenje u pritvoru)</li>
+        <li>Svi troškovi dospijevaju u roku od 15 dana po pravosnažnosti presude</li>
+      </ul>
+      <p><strong>Napomene:</strong></p>
+      <ul>
+        <li>Oštećeni D.V. se upućuje na parnicu za ostvarivanje imovinsko-pravnog zahtjeva na osnovu čl. 212 st. 2 ZKP-a</li>
+        <li>Oštećeni S.R.o se ne pridružuje krivičnom gonjenju i ne postavlja zahtjev</li>
+      </ul>
+      <p><strong>Stanje nakon presude:</strong> Presuda postaje izvršna nakon isteka roka za žalbu</p>
+      <p><strong>Pravna pouka:</strong> Protiv ove presude može se izjaviti žalba Višem sudu u Podgorici u roku od 15 dana od dana prijema pismenog otpravka, preko ovog suda u dva primjerka</p>
+    </decision>
+  </body>
+</judgment>

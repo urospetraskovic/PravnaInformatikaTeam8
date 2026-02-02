@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 377/11" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_377_11/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_377_11"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 377/11"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_art_258" href="/akn/me/act/criminal-code/glava-23#258" showAs="Član 258 KZ CG"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u BIJELOM POLJU. Datum: None.</p>
+    </background>
+    <motivation>
+      <p>Na osnovu člana Član 258 KZ CG.</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>

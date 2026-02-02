@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 42/2014" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_K_42_2014_KD_BD/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_42_2014_KD_BD"/>
+        <FRBRdate date="2014-10-23"/>
+        <FRBRnumber value="K 42/2014"/>
+      </FRBRWork>
+      <FRBRExpression>
+        <FRBRthis value="/akn/me/judgment/Case_K_42_2014_KD_BD/!exp"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_42_2014_KD_BD"/>
+        <FRBRdate date="2014-10-23"/>
+        <FRBRlanguage language="sr"/>
+      </FRBRExpression>
+      <FRBRManifestation>
+        <FRBRthis value="/akn/me/judgment/Case_K_42_2014_KD_BD"/>
+        <FRBRuri value="/akn/me/judgment/Case_K_42_2014_KD_BD"/>
+        <FRBRdate date="2014-10-23"/>
+      </FRBRManifestation>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_Član_258_st2" href="/akn/me/act/criminal-code/glava-23#Član 258 st. 2" showAs="Član 258 st. 2"/>
+      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
+      <TLCReference eId="ref_Član_51" href="/akn/me/act/criminal-code/glava#Član 51" showAs="Član 51"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p><strong>Sud:</strong> Osnovni Sud u Bijelom Polju</p>
+      <p><strong>Sudija:</strong> Rahmo Banda (sudija pojedinac)</p>
+      <p><strong>Zapisničar:</strong> Popović Ljiljana</p>
+      <p><strong>Datum pretresa:</strong> 23. Oktobar 2014</p>
+      <p><strong>Datum presude:</strong> 23. Oktobar 2014</p>
+      <p><strong>Predmet:</strong> K.br.42/2014</p>
+      <p><strong>Optužnica:</strong> ODT-a iz Bijelog Polja Kt. br. 234/13 od 29.07.2013 (ponovno sudjenje nakon ukidanja prethodne presude)</p>
+      <p><strong>Zamjenik ODT-a:</strong> Kljajević Katarina</p>
+    </background>
+    <narrative>
+      <p><strong>Optuženi 1:</strong> K.D., od oca M. i majke V. rodjene R., rodjen 22.11.1988 u Beogradu, nastanjen u Beogradu V., ul. B.J. br. 151, R.S., državljanin R.S., pismen, završio srednju školu, vlasnik A. za R.V., lošeg imovnog stanja, neoženjen, neosudjivan</p>
+      <p><strong>Optuženi 2:</strong> B.D., od oca S. i majke L. rodjene D., rodjen 21.04.1991 u Beogradu, nastanjen u Beogradu ul. A. br. 174 A, E., V., R.S., državljanin R.S., pismen, završio osnovnu školu, zaposlen u firmi kod svog oca, srednjeg imovnog stanja, neoženjen, neosudjivan</p>
+      <p><strong>Oslobođeni:</strong> J.N., od oca Zorana i majke M. rodjene M., rodjen 20.10.1989 u Beogradu - OSLOBOĐEN od optužbe jer nije dokazano da je izvršio krivično djelo</p>
+      <p><strong>Vrsta krivičnog djela:</strong> Falsifikovanje novca iz čl. 258 st. 2 Krivičnog zakonika CG u saizvršilaštvu</p>
+      <p><strong>Datum incijenta:</strong> Neutvrdjena dana i mjeseca 2013 godine (prebacivanje iz Srbije) i 19.07.2013 (stavljanje u opticaj)</p>
+      <p><strong>Mjesta incijenta:</strong> Begrad (pribavljanje novčanica), Granični prelaz Dobrakovo, Benzinska pumpa AD "J." K. u Bijelom Polju, Mojkovac (kontrola vozila)</p>
+      <p><strong>Falsificirane novčanice - 13 novčanica u apoenima od 200€ (saizvršilačtvo):</strong></p>
+      <ul>
+        <li>Ser.br. Y12553552558, Y12553552994, X01548390049, X00340382369, Y10039902708</li>
+        <li>Y10039903487, X00340381531, Y12553553361, Y10039902657, Y125353586</li>
+        <li>Y12553553563, Y10039902911, Y12553552916</li>
+      </ul>
+      <p><strong>Opis incijenta:</strong></p>
+      <ul>
+        <li>K.D., B.D. i J.N. (Beogradska lica) su se dogovorili da idu na more u Crnu Goru</li>
+        <li>Kod Partizana u Beogradu, kod kazina, susreli su nepoznatog čovjeka koji je ponudio bolji kurs za zamjenu dinara u evre (105 dinara za 1 euro umjesto 113)</li>
+        <li>Od tog momka su dobili 2900€ (13 novčanica od 200€ i 3 od 100€) za 306.000 dinara</li>
+        <li>Novčanice su "provjerili na svjetlu" ali im nisu bile sumnjive</li>
+        <li>Dana 19.07.2013 oko 2:00h krenu prema Crnoj Gori autom marke B., reg.ozn. B.D.</li>
+        <li>Stanu na benzinskoj pumpi AD "J." u Bijelom Polju gdje K.D. plati gorivo (30€) sa novčanicom od 200€ i dobije kusur (170€)</li>
+        <li>U Mojkovcu ih saobraćajna policija zaustavlja i kontroliše vozilo</li>
+        <li>K.D. daje policiji još 2-3 novčanice od 200€</li>
+        <li>Pronađeno je 9 novčanica u vozilu (u kaseti)</li>
+      </ul>
+      <p><strong>Odbrana optuženih K.D. i B.D.:</strong></p>
+      <ul>
+        <li>Nijesu znali da su novčanice falsifikovane jer su ih "provjerili na svjetlu" u Beogradu</li>
+        <li>Nisu imali namjeru da prevare nikoga</li>
+        <li>Planirani su 7-10 dnevni odmor na moru</li>
+        <li>Novčanice su bili u kaseti vozila kao "migranto" - ne znaju kolika je dozvoljenja suma za prenošenje</li>
+      </ul>
+    </narrative>
+    <motivation>
+      <p><strong>Primijenjeni članovi:</strong> Član 258 st. 2 Krivičnog zakonika CG, te čl. 2, 4, 5, 13, 15, 23, 32, 36, 42, 45, 46 st. 1 tač. 3, 51 i 75 Krivičnog zakonika, te čl. 226, 229 i 374 ZKP-a</p>
+      <p><strong>Kvalifikacija:</strong> Falsifikovanje novca iz čl. 258 st. 2 u saizvršilaštvu</p>
+      <p><strong>Ključni dokazi:</strong></p>
+      <ul>
+        <li>Iskaz radnika B.V. na benzinskoj pumpi - potvrđuje da je primio novčanicu od K.D. i dao kusur</li>
+        <li>Iskazi optuženih K.D. i B.D. - oba potvrđuju cijeli niz događaja identično</li>
+        <li>Iskaz J.N. - potvrdio je verziju događaja</li>
+        <li>Nalaz i mišljenje vještaka Centralne banke - novčanice su "falsifikati veoma dobre izrade"</li>
+        <li>Potvrde o pronađenim novčanicama</li>
+        <li>Izvod iz kaznene evidencije - neosudjivani do tada</li>
+      </ul>
+      <p><strong>Analiza kvalitete falsifikata:</strong> Vještak je odredio da su novčanice "falsifikati veoma dobre izrade" i da se prema kvaliteti izrade falsifikati razvrstavaju u 5 kategorija (loš falsifikat, falsifikat osrednje izrade, falsifikat dobre izrade, falsifikat veoma dobre izrade, opasan falsifikat). Vještak je također izjavio: "konkretno falsifikovane novčanice mogle su da se prepoznaju, a nemora da znači, odnosno nijesu mogle a u zavisnosti od iskustva"</p>
+      <p><strong>Odbacivanje odbrane J.N. - osnovi za oslobađanje:</strong> Sud je utvrdio da "nije dokazano da je J.N. izvršio krivično djelo" jer se nijesu uzele nikakve novčanice od njega policijom kada je zaustavljen u Mojkovcu - sve novčanice su uzete od K.D.</p>
+      <p><strong>Zaključak suda o K.D. i B.D. (prema branilcu):</strong> Čak i ako su optuženi imali novčanice "okrivljeni K. i B. nijesu imali nikakve realne šanse da prepoznaju predmetne falsifikovane novčanice" jer su bili mladi, dolaze iz države gdje je valuta dinar, a ne euro, i nemaju iskustvo sa eurima. Također, radnik na pumpi, koji ima "dugogodišnji" iskustvo sa eurima "nije nakon vizuelne provjere i kontakta sa ovim novčanicama prepoznao da se radi o falsifikatu sve dok novčanicu nije provjerio na aparatu"</p>
+    </motivation>
+    <decision>
+      <p><strong>PRESUDA:</strong></p>
+      <p><strong>Optuženi K.D. i B.D. su OSUĐENI:</strong></p>
+      <ul>
+        <li><strong>Na kaznu zatvora:</strong> Po 6 (šest) mjeseci, sa uračunatim vremenom u pritvoru od 19.07.2013 do 26.09.2013 godine</li>
+        <li><strong>Za krivično djelo:</strong> Falsifikovanje novca iz čl. 258 st. 2 Krivičnog zakonika CG u saizvršilaštvu</li>
+      </ul>
+      <p><strong>Optuženi J.N. je OSLOBOĐEN OD OPTUŽBE:</strong></p>
+      <ul>
+        <li>Na osnovu čl. 373 tač. 2 ZKP-a jer nije dokazano da je izvršio krivično djelo</li>
+        <li>Nije pronađeno da je J.N. dao niti jednu novčanicu policiji na graničnoj kontroli</li>
+      </ul>
+      <p><strong>Mjera bezbjednosti:</strong> Na osnovu čl. 75 i 258 st. 5 Krivičnog zakonika CG, optuženima K.D. i B.D. se izriče mjera bezbjednosti - oduzimanje novčanica u apoenima od 200€ (13 novčanica), serijskih brojeva kako je navedeno u optužnici</p>
+      <p><strong>Troškovi postupka:</strong></p>
+      <ul>
+        <li>Paušal od po 50€ za K.D. i B.D.</li>
+        <li>Troškovi krivičnog postupka - K.D. 1.925,00€</li>
+        <li>Troškovi krivičnog postupka - B.D. 2.290,75€</li>
+        <li>Solidarno 205,00€ u Budžet CG na depozit</li>
+        <li>Svi troškovi dospijevaju u roku od 15 dana po pravosnažnosti presude</li>
+      </ul>
+      <p><strong>Napomene:</strong> Imovinsko-pravnog zahtjeva nije bilo. Predstavnik oštećenog AD "J." K. se izjasnio da ne postavlja imovinsko-pravni zahtjev prema optuženim i ne pridružuje se krivičnom gonjenju</p>
+      <p><strong>Stanje nakon presude:</strong> Presuda postaje izvršna nakon isteka roka za žalbu</p>
+      <p><strong>Historia slučaja:</strong> Prvo je bila presuda Osnovnog suda K br. 194/2013 od 26.09.2013, ali je Viši sud u B.Polju rješenjem Kž.br. 34/14 od 05.02.2014 ukinuo presudu i vratio predmet na ponovno sudjenje</p>
+    </decision>
+  </body>
+</judgment>

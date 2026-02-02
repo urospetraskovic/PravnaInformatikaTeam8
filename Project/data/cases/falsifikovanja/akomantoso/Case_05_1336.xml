@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 05/1336" xml:lang="sr">
+  <meta>
+    <identification source="court">
+      <FRBRWork>
+        <FRBRthis value="/akn/me/judgment/Case_05_1336/!main"/>
+        <FRBRuri value="/akn/me/judgment/Case_05_1336"/>
+        <FRBRdate date="None"/>
+        <FRBRcountry value="me"/>
+        <FRBRnumber value="K 05/1336"/>
+        <FRBRname value="Falsifikovanje novca"/>
+      </FRBRWork>
+    </identification>
+    <references source="application">
+      <TLCReference eId="ref_art_258" href="/akn/me/act/criminal-code/glava-23#258" showAs="Član 258 st.2 KZ CG"/>
+    </references>
+  </meta>
+  <body>
+    <background>
+      <p>Sud: Osnovni Sud u BIJELOM POLJU. Datum: None.</p>
+    </background>
+    <narrative>
+      <p>Incident: -Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renau</p>
+    </narrative>
+    <motivation>
+      <p>Na osnovu člana Član 258 st.2 KZ CG.</p>
+    </motivation>
+    <decision>
+      <p>Okrivljeni je oslobođen od optužbe.</p>
+    </decision>
+  </body>
+</judgment>
