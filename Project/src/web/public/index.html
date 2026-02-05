@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Монтенегрински правни систем - Пресуде суђења</title>
+  <title>Crnogorski pravni sistem - Presude sudjenja</title>
   <style>
     * {
       margin: 0;
@@ -296,6 +296,18 @@
       word-break: break-word;
     }
 
+    .case-description-text {
+      background: #f9fafb;
+      padding: 16px;
+      border-radius: 8px;
+      border-left: 4px solid #2563eb;
+      line-height: 1.7;
+      font-size: 0.95em;
+      font-weight: 400;
+      color: #374151;
+      text-align: justify;
+    }
+
     .section {
       margin-top: 40px;
       padding-top: 30px;
@@ -581,11 +593,11 @@
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-guilty">0</div>
-              <div class="stat-text">Guilty</div>
+              <div class="stat-text">Kriv</div>
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-acquitted">0</div>
-              <div class="stat-text">Acquitted</div>
+              <div class="stat-text">Oslobodjen</div>
             </div>
           </div>
         </div>
@@ -676,6 +688,7 @@
         // Show all articles but highlight the requested one
         container.innerHTML = glava23Articles.map(a => `
           <div class="glava-article ${a.eId === `art_${articleNum}` ? 'highlighted' : ''}" id="${a.eId}">
+            <div class="glava-article-number">${a.num || a.eId.replace('art_', 'Clan ')}</div>
             <div class="glava-article-heading">${a.heading}</div>
             <div class="glava-article-content">${a.content.replace(/\n/g, '<br/>')}</div>
           </div>
@@ -745,7 +758,7 @@
         displayedCases = [...allCases];
         
         if (!allCases || allCases.length === 0) {
-          document.getElementById('cases-list').innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">Нема пронађених пресуда</div>';
+          document.getElementById('cases-list').innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">Nema pronadjenih presuda</div>';
           return;
         }
         
@@ -762,7 +775,7 @@
         document.getElementById('stat-acquitted').textContent = stats.acquittedCount;
       } catch (error) {
         console.error('Error loading cases:', error);
-        document.getElementById('cases-list').innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626;">Грешка: ${error.message}</div>`;
+        document.getElementById('cases-list').innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626;">Greska: ${error.message}</div>`;
       }
     }
 
@@ -807,8 +820,12 @@
       
       try {
         list.innerHTML = displayedCases.map(caseData => {
-          const verdictText = caseData.verdict || 'UNKNOWN';
-          const verdict = String(verdictText).toLowerCase();
+          const verdictRaw = caseData.verdict || 'UNKNOWN';
+          // Translate verdicts to Serbian
+          let verdictText = verdictRaw;
+          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
+          const verdict = String(verdictRaw).toLowerCase();
           return `
             <div class="case-item ${selectedCaseId === caseData.id ? 'active' : ''}" onclick="selectCase('${caseData.id.replace(/'/g, "\\'")}')">
               <div class="case-id">${caseData.id}</div>
@@ -874,8 +891,12 @@
             guiltyArticles = caseData.articles;
           }
           
-          const verdictText = caseData.verdict || 'UNKNOWN';
-          const verdict = String(verdictText).toUpperCase();
+          const verdictRaw = caseData.verdict || 'UNKNOWN';
+          // Translate verdicts to Serbian
+          let verdictText = verdictRaw;
+          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
+          const verdict = String(verdictRaw).toUpperCase();
           
           // Build articles with clickable links
           const articlesHtml = (guiltyArticles.length > 0 ? guiltyArticles : ['Not specified']).map(article => {
@@ -893,7 +914,7 @@
                 <div class="detail-title">${caseId}</div>
                 <div class="detail-meta">
                   <div class="meta-item">
-                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdict}</span>
+                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
                   </div>
                   <div class="meta-item">
                     <span class="meta-badge">${frbr}</span>
@@ -945,6 +966,11 @@
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
+                  <div class="field-label">Case Description</div>
+                  <div class="field-value case-description-text">${caseData.caseDescription || 'No description available'}</div>
+                </div>
+
+                <div class="field" style="grid-column: 1 / -1;">
                   <div class="field-label">Evidence</div>
                   <div class="field-value">${caseData.evidence}</div>
                 </div>
@@ -955,8 +981,12 @@
         .catch(error => {
           console.error('Error fetching AkomaNtoso:', error);
           // Fallback to JSON-based display if XML not available
-          const verdictText = caseData.verdict || 'UNKNOWN';
-          const verdict = String(verdictText).toUpperCase();
+          const verdictRaw = caseData.verdict || 'UNKNOWN';
+          // Translate verdicts to Serbian
+          let verdictText = verdictRaw;
+          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
+          const verdict = String(verdictRaw).toUpperCase();
           
           const articlesHtml = (caseData.articles && caseData.articles.length > 0 ? caseData.articles : ['Not specified']).map(article => {
             if (!article || article === 'Unknown') return `<span class="article-tag">Not specified</span>`;
@@ -973,7 +1003,7 @@
                 <div class="detail-title">${caseData.id}</div>
                 <div class="detail-meta">
                   <div class="meta-item">
-                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdict}</span>
+                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
                   </div>
                   <div class="meta-item">
                     <span class="meta-badge">${caseData.type}</span>
@@ -1022,6 +1052,11 @@
                       ${articlesHtml}
                     </div>
                   </div>
+                </div>
+
+                <div class="field" style="grid-column: 1 / -1;">
+                  <div class="field-label">Case Description</div>
+                  <div class="field-value case-description-text">${caseData.caseDescription || 'No description available'}</div>
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">

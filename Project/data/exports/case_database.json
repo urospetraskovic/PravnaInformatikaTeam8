@@ -1,0 +1,957 @@
+{
+  "metadata": {
+    "title": "Правна Информатика - База Судских Одлука",
+    "description": "Case database for Decision Support System - Chapter 23 Criminal Code of Montenegro",
+    "version": "1.0",
+    "created": "2026-02-05",
+    "totalCases": 22,
+    "articles": ["258", "260"],
+    "courts": ["Osnovni sud u Baru", "Osnovni sud u Kolašinu", "Osnovni sud u Plavu", "Osnovni sud u Herceg Novom", "Viši sud u Podgorici", "Osnovni sud u Nikšiću", "Osnovni sud u Budvi", "Osnovni sud u Bijelom Polju", "Osnovni sud u Cetinju", "Osnovni sud u Ulcinju", "Osnovni sud u Kotoru", "Viši sud u Bijelom Polju"]
+  },
+  "cases": [
+    {
+      "id": "CASE_K_13_24",
+      "caseNumber": "K 13/24",
+      "court": "Osnovni sud u Baru",
+      "city": "Bar",
+      "date": "2024-03-15",
+      "judge": "Судија Марко Вујовић",
+      "defendant": {
+        "name": "Никола Ђуричковић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "1",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 3,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["признање", "сарадња са судом"],
+        "aggravating": ["раније осуђиван"]
+      },
+      "financials": {
+        "damageAmountEur": 5000,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "EUR"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_13_24.xml"
+    },
+    {
+      "id": "CASE_K_139_15",
+      "caseNumber": "K 139/15",
+      "court": "Osnovni sud u Kolašinu",
+      "city": "Kolasin",
+      "date": "2015-09-10",
+      "judge": "Судија Ана Поповић",
+      "defendant": {
+        "name": "Дарко Кнежевић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "2",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 2,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["теже породичне прилике"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 2500,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "EUR"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_139_15.xml"
+    },
+    {
+      "id": "CASE_K_26_19",
+      "caseNumber": "K 26/19",
+      "court": "Osnovni sud u Plavu",
+      "city": "Plav",
+      "date": "2019-06-22",
+      "judge": "Судија Јелена Радуловић",
+      "defendant": {
+        "name": "Мирко Радовић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "3",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 2,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["млађе животно доба", "прво дјело"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 8500,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "krađa"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_26_19.xml"
+    },
+    {
+      "id": "CASE_K_34_14_HG",
+      "caseNumber": "K 34/14",
+      "court": "Osnovni sud u Herceg Novom",
+      "city": "Herceg Novi",
+      "date": "2014-11-20",
+      "judge": "Судија Горан Николић",
+      "defendant": {
+        "name": "Саша Миловић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "1",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["прво дјело", "потпуно признање"],
+        "aggravating": ["организовано дјеловање"]
+      },
+      "financials": {
+        "damageAmountEur": 1500,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": false
+      },
+      "keywords": ["falsifikovanje", "kartica", "PIN"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_34_14_HG.xml"
+    },
+    {
+      "id": "CASE_K_12_21_MM",
+      "caseNumber": "K 12/21",
+      "court": "Viši sud u Podgorici",
+      "city": "Podgorica",
+      "date": "2021-04-12",
+      "judge": "Судија Милица Дабовић",
+      "defendant": {
+        "name": "Миодраг Марковић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "3",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 7,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња са истрагом"],
+        "aggravating": ["велики износ", "организована група"]
+      },
+      "financials": {
+        "damageAmountEur": 45000,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": "partial",
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "organizovano"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_12_21_MM.xml"
+    },
+    {
+      "id": "CASE_K_70_19_MB",
+      "caseNumber": "K 70/19",
+      "court": "Osnovni sud u Nikšiću",
+      "city": "Niksic",
+      "date": "2019-08-30",
+      "judge": "Судија Бранко Петровић",
+      "defendant": {
+        "name": "Милан Буквић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "2",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 0,
+        "suspended": true,
+        "probationYears": 2
+      },
+      "factors": {
+        "mitigating": ["признање", "млађе доба"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 2800,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "bankomat"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_70_19_MB.xml"
+    },
+    {
+      "id": "CASE_K_103_20_BM",
+      "caseNumber": "K 103/20",
+      "court": "Osnovni sud u Budvi",
+      "city": "Budva",
+      "date": "2020-12-05",
+      "judge": "Судија Драгана Вуковић",
+      "defendant": {
+        "name": "Бојан Мартиновић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "3",
+        "type": "sticaj",
+        "nameSr": "Стицај кривичних дјела",
+        "nameEn": "Concurrence of crimes"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 3,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["дјелимично признање"],
+        "aggravating": ["више кривичних дјела"]
+      },
+      "financials": {
+        "damageAmountEur": 15200,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": "partial",
+        "restitution": "partial"
+      },
+      "keywords": ["sticaj", "kartica", "krađa"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_103_20_BM.xml"
+    },
+    {
+      "id": "CASE_K_187_18_MZ",
+      "caseNumber": "K 187/18",
+      "court": "Osnovni sud u Bijelom Polju",
+      "city": "Bijelo Polje",
+      "date": "2018-05-18",
+      "judge": "Судија Ненад Ракочевић",
+      "defendant": {
+        "name": "Марко Зечевић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "2",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 2,
+        "months": 0,
+        "suspended": true,
+        "probationYears": 3
+      },
+      "factors": {
+        "mitigating": ["добар карактер"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 3200,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "promjena"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_187_18_MZ.xml"
+    },
+    {
+      "id": "CASE_K_56_17_NR",
+      "caseNumber": "K 56/17",
+      "court": "Osnovni sud u Cetinju",
+      "city": "Cetinje",
+      "date": "2017-09-22",
+      "judge": "Судија Сања Павићевић",
+      "defendant": {
+        "name": "Небојша Рогановић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "2",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 0,
+        "suspended": true,
+        "probationYears": 2
+      },
+      "factors": {
+        "mitigating": ["прво дјело", "признање"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 1850,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "magnetna"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_56_17_NR.xml"
+    },
+    {
+      "id": "CASE_K_234_20_AK",
+      "caseNumber": "K 234/20",
+      "court": "Viši sud u Podgorici",
+      "city": "Podgorica",
+      "date": "2020-07-14",
+      "judge": "Судија Љиљана Рамовић",
+      "defendant": {
+        "name": "Александар Кашћелан",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "3",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 6,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња са истрагом"],
+        "aggravating": ["организована група", "велики износ"]
+      },
+      "financials": {
+        "damageAmountEur": 38500,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": "partial",
+        "restitution": false
+      },
+      "keywords": ["falsifikovanje", "novac", "organizovano"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_234_20_AK.xml"
+    },
+    {
+      "id": "CASE_K_89_19_DP",
+      "caseNumber": "K 89/19",
+      "court": "Osnovni sud u Kolašinu",
+      "city": "Kolasin",
+      "date": "2019-11-05",
+      "judge": "Судија Миленко Јовановић",
+      "defendant": {
+        "name": "Драган Пејовић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "3",
+        "type": "sticaj",
+        "nameSr": "Стицај кривичних дјела",
+        "nameEn": "Concurrence of crimes"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 4,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["дјелимично признање"],
+        "aggravating": ["серија кривичних дјела"]
+      },
+      "financials": {
+        "damageAmountEur": 22000,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": "partial",
+        "restitution": "partial"
+      },
+      "keywords": ["sticaj", "kartica", "prevara"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_89_19_DP.xml"
+    },
+    {
+      "id": "CASE_K_45_22_SJ",
+      "caseNumber": "K 45/22",
+      "court": "Osnovni sud u Ulcinju",
+      "city": "Ulcinj",
+      "date": "2022-03-28",
+      "judge": "Судија Наташа Бешић",
+      "defendant": {
+        "name": "Срђан Јововић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "1",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "uslovna",
+        "years": 0,
+        "months": 8,
+        "suspended": true,
+        "probationYears": 2
+      },
+      "factors": {
+        "mitigating": ["прво дјело", "признање", "надокнада штете"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 950,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "kopiranje"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_45_22_SJ.xml"
+    },
+    {
+      "id": "CASE_K_178_21_VL",
+      "caseNumber": "K 178/21",
+      "court": "Osnovni sud u Kotoru",
+      "city": "Kotor",
+      "date": "2021-08-10",
+      "judge": "Судија Марија Томић",
+      "defendant": {
+        "name": "Владимир Лазовић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "1",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 4,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња са истрагом"],
+        "aggravating": ["техничка софистицираност"]
+      },
+      "financials": {
+        "damageAmountEur": 12000,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": "partial",
+        "restitution": "partial"
+      },
+      "keywords": ["falsifikovanje", "novac", "stampanje"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_178_21_VL.xml"
+    },
+    {
+      "id": "CASE_K_67_20_ZM",
+      "caseNumber": "K 67/20",
+      "court": "Osnovni sud u Plavu",
+      "city": "Plav",
+      "date": "2020-04-20",
+      "judge": "Судија Игор Делетић",
+      "defendant": {
+        "name": "Зоран Мусић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "2",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["млађе доба", "сарадња"],
+        "aggravating": ["планирање"]
+      },
+      "financials": {
+        "damageAmountEur": 4200,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "skimming"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_67_20_ZM.xml"
+    },
+    {
+      "id": "CASE_K_312_19_RT",
+      "caseNumber": "K 312/19",
+      "court": "Viši sud u Podgorici",
+      "city": "Podgorica",
+      "date": "2019-12-18",
+      "judge": "Судија Слободан Вујачић",
+      "defendant": {
+        "name": "Радомир Томовић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "3",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 8,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња са истрагом"],
+        "aggravating": ["велики износ", "међународна дистрибуција"]
+      },
+      "financials": {
+        "damageAmountEur": 85000,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": true,
+        "restitution": "partial"
+      },
+      "keywords": ["falsifikovanje", "novac", "međunarodno"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_312_19_RT.xml"
+    },
+    {
+      "id": "CASE_K_98_18_OS",
+      "caseNumber": "K 98/18",
+      "court": "Osnovni sud u Nikšiću",
+      "city": "Niksic",
+      "date": "2018-02-15",
+      "judge": "Судија Вера Дашић",
+      "defendant": {
+        "name": "Оливер Стојановић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "3",
+        "type": "sticaj",
+        "nameSr": "Стицај кривичних дјела",
+        "nameEn": "Concurrence of crimes"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 3,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња са полицијом"],
+        "aggravating": ["организована шема"]
+      },
+      "financials": {
+        "damageAmountEur": 9800,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": "partial"
+      },
+      "keywords": ["sticaj", "kartica", "ATM"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_98_18_OS.xml"
+    },
+    {
+      "id": "CASE_K_100_16",
+      "caseNumber": "K 100/16",
+      "court": "Osnovni sud u Baru",
+      "city": "Bar",
+      "date": "2016-06-10",
+      "judge": "Судија Петар Радовић",
+      "defendant": {
+        "name": "Милош Павловић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "2",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 8,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["прво дјело"],
+        "aggravating": ["умишљај"]
+      },
+      "financials": {
+        "damageAmountEur": 2100,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "zloupotreba"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_100_16.xml"
+    },
+    {
+      "id": "CASE_K_223_18",
+      "caseNumber": "K 223/18",
+      "court": "Osnovni sud u Podgorici",
+      "city": "Podgorica",
+      "date": "2018-11-25",
+      "judge": "Судија Лидија Кнежевић",
+      "defendant": {
+        "name": "Иван Бећировић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "2",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 3,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["породични човјек"],
+        "aggravating": ["свијест о противправности"]
+      },
+      "financials": {
+        "damageAmountEur": 4800,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "distribucija"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_223_18.xml"
+    },
+    {
+      "id": "CASE_K_34_14",
+      "caseNumber": "K 34/14",
+      "court": "Osnovni sud u Kolašinu",
+      "city": "Kolasin",
+      "date": "2014-08-12",
+      "judge": "Судија Срђан Мијовић",
+      "defendant": {
+        "name": "Предраг Вукчевић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "1",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 4,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": [],
+        "aggravating": ["умишљај", "планирање"]
+      },
+      "financials": {
+        "damageAmountEur": 7200,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": "partial",
+        "restitution": false
+      },
+      "keywords": ["falsifikovanje", "novac", "EUR"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_34_14.xml"
+    },
+    {
+      "id": "CASE_K_395_16",
+      "caseNumber": "K 395/16",
+      "court": "Viši sud u Bijelom Polju",
+      "city": "Bijelo Polje",
+      "date": "2016-12-05",
+      "judge": "Судија Мирослав Булатовић",
+      "defendant": {
+        "name": "Небојша Калезић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "258",
+        "paragraph": "3",
+        "type": "falsifikovanje_novca",
+        "nameSr": "Фалсификовање новца",
+        "nameEn": "Counterfeiting money"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 6,
+        "months": 0,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["сарадња", "здравствено стање"],
+        "aggravating": ["велики износ"]
+      },
+      "financials": {
+        "damageAmountEur": 28000,
+        "victimType": "pravno_lice"
+      },
+      "circumstances": {
+        "priorConvictions": true,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "novac", "visoki_iznos"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_395_16.xml"
+    },
+    {
+      "id": "CASE_K_399_15",
+      "caseNumber": "K 399/15",
+      "court": "Osnovni sud u Herceg Novom",
+      "city": "Herceg Novi",
+      "date": "2015-10-18",
+      "judge": "Судија Душко Радоњић",
+      "defendant": {
+        "name": "Владан Лазаревић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "3",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 2,
+        "months": 6,
+        "suspended": false,
+        "probationYears": 0
+      },
+      "factors": {
+        "mitigating": ["признање"],
+        "aggravating": ["организована група"]
+      },
+      "financials": {
+        "damageAmountEur": 11500,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": "partial"
+      },
+      "keywords": ["falsifikovanje", "kartica", "grupa"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_399_15.xml"
+    },
+    {
+      "id": "CASE_K_42_2014",
+      "caseNumber": "K 42/2014",
+      "court": "Osnovni sud u Budvi",
+      "city": "Budva",
+      "date": "2014-05-20",
+      "judge": "Судија Марина Вуковић",
+      "defendant": {
+        "name": "Раде Шћепановић",
+        "gender": "M"
+      },
+      "crime": {
+        "article": "260",
+        "paragraph": "2",
+        "type": "kreditna_kartica",
+        "nameSr": "Фалсификовање кредитних картица",
+        "nameEn": "Credit card fraud"
+      },
+      "sentence": {
+        "type": "zatvor",
+        "years": 1,
+        "months": 0,
+        "suspended": true,
+        "probationYears": 2
+      },
+      "factors": {
+        "mitigating": ["прво дјело", "породица"],
+        "aggravating": []
+      },
+      "financials": {
+        "damageAmountEur": 2350,
+        "victimType": "fizicko_lice"
+      },
+      "circumstances": {
+        "priorConvictions": false,
+        "confession": true,
+        "restitution": true
+      },
+      "keywords": ["falsifikovanje", "kartica", "bezgotovinsko"],
+      "outcome": "osuđujuća",
+      "akomaFile": "Case_K_42_2014.xml"
+    }
+  ],
+  "statistics": {
+    "totalCases": 22,
+    "byArticle": {
+      "258": 11,
+      "260": 11
+    },
+    "byParagraph": {
+      "258_1": 4,
+      "258_2": 4,
+      "258_3": 3,
+      "260_1": 2,
+      "260_2": 5,
+      "260_3": 4
+    },
+    "avgSentenceYears": 3.1,
+    "avgDamageEur": 15200,
+    "suspendedSentences": 5,
+    "confessionRate": 0.86,
+    "priorConvictions": 6
+  }
+}

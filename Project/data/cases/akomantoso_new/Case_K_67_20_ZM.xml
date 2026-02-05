@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case K 67/20 - Z.M.">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_67_20_ZM/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_67_20_ZM"/>
+          <FRBRdate date="2021-03-18" name="decision"/>
+          <FRBRauthor href="#osnovni_sud_ulcinj"/>
+          <FRBRcountry value="me"/>
+          <FRBRnumber value="K 67/20"/>
+          <FRBRname value="Falsifikovanje novca"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_67_20_ZM/sr@2021-03-18/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_67_20_ZM/sr@2021-03-18"/>
+          <FRBRdate date="2021-03-18" name="expression"/>
+          <FRBRauthor href="#osnovni_sud_ulcinj"/>
+          <FRBRlanguage language="sr"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_67_20_ZM/sr@2021-03-18/!main.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_67_20_ZM/sr@2021-03-18/!main.akn"/>
+          <FRBRdate date="2026-02-05" name="transform"/>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="osnovni_sud_ulcinj" href="/akn/me/ontology/organization/osnovni_sud_ulcinj" showAs="Osnovni sud u Ulcinju"/>
+        <TLCOrganization eId="odt_ulcinj" href="/akn/me/ontology/organization/odt_ulcinj" showAs="Osnovno državno tužilaštvo u Ulcinju"/>
+        <TLCPerson eId="sudija" href="/akn/me/ontology/person/refik_ujkic" showAs="Refik Ujkić"/>
+        <TLCPerson eId="zapisnicar" href="/akn/me/ontology/person/fatima_lika" showAs="Fatima Lika"/>
+        <TLCPerson eId="optuzeni" href="/akn/me/ontology/person/defendant_zm" showAs="Z. M."/>
+        <TLCReference eId="ref_art_258" href="/akn/me/act/criminal-code#art_258" showAs="Član 258 - Falsifikovanje novca"/>
+      </references>
+      <classification source="#court">
+        <keyword value="falsifikovanje_novca" showAs="Falsifikovanje novca" dictionary="criminal_offenses"/>
+        <keyword value="clan_258" showAs="Član 258 st. 1" dictionary="articles"/>
+        <keyword value="pravljenje_novca" showAs="Pravljenje lažnog novca" dictionary="facts"/>
+        <keyword value="stampac" showAs="Štampač" dictionary="means"/>
+      </classification>
+    </meta>
+    <header>
+      <p class="court">OSNOVNI SUD U ULCINjU</p>
+      <p class="caseNumber">K.br.67/20</p>
+      <p class="date">18.03.2021. godine</p>
+      <p class="formula">U IME CRNE GORE</p>
+    </header>
+    <judgmentBody>
+      <introduction>
+        <p>OSNOVNI SUD U ULCINjU, sudija <judge refersTo="#sudija">Refik Ujkić</judge>, kao sudija pojedinac uz zapisničara <clerk refersTo="#zapisnicar">Fatimu Lika</clerk>, u krivičnom predmetu protiv optuženog <party refersTo="#optuzeni" as="defendant">Z. M.</party> zbog krivičnog djela falsifikovanje novca iz <ref href="/akn/me/act/criminal-code#art_258">čl.258 st.1</ref> Krivičnog zakonika, po optužnici Osnovnog državnog tužilaštva u Ulcinju.</p>
+      </introduction>
+      <background>
+        <p><b>Sud:</b> Osnovni sud u Ulcinju</p>
+        <p><b>Broj predmeta:</b> K 67/20</p>
+        <p><b>Datum presude:</b> <date date="2021-03-18">18.03.2021.</date></p>
+        <p><b>Sudija:</b> <judge refersTo="#sudija">Refik Ujkić</judge></p>
+        <p><b>Zapisničar:</b> <clerk refersTo="#zapisnicar">Fatima Lika</clerk></p>
+        <blockContainer eId="defendant_info">
+          <heading>Podaci o okrivljenom</heading>
+          <p><b>Okrivljeni:</b> <party refersTo="#optuzeni" as="defendant">Z. M.</party></p>
+          <p><b>Mjesto rođenja:</b> U., C. G.</p>
+          <p><b>Datum rođenja:</b> 1975. god.</p>
+          <p><b>Prebivalište:</b> U.</p>
+          <p><b>Zanimanje:</b> električar, nezaposlen</p>
+          <p><b>Porodično stanje:</b> oženjen, otac dvoje djece</p>
+          <p><b>Obrazovanje:</b> srednja škola</p>
+          <p><b>Imovno stanje:</b> lošeg materijalnog stanja</p>
+          <p><b>Ranija osuđivanost:</b> ranije nije osuđivan</p>
+        </blockContainer>
+      </background>
+      <caseDescription>
+        <heading>Opis slucaja</heading>
+        <p>Optuzeni Z.M. iz Ulcinja, nezaposleni elektricar, je u periodu od 01.01.2020. do 15.09.2020. godine u svom stanu napravio lazni novac - novcanice od 50 i 20 eura u ukupnom iznosu od 2.500 eura (35 komada od 50 EUR i 37 komada od 20 EUR). Koristio je kolor stampac marke HP i racunar, stampajuci na posebnom papiru nabavljenom u inostranstvu. Policija je prilikom pretresa pronasla lazne novcanice, stampac i 50 listova papira za falsifikovanje. Na racunaru su pronadjeni digitalni predlosci. Ozenjen je i otac dvoje djece. Lazne novcanice nisu stavljene u promet. Osudjen je na kaznu zatvora od 2 godine.</p>
+      </caseDescription>
+      <motivation>
+        <blockContainer eId="crime_description">
+          <heading>Opis krivičnog djela</heading>
+          <p>U periodu od <date date="2020-01-01">01.01.2020.</date> godine do <date date="2020-09-15">15.09.2020.</date> godine, u U., napravio lažni novac - novčanice u apoenu od <amount value="50" currency="EUR">50 eura</amount> i <amount value="20" currency="EUR">20 eura</amount>, u ukupnom iznosu od <amount value="2.500" currency="EUR">2.500 eura</amount> (35 komada novčanica od 50 eura i 37 komada novčanica od 20 eura).</p>
+          <p>Optuženi je lažni novac izradio koristeći kolor štampač marke "HP" i računar, štampajući novčanice na posebnom papiru koji je nabavio u inostranstvu.</p>
+          <p>Policija je lažni novac pronašla prilikom pretresa stana optuženog, zajedno sa štampačem i pripremljenim papirom.</p>
+        </blockContainer>
+        <blockContainer eId="legal_qualification">
+          <heading>Pravna kvalifikacija</heading>
+          <p>Čime je izvršio krivično djelo - <term>falsifikovanje novca</term> iz <ref href="/akn/me/act/criminal-code#art_258">čl.258 st.1 Krivičnog zakonika</ref> (pravljenje lažnog novca).</p>
+        </blockContainer>
+        <blockContainer eId="evidence">
+          <heading>Dokazi</heading>
+          <p>Izvještaj Forenzičkog centra Danilovgrad - utvrđeno da su novčanice falsifikati niskog kvaliteta, izrađeni metodom štampanja na kolor štampaču.</p>
+          <p>Zapisnik o pretresu stana optuženog gdje su pronađeni: 72 komada lažnih novčanica, štampač marke "HP", 50 listova posebnog papira.</p>
+          <p>Izvještaj o računaru optuženog na kome su pronađeni digitalni predlošci novčanica.</p>
+          <p>Djelimično priznanje optuženog.</p>
+        </blockContainer>
+        <blockContainer eId="mitigating_circumstances">
+          <heading>Olakšavajuće okolnosti</heading>
+          <p>Neosuđivanost optuženog, porodične prilike (otac dvoje djece), teške materijalne prilike koje su bile motiv za izvršenje djela, činjenica da lažne novčanice nisu stavljene u promet.</p>
+        </blockContainer>
+        <blockContainer eId="aggravating_circumstances">
+          <heading>Otežavajuće okolnosti</heading>
+          <p>Velika količina napravljenog lažnog novca (2.500 eura), duži vremenski period vršenja djela (preko 8 mjeseci), organizovanost u vršenju djela (nabavka specijalnog papira i štampača).</p>
+        </blockContainer>
+      </motivation>
+      <decision>
+        <blockContainer eId="verdict">
+          <heading>PRESUDA</heading>
+          <p><b>Odluka:</b> KRIV JE</p>
+          <p>OSUĐUJE SE na kaznu zatvora u trajanju od <sentence type="imprisonment" duration="P2Y">2 (dvije) godine</sentence>.</p>
+        </blockContainer>
+        <blockContainer eId="security_measure">
+          <heading>MJERA BEZBJEDNOSTI</heading>
+          <p>Na osnovu čl.75 st.3 i čl.258 st.5 Krivičnog zakonika ODUZIMAJU SE:</p>
+          <p>- 35 (tridesetpet) komada lažnih novčanica u apoenu od 50 eura</p>
+          <p>- 37 (tridesetsedam) komada lažnih novčanica u apoenu od 20 eura</p>
+          <p>- Štampač marke "HP"</p>
+          <p>- 50 (pedeset) listova posebnog papira za falsifikovanje</p>
+        </blockContainer>
+        <blockContainer eId="costs">
+          <heading>Troškovi postupka</heading>
+          <p>Optuženi Z. M. se oslobađa od plaćanja troškova krivičnog postupka na osnovu čl.215 st.4 ZKP-a zbog lošeg materijalnog stanja.</p>
+        </blockContainer>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <p>OSNOVNI SUD U ULCINjU</p>
+      <p>Dana <date date="2021-03-18">18.03.2021.</date> godine</p>
+      <signature>
+        <person refersTo="#zapisnicar">Zapisničar: Fatima Lika</person>
+        <person refersTo="#sudija">SUDIJA: Refik Ujkić</person>
+      </signature>
+      <p><b>PRAVNA POUKA:</b> Protiv ove presude može se izjaviti žalba Višem sudu u Podgorici u roku od 15 dana od dana prijema pismenog otpravka. Žalba se predaje ovom sudu u dva primjerka.</p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

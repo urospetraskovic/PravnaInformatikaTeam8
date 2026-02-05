@@ -1,104 +1,961 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Criminal Code - Chapter 23" xml:lang="sr">
-  <meta>
-    <identification source="legislation">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/act/criminal-code/glava-23/!main"/>
-        <FRBRuri value="/akn/me/act/criminal-code/glava-23"/>
-        <FRBRdate date="2023-01-01"/>
-        <FRBRcountry value="me"/>
-        <FRBRnumber value="GLAVA_23"/>
-        <FRBRname value="GLAVA DVADESET TREĆA - KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANjA"/>
-      </FRBRWork>
-    </identification>
-  </meta>
-  <body>
-    <chapter eId="chp_23">
-      <heading>GLAVA DVADESET TREĆA - KRIVIČNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANjA</heading>
-      
-      <article eId="art_258">
-        <heading>Član 258 - Falsifikovanje novca</heading>
-        <paragraph eId="art_258_st1">
-          <p><strong>(1)</strong> Ko napravi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko u istoj namjeri preinači pravi novac, kazniće se zatvorom od dvije do dvanaest godina.</p>
-        </paragraph>
-        <paragraph eId="art_258_st2">
-          <p><strong>(2)</strong> Ko pribavlja, drži ili prenosi lažan novac u namjeri da ga stavi u opticaj kao pravi ili ko lažan novac stavlja u opticaj, kazniće se zatvorom od dvije do deset godina.</p>
-        </paragraph>
-        <paragraph eId="art_258_st3">
-          <p><strong>(3)</strong> Ako je djelom iz st. 1 i 2 ovog člana napravljen, preinačen, stavljen u promet ili pribavljen lažan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajući iznos u stranom novcu, učinilac će se kazniti zatvorom od pet do petnaest godina.</p>
-        </paragraph>
-        <paragraph eId="art_258_st4">
-          <p><strong>(4)</strong> Ko lažan novac koji je primio kao pravi, pa saznavši da je lažan, stavi u opticaj ili ko zna da je načinjen lažan novac ili da je lažan novac stavljen u opticaj, pa to ne prijavi, kazniće se novčanom kaznom ili zatvorom do jedne godine.</p>
-        </paragraph>
-        <paragraph eId="art_258_st5">
-          <p><strong>(5)</strong> Lažan novac oduzeće se.</p>
-        </paragraph>
-        <paragraph eId="art_258_st6">
-          <p><strong>(6)</strong> Lažnim novcem, u smislu ovog krivičnog djela, smatra se i novac izrađen na način i od materijala kao pravi novac, suprotno propisima kojima se uređuje izrada novca.</p>
-        </paragraph>
-      </article>
-
-      <article eId="art_259">
-        <heading>Član 259 - Falsifikovanje hartija od vrijednosti</heading>
-        <paragraph eId="art_259_st1">
-          <p><strong>(1)</strong> Ko napravi lažne hartije od vrijednosti ili preinači prave hartije od vrijednosti u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lažne hartije upotrijebi kao prave ili ih u toj namjeri pribavi, kazniće se zatvorom od jedne do pet godina.</p>
-        </paragraph>
-        <paragraph eId="art_259_st2">
-          <p><strong>(2)</strong> Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog člana prelazi tri hiljade eura, učinilac će se kazniti zatvorom od jedne do osam godina.</p>
-        </paragraph>
-        <paragraph eId="art_259_st3">
-          <p><strong>(3)</strong> Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog člana prelaza trideset hiljada eura, učinilac će se kazniti zatvorom od dvije do deset godina.</p>
-        </paragraph>
-        <paragraph eId="art_259_st4">
-          <p><strong>(4)</strong> Ko lažne hartije od vrijednosti koje je primio kao prave, pa saznavši da su lažne, stavi u promet, kazniće se novčanom kaznom ili zatvorom do jedne godine.</p>
-        </paragraph>
-        <paragraph eId="art_259_st5">
-          <p><strong>(5)</strong> Lažne hartije od vrijednosti oduzeće se.</p>
-        </paragraph>
-      </article>
-
-      <article eId="art_260">
-        <heading>Član 260 - Falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje</heading>
-        <paragraph eId="art_260_st1">
-          <p><strong>(1)</strong> Ko napravi lažnu platnu karticu ili ko preinači pravu platnu karticu u namjeri da je upotrijebi kao pravu, ili ko takvu lažnu platnu karticu ili tuđu pravu platnu karticu koja je neovlašćeno pribavljena nabavi, drži ili prenese radi upotrebe ili takvu karticu upotrijebi, kazniće se zatvorom do tri godine.</p>
-        </paragraph>
-        <paragraph eId="art_260_st2">
-          <p><strong>(2)</strong> Ako je učinilac djela iz stava 1 ovog člana upotrebom kartice pribavio protivpravnu imovinsku korist, kazniće se zatvorom od šest mjeseci do pet godina.</p>
-        </paragraph>
-        <paragraph eId="art_260_st3">
-          <p><strong>(3)</strong> Ako je učinilac djela iz stava 1 ovog člana pribavio protivpravnu imovinsku korist u iznosu koji prelaza tri hiljade eura, kazniće se zatvorom od jedne do osam godina.</p>
-        </paragraph>
-        <paragraph eId="art_260_st4">
-          <p><strong>(4)</strong> Ako je učinilac djela iz stava 1 ovog člana pribavio protivpravnu imovinsku korist u iznosu koji prelaza trideset hiljada eura, kazniće se zatvorom od dvije do deset godina.</p>
-        </paragraph>
-      </article>
-
-      <article eId="art_261">
-        <heading>Član 261 - Falsifikovanje znakova za vrijednost</heading>
-        <paragraph eId="art_261_st1">
-          <p><strong>(1)</strong> Ko napravi lažne ili preinači prave znakove za vrijednost u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lažne znakove upotrijebi kao prave ili ih u toj namjeri pribavi, kazniće se zatvorom do tri godine.</p>
-        </paragraph>
-        <paragraph eId="art_261_st2">
-          <p><strong>(2)</strong> Ako ukupna vrijednost znakova iz stava 1 ovog člana prelaza iznos od tri hiljade eura, učinilac će se kazniti zatvorom od šest mjeseci do pet godina.</p>
-        </paragraph>
-        <paragraph eId="art_261_st3">
-          <p><strong>(3)</strong> Ako ukupna vrijednost znakova iz stava 1 ovog člana prelaza iznos od trideset hiljada eura, učinilac će se kazniti zatvorom od jedne do osam godina.</p>
-        </paragraph>
-      </article>
-
-      <article eId="art_262">
-        <heading>Član 262 - Pravljenje, nabavljanje i davanje drugom sredstava i materijala za falsifikovanje</heading>
-        <paragraph eId="art_262_st1">
-          <p><strong>(1)</strong> Ko pravi, nabavlja, prodaje, drži radi upotrebe ili daje drugom na upotrebu sredstva i materijal za pravljenje lažnog novca, platnih kartica ili lažnih hartija od vrijednosti, kazniće se zatvorom od šest mjeseci do pet godina.</p>
-        </paragraph>
-        <paragraph eId="art_262_st2">
-          <p><strong>(2)</strong> Kaznom iz stava 1 ovog člana kazniće se i ko, radi pravljenja lažnog novca, pravi, nabavlja, prodaje, drži radi upotrebe, drži ili daje drugom holograme ili druge sastavne dijelove novca koji služe za zaštitu od falsifikovanja.</p>
-        </paragraph>
-        <paragraph eId="art_262_st3">
-          <p><strong>(3)</strong> Ko pravi, nabavlja, prodaje, drži radi upotrebe ili daje drugom na upotrebu sredstva za pravljenje lažnih znakova za vrijednost, kazniće se novčanom kaznom ili zatvorom do dvije godine.</p>
-        </paragraph>
-      </article>
-
-    </chapter>
-  </body>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <act name="criminal-code-chapter-23">
+    <meta>
+      <identification source="#source">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23"/>
+          <FRBRuri value="/akn/me/act/criminal-code"/>
+          <FRBRdate date="2003-12-25" name="enactment"/>
+          <FRBRauthor href="#skupstina"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023"/>
+          <FRBRuri value="/akn/me/act/criminal-code/srp@2023"/>
+          <FRBRdate date="2023-01-01" name="publication"/>
+          <FRBRauthor href="#skupstina"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023.xml"/>
+          <FRBRuri value="/akn/me/act/criminal-code/srp@2023.xml"/>
+          <FRBRdate date="2024-01-01" name="transform"/>
+          <FRBRauthor href="#pravna-informatika"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#source">
+        <TLCOrganization eId="skupstina" href="/ontology/organization/me/skupstina" showAs="Skupstina Crne Gore"/>
+        <TLCOrganization eId="pravna-informatika" href="/ontology/organization/me/pravna-informatika" showAs="Pravna Informatika Team 8"/>
+      </references>
+    </meta>
+    
+    <body>
+      <chapter eId="chap_23">
+        <num>GLAVA DVADESET TRECA</num>
+        <heading>KRIVICNA DJELA PROTIV PLATNOG PROMETA I PRIVREDNOG POSLOVANJA</heading>
+        
+        <!-- Clan 258 - Falsifikovanje novca -->
+        <article eId="art_258">
+          <num>Clan 258</num>
+          <heading>Falsifikovanje novca</heading>
+          
+          <paragraph eId="art_258__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko napravi lazan novac u namjeri da ga stavi u opticaj kao pravi ili ko u istoj namjeri preinaci pravi novac, kaznice se zatvorom od dvije do dvanaest godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_258__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ko pribavlja, drzi ili prenosi lazan novac u namjeri da ga stavi u opticaj kao pravi ili ko lazan novac stavlja u opticaj, kaznice se zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_258__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je djelom iz st. 1 i 2 ovog clana napravljen, preinacen, stavljen u promet ili pribavljen lazan novac u iznosu koji prelazi petnaest hiljada eura, odnosno odgovarajuci iznos u stranom novcu, ucinilac ce se kazniti zatvorom od pet do petnaest godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_258__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ko lazan novac koji je primio kao pravi, pa saznavsi da je lazan, stavi u opticaj ili ko zna da je nacinjen lazan novac ili da je lazan novac stavljen u opticaj, pa to ne prijavi, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_258__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Lazan novac oduzece se.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_258__para_6">
+            <num>(6)</num>
+            <content>
+              <p>Laznim novcem, u smislu ovog krivicnog djela, smatra se i novac izraden na nacin i od materijala kao pravi novac, suprotno propisima kojima se ureduje izrada novca.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 259 - Falsifikovanje hartija od vrijednosti -->
+        <article eId="art_259">
+          <num>Clan 259</num>
+          <heading>Falsifikovanje hartija od vrijednosti</heading>
+          
+          <paragraph eId="art_259__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko napravi lazne hartije od vrijednosti ili preinaci prave hartije od vrijednosti u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lazne hartije upotrijebi kao prave ili ih u toj namjeri pribavi, kaznice se zatvorom od jedne do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_259__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog clana prelazi tri hiljade eura, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_259__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako ukupan iznos na koji glase falsifikovane hartije od vrijednosti iz stava 1 ovog clana prelazi trideset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_259__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ko lazne hartije od vrijednosti koje je primio kao prave, pa saznavsi da su lazne, stavi u promet, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_259__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Lazne hartije od vrijednosti oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 260 - Falsifikovanje i zloupotreba kreditnih kartica -->
+        <article eId="art_260">
+          <num>Clan 260</num>
+          <heading>Falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko placanje</heading>
+          
+          <paragraph eId="art_260__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko napravi laznu platnu karticu ili ko preinaci pravu platnu karticu u namjeri da je upotrijebi kao pravu, ili ko takvu laznu platnu karticu ili tudu pravu platnu karticu koja je neovlasceno pribavljena nabavi, drzi ili prenese radi upotrebe ili takvu karticu upotrijebi, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_260__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako je ucinilac djela iz stava 1 ovog clana upotrebom kartice pribavio protivpravnu imovinsku korist, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_260__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je ucinilac djela iz stava 1 ovog clana pribavio protivpravnu imovinsku korist u iznosu koji prelazi tri hiljade eura, kaznice se zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_260__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako je ucinilac djela iz stava 1 ovog clana pribavio protivpravnu imovinsku korist u iznosu koji prelazi trideset hiljada eura, kaznice se zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 261 - Falsifikovanje znakova za vrijednost -->
+        <article eId="art_261">
+          <num>Clan 261</num>
+          <heading>Falsifikovanje znakova za vrijednost</heading>
+          
+          <paragraph eId="art_261__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko napravi lazne ili preinaci prave znakove za vrijednost u namjeri da ih upotrijebi kao prave ili da ih drugom da na upotrebu ili ko takve lazne znakove upotrijebi kao prave ili ih u toj namjeri pribavi, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_261__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako ukupna vrijednost znakova iz stava 1 ovog clana prelazi iznos od tri hiljade eura, ucinilac ce se kazniti zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_261__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako ukupna vrijednost znakova iz stava 1 ovog clana prelazi iznos od trideset hiljada eura, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_261__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ko odstranjivanjem ziga kojim se znaci za vrijednost ponisavaju ili kojim drugim nacinom ide za tim da radi ponovne upotrebe ovim znacima da izgled kao da nijesu upotrijebljeni ili ko upotrijebljene znakove ponovo upotrijebi ili proda kao da vaze, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_261__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Lazni znakovi za vrijednost oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 262 - Pravljenje sredstava za falsifikovanje -->
+        <article eId="art_262">
+          <num>Clan 262</num>
+          <heading>Pravljenje, nabavljanje i davanje drugom sredstava i materijala za falsifikovanje</heading>
+          
+          <paragraph eId="art_262__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko pravi, nabavlja, prodaje, drzi radi upotrebe ili daje drugom na upotrebu sredstva i materijal za pravljenje laznog novca, platnih kartica ili laznih hartija od vrijednosti, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_262__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se i ko, radi pravljenja laznog novca, pravi, nabavlja, prodaje, drzi radi upotrebe, drzi ili daje drugom holograme ili druge sastavne dijelove novca koji sluze za zastitu od falsifikovanja.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_262__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ko pravi, nabavlja, prodaje, drzi radi upotrebe ili daje drugom na upotrebu sredstva za pravljenje laznih znakova za vrijednost, kaznice se novcanom kaznom ili zatvorom do dvije godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_262__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Sredstva iz st. 1 do 3 ovog clana oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 263 - Izdavanje ceka bez pokrica -->
+        <article eId="art_263">
+          <num>Clan 263</num>
+          <heading>Izdavanje ceka i sredstava bezgotovinskog placanja bez pokrica</heading>
+          
+          <paragraph eId="art_263__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko koristi kreditnu karticu za koju zna da nece obezbijediti pokrice u ugovorenom roku, pa time sebi ili drugome pribavi protivpravnu imovinsku korist koja prelazi pet stotina eura, kaznice se novcanom kaznom ili kaznom zatvora do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_263__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se i ko izda ili stavi u promet cek, mjenicu, kakvu garanciju ili kakvo drugo sredstvo placanja ili obezbjedenja placanja, iako zna da za to nema pokrica i time sebi ili drugom pribavi protivpravnu imovinsku korist u iznosu koji prelazi pet stotina eura.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_263__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je djelom iz st. 1 i 2 ovog clana pribavljena imovinska korist u iznosu koji prelazi tri hiljade eura, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_263__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako je djelom iz st. 1 i 2 ovog clana pribavljena imovinska korist u iznosu koji prelazi trideset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 264 - Utaja poreza i doprinosa -->
+        <article eId="art_264">
+          <num>Clan 264</num>
+          <heading>Utaja poreza i doprinosa</heading>
+          
+          <paragraph eId="art_264__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko, u namjeri da on ili neko drugo fizicko ili pravno lice potpuno ili djelimicno izbjegne placanje poreza, doprinosa ili drugih propisanih dazbina, daje lazne podatke o zakonito stecenim prihodima, o predmetima ili drugim cinjenicama koje su od uticaja na utvrdivanje ovakvih obaveza ili ko u istoj namjeri, u slucaju obavezne prijave, ne prijavi zakonito steceni prihod, odnosno predmete ili druge cinjenice koje su od uticaja na utvrdivanje ovakvih obaveza ili ko u istoj namjeri na drugi nacin prikriva podatke koji se odnose na utvrdivanje navedenih obaveza, a iznos obaveze cije se placanje izbjegava prelazi hiljadu eura, kaznice se zatvorom do tri godine i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_264__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako je djelo iz stava 1 ovog clana ucinjeno na stetu finansijskih interesa Evropske Unije, ucinilac ce se kazniti kaznom propisanom za to djelo.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_264__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako iznos obaveze iz st. 1 i 2 ovog clana cije se placanje izbjegava prelazi deset hiljada eura, ucinilac ce se kazniti zatvorom od jedne do sest godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_264__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako iznos obaveze iz st. 1 i 2 ovog clana cije se placanje izbjegava prelazi sto hiljada eura, ucinilac ce se kazniti zatvorom od jedne do osam godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 265 - Krijumcarenje -->
+        <article eId="art_265">
+          <num>Clan 265</num>
+          <heading>Krijumcarenje</heading>
+          
+          <paragraph eId="art_265__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko se bavi prenosenjem robe preko carinske linije izbjegavajuci mjere carinskog nadzora ili ko izbjegavajuci mjere carinskog nadzora prenese robu preko carinske linije naoruzam, u grupi ili uz upotrebu sile ili prijetnje, kaznice se zatvorom od sest mjeseci do pet godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_265__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ko prenese preko carinske linije, izbjegavajuci mjere carinskog nadzora, vecu kolicinu oruzja ili municije ili oruzje cije drzanje je gradanima zabranjeno ili drugu robu cija je proizvodnja ili promet ogranicen ili zabranjen, kaznice se zatvorom od jedne do osam godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_265__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ko se bavi prodajom, rasturanjem ili prikrivanjem neocarinjene robe ili organizuje mrezu preprodavaca ili posrednika za rasturanje takve robe, kaznice se zatvorom od jedne do osam godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_265__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Roba koja je predmet djela iz st. 1, 2 i 3 ovog clana oduzece se.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_265__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Prevozno sredstvo cija su tajna ili skrovita mjesta iskoriscena za prenos robe koja je predmet djela iz stava 1 ovog clana ili koje je namijenjeno za izvrsenje tih krivicnih djela moze se oduzeti ako je vlasnik ili korisnik vozila to znao ili je mogao i bio duzan da zna i ako vrijednost robe koja je predmet krivicnog djela prelazi jednu trecinu vrijednosti prevoznog sredstva u vrijeme izvrsenja krivicnog djela.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 266 - Nedozvoljeno bavljenje privrednom djelatnoscu -->
+        <article eId="art_266">
+          <num>Clan 266</num>
+          <heading>Nedozvoljeno bavljenje privrednom, bankarskom, berzanskom i djelatnoscu osiguranja</heading>
+          
+          <paragraph eId="art_266__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko se bez registracije ili odobrenja ili protivno uslovima pod kojima je ono dato bavi privrednom ili drugom djelatnoscu ili ko registruje privredno drustvo ili se registruje za obavljanje privredne djelatnosti kao preduzetnik protivno zabrani za registrovanje privrednog drustva ili preduzetnika, kaznice se kaznom zatvora od tri mjeseca do pet godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_266__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ko se bez odobrenja ili protivno uslovima pod kojima je ono dato bavi bankarskom, berzanskom ili djelatnoscu osiguranja, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_266__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Za djelo iz stava 2 ovog clana kaznice se propisanom kaznom i odgovorno lice u pravnom licu, ako se pravno lice nedozvoljeno bavi nekom od navedenih djelatnosti, ukoliko je odgovorno lice za to znalo ili je to moglo i bilo duzno da zna.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 267 - Izdavanje hartija od vrijednosti bez pokrica -->
+        <article eId="art_267">
+          <num>Clan 267</num>
+          <heading>Izdavanje hartija od vrijednosti bez pokrica</heading>
+          
+          <paragraph eId="art_267__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u banci, privrednom drustvu ili drugom subjektu privrednog poslovanja koji izdaje hartije od vrijednosti, koje dozvoli izdavanje hartija od vrijednosti, iako je znalo ili je moglo i bilo duzno da zna za nemogucnost izvrsenja obaveza izdavaoca koje proizlaze iz emisije, pod uslovima, u roku i na nacin utvrden zakonom ili odlukom o emisiji, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_267__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Sluzbeno lice koje odobri izdavanje hartija od vrijednosti iako je znalo ili je moglo i bilo duzno da zna za nemogucnost izvrsenja obaveza koje proizlaze iz emisije pod uslovima, u roku i na nacin utvrden zakonom ili odlukom o emisiji, kaznice se zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_267__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Odgovorno lice u banci koje odobri garanciju po odredenoj emisiji hartija od vrijednosti iako je znalo ili je moglo i bilo duzno da zna za nemogucnost izvrsenja garancijom preuzete obaveze banke, pod uslovima, u roku i na nacin predviden zakonom ili garancijom, kaznice se novcanom kaznom ili zatvorom do sest mjeseci.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 268 - Pranje novca -->
+        <article eId="art_268">
+          <num>Clan 268</num>
+          <heading>Pranje novca</heading>
+          
+          <paragraph eId="art_268__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko izvrsi konverziju ili prenos novca ili druge imovine sa znanjem da su pribavljeni kriminalnom djelatnoscu, u namjeri da se prikrije ili lazno prikaze porijeklo novca ili druge imovine, ili ko stekne, drzi ili koristi novac ili drugu imovinu sa znanjem u trenutku prijema da poticu od vrsenja kriminalne djelatnosti, ili ko prikrije ili lazno prikaze cinjenice o prirodi, porijeklu, mjestu deponovanja, kretanja, raspolaganja ili vlasnistvu novca ili druge imovine za koje zna da su pribavljeni kriminalnom djelatnoscu, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se izvrsilac djela iz stava 1 ovog clana koji je i izvrsilac ili saicesnik u krivicnom djelu kojim je pribavljen novac ili imovina iz stava 1 ovog clana ili ko pomogne izvrsioca radi izbjegavanja njegove odgovornosti za ucinjeno djelo, ili u istom cilju preduzme radnje radi prikrivanja porijekla novca ili imovine iz stava 1 ovog clana.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako iznos novca ili vrijednost imovine iz st. 1 i 2 ovog clana prelaze cetrdeset hiljada eura, ucinilac ce se kazniti zatvorom od jedne do deset godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako djelo iz st. 1 i 2 ovog clana izvrsi vise lica koja su se udruzila za vrsenje takvih djela, kaznice se zatvorom od tri do dvanaest godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Ko ucini djelo iz st. 1 i 2 ovog clana, a mogao je i bio duzan da zna da novac ili imovina predstavljaju prihod pribavljen kriminalnom djelatnoscu, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_6">
+            <num>(6)</num>
+            <content>
+              <p>Novac i imovina iz st. 1, 2 i 3 ovog clana oduzece se.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_268__para_7">
+            <num>(7)</num>
+            <content>
+              <p>Imovina, u smislu ovog clana, podrazumijeva imovinska prava bilo koje vrste, nezavisno od toga da li se odnose na dobra materijalne ili nematerijalne prirode, pokretne ili nepokretne stvari, hartije od vrijednosti i druge isprave kojima se dokazuju imovinska prava.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 269 - Povreda ravnopravnosti -->
+        <article eId="art_269">
+          <num>Clan 269</num>
+          <heading>Povreda ravnopravnosti u vrsenju privredne djelatnosti</heading>
+          
+          <paragraph eId="art_269__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko zloupotrebom svog sluzbenog polozaja ili ovlascenja ogranici slobodno ili samostalno povezivanje privrednog drustva ili drugog subjekta privrednog poslovanja u obavljanju privredne djelatnosti, uskrati mu ili ogranici pravo da na odredenom podrucju obavlja privrednu djelatnost, stavi ga u neravnopravan polozaj prema drugim subjektima privrednog poslovanja u pogledu uslova privredivanja ili ogranici slobodno obavljanje privredne djelatnosti, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_269__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se ko zloupotrijebi svoj drustveni polozaj ili uticaj radi izvrsenja krivicnog djela iz stava 1 ovog clana.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 270 - Zloupotreba monopolistickog polozaja -->
+        <article eId="art_270">
+          <num>Clan 270</num>
+          <heading>Zloupotreba monopolistickog polozaja</heading>
+          
+          <paragraph eId="art_270__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu ili u drugom subjektu privrednog poslovanja, koji zloupotrebom monopolistickog ili dominantnog polozaja na trzistu ili zakljucivanjem monopolistickog sporazuma izazove poremecaj na trzistu ili taj subjekt dovede u povlascen polozaj u odnosu na druge, tako da ostvari imovinsku korist za taj subjekt ili za drugi subjekt ili nanese stetu drugim subjektima privrednog poslovanja, potrosacima ili korisnicima usluga, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 271 - Neovlascena upotreba tude firme -->
+        <article eId="art_271">
+          <num>Clan 271</num>
+          <heading>Neovlascena upotreba tude firme</heading>
+          
+          <paragraph eId="art_271__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko se u namjeri da obmane kupce ili korisnike usluga posluzi tudom firmom, tudom geografskom oznakom porijekla, tudim zigom ili zastitnim znakom ili tudom posebnom oznakom robe ili unese pojedina obiljezja ovih oznaka u svoju firmu, svoj zig ili zastitni znak ili u svoju posebnu oznaku robe, kaznice se novcanom kaznom ili zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 272 - Zloupotreba polozaja u privrednom poslovanju -->
+        <article eId="art_272">
+          <num>Clan 272</num>
+          <heading>Zloupotreba polozaja u privrednom poslovanju</heading>
+          
+          <paragraph eId="art_272__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu, drugom subjektu privrednog poslovanja ili drugom pravnom licu koje zloupotrebom svog polozaja ili povjerenja u pogledu raspolaganja tudom imovinom, prekoracenjem granica svog ovlascenja ili nevrsenjem svoje duznosti pribavi sebi ili drugom protivpravnu imovinsku korist ili drugom nanese imovinsku stetu, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_272__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se i ko, u namjeri da sebi ili drugom pribavi protivpravnu imovinsku korist, prisvoji novac, hartije od vrijednosti ili druge pokretne stvari koje su mu povjerene na radu u privrednom drustvu, drugom subjektu privrednog poslovanja ili drugom pravnom licu.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_272__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je usljed djela iz st. 1 i 2 ovog clana pribavljena imovinska korist koja prelazi iznos od cetrdeset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 273 - Prouzrokovanje stecaja -->
+        <article eId="art_273">
+          <num>Clan 273</num>
+          <heading>Prouzrokovanje stecaja</heading>
+          
+          <paragraph eId="art_273__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu ili u drugom subjektu privrednog poslovanja, koje neracionalnim trosenjem sredstava ili njihovim otudivanjem u bescijenje, prekomjernim zaduzivanjem, preuzimanjem nesrazmjernih obaveza, lakomislenim zakljucivanjem ugovora sa licima nesposobnim za placanje, propustanjem blagovremenog ostvarivanja potrazivanja, unistenjem ili prikrivanjem imovine ili drugim radnjama koje nijesu u skladu sa savjesnim poslovanjem prouzrokuje stecaj i time drugog osteti, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 274 - Prouzrokovanje laznog stecaja -->
+        <article eId="art_274">
+          <num>Clan 274</num>
+          <heading>Prouzrokovanje laznog stecaja</heading>
+          
+          <paragraph eId="art_274__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu ili u drugom subjektu privrednog poslovanja, koji u namjeri da taj subjekt izbjegne placanje obaveza prouzrokuje stecaj tog subjekta prividnim ili stvarnim umanjenjem njegove imovine, na nacin sto: 1) cijelu ili dio imovine subjekta privrednog poslovanja prikrije, prividno proda, proda ispod trzisne vrijednosti ili basplatno ustupi; 2) zakljuci fiktivne ugovore o dugu ili prizna nepostojeca potrazivanja; 3) poslovne knjige koje je subjekt privrednog poslovanja obavezan da vodi po zakonu prikrije, unisti ili tako preinaci da se iz njih ne mogu sagledati poslovni rezultati ili stanje sredstava ili obaveza ili ovo stanje sacinjavanjem laznih isprava ili na drugi nacin prikaze takvim da se na osnovu njega moze otvoriti stecaj, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_274__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako su usljed djela iz stava 1 ovog clana nastupile teske posljedice za povjerioca, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 275 - Ostecenje povjerioca -->
+        <article eId="art_275">
+          <num>Clan 275</num>
+          <heading>Ostecenje povjerioca</heading>
+          
+          <paragraph eId="art_275__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu ili drugom subjektu privrednog poslovanja, koje znajuci da je taj subjekt postao nesposoban za placanje, isplatom duga ili na drugi nacin namjerno stavi povjerioca u povoljniji polozaj i time znatno osteti drugog povjerioca, kaznice se zatvorom od tri mjeseca do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_275__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Odgovorno lice iz stava 1 ovog clana ili preduzetnik, koji znajuci da je taj subjekt postao nesposoban za placanje, a u namjeri da izigra ili osteti povjerioca prizna neistinito potrazivanje, sastavi lazni ugovor ili nekom drugom prevarnom radnjom osteti povjerioca, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_275__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je djelom iz st. 1 i 2 ovog clana povjeriocu prouzrokovana steta koja prelazi iznos od cetrdeset hiljada eura ili ako je prema ostecenom zbog toga doslo do pokretanja postupka prinudnog poravnjanja ili stecaja, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 276 - Zloupotreba ovlascenja u privredi -->
+        <article eId="art_276">
+          <num>Clan 276</num>
+          <heading>Zloupotreba ovlascenja u privredi</heading>
+          
+          <paragraph eId="art_276__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno lice u privrednom drustvu ili drugom subjektu privrednog poslovanja koje u namjeri pribavljanja protivpravne imovinske koristi za pravno lice u kojem je zaposleno, za drugo pravno lice ili drugi subjekt privrednog poslovanja: 1) stvara ili drzi nedozvoljene novcane, robne ili druge vrijednosni fondove u zemlji ili inostranstvu; 2) sastavljanjem isprave neistinite sadrzine, procjenama ili inventarisanjem odnosno laznim prikazivanjem ili prikrivanjem cinjenica, neistinito prikazuje stanje ili kretanje sredstava ili rezultate poslovanja, pa na taj nacin dovede u zabludu organe upravljanja u privrednom drustvu ili drugom pravnom licu prilikom donosenja odluka o poslovima upravljanja ili privredno drusto ili drugo pravno lice stavi u povoljniji polozaj prilikom dobijanja sredstava ili drugih pogodnosti koje im se ne bi priznale prema postojecim propisima; 3) sredstva kojima raspolaze koristi protivno njihovoj namjeni; 4) na drugi nacin grubo povrijedi ovlascenja u pogledu upravljanja, raspolaganja i koriscenja imovinom, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_276__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako je usljed djela iz stava 1 ovog clana pribavljena imovinska korist koja prelazi iznos od cetrdeset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do dvanaest godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 276a - Primanje mita u privrednom poslovanju -->
+        <article eId="art_276a">
+          <num>Clan 276a</num>
+          <heading>Primanje mita u privrednom poslovanju</heading>
+          
+          <paragraph eId="art_276a__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Odgovorno ili drugo lice koje radi za ili u privrednom drustvu ili drugom subjektu privrednog poslovanja koje za sebe ili drugog, neposredno ili posredno, zahtijeva ili primi mito ili prihvati obecanje mita da zakljuci ugovor ili postigne poslovni dogovor ili pruzi uslugu ili da se uzdrzi od takvog djelovanja na stetu ili u korist privrednog drustva za koje ili u kojem radi ili drugog lica, kaznice se zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_276a__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ucinilac djela iz stava 1 ovog clana koji, poslije zakljucenja ugovora ili postizanja poslovnog dogovora ili poslije pruzene usluge ili uzdrzavanja od takvog djelovanja, za sebe ili drugog zahtijeva ili primi mito ili prihvati obecanje mita, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_276a__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Primljeno mito oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 276b - Davanje mita u privrednom poslovanju -->
+        <article eId="art_276b">
+          <num>Clan 276b</num>
+          <heading>Davanje mita u privrednom poslovanju</heading>
+          
+          <paragraph eId="art_276b__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko da, ponudi ili obeca mito odgovornom ili drugom licu koje radi za ili u privrednom drustvu ili drugom subjektu privrednog poslovanja da, za sebe ili drugog, zakljuci ugovor ili postigne poslovni dogovor ili pruzi uslugu na stetu ili u korist privrednog drustva za koje ili u kojem radi ili drugog lica ili ko posreduje pri ovakvom davanju mita, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_276b__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ucinilac djela iz stava 1 ovog clana koji je dao mito na zahtjev odgovornog ili drugog lica koje radi za ili u privrednom drustvu ili drugom subjektu privrednog poslovanja, a djelo je prijavio prije nego sto je saznao da je ono otkriveno, moze se osloboditi od kazne.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_276b__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Dato mito oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 277 - Narusavanje poslovnog ugleda -->
+        <article eId="art_277">
+          <num>Clan 277</num>
+          <heading>Narusavanje poslovnog ugleda i kreditne sposobnosti</heading>
+          
+          <paragraph eId="art_277__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri narusavanja poslovnog ugleda ili kreditne sposobnosti drugog, iznosi o njemu neistinite podatke ili neistinito prikazuje njegovo poslovanje, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_277__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako su usljed djela iz stava 1 ovog clana nastupile teske posljedice, ucinilac ce se kazniti zatvorom od tri mjeseca do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_277__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Gonjenje za djela iz st. 1 i 2 ovog clana preduzima se po privatnoj tuzbi.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 278 - Lazan bilans -->
+        <article eId="art_278">
+          <num>Clan 278</num>
+          <heading>Lazan bilans</heading>
+          
+          <paragraph eId="art_278__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri da sebi ili drugom pribavi kakvu korist ili drugom nanese kakvu stetu, sacini u privrednom drustvu ili drugom subjektu privrednog poslovanja lazan bilans kojim se utvrduje dobit ili gubitak tog subjekta ili kojim se utvrduje udio svakog clana drustva u dobiti ili gubitku, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 279 - Zloupotreba procjene -->
+        <article eId="art_279">
+          <num>Clan 279</num>
+          <heading>Zloupotreba procjene</heading>
+          
+          <paragraph eId="art_279__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ovlasceni procjenjivac koji prilikom procjene imovine privrednog drustva ili drugog subjekta privrednog poslovanja zloupotrijebi svoje ovlascenje i time sebi ili drugom pribavi kakvu korist ili drugom nanese kakvu stetu, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_279__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako je djelom iz stava 1 ovog clana pribavljena imovinska korist ili prouzrokovana steta koja prelazi iznos od tri hiljade eura, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_279__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je djelom iz stava 1 ovog clana pribavljena imovinska korist ili prouzrokovana steta koja prelazi iznos od trideset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 280 - Odavanje poslovne tajne -->
+        <article eId="art_280">
+          <num>Clan 280</num>
+          <heading>Odavanje poslovne tajne</heading>
+          
+          <paragraph eId="art_280__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko neovlasceno drugom saopsti, preda ili na drugi nacin ucini dostupnim podatke koji predstavljaju poslovnu tajnu ili ko pribavlja takve podatke u namjeri da ih preda nepozvanom licu, kaznice se zatvorom od tri mjeseca do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_280__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se i nepozvano lice koje koristi podatke koji predstavljaju poslovnu tajnu pribavljene na nacin iz stava 1 ovog clana.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_280__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako je djelo iz st. 1 i 2 ovog clana ucinjeno iz koristoljublja ili u pogledu narocito povjerljivih podataka ili radi objavljivanja ili koriscenja podataka u inostranstvu, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_280__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ko djelo iz st. 1 i 2 ovog clana ucini iz nehata, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_280__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Poslovnom tajnom smatraju se podaci i dokumenti koji su zakonom, drugim propisom ili odlukom nadleznog organa donesenom na osnovu zakona proglaseni poslovnom tajnom cije bi odavanje prouzrokovalo ili bi moglo da prouzrokuje stetne posljedice za privredno drustvo ili drugi subjekt privrednog poslovanja.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 281 - Zloupotreba povlascenih informacija -->
+        <article eId="art_281">
+          <num>Clan 281</num>
+          <heading>Zloupotreba povlascenih informacija</heading>
+          
+          <paragraph eId="art_281__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri da sebi ili drugom pribavi imovinsku korist ili nanese stetu drugom saopsti ili na drugi nacin ucini dostupnim povlascenu informaciju nepozvanom licu ili koristeci povlascenu informaciju, za sebe ili drugog, neposredno ili posredno, pribavi ili otudi hartiju od vrijednosti ili drugi finansijski instrument na koji se ta informacija odnosi ili ko preporuci drugom ili ga navede da pribavi ili otudi hartiju od vrijednosti ili drugi finansijski instrument na koji se ta informacija odnosi, kaznice se novcanom kaznom ili zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Kaznom iz stava 1 ovog clana kaznice se i nepozvano lice koje koristi povlascene informacije koje su pribavljene na nacin iz stava 1 ovog clana.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Ako djelo iz stava 1 ovog clana ucini lice koje je clan odbora direktora ili nadzornog organa emitenta ili ima udio u kapitalu emitenta, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako je djelom iz st. 1, 2 i 3 ovog clana pribavljena imovinska korist koja prelazi iznos od tri hiljade eura, ucinilac ce se kazniti zatvorom od jedne do osam godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Ako je djelom iz st. 1, 2 i 3 ovog clana pribavljena imovinska korist koja prelazi iznos od trideset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281__para_6">
+            <num>(6)</num>
+            <content>
+              <p>Za pokusaj djela iz stava 1 ovog clana kaznice se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 281a - Manipulacija na trzistu -->
+        <article eId="art_281a">
+          <num>Clan 281a</num>
+          <heading>Manipulacija na trzistu hartija od vrijednosti ili drugih finansijskih instrumenata</heading>
+          
+          <paragraph eId="art_281a__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri da sebi ili drugom pribavi imovinsku korist ili nanese stetu drugom postupa suprotno propisima o trzistu hartija od vrijednosti, na nacin sto: 1) zakljuci transakciju ili da nalog za trgovanje kojim se daju ili mogu dati netacne ili obmanjujuce informacije o ponudi, traznji ili cijeni hartija od vrijednosti ili drugih finansijskih instrumenata ili kojima lice ili lica koja djeluju zajednicki odrzavaju cijenu jedne ili vise hartija od vrijednosti ili drugih finansijskih instrumenata na nerealnom nivou; 2) prilikom zakljucivanja transakcije ili davanja naloga za trgovanje zadrzi, poveca, smanji ili izazove promjene u trzisnoj cijeni hartija od vrijednosti ili drugih finansijskih instrumenata putem kupovine ili prodaje ili fiktivnom transakcijom kojom se ne izvrsi promjena vlasnistva nad tom hartijom od vrijednosti ili drugim finansijskim instrumentom; 3) putem medija, interneta ili na drugi nacin siri ili prenosi netacne ili obmanjujuce informacije koje mogu izazvati zabludu o hartijama od vrijednosti ili drugim finansijskim instrumentima, a znao je da su te informacije netacne ili obmanjujuce i da mogu dovesti u zabludu korisnika informacije, kaznice se zatvorom od sest mjeseci do pet godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_281a__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ako je djelom iz stava 1 ovog clana pribavljena imovinska korist koja prelazi iznos od trideset hiljada eura, ucinilac ce se kazniti zatvorom od dvije do deset godina i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 282 - Onemogucavanje vrsenja kontrole -->
+        <article eId="art_282">
+          <num>Clan 282</num>
+          <heading>Onemogucavanje vrsenja kontrole</heading>
+          
+          <paragraph eId="art_282__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko onemogucava inspekcijskom ili drugom organu vrsenja kontrole da izvrsi uvid u poslovne knjige ili drugu dokumentaciju ili onemogucava pregled predmeta, prostorija ili drugih objekata, kaznice se novcanom kaznom ili zatvorom do jedne godine.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 283 - Nedozvoljena proizvodnja -->
+        <article eId="art_283">
+          <num>Clan 283</num>
+          <heading>Nedozvoljena proizvodnja</heading>
+          
+          <paragraph eId="art_283__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko neovlasceno proizvodi ili preraduje robu za ciju je proizvodnju ili preradivanje potrebno odobrenje nadleznog organa, kaznice se novcanom kaznom ili zatvorom do dvije godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_283__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ko proizvodi ili preraduje robu cija je proizvodnja ili preradivanje zabranjeno, kaznice se zatvorom do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_283__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Roba i sredstva za proizvodnju ili preradivanje oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 284 - Nedozvoljena trgovina -->
+        <article eId="art_284">
+          <num>Clan 284</num>
+          <heading>Nedozvoljena trgovina</heading>
+          
+          <paragraph eId="art_284__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko nemajuci ovlascenje za trgovinu, u svrhu prodaje nabavi robu ili druge predmete opste upotrebe u vrijednosti koja prelazi iznos od tri hiljade eura ili ko se neovlasceno i u vecem obimu bavi trgovinom ili posredovanjem u trgovini ili zastupanjem organizacija u unutrasnjem ili spoljnotrgovinskom prometu roba i usluga, kaznice se novcanom kaznom ili zatvorom do dvije godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_284__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Ko se bavi prodajom robe ciju je proizvodnju neovlasceno organizovao, kaznice se zatvorom od tri mjeseca do tri godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_284__para_3">
+            <num>(3)</num>
+            <content>
+              <p>Kaznom iz stava 2 ovog clana kaznice se i ko neovlasceno prodaje, kupuje ili vrsi razmjenu robe ili predmeta ciji je promet zabranjen ili ogranicen.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_284__para_4">
+            <num>(4)</num>
+            <content>
+              <p>Ako je ucinilac djela iz st. 1 do 3 ovog clana organizovao mrezu preprodavaca ili posrednika ili je postigao imovinsku korist koja prelazi iznos od tri hiljade eura, kaznice se zatvorom od sest mjeseci do pet godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_284__para_5">
+            <num>(5)</num>
+            <content>
+              <p>Ako je ucinilac djela iz st. 1 i 3 ovog clana postigao imovinsku korist koja prelazi iznos od trideset hiljada eura, kaznice se zatvorom od jedne do sest godina.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_284__para_6">
+            <num>(6)</num>
+            <content>
+              <p>Roba i predmeti nedozvljene trgovine oduzece se.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 285 - Obmanjivanje kupaca -->
+        <article eId="art_285">
+          <num>Clan 285</num>
+          <heading>Obmanjivanje kupaca</heading>
+          
+          <paragraph eId="art_285__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri obmanjivanja kupaca stavlja u promet proizvode sa oznakom u koju su unijeti podaci koji ne odgovaraju sadrzini, vrsti, porijeklu ili kvalitetu proizvoda ili stavlja u promet proizvode koji po svojoj kolicini ili kvalitetu ne odgovaraju onome sto se redovno pretpostavlja kod takvih proizvoda ili stavlja u promet proizvode bez oznake o sadrzini, vrsti porijeklu ili kvalitetu proizvoda kad je ovakva oznaka propisana ili se pri stavljanju u promet proizvoda sluzi ocigledno laznom reklamom, kaznice se zatvorom do tri godine i novcanom kaznom.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+        <!-- Clan 286 - Falsifikovanje znakova za obiljezavanje robe -->
+        <article eId="art_286">
+          <num>Clan 286</num>
+          <heading>Falsifikovanje znakova za obiljezavanje robe</heading>
+          
+          <paragraph eId="art_286__para_1">
+            <num>(1)</num>
+            <content>
+              <p>Ko u namjeri da ih upotrijebi kao prave napravi lazne pecate, zigove, marke ili druge znakove za obiljezavanje domace ili strane robe kojima se zigose zlato ili drugi plemeniti metal, drvo, stoka ili kakva druga roba ili ko u istoj namjeri takve prave znakove preinaci ili ko takve lazne ili preinacene znakove upotrijebi kao prave, kaznice se novcanom kaznom ili zatvorom do dvije godine.</p>
+            </content>
+          </paragraph>
+          
+          <paragraph eId="art_286__para_2">
+            <num>(2)</num>
+            <content>
+              <p>Lazni znakovi oduzece se i unistiti.</p>
+            </content>
+          </paragraph>
+        </article>
+        
+      </chapter>
+    </body>
+  </act>
 </akomaNtoso>

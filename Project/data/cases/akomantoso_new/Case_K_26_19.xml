@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case K 26/19">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_26_19/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_26_19"/>
+          <FRBRdate date="2019-05-14" name="decision"/>
+          <FRBRauthor href="#osnovni_sud_bar"/>
+          <FRBRcountry value="me"/>
+          <FRBRnumber value="K 26/19"/>
+          <FRBRname value="Teška krađa i zloupotreba kreditnih kartica"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_26_19/sr@2019-05-14/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_26_19/sr@2019-05-14"/>
+          <FRBRdate date="2019-05-14" name="expression"/>
+          <FRBRauthor href="#osnovni_sud_bar"/>
+          <FRBRlanguage language="sr"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_26_19/sr@2019-05-14/!main.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_26_19/sr@2019-05-14/!main.akn"/>
+          <FRBRdate date="2026-02-05" name="transform"/>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="osnovni_sud_bar" href="/akn/me/ontology/organization/osnovni_sud_bar" showAs="Osnovni sud u Baru"/>
+        <TLCOrganization eId="odt_bar" href="/akn/me/ontology/organization/odt_bar" showAs="Osnovno državno tužilaštvo u Baru"/>
+        <TLCPerson eId="sudija" href="/akn/me/ontology/person/goran_scepanovic" showAs="Goran Šćepanović"/>
+        <TLCPerson eId="optuzeni" href="/akn/me/ontology/person/defendant_gv" showAs="G. V."/>
+        <TLCPerson eId="osteceni" href="/akn/me/ontology/person/victim_os" showAs="O. S."/>
+        <TLCPerson eId="branilac" href="/akn/me/ontology/person/advokat_md" showAs="Adv. M. D."/>
+        <TLCPerson eId="tuzilac" href="/akn/me/ontology/person/irena_rajkovic" showAs="Irena Rajković"/>
+        <TLCReference eId="ref_art_239" href="/akn/me/act/criminal-code#art_239" showAs="Član 239 - Krađa"/>
+        <TLCReference eId="ref_art_260" href="/akn/me/act/criminal-code#art_260" showAs="Član 260 - Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </references>
+      <classification source="#court">
+        <keyword value="teska_kradja" showAs="Krađa" dictionary="criminal_offenses"/>
+        <keyword value="falsifikovanje_kartice" showAs="Falsifikovanje kreditnih kartica" dictionary="criminal_offenses"/>
+        <keyword value="clan_239" showAs="Član 239" dictionary="articles"/>
+        <keyword value="clan_260" showAs="Član 260" dictionary="articles"/>
+      </classification>
+    </meta>
+    <header>
+      <p class="court">OSNOVNI SUD U BARU</p>
+      <p class="caseNumber">K br. 26/19</p>
+      <p class="date">14.05.2019. godine</p>
+      <p class="formula">U IME CRNE GORE</p>
+    </header>
+    <judgmentBody>
+      <introduction>
+        <p>OSNOVNI SUD U BARU, kao prvostepeni krivični, sudija <judge refersTo="#sudija">Goran Šćepanović</judge>, kao sudija pojedinac, u krivičnom postupku protiv optuženog <party refersTo="#optuzeni" as="defendant">G. V.</party>, zbog krivičnog djela teška krađa iz <ref href="/akn/me/act/criminal-code#art_240">čl.240 st.1 tč.1</ref> Krivičnog zakonika Crne Gore, i falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje iz <ref href="/akn/me/act/criminal-code#art_260">čl.260 st.2 u vezi st.1</ref> Krivičnog zakonika Crne Gore, po optužnici Osnovnog državnog tužilaštva u Baru Kt br. 26/19 od 12.02.2019. godine.</p>
+      </introduction>
+      <background>
+        <p><b>Sud:</b> Osnovni sud u Baru</p>
+        <p><b>Broj predmeta:</b> K 26/19</p>
+        <p><b>Datum presude:</b> <date date="2019-05-14">14.05.2019.</date></p>
+        <p><b>Sudija:</b> <judge refersTo="#sudija">Goran Šćepanović</judge></p>
+        <p><b>Tužilac:</b> <party refersTo="#tuzilac" as="prosecution">Irena Rajković</party></p>
+        <blockContainer eId="defendant_info">
+          <heading>Podaci o okrivljenom</heading>
+          <p><b>Okrivljeni:</b> <party refersTo="#optuzeni" as="defendant">G. V.</party>, zvani „B."</p>
+          <p><b>Datum rođenja:</b> rođen u B.</p>
+          <p><b>Prebivalište:</b> B., ul.P.</p>
+          <p><b>Državljanstvo:</b> C. G.</p>
+          <p><b>Zanimanje:</b> vozač, neoženjen</p>
+          <p><b>Obrazovanje:</b> završena srednja poljoprivredna škola</p>
+          <p><b>Imovno stanje:</b> srednjeg imovnog stanja</p>
+          <p><b>Ranija osuđivanost:</b> višestruko osuđivan (6 prethodnih osuda uključujući drogu i krađe)</p>
+        </blockContainer>
+      </background>
+      <caseDescription>
+        <heading>Opis slucaja</heading>
+        <p>Optuzeni G.V., poznat pod nadimkom "B.", je tokom noci 02./03.01.2019. godine na parking prostoru u ulici Vojvode Mase Djurovica u Baru provalio u putnicko motorno vozilo marke VW Passat vlasnistvo O.S. Iz vozila je oduzeo novac u iznosu od 29 eura, platnenu torbu, novcanik sa licnim dokumentima i karticom CKB banke, dva muska rucna sata i pet mobilnih telefona. Koristeci ukradenu karticu i PIN kod koji je nasao u novcaniku, optuzeni je na bankomatu u marketu Conto u ulici Dinastije Petrovica u dva navrata podigao ukupno 600 eura. Radi se o visestuko osudjenom povratniku sa sest prethodnih osuda.</p>
+      </caseDescription>
+      <motivation>
+        <blockContainer eId="crime_description">
+          <heading>Opis krivičnog djela</heading>
+          <p>Tokom noći <date date="2019-01-02">02./03.01.2019.</date> godine, u vremenskom periodu od 01:00 časova do 06:33 časova, na parking prostoru u ulici Vojvode Maše Đurovića, u Baru, i u ul. Dinastije Petrovića u Baru, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, oduzeo tuđe pokretne stvari, u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu većem od 150,00 eura, i upotrijebio pravu platnu karticu koju je neovlašćeno pribavio i upotrebom iste pribavio protivpravnu imovinsku korist u iznosu od <amount value="600" currency="EUR">600,00 eura</amount>, na način što je otvorio vrata od putničkog motornog vozila marke ,,VW Passat", reg.oznaka, vlasništvo <party refersTo="#osteceni" as="victim">O. S.</party>, te ušao u unutrašnjost vozila, izvršio premetačinu i iz unutrašnjosti vozila oduzeo novčani iznos od ukupno <amount value="29" currency="EUR">29,00 eura</amount>, platnenu torbu crne boje, novčane vrijednosti od 10,00 eura u kojoj se nalazio novčanik, novčane vrijednosti od 10,00 eura, u kojem su se nalazila lična dokumenta i kartica CKB banke, zatim je iz ladice ispred suvozačevog mjesta oduzeo dva muška ručna sata, jedan marke „Omikron" novčane vrijednosti od 25,00 eura, a drugi marke „Darvil" novčane vrijednosti od 25,00 eura, a iz ladice između prednjih sjedišta u vozilu oduzeo je 5 mobilnih telefona od kojih: jedan marke „Nokia" novčane vrijednosti 5,00 eura, i četiri marke „Samsung" ukupne novčane vrijednosti od 10,00 eura, nakon čega je na bankomatu NLB Montenegrobanke, broj bankomata S7EB0028, koji se nalazi u marketu „Conto" u ulici Dinastije Petrovića u Baru upotrijebio karticu CKB banke koju je prethodno oduzeo iz vozila i sa iste podigao u dva navrata novčani iznos od ukupno <amount value="600" currency="EUR">600,00 eura</amount>.</p>
+        </blockContainer>
+        <blockContainer eId="legal_qualification">
+          <heading>Pravna kvalifikacija</heading>
+          <p>Čime je izvršio krivično djelo <term>krađa</term> iz <ref href="/akn/me/act/criminal-code#art_239">čl.239 st.1</ref> u sticaju sa krivičnim djelom <term>falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje</term> iz <ref href="/akn/me/act/criminal-code#art_260">čl.260 st.2 u vezi st.1</ref> KZCG u vezi čl.48 Krivičnog zakonika Crne Gore.</p>
+        </blockContainer>
+        <blockContainer eId="aggravating_circumstances">
+          <heading>Otežavajuće okolnosti</heading>
+          <p>Višestruka ranija osuđivanost.</p>
+        </blockContainer>
+      </motivation>
+      <decision>
+        <blockContainer eId="verdict">
+          <heading>PRESUDA</heading>
+          <p><b>Odluka:</b> KRIV JE</p>
+        </blockContainer>
+        <blockContainer eId="sentence_theft">
+          <heading>Kazna za krivično djelo krađe</heading>
+          <p>Za krivično krađa iz <ref href="/akn/me/act/criminal-code#art_239">čl.239 st.1</ref> Krivičnog zakonika Crne Gore kazna zatvora u trajanju od <sentence type="imprisonment" duration="P6M">6 (šest) mjeseci</sentence>.</p>
+        </blockContainer>
+        <blockContainer eId="sentence_card_fraud">
+          <heading>Kazna za krivično djelo zloupotrebe kartice</heading>
+          <p>Za krivično djelo falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje iz <ref href="/akn/me/act/criminal-code#art_260">čl.260 st.2 u vezi st.1</ref> Krivičnog zakonika Crne Gore, kazna zatvora u trajanju od <sentence type="imprisonment" duration="P8M">8 (osam) mjeseci</sentence>.</p>
+        </blockContainer>
+        <blockContainer eId="final_sentence">
+          <heading>Jedinstvena kazna</heading>
+          <p>Jedinstvena kazna zatvora u trajanju od <sentence type="imprisonment" duration="P1Y">1 (jedne) godine</sentence>.</p>
+        </blockContainer>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <p>OSNOVNI SUD U BARU</p>
+      <p>Dana <date date="2019-05-16">16.05.2019.</date> godine</p>
+      <signature>
+        <person refersTo="#sudija">SUDIJA: Goran Šćepanović</person>
+      </signature>
+      <p><b>PRAVNA POUKA:</b> Protiv ove presude može se izjaviti žalba Višem sudu u Podgorici u roku od 15 dana od dana prijema pismenog otpravka.</p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
