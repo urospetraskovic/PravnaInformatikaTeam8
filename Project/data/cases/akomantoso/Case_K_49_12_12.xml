@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_49_12_12">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_49_12_12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_49_12_12"/>
+          <FRBRdate date="2015-06-09" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_49_12_12/srp@2015-06-09"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_49_12_12/srp@2015-06-09"/>
+          <FRBRdate date="2015-06-09" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_49_12_12/srp@2015-06-09.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_49_12_12/srp@2015-06-09.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/momirka_tešić" showAs="Momirka Tešić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="M Z"/>
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>49/12/12</brojPredmeta>
+        <datum>09.06.2015</datum>
+        <datumNormalizovan>2015-06-09</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Momirka Tešić</sudija>
+        <optuzeni>M Z</optuzeni>
+        <podaciORoditeljima>otac D, majka R</podaciORoditeljima>
+        <prebivaliste>sa ženom i djetetom</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>8 ( osam ) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>250,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana ... godine oko 02,00 časa u hotelu "S MB" u T, lažni novac - četiri novčanice u apoenu od ... €, ser. br...., br. A ..., br. E.. i br. E ..., stavio u opticaj, na način što je prilikom plaćanja usluga boravka u navedenom hotelu predao ove novčanice recepcioneru hotela G G iz T kako bi platio račun u uznosu od 321,00 €, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</opisSlucaja>
+        <svjedoci>
+          <svjedok>je i</svjedok>
+          <svjedok>predao o</svjedok>
+          <svjedok>je n</svjedok>
+          <svjedok>je o</svjedok>
+          <svjedok>Ć R i G G</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>potvrdu o privremenom oduzimanju predmeta UP I T od 07.09.2011. godine</dokaz>
+          <dokaz>grafološko vještačenje - izvještaj br. 3961/11</dokaz>
+          <dokaz>četiri novčanice u apoenima od 100</dokaz>
+          <dokaz>zdravstveni karton na ime okrivljenog ZIKS Podgorica od 23.12.2014. godine i medicinsku dokumentaciju na ime okrivljenog od ... godine i od .... godine.
+Svjedok Ć R je na zapisnik pred ODT K od .... godine izjavila da je okrivljeni boravio u njihovom hotelu "S MB" u T</dokaz>
+          <dokaz>svjedoke Ć R i G G</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca br. 209 C banke Crne Gore Trezor odjeljenje za ekspertizu novca br. 0903-15/209-2 od 21.10.2011. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>75,00 EUR</iznos>
+          <iznos>321,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>1,00 EUR</iznos>
+          <iznos>70 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>4,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>79 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 49/12/12, sudija Momirka Tešić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: M Z, otac D, majka R, prebivalište: sa ženom i djetetom, oženjen</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana ... godine oko 02,00 časa u hotelu "S MB" u T, lažni novac - četiri novčanice u apoenu od ... €, ser. br...., br. A ..., br. E.. i br. E ..., stavio u opticaj, na način što je prilikom plaćanja usluga boravka u navedenom hotelu predao ove novčanice recepcioneru hotela G G iz T kako bi platio račun u uznosu od 321,00 €, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• potvrdu o privremenom oduzimanju predmeta UP I T od 07.09.2011. godine</p>
+            <p>• grafološko vještačenje - izvještaj br. 3961/11</p>
+            <p>• četiri novčanice u apoenima od 100</p>
+            <p>• zdravstveni karton na ime okrivljenog ZIKS Podgorica od 23.12.2014. godine i medicinsku dokumentaciju na ime okrivljenog od ... godine i od .... godine.
+Svjedok Ć R je na zapisnik pred ODT K od .... godine izjavila da je okrivljeni boravio u njihovom hotelu "S MB" u T</p>
+            <p>• svjedoke Ć R i G G</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 8 ( osam ) mjeseci</p>
+          <p>Novčana kazna: 250,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

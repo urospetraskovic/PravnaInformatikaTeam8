@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_1472_08">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_1472_08"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_1472_08"/>
+          <FRBRdate date="2019-10-08" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_1472_08/srp@2019-10-08"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_1472_08/srp@2019-10-08"/>
+          <FRBRdate date="2019-10-08" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_1472_08/srp@2019-10-08.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_1472_08/srp@2019-10-08.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="sudija" href="/ontology/person/za_istragu" showAs="za istragu"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="B.S."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>1472/08</brojPredmeta>
+        <datum>08.10.2019</datum>
+        <datumNormalizovan>2019-10-08</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>za istragu</sudija>
+        <optuzeni>B.S.</optuzeni>
+        <podaciORoditeljima>otac R., majka D.</podaciORoditeljima>
+        <godinaRodjenja>02.11.1984</godinaRodjenja>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>OŠ</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 240 st. 1</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 08.10.2019. g. u prisustvu državnog tužioca ODT K. Ž.P., okrivljenih i njihovog branioca, dana 09.10.2019. g. donio je i javno objavio sledeću P R E S U D U Okrivljeni: 1. E.S.,JMBG., od oca R. i majke D.,rođene E.,rođen 02.11.1984. g. u C.,stalno nastanjen u C., Z.bb, državljanin CG,radnik,oženjen,otac petoro djece, sa završenom OŠ, srednjeg imovnog stanja, ranije osuđivan presudom O.suda u P.K.br.1472/08 od 11.01.2010.g. zbog krivičnog djeka iz čl. 240 st.1 tač.2 KZ CG na kaznu zatvora u trajanju od 3 (tri) mjeseca, presudom V,suda u P, K.br. 19/09 od 16.12.2009.g, zbog krivičnog djela iz čl.240 st.1 tač.1 u vezi čl.23 KZ CG na kaznu zatvora u trajanju od 1 (jedne) godine i presudom O.suda u K. K.br. 503/07 od 18.05.2009. g. zbog krivičnog djela iz čl.240 st.1 tač. 2 KZ CG na kaznu zatvora u trajanju od 8 (osam) mjeseci, uslovno na 2 (dvije) godine,protiv kojeg se ne vodi postupak za drugo krivično djelo, 2. B.S., JMBG.,od oca B. i majke R.rođene R. rođen 10.07.1987.g u B., stalno nastanjen u C.,Z.bb,državljanin R.S,radnik, oženjen, otac petoro djece, sa završenom OŠ, lošeg imovnog stanja, protiv kojeg se ne vodi postupak za drugo krivično djelo, Krivi su, Što su, I Okrivljeni E. S.i okrivljeni B. S. 1. Dana 17.06.2019.g, u B.,u naselju P.,u ulici K.M.br. 24, u vremenskom intervalu između 04:00 i 05:00 časova, uračunljivi, svjesni svoga djela i njegove zabranjenosti, a čije izvršenje su htjeli, zajednički i po prethodnom dogovoru, na naročito drzak način,tuđu pokretnu </opisSlucaja>
+        <dokazi>
+          <dokaz>zapisnik o uviđaju UP B. od 17.06.2019. g.</dokaz>
+          <dokaz>zapisnik o uviđaju</dokaz>
+          <dokaz>video zapisu</dokaz>
+          <dokaz>video zapisa</dokaz>
+          <dokaz>video zapisom</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekon. finan.struke od 19.07.2019.g. i 26.07.2019.g.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>140,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>93,00 EUR</iznos>
+          <iznos>350,00 EUR</iznos>
+          <iznos>55,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>32,00 EUR</iznos>
+          <iznos>148,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>415,00 EUR</iznos>
+          <iznos>170,00 EUR</iznos>
+          <iznos>440,00 EUR</iznos>
+          <iznos>62,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 1472/08, sudija za istragu</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: B.S., otac R., majka D., oženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 08.10.2019. g. u prisustvu državnog tužioca ODT K. Ž.P., okrivljenih i njihovog branioca, dana 09.10.2019. g. donio je i javno objavio sledeću P R E S U D U Okrivljeni: 1. E.S.,JMBG., od oca R. i majke D.,rođene E.,rođen 02.11.1984. g. u C.,stalno nastanjen u C., Z.bb, državljanin CG,radnik,oženjen,otac petoro djece, sa završenom OŠ, srednjeg imovnog stanja, ranije osuđivan presudom O.suda u P.K.br.1472/08 od 11.01.2010.g. zbog krivičnog djeka iz čl. 240 st.1 tač.2 KZ CG na kaznu zatvora u trajanju od 3 (tri) mjeseca, presudom V,suda u P, K.br. 19/09 od 16.12.2009.g, zbog krivičnog djela iz čl.240 st.1 tač.1 u vezi čl.23 KZ CG na kaznu zatvora u trajanju od 1 (jedne) godine i presudom O.suda u K. K.br. 503/07 od 18.05.2009. g. zbog krivičnog djela iz čl.240 st.1 tač. 2 KZ CG na kaznu zatvora u trajanju od 8 (osam) mjeseci, uslovno na 2 (dvije) godine,protiv kojeg se ne vodi postupak za drugo krivično djelo, 2. B.S., JMBG.,od oca B. i majke R.rođene R. rođen 10.07.1987.g u B., stalno nastanjen u C.,Z.bb,državljanin R.S,radnik, oženjen, otac petoro djece, sa završenom OŠ, lošeg imovnog stanja, protiv kojeg se ne vodi postupak za drugo krivično djelo, Krivi su, Što su, I Okrivljeni E. S.i okrivljeni B. S. 1. Dana 17.06.2019.g, u B.,u naselju P.,u ulici K.M.br. 24, u vremenskom intervalu između 04:00 i 05:00 časova, uračunljivi, svjesni svoga djela i njegove zabranjenosti, a čije izvršenje su htjeli, zajednički i po prethodnom dogovoru, na naročito drzak način,tuđu pokretnu </p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o uviđaju UP B. od 17.06.2019. g.</p>
+            <p>• zapisnik o uviđaju</p>
+            <p>• video zapisu</p>
+            <p>• video zapisa</p>
+            <p>• video zapisom</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 240 st. 1 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

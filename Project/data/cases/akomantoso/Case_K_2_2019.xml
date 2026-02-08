@@ -1,0 +1,115 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_2_2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_2_2019"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_2_2019"/>
+          <FRBRdate date="2020-12-02" name="judgment"/>
+          <FRBRauthor href="#nikšiću"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_2_2019/srp@2020-12-02"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_2_2019/srp@2020-12-02"/>
+          <FRBRdate date="2020-12-02" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_2_2019/srp@2020-12-02.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_2_2019/srp@2020-12-02.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/vujačić_vukota" showAs="Vujačić Vukota"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u n"/>
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>2/2019</brojPredmeta>
+        <datum>2.12.2020</datum>
+        <datumNormalizovan>2020-12-02</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Vujačić Vukota</sudija>
+        <optuzeni>u n</optuzeni>
+        <podaciORoditeljima>otac R., majka R.</podaciORoditeljima>
+        <prebivaliste>Nikšiću, V</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 240 st. 1</clanKZ>
+        <kazna>3 mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>U vremenskom periodu od 03.08.2020 do 20.08.2020.godine, u Nikšiću na bankomatu E. b. M., svjestan svog djela čije je izvršenje htio, neovlašćeno pribavio i upotrijebio bankomat karticu E. b. M. vlasništvo svog oca oštećenog B. R., čijom je upotrebom pribavio protivpravnu imovinsku korist, a na način što je istu u više navrata upotrijebio na bankomatu E. b. M., i to: dana 03.08.2020.godine na bankomatu koji se nalazi u ulici -- J.-- , kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 04.08.2020.godine na bankomatu C., kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 05.08.2020.godine na bankomatu E. b. M. koji se nalazi u ulici -- J. --kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 06.08.2020.godine na bankomatu E. b. M. koji se nalazi u ulici -- J., kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 07.08.2020. godine na bankomatu E. b. M. koji se nalazi u ulici -- J., kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 10.08.2020.godine na bankomatu C. kada je podigao i prisvojio novac u iznosu od 70,00 eura, dana 10.08.2020.godine na bankomatu C., kada je podigao i prisvojio novac u iznosu od 220,00 eura, dana 10.08.2020.godine na bankomatu ATM –LOB LOVB kada je podigao i prisvojio novac u iznosu od 100,00 eura, dana 11.08.2020 godine na bankomatu N. banke, kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 12.08.2020 godine na bankomatu ATM, kada je podigao i prisvojio novac u iznosu od 13</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog B.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećenog B. R. dat pred ODT- om u Niksicu i istog neposredno saslusao na glavnom pretresu</dokaz>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog generisan kroz PRIS dana 23.11.2020.godine.
+Oštećeni svjedok B. R. u svom iskazu datom pred Osnovnim državnim tužiocem u Niksicu i na glavnom pretresu u bitnom je naveo da je posjedovao žiro račun u E. b. vec duži vremenski period a da mu je dana 29.07.2020.godine uplaćeno 5.000</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>021,00 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>18,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>900,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>220,00 EUR</iznos>
+          <iznos>130,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 2/2019, sudija Vujačić Vukota</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u n, otac R., majka R., prebivalište: Nikšiću, V, nezaposlen, neoženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U vremenskom periodu od 03.08.2020 do 20.08.2020.godine, u Nikšiću na bankomatu E. b. M., svjestan svog djela čije je izvršenje htio, neovlašćeno pribavio i upotrijebio bankomat karticu E. b. M. vlasništvo svog oca oštećenog B. R., čijom je upotrebom pribavio protivpravnu imovinsku korist, a na način što je istu u više navrata upotrijebio na bankomatu E. b. M., i to: dana 03.08.2020.godine na bankomatu koji se nalazi u ulici -- J.-- , kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 04.08.2020.godine na bankomatu C., kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 05.08.2020.godine na bankomatu E. b. M. koji se nalazi u ulici -- J. --kada je podigao i prisvojio novac u iznosu od 500,00 eura, dana 06.08.2020.godine na bankomatu E. b. M. koji se nalazi u ulici -- J., kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 07.08.2020. godine na bankomatu E. b. M. koji se nalazi u ulici -- J., kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 10.08.2020.godine na bankomatu C. kada je podigao i prisvojio novac u iznosu od 70,00 eura, dana 10.08.2020.godine na bankomatu C., kada je podigao i prisvojio novac u iznosu od 220,00 eura, dana 10.08.2020.godine na bankomatu ATM –LOB LOVB kada je podigao i prisvojio novac u iznosu od 100,00 eura, dana 11.08.2020 godine na bankomatu N. banke, kada je podigao i prisvojio novac u iznosu od 200,00 eura, dana 12.08.2020 godine na bankomatu ATM, kada je podigao i prisvojio novac u iznosu od 13</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećenog B. R. dat pred ODT- om u Niksicu i istog neposredno saslusao na glavnom pretresu</p>
+            <p>• izvod iz kaznene evidencije za okrivljenog generisan kroz PRIS dana 23.11.2020.godine.
+Oštećeni svjedok B. R. u svom iskazu datom pred Osnovnim državnim tužiocem u Niksicu i na glavnom pretresu u bitnom je naveo da je posjedovao žiro račun u E. b. vec duži vremenski period a da mu je dana 29.07.2020.godine uplaćeno 5.000</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 240 st. 1 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

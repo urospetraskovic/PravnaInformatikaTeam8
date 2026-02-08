@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_160_2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_160_2013"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_160_2013"/>
+          <FRBRdate date="2013-07-30" name="judgment"/>
+          <FRBRauthor href="#bijelom_polju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_160_2013/srp@2013-07-30"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_160_2013/srp@2013-07-30"/>
+          <FRBRdate date="2013-07-30" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_160_2013/srp@2013-07-30.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_160_2013/srp@2013-07-30.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/rahmo_banda" showAs="Rahmo Banda"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i p"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>160/2013</brojPredmeta>
+        <datum>30.07.2013</datum>
+        <datumNormalizovan>2013-07-30</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Rahmo Banda</sudija>
+        <optuzeni>i p</optuzeni>
+        <podaciORoditeljima>otac S., majka M.</podaciORoditeljima>
+        <prebivaliste>mjestu Gornje Jarušice bb</prebivaliste>
+        <zaposlenost>zaposlena u supermarketu Roda</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 49</clanKZ>
+        <kazna>Nepoznat</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>1.248,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>- dana 07.06.2013.godine oko 21,00 h, na Benzinskoj pumpi '' JugoP.ol'' AD Kotor, koja se nalazi na Autobuskoj stanici u Bijelom Polju, lažan novac – jednu novčanicu u apoenu od 200,00 eura, serijskog broja U10204924618, stavio u opticaj, na način što je na pomenutoj pumpi sa istom novčanicom prodavcu R. R.u platio jednu flašu alkoholnog pića '' Gorki list'', - istog dana, oko 21,00 h, u marketu ''Roda'' vlasništvo DOO ''M.'', koji se nalazi u Ul. Tršovoj u Bijelom Polju, lažan novac – jednu novčanicu u apoenu od 200,00 eura, serijskog broja V62403126004, stavio u opticaj, na način što je u pomenutom marketu sa istom novčanicom prodavačici B. M.i platio jednu flašu alkoholnog pića '' Gorki list'' i jedan ''Smoki'', čija je ukupna vrijednost 10,25 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>R. R.a</svjedok>
+          <svjedok>činjenično s</svjedok>
+          <svjedok>sasluša l</svjedok>
+          <svjedok>cijienio k</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dvije novčanice u apoenima od po 200</dokaz>
+          <dokaz>izvod iz KE na ime optuženog T. D.a</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica Uprave Policije – PJ Bijelo Polje br. 240/13-267 od 08.06.2013.godine</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije – CB Bijelo Polje od 07.06.2013.godine</dokaz>
+          <dokaz>potvrdu Crnogorske komercijalne banke – Filijala B.Polje od 08.06.2013.godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafologa K. M.e br. 20/13 od 12.06.2013.godine</dokaz>
+          <dokaz>svjedoke R. R.a</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica kao i zapisnik o saslušanju svjedoka B. M.e kao pravno nevaljane dokaze iz razloga jer su isti pribavljeni suprotno odredbama ZKP-a.
+Optuženi T. D.o uzavršnoj riječi je izjavio</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>500 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>10,25 EUR</iznos>
+          <iznos>70 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>60 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>248,50 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 160/2013, sudija Rahmo Banda</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i p, otac S., majka M., prebivalište: mjestu Gornje Jarušice bb, zaposlena u supermarketu Roda, neoženjen, ne osudjivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>- dana 07.06.2013.godine oko 21,00 h, na Benzinskoj pumpi '' JugoP.ol'' AD Kotor, koja se nalazi na Autobuskoj stanici u Bijelom Polju, lažan novac – jednu novčanicu u apoenu od 200,00 eura, serijskog broja U10204924618, stavio u opticaj, na način što je na pomenutoj pumpi sa istom novčanicom prodavcu R. R.u platio jednu flašu alkoholnog pića '' Gorki list'', - istog dana, oko 21,00 h, u marketu ''Roda'' vlasništvo DOO ''M.'', koji se nalazi u Ul. Tršovoj u Bijelom Polju, lažan novac – jednu novčanicu u apoenu od 200,00 eura, serijskog broja V62403126004, stavio u opticaj, na način što je u pomenutom marketu sa istom novčanicom prodavačici B. M.i platio jednu flašu alkoholnog pića '' Gorki list'' i jedan ''Smoki'', čija je ukupna vrijednost 10,25 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dvije novčanice u apoenima od po 200</p>
+            <p>• izvod iz KE na ime optuženog T. D.a</p>
+            <p>• zapisnik o prepoznavanju lica Uprave Policije – PJ Bijelo Polje br. 240/13-267 od 08.06.2013.godine</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije – CB Bijelo Polje od 07.06.2013.godine</p>
+            <p>• potvrdu Crnogorske komercijalne banke – Filijala B.Polje od 08.06.2013.godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Novčana kazna: 1.248,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 49 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

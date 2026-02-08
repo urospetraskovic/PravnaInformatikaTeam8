@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_228_18_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_228_18_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_228_18_18"/>
+          <FRBRdate date="2022-01-17" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_228_18_18/srp@2022-01-17"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_228_18_18/srp@2022-01-17"/>
+          <FRBRdate date="2022-01-17" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_228_18_18/srp@2022-01-17.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_228_18_18/srp@2022-01-17.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="P.Š."/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>228/18/18</brojPredmeta>
+        <datum>17.01.2022</datum>
+        <datumNormalizovan>2022-01-17</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <optuzeni>P.Š.</optuzeni>
+        <podaciORoditeljima>otac Ž., majka J.</podaciORoditeljima>
+        <bracniStatus>oženjen</bracniStatus>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>2 (dvije) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećeni n</svjedok>
+          <svjedok>je d</svjedok>
+          <svjedok>Jova L</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dopis DOO „V.1“ P.</dokaz>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljenog P.Š. izdato od strane Osnovnog suda u Podgorici pod brojem KE 1466/2021 od 30.09.2021.godine.
+Svjedok J.L. je u iskazu datom na glavnom pretresu u svemu ponovio iskaz dat pred Osnovnim državnim tužilaštvom u Podgorici od 17.09.2021.godine</dokaz>
+          <dokaz>svjedoka Jova Lagatora</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 06.09.2021.godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>152,00 EUR</iznos>
+          <iznos>134,00 EUR</iznos>
+          <iznos>586,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>370,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>580,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 228/18/18, sudija Nenad Vujanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: P.Š., otac Ž., majka J., oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dopis DOO „V.1“ P.</p>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljenog P.Š. izdato od strane Osnovnog suda u Podgorici pod brojem KE 1466/2021 od 30.09.2021.godine.
+Svjedok J.L. je u iskazu datom na glavnom pretresu u svemu ponovio iskaz dat pred Osnovnim državnim tužilaštvom u Podgorici od 17.09.2021.godine</p>
+            <p>• svjedoka Jova Lagatora</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 06.09.2021.godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 2 (dvije) godin</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

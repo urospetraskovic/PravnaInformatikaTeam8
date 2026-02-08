@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_558_13">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_558_13"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_558_13"/>
+          <FRBRdate date="2017-02-13" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_558_13/srp@2017-02-13"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_558_13/srp@2017-02-13"/>
+          <FRBRdate date="2017-02-13" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_558_13/srp@2017-02-13.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_558_13/srp@2017-02-13.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_đuković" showAs="Goran Đuković"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>558/13</brojPredmeta>
+        <datum>13.02.2017</datum>
+        <datumNormalizovan>2017-02-13</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Goran Đuković</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac M., majka V.</podaciORoditeljima>
+        <prebivaliste>mjestu rođenja</prebivaliste>
+        <bracniStatus>neoženjen</bracniStatus>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>30 dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene B</svjedok>
+          <svjedok>oštećene B.</svjedok>
+          <svjedok>oštećena B.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17.01.2016. godine i pročitao izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</dokaz>
+          <dokaz>iskaz svjedoka oštećene B. M. sa zapisnika Kt.br.100/16 od 01.04.2016. godine</dokaz>
+          <dokaz>službenu zabilješku UP CB Podgorica Ku.br.44/2016</dokaz>
+          <dokaz>potvrda UP CB Podgorica o vraćanju privremeno oduzetih predmeta 47/2 od 17.01.2016. godine</dokaz>
+          <dokaz>izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</dokaz>
+          <dokaz>fotodokumentacija sačinjena povodom fotografisanja jakne oduzete od M. D. u službenim prostorijama CB – Podgorica</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 558/13, sudija Goran Đuković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac M., majka V., prebivalište: mjestu rođenja, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17.01.2016. godine i pročitao izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</p>
+            <p>• iskaz svjedoka oštećene B. M. sa zapisnika Kt.br.100/16 od 01.04.2016. godine</p>
+            <p>• službenu zabilješku UP CB Podgorica Ku.br.44/2016</p>
+            <p>• potvrda UP CB Podgorica o vraćanju privremeno oduzetih predmeta 47/2 od 17.01.2016. godine</p>
+            <p>• izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 30 dana</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

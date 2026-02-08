@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_58_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_58_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_58_18"/>
+          <FRBRdate date="2020-11-04" name="judgment"/>
+          <FRBRauthor href="#pljevljima_po_sudiji_ljiljani_popović"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_58_18/srp@2020-11-04"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_58_18/srp@2020-11-04"/>
+          <FRBRdate date="2020-11-04" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_58_18/srp@2020-11-04.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_58_18/srp@2020-11-04.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima_po_sudiji_ljiljani_popović" showAs="Osnovni Sud u Pljevljima po sudiji Ljiljani Popović"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ljiljana_popović" showAs="Ljiljana Popović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="P.M."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Pljevljima po sudiji Ljiljani Popović</sud>
+        <brojPredmeta>58/18</brojPredmeta>
+        <datum>04.11.2020</datum>
+        <datumNormalizovan>2020-11-04</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Ljiljana Popović</sudija>
+        <optuzeni>P.M.</optuzeni>
+        <podaciORoditeljima>otac M., majka V.</podaciORoditeljima>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>5 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>27,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 09.08.2020.godine oko 21,00 časova u Pljevljima, svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, tuđu pravu platnu karticu vlasništvo oštećenog P. R. izdatu od strane Erste banke-Filijala u P., koja je neovlašćeno pribavljena nabavio,istu upotrebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je broj kreditne kartice neovlašćeno pribvljene od strane NN lica i njen CVV nabavio od tog lica i isti ukucao na korisnički nalog kladionice „V.“ u P. koji je registrovan na ime L. D. i na isti sa platne kartice oštećenog prenio sredstva u iznosu od 130,00 € izvršivši klađenje u pomenutoj kladionici, na koji način je oštetio P.R.za iznos od 130,00 €,-</opisSlucaja>
+        <svjedoci>
+          <svjedok>poznaje o</svjedok>
+          <svjedok>zaposlen u </svjedok>
+          <svjedok>je b</svjedok>
+          <svjedok>oštećenog P.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dopis DOO „V.“ br.8711-1/2020 od 18.08.2020.godine</dokaz>
+          <dokaz>izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude odnosno da je optuženi P. M. izvršio krivično djelo falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje iz čl.260 st.2 u vezi st.1 Krivičnog zakonika Crne Gore i da je za isto kriv pa ga je oglasio krivim i osudio po zakonu.
+Naime</dokaz>
+          <dokaz>svjedoka-oštećenog P. R.</dokaz>
+          <dokaz>svjedoka L. D.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>27,50 EUR</iznos>
+          <iznos>17,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>131,67 EUR</iznos>
+          <iznos>47,00 EUR</iznos>
+          <iznos>211,67 EUR</iznos>
+          <iznos>32,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>147,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>130,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Pljevljima po sudiji Ljiljani Popović, 58/18, sudija Ljiljana Popović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: P.M., otac M., majka V., nezaposlen, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 09.08.2020.godine oko 21,00 časova u Pljevljima, svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, tuđu pravu platnu karticu vlasništvo oštećenog P. R. izdatu od strane Erste banke-Filijala u P., koja je neovlašćeno pribavljena nabavio,istu upotrebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je broj kreditne kartice neovlašćeno pribvljene od strane NN lica i njen CVV nabavio od tog lica i isti ukucao na korisnički nalog kladionice „V.“ u P. koji je registrovan na ime L. D. i na isti sa platne kartice oštećenog prenio sredstva u iznosu od 130,00 € izvršivši klađenje u pomenutoj kladionici, na koji način je oštetio P.R.za iznos od 130,00 €,-</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dopis DOO „V.“ br.8711-1/2020 od 18.08.2020.godine</p>
+            <p>• izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude odnosno da je optuženi P. M. izvršio krivično djelo falsifikovanje i zloupotreba kreditnih kartica i kartica za bezgotovinsko plaćanje iz čl.260 st.2 u vezi st.1 Krivičnog zakonika Crne Gore i da je za isto kriv pa ga je oglasio krivim i osudio po zakonu.
+Naime</p>
+            <p>• svjedoka-oštećenog P. R.</p>
+            <p>• svjedoka L. D.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 5 mjeseci</p>
+          <p>Novčana kazna: 27,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

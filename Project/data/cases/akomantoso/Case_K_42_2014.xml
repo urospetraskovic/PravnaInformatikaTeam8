@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_42_2014">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_42_2014"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_42_2014"/>
+          <FRBRdate date="2014-10-23" name="judgment"/>
+          <FRBRauthor href="#bijelom_polju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_42_2014/srp@2014-10-23"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_42_2014/srp@2014-10-23"/>
+          <FRBRdate date="2014-10-23" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_42_2014/srp@2014-10-23.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_42_2014/srp@2014-10-23.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/rahmo_banda" showAs="Rahmo Banda"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="J. N."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>42/2014</brojPredmeta>
+        <datum>23.10.2014</datum>
+        <datumNormalizovan>2014-10-23</datumNormalizovan>
+        <godina>2014</godina>
+        <sudija>Rahmo Banda</sudija>
+        <optuzeni>J. N.</optuzeni>
+        <podaciORoditeljima>otac M., majka V.</podaciORoditeljima>
+        <prebivaliste>državi gdje platežno sredstvo nije euro već dinar</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>Srednju Školu</obrazovanje>
+        <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>Nepoznat</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>- neutvrđenog dana i mjeseca 2013.godine, u NN mjestu, pribavili lažan novac - novčanice u apoenima od 200,00 eura, serijskih brojeva: - Y12553552558, Y12553552994,X01548390049,X00340382369,Y10039902708,Y10039903487,X00340381531,Y12553553361,Y10039902657,Y125353586,Y12553553563,Y10039902911,Y12553552916, koje novčanice su dana 19.07.2013.godine, po prethodnom dogovoru, a u namjeri da taj novac stave u opticaj kao pravi,prenijeli iz S. u Crnu Goru preko graničnog prelaza Dobrakovo, putničkim motornim vozilom marke „B.“ reg.ozn: ..-..-.., kojim je upravljao okrivljeni B. D., od kojih novčanica je okrivljeni K. D. dolaskom na granični prelaz Dobrakovo neke stavio u dokumenta, a nešto u kaseti od auta, dok je novčanicu serijskog broja Y12553552558, dolaskom na benzinsku pumpi AD „J.“ K. u Bijelom Polju, stavio u opticaj, na način što je tom novčanicom radniku B. V., platio dizel gorivo D2, u vrijednosti od 30,00 €, koji mu je vratio kusur u iznosu od 170,00 eura, u apoenima od 3x50 € i 1x20 €, da bi kada su ih ovlašćeni službenici OB Mojkovac u mjestu L., opština Mojkovac zaustavili i kontrolisali, istim je okrivljeni K. D. predao jednu novčanicu ser. broja Y12553552916, a takodje predao službenicima Centra bezbijednosti Bijelo Polje, u vozilu prilikom privođenja, dvije novčanice serijskog broja Y12553552994, X01548390049, dok je u vozilu pretresom istog, pronađeno devet novčanica serijskih brojeva: - X00340382369, Y10039902708, Y10039903487, X00340381531, Y12553553361, Y10039902</opisSlucaja>
+        <svjedoci>
+          <svjedok>na g</svjedok>
+          <svjedok>sud j</svjedok>
+          <svjedok>cijenio k</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvod iz KE na ime optuženog K. D.</dokaz>
+          <dokaz>izvod iz KE na ime optuženog B. D.</dokaz>
+          <dokaz>izvod iz KE na ime optuženog J. N.</dokaz>
+          <dokaz>dopis ošećenog ‘’J.’’ AD K.</dokaz>
+          <dokaz>iskaze svjedoka R. LJ.</dokaz>
+          <dokaz>zapisnik o pretresanju od 19.07.2013.godine Uprave Policije CB Bijelo Polje</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima od lica B. V. UP CB B.Polje od 19.07.2013.godine</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica KTR.br. 156/13 od 19.07.2013.godine ODT u B.Polju</dokaz>
+          <dokaz>službenu zabilješku sačinjenu od strane OPS UP OB Mojkovac br. 230/13-1995 od 19.07.2013.godine</dokaz>
+          <dokaz>službenu zabilješku MUP CB B.Polje od 19.07.2013.godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>290,75 EUR</iznos>
+          <iznos>205,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>170,00 EUR</iznos>
+          <iznos>30 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>1 EUR</iznos>
+          <iznos>2.900 EUR</iznos>
+          <iznos>925,00 EUR</iznos>
+          <iznos>170 EUR</iznos>
+          <iznos>1. EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 42/2014, sudija Rahmo Banda</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: J. N., otac M., majka V., prebivalište: državi gdje platežno sredstvo nije euro već dinar, nezaposlen, neoženjen, ne osudjivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>- neutvrđenog dana i mjeseca 2013.godine, u NN mjestu, pribavili lažan novac - novčanice u apoenima od 200,00 eura, serijskih brojeva: - Y12553552558, Y12553552994,X01548390049,X00340382369,Y10039902708,Y10039903487,X00340381531,Y12553553361,Y10039902657,Y125353586,Y12553553563,Y10039902911,Y12553552916, koje novčanice su dana 19.07.2013.godine, po prethodnom dogovoru, a u namjeri da taj novac stave u opticaj kao pravi,prenijeli iz S. u Crnu Goru preko graničnog prelaza Dobrakovo, putničkim motornim vozilom marke „B.“ reg.ozn: ..-..-.., kojim je upravljao okrivljeni B. D., od kojih novčanica je okrivljeni K. D. dolaskom na granični prelaz Dobrakovo neke stavio u dokumenta, a nešto u kaseti od auta, dok je novčanicu serijskog broja Y12553552558, dolaskom na benzinsku pumpi AD „J.“ K. u Bijelom Polju, stavio u opticaj, na način što je tom novčanicom radniku B. V., platio dizel gorivo D2, u vrijednosti od 30,00 €, koji mu je vratio kusur u iznosu od 170,00 eura, u apoenima od 3x50 € i 1x20 €, da bi kada su ih ovlašćeni službenici OB Mojkovac u mjestu L., opština Mojkovac zaustavili i kontrolisali, istim je okrivljeni K. D. predao jednu novčanicu ser. broja Y12553552916, a takodje predao službenicima Centra bezbijednosti Bijelo Polje, u vozilu prilikom privođenja, dvije novčanice serijskog broja Y12553552994, X01548390049, dok je u vozilu pretresom istog, pronađeno devet novčanica serijskih brojeva: - X00340382369, Y10039902708, Y10039903487, X00340381531, Y12553553361, Y10039902</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz KE na ime optuženog K. D.</p>
+            <p>• izvod iz KE na ime optuženog B. D.</p>
+            <p>• izvod iz KE na ime optuženog J. N.</p>
+            <p>• dopis ošećenog ‘’J.’’ AD K.</p>
+            <p>• iskaze svjedoka R. LJ.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

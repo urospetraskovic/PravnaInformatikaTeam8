@@ -1,0 +1,173 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_204_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_204_2016"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_204_2016"/>
+          <FRBRdate date="2011-09-15" name="judgment"/>
+          <FRBRauthor href="#herceg_novom"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_204_2016/srp@2011-09-15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_204_2016/srp@2011-09-15"/>
+          <FRBRdate date="2011-09-15" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_204_2016/srp@2011-09-15.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_204_2016/srp@2011-09-15.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/herceg_novom" showAs="Osnovni Sud u Herceg Novom"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ana_radulović" showAs="Ana Radulović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="K.S."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Herceg Novom</sud>
+        <brojPredmeta>204/2016</brojPredmeta>
+        <datum>15.09.2011</datum>
+        <datumNormalizovan>2011-09-15</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Ana Radulović</sudija>
+        <optuzeni>K.S.</optuzeni>
+        <podaciORoditeljima>otac S., majka R.</podaciORoditeljima>
+        <godinaRodjenja>17.09.1983</godinaRodjenja>
+        <prebivaliste>kod M</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>110</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</opisSlucaja>
+        <svjedoci>
+          <svjedok>su p</svjedok>
+          <svjedok>snimka v</svjedok>
+          <svjedok>Peković L</svjedok>
+          <svjedok>sa z</svjedok>
+          <svjedok>saslušaju o</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvod iz regista kaznene evidencije Ministarstva pravde KE.br.68/17 od 24.03.2017.godine za okrivljenog T.A.</dokaz>
+          <dokaz>CD sa video zapisnicima spornih transakcija od 16.02.2015.godine</dokaz>
+          <dokaz>CD sa fotografijama sa sigurnosne kamere NLB M.B. od ...2010. godine.
+Analizirajući provedene dokaze pojedinačno i u njihovoj međusobnoj povezanosti</dokaz>
+          <dokaz>spise predmeta K. .</dokaz>
+          <dokaz>zahtjev za izdavanje eko business kreditne kartice od 1.1.2018.godine od 19.06.2019 godine</dokaz>
+          <dokaz>izvod iz KE za okrivljenog C.M..
+Sud je analizom provedenih dokaza</dokaz>
+          <dokaz>iskaz svjedoka - predstavnika oštećene NLB M. P.</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima UP PJ B. od 06.06.2010. godine</dokaz>
+          <dokaz>potvrdu o privremeno oduetim predmetima UP Ispostava C. br. 02 od 04.06.2010. godine</dokaz>
+          <dokaz>još jednu potvrdu o privremeno oduetim predmetima UP Ispostava Cetinje od 04.06.2010. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>62,00 EUR</iznos>
+          <iznos>250.00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>108,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>25 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>68,10 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>120 EUR</iznos>
+          <iznos>108 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>1.300 EUR</iznos>
+          <iznos>960,00 EUR</iznos>
+          <iznos>65,00 EUR</iznos>
+          <iznos>1. EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>110 EUR</iznos>
+          <iznos>30 EUR</iznos>
+          <iznos>1.000 EUR</iznos>
+          <iznos>700 EUR</iznos>
+          <iznos>3,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>160 EUR</iznos>
+          <iznos>110,00 EUR</iznos>
+          <iznos>10.00 EUR</iznos>
+          <iznos>68,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>2 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>1001,75 EUR</iznos>
+          <iznos>378,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>600,000 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>600 EUR</iznos>
+          <iznos>30,68 EUR</iznos>
+          <iznos>160,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>60 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>3 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Herceg Novom, 204/2016, sudija Ana Radulović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: K.S., otac S., majka R., prebivalište: kod M, nezaposlen, razveden, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz regista kaznene evidencije Ministarstva pravde KE.br.68/17 od 24.03.2017.godine za okrivljenog T.A.</p>
+            <p>• CD sa video zapisnicima spornih transakcija od 16.02.2015.godine</p>
+            <p>• CD sa fotografijama sa sigurnosne kamere NLB M.B. od ...2010. godine.
+Analizirajući provedene dokaze pojedinačno i u njihovoj međusobnoj povezanosti</p>
+            <p>• spise predmeta K. .</p>
+            <p>• zahtjev za izdavanje eko business kreditne kartice od 1.1.2018.godine od 19.06.2019 godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 110 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

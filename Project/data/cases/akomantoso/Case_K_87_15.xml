@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_87_15">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_87_15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_87_15"/>
+          <FRBRdate date="2020-03-16" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_87_15/srp@2020-03-16"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_87_15/srp@2020-03-16"/>
+          <FRBRdate date="2020-03-16" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_87_15/srp@2020-03-16.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_87_15/srp@2020-03-16.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="sudija" href="/ontology/person/momirka_tešić" showAs="Momirka Tešić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u v"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>87/15</brojPredmeta>
+        <datum>16.03.2020</datum>
+        <datumNormalizovan>2020-03-16</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Momirka Tešić</sudija>
+        <optuzeni>u v</optuzeni>
+        <zaposlenost>zaposlen kao sekretar za pravno kadrovske poslove u JZ Dom zdravlja Tivat. Dana 19.6.2019 godine</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>110</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana neovlašćeno nabavio 6 platnih kartica za točenje goriva u službena vozila ošt. Doma zdravlja Tivat i to kartice oznake TV CG 058, TV CG 059, TV CG 062, TV CG 101, TV CG 102 i TV CG 057, na način što je iskoristio odsustvo radnika Doma zdravlja i iz ladice stola u kancelariji, koja se nalazi na drugom spratu Doma zdravlja Tivat, iste oduzeo i 2 kartice neovlašćeno upotrebio na benzinskoj pumpi "Eko" u naselje Radanovići, opština Kotor, gdje se predstavio kao radnik Doma zdravlja Herceg Novi i u dva navrata istog dana neovlašćeno upotrebio kartice TV CG 102 i TV CG 101 tako što je u putničko vozilo marke "Golf" reg.oznake BR CD 543 usuo gorivo u vrijednosti od 40,00 E koje je platio tako što je radniku pumpe Hunić Marku, predao karticu TV CG 102, a zatim u dva bidona usuo gorivo u vrijednosti od 68,00 E, koje je platio karticom TV CG 101, koju je predao istom radniku pumpe, te tako upotrebom istih sebi pribavio protivpravnu imovinsku korist u iznosu od 108,00 E, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije izvršnje je htio.</opisSlucaja>
+        <svjedoci>
+          <svjedok>je i</svjedok>
+          <svjedok>sa z</svjedok>
+          <svjedok>snimka v</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>zahtjev za izdavanje eko business kreditne kartice od 1.1.2018.godine od 19.06.2019 godine</dokaz>
+          <dokaz>iskaz svjedoka sa zapisnika pred ODT Kotor od 12.09.2019.godine</dokaz>
+          <dokaz>ovlašćenog predstavnika oštećenog na saglasnost stranaka pročitao iskaz svjedoka sa zapisnika pred ODT Kotor od 12.09.2019.godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka psihijatra od 9.3.2020 godine.
+Nije bilo primedbi na provedene dokaze</dokaz>
+          <dokaz>nalaz i mišljenje vještaka psihijatrijske struke dr kojem je predloženo da je</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>110,00 EUR</iznos>
+          <iznos>68,10 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>110 EUR</iznos>
+          <iznos>68,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>108 EUR</iznos>
+          <iznos>108,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 87/15, sudija Momirka Tešić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u v, zaposlen kao sekretar za pravno kadrovske poslove u JZ Dom zdravlja Tivat. Dana 19.6.2019 godine, razveden, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana neovlašćeno nabavio 6 platnih kartica za točenje goriva u službena vozila ošt. Doma zdravlja Tivat i to kartice oznake TV CG 058, TV CG 059, TV CG 062, TV CG 101, TV CG 102 i TV CG 057, na način što je iskoristio odsustvo radnika Doma zdravlja i iz ladice stola u kancelariji, koja se nalazi na drugom spratu Doma zdravlja Tivat, iste oduzeo i 2 kartice neovlašćeno upotrebio na benzinskoj pumpi "Eko" u naselje Radanovići, opština Kotor, gdje se predstavio kao radnik Doma zdravlja Herceg Novi i u dva navrata istog dana neovlašćeno upotrebio kartice TV CG 102 i TV CG 101 tako što je u putničko vozilo marke "Golf" reg.oznake BR CD 543 usuo gorivo u vrijednosti od 40,00 E koje je platio tako što je radniku pumpe Hunić Marku, predao karticu TV CG 102, a zatim u dva bidona usuo gorivo u vrijednosti od 68,00 E, koje je platio karticom TV CG 101, koju je predao istom radniku pumpe, te tako upotrebom istih sebi pribavio protivpravnu imovinsku korist u iznosu od 108,00 E, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije izvršnje je htio.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zahtjev za izdavanje eko business kreditne kartice od 1.1.2018.godine od 19.06.2019 godine</p>
+            <p>• iskaz svjedoka sa zapisnika pred ODT Kotor od 12.09.2019.godine</p>
+            <p>• ovlašćenog predstavnika oštećenog na saglasnost stranaka pročitao iskaz svjedoka sa zapisnika pred ODT Kotor od 12.09.2019.godine</p>
+            <p>• nalaz i mišljenje vještaka psihijatra od 9.3.2020 godine.
+Nije bilo primedbi na provedene dokaze</p>
+            <p>• nalaz i mišljenje vještaka psihijatrijske struke dr kojem je predloženo da je</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 mjeseca</p>
+          <p>Novčana kazna: 110 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

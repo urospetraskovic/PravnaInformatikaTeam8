@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_74_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_74_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_74_18"/>
+          <FRBRdate date="2021-04-28" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_74_18/srp@2021-04-28"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_74_18/srp@2021-04-28"/>
+          <FRBRdate date="2021-04-28" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_74_18/srp@2021-04-28.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_74_18/srp@2021-04-28.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/larisa_mijušković" showAs="Larisa Mijušković"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>74/18</brojPredmeta>
+        <datum>28.04.2021</datum>
+        <datumNormalizovan>2021-04-28</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Larisa Mijušković</sudija>
+        <optuzeni>Nepoznat</optuzeni>
+        <podaciORoditeljima>otac M., majka B.</podaciORoditeljima>
+        <prebivaliste>Danilovgradu, ul</prebivaliste>
+        <zaposlenost>zaposlena u TC „Ražnatović“</zaposlenost>
+        <bracniStatus>udata</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 239 st. 1</clanKZ>
+        <kazna>3 godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 09.06.2015. godine, u prodavnici „Izlog 1“, na Trgu Republike, u Podgorici, tuđu pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu većem od 150,00 eura, na način što je ušla u navedeni prodajni objekat, i iskoristivši odsustvo radnice – oštećene L. M., iz njene torbe oduzela i prisvojila novčanik vrijednosti 5,15 eura u kojem se nalazio novčani iznos 216,00 eura, na koji način je pribavila protivpravnu imovinsku korist u vrijednosti od ukupno 221,15 eura, nakon čega je iz navedenog novčanika uzela platnu karticu, izdatu od Societe Generale banke, takođe vlasništvo oštećene i navedenu karticu upotrijebila tako što je na bankomatu Societe Generale banke u Bulevaru Svetog Petra Cetinjskog, ubacila platnu karticu vlasništvo oštećene, ukucala pin kod za istu, koji je bio zapisan na poleđini fotografije koja se nalazila u novčaniku oštećene, nakon čega je obavila transakciju podižući novčani iznos u vrijednosti 190,00 eura sa računa oštećene, na koji način je pribavila protivpravnu imovinsku korist u tom iznosu,</opisSlucaja>
+        <dokazi>
+          <dokaz>iskaz svjedoka-oštećene L. M.</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog Kt.br.199/16 od 10.05.2018. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka Kt.br.199/16 od 12.10.2020. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka Kt.br.199/16 od 12.10.2020. godine navela da je tokom 2015. godine bila zaposlena u TC „Ražnatović“</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekonomsko-finansijske struke N. D. od 13.10.2020 pa je isti prihvatio kao jasan</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>60,50 EUR</iznos>
+          <iznos>411,15 EUR</iznos>
+          <iznos>221,15 EUR</iznos>
+          <iznos>216,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>5,15 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 74/18, sudija Larisa Mijušković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Nepoznat, otac M., majka B., prebivalište: Danilovgradu, ul, zaposlena u TC „Ražnatović“, udata, ranije osuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 09.06.2015. godine, u prodavnici „Izlog 1“, na Trgu Republike, u Podgorici, tuđu pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu većem od 150,00 eura, na način što je ušla u navedeni prodajni objekat, i iskoristivši odsustvo radnice – oštećene L. M., iz njene torbe oduzela i prisvojila novčanik vrijednosti 5,15 eura u kojem se nalazio novčani iznos 216,00 eura, na koji način je pribavila protivpravnu imovinsku korist u vrijednosti od ukupno 221,15 eura, nakon čega je iz navedenog novčanika uzela platnu karticu, izdatu od Societe Generale banke, takođe vlasništvo oštećene i navedenu karticu upotrijebila tako što je na bankomatu Societe Generale banke u Bulevaru Svetog Petra Cetinjskog, ubacila platnu karticu vlasništvo oštećene, ukucala pin kod za istu, koji je bio zapisan na poleđini fotografije koja se nalazila u novčaniku oštećene, nakon čega je obavila transakciju podižući novčani iznos u vrijednosti 190,00 eura sa računa oštećene, na koji način je pribavila protivpravnu imovinsku korist u tom iznosu,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka-oštećene L. M.</p>
+            <p>• zapisnik o saslušanju osumnjičenog Kt.br.199/16 od 10.05.2018. godine</p>
+            <p>• zapisnik o saslušanju svjedoka Kt.br.199/16 od 12.10.2020. godine</p>
+            <p>• zapisnik o saslušanju svjedoka Kt.br.199/16 od 12.10.2020. godine navela da je tokom 2015. godine bila zaposlena u TC „Ražnatović“</p>
+            <p>• nalaz i mišljenje vještaka ekonomsko-finansijske struke N. D. od 13.10.2020 pa je isti prihvatio kao jasan</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 godin</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 239 st. 1 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_8_22">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_8_22"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_8_22"/>
+          <FRBRdate date="2017-02-03" name="judgment"/>
+          <FRBRauthor href="#nikšiću"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_8_22/srp@2017-02-03"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_8_22/srp@2017-02-03"/>
+          <FRBRdate date="2017-02-03" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_8_22/srp@2017-02-03.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_8_22/srp@2017-02-03.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/kovačević_vesna" showAs="Kovačević Vesna"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>8/22</brojPredmeta>
+        <datum>03.02.2017</datum>
+        <datumNormalizovan>2017-02-03</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Kovačević Vesna</sudija>
+        <optuzeni>u r</optuzeni>
+        <prebivaliste>Podgorici</prebivaliste>
+        <bracniStatus>udata</bracniStatus>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 4 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>27,50</novcanaKazna>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</opisSlucaja>
+        <dokazi>
+          <dokaz>promet za partiju broj .... od 15.11.2016.godine i pročitao izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>svjedoka - oštećenu R.. O.. i svjedoka S..J . izvršio uvid u promet za partiju broj .... od 15.11.2016.godine i pročitao izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>0 EUR</iznos>
+          <iznos>7,50 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 8/22, sudija Kovačević Vesna</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, prebivalište: Podgorici, udata</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• promet za partiju broj .... od 15.11.2016.godine i pročitao izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</p>
+            <p>• izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</p>
+            <p>• svjedoka - oštećenu R.. O.. i svjedoka S..J . izvršio uvid u promet za partiju broj .... od 15.11.2016.godine i pročitao izvod iz kaznene evidencije na ime okrivljene.
+Ocjenom navoda optužbe</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 40,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 4 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

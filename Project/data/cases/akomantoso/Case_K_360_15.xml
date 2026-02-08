@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_360_15">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_15"/>
+          <FRBRdate date="2015-09-29" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_15/srp@2015-09-29"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_15/srp@2015-09-29"/>
+          <FRBRdate date="2015-09-29" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_15/srp@2015-09-29.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_15/srp@2015-09-29.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="T.G."/>
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>360/15</brojPredmeta>
+        <datum>29.09.2015</datum>
+        <datumNormalizovan>2015-09-29</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>T.G.</optuzeni>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>I 1. Dana 08.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M.oduzeo 1 kom. JW Gold Reserve Whisky 0,7 L, 2 kom. Chivas 1L, 1 kom. Johni Walker Red Label 1 L, 2,50 kg Izletnička Bačka Topola, 4 kom. Grana Padano 200 gr i 3,50 kg Zimska Salama Gavrilović, vlasništvo oštećenog Đ. T. na način što je iskoristio nepažnju uposlenih radnika, oduzeo navedenu robu ukupne vrijednosti 204,51 €, a vlasništvo oštećenog, pri čemu je bio uračunjljiv i svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio 2. Dana 09.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M.oduzeo 2 kom. JW Gold Reserve Whisky 0,7 L, 2 kom. Chivas 1 L, 1 kom Johnie Walker Red Label 1 L, 2,50 KG Izletnička rezana slajs b.t., 2 kg kajmaka, 2 kom Nivea body Q10 losion za ucv., 2 kom. STR8 Oxygen edt 100 L, 3 kom. Fusion Pro 50, 2 kom. Fusion Power Proglide i 3 kom. Fusion CRT2, vlasništvo oštećenog Đ. T. na način što je iskoristio nepažnju uposlenih radnika, oduzeo navedenu robu ukupne vrijednosti 259,44 €, a vlasništvo oštećenog, pri čemu je bio uračunjljiv i svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio 3. Dana 10.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M. oduzeo 3 kom. Nivea body Q10 losion za ucv., 3 kom. Fusion Pro 50, 1 kom. Yacht club Whisky 2 L</opisSlucaja>
+        <dokazi>
+          <dokaz>2 CD-a sa video zapisom iz M.M.i video zapisom iz Cosmeticsa</dokaz>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog T.G. PU za grad Jagodina od 21.08.2015 godine.
+Oštećena M.J. je izjavila da je kritične prilike bila u C. na semaforima u Budvi</dokaz>
+          <dokaz>iskaz svjedoka J. D. sa zapisnika pred ODT Kotor od 12.08.2015 godine i iskaz svjedoka S. J.sa zapisnika pred ODT Kotor od 12.08.2015 godine</dokaz>
+          <dokaz>potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8571 od 08.08.2015 godine i potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8756 od 11.08.2015 godine</dokaz>
+          <dokaz>zapisnike o povratu robe M. M. br. 15-0214-000113 od 08.08.2015 godine</dokaz>
+          <dokaz>nalaz i mišljenje sudskog vještaka ekonomsko finansijske struke Dinka Miloševića od 14.08.2015 godine</dokaz>
+          <dokaz>Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke broj 314 od 12.08.2015 godine i izvršio uvid u izvod iz kaznene evidencije za okrivljenog T.G. PU za grad Jagodina od 21.08.2015 godine.
+Oštećena M.J. je izjavila da je kritične prilike bila u C. na semaforima u Budvi</dokaz>
+          <dokaz>oštećenu M. J. pročitao potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8571 od 08.08.2015 godine i potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8756 od 11.08.2015 godine</dokaz>
+          <dokaz>video zapisom iz M.M.i video zapisom iz Cosmeticsa</dokaz>
+          <dokaz>video zapis iz M. M. zapisnika o povratu robe M.M. br. 15-0214-000113 od 08.08.2015 godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>040,31 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>337,30 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>259,44 EUR</iznos>
+          <iznos>403,56 EUR</iznos>
+          <iznos>204,51 EUR</iznos>
+          <iznos>161,46 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>49,00 EUR</iznos>
+          <iznos>299,45 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 360/15, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: T.G., neoženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>I 1. Dana 08.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M.oduzeo 1 kom. JW Gold Reserve Whisky 0,7 L, 2 kom. Chivas 1L, 1 kom. Johni Walker Red Label 1 L, 2,50 kg Izletnička Bačka Topola, 4 kom. Grana Padano 200 gr i 3,50 kg Zimska Salama Gavrilović, vlasništvo oštećenog Đ. T. na način što je iskoristio nepažnju uposlenih radnika, oduzeo navedenu robu ukupne vrijednosti 204,51 €, a vlasništvo oštećenog, pri čemu je bio uračunjljiv i svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio 2. Dana 09.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M.oduzeo 2 kom. JW Gold Reserve Whisky 0,7 L, 2 kom. Chivas 1 L, 1 kom Johnie Walker Red Label 1 L, 2,50 KG Izletnička rezana slajs b.t., 2 kg kajmaka, 2 kom Nivea body Q10 losion za ucv., 2 kom. STR8 Oxygen edt 100 L, 3 kom. Fusion Pro 50, 2 kom. Fusion Power Proglide i 3 kom. Fusion CRT2, vlasništvo oštećenog Đ. T. na način što je iskoristio nepažnju uposlenih radnika, oduzeo navedenu robu ukupne vrijednosti 259,44 €, a vlasništvo oštećenog, pri čemu je bio uračunjljiv i svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio 3. Dana 10.08.2015 godine u Budvi, u namjeri da prisvajanjem tuđih pokretnih stvari sebi pribavi protivpravnu imovinsku korist, iz M.M. oduzeo 3 kom. Nivea body Q10 losion za ucv., 3 kom. Fusion Pro 50, 1 kom. Yacht club Whisky 2 L</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• 2 CD-a sa video zapisom iz M.M.i video zapisom iz Cosmeticsa</p>
+            <p>• izvod iz kaznene evidencije za okrivljenog T.G. PU za grad Jagodina od 21.08.2015 godine.
+Oštećena M.J. je izjavila da je kritične prilike bila u C. na semaforima u Budvi</p>
+            <p>• iskaz svjedoka J. D. sa zapisnika pred ODT Kotor od 12.08.2015 godine i iskaz svjedoka S. J.sa zapisnika pred ODT Kotor od 12.08.2015 godine</p>
+            <p>• potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8571 od 08.08.2015 godine i potvdu o privremeno oduzetim predmetima UP CB Budva broj 73-02-240/15-8756 od 11.08.2015 godine</p>
+            <p>• zapisnike o povratu robe M. M. br. 15-0214-000113 od 08.08.2015 godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

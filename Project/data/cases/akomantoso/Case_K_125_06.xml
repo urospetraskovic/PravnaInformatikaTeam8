@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_125_06">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_125_06"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_125_06"/>
+          <FRBRdate date="2013-05-09" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_125_06/srp@2013-05-09"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_125_06/srp@2013-05-09"/>
+          <FRBRdate date="2013-05-09" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_125_06/srp@2013-05-09.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_125_06/srp@2013-05-09.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jovović_željka" showAs="Jovović Željka"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="N.M."/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>125/06</brojPredmeta>
+        <datum>09. 05. 2013</datum>
+        <datumNormalizovan>2013-05-09</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Jovović Željka</sudija>
+        <optuzeni>N.M.</optuzeni>
+        <podaciORoditeljima>otac M., majka M.</podaciORoditeljima>
+        <prebivaliste>Podgorici Donji Crnci bb</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno.</opisSlucaja>
+        <svjedoci>
+          <svjedok>saslušao N.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>službenu zabilješku Uprave policije Ispostave Danilovgrad od 05. 06. 2012. godine</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca Centralne banke Crne Gore</dokaz>
+          <dokaz>izvještaj o grafološkom ispitivanju Forenzičkog centra Crne Gore br. 389/12</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije te izvještaj Uprave policije PJ Podgorica iz kaznene evidencije na ime okrivljenog N.M. od 07. 02. 2013. godine.
+Svjedok N.B.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 125/06, sudija Jovović Željka</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: N.M., otac M., majka M., prebivalište: Podgorici Donji Crnci bb, nezaposlen, razveden, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• službenu zabilješku Uprave policije Ispostave Danilovgrad od 05. 06. 2012. godine</p>
+            <p>• izvještaj o ekspertizi sumnjivog novca Centralne banke Crne Gore</p>
+            <p>• izvještaj o grafološkom ispitivanju Forenzičkog centra Crne Gore br. 389/12</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije te izvještaj Uprave policije PJ Podgorica iz kaznene evidencije na ime okrivljenog N.M. od 07. 02. 2013. godine.
+Svjedok N.B.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

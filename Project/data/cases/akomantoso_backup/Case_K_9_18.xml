@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_9_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18"/>
+          <FRBRdate date="2019-12-19" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19"/>
+          <FRBRdate date="2019-12-19" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="sudija" href="/ontology/person/verica_vesić" showAs="Verica Vesić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="M V "/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>9/18</brojPredmeta>
+        <datum>19.12.2019</datum>
+        <datumNormalizovan>2019-12-19</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Verica Vesić</sudija>
+        <optuzeni>M V </optuzeni>
+        <podaciORoditeljima>otac D, majka N</podaciORoditeljima>
+        <godinaRodjenja>12.02.1986</godinaRodjenja>
+        <prebivaliste>Nikšiću</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>OŠ</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>630,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 11.06. i dana godine, u B, pri čemu je bio uračunljiv, svjestan svoga djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana 11.06.2019. godine, oko 18,50 časova, u trafici „T s“, koja se nalazi u lažnu novčanicu od 200,00 €, serijskog broja predao prilikom kupovine u trafici, nakon čega je dana 12.06.2019. godine, oko 22,40 časova, na „E p“ u B, lažnu novčanicu od 200,00 € serijskog broja predao na kasi prilikom kupovone,</opisSlucaja>
+        <svjedoci>
+          <svjedok>S. N. i mldb S. A. </svjedok>
+          <svjedok>je j</svjedok>
+          <svjedok>tako i </svjedok>
+          <svjedok>kritični d</svjedok>
+          <svjedok>prijavio t</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>službenu zabilješku Uprave policije CB B 20/2-1 broj 03-240/19-2558 od 16.6.2019 godine</dokaz>
+          <dokaz>fotodokumentaciju br. 208/19 koja mu je od strane suda pokazana</dokaz>
+          <dokaz>novčanicu apoena od 100</dokaz>
+          <dokaz>novčanice u apoenima od 100</dokaz>
+          <dokaz>naredbu sudije za istragu Osnovnog suda u Nikšiću Kri.br. 174/2015 od 19.10.2015.godine i u izuzeti video materijal e elktronskoj formi (CD)</dokaz>
+          <dokaz>dvije falsifikovane novčanice u apoenima od 100 eura</dokaz>
+          <dokaz>novčanicu u apoenu od 200</dokaz>
+          <dokaz>jednu novčanicu od 100</dokaz>
+          <dokaz>fotodokumentaciju Uprave policije OB Rožaje br.Sl-14 od 18.7.2014. godine</dokaz>
+          <dokaz>novčanice u apoenima od po 100</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>630,00 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+          <iznos>65 EUR</iznos>
+          <iznos>80 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>8,40 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>360,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>7,00 EUR</iznos>
+          <iznos>200,50 EUR</iznos>
+          <iznos>1,60 EUR</iznos>
+          <iznos>65,00 EUR</iznos>
+          <iznos>74,00 EUR</iznos>
+          <iznos>70 EUR</iznos>
+          <iznos>44,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>670,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>30 EUR</iznos>
+          <iznos>45,00 EUR</iznos>
+          <iznos>35 EUR</iznos>
+          <iznos>49,50 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>175,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>325,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>6,60 EUR</iznos>
+          <iznos>100,50 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>8,45 EUR</iznos>
+          <iznos>121,50 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>300 EUR</iznos>
+          <iznos>160,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>200.00 EUR</iznos>
+          <iznos>81,50 EUR</iznos>
+          <iznos>91,60 EUR</iznos>
+          <iznos>370,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 9/18, sudija Verica Vesić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: M V , otac D, majka N, prebivalište: Nikšiću, nezaposlen, razveden, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.06. i dana godine, u B, pri čemu je bio uračunljiv, svjestan svoga djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana 11.06.2019. godine, oko 18,50 časova, u trafici „T s“, koja se nalazi u lažnu novčanicu od 200,00 €, serijskog broja predao prilikom kupovine u trafici, nakon čega je dana 12.06.2019. godine, oko 22,40 časova, na „E p“ u B, lažnu novčanicu od 200,00 € serijskog broja predao na kasi prilikom kupovone,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• službenu zabilješku Uprave policije CB B 20/2-1 broj 03-240/19-2558 od 16.6.2019 godine</p>
+            <p>• fotodokumentaciju br. 208/19 koja mu je od strane suda pokazana</p>
+            <p>• novčanicu apoena od 100</p>
+            <p>• novčanice u apoenima od 100</p>
+            <p>• naredbu sudije za istragu Osnovnog suda u Nikšiću Kri.br. 174/2015 od 19.10.2015.godine i u izuzeti video materijal e elktronskoj formi (CD)</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci (uslovna osuda)</p>
+          <p>Novčana kazna: 630,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

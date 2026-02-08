@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_85_17">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_85_17"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_85_17"/>
+          <FRBRdate date="2019-03-15" name="judgment"/>
+          <FRBRauthor href="#pljevljima_po_sudiji_ljiljani_popović"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_85_17/srp@2019-03-15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_85_17/srp@2019-03-15"/>
+          <FRBRdate date="2019-03-15" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_85_17/srp@2019-03-15.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_85_17/srp@2019-03-15.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima_po_sudiji_ljiljani_popović" showAs="Osnovni Sud u Pljevljima po sudiji Ljiljani Popović"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ljiljana_popović" showAs="Ljiljana Popović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="K.D."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Pljevljima po sudiji Ljiljani Popović</sud>
+        <brojPredmeta>85/17</brojPredmeta>
+        <datum>15.03.2019</datum>
+        <datumNormalizovan>2019-03-15</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Ljiljana Popović</sudija>
+        <optuzeni>K.D.</optuzeni>
+        <podaciORoditeljima>otac F., majka M.</podaciORoditeljima>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>27,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,-</opisSlucaja>
+        <dokazi>
+          <dokaz>fotografije sa CD-a izuzetog sa bankomanta CKB banke</dokaz>
+          <dokaz>pravosnažnu presudu Osnovnog suda u Pljevljima K.br.85/17 od 05.12.2017. godine i pročitao izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</dokaz>
+          <dokaz>iskaz svjedoka-oštećene A. A.</dokaz>
+          <dokaz>izvještaj F. c.D. o vještačenju video zapisa br.4568/18 od 21.11.2018. godine</dokaz>
+          <dokaz>izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</dokaz>
+          <dokaz>video zapisa br.4568/18 od 21.11.2018. godine</dokaz>
+          <dokaz>video zapisa br.4568/18 od 21.11.2018.godine navodi da se nakon analize i obrade dostavljenog video zapisa izuzetog od CKB banke o podizanju novca na bankomatu dana 08.09.2018.godine u iznosu od 130</dokaz>
+          <dokaz>video zapisa izdovjeni su ključne fotografije-frejmovi na kojima je vršeno dodatno poboljšanje kvaliteta i obrađene fotografije su izrađene na fotoprocesoru dok je elektronska forma fotografija narezana na CD-u. Izvršen je uvid u te fotografije i optuženi priznaje da je on lice na tim fotografijama.
+Dakle</dokaz>
+          <dokaz>video zapisa CKB banke dana 08.09.2018.godine u periodu oko 03</dokaz>
+          <dokaz>video zapisa nesumnjivo je utvrđeno da je optuženi K. D. dana 08.09.2018. godine u ranim jutarnjim časovima i to oko 03</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>27,50 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>130,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Pljevljima po sudiji Ljiljani Popović, 85/17, sudija Ljiljana Popović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: K.D., otac F., majka M., nezaposlen, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,-</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• fotografije sa CD-a izuzetog sa bankomanta CKB banke</p>
+            <p>• pravosnažnu presudu Osnovnog suda u Pljevljima K.br.85/17 od 05.12.2017. godine i pročitao izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</p>
+            <p>• iskaz svjedoka-oštećene A. A.</p>
+            <p>• izvještaj F. c.D. o vještačenju video zapisa br.4568/18 od 21.11.2018. godine</p>
+            <p>• izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+          <p>Novčana kazna: 27,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -2,6 +2,38 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { DOMParser } = require('@xmldom/xmldom');
+const { execSync } = require('child_process');
+
+// Kill any existing process on the port before starting
+const PORT = process.env.PORT || 3000;
+function killPortProcess(port) {
+  try {
+    if (process.platform === 'win32') {
+      // Find and kill process on Windows
+      const result = execSync(`netstat -ano | findstr :${port} | findstr LISTENING`, { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] });
+      const lines = result.trim().split('\n');
+      for (const line of lines) {
+        const parts = line.trim().split(/\s+/);
+        const pid = parts[parts.length - 1];
+        if (pid && pid !== '0') {
+          try {
+            execSync(`taskkill /F /PID ${pid}`, { stdio: 'ignore' });
+            console.log(`🔄 Killed existing process on port ${port} (PID: ${pid})`);
+          } catch (e) { /* ignore if already dead */ }
+        }
+      }
+    } else {
+      // Unix-like systems
+      execSync(`lsof -ti:${port} | xargs kill -9 2>/dev/null || true`, { stdio: 'ignore' });
+    }
+  } catch (e) {
+    // No process found on port, which is fine
+  }
+}
+
+// Kill any existing process before starting
+killPortProcess(PORT);
+
 const app = express();
 
 // Load case database from XML files - try akomantoso_new first, fallback to akomantoso
@@ -22,11 +54,71 @@ function parseXMLFile(filePath) {
     
     if (!meta || !body) return null;
     
+    // Get proprietary metadata (Serbian fields)
+    const proprietary = meta.getElementsByTagNameNS('*', 'proprietary')[0];
+    let sudija = 'Nepoznat';
+    let sud = 'Nepoznat';
+    let kazna = 'Nepoznat';
+    let tipKrivicnogDjela = '';
+    let uslovnaOsuda = false;
+    let novcanaKazna = '';
+    let godinaRodjenja = '';
+    let prebivaliste = '';
+    let zaposlenost = '';
+    let bracniStatus = '';
+    let ranijeOsudjivan = '';
+    let svjedoci = [];
+    let dokazi = [];
+    let brojPredmeta = '';
+    let vrstaPresude = '';
+    let opisSlucaja = '';
+    
+    if (proprietary) {
+      // Extract Serbian proprietary fields
+      const getTextContent = (tagName) => {
+        const el = proprietary.getElementsByTagNameNS('*', tagName)[0];
+        return el ? el.textContent.trim() : '';
+      };
+      
+      sudija = getTextContent('sudija') || 'Nepoznat';
+      sud = getTextContent('sud') || sud;
+      kazna = getTextContent('kazna') || 'Nepoznat';
+      tipKrivicnogDjela = getTextContent('tipKrivicnogDjela') || '';
+      uslovnaOsuda = getTextContent('uslovnaOsuda') === 'Da';
+      novcanaKazna = getTextContent('novcanaKazna') || '';
+      godinaRodjenja = getTextContent('godinaRodjenja') || '';
+      prebivaliste = getTextContent('prebivaliste') || '';
+      zaposlenost = getTextContent('zaposlenost') || '';
+      bracniStatus = getTextContent('bracniStatus') || '';
+      ranijeOsudjivan = getTextContent('ranijeOsudjivan') || '';
+      brojPredmeta = getTextContent('brojPredmeta') || '';
+      vrstaPresude = getTextContent('vrstaPresude') || '';
+      opisSlucaja = getTextContent('opisSlucaja') || '';
+      
+      // Extract witnesses list
+      const svjedociEl = proprietary.getElementsByTagNameNS('*', 'svjedoci')[0];
+      if (svjedociEl) {
+        const svjedokEls = svjedociEl.getElementsByTagNameNS('*', 'svjedok');
+        for (let i = 0; i < svjedokEls.length; i++) {
+          svjedoci.push(svjedokEls[i].textContent.trim());
+        }
+      }
+      
+      // Extract evidence list
+      const dokaziEl = proprietary.getElementsByTagNameNS('*', 'dokazi')[0];
+      if (dokaziEl) {
+        const dokazEls = dokaziEl.getElementsByTagNameNS('*', 'dokaz');
+        for (let i = 0; i < dokazEls.length; i++) {
+          dokazi.push(dokazEls[i].textContent.trim());
+        }
+      }
+    }
+    
     // Get identification info
     const FRBRnumber = meta.getElementsByTagNameNS('*', 'FRBRnumber')[0];
     const FRBRname = meta.getElementsByTagNameNS('*', 'FRBRname')[0];
-    const caseNumber = FRBRnumber ? FRBRnumber.getAttribute('value') : 'Unknown';
-    const crimeType = FRBRname ? FRBRname.getAttribute('value') : 'Unknown';
+    const caseNumber = brojPredmeta || (FRBRnumber ? FRBRnumber.getAttribute('value') : 'Nepoznat');
+    const crimeType = tipKrivicnogDjela || (FRBRname ? FRBRname.getAttribute('value') : 'Nepoznat');
     
     // Get classification keywords for type
     let keywords = [];
@@ -53,16 +145,16 @@ function parseXMLFile(filePath) {
     const introductionElement = body.getElementsByTagNameNS('*', 'introduction')[0];
     const backgroundElement = body.getElementsByTagNameNS('*', 'background')[0] || introductionElement;
     const backgroundPs = backgroundElement ? backgroundElement.getElementsByTagNameNS('*', 'p') : [];
-    let court = 'Unknown';
-    let caseDate = 'Unknown';
-    let defendant = 'Unknown';
-    let caseDescription = '';  // New: case description text
+    let court = sud || 'Nepoznat';
+    let caseDate = 'Nepoznat';
+    let defendant = 'Nepoznat';
     
     for (let i = 0; i < backgroundPs.length; i++) {
       const p = backgroundPs[i];
       const text = p.textContent;
-      if (text.includes('Sud:') || text.includes('суд')) {
+      if (text.includes('Sud:') || text.includes('суд') || text.includes('Osnovni Sud')) {
         court = text.replace(/.*(?:Sud:|суд:?)\s*/i, '').trim().split(',')[0];
+        if (court.length < 3) court = sud || 'Nepoznat';
       }
       if (text.includes('Datum') || text.includes('датум')) {
         const dateMatch = text.match(/\d{4}-\d{2}-\d{2}|\d{2}\.\d{2}\.\d{4}/);
@@ -70,12 +162,29 @@ function parseXMLFile(filePath) {
       }
     }
     
-    // Extract case description from caseDescription element
-    const caseDescElements = body.getElementsByTagNameNS('*', 'caseDescription');
-    if (caseDescElements.length > 0) {
-      const descPs = caseDescElements[0].getElementsByTagNameNS('*', 'p');
-      for (let i = 0; i < descPs.length; i++) {
-        caseDescription += descPs[i].textContent.trim() + ' ';
+    // Override court with proprietary sud if available
+    if (sud && sud !== 'Nepoznat') {
+      court = 'Osnovni Sud u ' + sud;
+    }
+    
+    // Extract case description - prioritize opisSlucaja from proprietary
+    let caseDescription = opisSlucaja;
+    
+    // Fallback to caseDescription element or arguments if opisSlucaja is empty
+    if (!caseDescription) {
+      const caseDescElements = body.getElementsByTagNameNS('*', 'caseDescription');
+      const argumentsElements = body.getElementsByTagNameNS('*', 'arguments');
+      
+      if (caseDescElements.length > 0) {
+        const descPs = caseDescElements[0].getElementsByTagNameNS('*', 'p');
+        for (let i = 0; i < descPs.length; i++) {
+          caseDescription += descPs[i].textContent.trim() + ' ';
+        }
+      } else if (argumentsElements.length > 0) {
+        const descPs = argumentsElements[0].getElementsByTagNameNS('*', 'p');
+        for (let i = 0; i < descPs.length; i++) {
+          caseDescription += descPs[i].textContent.trim() + ' ';
+        }
       }
       caseDescription = caseDescription.trim();
     }
@@ -85,8 +194,8 @@ function parseXMLFile(filePath) {
     for (let i = 0; i < persons.length; i++) {
       const person = persons[i];
       const eId = person.getAttribute('eId');
-      if (eId && eId.includes('defendant')) {
-        defendant = person.getAttribute('showAs') || 'Unknown';
+      if (eId && (eId.includes('defendant') || eId.includes('optuzeni'))) {
+        defendant = person.getAttribute('showAs') || 'Nepoznat';
         break;
       }
     }
@@ -97,7 +206,7 @@ function parseXMLFile(filePath) {
     for (let i = 0; i < references.length; i++) {
       const ref = references[i];
       const showAs = ref.getAttribute('showAs');
-      if (showAs && (showAs.includes('Član') || showAs.includes('члан') || showAs.includes('Clan'))) {
+      if (showAs && (showAs.includes('Član') || showAs.includes('члан') || showAs.includes('Clan') || showAs.includes('čl.'))) {
         articles.push(showAs);
       }
     }
@@ -122,26 +231,50 @@ function parseXMLFile(filePath) {
     const decisionElement = body.getElementsByTagNameNS('*', 'decision')[0] || 
                            body.getElementsByTagNameNS('*', 'conclusions')[0];
     const decisionPs = decisionElement ? decisionElement.getElementsByTagNameNS('*', 'p') : [];
-    let verdict = 'UNKNOWN';
-    let sentenceText = 'Not specified';
+    let verdict = 'NEPOZNAT';
+    let sentenceText = kazna || 'Nepoznat';
     
-    for (let i = 0; i < decisionPs.length; i++) {
-      const p = decisionPs[i];
-      const text = p.textContent;
-      
-      // Check for verdict type
-      if (text.includes('GUILTY') || text.includes('КРИВ') || text.includes('kriv')) {
-        verdict = 'GUILTY';
-      } else if (text.includes('ACQUITTED') || text.includes('ОСЛОБОЂЕН') || text.includes('oslobođen')) {
-        verdict = 'ACQUITTED';
-      } else if (text.includes('CONDITIONAL') || text.includes('УСЛОВН') || text.includes('uslovn')) {
-        verdict = 'CONDITIONAL';
+    // First check if vrstaPresude is set in proprietary section - most reliable
+    if (vrstaPresude) {
+      const vp = vrstaPresude.toLowerCase();
+      if (vp === 'kriv' || vp === 'kriva' || vp === 'osuđen' || vp === 'osuđena') {
+        verdict = 'KRIV';
+      } else if (vp === 'oslobođen' || vp === 'oslobođena' || vp.includes('oslob')) {
+        verdict = 'OSLOBOĐEN';
+      } else if (vp.includes('uslovna') || vp.includes('uslovn')) {
+        verdict = 'KRIV';  // Conditional is still guilty
+      } else if (vp.includes('odbij') || vp.includes('odbač')) {
+        verdict = 'ODBAČENO';
+      } else {
+        verdict = vrstaPresude.toUpperCase();
       }
-      
-      // Extract sentence details
-      if (text.includes('zatvor') || text.includes('казн') || text.includes('Presuda') || text.includes('Одлука')) {
-        sentenceText = text.trim();
+    } else {
+      // Fallback: try to parse from decision text
+      for (let i = 0; i < decisionPs.length; i++) {
+        const p = decisionPs[i];
+        const text = p.textContent;
+        
+        // Check for verdict type - TRANSLATE TO SERBIAN
+        if (text.includes('GUILTY') || text.includes('KRIV') || text.includes('Kriv') || text.includes('kriv') || text.includes('OSUĐUJE') || text.includes('Osuđuje')) {
+          verdict = 'KRIV';  // Serbian for GUILTY
+        } else if (text.includes('ACQUITTED') || text.includes('OSLOBOĐEN') || text.includes('oslobođen') || text.includes('Oslobađa') || text.includes('OSLOBAĐA')) {
+          verdict = 'OSLOBOĐEN';  // Serbian for ACQUITTED
+        } else if (text.includes('CONDITIONAL') || text.includes('USLOVNA') || text.includes('uslovna')) {
+          verdict = 'KRIV';  // Conditional sentence is still a guilty verdict in Serbian law
+        } else if (text.includes('ODBIJA')) {
+          verdict = 'ODBAČENO';  // Case dismissed
+        }
+        
+        // Extract sentence details
+        if (text.includes('zatvor') || text.includes('Kazna') || text.includes('kazna') || text.includes('Presuda') || text.includes('Odluka')) {
+          sentenceText = text.trim();
+        }
       }
+    }
+    
+    // If we have uslovnaOsuda set, reflect it
+    if (uslovnaOsuda && sentenceText === 'Nije navedeno') {
+      sentenceText = 'Uslovna osuda';
     }
     
     // Extract year from case number
@@ -157,6 +290,12 @@ function parseXMLFile(filePath) {
       }
     }
     
+    // Build evidence string from dokazi array
+    let evidenceStr = 'Nije navedeno';
+    if (dokazi.length > 0) {
+      evidenceStr = dokazi.join('; ');
+    }
+    
     return {
       id: caseNumber,
       case_id: path.basename(filePath, '.xml'),
@@ -168,7 +307,19 @@ function parseXMLFile(filePath) {
       sentence: sentenceText,
       defendant: defendant,
       keywords: keywords,
-      caseDescription: caseDescription,  // New: case description
+      caseDescription: caseDescription,
+      evidence: evidenceStr,
+      // New Serbian fields
+      sudija: sudija,
+      uslovnaOsuda: uslovnaOsuda,
+      novcanaKazna: novcanaKazna,
+      godinaRodjenja: godinaRodjenja,
+      prebivaliste: prebivaliste,
+      zaposlenost: zaposlenost,
+      bracniStatus: bracniStatus,
+      ranijeOsudjivan: ranijeOsudjivan,
+      svjedoci: svjedoci,
+      dokazi: dokazi,
       harm: Math.floor(Math.random() * 5) + 1,
       year: year,
       xmlFile: filePath
@@ -216,11 +367,11 @@ if (caseDatabase.length === 0) {
       id: 'K 05/1336',
       case_id: 'Case_05_1336',
       type: 'Falsifikovanje novca',
-      court: 'Osnovni Sud u BIJELOM POLJU',
-      date: 'Unknown',
-      verdict: 'ACQUITTED',
+      court: 'Osnovni Sud u Bijelom Polju',
+      date: 'Nepoznat',
+      verdict: 'OSLOBOĐEN',
       articles: ['Član 339', 'Član 256', 'Član 258'],
-      sentence: 'ACQUITTED',
+      sentence: 'Oslobođen',
       harm: 3,
       year: 2024
     }
@@ -247,9 +398,9 @@ app.get('/api/cases', (req, res) => {
 app.get('/api/statistics', (req, res) => {
   const stats = {
     totalCases: caseDatabase.length,
-    guiltyCount: caseDatabase.filter(c => c.verdict === 'GUILTY').length,
-    acquittedCount: caseDatabase.filter(c => c.verdict === 'ACQUITTED').length,
-    conditionalCount: caseDatabase.filter(c => c.verdict === 'CONDITIONAL').length,
+    guiltyCount: caseDatabase.filter(c => c.verdict === 'KRIV').length,
+    acquittedCount: caseDatabase.filter(c => c.verdict === 'OSLOBOĐEN').length,
+    conditionalCount: caseDatabase.filter(c => c.verdict === 'ODBAČENO').length,
     averageHarm: caseDatabase.length > 0 ? (caseDatabase.reduce((sum, c) => sum + c.harm, 0) / caseDatabase.length).toFixed(2) : 0,
     courts: [...new Set(caseDatabase.map(c => c.court))].length
   };
@@ -288,7 +439,7 @@ app.get('/api/glava23', (req, res) => {
       const eId = article.getAttribute('eId');
       const numElement = article.getElementsByTagNameNS('*', 'num')[0];
       const articleNum = numElement?.textContent || '';
-      const heading = article.getElementsByTagNameNS('*', 'heading')[0]?.textContent || 'Unknown';
+      const heading = article.getElementsByTagNameNS('*', 'heading')[0]?.textContent || 'Nepoznat';
       const paragraphs = article.getElementsByTagNameNS('*', 'paragraph');
       const content = [];
       
@@ -397,7 +548,6 @@ app.get('/api/cases/:id(*)', (req, res) => {
 // Serve static files AFTER API routes
 app.use(express.static(path.join(__dirname, 'public')));
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, async () => {
   console.log(`\n✅ Legal CBR Web UI running at http://localhost:${PORT}`);
   console.log(`📊 Database loaded with ${caseDatabase.length} Montenegrian cases\n`);

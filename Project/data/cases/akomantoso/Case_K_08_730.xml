@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_08_730">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_08_730"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_08_730"/>
+          <FRBRdate date="2013-09-09" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_08_730/srp@2013-09-09"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_08_730/srp@2013-09-09"/>
+          <FRBRdate date="2013-09-09" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_08_730/srp@2013-09-09.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_08_730/srp@2013-09-09.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jelena_perović" showAs="Jelena Perović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>08/730</brojPredmeta>
+        <datum>09.09.2013</datum>
+        <datumNormalizovan>2013-09-09</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Jelena Perović</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac P, majka S</podaciORoditeljima>
+        <godinaRodjenja>28.02.1965</godinaRodjenja>
+        <prebivaliste>od svog rada</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>30 (trideset) dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>50,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>U januaru 2012. godine, u P, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što je prilikom predaje pazara u poslovnici H b, od strane službenice te banke, upoznat da se u pazaru nalazi falsifikovana novčanica u apoenu od 100 eura, serijskog broja V20387039962, nakon čega mu je službenica banke tu novčanicu i predala, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 18.05.2012. godine, kada je ista pronađena u njegovom vozilu, na graničnom prelazu K, od strane ovlašćenih službenika MUP-a Republike S,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog o</svjedok>
+          <svjedok>on n</svjedok>
+          <svjedok>uplašila i </svjedok>
+          <svjedok>rekao d</svjedok>
+          <svjedok>je d</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>falsifikovanu novčanicu ser.br.S00347138413.
+Iz potvrde o privremeno oduzetim predmetima Ku.br.880/07 od 13.05.2007. godine se utvrđuje da je od lica M. K. radnice u preduzeću DOO K. u P. u Ulici Slobode dana 11.05.2007. godine u 21</dokaz>
+          <dokaz>potvrdu MUP-a S – U g p o p o p broj PU 67-1/12 od 18.05.2012. godine na ime okrivljenog</dokaz>
+          <dokaz>svjedoka Ž. P i svjedoka Z. P.</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafološke struke kao stručan i jasan</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5 EUR</iznos>
+          <iznos>24 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>95 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>170 EUR</iznos>
+          <iznos>95,00 EUR</iznos>
+          <iznos>270,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 08/730, sudija Jelena Perović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac P, majka S, prebivalište: od svog rada, nezaposlen, oženjen, ranije neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U januaru 2012. godine, u P, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što je prilikom predaje pazara u poslovnici H b, od strane službenice te banke, upoznat da se u pazaru nalazi falsifikovana novčanica u apoenu od 100 eura, serijskog broja V20387039962, nakon čega mu je službenica banke tu novčanicu i predala, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 18.05.2012. godine, kada je ista pronađena u njegovom vozilu, na graničnom prelazu K, od strane ovlašćenih službenika MUP-a Republike S,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• falsifikovanu novčanicu ser.br.S00347138413.
+Iz potvrde o privremeno oduzetim predmetima Ku.br.880/07 od 13.05.2007. godine se utvrđuje da je od lica M. K. radnice u preduzeću DOO K. u P. u Ulici Slobode dana 11.05.2007. godine u 21</p>
+            <p>• potvrdu MUP-a S – U g p o p o p broj PU 67-1/12 od 18.05.2012. godine na ime okrivljenog</p>
+            <p>• svjedoka Ž. P i svjedoka Z. P.</p>
+            <p>• nalaz i mišljenje vještaka grafološke struke kao stručan i jasan</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 30 (trideset) dana</p>
+          <p>Novčana kazna: 50,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

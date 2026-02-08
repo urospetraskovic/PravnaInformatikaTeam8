@@ -1,105 +1,112 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 360/2015" xml:lang="sr">
-  <meta>
-    <identification source="court">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/judgment/Case_K_360_2015/!main"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_360_2015"/>
-        <FRBRdate date="2015-09-29"/>
-        <FRBRnumber value="K 360/2015"/>
-      </FRBRWork>
-      <FRBRExpression>
-        <FRBRthis value="/akn/me/judgment/Case_K_360_2015/!exp"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_360_2015"/>
-        <FRBRdate date="2015-09-29"/>
-        <FRBRlanguage language="sr"/>
-      </FRBRExpression>
-      <FRBRManifestation>
-        <FRBRthis value="/akn/me/judgment/Case_K_360_2015"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_360_2015"/>
-        <FRBRdate date="2015-09-29"/>
-      </FRBRManifestation>
-    </identification>
-    <references source="application">
-      <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code/glava-23#Član 258" showAs="Član 258"/>
-      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
-    </references>
-  </meta>
-  <body>
-    <background>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Predmet:</strong>
-         K 360/2015
-      </p>
-      <p>
-        <strong>Sud:</strong>
-         Osnovni Sud u Kotoru
-      </p>
-      <p>
-        <strong>Pravni okvir:</strong>
-         Krivični zakonik Crne Gore - Član 258
-      </p>
-    </background>
-    <narrative>
-      <p>
-        <strong>Okrivljeni:</strong>
-         T. G.
-      </p>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Opis događaja:</strong>
-         Stavljanje lažnog novca u opticaj kao pravog
-      </p>
-    </narrative>
-    <motivation>
-      <p>
-        <strong>Primijenjeni članovi:</strong>
-         Član 258 Krivičnog zakonika Crne Gore
-      </p>
-      <p>
-        <strong>Kvalifikacija:</strong>
-         Falsifikovanje novca prema Članu 258 Krivičnog zakonika
-      </p>
-      <p>
-        <strong>Dokazivanje:</strong>
-         Krivično djelo je dokazano kroz:
-      </p>
-      <ul>
-        <li>Iskaze svjedoka</li>
-        <li>Nalaze i mišljenja vještaka o falsifikaciji novčanica</li>
-        <li>Potvrde o pronađenim i oduzetim novčanicama</li>
-        <li>Izvještaj Centralne banke o tehničkoj analizi novca</li>
-        <li>Iskaze okrivljenih</li>
-      </ul>
-    </motivation>
-    <decision>
-      <p>
-        <strong>PRESUDA:</strong>
-      </p>
-      <p>
-        <strong>Okrivljeni je OSUĐEN:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Za krivično djelo:</strong>
-           Falsifikovanje novca prema Članu 258 Krivičnog zakonika Crne Gore
-        </li>
-        <li>
-          <strong>Kazna:</strong>
-           Kazna zatvora u trajanju od 6 mjeseci
-        </li>
-      </ul>
-      <p>
-        <strong>Troškovi:</strong>
-         Okrivljeni je obavezan da plati troškove krivičnog postupka
-      </p>
-    </decision>
-  </body>
-</judgment>
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_360_2015">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_2015"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_2015"/>
+          <FRBRdate date="2013-06-20" name="judgment"/>
+          <FRBRauthor href="#kotoru_kao_nadležni_prvostepeni"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_2015/srp@2013-06-20"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_2015/srp@2013-06-20"/>
+          <FRBRdate date="2013-06-20" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_360_2015/srp@2013-06-20.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_360_2015/srp@2013-06-20.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru_kao_nadležni_prvostepeni" showAs="Osnovni Sud u Kotoru kao nadležni prvostepeni"/>
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="S A "/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru kao nadležni prvostepeni</sud>
+        <brojPredmeta>360/2015</brojPredmeta>
+        <datum>20.06.2013</datum>
+        <datumNormalizovan>2013-06-20</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>S A </optuzeni>
+        <podaciORoditeljima>otac M, majka J</podaciORoditeljima>
+        <prebivaliste>Budvi, i on mu je predao novac u iznosu od </prebivaliste>
+        <zaposlenost>zaposlena u objektu brze hrane „P“ u K</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>8 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>U periodu od 15.06.2012. godine do 19.06.2012.godine u B, u naselju V Vu iznajmljenom stanu, vlasnika R R, držao lažan novac u namjeri da ga stavi u opticaj kao pravi, novčanice u apoenima od 50 eura, i to: 12 novčanica serijskog broja R74347375932, 2 novčanice serijskog broja N39483300934, 4 novčanice serijskog broja H66474947532, 5 novčnice serijskog broja S20039300323, 4 novčanice serijskog broja L76769877653, 2 novčanice serijskog broja L92002939390, 2 novčanice serijskog broja V88956465226, 8 novčanica serijskog broja W00276485633, 7 novčanica serijskog broja I10003684658, 4 novčanice serijskog broja T89908944530, 3 novčanice serijskog broja M89789798779, 2 novčanice serijskog broja X77683546221, 2 novčanice serijskog broja K78683244567, 4 novčanice serijskog broja C90909522475, 3 novčanice serijskog broja G66463043754, 2 novčanice serijskog broja N39483786754, 2 novčanice serijskog broja B64399288433, 4 novčanice serijskog broja L76755201012, 2 novčanice serijskog broja P66567873235, 5 novčanica serijskog broja I38249723743, 2 novčanice serijskog broja G66463043754 i po jednu novčanicu serijskih brojeva X0023154532, A90373946653, B64396756332, T89777835243, S10388563924, I58392046593, W57484002845, H65272742384, L92002988974, i 10 novčanica NN serijskog broja, a koji lažan novac je stavio u opticaj kao pravi upotrijebivši ga u K u ugostiteljskom objektu "P" dana 17.06.2012. godine i to novčanice serijskih brojeva S 20039300323 i G66463043754, kada je prilikom plaćanja r</opisSlucaja>
+        <svjedoci>
+          <svjedok>R D</svjedok>
+          <svjedok>je u </svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>grafološko ispitivanje novčanica UP Forenzičkog centra u Danilovgradu broj 07-244/12-2-2722 od 03.09.2012. godine</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP PJ Budva broj 2602-240/12-5819 od 19.06.2012. godine sa fotodokumentacijom br. 257-2012 od 19.06.2012.godine</dokaz>
+          <dokaz>svjedoke R D</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca br. 189 CBCG Nacionalnog centra za analizu novčanica broj 0903-15/189-4</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP PJ Budva broj 2602-240/12-5819 od 19.06.2012. g.)</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>55,00 EUR</iznos>
+          <iznos>300 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru kao nadležni prvostepeni, 360/2015, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: S A , otac M, majka J, prebivalište: Budvi, i on mu je predao novac u iznosu od , zaposlena u objektu brze hrane „P“ u K, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 15.06.2012. godine do 19.06.2012.godine u B, u naselju V Vu iznajmljenom stanu, vlasnika R R, držao lažan novac u namjeri da ga stavi u opticaj kao pravi, novčanice u apoenima od 50 eura, i to: 12 novčanica serijskog broja R74347375932, 2 novčanice serijskog broja N39483300934, 4 novčanice serijskog broja H66474947532, 5 novčnice serijskog broja S20039300323, 4 novčanice serijskog broja L76769877653, 2 novčanice serijskog broja L92002939390, 2 novčanice serijskog broja V88956465226, 8 novčanica serijskog broja W00276485633, 7 novčanica serijskog broja I10003684658, 4 novčanice serijskog broja T89908944530, 3 novčanice serijskog broja M89789798779, 2 novčanice serijskog broja X77683546221, 2 novčanice serijskog broja K78683244567, 4 novčanice serijskog broja C90909522475, 3 novčanice serijskog broja G66463043754, 2 novčanice serijskog broja N39483786754, 2 novčanice serijskog broja B64399288433, 4 novčanice serijskog broja L76755201012, 2 novčanice serijskog broja P66567873235, 5 novčanica serijskog broja I38249723743, 2 novčanice serijskog broja G66463043754 i po jednu novčanicu serijskih brojeva X0023154532, A90373946653, B64396756332, T89777835243, S10388563924, I58392046593, W57484002845, H65272742384, L92002988974, i 10 novčanica NN serijskog broja, a koji lažan novac je stavio u opticaj kao pravi upotrijebivši ga u K u ugostiteljskom objektu "P" dana 17.06.2012. godine i to novčanice serijskih brojeva S 20039300323 i G66463043754, kada je prilikom plaćanja r</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• grafološko ispitivanje novčanica UP Forenzičkog centra u Danilovgradu broj 07-244/12-2-2722 od 03.09.2012. godine</p>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP PJ Budva broj 2602-240/12-5819 od 19.06.2012. godine sa fotodokumentacijom br. 257-2012 od 19.06.2012.godine</p>
+            <p>• svjedoke R D</p>
+            <p>• izvještaj o ekspertizi sumnjivog novca br. 189 CBCG Nacionalnog centra za analizu novčanica broj 0903-15/189-4</p>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP PJ Budva broj 2602-240/12-5819 od 19.06.2012. g.)</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 8 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

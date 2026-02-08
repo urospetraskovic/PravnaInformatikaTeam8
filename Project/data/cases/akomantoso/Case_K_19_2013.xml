@@ -1,105 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 19/2013" xml:lang="sr">
-  <meta>
-    <identification source="court">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/judgment/Case_K_19_2013/!main"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_19_2013"/>
-        <FRBRdate date="2013-04-11"/>
-        <FRBRnumber value="K 19/2013"/>
-      </FRBRWork>
-      <FRBRExpression>
-        <FRBRthis value="/akn/me/judgment/Case_K_19_2013/!exp"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_19_2013"/>
-        <FRBRdate date="2013-04-11"/>
-        <FRBRlanguage language="sr"/>
-      </FRBRExpression>
-      <FRBRManifestation>
-        <FRBRthis value="/akn/me/judgment/Case_K_19_2013"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_19_2013"/>
-        <FRBRdate date="2013-04-11"/>
-      </FRBRManifestation>
-    </identification>
-    <references source="application">
-      <TLCReference eId="ref_Član_260" href="/akn/me/act/criminal-code/glava-23#Član 260" showAs="Član 260"/>
-      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
-    </references>
-  </meta>
-  <body>
-    <background>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica
-      </p>
-      <p>
-        <strong>Predmet:</strong>
-         K 19/2013
-      </p>
-      <p>
-        <strong>Sud:</strong>
-         Osnovni Sud u Cetinju
-      </p>
-      <p>
-        <strong>Pravni okvir:</strong>
-         Krivični zakonik Crne Gore - Član 260
-      </p>
-    </background>
-    <narrative>
-      <p>
-        <strong>Okrivljeni:</strong>
-         Okrivljeno lice
-      </p>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica
-      </p>
-      <p>
-        <strong>Opis događaja:</strong>
-         Neovlašćeno pribavljanje i upotreba platne kartice
-      </p>
-    </narrative>
-    <motivation>
-      <p>
-        <strong>Primijenjeni članovi:</strong>
-         Član 260 Krivičnog zakonika Crne Gore
-      </p>
-      <p>
-        <strong>Kvalifikacija:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica prema Članu 260 Krivičnog zakonika
-      </p>
-      <p>
-        <strong>Dokazivanje:</strong>
-         Krivično djelo je dokazano kroz:
-      </p>
-      <ul>
-        <li>Iskaze svjedoka</li>
-        <li>Izvode sa bankovnih računa</li>
-        <li>Potvrde o oduzetim platnim karticama</li>
-        <li>Video zapise sa bankomata</li>
-        <li>Iskaze okrivljenih</li>
-      </ul>
-    </motivation>
-    <decision>
-      <p>
-        <strong>PRESUDA:</strong>
-      </p>
-      <p>
-        <strong>Okrivljeni je OSUĐEN:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Za krivično djelo:</strong>
-           Falsifikovanje i zloupotreba kreditnih kartica prema Članu 260 Krivičnog zakonika Crne Gore
-        </li>
-        <li>
-          <strong>Kazna:</strong>
-           Kazna zatvora u trajanju od 6 mjeseci
-        </li>
-      </ul>
-      <p>
-        <strong>Troškovi:</strong>
-         Okrivljeni je obavezan da plati troškove krivičnog postupka
-      </p>
-    </decision>
-  </body>
-</judgment>
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_19_2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_19_2013"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_19_2013"/>
+          <FRBRdate date="2021-05-07" name="judgment"/>
+          <FRBRauthor href="#bijelom_polju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_19_2013/srp@2021-05-07"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_19_2013/srp@2021-05-07"/>
+          <FRBRdate date="2021-05-07" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_19_2013/srp@2021-05-07.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_19_2013/srp@2021-05-07.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLjU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/draginja_bošković" showAs="Draginja Bošković"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="A.H."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLjU</sud>
+        <brojPredmeta>19/2013</brojPredmeta>
+        <datum>07. 05. 2021</datum>
+        <datumNormalizovan>2021-05-07</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Draginja Bošković</sudija>
+        <optuzeni>A.H.</optuzeni>
+        <podaciORoditeljima>otac M., majka S.</podaciORoditeljima>
+        <prebivaliste>mjestu rođenja</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>2 (dva) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>50,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>-Dana 27. 09. 2020. godine u B.P., svjestan svoga djela čije je izvršenje htio iako je znao da je djelo zabranjeno, upotrijebio tuđu pravu platnu karticu, vlasništvo oštećene D.M., koju je neovlašćeno pribavio, na način što je iskoristivši podatke sa "Master Card Premijum" bankovne kartice "Hipotekarne banke", vlasništvo oštećene, sa njenog žiro računa prenio iznos od 5,00 eura, na nalog za onlajn klađenje, preko internet sajta "www.V.kladionice.me", koji je otvoren na ime njegove supruge S.P., čime je sebi a na štetu D.M., pribavio protivpravnu imovinsku korist u iznosu od 5,00 eura. -Dana 27. 09. 2020. godine, u B. P., svjestan svoga djela čije je izvršenje htio iako je znao da je djelo zabranjeno, upotrijebio tuđu pravu platnu karticu, vlasništvo oštećene J.M., koju je neovlašćeno pribavio, na način što je iskoristivši podatke sa "Master Card" bankovne kartice "Hipotekarne banke", vlasništvo oštećene, sa njenog žiro računa prenio iznos od 35,00 eura, na nalog za onlajn klađenje, preko internet sajta "www.V.kladionice.me", koji je otvoren na ime njegove supruge S.P., čime je sebi a na štetu J.M., pribavio protivpravnu imovinsku korist u iznosu od 35,00 eura,</opisSlucaja>
+        <dokazi>
+          <dokaz>dopis kladionice "V." br. 11630/2020 od 15. 10. 2020. godine</dokaz>
+          <dokaz>dopis "Hipotekarne banke" br. 02-18828/2 od 13. 10. 2020. godine</dokaz>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog.
+Sud je cijenio iskaz oštećene - svjedoka J.M.</dokaz>
+          <dokaz>iskaz oštećene D.M.</dokaz>
+          <dokaz>oštećenu J.M.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>00,00 EUR</iznos>
+          <iznos>0,00 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLjU, 19/2013, sudija Draginja Bošković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: A.H., otac M., majka S., prebivalište: mjestu rođenja, oženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>-Dana 27. 09. 2020. godine u B.P., svjestan svoga djela čije je izvršenje htio iako je znao da je djelo zabranjeno, upotrijebio tuđu pravu platnu karticu, vlasništvo oštećene D.M., koju je neovlašćeno pribavio, na način što je iskoristivši podatke sa "Master Card Premijum" bankovne kartice "Hipotekarne banke", vlasništvo oštećene, sa njenog žiro računa prenio iznos od 5,00 eura, na nalog za onlajn klađenje, preko internet sajta "www.V.kladionice.me", koji je otvoren na ime njegove supruge S.P., čime je sebi a na štetu D.M., pribavio protivpravnu imovinsku korist u iznosu od 5,00 eura. -Dana 27. 09. 2020. godine, u B. P., svjestan svoga djela čije je izvršenje htio iako je znao da je djelo zabranjeno, upotrijebio tuđu pravu platnu karticu, vlasništvo oštećene J.M., koju je neovlašćeno pribavio, na način što je iskoristivši podatke sa "Master Card" bankovne kartice "Hipotekarne banke", vlasništvo oštećene, sa njenog žiro računa prenio iznos od 35,00 eura, na nalog za onlajn klađenje, preko internet sajta "www.V.kladionice.me", koji je otvoren na ime njegove supruge S.P., čime je sebi a na štetu J.M., pribavio protivpravnu imovinsku korist u iznosu od 35,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dopis kladionice "V." br. 11630/2020 od 15. 10. 2020. godine</p>
+            <p>• dopis "Hipotekarne banke" br. 02-18828/2 od 13. 10. 2020. godine</p>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog.
+Sud je cijenio iskaz oštećene - svjedoka J.M.</p>
+            <p>• iskaz oštećene D.M.</p>
+            <p>• oštećenu J.M.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 2 (dva) mjeseca</p>
+          <p>Novčana kazna: 50,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

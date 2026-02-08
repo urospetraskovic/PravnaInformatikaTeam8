@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_07_561">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_07_561"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_07_561"/>
+          <FRBRdate date="2014-07-18" name="judgment"/>
+          <FRBRauthor href="#nikšiću"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_07_561/srp@2014-07-18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_07_561/srp@2014-07-18"/>
+          <FRBRdate date="2014-07-18" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_07_561/srp@2014-07-18.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_07_561/srp@2014-07-18.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ivan_perović" showAs="Ivan Perović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>07/561</brojPredmeta>
+        <datum>18.07.2014</datum>
+        <datumNormalizovan>2014-07-18</datumNormalizovan>
+        <godina>2014</godina>
+        <sudija>Ivan Perović</sudija>
+        <optuzeni>Nepoznat</optuzeni>
+        <prebivaliste>Nikšiću</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 403 st. 1</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>74,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 18.04.2014.g., u ul.Nj---j u Nikšiću, svjestan svog djela čije izvršenje je htio, protivno odredbama čl.10a st.2, čl.11, čl.24 Zakona o oružju CG, na javnom mjestu, u svom putničkom motornom vozilu marke A--i A6 reg.br.NK BS 0--, neovlašćeno nosio pištolj marke M---r, model 90, kal.9mm, P---M, bez fabričkog broja i 15 komada pištoljskih metaka kalibra 9mm koje je metke neovlašćeno nabavio,</opisSlucaja>
+        <dokazi>
+          <dokaz>službenu zabilješku UP CB Nikšić Ku.br.281 od 18.04.2014.g.</dokaz>
+          <dokaz>nalaz i mišljenje sudskog vještaka balističara ing.M--ić M--a broj M19/14 i pročitao izvod iz kaznene evidencije za okrivljenog izdat od Ministarstva pravde Crne Gore.
+Svjedok N--Ć MI---D naveo je u svom iskazu da je kao pripadnik interventne jedinice CB Nikšić dana 18.0-.201-.g. sa kolegama zaustavio vozilo Audi A6</dokaz>
+          <dokaz>svjedoka N--ć M---a</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>74,00 EUR</iznos>
+          <iznos>44,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 07/561, sudija Ivan Perović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Nepoznat, prebivalište: Nikšiću, nezaposlen, oženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 18.04.2014.g., u ul.Nj---j u Nikšiću, svjestan svog djela čije izvršenje je htio, protivno odredbama čl.10a st.2, čl.11, čl.24 Zakona o oružju CG, na javnom mjestu, u svom putničkom motornom vozilu marke A--i A6 reg.br.NK BS 0--, neovlašćeno nosio pištolj marke M---r, model 90, kal.9mm, P---M, bez fabričkog broja i 15 komada pištoljskih metaka kalibra 9mm koje je metke neovlašćeno nabavio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• službenu zabilješku UP CB Nikšić Ku.br.281 od 18.04.2014.g.</p>
+            <p>• nalaz i mišljenje sudskog vještaka balističara ing.M--ić M--a broj M19/14 i pročitao izvod iz kaznene evidencije za okrivljenog izdat od Ministarstva pravde Crne Gore.
+Svjedok N--Ć MI---D naveo je u svom iskazu da je kao pripadnik interventne jedinice CB Nikšić dana 18.0-.201-.g. sa kolegama zaustavio vozilo Audi A6</p>
+            <p>• svjedoka N--ć M---a</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci</p>
+          <p>Novčana kazna: 74,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 403 st. 1 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

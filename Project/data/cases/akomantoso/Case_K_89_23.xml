@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_89_23">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_89_23"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_89_23"/>
+          <FRBRdate date="2021-03-31" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_89_23/srp@2021-03-31"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_89_23/srp@2021-03-31"/>
+          <FRBRdate date="2021-03-31" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_89_23/srp@2021-03-31.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_89_23/srp@2021-03-31.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_šćepanović" showAs="Goran Šćepanović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u v"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>89/23</brojPredmeta>
+        <datum>31.03.2021</datum>
+        <datumNormalizovan>2021-03-31</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Goran Šćepanović</sudija>
+        <optuzeni>u v</optuzeni>
+        <podaciORoditeljima>otac Ž., majka K.</podaciORoditeljima>
+        <prebivaliste>Baru na adresi Zeleni pojas</prebivaliste>
+        <zaposlenost>nezaposlena</zaposlenost>
+        <bracniStatus>neudata</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>osuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>40,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Krajem decembra mjeseca 2019. godine, iz kuće oštećenog V. D. . , opština Bar, svjesna svog djela, čije je izvršenje htjela, iako je znala da je njeno djelo zabranjeno, neovlašćeno uzela bankovnu karticu Prve banke, broj ..... , izdatu na ime V. D. . , i istu upotrijebila i sebi pribavila protivpravnu imovinsku korist u iznosu od 980,00 eura, na način, što je iz fascikle na radnom stolu u sobi oštećenog V. D. uzela bankovnu karticu i pin kod, nakon čega je na bankomatu Komercijalne banke u Baru, dana 27.12.2019. godine u 15:46:59 časova podigla novčani iznos od 250,00 eura, na bankomatu Hipotekarne banke, dana 28.12.2019. godine u 19:53:59 časova podigla novčani iznos od 280,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 16:01:04 časova novčani iznos od 250,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 23:56:36 časova podigla novčani iznos od 150,00 eura i na bankomatu Crnogorske Komercijalne banke dana 30.12.2019. godine u 14:04:50 časova novčani iznos od 50,00 eura,</opisSlucaja>
+        <dokazi>
+          <dokaz>zakonskog zastupnika oštećenog V. D. .</dokaz>
+          <dokaz>nalaz i mišljenje vještaka medicinsko-psihijatrijske struke dr Ž. G. od 24.06.2020. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka finansijske struke D.M. od 19.02.2021. godine.
+Svjedok V. V. je izjavio da živi u naselju Šušanj u Baru</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>280,00 EUR</iznos>
+          <iznos>335,50 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>181,50 EUR</iznos>
+          <iznos>18,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>900 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>980,00 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+          <iznos>154,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 89/23, sudija Goran Šćepanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u v, otac Ž., majka K., prebivalište: Baru na adresi Zeleni pojas, nezaposlena, neudata, osuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Krajem decembra mjeseca 2019. godine, iz kuće oštećenog V. D. . , opština Bar, svjesna svog djela, čije je izvršenje htjela, iako je znala da je njeno djelo zabranjeno, neovlašćeno uzela bankovnu karticu Prve banke, broj ..... , izdatu na ime V. D. . , i istu upotrijebila i sebi pribavila protivpravnu imovinsku korist u iznosu od 980,00 eura, na način, što je iz fascikle na radnom stolu u sobi oštećenog V. D. uzela bankovnu karticu i pin kod, nakon čega je na bankomatu Komercijalne banke u Baru, dana 27.12.2019. godine u 15:46:59 časova podigla novčani iznos od 250,00 eura, na bankomatu Hipotekarne banke, dana 28.12.2019. godine u 19:53:59 časova podigla novčani iznos od 280,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 16:01:04 časova novčani iznos od 250,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 23:56:36 časova podigla novčani iznos od 150,00 eura i na bankomatu Crnogorske Komercijalne banke dana 30.12.2019. godine u 14:04:50 časova novčani iznos od 50,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zakonskog zastupnika oštećenog V. D. .</p>
+            <p>• nalaz i mišljenje vještaka medicinsko-psihijatrijske struke dr Ž. G. od 24.06.2020. godine</p>
+            <p>• nalaz i mišljenje vještaka finansijske struke D.M. od 19.02.2021. godine.
+Svjedok V. V. je izjavio da živi u naselju Šušanj u Baru</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 40,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

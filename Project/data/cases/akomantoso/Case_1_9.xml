@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_1_9">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194722"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194722"/>
+          <FRBRdate date="2011-10-16" name="judgment"/>
+          <FRBRauthor href="#beranama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194722/srp@2011-10-16"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194722/srp@2011-10-16"/>
+          <FRBRdate date="2011-10-16" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194722/srp@2011-10-16.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194722/srp@2011-10-16.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/beranama" showAs="Osnovni Sud u BERANAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/aleksandr_ćulafić" showAs="Aleksandr Ćulafić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="V. S."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BERANAMA</sud>
+        <brojPredmeta>Nepoznat</brojPredmeta>
+        <datum>16.10.2011</datum>
+        <datumNormalizovan>2011-10-16</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Aleksandr Ćulafić</sudija>
+        <optuzeni>V. S.</optuzeni>
+        <podaciORoditeljima>otac V., majka B.</podaciORoditeljima>
+        <prebivaliste>mjestu C</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>45 dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>50,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>- dana 16.10.2011. godine, u B., neovlašćeno pribavio pravu platnu karticu Crnogorske komercijalne banke, vlasništvo oštećenog T. Ž., iz B., i takvu platnu karticu upotrijebio na način što je na bankomatu Crnogorkse komercijalne banke podigao novac u iznosu od 160,00 €, čime je pribavio protivpravnu imovinsku korist,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog T.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>foto dokumentaciju koja je izrađena na osnovu snimka sa sigurnosne kamere na bankomatu CKB sa kog je podignut novac 16.10.2011. godine i to u vremenu: 01:45:44 časa</dokaz>
+          <dokaz>karticu promjena računa oštećenog T. Ž. kod CKB banke za period od 16.10.2011. godine do 17.10.2011. godine</dokaz>
+          <dokaz>izvod iz KE na ime okrivljenog. 
+          Nakon analize izvedenih dokaza</dokaz>
+          <dokaz>u svojstvu svjedoka oštećenog T. Ž.</dokaz>
+          <dokaz>foto dokumentacija sigurnosne kamere sa bankomata CKB banke</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>160,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BERANAMA, sudija Aleksandr Ćulafić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: V. S., otac V., majka B., prebivalište: mjestu C, nezaposlen, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>- dana 16.10.2011. godine, u B., neovlašćeno pribavio pravu platnu karticu Crnogorske komercijalne banke, vlasništvo oštećenog T. Ž., iz B., i takvu platnu karticu upotrijebio na način što je na bankomatu Crnogorkse komercijalne banke podigao novac u iznosu od 160,00 €, čime je pribavio protivpravnu imovinsku korist,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• foto dokumentaciju koja je izrađena na osnovu snimka sa sigurnosne kamere na bankomatu CKB sa kog je podignut novac 16.10.2011. godine i to u vremenu: 01:45:44 časa</p>
+            <p>• karticu promjena računa oštećenog T. Ž. kod CKB banke za period od 16.10.2011. godine do 17.10.2011. godine</p>
+            <p>• izvod iz KE na ime okrivljenog. 
+          Nakon analize izvedenih dokaza</p>
+            <p>• u svojstvu svjedoka oštećenog T. Ž.</p>
+            <p>• foto dokumentacija sigurnosne kamere sa bankomata CKB banke</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 45 dana</p>
+          <p>Novčana kazna: 50,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

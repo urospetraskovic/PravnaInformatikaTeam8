@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_10_376">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_10_376"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_10_376"/>
+          <FRBRdate date="2011-12-16" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_10_376/srp@2011-12-16"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_10_376/srp@2011-12-16"/>
+          <FRBRdate date="2011-12-16" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_10_376/srp@2011-12-16.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_10_376/srp@2011-12-16.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ana_maraš" showAs="Ana Maraš"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="J.J."/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>10/376</brojPredmeta>
+        <datum>16.12.2011</datum>
+        <datumNormalizovan>2011-12-16</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Ana Maraš</sudija>
+        <optuzeni>J.J.</optuzeni>
+        <prebivaliste>mjestu rodjenja Ul</prebivaliste>
+        <zaposlenost>nezaposlena</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>7 (sedam) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 11.11.2011. godine oko 07,30 časova u P.i, u Ul. O. R., upotrijebio lažnu platnu karticu, na način što je sa aparata za podizanje novca vlasništvo "P. B." AD karticom na čiju su magnetnu traku bili unijeti podaci sa kartice br.4921818551979233, u dva navrata podigao novac u iznosu od po 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>neistinit i </svjedok>
+          <svjedok>precizno i </svjedok>
+          <svjedok>neistinit i</svjedok>
+          <svjedok>je n</svjedok>
+          <svjedok>oštećena M.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>tri snimka sa bankomata CKB od 22.05.2009.godine</dokaz>
+          <dokaz>službenu zabilješku Uprave policije</dokaz>
+          <dokaz>iskaz svjedoka M. G. dat na zapisniku o saslušanju svjedoka  pred ODT-om od 15.11.2011. godine i iskaz svjedoka M. M. dat na zapisniku o saslušanju svjedoka pred ODT-om  od 15.11.2011. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka informaciono tehničke struke M. L. br. 005/11 od 13.122011. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka komercijalne struke D.Đ. od 23.07.2009.godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekonomsko finansijske struke M.M.1 od 08.11.2010.godine</dokaz>
+          <dokaz>iskaz svjedoka oštećene M.M. 2 dat pred istražnim sudijom Osnovnog suda u Bijelom Polju od 24.02.2010.godine</dokaz>
+          <dokaz>izvod iz KE Uprave policije PJ Podgorica br.11-245/10-12926/2-2195 od 28.05.2010.godine</dokaz>
+          <dokaz>ovlašćenog predstavnika P. B. S. M.</dokaz>
+          <dokaz>svjedokaR.B.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>701,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>82,50 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>407,50 EUR</iznos>
+          <iznos>505,00 EUR</iznos>
+          <iznos>196,00 EUR</iznos>
+          <iznos>22,5 EUR</iznos>
+          <iznos>310,00 EUR</iznos>
+          <iznos>187,50 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>515,00 EUR</iznos>
+          <iznos>1.200 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>270,00 EUR</iznos>
+          <iznos>126,50 EUR</iznos>
+          <iznos>80 EUR</iznos>
+          <iznos>22,50 EUR</iznos>
+          <iznos>775,00 EUR</iznos>
+          <iznos>160 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>137,50 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>170 EUR</iznos>
+          <iznos>196 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 10/376, sudija Ana Maraš</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: J.J., prebivalište: mjestu rodjenja Ul, nezaposlena, oženjen</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.11.2011. godine oko 07,30 časova u P.i, u Ul. O. R., upotrijebio lažnu platnu karticu, na način što je sa aparata za podizanje novca vlasništvo "P. B." AD karticom na čiju su magnetnu traku bili unijeti podaci sa kartice br.4921818551979233, u dva navrata podigao novac u iznosu od po 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• tri snimka sa bankomata CKB od 22.05.2009.godine</p>
+            <p>• službenu zabilješku Uprave policije</p>
+            <p>• iskaz svjedoka M. G. dat na zapisniku o saslušanju svjedoka  pred ODT-om od 15.11.2011. godine i iskaz svjedoka M. M. dat na zapisniku o saslušanju svjedoka pred ODT-om  od 15.11.2011. godine</p>
+            <p>• nalaz i mišljenje vještaka informaciono tehničke struke M. L. br. 005/11 od 13.122011. godine</p>
+            <p>• nalaz i mišljenje vještaka komercijalne struke D.Đ. od 23.07.2009.godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 7 (sedam) mjeseci</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

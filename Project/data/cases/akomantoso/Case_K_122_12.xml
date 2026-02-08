@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_122_12">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_122_12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_122_12"/>
+          <FRBRdate date="2016-07-01" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_122_12/srp@2016-07-01"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_122_12/srp@2016-07-01"/>
+          <FRBRdate date="2016-07-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_122_12/srp@2016-07-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_122_12/srp@2016-07-01.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/tamara_spasojević" showAs="Tamara Spasojević"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="I.Z."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>122/12</brojPredmeta>
+        <datum>01.07.2016</datum>
+        <datumNormalizovan>2016-07-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Tamara Spasojević</sudija>
+        <optuzeni>I.Z.</optuzeni>
+        <podaciORoditeljima>otac M., majka S.</podaciORoditeljima>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 21.06.2012.godine u pekari "Montenegro II" u naselju Čeluga u Baru, svjestan svog djela i htio je njegovo izvršenje, iako je znao da je njegovo djelo zabranjeno, stavio u opticaj lažan novac - novčanicu u apoenu od 50 eura, serijskog broja X-, na način što je istu predao prilikom plaćanja cijene za dvije pice u navedenoj pekari,</opisSlucaja>
+        <svjedoci>
+          <svjedok>odmah p</svjedok>
+          <svjedok>vratio k</svjedok>
+          <svjedok>se n</svjedok>
+          <svjedok>je d</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dvije novčanice koje je dostavila Centralna banka istog serijskog broj X879123021448</dokaz>
+          <dokaz>iskaz svjedoka T. B. dat pred ODT iz Bara od 24.12.2012.godine</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore broj 09-6037-2 od 05.11.2014.godine</dokaz>
+          <dokaz>izvještaj o grafološkom vještačenju Forezničkog centra Danilovgrad broj 2841/14-1 od 18.11.2014.godine</dokaz>
+          <dokaz>izvještaj o grafološkom ispitivanju Forezničkog centra Danilovgrad broj 2841/12 od 03.009.2012.godine kao i izvještaj Centralne banke Crne Gore o ekspertizi sumnjivog novca broj 0903-15/162-2 od 28.08.2012.godine</dokaz>
+          <dokaz>izvještaj o grafološkom ispitivanju Forezničkog centra Danilovgrad broj 2841/12 od 03.009.2012.godine kao i izvještaj Centralne banke Crne Gore o ekspertizi sumnjivog novca broj 0903-15/162-2 od 28.08.2012.godine.
+Ocjenom izvedenih dokaza utvrđeno je da je optuženi H. G. učinio krivično djelo falsifikovanje novca iz čl.258 st.2 Krivičnog zakonika koje mu je stavljeno na teret</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafologa N.V. od maja 2007.godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>640 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>952,00 EUR</iznos>
+          <iznos>700 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 122/12, sudija Tamara Spasojević</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: I.Z., otac M., majka S., oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 21.06.2012.godine u pekari "Montenegro II" u naselju Čeluga u Baru, svjestan svog djela i htio je njegovo izvršenje, iako je znao da je njegovo djelo zabranjeno, stavio u opticaj lažan novac - novčanicu u apoenu od 50 eura, serijskog broja X-, na način što je istu predao prilikom plaćanja cijene za dvije pice u navedenoj pekari,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dvije novčanice koje je dostavila Centralna banka istog serijskog broj X879123021448</p>
+            <p>• iskaz svjedoka T. B. dat pred ODT iz Bara od 24.12.2012.godine</p>
+            <p>• izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore broj 09-6037-2 od 05.11.2014.godine</p>
+            <p>• izvještaj o grafološkom vještačenju Forezničkog centra Danilovgrad broj 2841/14-1 od 18.11.2014.godine</p>
+            <p>• izvještaj o grafološkom ispitivanju Forezničkog centra Danilovgrad broj 2841/12 od 03.009.2012.godine kao i izvještaj Centralne banke Crne Gore o ekspertizi sumnjivog novca broj 0903-15/162-2 od 28.08.2012.godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 (jedne) godin</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

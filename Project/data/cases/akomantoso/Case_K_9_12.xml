@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_9_12">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_12"/>
+          <FRBRdate date="2022-07-22" name="judgment"/>
+          <FRBRauthor href="#beranama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_12/srp@2022-07-22"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_12/srp@2022-07-22"/>
+          <FRBRdate date="2022-07-22" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_12/srp@2022-07-22.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_12/srp@2022-07-22.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/beranama" showAs="Osnovni Sud u Beranama"/>
+        <TLCPerson eId="sudija" href="/ontology/person/popović_dubravka" showAs="Popović Dubravka"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="J.T."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Beranama</sud>
+        <brojPredmeta>9/12</brojPredmeta>
+        <datum>22.07.2022</datum>
+        <datumNormalizovan>2022-07-22</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Popović Dubravka</sudija>
+        <optuzeni>J.T.</optuzeni>
+        <podaciORoditeljima>otac Lj., majka N.</podaciORoditeljima>
+        <prebivaliste>naselju D</prebivaliste>
+        <zaposlenost>nezaposlena</zaposlenost>
+        <bracniStatus>neudata</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana .......2022. godine, u B., po predhodnom dogovoru, zajedno, sposobne da shvate značaj svog djela i upravljaju svojim postupcima i svjesne zabranjenosti svog djela, čije su izvršenje htjele, neovlašćeno pribavile tuđu pravu platnu-Debit karticu CKB, vlasništvo oštećenog Đ.M. i istu upotrijebile istog dana na način što su u „K. he.“ u 14,57 časova platile račun u iznosu od ...... eura; u „K. h.“ u 15,04 časova platile račun u iznosu od 20,73 eura; u „S. R.“ u 15,12 časova platile račun u iznosu od 26,40 eura; u „S.R.“ u 15,16 časova platile račun u iznosu od 4,00 eura; u „O. M.“ u 15,22 časova platile račun u iznosu od 23,99 eura; u „O. M.“ u 15,23 časova platile račun u iznosu od 27,99 eura; u „C. m. III“ u 15,40 časova platile račun u iznosu od 35,39 eura; u „S. K.i“ u 15,43 časova platile račun u iznosu od 3,70 eura; u „S.V.n“ u 15,57 časova platile račun u iznosu od 25,95 eura; u „S. V.“ u 15,58 časova platile račun u iznosu od 17,75 eura i u „O. M.“ u 16,06 časova platile račun u iznosu od 22,39 eura, na koji način su upotrebom Debit kartice sebi pribavile protivpravnu imovinsku korist u ukupnom iznosu od 220,64 eura, a oštećenom za isti iznos pričinile imovinsku štetu.</opisSlucaja>
+        <iznosi>
+          <iznos>3,70 EUR</iznos>
+          <iznos>25,95 EUR</iznos>
+          <iznos>35,39 EUR</iznos>
+          <iznos>220,64 EUR</iznos>
+          <iznos>26,40 EUR</iznos>
+          <iznos>20,73 EUR</iznos>
+          <iznos>4,00 EUR</iznos>
+          <iznos>17,75 EUR</iznos>
+          <iznos>22,39 EUR</iznos>
+          <iznos>23,99 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>27,99 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Beranama, 9/12, sudija Popović Dubravka</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: J.T., otac Lj., majka N., prebivalište: naselju D, nezaposlena, neudata</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana .......2022. godine, u B., po predhodnom dogovoru, zajedno, sposobne da shvate značaj svog djela i upravljaju svojim postupcima i svjesne zabranjenosti svog djela, čije su izvršenje htjele, neovlašćeno pribavile tuđu pravu platnu-Debit karticu CKB, vlasništvo oštećenog Đ.M. i istu upotrijebile istog dana na način što su u „K. he.“ u 14,57 časova platile račun u iznosu od ...... eura; u „K. h.“ u 15,04 časova platile račun u iznosu od 20,73 eura; u „S. R.“ u 15,12 časova platile račun u iznosu od 26,40 eura; u „S.R.“ u 15,16 časova platile račun u iznosu od 4,00 eura; u „O. M.“ u 15,22 časova platile račun u iznosu od 23,99 eura; u „O. M.“ u 15,23 časova platile račun u iznosu od 27,99 eura; u „C. m. III“ u 15,40 časova platile račun u iznosu od 35,39 eura; u „S. K.i“ u 15,43 časova platile račun u iznosu od 3,70 eura; u „S.V.n“ u 15,57 časova platile račun u iznosu od 25,95 eura; u „S. V.“ u 15,58 časova platile račun u iznosu od 17,75 eura i u „O. M.“ u 16,06 časova platile račun u iznosu od 22,39 eura, na koji način su upotrebom Debit kartice sebi pribavile protivpravnu imovinsku korist u ukupnom iznosu od 220,64 eura, a oštećenom za isti iznos pričinile imovinsku štetu.</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka"/>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

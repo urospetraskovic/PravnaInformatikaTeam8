@@ -1,105 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 343/2020" xml:lang="sr">
-  <meta>
-    <identification source="court">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/judgment/Case_K_343_2020/!main"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_343_2020"/>
-        <FRBRdate date="2020-12-02"/>
-        <FRBRnumber value="K 343/2020"/>
-      </FRBRWork>
-      <FRBRExpression>
-        <FRBRthis value="/akn/me/judgment/Case_K_343_2020/!exp"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_343_2020"/>
-        <FRBRdate date="2020-12-02"/>
-        <FRBRlanguage language="sr"/>
-      </FRBRExpression>
-      <FRBRManifestation>
-        <FRBRthis value="/akn/me/judgment/Case_K_343_2020"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_343_2020"/>
-        <FRBRdate date="2020-12-02"/>
-      </FRBRManifestation>
-    </identification>
-    <references source="application">
-      <TLCReference eId="ref_Član_260" href="/akn/me/act/criminal-code/glava-23#Član 260" showAs="Član 260"/>
-      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
-    </references>
-  </meta>
-  <body>
-    <background>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica
-      </p>
-      <p>
-        <strong>Predmet:</strong>
-         K 343/2020
-      </p>
-      <p>
-        <strong>Sud:</strong>
-         Osnovni Sud u Nikšiću
-      </p>
-      <p>
-        <strong>Pravni okvir:</strong>
-         Krivični zakonik Crne Gore - Član 260
-      </p>
-    </background>
-    <narrative>
-      <p>
-        <strong>Okrivljeni:</strong>
-         B. A.
-      </p>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica
-      </p>
-      <p>
-        <strong>Opis događaja:</strong>
-         Neovlašćeno pribavljanje i upotreba platne kartice
-      </p>
-    </narrative>
-    <motivation>
-      <p>
-        <strong>Primijenjeni članovi:</strong>
-         Član 260 Krivičnog zakonika Crne Gore
-      </p>
-      <p>
-        <strong>Kvalifikacija:</strong>
-         Falsifikovanje i zloupotreba kreditnih kartica prema Članu 260 Krivičnog zakonika
-      </p>
-      <p>
-        <strong>Dokazivanje:</strong>
-         Krivično djelo je dokazano kroz:
-      </p>
-      <ul>
-        <li>Iskaze svjedoka</li>
-        <li>Izvode sa bankovnih računa</li>
-        <li>Potvrde o oduzetim platnim karticama</li>
-        <li>Video zapise sa bankomata</li>
-        <li>Iskaze okrivljenih</li>
-      </ul>
-    </motivation>
-    <decision>
-      <p>
-        <strong>PRESUDA:</strong>
-      </p>
-      <p>
-        <strong>Okrivljeni je OSUĐEN:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Za krivično djelo:</strong>
-           Falsifikovanje i zloupotreba kreditnih kartica prema Članu 260 Krivičnog zakonika Crne Gore
-        </li>
-        <li>
-          <strong>Kazna:</strong>
-           Kazna zatvora u trajanju od 3 mjeseca
-        </li>
-      </ul>
-      <p>
-        <strong>Troškovi:</strong>
-         Okrivljeni je obavezan da plati troškove krivičnog postupka
-      </p>
-    </decision>
-  </body>
-</judgment>
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_343_2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_343_2020"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_343_2020"/>
+          <FRBRdate date="2020-06-03" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_343_2020/srp@2020-06-03"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_343_2020/srp@2020-06-03"/>
+          <FRBRdate date="2020-06-03" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_343_2020/srp@2020-06-03.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_343_2020/srp@2020-06-03.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u s"/>
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>343/2020</brojPredmeta>
+        <datum>03.06.2020</datum>
+        <datumNormalizovan>2020-06-03</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>u s</optuzeni>
+        <podaciORoditeljima>otac Dragana, majka Verice</podaciORoditeljima>
+        <godinaRodjenja>30.07.1978</godinaRodjenja>
+        <prebivaliste>Budvi, Rozino bb</prebivaliste>
+        <zaposlenost>zaposlen kao instruktor vožnje i vodio je auto školu koju je držao Ivan Ražnatović iz Cetinja</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>VSS</obrazovanje>
+        <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 3</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 03.06.2020. godine u prisustvu državne tužiteljke ODT Kotor Ane Marinović, okrivljenih Ražnatovića i Batrićevića i njihovih branilaca, te branioca okrivljenog Jovića, advokata Aleksandre Latković, po zamjeničkom punomoćju branioca po službenoj dužnosti imenovanog okrivljenog, advokata Veselina Kaluđerovića, a u odsustvu okrivljenog Jovića, kome se sudi u odsustvu, shodno rješenju ovog suda Kv.br. 290/19 od 19.11.2019. godine, dana 08.06.2020. godine donio je i javno objavio sledeću P R E S U D U Okrivljeni: 1. Ivan Ražnatović, JMBG 3007978250012, od oca Dragana i majke Verice, rođene Koprivica, rođen 30.07.1978. godine u Cetinju, stalno nastanjen u Budvi, Rozino bb, državljanin Crne Gore, oženjen, otac dvoje djece, privatnik, sa završenom VSS, srednjeg imovnog stanja, ranije neosuđivan, 2. Zoran Batrićević, JMBG 2702982250015, od oca Danila i majke Milice, rođene Pejanović, rođen 27.02.1982. godine u Cetinju, stalno nastanjen u Cetinju, Bajova 16, državljanin Crne Gore, oženjen, otac dvoje maloljetne djece, instruktor vožnje, sa završenom SSS, srednjeg imovnog stanja, ranije neosuđivan, 3. Vladimir Jović, JMBG 2501981234010, od oca Vuka i majke Zorke, rođene Spičanović, rođen 25.01.1981. godine u Baru, stalno nastanjen u Tivtu, Seljanovo D/2, državljanin Crne Gore, oženjen, otac jednog maloljetnog djeteta, elektrotehničar, sa završenom SSS, srednjeg imovnog stanja, ranije osuđivan zbog izvršenja krivičnog djela pravljenje, nabavljanje i davanje drugom sredstva i materija</opisSlucaja>
+        <svjedoci>
+          <svjedok>sasluša I</svjedok>
+          <svjedok>Milo K</svjedok>
+          <svjedok>došlo s</svjedok>
+          <svjedok>Dragoslava P</svjedok>
+          <svjedok>Kordić n</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>oduzete ugovore</dokaz>
+          <dokaz>je ovlašćenog predstavnika NLB banke Podgorica Momirku Jelić na glavnom pretresu od 28.05.2020. godine</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP Tivat od 01.08.2013. godine i zapisnik o pretresanju prevoznog sredstva putnika</dokaz>
+          <dokaz>potvrda o registraciji podataka za DOO Aksiom 5</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>171,00 EUR</iznos>
+          <iznos>800 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>230,00 EUR</iznos>
+          <iznos>163,10 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>400 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>840,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 343/2020, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u s, otac Dragana, majka Verice, prebivalište: Budvi, Rozino bb, zaposlen kao instruktor vožnje i vodio je auto školu koju je držao Ivan Ražnatović iz Cetinja, oženjen, ranije neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 03.06.2020. godine u prisustvu državne tužiteljke ODT Kotor Ane Marinović, okrivljenih Ražnatovića i Batrićevića i njihovih branilaca, te branioca okrivljenog Jovića, advokata Aleksandre Latković, po zamjeničkom punomoćju branioca po službenoj dužnosti imenovanog okrivljenog, advokata Veselina Kaluđerovića, a u odsustvu okrivljenog Jovića, kome se sudi u odsustvu, shodno rješenju ovog suda Kv.br. 290/19 od 19.11.2019. godine, dana 08.06.2020. godine donio je i javno objavio sledeću P R E S U D U Okrivljeni: 1. Ivan Ražnatović, JMBG 3007978250012, od oca Dragana i majke Verice, rođene Koprivica, rođen 30.07.1978. godine u Cetinju, stalno nastanjen u Budvi, Rozino bb, državljanin Crne Gore, oženjen, otac dvoje djece, privatnik, sa završenom VSS, srednjeg imovnog stanja, ranije neosuđivan, 2. Zoran Batrićević, JMBG 2702982250015, od oca Danila i majke Milice, rođene Pejanović, rođen 27.02.1982. godine u Cetinju, stalno nastanjen u Cetinju, Bajova 16, državljanin Crne Gore, oženjen, otac dvoje maloljetne djece, instruktor vožnje, sa završenom SSS, srednjeg imovnog stanja, ranije neosuđivan, 3. Vladimir Jović, JMBG 2501981234010, od oca Vuka i majke Zorke, rođene Spičanović, rođen 25.01.1981. godine u Baru, stalno nastanjen u Tivtu, Seljanovo D/2, državljanin Crne Gore, oženjen, otac jednog maloljetnog djeteta, elektrotehničar, sa završenom SSS, srednjeg imovnog stanja, ranije osuđivan zbog izvršenja krivičnog djela pravljenje, nabavljanje i davanje drugom sredstva i materija</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• oduzete ugovore</p>
+            <p>• je ovlašćenog predstavnika NLB banke Podgorica Momirku Jelić na glavnom pretresu od 28.05.2020. godine</p>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP Tivat od 01.08.2013. godine i zapisnik o pretresanju prevoznog sredstva putnika</p>
+            <p>• potvrda o registraciji podataka za DOO Aksiom 5</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 3 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

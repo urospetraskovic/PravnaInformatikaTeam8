@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_76_16">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_76_16"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_76_16"/>
+          <FRBRdate date="2021-11-25" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_76_16/srp@2021-11-25"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_76_16/srp@2021-11-25"/>
+          <FRBRdate date="2021-11-25" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_76_16/srp@2021-11-25.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_76_16/srp@2021-11-25.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/edina_kraja" showAs="Edina Kraja"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>76/16</brojPredmeta>
+        <datum>25.11.2021</datum>
+        <datumNormalizovan>2021-11-25</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Edina Kraja</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac B., majka B.</podaciORoditeljima>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>50,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Tokom oktobra 2021. godine, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, pribavio i držao lažan novac - novčanicu u apoenu od 50 eura serijskog broja UU1186165444, a potom označenu novčanicu kao lažan novac stavio u opticaj dana 25.11.2021. godine, na način što je novčanicu predao izvjesnoj B. koja je potom, istog dana u Pekari "As", koja se nalazi u Podgorici, u blizini TC "Gintaš" tom novčanicom ne znajući da se radi o falsifikatu, zaposlenoj radnici u označenoj pekari, za izvršene usluge predala navedenu novčanicu,</opisSlucaja>
+        <iznosi>
+          <iznos>50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 76/16, sudija Edina Kraja</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac B., majka B., neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Tokom oktobra 2021. godine, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, pribavio i držao lažan novac - novčanicu u apoenu od 50 eura serijskog broja UU1186165444, a potom označenu novčanicu kao lažan novac stavio u opticaj dana 25.11.2021. godine, na način što je novčanicu predao izvjesnoj B. koja je potom, istog dana u Pekari "As", koja se nalazi u Podgorici, u blizini TC "Gintaš" tom novčanicom ne znajući da se radi o falsifikatu, zaposlenoj radnici u označenoj pekari, za izvršene usluge predala navedenu novčanicu,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 (jedne) godin</p>
+          <p>Novčana kazna: 50,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_56_02">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_56_02"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_56_02"/>
+          <FRBRdate date="2013-11-26" name="judgment"/>
+          <FRBRauthor href="#pljevljima"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_56_02/srp@2013-11-26"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_56_02/srp@2013-11-26"/>
+          <FRBRdate date="2013-11-26" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_56_02/srp@2013-11-26.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_56_02/srp@2013-11-26.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima" showAs="Osnovni Sud u Pljevljima"/>
+        <TLCPerson eId="sudija" href="/ontology/person/brank_pejović" showAs="Brank Pejović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i n"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Pljevljima</sud>
+        <brojPredmeta>56/02</brojPredmeta>
+        <datum>26.11.2013</datum>
+        <datumNormalizovan>2013-11-26</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Brank Pejović</sudija>
+        <optuzeni>i n</optuzeni>
+        <podaciORoditeljima>otac M., majka V.</podaciORoditeljima>
+        <prebivaliste>ul</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu za metalostrugara III stepen</obrazovanje>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>30 dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</opisSlucaja>
+        <dokazi>
+          <dokaz>pregled prometa za tekući račun oštećenog za dan 27.11.2013. godine</dokaz>
+          <dokaz>logove sa ATM terminala Atlas banke - Filijala P.</dokaz>
+          <dokaz>potvrdu UP CB P. br. 03-240/14 od 27.01.2014. godine o privremenom oduzimanju CD snimka i izvoda banke o izvršenoj transkaciji za dana 26.11.2013. godine</dokaz>
+          <dokaz>CD snimak i pročitao izvještaj iz kaznene evidencije za okrivljenog izdat od strane UP CB P. br. 03-245/14-1346/2 od 31.01.2014. godine.
+Nakon provedenog dokaznog postupka i nakon ocjene svih izvedenih dokaza kako pojedinačno tako i skupa i u njihovoj medjusobnoj povezanosti jednog sa drugim</dokaz>
+          <dokaz>izvještaj iz kaznene evidencije za okrivljenog izdat od strane UP CB P. br. 03-245/14-1346/2 od 31.01.2014. godine.
+Nakon provedenog dokaznog postupka i nakon ocjene svih izvedenih dokaza kako pojedinačno tako i skupa i u njihovoj medjusobnoj povezanosti jednog sa drugim</dokaz>
+          <dokaz>svjedoka - oštećenog V. M.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>27,50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Pljevljima, 56/02, sudija Brank Pejović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i n, otac M., majka V., prebivalište: ul, oženjen</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• pregled prometa za tekući račun oštećenog za dan 27.11.2013. godine</p>
+            <p>• logove sa ATM terminala Atlas banke - Filijala P.</p>
+            <p>• potvrdu UP CB P. br. 03-240/14 od 27.01.2014. godine o privremenom oduzimanju CD snimka i izvoda banke o izvršenoj transkaciji za dana 26.11.2013. godine</p>
+            <p>• CD snimak i pročitao izvještaj iz kaznene evidencije za okrivljenog izdat od strane UP CB P. br. 03-245/14-1346/2 od 31.01.2014. godine.
+Nakon provedenog dokaznog postupka i nakon ocjene svih izvedenih dokaza kako pojedinačno tako i skupa i u njihovoj medjusobnoj povezanosti jednog sa drugim</p>
+            <p>• izvještaj iz kaznene evidencije za okrivljenog izdat od strane UP CB P. br. 03-245/14-1346/2 od 31.01.2014. godine.
+Nakon provedenog dokaznog postupka i nakon ocjene svih izvedenih dokaza kako pojedinačno tako i skupa i u njihovoj medjusobnoj povezanosti jednog sa drugim</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 30 dana</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

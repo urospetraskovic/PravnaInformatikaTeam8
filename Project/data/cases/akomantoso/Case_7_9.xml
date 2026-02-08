@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_7_9">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194724"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194724"/>
+          <FRBRdate date="2021-03-17" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194724/srp@2021-03-17"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194724/srp@2021-03-17"/>
+          <FRBRdate date="2021-03-17" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_20260208194724/srp@2021-03-17.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208194724/srp@2021-03-17.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_đuković" showAs="Goran Đuković"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>Nepoznat</brojPredmeta>
+        <datum>17.03.2021</datum>
+        <datumNormalizovan>2021-03-17</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Goran Đuković</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac D., majka M.</podaciORoditeljima>
+        <prebivaliste>Podgorici, D</prebivaliste>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 25.02.2020.godine i dana 26.02.2020. godine u na teritoriji Glavnog grada Podgorica, teritoriji opštine Danilovgrad, zajedno i po predhodnom dogovoru, te sa maloljetnim B. K., svjesni svog djela čije su izvršenje htjeli kao svoje i kao zajedničko, znajući da je isto zabranjeno, upotrebom neovlašćeno pribavljene tuđe prave platne kartice, izdate od “Erste banke” AD Podgorica na ime vlasnika oštećenog I. V., čiji je korisnik I. Đ., koju je maloljetni Knežević B. pronašao u blizini pekare “Bite” u Podgorici, sebi pribavili protivpravnu imovinsku korist, na način što su i to: - dana 25.02.2020.godine u 21:56:33 časova, okrivljeni K. M., na naplatnom terminalu marketa “Voli”, u ulici Vasa Raičkovića, u Podgorici, označenom platnom karticom, neovlašćeno sa računa oštećenog, za sebe i za okrivljenog V., te za maloljetnog K., izvršio kupovinu artikala tog marketa, u iznosu od 2,40 eura, čime su sebi pribavili protivpravnu imovinsku korist u označenom iznosu, - dana 25.02.2020.godine u 22:05:57 časova, okrivljeni K. M., na naplatnom terminalu benzinske pumpe “Euro Oil Company”, u naselju Blok V, u Podgorici, označenom platnom karticom neovlašćeno sa računa oštećenog, za sebe i za okrivljenog V., te za maloljetnog K., izvršio kupovinu artikala te benzinske pumpe, u iznosu od 3,30 eura, čime su sebi pribavili protivpravnu imovinsku korist u označenom iznosu, - dana 25.02.2020.godne u 22:14:08 časova, okrivljeni V. N., zajedno sa maloljetnim K. B., na naplatnom terminalu marketa “Li</opisSlucaja>
+        <dokazi>
+          <dokaz>izvod "Erste banke" po računu platne kartice oštećenog I. V. za dane 25.02.2020. i 26.02.2020. godine</dokaz>
+          <dokaz>izvod iz KE za okrivljenog K. M.a izdat od Osnovnog suda u Podgorici Odjeljenje PRIS-a broj 2761/2020</dokaz>
+          <dokaz>izvod iz KE za okrivljenog V. N. izdat od Osnovnog suda u Podgorici Odjeljenje PRIS-a broj 2762/2020</dokaz>
+          <dokaz>iskaz svjedoka I. Đ. i na saglasan predlog zastupnika optužbe i okrivljenog K. M. pročitao iskaz svjedoka I. V..
+Sud je procesnim rješenjem odlučio da se neće saslušavati svjedok B. K.</dokaz>
+          <dokaz>video zapisa</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>7,40 EUR</iznos>
+          <iznos>48 EUR</iznos>
+          <iznos>3,30 EUR</iznos>
+          <iznos>14,10 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>02,00 EUR</iznos>
+          <iznos>13,20 EUR</iznos>
+          <iznos>07,40 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>2,40 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>1,30 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>29 EUR</iznos>
+          <iznos>09,90 EUR</iznos>
+          <iznos>57 EUR</iznos>
+          <iznos>8,33 EUR</iznos>
+          <iznos>11,20 EUR</iznos>
+          <iznos>225,00 EUR</iznos>
+          <iznos>24,70 EUR</iznos>
+          <iznos>16,30 EUR</iznos>
+          <iznos>03 EUR</iznos>
+          <iznos>9,90 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>12,70 EUR</iznos>
+          <iznos>228,83 EUR</iznos>
+          <iznos>1,28 EUR</iznos>
+          <iznos>59 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, sudija Goran Đuković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac D., majka M., prebivalište: Podgorici, D, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 25.02.2020.godine i dana 26.02.2020. godine u na teritoriji Glavnog grada Podgorica, teritoriji opštine Danilovgrad, zajedno i po predhodnom dogovoru, te sa maloljetnim B. K., svjesni svog djela čije su izvršenje htjeli kao svoje i kao zajedničko, znajući da je isto zabranjeno, upotrebom neovlašćeno pribavljene tuđe prave platne kartice, izdate od “Erste banke” AD Podgorica na ime vlasnika oštećenog I. V., čiji je korisnik I. Đ., koju je maloljetni Knežević B. pronašao u blizini pekare “Bite” u Podgorici, sebi pribavili protivpravnu imovinsku korist, na način što su i to: - dana 25.02.2020.godine u 21:56:33 časova, okrivljeni K. M., na naplatnom terminalu marketa “Voli”, u ulici Vasa Raičkovića, u Podgorici, označenom platnom karticom, neovlašćeno sa računa oštećenog, za sebe i za okrivljenog V., te za maloljetnog K., izvršio kupovinu artikala tog marketa, u iznosu od 2,40 eura, čime su sebi pribavili protivpravnu imovinsku korist u označenom iznosu, - dana 25.02.2020.godine u 22:05:57 časova, okrivljeni K. M., na naplatnom terminalu benzinske pumpe “Euro Oil Company”, u naselju Blok V, u Podgorici, označenom platnom karticom neovlašćeno sa računa oštećenog, za sebe i za okrivljenog V., te za maloljetnog K., izvršio kupovinu artikala te benzinske pumpe, u iznosu od 3,30 eura, čime su sebi pribavili protivpravnu imovinsku korist u označenom iznosu, - dana 25.02.2020.godne u 22:14:08 časova, okrivljeni V. N., zajedno sa maloljetnim K. B., na naplatnom terminalu marketa “Li</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod "Erste banke" po računu platne kartice oštećenog I. V. za dane 25.02.2020. i 26.02.2020. godine</p>
+            <p>• izvod iz KE za okrivljenog K. M.a izdat od Osnovnog suda u Podgorici Odjeljenje PRIS-a broj 2761/2020</p>
+            <p>• izvod iz KE za okrivljenog V. N. izdat od Osnovnog suda u Podgorici Odjeljenje PRIS-a broj 2762/2020</p>
+            <p>• iskaz svjedoka I. Đ. i na saglasan predlog zastupnika optužbe i okrivljenog K. M. pročitao iskaz svjedoka I. V..
+Sud je procesnim rješenjem odlučio da se neće saslušavati svjedok B. K.</p>
+            <p>• video zapisa</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

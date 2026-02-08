@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_135_12">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_135_12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_135_12"/>
+          <FRBRdate date="2011-10-26" name="judgment"/>
+          <FRBRauthor href="#bijelom_polju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_135_12/srp@2011-10-26"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_135_12/srp@2011-10-26"/>
+          <FRBRdate date="2011-10-26" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_135_12/srp@2011-10-26.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_135_12/srp@2011-10-26.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ivan_adamović" showAs="Ivan Adamović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="V.E."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>135/12</brojPredmeta>
+        <datum>26. 10. 2011</datum>
+        <datumNormalizovan>2011-10-26</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Ivan Adamović</sudija>
+        <optuzeni>V.E.</optuzeni>
+        <podaciORoditeljima>otac V., majka Š.</podaciORoditeljima>
+        <prebivaliste>mjestu R</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>Nepoznat</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>700,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>-dana 30.10.2010 godine, u umjestu N., opština Bijelo Polje, u prodavnici DOO F." Bijelo Polje, lažan novac-jednu novčanicu u apoenu od 10 €, serijskog broja Y44157318922, koju je primio kao pravu, saznavši da je lažna, stavio u opticaj, na način što je istu prilikom kupovine cigareta od 0,70 €, predao prodavačici Lj.. Lj..,</opisSlucaja>
+        <svjedoci>
+          <svjedok>B. R.a</svjedok>
+          <svjedok>sud j</svjedok>
+          <svjedok>te m</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvod iz KE na ime okrivljenog.
+Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi</dokaz>
+          <dokaz>potvrdu o oduzetoj novčanici u apoenima od 100</dokaz>
+          <dokaz>izvod iz KE na ime okrivljenog.
+Sud je cijeneći dokaze pojedinačno i u medjusobnoj povezanosti</dokaz>
+          <dokaz>iskaze svjedoka Lj.. Lj.. i F.. S..</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima na ime V.. E.. od 30.10.2011 godine</dokaz>
+          <dokaz>izvještaj o grafološkom vještačenju broj 457/10 od 31. 07. 2008.g.</dokaz>
+          <dokaz>nalaz i mišljenje vještaka M.K.od 16.05.2012.godine</dokaz>
+          <dokaz>svjedoke B. R.a</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca br. 246 od 27.12.2010 godine</dokaz>
+          <dokaz>potvrda o oduzetoj predmetnoj novčanici i nalaz i mišljenje vještaka grafološke struke Kontić Mile.
+Naime iz iskaza svjedoka B. R.a proizilazi da je od M.D.kupio polovni kompjuter za 150 eura. Tom prilikom mu je dao dvije novčanice po 100</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>35 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>0,70 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>150 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>7,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>0,75 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>7 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 135/12, sudija Ivan Adamović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: V.E., otac V., majka Š., prebivalište: mjestu R, nezaposlen, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>-dana 30.10.2010 godine, u umjestu N., opština Bijelo Polje, u prodavnici DOO F." Bijelo Polje, lažan novac-jednu novčanicu u apoenu od 10 €, serijskog broja Y44157318922, koju je primio kao pravu, saznavši da je lažna, stavio u opticaj, na način što je istu prilikom kupovine cigareta od 0,70 €, predao prodavačici Lj.. Lj..,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz KE na ime okrivljenog.
+Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi</p>
+            <p>• potvrdu o oduzetoj novčanici u apoenima od 100</p>
+            <p>• izvod iz KE na ime okrivljenog.
+Sud je cijeneći dokaze pojedinačno i u medjusobnoj povezanosti</p>
+            <p>• iskaze svjedoka Lj.. Lj.. i F.. S..</p>
+            <p>• potvrdu o privremeno oduzetim predmetima na ime V.. E.. od 30.10.2011 godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Novčana kazna: 700,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

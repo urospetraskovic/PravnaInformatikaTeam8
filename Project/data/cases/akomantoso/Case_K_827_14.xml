@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_827_14">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_827_14"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_827_14"/>
+          <FRBRdate date="2013-04-15" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_827_14/srp@2013-04-15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_827_14/srp@2013-04-15"/>
+          <FRBRdate date="2013-04-15" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_827_14/srp@2013-04-15.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_827_14/srp@2013-04-15.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jovović_željka" showAs="Jovović Željka"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>827/14</brojPredmeta>
+        <datum>15. 04. 2013</datum>
+        <datumNormalizovan>2013-04-15</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Jovović Željka</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac S., majka B.</podaciORoditeljima>
+        <prebivaliste>Podgorici, ul</prebivaliste>
+        <zaposlenost>zaposlen kao taksi vozač u udruženju "Žuti taxi" i kako radi svakoga dana</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>U periodu od 21. do 24. novembra 2012. godine, u Podgorici, u ulici Admirala Zmajevića, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, u više navrata, upotrijebio tuđu pravu platnu karticu "Visa" izdatu od strane "Atlas banke" iz Podgorice, koju je neovlašćeno pribavio, na način što je istu uzimao iz novčanika svoje djevojke - oštećene J. M., da bi je zatim upotrijebio dana 21. 11. 2012. godine, tako što je sa bankomata Podgoričke banke, podigao novac u iznosu od 300 eura, te dana 24. 11. 2012. godine, sa istog bankomata, u dva navrata podigao novac u iznosu od po 300,00 eura i jednom u iznosu od 90,00 eura, i na taj način sebi pribavio protivpravnu imovinsku korist u označenim iznosima,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećena J.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>video zapis predmetnog dogadjaja i pročitao izvještaj Uprave policije PJ Podgorice iz kaznene evidencije na ime okrivljenog R. N. od 04. 03. 2013. godine.
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>izvod Atlas banke Podgorica br. 11 za period od 01. 11. 2012. godine do 30. 11. 2012. godine sa prilozima</dokaz>
+          <dokaz>izvještaj Uprave policije PJ Podgorice iz kaznene evidencije na ime okrivljenog R. N. od 04. 03. 2013. godine.
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>svjedoka - oštećenu J. M.</dokaz>
+          <dokaz>video zapis predmetnog dogadjaja</dokaz>
+          <dokaz>video zapis i uvodom u izvod "Atlas banke " Podgorica br. 11 za peirod od 01.11.2012. godine do 30.11.2012. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>900,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>300 EUR</iznos>
+          <iznos>90,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>990,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>1019,70 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>290,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 827/14, sudija Jovović Željka</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac S., majka B., prebivalište: Podgorici, ul, zaposlen kao taksi vozač u udruženju "Žuti taxi" i kako radi svakoga dana, razveden, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 21. do 24. novembra 2012. godine, u Podgorici, u ulici Admirala Zmajevića, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, u više navrata, upotrijebio tuđu pravu platnu karticu "Visa" izdatu od strane "Atlas banke" iz Podgorice, koju je neovlašćeno pribavio, na način što je istu uzimao iz novčanika svoje djevojke - oštećene J. M., da bi je zatim upotrijebio dana 21. 11. 2012. godine, tako što je sa bankomata Podgoričke banke, podigao novac u iznosu od 300 eura, te dana 24. 11. 2012. godine, sa istog bankomata, u dva navrata podigao novac u iznosu od po 300,00 eura i jednom u iznosu od 90,00 eura, i na taj način sebi pribavio protivpravnu imovinsku korist u označenim iznosima,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• video zapis predmetnog dogadjaja i pročitao izvještaj Uprave policije PJ Podgorice iz kaznene evidencije na ime okrivljenog R. N. od 04. 03. 2013. godine.
+Ocjenom navoda optužbe</p>
+            <p>• izvod Atlas banke Podgorica br. 11 za period od 01. 11. 2012. godine do 30. 11. 2012. godine sa prilozima</p>
+            <p>• izvještaj Uprave policije PJ Podgorice iz kaznene evidencije na ime okrivljenog R. N. od 04. 03. 2013. godine.
+Ocjenom navoda optužbe</p>
+            <p>• svjedoka - oštećenu J. M.</p>
+            <p>• video zapis predmetnog dogadjaja</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

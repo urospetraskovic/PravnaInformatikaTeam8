@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_14_19">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_14_19"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_14_19"/>
+          <FRBRdate date="2019-03-15" name="judgment"/>
+          <FRBRauthor href="#pljevljima"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_14_19/srp@2019-03-15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_14_19/srp@2019-03-15"/>
+          <FRBRdate date="2019-03-15" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_14_19/srp@2019-03-15.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_14_19/srp@2019-03-15.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima" showAs="Osnovni Sud u Pljevljima"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ljiljana_popović" showAs="Ljiljana Popović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i n"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Pljevljima</sud>
+        <brojPredmeta>14/19</brojPredmeta>
+        <datum>15.03.2019</datum>
+        <datumNormalizovan>2019-03-15</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Ljiljana Popović</sudija>
+        <optuzeni>i n</optuzeni>
+        <podaciORoditeljima>otac F., majka M.</podaciORoditeljima>
+        <prebivaliste>ul</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu za metalostrugara III stepen</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog j</svjedok>
+          <svjedok>je s</svjedok>
+          <svjedok>oštećenog B.</svjedok>
+          <svjedok>sud j</svjedok>
+          <svjedok>nesumnjivo u</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>fotografije sa CD-a izuzetog sa bankomanta CKB banke</dokaz>
+          <dokaz>pravosnažnu presudu Osnovnog suda u Pljevljima K.br.85/17 od 05.12.2017. godine i pročitao izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</dokaz>
+          <dokaz>pregled prometa za tekući račun oštećenog za dan 27.11.2013. godine</dokaz>
+          <dokaz>logove sa ATM terminala Atlas banke - Filijala P.</dokaz>
+          <dokaz>potvrdu UP CB P. br. 03-240/14 od 27.01.2014. godine o privremenom oduzimanju CD snimka i izvoda banke o izvršenoj transkaciji za dana 26.11.2013. godine</dokaz>
+          <dokaz>CD snimak i pročitao izvještaj iz kaznene evidencije za okrivljenog izdat od strane UP CB P. br. 03-245/14-1346/2 od 31.01.2014. godine.
+Nakon provedenog dokaznog postupka i nakon ocjene svih izvedenih dokaza kako pojedinačno tako i skupa i u njihovoj medjusobnoj povezanosti jednog sa drugim</dokaz>
+          <dokaz>dokaze predložene optužnim predlogom i to: iskaz svjedoka oštećene Ž. M. dat na zapisniku pred ODT-om Podgorica Kt.br.1096/21 od 01.09.2021. godine</dokaz>
+          <dokaz>CD sa snimkom video nadzora izuzetog sa bankomata Crnogorske komercijalne banke AD Podgorica u TC "Mall of Montenegro" za datum 16.06.2021. godine.
+Utvrđujući da li postoji dovoljno dokaza o krivici okrivljene za predmetno krivično djelo</dokaz>
+          <dokaz>fotografije sa bankomata HPBN0009 Hipotekarne banke</dokaz>
+          <dokaz>CD sa fotografijama</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>300,00 EUR</iznos>
+          <iznos>60,50 EUR</iznos>
+          <iznos>19,20 EUR</iznos>
+          <iznos>554,85 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>104,50 EUR</iznos>
+          <iznos>210,00 EUR</iznos>
+          <iznos>3.000 EUR</iznos>
+          <iznos>0,7829 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>265 EUR</iznos>
+          <iznos>359,12 EUR</iznos>
+          <iznos>49,01 EUR</iznos>
+          <iznos>149,99 EUR</iznos>
+          <iznos>255,26 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>302,00 EUR</iznos>
+          <iznos>37,00 EUR</iznos>
+          <iznos>27,50 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>130,00 EUR</iznos>
+          <iznos>5,15 EUR</iznos>
+          <iznos>216,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>221,15 EUR</iznos>
+          <iznos>40,98 EUR</iznos>
+          <iznos>227,00 EUR</iznos>
+          <iznos>411,15 EUR</iznos>
+          <iznos>618,43 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>260 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>12,00 EUR</iznos>
+          <iznos>704,46 EUR</iznos>
+          <iznos>412,00 EUR</iznos>
+          <iznos>82,50 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>265,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Pljevljima, 14/19, sudija Ljiljana Popović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i n, otac F., majka M., prebivalište: ul, nezaposlen, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• fotografije sa CD-a izuzetog sa bankomanta CKB banke</p>
+            <p>• pravosnažnu presudu Osnovnog suda u Pljevljima K.br.85/17 od 05.12.2017. godine i pročitao izvod iz KE za optuženog.
+Nakon provedenog dokaznog postupka i ocjene izvedenih dokaza kako svakog pojedinačno tako i u medjusobnoj povezanosti u smislu čl.16 i 370 ZKP-a a pri tom cijeneći odbranu optuženog K.D.ovaj sud je utvrdio činjenično stanje bliže opisano izrekom ove presude.
+Naime</p>
+            <p>• pregled prometa za tekući račun oštećenog za dan 27.11.2013. godine</p>
+            <p>• logove sa ATM terminala Atlas banke - Filijala P.</p>
+            <p>• potvrdu UP CB P. br. 03-240/14 od 27.01.2014. godine o privremenom oduzimanju CD snimka i izvoda banke o izvršenoj transkaciji za dana 26.11.2013. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

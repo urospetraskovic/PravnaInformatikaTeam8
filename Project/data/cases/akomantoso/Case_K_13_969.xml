@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_13_969">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_13_969"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_13_969"/>
+          <FRBRdate date="2014-06-26" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_13_969/srp@2014-06-26"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_13_969/srp@2014-06-26"/>
+          <FRBRdate date="2014-06-26" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_13_969/srp@2014-06-26.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_13_969/srp@2014-06-26.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/đuković_goran" showAs="Đuković Goran"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u t"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>13/969</brojPredmeta>
+        <datum>26.06.2014</datum>
+        <datumNormalizovan>2014-06-26</datumNormalizovan>
+        <godina>2014</godina>
+        <sudija>Đuković Goran</sudija>
+        <optuzeni>u t</optuzeni>
+        <podaciORoditeljima>otac H., majka A.</podaciORoditeljima>
+        <prebivaliste>državi rođenja</prebivaliste>
+        <zaposlenost>zaposlen u privatnoj firmi „G. P.</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 239</clanKZ>
+        <kazna>4(četiri)mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 17.aprila 2014 godine,oko 12,00 časova,u ugostiteljskom objektu „P.“,naselje K.,u P.,svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno,tuđu pokretnu stvar oduzeo drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu preko 150,00 eura,na način što je prišao oštećenom B. V. i sa istim započeo razgovor,a zatim kako bi mu skrenuo pažnju počeo da ga grli i ljubi,kada je iz lijevog džepa njegove kožene jakne oduzeo i prisvojoo novčanik u vrijednosti od 19,20 eura,u kome se nalazio novac u iznosu od 265 eura,50 američkih dolara, protivrijednosti 37,00 eura,lična karta,platna kartica E.b. sa pin kodom,platna kartica P.b. sa pin kodom,kartica za osiguranje E. b.,vozačka dozvola,zdravstvena knjižica i saobrćajna dozvola na ime V. R.,čime je pribavio protivpravnu imovinsku korist u vrijednosti novca i stvari,da bi zatim istog dana, oko 13,00 časova,u B. P. Ć. u P.,po prethodnom dogovoru i zajedno sa izvjesnim S.K.,svjestan svog djela čije je izvršenje htio i znajući da je isto zabranjeno,upotrijebio tuđu pravu karticu koju je pribavio krađom,na način što je iz novčanika oštećenog B.V. uzeo platu karticu „E. b.“,a zatim pokušao da podigne novac sa bankomata te banke u čemu je spriječen intervencijom službenika obezbjeđenja te banke,</opisSlucaja>
+        <svjedoci>
+          <svjedok>nesumnjivo u</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>je nalaz i mišljenje sudskog vještaka komercijalne struke Đ. D. Kt.br. 423 od 21.04.2014 godine</dokaz>
+          <dokaz>je službenu zabilješku UPCB P. od 17.04.2014 godine</dokaz>
+          <dokaz>je službenu zabilješku UPCB P. o predaji lične karte na ime B. V.</dokaz>
+          <dokaz>je potvrdu o privremeno oduzetim predmetima na ime V. I. od 17.04.2014 godine</dokaz>
+          <dokaz>je potvrdu Direkcije za azil na ime B.R.</dokaz>
+          <dokaz>svjedoka-oštećenog B.V.</dokaz>
+          <dokaz>je svjedoka M. M.</dokaz>
+          <dokaz>je sudskog vještaka komercijlne struke Đ.D.</dokaz>
+          <dokaz>je sudskog vještaka mediciske struke psihijatra dr G.Ž. i izvršio je uvid u CD od 17.04.2014 godine izuzet sa kamere „E. b.“ u B. P. Ć..
+Ocjenom navoda optužbe i odbrane</dokaz>
+          <dokaz>video zapisa</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5 EUR</iznos>
+          <iznos>265,00 EUR</iznos>
+          <iznos>265 EUR</iznos>
+          <iznos>19,20 EUR</iznos>
+          <iznos>3.000 EUR</iznos>
+          <iznos>0,7829 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>302,00 EUR</iznos>
+          <iznos>227,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>104,50 EUR</iznos>
+          <iznos>37,00 EUR</iznos>
+          <iznos>82,50 EUR</iznos>
+          <iznos>260 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 13/969, sudija Đuković Goran</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u t, otac H., majka A., prebivalište: državi rođenja, zaposlen u privatnoj firmi „G. P., razveden, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 17.aprila 2014 godine,oko 12,00 časova,u ugostiteljskom objektu „P.“,naselje K.,u P.,svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno,tuđu pokretnu stvar oduzeo drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu preko 150,00 eura,na način što je prišao oštećenom B. V. i sa istim započeo razgovor,a zatim kako bi mu skrenuo pažnju počeo da ga grli i ljubi,kada je iz lijevog džepa njegove kožene jakne oduzeo i prisvojoo novčanik u vrijednosti od 19,20 eura,u kome se nalazio novac u iznosu od 265 eura,50 američkih dolara, protivrijednosti 37,00 eura,lična karta,platna kartica E.b. sa pin kodom,platna kartica P.b. sa pin kodom,kartica za osiguranje E. b.,vozačka dozvola,zdravstvena knjižica i saobrćajna dozvola na ime V. R.,čime je pribavio protivpravnu imovinsku korist u vrijednosti novca i stvari,da bi zatim istog dana, oko 13,00 časova,u B. P. Ć. u P.,po prethodnom dogovoru i zajedno sa izvjesnim S.K.,svjestan svog djela čije je izvršenje htio i znajući da je isto zabranjeno,upotrijebio tuđu pravu karticu koju je pribavio krađom,na način što je iz novčanika oštećenog B.V. uzeo platu karticu „E. b.“,a zatim pokušao da podigne novac sa bankomata te banke u čemu je spriječen intervencijom službenika obezbjeđenja te banke,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• je nalaz i mišljenje sudskog vještaka komercijalne struke Đ. D. Kt.br. 423 od 21.04.2014 godine</p>
+            <p>• je službenu zabilješku UPCB P. od 17.04.2014 godine</p>
+            <p>• je službenu zabilješku UPCB P. o predaji lične karte na ime B. V.</p>
+            <p>• je potvrdu o privremeno oduzetim predmetima na ime V. I. od 17.04.2014 godine</p>
+            <p>• je potvrdu Direkcije za azil na ime B.R.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 4(četiri)mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 239 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

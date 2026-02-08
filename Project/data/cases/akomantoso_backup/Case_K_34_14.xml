@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_34_14">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_34_14"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_34_14"/>
+          <FRBRdate date="2016-07-01" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_34_14/srp@2016-07-01"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_34_14/srp@2016-07-01"/>
+          <FRBRdate date="2016-07-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_34_14/srp@2016-07-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_34_14/srp@2016-07-01.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u Baru"/>
+        <TLCPerson eId="sudija" href="/ontology/person/tamara_spasojević" showAs="Tamara Spasojević"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="I.Z."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Baru</sud>
+        <brojPredmeta>34/14</brojPredmeta>
+        <datum>01.07.2016</datum>
+        <datumNormalizovan>2016-07-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Tamara Spasojević</sudija>
+        <optuzeni>I.Z.</optuzeni>
+        <podaciORoditeljima>otac M., majka S.</podaciORoditeljima>
+        <prebivaliste>njegova porodica i gdje ima privatno preduzeće a sve pomenute kupovine i plaćanja novčanicama od </prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>700,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana ... godine, oko ... časova u kiosku ,,Š“ u ul. ,,S.S.“ u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 €, serijskog broja U ... za koju je znao da je lažna na način što je prilikom kupovine cigareta marke ,, P.“ i ,,D.“ i elektronske dopune od 10 €, platio prodavačici K.S. ovom falsifikovanom novčanicom.</opisSlucaja>
+        <svjedoci>
+          <svjedok>sa z</svjedok>
+          <svjedok>R. R.a</svjedok>
+          <svjedok>proizilazi d</svjedok>
+          <svjedok>mu j</svjedok>
+          <svjedok>je d</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dvije novčanice koje je dostavila Centralna banka istog serijskog broj X879123021448</dokaz>
+          <dokaz>video zapis sa objekta DOO K. u B.</dokaz>
+          <dokaz>izvod iz KE na ime okrivljenog.
+Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi</dokaz>
+          <dokaz>potvrdu o oduzetoj novčanici u apoenima od 100</dokaz>
+          <dokaz>izvod iz KE na ime okrivljenog.
+Sud je cijeneći dokaze pojedinačno i u medjusobnoj povezanosti</dokaz>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog. Drugih predloga za dopunu dokaznog postupka nije bilo.
+Sud je cijeneći odbranu okrivljenog i dokaze pojedinačno i u medjusobnoj vezi</dokaz>
+          <dokaz>dvije novčanice u apoenima od po 200</dokaz>
+          <dokaz>izvod iz KE na ime optuženog T. D.a</dokaz>
+          <dokaz>foto-tehničku dokumentaciju UP OB Mojkovac</dokaz>
+          <dokaz>9 novčanica apoena od 20</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>35,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>26,80 EUR</iznos>
+          <iznos>32 EUR</iznos>
+          <iznos>45 EUR</iznos>
+          <iznos>984,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>7 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>45,50 EUR</iznos>
+          <iznos>7,00 EUR</iznos>
+          <iznos>1.300 EUR</iznos>
+          <iznos>95,00 EUR</iznos>
+          <iznos>3.692 EUR</iznos>
+          <iznos>132,00 EUR</iznos>
+          <iznos>70 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>640 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>10,25 EUR</iznos>
+          <iznos>87,75 EUR</iznos>
+          <iznos>321,75 EUR</iznos>
+          <iznos>700 EUR</iznos>
+          <iznos>35 EUR</iznos>
+          <iznos>234,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>150 EUR</iznos>
+          <iznos>175,50 EUR</iznos>
+          <iznos>120,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>1.100 EUR</iznos>
+          <iznos>952,00 EUR</iznos>
+          <iznos>1.200 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>60 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>248,50 EUR</iznos>
+          <iznos>56,75 EUR</iznos>
+          <iznos>3.537 EUR</iznos>
+          <iznos>90,00 EUR</iznos>
+          <iznos>750,00 EUR</iznos>
+          <iznos>0,75 EUR</iznos>
+          <iznos>3 EUR</iznos>
+          <iznos>63 EUR</iznos>
+          <iznos>0,70 EUR</iznos>
+          <iznos>119,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>58,50 EUR</iznos>
+          <iznos>28 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Baru, 34/14, sudija Tamara Spasojević</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: I.Z., otac M., majka S., prebivalište: njegova porodica i gdje ima privatno preduzeće a sve pomenute kupovine i plaćanja novčanicama od , nezaposlen, oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana ... godine, oko ... časova u kiosku ,,Š“ u ul. ,,S.S.“ u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 €, serijskog broja U ... za koju je znao da je lažna na način što je prilikom kupovine cigareta marke ,, P.“ i ,,D.“ i elektronske dopune od 10 €, platio prodavačici K.S. ovom falsifikovanom novčanicom.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dvije novčanice koje je dostavila Centralna banka istog serijskog broj X879123021448</p>
+            <p>• video zapis sa objekta DOO K. u B.</p>
+            <p>• izvod iz KE na ime okrivljenog.
+Cijeneći odbranu okrivljenog i dokaze pojedinačno i u međusobnoj vezi</p>
+            <p>• potvrdu o oduzetoj novčanici u apoenima od 100</p>
+            <p>• izvod iz KE na ime okrivljenog.
+Sud je cijeneći dokaze pojedinačno i u medjusobnoj povezanosti</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 (jedne) godin</p>
+          <p>Novčana kazna: 700,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

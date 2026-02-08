@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_399_15_15">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_15_15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_15_15"/>
+          <FRBRdate date="2015-10-13" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_15_15/srp@2015-10-13"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_15_15/srp@2015-10-13"/>
+          <FRBRdate date="2015-10-13" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_15_15/srp@2015-10-13.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_15_15/srp@2015-10-13.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="N.G."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>399/15/15</brojPredmeta>
+        <datum>13.10.2015</datum>
+        <datumNormalizovan>2015-10-13</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>N.G.</optuzeni>
+        <podaciORoditeljima>otac S., majka V.</podaciORoditeljima>
+        <zaposlenost>zaposlen u M.</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>OŠ</obrazovanje>
+        <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>45 (četrdesetpet) dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>, Što je, U noći .. godine u B., lažan novac i to novčanicu u apoenu od . eura, ser.br. ., koju je primio kao pravu, pošto je saznao da je lažna, stavio u opticaj, na način što je istu primio kao pravu u mjenjačnici u K., a zatim je predao radnici ugostiteljskog objekta „Š.a“, prilikom plaćanja računa od .,00 eura, pa kada je saznao od iste da je lažna, stavio je u opticaj tako što je predao konobaru, oštećenom G. Bo., u ugostiteljskom objektu caffe bar „M.“ u B., prilikom plaćanja računa u iznosu od . eura, a koji mu je vratio kusur u iznosu od . eura, pri čemu je bio uračunljiv i svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog B.</svjedok>
+          <svjedok>oštećeni B.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca br. 370 Centralne banke C. G. od 01.09.2015. godine</dokaz>
+          <dokaz>potvrda o privremenom oduzimanju predmeta UP CB B. br. 73 02-240/15-9736 od 31.08.2015. godine na ime B.G.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>9 EUR</iznos>
+          <iznos>3 EUR</iznos>
+          <iznos>197,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>3,00 EUR</iznos>
+          <iznos>190 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>7,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>7 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 399/15/15, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: N.G., otac S., majka V., zaposlen u M., neoženjen, ranije neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>, Što je, U noći .. godine u B., lažan novac i to novčanicu u apoenu od . eura, ser.br. ., koju je primio kao pravu, pošto je saznao da je lažna, stavio u opticaj, na način što je istu primio kao pravu u mjenjačnici u K., a zatim je predao radnici ugostiteljskog objekta „Š.a“, prilikom plaćanja računa od .,00 eura, pa kada je saznao od iste da je lažna, stavio je u opticaj tako što je predao konobaru, oštećenom G. Bo., u ugostiteljskom objektu caffe bar „M.“ u B., prilikom plaćanja računa u iznosu od . eura, a koji mu je vratio kusur u iznosu od . eura, pri čemu je bio uračunljiv i svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvještaj o izvršenoj tehničkoj analizi novca br. 370 Centralne banke C. G. od 01.09.2015. godine</p>
+            <p>• potvrda o privremenom oduzimanju predmeta UP CB B. br. 73 02-240/15-9736 od 31.08.2015. godine na ime B.G.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 45 (četrdesetpet) dana</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

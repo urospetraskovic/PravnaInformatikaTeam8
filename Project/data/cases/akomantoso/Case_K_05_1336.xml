@@ -1,0 +1,124 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_05_1336">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_05_1336"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_05_1336"/>
+          <FRBRdate date="2016-10-10" name="judgment"/>
+          <FRBRauthor href="#bijelom_polju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_05_1336/srp@2016-10-10"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_05_1336/srp@2016-10-10"/>
+          <FRBRdate date="2016-10-10" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_05_1336/srp@2016-10-10.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_05_1336/srp@2016-10-10.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ivan_adamović" showAs="Ivan Adamović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="B.D."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>05/1336</brojPredmeta>
+        <datum>10. 10. 2016</datum>
+        <datumNormalizovan>2016-10-10</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Ivan Adamović</sudija>
+        <optuzeni>B.D.</optuzeni>
+        <prebivaliste>mjestu rođenja</prebivaliste>
+        <zaposlenost>zaposlen u firmi "Dekor Iva" u Podgorici. Irena ga je zamolila da je preveze vozilom do Bijelog Polja a kako je u tom trenutku imao iznajmljeno vozilo od renta car firme Irenu je povezao do Bijelog Polja. U povratku prema Podgorici primijetio je na jednom mjestu lice koje prodaje domaće proizvode pa je stao vozilom da kupi med za majku. Pitao je to lice odakle mu med i odlučio je da kupi jednu teglu meda a prodavac</zaposlenost>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>3 mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>35,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>-Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renault-Clio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,</opisSlucaja>
+        <svjedoci>
+          <svjedok>mu j</svjedok>
+          <svjedok>vratio s</svjedok>
+          <svjedok>je o</svjedok>
+          <svjedok>zamolio v</svjedok>
+          <svjedok>ne n</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>foto-tehničku dokumentaciju UP OB Mojkovac</dokaz>
+          <dokaz>9 novčanica apoena od 20</dokaz>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog.
+Sud je cijenio iskaz svjedoka N.M.</dokaz>
+          <dokaz>prepis zapisnika sa iskazom svjedokinje J.C.</dokaz>
+          <dokaz>potvrde o privremenom oduzimanju predmeta Uprave policije od 29. 08. 2016.godine izdate N.M.i V.u R.u</dokaz>
+          <dokaz>potvrdu o privremenom oduzimanju predmeta od 31. 08. 2016. godine</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica Uprave policije CB Bijelo Polje od 07. 09. 2016. godine</dokaz>
+          <dokaz>službena zabilješka Uprave policije OB Mojkovac od 30. 08. 2016. godine</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca CB CG - Nacionalnog centra za analizu novčanica</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca CB CG - Nacionalnog centra za nalizu novčanica od 09. 09. 2016. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>15,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>132,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 05/1336, sudija Ivan Adamović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: B.D., prebivalište: mjestu rođenja, zaposlen u firmi "Dekor Iva" u Podgorici. Irena ga je zamolila da je preveze vozilom do Bijelog Polja a kako je u tom trenutku imao iznajmljeno vozilo od renta car firme Irenu je povezao do Bijelog Polja. U povratku prema Podgorici primijetio je na jednom mjestu lice koje prodaje domaće proizvode pa je stao vozilom da kupi med za majku. Pitao je to lice odakle mu med i odlučio je da kupi jednu teglu meda a prodavac, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>-Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renault-Clio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• foto-tehničku dokumentaciju UP OB Mojkovac</p>
+            <p>• 9 novčanica apoena od 20</p>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog.
+Sud je cijenio iskaz svjedoka N.M.</p>
+            <p>• prepis zapisnika sa iskazom svjedokinje J.C.</p>
+            <p>• potvrde o privremenom oduzimanju predmeta Uprave policije od 29. 08. 2016.godine izdate N.M.i V.u R.u</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 mjeseca</p>
+          <p>Novčana kazna: 35,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_738_16">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_738_16"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_738_16"/>
+          <FRBRdate date="2017-02-13" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_738_16/srp@2017-02-13"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_738_16/srp@2017-02-13"/>
+          <FRBRdate date="2017-02-13" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_738_16/srp@2017-02-13.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_738_16/srp@2017-02-13.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_đuković" showAs="Goran Đuković"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>738/16</brojPredmeta>
+        <datum>13.02.2017</datum>
+        <datumNormalizovan>2017-02-13</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Goran Đuković</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac M., majka V.</podaciORoditeljima>
+        <prebivaliste>mjestu rođenja</prebivaliste>
+        <zaposlenost>nezaposlena</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>30 dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>140,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>potvrđen j</svjedok>
+          <svjedok>oštećena J.</svjedok>
+          <svjedok>oštećeni V.</svjedok>
+          <svjedok>precizno i </svjedok>
+          <svjedok>oštećenog j</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17.01.2016. godine i pročitao izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</dokaz>
+          <dokaz>12 fotografija video nadzora bankomata „H. banke“ od 19.septembra 2020.godine u vremenu od 00:58:29 do 00:59:38 časova</dokaz>
+          <dokaz>fotokopiju platne kartice „M. card“ izdatu od „xxx“ banke na ime V. S..
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>tri snimka sa bankomata CKB od 22.05.2009.godine</dokaz>
+          <dokaz>fotodokumentaciju Uprave policije Redgionalni centar brzbjednosti „Centar“ broj .. od .godine i izvršio uvid u CD sa snimkom video nadzora izuzetog iz marketa „F.“.
+Sud nije prihvatio predlog odbrane za saslušanjem svjedoka M. D.</dokaz>
+          <dokaz>video zapis predmetnog dogadjaja i pročitao izvještaj Uprave policije PJ Podgorice iz kaznene evidencije na ime okrivljenog R. N. od 04. 03. 2013. godine.
+Ocjenom navoda optužbe</dokaz>
+          <dokaz>iskaz svjedoka oštećene B. M. sa zapisnika Kt.br.100/16 od 01.04.2016. godine</dokaz>
+          <dokaz>službenu zabilješku UP CB Podgorica Ku.br.44/2016</dokaz>
+          <dokaz>potvrda UP CB Podgorica o vraćanju privremeno oduzetih predmeta 47/2 od 17.01.2016. godine</dokaz>
+          <dokaz>izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>60,50 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>25,13 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>298,00 EUR</iznos>
+          <iznos>196,00 EUR</iznos>
+          <iznos>298 EUR</iznos>
+          <iznos>536,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>167,00 EUR</iznos>
+          <iznos>900,00 EUR</iznos>
+          <iznos>1.200 EUR</iznos>
+          <iznos>43,20 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>300 EUR</iznos>
+          <iznos>505,00 EUR</iznos>
+          <iznos>1019,70 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>90,50 EUR</iznos>
+          <iznos>140,00 EUR</iznos>
+          <iznos>82,50 EUR</iznos>
+          <iznos>145,00 EUR</iznos>
+          <iznos>80 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>30,48 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>137,50 EUR</iznos>
+          <iznos>400 EUR</iznos>
+          <iznos>25.13 EUR</iznos>
+          <iznos>56,00 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+          <iznos>238.00 EUR</iznos>
+          <iznos>110,00 EUR</iznos>
+          <iznos>5,40 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>6,70 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>90,84 EUR</iznos>
+          <iznos>187,50 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>600 EUR</iznos>
+          <iznos>3,44 EUR</iznos>
+          <iznos>90,00 EUR</iznos>
+          <iznos>172,60 EUR</iznos>
+          <iznos>635,50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>310,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>10,48 EUR</iznos>
+          <iznos>290,00 EUR</iznos>
+          <iznos>126,50 EUR</iznos>
+          <iznos>710,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>516,60 EUR</iznos>
+          <iznos>002,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>160 EUR</iznos>
+          <iznos>802,50 EUR</iznos>
+          <iznos>2 EUR</iznos>
+          <iznos>515,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>850,00 EUR</iznos>
+          <iznos>4,00 EUR</iznos>
+          <iznos>22.00 EUR</iznos>
+          <iznos>170 EUR</iznos>
+          <iznos>270,00 EUR</iznos>
+          <iznos>32,35 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>10,36 EUR</iznos>
+          <iznos>0,19 EUR</iznos>
+          <iznos>990,00 EUR</iznos>
+          <iznos>293,00 EUR</iznos>
+          <iznos>22,00 EUR</iznos>
+          <iznos>91,00 EUR</iznos>
+          <iznos>407,50 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>30.00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>7,76 EUR</iznos>
+          <iznos>22,50 EUR</iznos>
+          <iznos>120,00 EUR</iznos>
+          <iznos>701,00 EUR</iznos>
+          <iznos>828,70 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>775,00 EUR</iznos>
+          <iznos>22,5 EUR</iznos>
+          <iznos>021,50 EUR</iznos>
+          <iznos>196 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 738/16, sudija Goran Đuković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac M., majka V., prebivalište: mjestu rođenja, nezaposlena, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17.01.2016. godine i pročitao izvod iz KE za okrivljenog izdat od Osnovnog suda.
+Iz iskaza oštećene B. M. datog u prethodnom postupku proizilazi da je dana 04.11.2015. godine trgovala u prodavnici „B.“ u Gornjoj Gorici za iznos od 20</p>
+            <p>• 12 fotografija video nadzora bankomata „H. banke“ od 19.septembra 2020.godine u vremenu od 00:58:29 do 00:59:38 časova</p>
+            <p>• fotokopiju platne kartice „M. card“ izdatu od „xxx“ banke na ime V. S..
+Ocjenom navoda optužbe</p>
+            <p>• tri snimka sa bankomata CKB od 22.05.2009.godine</p>
+            <p>• fotodokumentaciju Uprave policije Redgionalni centar brzbjednosti „Centar“ broj .. od .godine i izvršio uvid u CD sa snimkom video nadzora izuzetog iz marketa „F.“.
+Sud nije prihvatio predlog odbrane za saslušanjem svjedoka M. D.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 30 dana</p>
+          <p>Novčana kazna: 140,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_231_08">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_231_08"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_231_08"/>
+          <FRBRdate date="2012-11-06" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_231_08/srp@2012-11-06"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_231_08/srp@2012-11-06"/>
+          <FRBRdate date="2012-11-06" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_231_08/srp@2012-11-06.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_231_08/srp@2012-11-06.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jelena_perović" showAs="Jelena Perović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="P.Š."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>231/08</brojPredmeta>
+        <datum>06.11.2012</datum>
+        <datumNormalizovan>2012-11-06</datumNormalizovan>
+        <godina>2012</godina>
+        <sudija>Jelena Perović</sudija>
+        <optuzeni>P.Š.</optuzeni>
+        <podaciORoditeljima>otac B., majka M.</podaciORoditeljima>
+        <prebivaliste>na Cetinju ul</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>134,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 04.novembra 2012. godine, u Podgorici, svjestan svog djela čije je izvršenje htio iako je znao da je njegovo djelo zabranjeno, upotrijebio kao pravu lažnu platnu karticu navodno izdatu od NLB Montenegrobanka AD Podgorica, a na koju su unijeti podaci sa originalne kartice vlasništvo Chase banke iz Sjedinjenih Američkih Država, na način što je u Poslovnom centru Delta City u radnji Grifon computers ovom karticom br.43885760xxxxxxxx u 15:06h i 15:21 h kupio dva lap topa, televizor marke Toshiba u ukupnom iznosu od 2.009,4 eura da bi nakon toga u marketu Voli 5 u ulici Ilije Milačića br.x, u 16:23h i 16:25h koristeći istu platnu karticu kupio robu u ukupnom iznosu od 189,58 eura, i time sebi pribavio protivpravnu imovinsku korist u označenim iznosima</opisSlucaja>
+        <svjedoci>
+          <svjedok>Jovanović J</svjedok>
+          <svjedok>oštećenog R.</svjedok>
+          <svjedok>oštećene Đ.</svjedok>
+          <svjedok>oštećeni n</svjedok>
+          <svjedok>oštećeni M.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>CD snimak sa sigurnosnih kamera u objektima Voli i Grismont Computers</dokaz>
+          <dokaz>kopiju kartice NLB Montenegro banke i kopiju fiskalnih računa iz marketa Voli</dokaz>
+          <dokaz>CD snimak sa bankomata S8AC8855 Podgorica - Metalka i video nadzora ulaza iste poslovnice</dokaz>
+          <dokaz>Izvod prometa po računu broj XXX-XXXXXXXXXXXXXXX na ime Đ. I. za period od 15.08.2018. godine do 24.10.2018. godine</dokaz>
+          <dokaz>fotografiju kartice "C. banke" broj …… vlasništvo oštećenog M.M.</dokaz>
+          <dokaz>fotografije slipova izdatih od strane taksi udruženja "N.T." i pekare "D."</dokaz>
+          <dokaz>CD video nadzora i pročitao izvod iz registra kaznenih evidencija na ime okrivljene izdat od Ministarstva pravde ljudskih i manjinskih prava pod brojem KE 194/2024 od 09.02.2024. godine.
+Saslušan na glavnom pretresu svjedok oštećeni M.M. je ponovio navode iznijete u prethodnom postupku iz kojeg proizilazi da je dana 12.06.2023. godine</dokaz>
+          <dokaz>original i kopiju potvrde Hipotekarne banke AD Podgorica broj 0105-3779 od 17.11.2023. godine</dokaz>
+          <dokaz>izvod za račun Hipotekarne banke Ad Podgorica broj ... od 20.11.2023. godine i pročitao izvod iz kaznene evidencije na ime okrivljene T. S. izdat od strane Ministarstva pravde pod brojem ... od 16.01.2024. godine.
+Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</dokaz>
+          <dokaz>fotodokumentaciju Ku.br. 689/11 od 26.07.2011 godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>2000 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>12,70 EUR</iznos>
+          <iznos>2,40 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>2.99 EUR</iznos>
+          <iznos>16,30 EUR</iznos>
+          <iznos>150 EUR</iznos>
+          <iznos>50.00 EUR</iznos>
+          <iznos>189,58 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>027,65 EUR</iznos>
+          <iznos>134,00 EUR</iznos>
+          <iznos>29 EUR</iznos>
+          <iznos>15,30 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>1,20 EUR</iznos>
+          <iznos>03 EUR</iznos>
+          <iznos>13,20 EUR</iznos>
+          <iznos>14,10 EUR</iznos>
+          <iznos>145,00 EUR</iznos>
+          <iznos>80 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>02,00 EUR</iznos>
+          <iznos>210,00 EUR</iznos>
+          <iznos>75,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>225,00 EUR</iznos>
+          <iznos>129.49 EUR</iznos>
+          <iznos>154,00 EUR</iznos>
+          <iznos>009,4 EUR</iznos>
+          <iznos>60,09 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>09,90 EUR</iznos>
+          <iznos>15 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>7,40 EUR</iznos>
+          <iznos>100.00 EUR</iznos>
+          <iznos>981,75 EUR</iznos>
+          <iznos>129,49 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>200.00 EUR</iznos>
+          <iznos>24,70 EUR</iznos>
+          <iznos>2,99 EUR</iznos>
+          <iznos>650,00 EUR</iznos>
+          <iznos>2009,4 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>60.09 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>11,78 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>32,00 EUR</iznos>
+          <iznos>3,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>3,50 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>371,39 EUR</iznos>
+          <iznos>11,20 EUR</iznos>
+          <iznos>48 EUR</iznos>
+          <iznos>4,00 EUR</iznos>
+          <iznos>3,95 EUR</iznos>
+          <iznos>34,45 EUR</iznos>
+          <iznos>1,28 EUR</iznos>
+          <iznos>228,83 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>57 EUR</iznos>
+          <iznos>75 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+          <iznos>3,30 EUR</iznos>
+          <iznos>460,00 EUR</iznos>
+          <iznos>9,90 EUR</iznos>
+          <iznos>104,50 EUR</iznos>
+          <iznos>59 EUR</iznos>
+          <iznos>65,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>240,00 EUR</iznos>
+          <iznos>1027,65 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>134,50 EUR</iznos>
+          <iznos>050,00 EUR</iznos>
+          <iznos>580,00 EUR</iznos>
+          <iznos>8,33 EUR</iznos>
+          <iznos>140.00 EUR</iznos>
+          <iznos>1,30 EUR</iznos>
+          <iznos>586,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>152,00 EUR</iznos>
+          <iznos>370,00 EUR</iznos>
+          <iznos>1000 EUR</iznos>
+          <iznos>38,00 EUR</iznos>
+          <iznos>2,80 EUR</iznos>
+          <iznos>07,40 EUR</iznos>
+          <iznos>620,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 231/08, sudija Jelena Perović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: P.Š., otac B., majka M., prebivalište: na Cetinju ul, nezaposlen, razveden, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 04.novembra 2012. godine, u Podgorici, svjestan svog djela čije je izvršenje htio iako je znao da je njegovo djelo zabranjeno, upotrijebio kao pravu lažnu platnu karticu navodno izdatu od NLB Montenegrobanka AD Podgorica, a na koju su unijeti podaci sa originalne kartice vlasništvo Chase banke iz Sjedinjenih Američkih Država, na način što je u Poslovnom centru Delta City u radnji Grifon computers ovom karticom br.43885760xxxxxxxx u 15:06h i 15:21 h kupio dva lap topa, televizor marke Toshiba u ukupnom iznosu od 2.009,4 eura da bi nakon toga u marketu Voli 5 u ulici Ilije Milačića br.x, u 16:23h i 16:25h koristeći istu platnu karticu kupio robu u ukupnom iznosu od 189,58 eura, i time sebi pribavio protivpravnu imovinsku korist u označenim iznosima</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• CD snimak sa sigurnosnih kamera u objektima Voli i Grismont Computers</p>
+            <p>• kopiju kartice NLB Montenegro banke i kopiju fiskalnih računa iz marketa Voli</p>
+            <p>• CD snimak sa bankomata S8AC8855 Podgorica - Metalka i video nadzora ulaza iste poslovnice</p>
+            <p>• Izvod prometa po računu broj XXX-XXXXXXXXXXXXXXX na ime Đ. I. za period od 15.08.2018. godine do 24.10.2018. godine</p>
+            <p>• fotografiju kartice "C. banke" broj …… vlasništvo oštećenog M.M.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci (uslovna osuda)</p>
+          <p>Novčana kazna: 134,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

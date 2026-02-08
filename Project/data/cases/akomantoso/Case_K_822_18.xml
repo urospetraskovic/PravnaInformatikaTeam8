@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_822_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_822_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_822_18"/>
+          <FRBRdate date="2015-11-11" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_822_18/srp@2015-11-11"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_822_18/srp@2015-11-11"/>
+          <FRBRdate date="2015-11-11" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_822_18/srp@2015-11-11.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_822_18/srp@2015-11-11.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/željka_jovović" showAs="Željka Jovović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>822/18</brojPredmeta>
+        <datum>11. 11. 2015</datum>
+        <datumNormalizovan>2015-11-11</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Željka Jovović</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac B, majka S</podaciORoditeljima>
+        <prebivaliste>Spužu</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>30 (trideset) dana</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 09. jula 2015. godine, u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, iako je znao da je načinjen lažan novac, to nije prijavio, na način što nije prijavio da je načinjena lažna novčanica u apoenu od 100 eura, serijskog broja N15075191271, koju je dobio od neidentifikovanog lica, a za koju je znao da je lažna,</opisSlucaja>
+        <dokazi>
+          <dokaz>Službenu zabilješku Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku. br. 588/15 od 09. 07. 2015. godine</dokaz>
+          <dokaz>Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore-Trezor-Nacionalni centar za anallizu novčanica broj 234 od 16. 07. 2015. godine i Uvjerenje iz kaznene evidencije na ime okrivljenog M.P od 14. 10. 2015. godine.
+U Službenoj zabilješci Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku. br. 588/15 od 09. 07. 2015. godine</dokaz>
+          <dokaz>Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore Trezor-Nacionalni centar za anallizu novčanica broj 234 od 16. 07. 2015. godine iz koga je sud utvrdio da je predmetna novčanica falsifikat</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 822/18, sudija Željka Jovović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac B, majka S, prebivalište: Spužu, nezaposlen, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 09. jula 2015. godine, u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, iako je znao da je načinjen lažan novac, to nije prijavio, na način što nije prijavio da je načinjena lažna novčanica u apoenu od 100 eura, serijskog broja N15075191271, koju je dobio od neidentifikovanog lica, a za koju je znao da je lažna,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Službenu zabilješku Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku. br. 588/15 od 09. 07. 2015. godine</p>
+            <p>• Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore-Trezor-Nacionalni centar za anallizu novčanica broj 234 od 16. 07. 2015. godine i Uvjerenje iz kaznene evidencije na ime okrivljenog M.P od 14. 10. 2015. godine.
+U Službenoj zabilješci Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku. br. 588/15 od 09. 07. 2015. godine</p>
+            <p>• Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke Crne Gore Trezor-Nacionalni centar za anallizu novčanica broj 234 od 16. 07. 2015. godine iz koga je sud utvrdio da je predmetna novčanica falsifikat</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 30 (trideset) dana</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

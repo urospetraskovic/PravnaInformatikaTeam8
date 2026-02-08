@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_20260208142420">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_20260208142420"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208142420"/>
+          <FRBRdate date="2026-02-08" name="judgment"/>
+          <FRBRauthor href="#nepoznat"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_20260208142420/srp@2026-02-08"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208142420/srp@2026-02-08"/>
+          <FRBRdate date="2026-02-08" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_20260208142420/srp@2026-02-08.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208142420/srp@2026-02-08.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nepoznat" showAs="Osnovni Sud u Nepoznat"/>
+      </references>
+      <proprietary source="#court">
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: None</p>
+        </block>
+      </background>
+      <decision>
+        <block name="odluka"/>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: None</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

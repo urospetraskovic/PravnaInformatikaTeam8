@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_9_18">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18"/>
+          <FRBRdate date="2019-12-19" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19"/>
+          <FRBRdate date="2019-12-19" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9_18/srp@2019-12-19.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="M V "/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>9/18</brojPredmeta>
+        <datum>19.12.2019</datum>
+        <datumNormalizovan>2019-12-19</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Nepoznat</sudija>
+        <optuzeni>M V </optuzeni>
+        <podaciORoditeljima>otac D, majka N</podaciORoditeljima>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>OŠ</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>630,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 11.06. i dana godine, u B, pri čemu je bio uračunljiv, svjestan svoga djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana 11.06.2019. godine, oko 18,50 časova, u trafici „T s“, koja se nalazi u lažnu novčanicu od 200,00 €, serijskog broja predao prilikom kupovine u trafici, nakon čega je dana 12.06.2019. godine, oko 22,40 časova, na „E p“ u B, lažnu novčanicu od 200,00 € serijskog broja predao na kasi prilikom kupovone,</opisSlucaja>
+        <svjedoci>
+          <svjedok>da j</svjedok>
+          <svjedok>kritični d</svjedok>
+          <svjedok>je n</svjedok>
+          <svjedok>koji v</svjedok>
+          <svjedok>prijavio t</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>službenu zabilješku Uprave policije CB B 20/2-1 broj 03-240/19-2558 od 16.6.2019 godine</dokaz>
+          <dokaz>fotodokumentaciju br. 208/19 koja mu je od strane suda pokazana</dokaz>
+          <dokaz>svjedoke J N i KJ</dokaz>
+          <dokaz>Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke C G broj 346 od 14.6.2019.godine</dokaz>
+          <dokaz>Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke C G br. 348 od 17.6.2019 godine</dokaz>
+          <dokaz>Izvještaj o audio -video vještačenju broj 3783/19 od 2.10.2019 godine F centra D i dopis F centra 11 br. 051/19-618 od 5.11.2019. godine.
+Svjedok J N je na zapisnik pred ODT K naveo da je zaposlen na „E p“ pumpi koja se nalazi u B</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca Centralne banke C G broj 346 od 14.6.2019.godine utvrdjeno je tehničkom analizom jedne novčanice u apoenu od 200</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca Centralne banke CG br. 348 od 17.6.2019 godine</dokaz>
+          <dokaz>izvještaj o audio-video vještačenju broj 3783/19 od 2.10.2019. godine Fo centra D</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija Uprave policije CB B 20/3-2 broj 02-241/19-2601 od 17.6.2019 godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>175,00 EUR</iznos>
+          <iznos>630,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>6,60 EUR</iznos>
+          <iznos>7,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>1,60 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 9/18</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: M V , otac D, majka N, nezaposlen, razveden, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.06. i dana godine, u B, pri čemu je bio uračunljiv, svjestan svoga djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana 11.06.2019. godine, oko 18,50 časova, u trafici „T s“, koja se nalazi u lažnu novčanicu od 200,00 €, serijskog broja predao prilikom kupovine u trafici, nakon čega je dana 12.06.2019. godine, oko 22,40 časova, na „E p“ u B, lažnu novčanicu od 200,00 € serijskog broja predao na kasi prilikom kupovone,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• službenu zabilješku Uprave policije CB B 20/2-1 broj 03-240/19-2558 od 16.6.2019 godine</p>
+            <p>• fotodokumentaciju br. 208/19 koja mu je od strane suda pokazana</p>
+            <p>• svjedoke J N i KJ</p>
+            <p>• Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke C G broj 346 od 14.6.2019.godine</p>
+            <p>• Izvještaj o izvršenoj tehničkoj analizi novca Centralne banke C G br. 348 od 17.6.2019 godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci (uslovna osuda)</p>
+          <p>Novčana kazna: 630,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

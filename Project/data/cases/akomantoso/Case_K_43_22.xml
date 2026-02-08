@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_43_22">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_43_22"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_43_22"/>
+          <FRBRdate date="2016-04-04" name="judgment"/>
+          <FRBRauthor href="#rožajama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_43_22/srp@2016-04-04"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_43_22/srp@2016-04-04"/>
+          <FRBRdate date="2016-04-04" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_43_22/srp@2016-04-04.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_43_22/srp@2016-04-04.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/rožajama" showAs="Osnovni Sud u ROŽAJAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/milosav_zekić" showAs="Milosav Zekić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i n"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ROŽAJAMA</sud>
+        <brojPredmeta>43/22</brojPredmeta>
+        <datum>04.04.2016</datum>
+        <datumNormalizovan>2016-04-04</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Milosav Zekić</sudija>
+        <optuzeni>i n</optuzeni>
+        <podaciORoditeljima>otac I., majka A.</podaciORoditeljima>
+        <prebivaliste>ul</prebivaliste>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>sud j</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>zapisnik o pretresu stana i drugih prostorija Uprave policije – Grupe za suzbijanje droga Bijelo Polje</dokaz>
+          <dokaz>svjedoka-ostećenog I. S.</dokaz>
+          <dokaz>fotodokumentaciju OB Rožaje br. 227/15 od 10.11.2015.g.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>49,01 EUR</iznos>
+          <iznos>149,99 EUR</iznos>
+          <iznos>40,98 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ROŽAJAMA, 43/22, sudija Milosav Zekić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i n, otac I., majka A., prebivalište: ul, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o pretresu stana i drugih prostorija Uprave policije – Grupe za suzbijanje droga Bijelo Polje</p>
+            <p>• svjedoka-ostećenog I. S.</p>
+            <p>• fotodokumentaciju OB Rožaje br. 227/15 od 10.11.2015.g.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

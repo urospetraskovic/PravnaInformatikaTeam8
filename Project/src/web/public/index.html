@@ -177,6 +177,11 @@
       color: #166534;
     }
 
+    .verdict-unknown {
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+
     /* Main Content */
     .main-panel {
       flex: 1;
@@ -574,13 +579,13 @@
           <div class="sidebar-subtitle" id="cases-count">0 cases</div>
         </div>
         <div class="search-filter">
-          <label for="type-filter">Filter by type</label>
+          <label for="type-filter">Pretraži po tipu</label>
           <select id="type-filter" onchange="filterByType(this.value)">
-            <option value="">All cases</option>
+            <option value="">Pretraži po svim slučajevima</option>
           </select>
         </div>
         <div class="cases-list" id="cases-list">
-          <div style="padding: 20px; text-align: center; color: #9ca3af;">Loading cases...</div>
+          <div style="padding: 20px; text-align: center; color: #9ca3af;">Učitavanje predmeta...</div>
         </div>
       </div>
 
@@ -589,7 +594,7 @@
           <div class="stats-bar">
             <div class="stat-item">
               <div class="stat-value" id="stat-total">0</div>
-              <div class="stat-text">Total cases</div>
+              <div class="stat-text">Ukupno slučajeva</div>
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-guilty">0</div>
@@ -597,7 +602,7 @@
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-acquitted">0</div>
-              <div class="stat-text">Oslobodjen</div>
+              <div class="stat-text">Oslobođen</div>
             </div>
           </div>
         </div>
@@ -605,7 +610,7 @@
         <div class="content-area" id="content">
           <div class="empty-state">
             <div class="empty-icon">📋</div>
-            <div style="font-size: 1.1em; margin-bottom: 5px;">Select a case to view details</div>
+            <div style="font-size: 1.1em; margin-bottom: 5px;">Izaberite predmet za prikaz detalja</div>
           </div>
         </div>
       </div>
@@ -725,12 +730,12 @@
           }
         }
         
-        const defendantName = c.defendant?.name || c.defendant?.full_description || 'Unknown';
-        const courtName = c.court || 'Unknown';
-        const sentence = c.verdict?.sentence_description || 'Not specified';
+        const defendantName = c.defendant?.name || c.defendant?.full_description || 'Nepoznat';
+        const courtName = c.court || 'Nepoznat';
+        const sentence = c.verdict?.sentence_description || 'Nepoznat';
         const articles = (c.legal?.articles_charged && c.legal.articles_charged.length > 0) ? c.legal.articles_charged : [];
-        const evidence = (c.evidence?.documents?.length > 0) ? c.evidence.documents.join(', ') : ((c.evidence?.expert_findings?.length > 0) ? c.evidence.expert_findings.join(', ') : 'Not specified');
-        const verdict = c.verdict?.guilty ? 'GUILTY' : (c.verdict?.acquitted ? 'ACQUITTED' : 'UNKNOWN');
+        const evidence = (c.evidence?.documents?.length > 0) ? c.evidence.documents.join(', ') : ((c.evidence?.expert_findings?.length > 0) ? c.evidence.expert_findings.join(', ') : 'Nepoznat');
+        const verdict = c.verdict?.guilty ? 'KRIV' : (c.verdict?.acquitted ? 'OSLOBOĐEN' : 'NEPOZNAT');
         
         return {
           id: caseId,
@@ -738,7 +743,7 @@
           court: courtName,
           year: year,
           defendant: defendantName,
-          victim: c.victim || 'Not specified',
+          victim: c.victim || 'Nepoznat',
           sentence: sentence,
           articles: articles,
           evidence: evidence,
@@ -769,7 +774,7 @@
         if (!statsResponse.ok) throw new Error(`Stats API error: ${statsResponse.status}`);
         const stats = await statsResponse.json();
         
-        document.getElementById('cases-count').textContent = `${allCases.length} cases`;
+        document.getElementById('cases-count').textContent = `${allCases.length} predmeta`;
         document.getElementById('stat-total').textContent = stats.totalCases;
         document.getElementById('stat-guilty').textContent = stats.guiltyCount;
         document.getElementById('stat-acquitted').textContent = stats.acquittedCount;
@@ -814,23 +819,27 @@
       const list = document.getElementById('cases-list');
       
       if (!displayedCases || displayedCases.length === 0) {
-        list.innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">No cases found</div>';
+        list.innerHTML = '<div style="padding: 20px; text-align: center; color: #9ca3af;">Nema pronađenih predmeta</div>';
         return;
       }
       
       try {
         list.innerHTML = displayedCases.map(caseData => {
-          const verdictRaw = caseData.verdict || 'UNKNOWN';
+          const verdictRaw = caseData.verdict || 'NEPOZNAT';
           // Translate verdicts to Serbian
           let verdictText = verdictRaw;
           if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
-          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
-          const verdict = String(verdictRaw).toLowerCase();
+          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBOĐEN';
+          else if (verdictRaw === 'KRIV') verdictText = 'KRIV';
+          else if (verdictRaw === 'OSLOBOĐEN') verdictText = 'OSLOBOĐEN';
+          // Use 'guilty' or 'acquitted' class for styling - map Serbian verdicts to CSS classes
+          const verdictClass = (verdictRaw === 'KRIV' || verdictRaw === 'GUILTY') ? 'guilty' : 
+                              (verdictRaw === 'OSLOBOĐEN' || verdictRaw === 'ACQUITTED') ? 'acquitted' : 'unknown';
           return `
             <div class="case-item ${selectedCaseId === caseData.id ? 'active' : ''}" onclick="selectCase('${caseData.id.replace(/'/g, "\\'")}')">
               <div class="case-id">${caseData.id}</div>
-              <div class="case-type">${caseData.type || 'Unknown'}</div>
-              <div class="case-verdict verdict-${verdict}">
+              <div class="case-type">${caseData.type || 'Nepoznat'}</div>
+              <div class="case-verdict verdict-${verdictClass}">
                 ${verdictText}
               </div>
             </div>
@@ -842,7 +851,7 @@
         }
       } catch (err) {
         console.error('Error rendering:', err);
-        list.innerHTML = '<div style="padding: 20px; text-align: center; color: #dc2626;">Error displaying cases</div>';
+        list.innerHTML = '<div style="padding: 20px; text-align: center; color: #dc2626;">Greška u prikazu predmeta</div>';
       }
     }
 
@@ -899,11 +908,11 @@
           const verdict = String(verdictRaw).toUpperCase();
           
           // Build articles with clickable links
-          const articlesHtml = (guiltyArticles.length > 0 ? guiltyArticles : ['Not specified']).map(article => {
-            if (!article || article === 'Unknown') return `<span class="article-tag">Not specified</span>`;
+          const articlesHtml = (guiltyArticles.length > 0 ? guiltyArticles : ['Nije navedeno']).map(article => {
+            if (!article || article === 'Unknown') return `<span class="article-tag">Nije navedeno</span>`;
             const articleMatch = article.match(/(\d+)/);
             if (articleMatch) {
-              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Click to view Article ${articleMatch[1]}">${article}</span>`;
+              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Kliknite za pregled člana ${articleMatch[1]}">${article}</span>`;
             }
             return `<span class="article-tag">${article}</span>`;
           }).join('');
@@ -927,37 +936,37 @@
 
               <div class="fields-grid">
                 <div class="field">
-                  <div class="field-label">Court</div>
+                  <div class="field-label">Sud</div>
                   <div class="field-value">${caseData.court}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Case Type</div>
+                  <div class="field-label">Sudija</div>
+                  <div class="field-value">${caseData.sudija || 'Nepoznat'}</div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label">Tip slučaja</div>
                   <div class="field-value">${frbr}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Sentence</div>
-                  <div class="field-value">${caseData.sentence}</div>
+                  <div class="field-label">Kazna</div>
+                  <div class="field-value">${caseData.sentence}${caseData.uslovnaOsuda ? ' (uslovna osuda)' : ''}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Year</div>
+                  <div class="field-label">Godina</div>
                   <div class="field-value">${caseData.year}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Defendant</div>
-                  <div class="field-value">${caseData.defendant}</div>
-                </div>
-
-                <div class="field">
-                  <div class="field-label">Victim</div>
-                  <div class="field-value">${caseData.victim || 'Not specified'}</div>
+                  <div class="field-label">Ranije osuđivan</div>
+                  <div class="field-value">${caseData.ranijeOsudjivan || 'Nepoznat'}</div>
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Applicable Articles</div>
+                  <div class="field-label">Primijenjeni članovi</div>
                   <div class="field-value">
                     <div class="articles-list">
                       ${articlesHtml}
@@ -966,12 +975,12 @@
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Case Description</div>
-                  <div class="field-value case-description-text">${caseData.caseDescription || 'No description available'}</div>
+                  <div class="field-label">Opis slučaja</div>
+                  <div class="field-value case-description-text">${caseData.caseDescription || 'Opis nije dostupan'}</div>
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Evidence</div>
+                  <div class="field-label">Dokazi</div>
                   <div class="field-value">${caseData.evidence}</div>
                 </div>
               </div>
@@ -981,18 +990,18 @@
         .catch(error => {
           console.error('Error fetching AkomaNtoso:', error);
           // Fallback to JSON-based display if XML not available
-          const verdictRaw = caseData.verdict || 'UNKNOWN';
+          const verdictRaw = caseData.verdict || 'NEPOZNAT';
           // Translate verdicts to Serbian
           let verdictText = verdictRaw;
           if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
-          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
+          else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBOĐEN';
           const verdict = String(verdictRaw).toUpperCase();
           
-          const articlesHtml = (caseData.articles && caseData.articles.length > 0 ? caseData.articles : ['Not specified']).map(article => {
-            if (!article || article === 'Unknown') return `<span class="article-tag">Not specified</span>`;
+          const articlesHtml = (caseData.articles && caseData.articles.length > 0 ? caseData.articles : ['Nije navedeno']).map(article => {
+            if (!article || article === 'Unknown') return `<span class="article-tag">Nije navedeno</span>`;
             const articleMatch = article.match(/(\d+)/);
             if (articleMatch) {
-              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Click to view Article ${articleMatch[1]}">${article}</span>`;
+              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Kliknite za pregled člana ${articleMatch[1]}">${article}</span>`;
             }
             return `<span class="article-tag">${article}</span>`;
           }).join('');
@@ -1016,37 +1025,37 @@
 
               <div class="fields-grid">
                 <div class="field">
-                  <div class="field-label">Court</div>
+                  <div class="field-label">Sud</div>
                   <div class="field-value">${caseData.court}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Case Type</div>
+                  <div class="field-label">Sudija</div>
+                  <div class="field-value">${caseData.sudija || 'Nepoznat'}</div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label">Tip slučaja</div>
                   <div class="field-value">${caseData.type}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Sentence</div>
-                  <div class="field-value">${caseData.sentence}</div>
+                  <div class="field-label">Kazna</div>
+                  <div class="field-value">${caseData.sentence}${caseData.uslovnaOsuda ? ' (uslovna osuda)' : ''}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Year</div>
+                  <div class="field-label">Godina</div>
                   <div class="field-value">${caseData.year}</div>
                 </div>
 
                 <div class="field">
-                  <div class="field-label">Defendant</div>
-                  <div class="field-value">${caseData.defendant}</div>
-                </div>
-
-                <div class="field">
-                  <div class="field-label">Victim</div>
-                  <div class="field-value">${caseData.victim || 'Not specified'}</div>
+                  <div class="field-label">Ranije osuđivan</div>
+                  <div class="field-value">${caseData.ranijeOsudjivan || 'Nepoznat'}</div>
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Applicable Articles</div>
+                  <div class="field-label">Primijenjeni članovi</div>
                   <div class="field-value">
                     <div class="articles-list">
                       ${articlesHtml}
@@ -1055,13 +1064,13 @@
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Case Description</div>
-                  <div class="field-value case-description-text">${caseData.caseDescription || 'No description available'}</div>
+                  <div class="field-label">Opis slučaja</div>
+                  <div class="field-value case-description-text">${caseData.caseDescription || 'Opis nije dostupan'}</div>
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Evidence</div>
-                  <div class="field-value">${caseData.evidence}</div>
+                  <div class="field-label">Dokazi</div>
+                  <div class="field-value">${caseData.evidence || 'Nepoznat'}</div>
                 </div>
               </div>
             </div>

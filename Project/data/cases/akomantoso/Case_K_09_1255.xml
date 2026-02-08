@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_09_1255">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_09_1255"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_09_1255"/>
+          <FRBRdate date="2016-09-15" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_09_1255/srp@2016-09-15"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_09_1255/srp@2016-09-15"/>
+          <FRBRdate date="2016-09-15" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_09_1255/srp@2016-09-15.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_09_1255/srp@2016-09-15.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_đuković" showAs="Goran Đuković"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>09/1255</brojPredmeta>
+        <datum>15.09.2016</datum>
+        <datumNormalizovan>2016-09-15</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Goran Đuković</sudija>
+        <optuzeni>Nepoznat</optuzeni>
+        <podaciORoditeljima>otac S., majka R.</podaciORoditeljima>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 284</clanKZ>
+        <kazna>6 mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 16.11.2015. godine u P., znajući da je načinjen lažan novac- novčanica u apoenu od 200,00 eura, serijskog broja V7..., koju je dobio od sada neidentifikovanog lica, koja je odstupala u odnosu na orginalnu po: papiru, boji i štampi, vodenom žigu, to nije prijavio iako je bio svjestan svog djela i htio njegovo izvršenje i znao da je njegovo djelo zabranjeno,</opisSlucaja>
+        <dokazi>
+          <dokaz>izvještaj Centralne banke Crne Gore o tehničkoj analizi novca broj 0903-15/541-2 od 24.11.2015.godine</dokaz>
+          <dokaz>je izvještaj o grafološkom vještačenju Forenzičkog centra u Danilovgradu br.1295/16 od 06.04.2016. godine</dokaz>
+          <dokaz>je izvod iz Ke za okrivljenog</dokaz>
+          <dokaz>izvještaj o grafološkom vještačenju Forenzičkog centra u Danilovgradu br.1295/16 od 06.04.2016. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>200,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 09/1255, sudija Goran Đuković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Nepoznat, otac S., majka R., oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 16.11.2015. godine u P., znajući da je načinjen lažan novac- novčanica u apoenu od 200,00 eura, serijskog broja V7..., koju je dobio od sada neidentifikovanog lica, koja je odstupala u odnosu na orginalnu po: papiru, boji i štampi, vodenom žigu, to nije prijavio iako je bio svjestan svog djela i htio njegovo izvršenje i znao da je njegovo djelo zabranjeno,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvještaj Centralne banke Crne Gore o tehničkoj analizi novca broj 0903-15/541-2 od 24.11.2015.godine</p>
+            <p>• je izvještaj o grafološkom vještačenju Forenzičkog centra u Danilovgradu br.1295/16 od 06.04.2016. godine</p>
+            <p>• je izvod iz Ke za okrivljenog</p>
+            <p>• izvještaj o grafološkom vještačenju Forenzičkog centra u Danilovgradu br.1295/16 od 06.04.2016. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 284 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

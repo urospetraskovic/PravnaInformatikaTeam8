@@ -1,105 +1,107 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 23/2017" xml:lang="sr">
-  <meta>
-    <identification source="court">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/judgment/Case_K_23_2017/!main"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_23_2017"/>
-        <FRBRdate date="2018-03-30"/>
-        <FRBRnumber value="K 23/2017"/>
-      </FRBRWork>
-      <FRBRExpression>
-        <FRBRthis value="/akn/me/judgment/Case_K_23_2017/!exp"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_23_2017"/>
-        <FRBRdate date="2018-03-30"/>
-        <FRBRlanguage language="sr"/>
-      </FRBRExpression>
-      <FRBRManifestation>
-        <FRBRthis value="/akn/me/judgment/Case_K_23_2017"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_23_2017"/>
-        <FRBRdate date="2018-03-30"/>
-      </FRBRManifestation>
-    </identification>
-    <references source="application">
-      <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code/glava-23#Član 258" showAs="Član 258"/>
-      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
-    </references>
-  </meta>
-  <body>
-    <background>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Predmet:</strong>
-         K 23/2017
-      </p>
-      <p>
-        <strong>Sud:</strong>
-         Osnovni Sud u Kotoru
-      </p>
-      <p>
-        <strong>Pravni okvir:</strong>
-         Krivični zakonik Crne Gore - Član 258
-      </p>
-    </background>
-    <narrative>
-      <p>
-        <strong>Okrivljeni:</strong>
-         Okrivljeno lice
-      </p>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Opis događaja:</strong>
-         Stavljanje lažnog novca u opticaj kao pravog
-      </p>
-    </narrative>
-    <motivation>
-      <p>
-        <strong>Primijenjeni članovi:</strong>
-         Član 258 Krivičnog zakonika Crne Gore
-      </p>
-      <p>
-        <strong>Kvalifikacija:</strong>
-         Falsifikovanje novca prema Članu 258 Krivičnog zakonika
-      </p>
-      <p>
-        <strong>Dokazivanje:</strong>
-         Krivično djelo je dokazano kroz:
-      </p>
-      <ul>
-        <li>Iskaze svjedoka</li>
-        <li>Nalaze i mišljenja vještaka o falsifikaciji novčanica</li>
-        <li>Potvrde o pronađenim i oduzetim novčanicama</li>
-        <li>Izvještaj Centralne banke o tehničkoj analizi novca</li>
-        <li>Iskaze okrivljenih</li>
-      </ul>
-    </motivation>
-    <decision>
-      <p>
-        <strong>PRESUDA:</strong>
-      </p>
-      <p>
-        <strong>Okrivljeni je OSUĐEN:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Za krivično djelo:</strong>
-           Falsifikovanje novca prema Članu 258 Krivičnog zakonika Crne Gore
-        </li>
-        <li>
-          <strong>Kazna:</strong>
-           Uslovna osuda
-        </li>
-      </ul>
-      <p>
-        <strong>Troškovi:</strong>
-         Okrivljeni je obavezan da plati troškove krivičnog postupka
-      </p>
-    </decision>
-  </body>
-</judgment>
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_23_2017">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_23_2017"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_23_2017"/>
+          <FRBRdate date="2019-10-11" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_23_2017/srp@2019-10-11"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_23_2017/srp@2019-10-11"/>
+          <FRBRdate date="2019-10-11" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_23_2017/srp@2019-10-11.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_23_2017/srp@2019-10-11.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="O.Đ."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>23/2017</brojPredmeta>
+        <datum>11.10.2019</datum>
+        <datumNormalizovan>2019-10-11</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Nepoznat</sudija>
+        <optuzeni>O.Đ.</optuzeni>
+        <godinaRodjenja>19.02.1982</godinaRodjenja>
+        <zaposlenost>zaposlen kao poslovođa maloprodajnog objekta na Š. u K.</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>, Što je, Dana 31.07.2013. g.u naselju D. u K.,u marketu "R.", koji posluje u okviru DOO "M." CG, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije je izvršenje htio, stavio u opticaj lažan novac, i to novčanicu od 200,00 eura, ser. broj Y10039903224, na način što je istu predao kasirki S.A. prilikom plaćanja računa za obavljenu kupovinu u marketu,</opisSlucaja>
+        <svjedoci>
+          <svjedok>sa g</svjedok>
+          <svjedok>ponovo p</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvještaj o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB C.G. br. 115 od 02.08.2013. g.</dokaz>
+          <dokaz>zapisnik o prepoznavanju ODT K. Ktr. 206/13 od 30.07.2015. g.e sa fotoelaboratom od 30.07.2015. g.</dokaz>
+          <dokaz>zapisnik o prepoznavanju ODT K. Ktr. 206/13 od 30.07.2015. g. sa fotoelaboratom od 30.07.2015. g.</dokaz>
+          <dokaz>zapisnik o prepoznavanju predstavlja pravno nevaljan dokaz</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 23/2017</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: O.Đ., zaposlen kao poslovođa maloprodajnog objekta na Š. u K., neoženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>, Što je, Dana 31.07.2013. g.u naselju D. u K.,u marketu "R.", koji posluje u okviru DOO "M." CG, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije je izvršenje htio, stavio u opticaj lažan novac, i to novčanicu od 200,00 eura, ser. broj Y10039903224, na način što je istu predao kasirki S.A. prilikom plaćanja računa za obavljenu kupovinu u marketu,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvještaj o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB C.G. br. 115 od 02.08.2013. g.</p>
+            <p>• zapisnik o prepoznavanju ODT K. Ktr. 206/13 od 30.07.2015. g.e sa fotoelaboratom od 30.07.2015. g.</p>
+            <p>• zapisnik o prepoznavanju ODT K. Ktr. 206/13 od 30.07.2015. g. sa fotoelaboratom od 30.07.2015. g.</p>
+            <p>• zapisnik o prepoznavanju predstavlja pravno nevaljan dokaz</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,105 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<judgment xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" name="Case K 399/2015" xml:lang="sr">
-  <meta>
-    <identification source="court">
-      <FRBRWork>
-        <FRBRthis value="/akn/me/judgment/Case_K_399_2015/!main"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_399_2015"/>
-        <FRBRdate date="2015-10-13"/>
-        <FRBRnumber value="K 399/2015"/>
-      </FRBRWork>
-      <FRBRExpression>
-        <FRBRthis value="/akn/me/judgment/Case_K_399_2015/!exp"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_399_2015"/>
-        <FRBRdate date="2015-10-13"/>
-        <FRBRlanguage language="sr"/>
-      </FRBRExpression>
-      <FRBRManifestation>
-        <FRBRthis value="/akn/me/judgment/Case_K_399_2015"/>
-        <FRBRuri value="/akn/me/judgment/Case_K_399_2015"/>
-        <FRBRdate date="2015-10-13"/>
-      </FRBRManifestation>
-    </identification>
-    <references source="application">
-      <TLCReference eId="ref_Član_258" href="/akn/me/act/criminal-code/glava-23#Član 258" showAs="Član 258"/>
-      <TLCReference eId="ref_Član_75" href="/akn/me/act/criminal-code/glava#Član 75" showAs="Član 75"/>
-    </references>
-  </meta>
-  <body>
-    <background>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Predmet:</strong>
-         K 399/2015
-      </p>
-      <p>
-        <strong>Sud:</strong>
-         Osnovni Sud u Kotoru
-      </p>
-      <p>
-        <strong>Pravni okvir:</strong>
-         Krivični zakonik Crne Gore - Član 258
-      </p>
-    </background>
-    <narrative>
-      <p>
-        <strong>Okrivljeni:</strong>
-         N. G.
-      </p>
-      <p>
-        <strong>Vrsta krivičnog djela:</strong>
-         Falsifikovanje novca
-      </p>
-      <p>
-        <strong>Opis događaja:</strong>
-         Stavljanje lažnog novca u opticaj kao pravog
-      </p>
-    </narrative>
-    <motivation>
-      <p>
-        <strong>Primijenjeni članovi:</strong>
-         Član 258 Krivičnog zakonika Crne Gore
-      </p>
-      <p>
-        <strong>Kvalifikacija:</strong>
-         Falsifikovanje novca prema Članu 258 Krivičnog zakonika
-      </p>
-      <p>
-        <strong>Dokazivanje:</strong>
-         Krivično djelo je dokazano kroz:
-      </p>
-      <ul>
-        <li>Iskaze svjedoka</li>
-        <li>Nalaze i mišljenja vještaka o falsifikaciji novčanica</li>
-        <li>Potvrde o pronađenim i oduzetim novčanicama</li>
-        <li>Izvještaj Centralne banke o tehničkoj analizi novca</li>
-        <li>Iskaze okrivljenih</li>
-      </ul>
-    </motivation>
-    <decision>
-      <p>
-        <strong>PRESUDA:</strong>
-      </p>
-      <p>
-        <strong>Okrivljeni je OSUĐEN:</strong>
-      </p>
-      <ul>
-        <li>
-          <strong>Za krivično djelo:</strong>
-           Falsifikovanje novca prema Članu 258 Krivičnog zakonika Crne Gore
-        </li>
-        <li>
-          <strong>Kazna:</strong>
-           Kazna zatvora
-        </li>
-      </ul>
-      <p>
-        <strong>Troškovi:</strong>
-         Okrivljeni je obavezan da plati troškove krivičnog postupka
-      </p>
-    </decision>
-  </body>
-</judgment>
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_399_2015">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_2015"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_2015"/>
+          <FRBRdate date="2017-02-22" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_2015/srp@2017-02-22"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_2015/srp@2017-02-22"/>
+          <FRBRdate date="2017-02-22" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_399_2015/srp@2017-02-22.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_399_2015/srp@2017-02-22.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/sanja_čakanović" showAs="Sanja Čakanović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u s"/>
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>399/2015</brojPredmeta>
+        <datum>22.02.2017</datum>
+        <datumNormalizovan>2017-02-22</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Sanja Čakanović</sudija>
+        <optuzeni>u s</optuzeni>
+        <podaciORoditeljima>otac R., majka Z.</podaciORoditeljima>
+        <zaposlenost>zaposlena u firmi R. kao trgovac u kiosku br. T-95</zaposlenost>
+        <bracniStatus>udata</bracniStatus>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>6 ( šest ) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 17.06.2014. godine u 12,30 h na kiosku koji se nalazi u sklopu autobuske stanice u T., lažni novac- novčanicu u apoenu od 10,00 €, ser.br. X58072600244, stavila u opticaj, na način što je kod prodavca u toj trafici M. B., za kupovinu kutije cigareta marke “Bond” dala gore navedenu novčanicu, pri čemu je bila uračunljiva i svjesna svoga djela i njegove zabranjenosti, a čije izvršenje je htjela.</opisSlucaja>
+        <svjedoci>
+          <svjedok>nije n</svjedok>
+          <svjedok>rekao n</svjedok>
+          <svjedok>je j</svjedok>
+          <svjedok>kako j</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP OB Tivat br. 76/03-240/14-2683/2 od 17.06.2014 godine</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima UP OB Tivat br. 76/03-240/14-2683/2 od 17.06.2014 godine na ime F. B.</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima UP OB Tivat br. 76/03-240/14-2683 od 17.06.2014 godine na ime M. B. i pročitan je izještaj o izvršenoj tehničkoj analizi novca Centralne banke CG br. 0903-15/118-2 od 04.07.2014 godine.
+U dokaznom postupku nije se kao dokaz izvodio izvod iz kaznene evidencije za okrivljenu a s obirom da isti nije pribavljen do početka gl.pretresa a kako se ne bi odugovlačio krivični postupak.
+Svjedok M. B. je navela da je u junu mjesecu 2014. godine radila u trafici na autobuskoj stanici u T. i da se sjeća da ju je poznanica koja radi u jednoj trafici kod škole upozorila da se pojavila neka grupa koja je pokušavala da proturi falsifikovani novac</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 399/2015, sudija Sanja Čakanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u s, otac R., majka Z., zaposlena u firmi R. kao trgovac u kiosku br. T-95, udata</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 17.06.2014. godine u 12,30 h na kiosku koji se nalazi u sklopu autobuske stanice u T., lažni novac- novčanicu u apoenu od 10,00 €, ser.br. X58072600244, stavila u opticaj, na način što je kod prodavca u toj trafici M. B., za kupovinu kutije cigareta marke “Bond” dala gore navedenu novčanicu, pri čemu je bila uračunljiva i svjesna svoga djela i njegove zabranjenosti, a čije izvršenje je htjela.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP OB Tivat br. 76/03-240/14-2683/2 od 17.06.2014 godine</p>
+            <p>• potvrda o privremeno oduzetim predmetima UP OB Tivat br. 76/03-240/14-2683/2 od 17.06.2014 godine na ime F. B.</p>
+            <p>• potvrda o privremeno oduzetim predmetima UP OB Tivat br. 76/03-240/14-2683 od 17.06.2014 godine na ime M. B. i pročitan je izještaj o izvršenoj tehničkoj analizi novca Centralne banke CG br. 0903-15/118-2 od 04.07.2014 godine.
+U dokaznom postupku nije se kao dokaz izvodio izvod iz kaznene evidencije za okrivljenu a s obirom da isti nije pribavljen do početka gl.pretresa a kako se ne bi odugovlačio krivični postupak.
+Svjedok M. B. je navela da je u junu mjesecu 2014. godine radila u trafici na autobuskoj stanici u T. i da se sjeća da ju je poznanica koja radi u jednoj trafici kod škole upozorila da se pojavila neka grupa koja je pokušavala da proturi falsifikovani novac</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 ( šest ) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_116_20">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_116_20"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_116_20"/>
+          <FRBRdate date="2023-12-21" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_116_20/srp@2023-12-21"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_116_20/srp@2023-12-21"/>
+          <FRBRdate date="2023-12-21" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_116_20/srp@2023-12-21.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_116_20/srp@2023-12-21.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nataša_lalović" showAs="Nataša Lalović"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="Š. E."/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>116/20</brojPredmeta>
+        <datum>21.12.2023</datum>
+        <datumNormalizovan>2023-12-21</datumNormalizovan>
+        <godina>2023</godina>
+        <sudija>Nataša Lalović</sudija>
+        <optuzeni>Š. E.</optuzeni>
+        <podaciORoditeljima>otac B., majka V.</podaciORoditeljima>
+        <prebivaliste>selu T</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>osnovnu školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>4 (četiri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>600,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 19.01.2023.godine u 10,25 časova, u naselju Č., Opština B., svjestan svog djela i htio je njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, tuđu pravu platnu karticu broj 5... CKB banke, izdatu na ime oštećene Š. V., koju je neovlašćeno pribavio, upotrijebio u namjeri da sebi pribavi protivpravnu imovinsku korist, na način, što je bez znanja i saglasnosti oštećene Š. V. uzeo navedenu bankovnu karticu izdatu od CKB Banke na njeno ime, a nakon toga na bankomatu, sa računa podigao sav novac i sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene Š.</svjedok>
+        </svjedoci>
+        <iznosi>
+          <iznos>200,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 116/20, sudija Nataša Lalović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Š. E., otac B., majka V., prebivalište: selu T, oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 19.01.2023.godine u 10,25 časova, u naselju Č., Opština B., svjestan svog djela i htio je njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, tuđu pravu platnu karticu broj 5... CKB banke, izdatu na ime oštećene Š. V., koju je neovlašćeno pribavio, upotrijebio u namjeri da sebi pribavi protivpravnu imovinsku korist, na način, što je bez znanja i saglasnosti oštećene Š. V. uzeo navedenu bankovnu karticu izdatu od CKB Banke na njeno ime, a nakon toga na bankomatu, sa računa podigao sav novac i sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 4 (četiri) mjeseca</p>
+          <p>Novčana kazna: 600,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

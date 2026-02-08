@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_48_08">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_08"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_48_08"/>
+          <FRBRdate date="2013-08-12" name="judgment"/>
+          <FRBRauthor href="#rožajama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_08/srp@2013-08-12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_48_08/srp@2013-08-12"/>
+          <FRBRdate date="2013-08-12" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_08/srp@2013-08-12.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_48_08/srp@2013-08-12.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/rožajama" showAs="Osnovni Sud u ROŽAJAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/verica_vesić" showAs="Verica Vesić"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i k"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ROŽAJAMA</sud>
+        <brojPredmeta>48/08</brojPredmeta>
+        <datum>12.8. 2013</datum>
+        <datumNormalizovan>2013-08-12</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Verica Vesić</sudija>
+        <optuzeni>i k</optuzeni>
+        <podaciORoditeljima>otac I., majka H.</podaciORoditeljima>
+        <godinaRodjenja>12.02.1986</godinaRodjenja>
+        <prebivaliste>Novom Pazaru</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>osnovnu školu</obrazovanje>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>2 (dvije) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>200,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 03.07.2013.g. oko 00,48 h na graničnom prelazu Dračenovac, Opština Rožaje, držao lašni novac u apoenu od 50,00 eura seriskog broja E87689986643 u namjeri da ga stavi u opticaj kao pravi, na način što je isti nosio kod sebe, prilikom prelaska graničnog prelaza Dračenovac, kada je novac pronađen od strane službenika granične policije Rožaje</opisSlucaja>
+        <svjedoci>
+          <svjedok>je p</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>novačnicu u apoenima od 50 eura serijskog broja E 87669986643</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima OB-a Rožaje br. KU 126 od 03.7.2013. godine</dokaz>
+          <dokaz>izvještaj Krim. tehnike OB Rožaje br. Sl/13. od 03.7.2013. godine</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca Centralne banke CG</dokaz>
+          <dokaz>izvod iz kaznene evidencije na ime optuženog.
+Svjedok L. A.</dokaz>
+          <dokaz>u svojstvu svjedoka L. A.</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima Uprave policije Ispostava Rožaje br. KU l65 od 23. 07. 2010. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafologa Nikčević Veselinke koji je dat po naredbi Istražnog sudije ovog suda od 6. 08. 2010. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>40 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ROŽAJAMA, 48/08, sudija Verica Vesić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i k, otac I., majka H., prebivalište: Novom Pazaru, nezaposlen, oženjen</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 03.07.2013.g. oko 00,48 h na graničnom prelazu Dračenovac, Opština Rožaje, držao lašni novac u apoenu od 50,00 eura seriskog broja E87689986643 u namjeri da ga stavi u opticaj kao pravi, na način što je isti nosio kod sebe, prilikom prelaska graničnog prelaza Dračenovac, kada je novac pronađen od strane službenika granične policije Rožaje</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• novačnicu u apoenima od 50 eura serijskog broja E 87669986643</p>
+            <p>• potvrdu o privremeno oduzetim predmetima OB-a Rožaje br. KU 126 od 03.7.2013. godine</p>
+            <p>• izvještaj Krim. tehnike OB Rožaje br. Sl/13. od 03.7.2013. godine</p>
+            <p>• izvještaj o izvršenoj tehničkoj analizi novca Centralne banke CG</p>
+            <p>• izvod iz kaznene evidencije na ime optuženog.
+Svjedok L. A.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 2 (dvije) godin</p>
+          <p>Novčana kazna: 200,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

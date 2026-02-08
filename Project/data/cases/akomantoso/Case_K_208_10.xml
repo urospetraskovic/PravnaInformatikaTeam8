@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_208_10">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_208_10"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_208_10"/>
+          <FRBRdate date="2022-03-29" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_208_10/srp@2022-03-29"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_208_10/srp@2022-03-29"/>
+          <FRBRdate date="2022-03-29" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_208_10/srp@2022-03-29.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_208_10/srp@2022-03-29.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/edina_kraja" showAs="Edina Kraja"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i n"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>208/10</brojPredmeta>
+        <datum>29.03.2022</datum>
+        <datumNormalizovan>2022-03-29</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Edina Kraja</sudija>
+        <optuzeni>i n</optuzeni>
+        <podaciORoditeljima>otac R., majka N.</podaciORoditeljima>
+        <prebivaliste>Pg</prebivaliste>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>90,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>I Dana 1. decembra 2021. godine, na teritoriji Glavnog grada Podgorica, svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, u više navrata tuđe kreditne kartice, koje je neovlašćeno pribavio, upotrijebio, na način što je dvije platne kartice N. banke vlasništvo oštećenih I. C. i V. C. pronašao u novčaniku koji je oštećena V. C. prethodnog dana izgubila, nakon čega je platnu karticu oštećenog I. C. upotrijebio četiri puta i to: u 13.49 časova u prodajnom objektu "I. Z. 1" za kupovinu artikala u iznosu od 25.13 eura, u 16.00 časova na bankomatu N. Banke koji se nalazi pored marketa, u namjeri da podigne novac, u čemu nije uspio zbog pogrešnog unosa pin koda, a zatim u butiku "S. f." koji se nalazi u Z., u 16.15 časova i u 16.16 časova, u namjeri da plati robu u vrijednosti od 56,00 eura, u čemu nije uspio, te karticu oštećene V. C. upotrijebio četiri puta i to: u 14.10 časova u marketu "I. Z. 1" gdje je pokušao da plati artikle, u čemu nije uspio, jer na računu nije bilo novca, u 15.56 časova na bankomatu N. Banke koji se nalazi pored marketa u namjeri da podigne novac, u čemu nije uspio, te u dva navrata u butiku "S. f." u 16.13 časova i u 16.14 časova, u namjeri da plati robu u vrijednosti od 56,00 u čemu nije uspio, na koji način je pribavio sebi protivpravnu imovinsku korist u iznosu od 25,13 eura, te u istom iznosu pričinio štetu oštećenom I. C.,</opisSlucaja>
+        <iznosi>
+          <iznos>56,00 EUR</iznos>
+          <iznos>90,50 EUR</iznos>
+          <iznos>60,50 EUR</iznos>
+          <iznos>238.00 EUR</iznos>
+          <iznos>828,70 EUR</iznos>
+          <iznos>172,60 EUR</iznos>
+          <iznos>516,60 EUR</iznos>
+          <iznos>021,50 EUR</iznos>
+          <iznos>002,00 EUR</iznos>
+          <iznos>25.13 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>25,13 EUR</iznos>
+          <iznos>850,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 208/10, sudija Edina Kraja</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i n, otac R., majka N., prebivalište: Pg, razveden, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>I Dana 1. decembra 2021. godine, na teritoriji Glavnog grada Podgorica, svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, u više navrata tuđe kreditne kartice, koje je neovlašćeno pribavio, upotrijebio, na način što je dvije platne kartice N. banke vlasništvo oštećenih I. C. i V. C. pronašao u novčaniku koji je oštećena V. C. prethodnog dana izgubila, nakon čega je platnu karticu oštećenog I. C. upotrijebio četiri puta i to: u 13.49 časova u prodajnom objektu "I. Z. 1" za kupovinu artikala u iznosu od 25.13 eura, u 16.00 časova na bankomatu N. Banke koji se nalazi pored marketa, u namjeri da podigne novac, u čemu nije uspio zbog pogrešnog unosa pin koda, a zatim u butiku "S. f." koji se nalazi u Z., u 16.15 časova i u 16.16 časova, u namjeri da plati robu u vrijednosti od 56,00 eura, u čemu nije uspio, te karticu oštećene V. C. upotrijebio četiri puta i to: u 14.10 časova u marketu "I. Z. 1" gdje je pokušao da plati artikle, u čemu nije uspio, jer na računu nije bilo novca, u 15.56 časova na bankomatu N. Banke koji se nalazi pored marketa u namjeri da podigne novac, u čemu nije uspio, te u dva navrata u butiku "S. f." u 16.13 časova i u 16.14 časova, u namjeri da plati robu u vrijednosti od 56,00 u čemu nije uspio, na koji način je pribavio sebi protivpravnu imovinsku korist u iznosu od 25,13 eura, te u istom iznosu pričinio štetu oštećenom I. C.,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 (jedne) godin</p>
+          <p>Novčana kazna: 90,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

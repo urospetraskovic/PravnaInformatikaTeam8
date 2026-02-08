@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_20260208145045">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_20260208145045"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208145045"/>
+          <FRBRdate date="2026-02-08" name="judgment"/>
+          <FRBRauthor href="#nepoznat"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_20260208145045/srp@2026-02-08"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208145045/srp@2026-02-08"/>
+          <FRBRdate date="2026-02-08" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_20260208145045/srp@2026-02-08.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_20260208145045/srp@2026-02-08.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nepoznat" showAs="Osnovni Sud u Nepoznat"/>
+      </references>
+      <proprietary source="#court">
+        <sud>Nepoznat</sud>
+        <brojPredmeta>Nepoznat</brojPredmeta>
+        <datum>Nepoznat</datum>
+        <godina>Nepoznat</godina>
+        <sudija>Nepoznat</sudija>
+        <optuzeni>Nepoznat</optuzeni>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <kazna>Nepoznat</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Nepoznat</vrstaPresude>
+        <opisSlucaja>Opis nije dostupan</opisSlucaja>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Nepoznat</p>
+        </block>
+      </background>
+      <decision>
+        <block name="odluka"/>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

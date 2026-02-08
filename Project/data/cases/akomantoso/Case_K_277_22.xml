@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_277_22">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_277_22"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_277_22"/>
+          <FRBRdate date="2022-04-04" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_277_22/srp@2022-04-04"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_277_22/srp@2022-04-04"/>
+          <FRBRdate date="2022-04-04" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_277_22/srp@2022-04-04.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_277_22/srp@2022-04-04.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/larisa_mijušković" showAs="Larisa Mijušković"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>277/22</brojPredmeta>
+        <datum>04.04.2022</datum>
+        <datumNormalizovan>2022-04-04</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Larisa Mijušković</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac R., majka R.</podaciORoditeljima>
+        <prebivaliste>Podgorici, Ul</prebivaliste>
+        <zaposlenost>zaposlena u firmi "Stadion"</zaposlenost>
+        <bracniStatus>udata</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>ranije neosuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 16. juna 2021. godine, u Podgorici, svjesna svog djela čije izvršenje je htjela, znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je platnu karticu - Mastercard debitnu karticu Addiko bank AD Podgorica broj 535505_7404, koja je bila izdata oštećenoj Ž. M., a koju je prethodno od iste neovlašćeno oduzela i prisvojila u junu 2021. godine, upotrijebila na bankomatu Crnogorske komercijalne banke AD Podgorica, koji se nalazi u Tržnom centru "Mall of Montenegro", u Bulevaru Save Kovačevića br. 74, te u 15,45 časova sa računa oštećene broj 9001334139 otvorenog u Addiko bank AD Podgorica podigla novac u iznosu od 200,00 eura, a u 15,46 časova novac u iznosu od 100,00 eura, te na taj način sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 300,00 eura</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene Ž.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dokaze predložene optužnim predlogom i to: iskaz svjedoka oštećene Ž. M. dat na zapisniku pred ODT-om Podgorica Kt.br.1096/21 od 01.09.2021. godine</dokaz>
+          <dokaz>CD sa snimkom video nadzora izuzetog sa bankomata Crnogorske komercijalne banke AD Podgorica u TC "Mall of Montenegro" za datum 16.06.2021. godine.
+Utvrđujući da li postoji dovoljno dokaza o krivici okrivljene za predmetno krivično djelo</dokaz>
+          <dokaz>zapisnik o pregovaranju i zapisnik o priznanju okrivljene K. M. iste poslovne oznake i datuma</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>60,50 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 277/22, sudija Larisa Mijušković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac R., majka R., prebivalište: Podgorici, Ul, zaposlena u firmi "Stadion", udata, ranije neosuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 16. juna 2021. godine, u Podgorici, svjesna svog djela čije izvršenje je htjela, znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je platnu karticu - Mastercard debitnu karticu Addiko bank AD Podgorica broj 535505_7404, koja je bila izdata oštećenoj Ž. M., a koju je prethodno od iste neovlašćeno oduzela i prisvojila u junu 2021. godine, upotrijebila na bankomatu Crnogorske komercijalne banke AD Podgorica, koji se nalazi u Tržnom centru "Mall of Montenegro", u Bulevaru Save Kovačevića br. 74, te u 15,45 časova sa računa oštećene broj 9001334139 otvorenog u Addiko bank AD Podgorica podigla novac u iznosu od 200,00 eura, a u 15,46 časova novac u iznosu od 100,00 eura, te na taj način sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 300,00 eura</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dokaze predložene optužnim predlogom i to: iskaz svjedoka oštećene Ž. M. dat na zapisniku pred ODT-om Podgorica Kt.br.1096/21 od 01.09.2021. godine</p>
+            <p>• CD sa snimkom video nadzora izuzetog sa bankomata Crnogorske komercijalne banke AD Podgorica u TC "Mall of Montenegro" za datum 16.06.2021. godine.
+Utvrđujući da li postoji dovoljno dokaza o krivici okrivljene za predmetno krivično djelo</p>
+            <p>• zapisnik o pregovaranju i zapisnik o priznanju okrivljene K. M. iste poslovne oznake i datuma</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

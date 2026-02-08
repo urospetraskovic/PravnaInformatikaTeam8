@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_32_12">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_32_12"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_32_12"/>
+          <FRBRdate date="2015-11-02" name="judgment"/>
+          <FRBRauthor href="#ulcinju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_32_12/srp@2015-11-02"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_32_12/srp@2015-11-02"/>
+          <FRBRdate date="2015-11-02" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_32_12/srp@2015-11-02.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_32_12/srp@2015-11-02.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/ulcinju" showAs="Osnovni Sud u ULCINJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/mr_sanja" showAs="mr Sanja"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="M.S"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ULCINJU</sud>
+        <brojPredmeta>32/12</brojPredmeta>
+        <datum>02.11.2015</datum>
+        <datumNormalizovan>2015-11-02</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>mr Sanja</sudija>
+        <optuzeni>M.S</optuzeni>
+        <podaciORoditeljima>otac H., majka F.</podaciORoditeljima>
+        <zaposlenost>zaposlena u marketu Merkator S.-centar koji se nalazi u blizini zelene pijace u centru grada na mjestu šefa smjene. Dana 06.10.2015. godine oko 17:00 časova u market je ušlo jedno nepoznato lice</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <kazna>5 (pet) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>dana 06.07.2015. godine, oko 16,30 časova, u ulici xx.N. na pijaci suvenira u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, stavio u opticaj lažan novac,jednu novčanicu u apoenu od 50,00 €, serijskog broja xxxxxxxxxxx koju je predhodno primio kao pravu,na način što je predmetnu novčanicu predao B.A.,prilikom plaćanja dukserice u iznosu od 17,00 €,</opisSlucaja>
+        <svjedoci>
+          <svjedok>se v</svjedok>
+          <svjedok>kada j</svjedok>
+          <svjedok>kojima j</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>iskaze svjedoka J.M.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>17,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ULCINJU, 32/12, sudija mr Sanja</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: M.S, otac H., majka F., zaposlena u marketu Merkator S.-centar koji se nalazi u blizini zelene pijace u centru grada na mjestu šefa smjene. Dana 06.10.2015. godine oko 17:00 časova u market je ušlo jedno nepoznato lice, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 06.07.2015. godine, oko 16,30 časova, u ulici xx.N. na pijaci suvenira u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, stavio u opticaj lažan novac,jednu novčanicu u apoenu od 50,00 €, serijskog broja xxxxxxxxxxx koju je predhodno primio kao pravu,na način što je predmetnu novčanicu predao B.A.,prilikom plaćanja dukserice u iznosu od 17,00 €,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaze svjedoka J.M.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 5 (pet) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

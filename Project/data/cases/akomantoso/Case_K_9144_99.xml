@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="Case_K_9144_99">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_9144_99"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9144_99"/>
+          <FRBRdate date="2015-01-14" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_9144_99/srp@2015-01-14"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9144_99/srp@2015-01-14"/>
+          <FRBRdate date="2015-01-14" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_9144_99/srp@2015-01-14.xml"/>
+          <FRBRuri value="/akn/me/judgment/Case_K_9144_99/srp@2015-01-14.xml"/>
+          <FRBRdate date="2026-02-08" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jovović_željka" showAs="Jovović Željka"/>
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i p"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>9144/99</brojPredmeta>
+        <datum>14. 01. 2015</datum>
+        <datumNormalizovan>2015-01-14</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Jovović Željka</sudija>
+        <optuzeni>i p</optuzeni>
+        <podaciORoditeljima>otac N., majka S.</podaciORoditeljima>
+        <prebivaliste>mjestu rođenja Ul</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 240 st. 1</clanKZ>
+        <kazna>1 godin</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>90,50</novcanaKazna>
+        <vrstaPresude>Kriv</vrstaPresude>
+        <opisSlucaja>Dana 15. 11. 2014. godine, u periodu između 02:30 i 04:40 časova, u Ul. Belvederska br. xx, u Podgorici, svjestan svojih djela čije izvršenje je htio i znajući da su ista zabranjena, obijanjem, tuđe pokretne stvari oduzeo drugom u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je došao do prizemnog dijela kuće vlasništvo M. J., u kojoj kao podstanar stanuje oštećena A. P. V., nakon čega je podesnim sredstvom obio dupli prozor kuhinje na visini od 120 cm, ušao u kuću, a zatim sa radnog stola u trpezariji oduzeo i prisvojio lap top marke "Dell" vrijednosti 536,00 eura, dok je sa stolice pored zida trpezarije, oduzeo i prisvojio žensku torbu sa ličnim dokumentima, ženski novčanik marke "Lakoste" vrijednosti 43,20 eura, u kojem se nalazio novac u iznosu od 298,00 eura, dvije platne kartice Podgoričke banke, sve vlasništvo oštećene, nakon čega je, u Ul. Kralja Nikole na Zabjelu, na bankomatu Podgoričke banke upotrijebio pravu platnu karticu oštećene A. P. V., koju je prethodno neovlašćeno pribavio krivičnim djelom radi upotrebe, tako što je istu ubacio u bankomat i ukucao pin kod namjeravajući da podigne novac sa računa oštećene, u kojem trenutku mu je s leđa prišao ovlašćeni policijski službenik Uprave policije CB Podgorica i u tome ga spriječio,</opisSlucaja>
+        <svjedoci>
+          <svjedok>pred O</svjedok>
+          <svjedok>oštećene A.</svjedok>
+          <svjedok>oštećena A.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>Zapisnik o uviđaju Uprave policije CB Podgorica Ku. br. 993/14 od 15. 11. 2014. godine</dokaz>
+          <dokaz>dvije potvrde Uprave policije CB Podgorica o privremeno oduzetim predmetima Ku. br. 993/14 od 15. 11. 2014. godine</dokaz>
+          <dokaz>svjedoka-oštećenu A. P. V.</dokaz>
+          <dokaz>potvrda o gotovinskoj isplati novca na njeno ime. Policija je obavijestila da su kod P. pronašli i jednu papirnu novčanicu od 5 eura</dokaz>
+          <dokaz>potvrda o gotovinskoj isplati novca na ime Ane Vojinović i novčanicu od 5 eura serijskog broja NA 4405964203.
+Uvidom u potvrdu Uprave policije CB Podgorica o vraćanju privremeno oduzetih predmeta Ku. br. 993/14 od 15. 11. 2014. godine</dokaz>
+          <dokaz>potvrda o gotovinskoj isplati novca na ime A. V..
+Uvidom u potvrdu Uprave policije CB Podgorica o privremeno oduzetim predmetima Ku. br. 993/14 od 23. 11. 2014. godine</dokaz>
+          <dokaz>fotodokumentacija izjasnio se da je našao stvari na prozoru jedne kuće u Dalmatinskoj ulici</dokaz>
+          <dokaz>fotodokumentaciju Ministarstva unutrašnjih poslova CB Podgorica br. 64-28-244-1686-3152 od 15. 11. 2014. godine i broj 64-28-244-1687-3153 od 15. 11. 2014. godine utvrđeno je</dokaz>
+          <dokaz>fotodokumentaciju Ministarstva unutrašnjih poslova CB Podgorica br. 64-28-244-1686-3152 od 15. 11. 2014. godine i broj 64-28-244-1687-3153 od 15. 11. 2014. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka komercijalne struke</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>90,50 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>600 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>60,50 EUR</iznos>
+          <iznos>298 EUR</iznos>
+          <iznos>300 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>298,00 EUR</iznos>
+          <iznos>536,00 EUR</iznos>
+          <iznos>2 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>400 EUR</iznos>
+          <iznos>293,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>43,20 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 9144/99, sudija Jovović Željka</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i p, otac N., majka S., prebivalište: mjestu rođenja Ul, nezaposlen, oženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 15. 11. 2014. godine, u periodu između 02:30 i 04:40 časova, u Ul. Belvederska br. xx, u Podgorici, svjestan svojih djela čije izvršenje je htio i znajući da su ista zabranjena, obijanjem, tuđe pokretne stvari oduzeo drugom u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je došao do prizemnog dijela kuće vlasništvo M. J., u kojoj kao podstanar stanuje oštećena A. P. V., nakon čega je podesnim sredstvom obio dupli prozor kuhinje na visini od 120 cm, ušao u kuću, a zatim sa radnog stola u trpezariji oduzeo i prisvojio lap top marke "Dell" vrijednosti 536,00 eura, dok je sa stolice pored zida trpezarije, oduzeo i prisvojio žensku torbu sa ličnim dokumentima, ženski novčanik marke "Lakoste" vrijednosti 43,20 eura, u kojem se nalazio novac u iznosu od 298,00 eura, dvije platne kartice Podgoričke banke, sve vlasništvo oštećene, nakon čega je, u Ul. Kralja Nikole na Zabjelu, na bankomatu Podgoričke banke upotrijebio pravu platnu karticu oštećene A. P. V., koju je prethodno neovlašćeno pribavio krivičnim djelom radi upotrebe, tako što je istu ubacio u bankomat i ukucao pin kod namjeravajući da podigne novac sa računa oštećene, u kojem trenutku mu je s leđa prišao ovlašćeni policijski službenik Uprave policije CB Podgorica i u tome ga spriječio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Zapisnik o uviđaju Uprave policije CB Podgorica Ku. br. 993/14 od 15. 11. 2014. godine</p>
+            <p>• dvije potvrde Uprave policije CB Podgorica o privremeno oduzetim predmetima Ku. br. 993/14 od 15. 11. 2014. godine</p>
+            <p>• svjedoka-oštećenu A. P. V.</p>
+            <p>• potvrda o gotovinskoj isplati novca na njeno ime. Policija je obavijestila da su kod P. pronašli i jednu papirnu novčanicu od 5 eura</p>
+            <p>• potvrda o gotovinskoj isplati novca na ime Ane Vojinović i novčanicu od 5 eura serijskog broja NA 4405964203.
+Uvidom u potvrdu Uprave policije CB Podgorica o vraćanju privremeno oduzetih predmeta Ku. br. 993/14 od 15. 11. 2014. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 godin</p>
+          <p>Novčana kazna: 90,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 240 st. 1 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
