@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case K 356/2016 - t. b.">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_356_2016/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_356_2016"/>
+          <FRBRdate date="2017-02-03" name="decision"/>
+          <FRBRauthor href="#osnovni_sud_nikšiću"/>
+          <FRBRcountry value="me"/>
+          <FRBRnumber value="K 356/2016"/>
+          <FRBRname value="Falsifikovanje i zloupotreba kreditnih kartica"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_356_2016/sr@2017-02-03/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_356_2016/sr@2017-02-03"/>
+          <FRBRdate date="2017-02-03" name="expression"/>
+          <FRBRauthor href="#osnovni_sud_nikšiću"/>
+          <FRBRlanguage language="sr"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_356_2016/sr@2017-02-03/!main.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_356_2016/sr@2017-02-03/!main.akn"/>
+          <FRBRdate date="2026-02-06" name="transform"/>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="osnovni_sud_nikšiću" href="/akn/me/ontology/organization/osnovni_sud_nikšiću" showAs="Osnovni sud u Nikšiću"/>
+        <TLCPerson eId="sudija" href="/akn/me/ontology/person/sudija" showAs="Kovačević Vesna"/>
+        <TLCPerson eId="zapisnicar" href="/akn/me/ontology/person/zapisnicar" showAs="Zapisničar"/>
+        <TLCPerson eId="optuzeni" href="/akn/me/ontology/person/defendant_t__b_" showAs="t. b."/>
+        <TLCReference eId="ref_art_260" href="/akn/me/act/criminal-code#art_260" showAs="Član 260 - Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </references>
+      <classification source="#court">
+        <keyword value="falsifikovanje_i_zloupotreba_kreditnih_kartica" showAs="Falsifikovanje i zloupotreba kreditnih kartica" dictionary="criminal_offenses"/>
+        <keyword value="clan_260" showAs="Član 260" dictionary="articles"/>
+      </classification>
+    </meta>
+    <header>
+      <p class="court">OSNOVNI SUD U NIKŠIĆU</p>
+      <p class="caseNumber">K 356/2016</p>
+      <p class="date">03.02.2017. godine</p>
+      <p class="formula">U IME CRNE GORE</p>
+    </header>
+    <judgmentBody>
+      <introduction>
+        <p>OSNOVNI SUD U NIKŠIĆU, sudija Kovačević Vesna, kao sudija pojedinac uz zapisničara Zapisničar, u krivičnom predmetu protiv optuženog t. b. zbog krivičnog djela falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika.</p>
+      </introduction>
+      <background>
+        <p>
+          <b>Sud:</b>
+           Osnovni sud u Nikšiću
+        </p>
+        <p>
+          <b>Broj predmeta:</b>
+           K 356/2016
+        </p>
+        <p>
+          <b>Datum presude:</b>
+           03.02.2017.
+        </p>
+        <p>
+          <b>Sudija:</b>
+           Kovačević Vesna
+        </p>
+        <p>
+          <b>Zapisničar:</b>
+           Zapisničar
+        </p>
+        <blockContainer eId="defendant_info">
+          <heading>Podaci o okrivljenom</heading>
+          <p>
+            <b>Okrivljeni:</b>
+             t. b.
+          </p>
+          <p>
+            <b>Mjesto rođenja:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Prebivalište:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Zanimanje:</b>
+             ekonomista
+          </p>
+          <p>
+            <b>Porodično stanje:</b>
+             udata
+          </p>
+          <p>
+            <b>Djeca:</b>
+             dvoje
+          </p>
+          <p>
+            <b>Ranija osuđivanost:</b>
+             Nepoznato
+          </p>
+        </blockContainer>
+      </background>
+      <caseDescription>
+        <heading>Opis slučaja</heading>
+        <p>Okrivljeni t. b. iz Nepoznato je dana 03.02.2017. i istu upotrijebio za pribavljanje imovinske koristi u iznosu od 40,00 eura Okrivljeni je priznao izvršenje krivičnog djela.</p>
+      </caseDescription>
+      <motivation>
+        <blockContainer eId="crime_description">
+          <heading>Opis krivičnog djela</heading>
+          <p>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</p>
+        </blockContainer>
+        <blockContainer eId="legal_qualification">
+          <heading>Pravna kvalifikacija</heading>
+          <p>Čime je izvršio krivično djelo - falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika Crne Gore.</p>
+        </blockContainer>
+        <blockContainer eId="evidence">
+          <heading>Dokazi</heading>
+          <p>Iskazi svjedoka</p>
+          <p>Priznanje okrivljenog</p>
+          <p>Izvodi sa bankovnih računa</p>
+        </blockContainer>
+        <blockContainer eId="mitigating_circumstances">
+          <heading>Olakšavajuće okolnosti</heading>
+          <p>Priznanje krivičnog djela.</p>
+        </blockContainer>
+        <blockContainer eId="aggravating_circumstances">
+          <heading>Otežavajuće okolnosti</heading>
+          <p>Nije utvrđeno.</p>
+        </blockContainer>
+      </motivation>
+      <decision>
+        <blockContainer eId="verdict">
+          <heading>PRESUDA</heading>
+          <p>
+            <b>Odluka:</b>
+             KRIV JE
+          </p>
+          <p>OSUĐUJE SE na Uslovna osuda.</p>
+        </blockContainer>
+        <blockContainer eId="costs">
+          <heading>Troškovi postupka</heading>
+          <p>Optuženi t. b. je dužan da plati troškove krivičnog postupka u iznosu od 40,00 eura i sudski paušal u iznosu od 40,00 eura u roku od 15 dana od dana pravosnažnosti.</p>
+        </blockContainer>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <p>OSNOVNI SUD U NIKŠIĆU</p>
+      <p>Dana 03.02.2017. godine</p>
+      <signature>
+        <person refersTo="#zapisnicar">Zapisničar: Zapisničar</person>
+        <person refersTo="#sudija">SUDIJA: Kovačević Vesna</person>
+      </signature>
+      <p>
+        <b>PRAVNA POUKA:</b>
+         Protiv ove presude može se izjaviti žalba Višem sudu u roku od 15 dana od dana prijema pismenog otpravka. Žalba se predaje ovom sudu u dva primjerka.
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case K 328/2019 - R. M.">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_328_2019/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_328_2019"/>
+          <FRBRdate date="2020-03-16" name="decision"/>
+          <FRBRauthor href="#osnovni_sud_kotoru"/>
+          <FRBRcountry value="me"/>
+          <FRBRnumber value="K 328/2019"/>
+          <FRBRname value="Falsifikovanje i zloupotreba kreditnih kartica"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_328_2019/sr@2020-03-16/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_328_2019/sr@2020-03-16"/>
+          <FRBRdate date="2020-03-16" name="expression"/>
+          <FRBRauthor href="#osnovni_sud_kotoru"/>
+          <FRBRlanguage language="sr"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_328_2019/sr@2020-03-16/!main.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_328_2019/sr@2020-03-16/!main.akn"/>
+          <FRBRdate date="2026-02-06" name="transform"/>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="osnovni_sud_kotoru" href="/akn/me/ontology/organization/osnovni_sud_kotoru" showAs="Osnovni sud u Kotoru"/>
+        <TLCPerson eId="sudija" href="/akn/me/ontology/person/sudija" showAs="Sudija"/>
+        <TLCPerson eId="zapisnicar" href="/akn/me/ontology/person/zapisnicar" showAs="Vladimirke Popović"/>
+        <TLCPerson eId="optuzeni" href="/akn/me/ontology/person/defendant_R__M_" showAs="R. M."/>
+        <TLCReference eId="ref_art_260" href="/akn/me/act/criminal-code#art_260" showAs="Član 260 - Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </references>
+      <classification source="#court">
+        <keyword value="falsifikovanje_i_zloupotreba_kreditnih_kartica" showAs="Falsifikovanje i zloupotreba kreditnih kartica" dictionary="criminal_offenses"/>
+        <keyword value="clan_260" showAs="Član 260" dictionary="articles"/>
+      </classification>
+    </meta>
+    <header>
+      <p class="court">OSNOVNI SUD U KOTORU</p>
+      <p class="caseNumber">K 328/2019</p>
+      <p class="date">16.03.2020. godine</p>
+      <p class="formula">U IME CRNE GORE</p>
+    </header>
+    <judgmentBody>
+      <introduction>
+        <p>OSNOVNI SUD U KOTORU, sudija Sudija, kao sudija pojedinac uz zapisničara Vladimirke Popović, u krivičnom predmetu protiv optuženog R. M. zbog krivičnog djela falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika.</p>
+      </introduction>
+      <background>
+        <p>
+          <b>Sud:</b>
+           Osnovni sud u Kotoru
+        </p>
+        <p>
+          <b>Broj predmeta:</b>
+           K 328/2019
+        </p>
+        <p>
+          <b>Datum presude:</b>
+           16.03.2020.
+        </p>
+        <p>
+          <b>Sudija:</b>
+           Sudija
+        </p>
+        <p>
+          <b>Zapisničar:</b>
+           Vladimirke Popović
+        </p>
+        <blockContainer eId="defendant_info">
+          <heading>Podaci o okrivljenom</heading>
+          <p>
+            <b>Okrivljeni:</b>
+             R. M.
+          </p>
+          <p>
+            <b>Mjesto rođenja:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Prebivalište:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Zanimanje:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Porodično stanje:</b>
+             neoženjen
+          </p>
+          <p>
+            <b>Djeca:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Ranija osuđivanost:</b>
+             Nepoznato
+          </p>
+        </blockContainer>
+      </background>
+      <caseDescription>
+        <heading>Opis slučaja</heading>
+        <p>Okrivljeni R. M. iz Nepoznato je dana 16.03.2020. i istu upotrijebio za pribavljanje imovinske koristi u iznosu od 10.00 eura Okrivljeni je priznao izvršenje krivičnog djela.</p>
+      </caseDescription>
+      <motivation>
+        <blockContainer eId="crime_description">
+          <heading>Opis krivičnog djela</heading>
+          <p>Što je u periodu od 22.09. do 18.11.2018.godine u T., upotrijebio tuđe prave platne kartice koje je neovlašćeno pribavio i time stekao protivpravnu imovinsku korist, na način što je sredstva sa pravih platnih kartica izdatih na ime A. A. iz R., B.V. iz R., P.F. iz R., Z.T. iz A., S.H. iz Nj., D.S. iz R. i B.P. iz H., uplaćivao preko internet naloga za online klađenje i odigravanje igara na sreću i koristio ih za klađenje preko svog naloga i naloga koje je otvorio na ime V. R., Dž.P. i Đ.P. na sajtu "Meridijanbet" DOO P., i tako upotrijebio prave platne kartice imenovanih, do čijih podataka je došao kao recepcioner u hotelu "Splendido" u T., u kojem su kao gosti boravila navedena lica, tako što je dana 22.09.2018.godine u tri navrata upotrijebio karticu broj 521324-xxxxxx-9798 izdatu na ime</p>
+        </blockContainer>
+        <blockContainer eId="legal_qualification">
+          <heading>Pravna kvalifikacija</heading>
+          <p>Čime je izvršio krivično djelo - falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika Crne Gore.</p>
+        </blockContainer>
+        <blockContainer eId="evidence">
+          <heading>Dokazi</heading>
+          <p>Priznanje okrivljenog</p>
+        </blockContainer>
+        <blockContainer eId="mitigating_circumstances">
+          <heading>Olakšavajuće okolnosti</heading>
+          <p>Priznanje krivičnog djela.</p>
+        </blockContainer>
+        <blockContainer eId="aggravating_circumstances">
+          <heading>Otežavajuće okolnosti</heading>
+          <p>Nije utvrđeno.</p>
+        </blockContainer>
+      </motivation>
+      <decision>
+        <blockContainer eId="verdict">
+          <heading>PRESUDA</heading>
+          <p>
+            <b>Odluka:</b>
+             KRIV JE
+          </p>
+          <p>OSUĐUJE SE na Prema zakonu.</p>
+        </blockContainer>
+        <blockContainer eId="costs">
+          <heading>Troškovi postupka</heading>
+          <p>Optuženi R. M. je dužan da plati troškove krivičnog postupka u iznosu od 100,00 eura i sudski paušal u iznosu od 70,00 eura u roku od 15 dana od dana pravosnažnosti.</p>
+        </blockContainer>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <p>OSNOVNI SUD U KOTORU</p>
+      <p>Dana 16.03.2020. godine</p>
+      <signature>
+        <person refersTo="#zapisnicar">Zapisničar: Vladimirke Popović</person>
+        <person refersTo="#sudija">SUDIJA: Sudija</person>
+      </signature>
+      <p>
+        <b>PRAVNA POUKA:</b>
+         Protiv ove presude može se izjaviti žalba Višem sudu u roku od 15 dana od dana prijema pismenog otpravka. Žalba se predaje ovom sudu u dva primjerka.
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

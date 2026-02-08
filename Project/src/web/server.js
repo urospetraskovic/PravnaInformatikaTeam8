@@ -148,8 +148,13 @@ function parseXMLFile(filePath) {
     let year = 2024;
     const yearMatch = caseNumber.match(/\/(\d+)/);
     if (yearMatch) {
-      const twoDigitYear = parseInt(yearMatch[1]);
-      year = (twoDigitYear <= 30 ? 2000 : 1900) + twoDigitYear;
+      const parsedYear = parseInt(yearMatch[1]);
+      // Handle both 2-digit (K 4/19) and 4-digit (K 4/2019) year formats
+      if (parsedYear > 99) {
+        year = parsedYear; // Already 4-digit year
+      } else {
+        year = (parsedYear <= 30 ? 2000 : 1900) + parsedYear;
+      }
     }
     
     return {

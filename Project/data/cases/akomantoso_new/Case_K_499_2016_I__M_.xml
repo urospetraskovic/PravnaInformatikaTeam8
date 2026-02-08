@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case K 499/2016 - I. M.">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_499_2016/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_499_2016"/>
+          <FRBRdate date="2016-12-16" name="decision"/>
+          <FRBRauthor href="#osnovni_sud_podgorici"/>
+          <FRBRcountry value="me"/>
+          <FRBRnumber value="K 499/2016"/>
+          <FRBRname value="Falsifikovanje i zloupotreba kreditnih kartica"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_499_2016/sr@2016-12-16/!main"/>
+          <FRBRuri value="/akn/me/judgment/K_499_2016/sr@2016-12-16"/>
+          <FRBRdate date="2016-12-16" name="expression"/>
+          <FRBRauthor href="#osnovni_sud_podgorici"/>
+          <FRBRlanguage language="sr"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_499_2016/sr@2016-12-16/!main.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_499_2016/sr@2016-12-16/!main.akn"/>
+          <FRBRdate date="2026-02-06" name="transform"/>
+          <FRBRformat value="xml"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="osnovni_sud_podgorici" href="/akn/me/ontology/organization/osnovni_sud_podgorici" showAs="Osnovni sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/akn/me/ontology/person/sudija" showAs="Sudija"/>
+        <TLCPerson eId="zapisnicar" href="/akn/me/ontology/person/zapisnicar" showAs="Zapisničar"/>
+        <TLCPerson eId="optuzeni" href="/akn/me/ontology/person/defendant_I__M_" showAs="I. M."/>
+        <TLCReference eId="ref_art_260" href="/akn/me/act/criminal-code#art_260" showAs="Član 260 - Falsifikovanje i zloupotreba kreditnih kartica"/>
+      </references>
+      <classification source="#court">
+        <keyword value="falsifikovanje_i_zloupotreba_kreditnih_kartica" showAs="Falsifikovanje i zloupotreba kreditnih kartica" dictionary="criminal_offenses"/>
+        <keyword value="clan_260" showAs="Član 260" dictionary="articles"/>
+      </classification>
+    </meta>
+    <header>
+      <p class="court">OSNOVNI SUD U PODGORICI</p>
+      <p class="caseNumber">K 499/2016</p>
+      <p class="date">16.12.2016. godine</p>
+      <p class="formula">U IME CRNE GORE</p>
+    </header>
+    <judgmentBody>
+      <introduction>
+        <p>OSNOVNI SUD U PODGORICI, sudija Sudija, kao sudija pojedinac uz zapisničara Zapisničar, u krivičnom predmetu protiv optuženog I. M. zbog krivičnog djela falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika.</p>
+      </introduction>
+      <background>
+        <p>
+          <b>Sud:</b>
+           Osnovni sud u Podgorici
+        </p>
+        <p>
+          <b>Broj predmeta:</b>
+           K 499/2016
+        </p>
+        <p>
+          <b>Datum presude:</b>
+           16.12.2016.
+        </p>
+        <p>
+          <b>Sudija:</b>
+           Sudija
+        </p>
+        <p>
+          <b>Zapisničar:</b>
+           Zapisničar
+        </p>
+        <blockContainer eId="defendant_info">
+          <heading>Podaci o okrivljenom</heading>
+          <p>
+            <b>Okrivljeni:</b>
+             I. M.
+          </p>
+          <p>
+            <b>Mjesto rođenja:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Prebivalište:</b>
+             Nepoznato
+          </p>
+          <p>
+            <b>Zanimanje:</b>
+             nezaposlen
+          </p>
+          <p>
+            <b>Porodično stanje:</b>
+             oženjen
+          </p>
+          <p>
+            <b>Djeca:</b>
+             jednog
+          </p>
+          <p>
+            <b>Ranija osuđivanost:</b>
+             Nepoznato
+          </p>
+        </blockContainer>
+      </background>
+      <caseDescription>
+        <heading>Opis slučaja</heading>
+        <p>Okrivljeni I. M. iz Nepoznato je dana 16.12.2016. i istu upotrijebio za pribavljanje imovinske koristi u iznosu od 134,50 eura Tehničkom analizom utvrđeno je da se radi o falsifikatu.</p>
+      </caseDescription>
+      <motivation>
+        <blockContainer eId="crime_description">
+          <heading>Opis krivičnog djela</heading>
+          <p>Što je: Dana 19.07.2016. godine, u ul. N. M. i K. N. u Pg, svjestan svog djela čije izvršenje je htio znajući da je isto zabranjeno, na bankomatu C. k. banke upotrijebio dvije prave platne kartice, vlasništvo oštećene S. J. , koje je prethodno neovlašćeno pribavio tako što ih je našao na ulici i uzeo radi upotrebe, pa je platnu karticu broj 4174654394593814 i kraticu broj 5320945103601512 ubacio u bankomat i ukucao pin kod, sa namjerom da podigne novac sa računa oštećene, u čemu nije uspio,</p>
+        </blockContainer>
+        <blockContainer eId="legal_qualification">
+          <heading>Pravna kvalifikacija</heading>
+          <p>Čime je izvršio krivično djelo - falsifikovanje i zloupotreba kreditnih kartica iz čl.260 Krivičnog zakonika Crne Gore.</p>
+        </blockContainer>
+        <blockContainer eId="evidence">
+          <heading>Dokazi</heading>
+          <p>Iskazi svjedoka</p>
+          <p>Video snimci</p>
+          <p>Izvodi sa bankovnih računa</p>
+        </blockContainer>
+        <blockContainer eId="mitigating_circumstances">
+          <heading>Olakšavajuće okolnosti</heading>
+          <p>Nije utvrđeno.</p>
+        </blockContainer>
+        <blockContainer eId="aggravating_circumstances">
+          <heading>Otežavajuće okolnosti</heading>
+          <p>Nije utvrđeno.</p>
+        </blockContainer>
+      </motivation>
+      <decision>
+        <blockContainer eId="verdict">
+          <heading>PRESUDA</heading>
+          <p>
+            <b>Odluka:</b>
+             KRIV JE
+          </p>
+          <p>OSUĐUJE SE na Uslovna osuda.</p>
+        </blockContainer>
+        <blockContainer eId="costs">
+          <heading>Troškovi postupka</heading>
+          <p>Optuženi I. M. je dužan da plati troškove krivičnog postupka u iznosu od 134,50 eura i sudski paušal u iznosu od 30,00 eura u roku od 15 dana od dana pravosnažnosti.</p>
+        </blockContainer>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <p>OSNOVNI SUD U PODGORICI</p>
+      <p>Dana 16.12.2016. godine</p>
+      <signature>
+        <person refersTo="#zapisnicar">Zapisničar: Zapisničar</person>
+        <person refersTo="#sudija">SUDIJA: Sudija</person>
+      </signature>
+      <p>
+        <b>PRAVNA POUKA:</b>
+         Protiv ove presude može se izjaviti žalba Višem sudu u roku od 15 dana od dana prijema pismenog otpravka. Žalba se predaje ovom sudu u dva primjerka.
+      </p>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
