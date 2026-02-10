@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_51_filed2022_verdict2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_51_filed2022_verdict2019" />
+          <FRBRuri value="/akn/me/judgment/Case_K_51_filed2022_verdict2019" />
+          <FRBRdate date="2019-02-27" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_51_filed2022_verdict2019/srp@2019-02-27" />
+          <FRBRuri value="/akn/me/judgment/Case_K_51_filed2022_verdict2019/srp@2019-02-27" />
+          <FRBRdate date="2019-02-27" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_51_filed2022_verdict2019/srp@2019-02-27.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_51_filed2022_verdict2019/srp@2019-02-27.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI" />
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r" />
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>51/22</brojPredmeta>
+        <datum>27.02.2019</datum>
+        <datumNormalizovan>2019-02-27</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac D., majka S.</podaciORoditeljima>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>140,00</novcanaKazna>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 22.12.2018. godine u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, u više navrata tuđu pravu platnu karticu koju je neovlašćeno pribavio upotrijebio, pa je tako sebi pribavio protivpravnu imovinsku korist, na način što je platnu karticu izdatu od strane „Intesa Sanpaolo“ banke, vlasništvo oštećenog V. S., koju je pronašao u ugostiteljskom objektu „Mr Stefan Braun“ u Podgorici, upotrijebio i to: -u 03:37 časova u ugostiteljskom objektu „Mr Stefan Braun“ u Podgorici i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 03:58 časova na benzinskoj stanici privrednog društva „Euro Petrol CG“ DOO iz Podgorice, i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,36 eura; -u dva navrata u 04:09 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od po 10,00 eura; -u 04:36 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 04:37 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 04:38 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice, i tako sebi pribavio protivpravnu imovinsk</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećeni V.</svjedok>
+          <svjedok>oštećenog V.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećenog V. S. dat pred Osnovnim državnim tužilaštvom u Podgorici</dokaz>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljenog B. Z. izdato od strane ovog suda pod brojem KE 331/19 od 27.02.2019. godine.
+Zastupnik optužbe je na glavnom pretrresu odustao od predloga da se izvrši uvid u 3 CD-a sa snimcima video nadzora predmetnih benzinskih pumpi</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 16.01.2019. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 31.12.2018. godine i nalaz i mišljenje vještaka ekonomske struke S. G. od 12.12.2018. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 31.12.2018. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekonomske struke S. G. od 12.12.2018. godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekonomske struke S. G. od 12.12.2018. godine cijenio kao jasan i dat u skladu sa pravilima struke i nauke</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>110,00 EUR</iznos>
+          <iznos>10,36 EUR</iznos>
+          <iznos>140,00 EUR</iznos>
+          <iznos>91,00 EUR</iznos>
+          <iznos>90,84 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>30,48 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>10,48 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Edine Kraje</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>6 (šest) mjesec</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 51/22, sudija Nenad Vujanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac D., majka S., nezaposlen, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 22.12.2018. godine u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, u više navrata tuđu pravu platnu karticu koju je neovlašćeno pribavio upotrijebio, pa je tako sebi pribavio protivpravnu imovinsku korist, na način što je platnu karticu izdatu od strane „Intesa Sanpaolo“ banke, vlasništvo oštećenog V. S., koju je pronašao u ugostiteljskom objektu „Mr Stefan Braun“ u Podgorici, upotrijebio i to: -u 03:37 časova u ugostiteljskom objektu „Mr Stefan Braun“ u Podgorici i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 03:58 časova na benzinskoj stanici privrednog društva „Euro Petrol CG“ DOO iz Podgorice, i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,36 eura; -u dva navrata u 04:09 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od po 10,00 eura; -u 04:36 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 04:37 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice i tako sebi pribavio protivpravnu imovinsku korist u iznosu od 10,00 eura; -u 04:38 časova, na benzinskoj stanici broj 6 privrednog društva „Helenic Petroleum-Jugopetrol“ AD iz Podgorice, i tako sebi pribavio protivpravnu imovinsk</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećenog V. S. dat pred Osnovnim državnim tužilaštvom u Podgorici</p>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljenog B. Z. izdato od strane ovog suda pod brojem KE 331/19 od 27.02.2019. godine.
+Zastupnik optužbe je na glavnom pretrresu odustao od predloga da se izvrši uvid u 3 CD-a sa snimcima video nadzora predmetnih benzinskih pumpi</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 16.01.2019. godine</p>
+            <p>• zapisnik o saslušanju svjedoka od 31.12.2018. godine i nalaz i mišljenje vještaka ekonomske struke S. G. od 12.12.2018. godine</p>
+            <p>• zapisnik o saslušanju svjedoka od 31.12.2018. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 140,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

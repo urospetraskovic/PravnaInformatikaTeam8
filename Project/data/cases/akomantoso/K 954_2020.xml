@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_954_2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_954_2020"/>
+          <FRBRuri value="/akn/me/judgment/K_954_2020"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_954_2020/srp@2020-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_954_2020/srp@2020-01-01"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_954_2020/srp@2020-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_954_2020/srp@2020-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>954/20</brojPredmeta>
+        <datum>2020</datum>
+        <datumNormalizovan>2020-01-01</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>U periodu od 19.07.2020. godine do 26.07.2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je u namjeri da upotrijebi platnu karticu, izdatu od Crnogorske Komercijalne banke, na ime P. K., po računu broj 51000000011823xxxx, iskoristila dostupnost iste i sa te kartice preuzela podatke o serijskom broju i CVV kodu, a zatim je u 12 navrata upotrijebila, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa email adrese m.l.60@gmail.com, preko mobilnog telefona 382/69 xxx-xxx izvršila 12 uspješnih transakcija na navedenoj internet platformi za klađenje i to dana 19.07.2020. godine u iznosu od 50,00 eura, dana 20.07.2020. godine u tri navrata u iznosima od 30,00 eura i dva puta po 100,00 eura, dana 21.07.2020. godine u dva navrata u iznosima od 120,00 eura i 50,00 eura, dana 22.07.2020. godine u tri navrata u i</opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>802,50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>120,00 EUR</iznos>
+          <iznos>0,19 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>167,00 EUR</iznos>
+          <iznos>635,50 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 954/20, sudija Nenad Vujanović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 19.07.2020. godine do 26.07.2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je u namjeri da upotrijebi platnu karticu, izdatu od Crnogorske Komercijalne banke, na ime P. K., po računu broj 51000000011823xxxx, iskoristila dostupnost iste i sa te kartice preuzela podatke o serijskom broju i CVV kodu, a zatim je u 12 navrata upotrijebila, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa email adrese m.l.60@gmail.com, preko mobilnog telefona 382/69 xxx-xxx izvršila 12 uspješnih transakcija na navedenoj internet platformi za klađenje i to dana 19.07.2020. godine u iznosu od 50,00 eura, dana 20.07.2020. godine u tri navrata u iznosima od 30,00 eura i dva puta po 100,00 eura, dana 21.07.2020. godine u dva navrata u iznosima od 120,00 eura i 50,00 eura, dana 22.07.2020. godine u tri navrata u i</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Facts Input File for DR-Device Rule-Based Reasoning
+  Criminal Code of Montenegro - Chapter 23
+  Crimes Against Payment System and Economic Operations
+  
+  Project: Правна Информатика - Team 8
+  
+  USAGE: Fill in the facts for a new case and run through DR-Device
+  Each fact corresponds to predicates used in legal_rules.xml / rulebase.lrml
+-->
+<facts xmlns:ruleml="http://ruleml.org/spec"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!-- ========== CASE METADATA ========== -->
+  <case>
+    <caseId>K_XXX_YYYY</caseId>
+    <caseDate>2024-01-01</caseDate>
+    <court>Osnovni sud u Podgorici</court>
+  </case>
+  
+  <!-- ========== DEFENDANT INFORMATION ========== -->
+  <defendant id="Okrivljeni1">
+    <name>Ime Prezime</name>
+    <initials>I.P.</initials>
+  </defendant>
+  
+  <!-- ========== ARTICLE 258: COUNTERFEIT MONEY FACTS ========== -->
+  <!-- Чињенице за члан 258 - Фалсификовање новца -->
+  
+  <!-- Rule 258/1: Прави лажан новац -->
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 258/1: Намјера стављања у оптицај -->
+  <ruleml:Atom>
+    <ruleml:Rel>namjera_stavljanja_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 258/1: Преиначује прави новац -->
+  <ruleml:Atom>
+    <ruleml:Rel>preinacuje_pravi_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 258/2: Прибавља лажан новац -->
+  <ruleml:Atom>
+    <ruleml:Rel>pribavlja_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 258/2: Ставља лажан новац у оптицај -->
+  <ruleml:Atom>
+    <ruleml:Rel>stavlja_lazan_novac_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 258/3: Износ (у еурима) -->
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_novca</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== ARTICLE 260: CREDIT CARD FRAUD FACTS ========== -->
+  <!-- Чињенице за члан 260 - Фалсификовање кредитних картица -->
+  
+  <!-- Rule 260/1: Прави лажну картицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_laznu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 260/1: Преиначује праву картицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>preinacuje_pravu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 260/1: Неовлашћено прибавља картицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>neovlasceno_pribavlja_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 260/1: Употребљава лажну картицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>upotrebljava_laznu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Rule 260/2-4: Злоупотребљава картицу и прибавља корист -->
+  <ruleml:Atom>
+    <ruleml:Rel>zloupotrebljava_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pribavio_imovinsku_korist</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Износ имовинске користи (у еурима) -->
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_imovinske_koristi</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== ARTICLE 268: MONEY LAUNDERING FACTS ========== -->
+  <!-- Чињенице за члан 268 - Прање новца -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>konvertuje_ili_prenosi_imovinu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>zna_kriminalno_porijeklo</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>namjera_prikrivanja_porijekla</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pranje_novca</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== MITIGATING FACTORS (ОЛАКШАВАЈУЋЕ ОКОЛНОСТИ) ========== -->
+  
+  <!-- Признаје кривицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>priznaje_krivicu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Раније осуђиван (false = неосуђиван - олакшавајуће) -->
+  <ruleml:Atom>
+    <ruleml:Rel>ranije_osudivan</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Надокнадио штету -->
+  <ruleml:Atom>
+    <ruleml:Rel>nadoknadio_stetu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Сарађује са истрагом -->
+  <ruleml:Atom>
+    <ruleml:Rel>saradjuje_sa_istragom</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== AGGRAVATING FACTORS (ОТЕЖАВАЈУЋЕ ОКОЛНОСТИ) ========== -->
+  
+  <!-- Члан организоване криминалне групе -->
+  <ruleml:Atom>
+    <ruleml:Rel>clan_organizovane_grupe</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== CONCURRENCE OF CRIMES (СТИЦАЈ) ========== -->
+  <!-- Ако је окривљени крив за више дјела -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>kriv_za_djelo</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Ind>art_258</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>kriv_za_djelo</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Ind>art_260</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== CONFISCATION (ОДУЗИМАЊЕ) ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>predmet_djela_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>LaznNovac1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+
+</facts>

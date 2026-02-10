@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_2_2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_2_2013"/>
+          <FRBRuri value="/akn/me/judgment/K_2_2013"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_2_2013/srp@2013-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_2_2013/srp@2013-01-01"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_2_2013/srp@2013-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_2_2013/srp@2013-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jeleni_perović_kovačević" showAs="Jeleni Perović Kovačević"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>2/13</brojPredmeta>
+        <datum>2013</datum>
+        <datumNormalizovan>2013-01-01</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Jeleni Perović Kovačević</sudija>
+        <zapisnicar>SUDIJA
+
+Slađana Vlahović Jelena Perović Kovačević</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 04.novembra 2012. godine, u Podgorici, svjestan svog djela čije je izvršenje htio iako je znao da je njegovo djelo zabranjeno, upotrijebio kao pravu lažnu platnu karticu navodno izdatu od NLB Montenegrobanka AD Podgorica, a na koju su unijeti podaci sa originalne kartice vlasništvo Chase banke iz Sjedinjenih Američkih Država, na način što je u Poslovnom centru Delta City u radnji Grifon computers ovom karticom br.43885760xxxxxxxx u 15:06h i 15:21 h kupio dva lap topa, televizor marke Toshiba u ukupnom iznosu od 2.009,4 eura da bi nakon toga u marketu Voli 5 u ulici Ilije Milačića br.x, u 16:23h i 16:25h koristeći istu platnu karticu kupio robu u ukupnom iznosu od 189,58 eura, i time sebi pribavio protivpravnu imovinsku korist u označenim iznosima</opisSlucaja>
+        <iznosi>
+          <iznos>240,00 EUR</iznos>
+          <iznos>1000 EUR</iznos>
+          <iznos>981,75 EUR</iznos>
+          <iznos>650,00 EUR</iznos>
+          <iznos>60.09 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>129,49 EUR</iznos>
+          <iznos>2000 EUR</iznos>
+          <iznos>027,65 EUR</iznos>
+          <iznos>129.49 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 2/13, sudija Jeleni Perović Kovačević</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 04.novembra 2012. godine, u Podgorici, svjestan svog djela čije je izvršenje htio iako je znao da je njegovo djelo zabranjeno, upotrijebio kao pravu lažnu platnu karticu navodno izdatu od NLB Montenegrobanka AD Podgorica, a na koju su unijeti podaci sa originalne kartice vlasništvo Chase banke iz Sjedinjenih Američkih Država, na način što je u Poslovnom centru Delta City u radnji Grifon computers ovom karticom br.43885760xxxxxxxx u 15:06h i 15:21 h kupio dva lap topa, televizor marke Toshiba u ukupnom iznosu od 2.009,4 eura da bi nakon toga u marketu Voli 5 u ulici Ilije Milačića br.x, u 16:23h i 16:25h koristeći istu platnu karticu kupio robu u ukupnom iznosu od 189,58 eura, i time sebi pribavio protivpravnu imovinsku korist u označenim iznosima</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

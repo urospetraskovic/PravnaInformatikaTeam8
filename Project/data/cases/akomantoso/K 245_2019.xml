@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_245_filed2019_verdict2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_245_filed2019_verdict2016" />
+          <FRBRuri value="/akn/me/judgment/Case_K_245_filed2019_verdict2016" />
+          <FRBRdate date="2016-05-16" name="judgment" />
+          <FRBRauthor href="#kotoru" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_245_filed2019_verdict2016/srp@2016-05-16" />
+          <FRBRuri value="/akn/me/judgment/Case_K_245_filed2019_verdict2016/srp@2016-05-16" />
+          <FRBRdate date="2016-05-16" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_245_filed2019_verdict2016/srp@2016-05-16.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_245_filed2019_verdict2016/srp@2016-05-16.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU" />
+        <TLCPerson eId="sudija" href="/ontology/person/sanja_čakanović" showAs="Sanja Čakanović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u s" />
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>245/2019</brojPredmeta>
+        <datum>16.05.2016</datum>
+        <datumNormalizovan>2016-05-16</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Sanja Čakanović</sudija>
+        <optuzeni>u s</optuzeni>
+        <podaciORoditeljima>otac Mitra, majka Nade</podaciORoditeljima>
+        <godinaRodjenja>17.09.1983</godinaRodjenja>
+        <prebivaliste>Podgorici, Stari Aerodrom</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 29.12.2015. godine u PC Potkošljun u Budvi, neovlašćeno upotrebio bankovne kartice Komercijalne banke AD VISA br. 4242770000132595 izdatu na ime ošt. Lidije Peković iz Budve i MAESTRO br. 6708970000059812, izdatu na ime ošt. Stevana Pekovića iz Budve, na način što je iz novčanika oštećene Peković Lidije, koji je pronašao na parkingu pored zgrade u kojoj živi, izvadio ove bankovne kartice sa listicom na kojoj su bili upisani PIN kodovi kartica i iste neovlašćeno upotrebio tako što je na bankomatu Komercijalne banke AD Budva, pokušao da podigne iznose od 300,00 eura i 100,00 eura, ali pošto na računima nije bilo dovoljno novca, opet je ukucao šifre i podigao novčane iznose od 20,00 eura i 10,00 eura, čime je pribavio protivpravnu imovinsku korist u navedenim iznosima, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije izvršenje je htio,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene P</svjedok>
+          <svjedok>Peković L</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>iskaz svjedoka ošt. Peković Lidije dat na zapisniku kod ODT dana 10.01.2016.godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>100,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Sudija
+Ana</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 245/2019, sudija Sanja Čakanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u s, otac Mitra, majka Nade, prebivalište: Podgorici, Stari Aerodrom, oženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 29.12.2015. godine u PC Potkošljun u Budvi, neovlašćeno upotrebio bankovne kartice Komercijalne banke AD VISA br. 4242770000132595 izdatu na ime ošt. Lidije Peković iz Budve i MAESTRO br. 6708970000059812, izdatu na ime ošt. Stevana Pekovića iz Budve, na način što je iz novčanika oštećene Peković Lidije, koji je pronašao na parkingu pored zgrade u kojoj živi, izvadio ove bankovne kartice sa listicom na kojoj su bili upisani PIN kodovi kartica i iste neovlašćeno upotrebio tako što je na bankomatu Komercijalne banke AD Budva, pokušao da podigne iznose od 300,00 eura i 100,00 eura, ali pošto na računima nije bilo dovoljno novca, opet je ukucao šifre i podigao novčane iznose od 20,00 eura i 10,00 eura, čime je pribavio protivpravnu imovinsku korist u navedenim iznosima, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije izvršenje je htio,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka ošt. Peković Lidije dat na zapisniku kod ODT dana 10.01.2016.godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

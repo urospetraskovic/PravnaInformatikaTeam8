@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_503_filed2012_verdict2017">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_503_filed2012_verdict2017" />
+          <FRBRuri value="/akn/me/judgment/Case_K_503_filed2012_verdict2017" />
+          <FRBRdate date="2017-03-29" name="judgment" />
+          <FRBRauthor href="#kotoru" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_503_filed2012_verdict2017/srp@2017-03-29" />
+          <FRBRuri value="/akn/me/judgment/Case_K_503_filed2012_verdict2017/srp@2017-03-29" />
+          <FRBRdate date="2017-03-29" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_503_filed2012_verdict2017/srp@2017-03-29.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_503_filed2012_verdict2017/srp@2017-03-29.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU" />
+        <TLCPerson eId="sudija" href="/ontology/person/sanja_čakanović" showAs="Sanja Čakanović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="S.M." />
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>503/2012</brojPredmeta>
+        <datum>29.03.2017</datum>
+        <datumNormalizovan>2017-03-29</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Sanja Čakanović</sudija>
+        <optuzeni>S.M.</optuzeni>
+        <podaciORoditeljima>otac V., majka M.</podaciORoditeljima>
+        <zaposlenost>zaposlena u poljoprivrednoj apoteci “A.B.”</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>8 (osam) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana, lo.o2.2ol7. godine i dana, 11.o2.2ol7. godine u B., pri čemu je bio uračunljiv, svjestan svoga djela, čije izvršenje je htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana, lo.o2.2ol7. godine oko 2o,45 časova u prodavnici "M.i M. - V. R.", lažnu novčanicu od loo eura serijskog broja S35765426626, predao na kasi prilikom kupovine u marketu, nakon čega je dana, 11.o2.2ol7. godine oko o9,45 časova u poljoprivrednoj apoteci "A. B.", lažnu novčanicu od loo eura serijskog broja S3576542o996 predao na kasi prilikom kupovine.</opisSlucaja>
+        <svjedoci>
+          <svjedok>predao o</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>svjedoka M. Lj.</dokaz>
+          <dokaz>izvještaj o izvršenoj tehničkoj analizi novca Centralne banke CG br. ll8 od l6.o2.2ol7. godine</dokaz>
+          <dokaz>izvještaj o grafološkom vještačenju i izvještaj o izvršenoj tehničkoj analizi novca)</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Budva 47/2 br. 24l/l7-l7l6 od l2.o2.2ol7. godine</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Budva 47/2 br. 24l/l7-l7ll od l2.o2.2ol7. godine na ime K.J.</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Budva 47/2 br. 24l/l7-l7lo od l2.o2.2ol7. godine na ime J.M.</dokaz>
+          <dokaz>video zapisom iz poljoprivredne apoteke A. B.</dokaz>
+          <dokaz>video zapisom iz prodavnice M. M. - V. R.</dokaz>
+          <dokaz>video zapisom iz prodavnice M. M. - V. R. sud je utvrdio da se na istom snimku jasno vidi da je okrivljeni S.M. dana 10.02.2017 godine oko 20:45 časova u prodavnici “M. M. - V.R.“ predao novčanicu u iznosu od 100 eura zaposlenoj radnici na kasi prilikom kupovine u toj prodavnici</dokaz>
+          <dokaz>video zapisom iz poljoprivredne apoteke A. B. sud utvrdio da se na istom snimku jasno vidi da je okrivljeni S. M. dana 11.02.2017 godine oko 09:45 časova u poljoprivrednoj apoteci “A. B.” predao novčanicu u iznosu od 100 eura zaposlenoj radnici na kasi a prilikom kupovine u toj apoteci</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>13,30 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Tamare Počanić</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>8 (osam) mjesec</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 503/2012, sudija Sanja Čakanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: S.M., otac V., majka M., zaposlena u poljoprivrednoj apoteci “A.B.”, neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana, lo.o2.2ol7. godine i dana, 11.o2.2ol7. godine u B., pri čemu je bio uračunljiv, svjestan svoga djela, čije izvršenje je htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana, lo.o2.2ol7. godine oko 2o,45 časova u prodavnici "M.i M. - V. R.", lažnu novčanicu od loo eura serijskog broja S35765426626, predao na kasi prilikom kupovine u marketu, nakon čega je dana, 11.o2.2ol7. godine oko o9,45 časova u poljoprivrednoj apoteci "A. B.", lažnu novčanicu od loo eura serijskog broja S3576542o996 predao na kasi prilikom kupovine.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• svjedoka M. Lj.</p>
+            <p>• izvještaj o izvršenoj tehničkoj analizi novca Centralne banke CG br. ll8 od l6.o2.2ol7. godine</p>
+            <p>• izvještaj o grafološkom vještačenju i izvještaj o izvršenoj tehničkoj analizi novca)</p>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Budva 47/2 br. 24l/l7-l7l6 od l2.o2.2ol7. godine</p>
+            <p>• potvrda o privremeno oduzetim predmetima UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Budva 47/2 br. 24l/l7-l7ll od l2.o2.2ol7. godine na ime K.J.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 7 ( sedam ) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

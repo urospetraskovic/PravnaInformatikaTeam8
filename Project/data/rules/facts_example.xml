@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  EXAMPLE CASE: Sample Facts for DR-Device Testing
+  Case: K_12_2022 - Falsifikovanje novca (Art. 258)
+  
+  SCENARIO: Okrivljeni је прибавио и ставио у оптицај лажан новац
+            у износу од 5000 EUR, признао кривицу, раније неосуђиван.
+-->
+<facts xmlns:ruleml="http://ruleml.org/spec"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!-- Case Metadata -->
+  <case>
+    <caseId>K_12_2022</caseId>
+    <caseDate>2022-05-15</caseDate>
+    <court>Osnovni sud u Podgorici</court>
+  </case>
+  
+  <defendant id="Okrivljeni1">
+    <name>Marko M.</name>
+    <initials>M.M.</initials>
+  </defendant>
+  
+  <!-- ARTICLE 258 FACTS (Counterfeit Money) -->
+  
+  <!-- НЕ прави лажан новац (само прибавља) -->
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ДА - има намјеру стављања у оптицај -->
+  <ruleml:Atom>
+    <ruleml:Rel>namjera_stavljanja_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- НЕ преиначује прави новац -->
+  <ruleml:Atom>
+    <ruleml:Rel>preinacuje_pravi_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ДА - прибавља лажан новац -->
+  <ruleml:Atom>
+    <ruleml:Rel>pribavlja_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ДА - ставља лажан новац у оптицај -->
+  <ruleml:Atom>
+    <ruleml:Rel>stavlja_lazan_novac_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- Износ: 5000 EUR (не прелази 15000 EUR) -->
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_novca</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">5000</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ARTICLE 260 FACTS (Credit Card) - not applicable -->
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_laznu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>zloupotrebljava_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- MITIGATING FACTORS -->
+  
+  <!-- ДА - признаје кривицу -->
+  <ruleml:Atom>
+    <ruleml:Rel>priznaje_krivicu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- НЕ - раније неосуђиван (олакшавајуће) -->
+  <ruleml:Atom>
+    <ruleml:Rel>ranije_osudivan</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- НЕ - није надокнадио штету -->
+  <ruleml:Atom>
+    <ruleml:Rel>nadoknadio_stetu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ДА - сарађује са истрагом -->
+  <ruleml:Atom>
+    <ruleml:Rel>saradjuje_sa_istragom</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- AGGRAVATING FACTORS -->
+  
+  <!-- НЕ - није члан организоване групе -->
+  <ruleml:Atom>
+    <ruleml:Rel>clan_organizovane_grupe</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- CONFISCATION -->
+  <ruleml:Atom>
+    <ruleml:Rel>predmet_djela_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>LaznNovac1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+
+</facts>
+
+<!--
+  EXPECTED RESULTS from DR-Device:
+  
+  1. VIOLATED LAW: Član 258 stav 2 (kazna zatvora 2-10 godina)
+     - pribavlja_lazan_novac = true
+     - namjera_stavljanja_u_opticaj = true
+     - stavlja_lazan_novac_u_opticaj = true
+  
+  2. MITIGATING CIRCUMSTANCES (олакшавајуће):
+     - priznanje (признање кривице)
+     - ranije_neosudivan (раније неосуђиван)
+     - saradnja_sa_istragom (сарадња са истрагом)
+  
+  3. SENTENCE RECOMMENDATION:
+     - smanjenje_kazne_dozvoljeno = true (вишеструке олакшавајуће)
+     - moguca_uslovna_osuda = could apply if sentence < 2 years
+  
+  4. CONFISCATION:
+     - oduzima_se(LaznNovac1) = true (лажан новац се одузима)
+-->

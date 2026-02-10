@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_215_filed2020_verdict2018">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_215_filed2020_verdict2018" />
+          <FRBRuri value="/akn/me/judgment/Case_K_215_filed2020_verdict2018" />
+          <FRBRdate date="2018-06-04" name="judgment" />
+          <FRBRauthor href="#bijelom_polju" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_215_filed2020_verdict2018/srp@2018-06-04" />
+          <FRBRuri value="/akn/me/judgment/Case_K_215_filed2020_verdict2018/srp@2018-06-04" />
+          <FRBRdate date="2018-06-04" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_215_filed2020_verdict2018/srp@2018-06-04.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_215_filed2020_verdict2018/srp@2018-06-04.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU" />
+        <TLCPerson eId="sudija" href="/ontology/person/mira_smolović" showAs="Mira Smolović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="E.C." />
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>215/20</brojPredmeta>
+        <datum>04.06. 2018</datum>
+        <datumNormalizovan>2018-06-04</datumNormalizovan>
+        <godina>2018</godina>
+        <sudija>Mira Smolović</sudija>
+        <optuzeni>E.C.</optuzeni>
+        <podaciORoditeljima>otac Dž., majka I.</podaciORoditeljima>
+        <prebivaliste>mjestu R</prebivaliste>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>2 (dva) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>-U periodu od marta 2014. godine do kraja januara 2018. godine sposoban da shvati značaj svog djela i da upravlja svojim postupcima i svjestan svog djela čije je izvršenje htio, znajućio da je isto zabranjeno neovlašćeno držao i upotrebljavao platnu karticu za točenje goriva br. 7005737700014910522, koja mu je predata od strane ovlašćenog lica u privrednom društvu DOO "C.ZA E.I.a" P. na način što karticu nije predao M.Z.radi korišćenja u službene svrhe već je sa tako neovlašćeno pribavljenom karticom na benzinskoj pumpi "P.C.G." u Bijelom Polju točio gorivo za sopstvene potrebe i tako upotrebom kartice sebi, na štetu ošećenog DOO "C.ZA E.I.a" Podgorica, pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.782,12 eura.</opisSlucaja>
+        <iznosi>
+          <iznos>35,00 EUR</iznos>
+          <iznos>782,12 EUR</iznos>
+          <iznos>225,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Draginje Bošković</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>2 (dva) mjesec</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 215/20, sudija Mira Smolović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: E.C., otac Dž., majka I., prebivalište: mjestu R, oženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>-U periodu od marta 2014. godine do kraja januara 2018. godine sposoban da shvati značaj svog djela i da upravlja svojim postupcima i svjestan svog djela čije je izvršenje htio, znajućio da je isto zabranjeno neovlašćeno držao i upotrebljavao platnu karticu za točenje goriva br. 7005737700014910522, koja mu je predata od strane ovlašćenog lica u privrednom društvu DOO "C.ZA E.I.a" P. na način što karticu nije predao M.Z.radi korišćenja u službene svrhe već je sa tako neovlašćeno pribavljenom karticom na benzinskoj pumpi "P.C.G." u Bijelom Polju točio gorivo za sopstvene potrebe i tako upotrebom kartice sebi, na štetu ošećenog DOO "C.ZA E.I.a" Podgorica, pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.782,12 eura.</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 1 (jedne) godin</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

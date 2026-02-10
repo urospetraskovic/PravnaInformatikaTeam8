@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_13_2024">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_13_2024"/>
+          <FRBRuri value="/akn/me/judgment/K_13_2024"/>
+          <FRBRdate date="2024-01-01" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_13_2024/srp@2024-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_13_2024/srp@2024-01-01"/>
+          <FRBRdate date="2024-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_13_2024/srp@2024-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_13_2024/srp@2024-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/tamara_spasojević" showAs="Tamara Spasojević"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>13/24</brojPredmeta>
+        <datum>2024</datum>
+        <datumNormalizovan>2024-01-01</datumNormalizovan>
+        <godina>2024</godina>
+        <sudija>Tamara Spasojević</sudija>
+        <zapisnicar>Anom Stanišić</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>4 (četiri) mjeseca</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 11.12.2023. godine oko 10:30 časova u katedrali S..P. u B., bio svjestan djela i htio njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, otuđio tuđu pokretnu stvar - novčanik oštećenog P. P., u kojem se nalazila bankovna kartica Hipotekarne banke za bezgotovinsko plaćanje kao i novac u iznosu od 30,00 eura i 1.000 albanskih leka, nakon čega se svojim vozilom odvezao u pravcu Budve gdje je pomenutu platnu karticu oštećenoga P. više puta upotrijebio prilikom kupovine različite vrste proizvoda u firmi »M. c.«, kojom prilikom je potrošio iznos od 215,75 eura;</opisSlucaja>
+        <iznosi>
+          <iznos>10 EUR</iznos>
+          <iznos>215,75 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>37,89 EUR</iznos>
+          <iznos>27,91 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>12,50 EUR</iznos>
+          <iznos>29,31 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 13/24, sudija Tamara Spasojević</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.12.2023. godine oko 10:30 časova u katedrali S..P. u B., bio svjestan djela i htio njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, otuđio tuđu pokretnu stvar - novčanik oštećenog P. P., u kojem se nalazila bankovna kartica Hipotekarne banke za bezgotovinsko plaćanje kao i novac u iznosu od 30,00 eura i 1.000 albanskih leka, nakon čega se svojim vozilom odvezao u pravcu Budve gdje je pomenutu platnu karticu oštećenoga P. više puta upotrijebio prilikom kupovine različite vrste proizvoda u firmi »M. c.«, kojom prilikom je potrošio iznos od 215,75 eura;</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 4 (četiri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

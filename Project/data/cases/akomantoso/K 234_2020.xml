@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_234_2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_234_2020"/>
+          <FRBRuri value="/akn/me/judgment/K_234_2020"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#beranama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_234_2020/srp@2020-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_234_2020/srp@2020-01-01"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_234_2020/srp@2020-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_234_2020/srp@2020-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/beranama" showAs="Osnovni Sud u BERANAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/pojedincu_dubravki_popović" showAs="pojedincu Dubravki Popović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BERANAMA</sud>
+        <brojPredmeta>234/20</brojPredmeta>
+        <datum>2020</datum>
+        <datumNormalizovan>2020-01-01</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>pojedincu Dubravki Popović</sudija>
+        <zapisnicar>Dijane Đurišić</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>None</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivprav</opisSlucaja>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>408,00 EUR</iznos>
+          <iznos>390,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BERANAMA, 234/20, sudija pojedincu Dubravki Popović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivprav</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: None</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_663_2021">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_663_2021"/>
+          <FRBRuri value="/akn/me/judgment/K_663_2021"/>
+          <FRBRdate date="2021-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_663_2021/srp@2021-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_663_2021/srp@2021-01-01"/>
+          <FRBRdate date="2021-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_663_2021/srp@2021-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_663_2021/srp@2021-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>663/21</brojPredmeta>
+        <datum>2021</datum>
+        <datumNormalizovan>2021-01-01</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>7 (sedam) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</opisSlucaja>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>580,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>370,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>152,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>586,00 EUR</iznos>
+          <iznos>134,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 663/21, sudija Nenad Vujanović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 7 (sedam) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

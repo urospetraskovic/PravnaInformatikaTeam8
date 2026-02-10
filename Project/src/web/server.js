@@ -35,6 +35,7 @@ function killPortProcess(port) {
 killPortProcess(PORT);
 
 const app = express();
+app.use(express.json()); // Parse JSON request bodies
 
 // Load case database from XML files - try akomantoso_new first, fallback to akomantoso
 const casesDir = path.join(__dirname, '../../data/cases/akomantoso_new');
@@ -57,21 +58,25 @@ function parseXMLFile(filePath) {
     // Get proprietary metadata (Serbian fields)
     const proprietary = meta.getElementsByTagNameNS('*', 'proprietary')[0];
     let sudija = 'Nepoznat';
+    let zapisnicar = 'Nepoznat';
     let sud = 'Nepoznat';
     let kazna = 'Nepoznat';
     let tipKrivicnogDjela = '';
     let uslovnaOsuda = false;
     let novcanaKazna = '';
     let godinaRodjenja = '';
+    let godinaSlucaja = '';  // Year of the case from XML
     let prebivaliste = '';
     let zaposlenost = '';
     let bracniStatus = '';
     let ranijeOsudjivan = '';
     let svjedoci = [];
     let dokazi = [];
+    let iznosi = [];  // Amounts from XML
     let brojPredmeta = '';
     let vrstaPresude = '';
     let opisSlucaja = '';
+    let clanKZ = '';
     
     if (proprietary) {
       // Extract Serbian proprietary fields
@@ -81,12 +86,14 @@ function parseXMLFile(filePath) {
       };
       
       sudija = getTextContent('sudija') || 'Nepoznat';
+      zapisnicar = getTextContent('zapisnicar') || 'Nepoznat';
       sud = getTextContent('sud') || sud;
       kazna = getTextContent('kazna') || 'Nepoznat';
       tipKrivicnogDjela = getTextContent('tipKrivicnogDjela') || '';
       uslovnaOsuda = getTextContent('uslovnaOsuda') === 'Da';
       novcanaKazna = getTextContent('novcanaKazna') || '';
       godinaRodjenja = getTextContent('godinaRodjenja') || '';
+      godinaSlucaja = getTextContent('godina') || '';  // Extract year from XML
       prebivaliste = getTextContent('prebivaliste') || '';
       zaposlenost = getTextContent('zaposlenost') || '';
       bracniStatus = getTextContent('bracniStatus') || '';
@@ -94,6 +101,16 @@ function parseXMLFile(filePath) {
       brojPredmeta = getTextContent('brojPredmeta') || '';
       vrstaPresude = getTextContent('vrstaPresude') || '';
       opisSlucaja = getTextContent('opisSlucaja') || '';
+      clanKZ = getTextContent('clanKZ') || '';
+      
+      // Extract amounts list
+      const iznosiEl = proprietary.getElementsByTagNameNS('*', 'iznosi')[0];
+      if (iznosiEl) {
+        const iznosEls = iznosiEl.getElementsByTagNameNS('*', 'iznos');
+        for (let i = 0; i < iznosEls.length; i++) {
+          iznosi.push(iznosEls[i].textContent.trim());
+        }
+      }
       
       // Extract witnesses list
       const svjedociEl = proprietary.getElementsByTagNameNS('*', 'svjedoci')[0];
@@ -117,7 +134,23 @@ function parseXMLFile(filePath) {
     // Get identification info
     const FRBRnumber = meta.getElementsByTagNameNS('*', 'FRBRnumber')[0];
     const FRBRname = meta.getElementsByTagNameNS('*', 'FRBRname')[0];
-    const caseNumber = brojPredmeta || (FRBRnumber ? FRBRnumber.getAttribute('value') : 'Nepoznat');
+    // If brojPredmeta is "Nepoznat" or empty, derive ID from filename (e.g., Case_1_9.xml -> "1/9")
+    let caseNumber = brojPredmeta;
+    if (!caseNumber || caseNumber === 'Nepoznat') {
+      // Try FRBRnumber first
+      if (FRBRnumber && FRBRnumber.getAttribute('value')) {
+        caseNumber = FRBRnumber.getAttribute('value');
+      } else {
+        // Derive from filename: Case_K_277_22.xml -> "K 277/22", Case_1_9.xml -> "1/9"
+        const basename = path.basename(filePath, '.xml');
+        const match = basename.match(/Case_(?:K_)?(\d+)_(\d+)/i);
+        if (match) {
+          caseNumber = basename.includes('_K_') ? `K ${match[1]}/${match[2]}` : `${match[1]}/${match[2]}`;
+        } else {
+          caseNumber = basename; // Use filename as-is if pattern doesn't match
+        }
+      }
+    }
     const crimeType = tipKrivicnogDjela || (FRBRname ? FRBRname.getAttribute('value') : 'Nepoznat');
     
     // Get classification keywords for type
@@ -203,11 +236,31 @@ function parseXMLFile(filePath) {
     // Get articles referenced
     const references = meta.getElementsByTagNameNS('*', 'TLCReference');
     const articles = [];
-    for (let i = 0; i < references.length; i++) {
-      const ref = references[i];
-      const showAs = ref.getAttribute('showAs');
-      if (showAs && (showAs.includes('Član') || showAs.includes('члан') || showAs.includes('Clan') || showAs.includes('čl.'))) {
-        articles.push(showAs);
+    
+    // First priority: Use clanKZ from proprietary section (most reliable)
+    if (clanKZ) {
+      // Format: "čl. 260 st. 2" or "Član 258" etc.
+      articles.push(clanKZ);
+    }
+    
+    // Fallback: Check TLCReference elements
+    if (articles.length === 0) {
+      for (let i = 0; i < references.length; i++) {
+        const ref = references[i];
+        const showAs = ref.getAttribute('showAs');
+        if (showAs && (showAs.includes('Član') || showAs.includes('члан') || showAs.includes('Clan') || showAs.includes('čl.'))) {
+          articles.push(showAs);
+        }
+      }
+    }
+    
+    // Additional fallback: Derive article from crime type
+    if (articles.length === 0 && tipKrivicnogDjela) {
+      const lowerType = tipKrivicnogDjela.toLowerCase();
+      if (lowerType.includes('kreditn') || lowerType.includes('kartic')) {
+        articles.push('čl. 260 KZ'); // Credit card fraud
+      } else if (lowerType.includes('novca') || lowerType.includes('novac')) {
+        articles.push('čl. 258 KZ'); // Money counterfeiting
       }
     }
     
@@ -237,12 +290,16 @@ function parseXMLFile(filePath) {
     // First check if vrstaPresude is set in proprietary section - most reliable
     if (vrstaPresude) {
       const vp = vrstaPresude.toLowerCase();
-      if (vp === 'kriv' || vp === 'kriva' || vp === 'osuđen' || vp === 'osuđena') {
+      if (vp === 'kriv' || vp === 'kriva') {
         verdict = 'KRIV';
-      } else if (vp === 'oslobođen' || vp === 'oslobođena' || vp.includes('oslob')) {
-        verdict = 'OSLOBOĐEN';
-      } else if (vp.includes('uslovna') || vp.includes('uslovn')) {
-        verdict = 'KRIV';  // Conditional is still guilty
+      } else if (vp === 'osuđujuća' || vp === 'osuđujuca' || vp.includes('osuđujuć')) {
+        verdict = 'OSUĐUJUĆA';  // Convicting verdict - keep separate for stats
+      } else if (vp === 'oslobađajuća' || vp === 'oslobadjajuca' || vp.includes('oslob')) {
+        verdict = 'OSLOBAĐAJUĆA';
+      } else if (vp === 'uslovna osuda' || vp.includes('uslovna')) {
+        verdict = 'USLOVNA OSUDA';  // Conditional/suspended sentence
+      } else if (vp === 'sudska opomena' || vp.includes('opomena')) {
+        verdict = 'SUDSKA OPOMENA';  // Judicial warning
       } else if (vp.includes('odbij') || vp.includes('odbač')) {
         verdict = 'ODBAČENO';
       } else {
@@ -277,16 +334,44 @@ function parseXMLFile(filePath) {
       sentenceText = 'Uslovna osuda';
     }
     
-    // Extract year from case number
+    // Extract year - prefer godina from XML, fallback to case number parsing
     let year = 2024;
-    const yearMatch = caseNumber.match(/\/(\d+)/);
-    if (yearMatch) {
-      const parsedYear = parseInt(yearMatch[1]);
-      // Handle both 2-digit (K 4/19) and 4-digit (K 4/2019) year formats
-      if (parsedYear > 99) {
-        year = parsedYear; // Already 4-digit year
-      } else {
-        year = (parsedYear <= 30 ? 2000 : 1900) + parsedYear;
+    if (godinaSlucaja && /^\d{4}$/.test(godinaSlucaja)) {
+      year = parseInt(godinaSlucaja);
+    } else {
+      const yearMatch = caseNumber.match(/\/(\d+)/);
+      if (yearMatch) {
+        const parsedYear = parseInt(yearMatch[1]);
+        // Handle both 2-digit (K 4/19) and 4-digit (K 4/2019) year formats
+        if (parsedYear > 99 && parsedYear < 2100) {
+          year = parsedYear; // Already 4-digit year
+        } else if (parsedYear <= 99) {
+          year = (parsedYear <= 30 ? 2000 : 1900) + parsedYear;
+        }
+        // If parsedYear > 2100, it's likely a case number not a year - use default
+      }
+    }
+    
+    // Also try to extract year from FRBRdate if still default
+    if (year === 2024) {
+      const frbrdateEl = meta.getElementsByTagNameNS('*', 'FRBRdate')[0];
+      if (frbrdateEl) {
+        const dateAttr = frbrdateEl.getAttribute('date');
+        if (dateAttr) {
+          const dateYear = parseInt(dateAttr.substring(0, 4));
+          if (dateYear > 1990 && dateYear < 2100) {
+            year = dateYear;
+          }
+        }
+      }
+    }
+    
+    // Calculate total amount from iznosi
+    let totalAmount = 0;
+    for (const iznos of iznosi) {
+      const match = iznos.match(/([\d.,]+)\s*EUR/i);
+      if (match) {
+        totalAmount += parseFloat(match[1].replace(',', '.'));
       }
     }
     
@@ -298,6 +383,7 @@ function parseXMLFile(filePath) {
     
     return {
       id: caseNumber,
+      caseNumber: caseNumber, // Alias for frontend compatibility
       case_id: path.basename(filePath, '.xml'),
       type: displayType,
       court: court,
@@ -311,6 +397,7 @@ function parseXMLFile(filePath) {
       evidence: evidenceStr,
       // New Serbian fields
       sudija: sudija,
+      zapisnicar: zapisnicar,
       uslovnaOsuda: uslovnaOsuda,
       novcanaKazna: novcanaKazna,
       godinaRodjenja: godinaRodjenja,
@@ -320,6 +407,9 @@ function parseXMLFile(filePath) {
       ranijeOsudjivan: ranijeOsudjivan,
       svjedoci: svjedoci,
       dokazi: dokazi,
+      clanKZ: clanKZ,
+      iznosi: iznosi,
+      totalAmount: totalAmount,
       harm: Math.floor(Math.random() * 5) + 1,
       year: year,
       xmlFile: filePath
@@ -365,6 +455,7 @@ if (caseDatabase.length === 0) {
   caseDatabase = [
     {
       id: 'K 05/1336',
+      caseNumber: 'K 05/1336',
       case_id: 'Case_05_1336',
       type: 'Falsifikovanje novca',
       court: 'Osnovni Sud u Bijelom Polju',
@@ -396,11 +487,22 @@ app.get('/api/cases', (req, res) => {
 
 // API: Get case statistics
 app.get('/api/statistics', (req, res) => {
+  // Count different verdict types
+  const krivCount = caseDatabase.filter(c => c.verdict === 'KRIV').length;
+  const osudjujucaCount = caseDatabase.filter(c => c.verdict === 'OSUĐUJUĆA').length;
+  const uslovnaCount = caseDatabase.filter(c => c.verdict === 'USLOVNA OSUDA').length;
+  const oslobodjenCount = caseDatabase.filter(c => c.verdict === 'OSLOBAĐAJUĆA' || c.verdict === 'OSLOBOĐEN').length;
+  const opomenaCount = caseDatabase.filter(c => c.verdict === 'SUDSKA OPOMENA').length;
+  
   const stats = {
     totalCases: caseDatabase.length,
-    guiltyCount: caseDatabase.filter(c => c.verdict === 'KRIV').length,
-    acquittedCount: caseDatabase.filter(c => c.verdict === 'OSLOBOĐEN').length,
-    conditionalCount: caseDatabase.filter(c => c.verdict === 'ODBAČENO').length,
+    guiltyCount: krivCount + osudjujucaCount,  // Combined guilty verdicts
+    conditionalCount: uslovnaCount,  // Suspended sentences (technically guilty but no prison)
+    acquittedCount: oslobodjenCount,
+    opomenaCount: opomenaCount,  // Judicial warning count
+    // Detailed breakdown
+    krivCount: krivCount,
+    osudjujucaCount: osudjujucaCount,
     averageHarm: caseDatabase.length > 0 ? (caseDatabase.reduce((sum, c) => sum + c.harm, 0) / caseDatabase.length).toFixed(2) : 0,
     courts: [...new Set(caseDatabase.map(c => c.court))].length
   };
@@ -468,42 +570,44 @@ app.get('/api/glava23', (req, res) => {
 // API: Get AkomaNtoso XML for a specific case
 app.get('/api/akomantoso/:caseId', (req, res) => {
   const caseId = req.params.caseId;
+  const caseDir = path.join(__dirname, '../../data/cases/akomantoso');
   
-  // Convert case ID format: "K 34/14" -> "Case_K_34_14" or variations
-  let possibleFileNames = [];
+  // Find the case file by searching for matching case_id in database
+  const caseRecord = caseDatabase.find(c => c.id === caseId);
   
-  // Original case ID format
-  possibleFileNames.push(caseId);
-  
-  if (caseId.includes('/')) {
-    // Format like "K 34/14" -> extract numbers
-    const match = caseId.match(/K?\s*(\d+)\/(\d+)/i);
-    if (match) {
-      possibleFileNames.push(`Case_K_${match[1]}_${match[2]}`);
-      possibleFileNames.push(`Case_${match[1]}_${match[2]}`);
+  if (caseRecord && caseRecord.xmlFile) {
+    try {
+      const xmlContent = fs.readFileSync(caseRecord.xmlFile, 'utf8');
+      res.header('Content-Type', 'application/xml; charset=utf-8');
+      return res.send(xmlContent);
+    } catch (error) {
+      console.error('Error reading AkomaNtoso file:', error);
+      return res.status(500).json({ error: 'Error reading AkomaNtoso file' });
     }
   }
   
-  // Try to find the file in akomantoso_new first, then akomantoso
-  const searchDirs = [
-    path.join(__dirname, '../../data/cases/akomantoso_new'),
-    path.join(__dirname, '../../data/cases/akomantoso')
-  ];
+  // Fallback: try different formats
+  let possibleFileNames = [];
+  possibleFileNames.push(caseId);
   
-  for (const dir of searchDirs) {
-    if (!fs.existsSync(dir)) continue;
-    
-    for (const fileName of possibleFileNames) {
-      const xmlPath = path.join(dir, `${fileName}.xml`);
-      if (fs.existsSync(xmlPath)) {
-        try {
-          const xmlContent = fs.readFileSync(xmlPath, 'utf8');
-          res.header('Content-Type', 'application/xml; charset=utf-8');
-          return res.send(xmlContent);
-        } catch (error) {
-          console.error('Error reading AkomaNtoso file:', error);
-          return res.status(500).json({ error: 'Error reading AkomaNtoso file' });
-        }
+  if (caseId.includes('/')) {
+    const match = caseId.match(/(\d+)\/(\d+)/);
+    if (match) {
+      possibleFileNames.push(`K ${match[1]}_${match[2]}`);
+      possibleFileNames.push(`K_${match[1]}_${match[2]}`);
+    }
+  }
+  
+  for (const fileName of possibleFileNames) {
+    const xmlPath = path.join(caseDir, `${fileName}.xml`);
+    if (fs.existsSync(xmlPath)) {
+      try {
+        const xmlContent = fs.readFileSync(xmlPath, 'utf8');
+        res.header('Content-Type', 'application/xml; charset=utf-8');
+        return res.send(xmlContent);
+      } catch (error) {
+        console.error('Error reading AkomaNtoso file:', error);
+        return res.status(500).json({ error: 'Error reading AkomaNtoso file' });
       }
     }
   }
@@ -542,6 +646,73 @@ app.get('/api/cases/:id(*)', (req, res) => {
       error: 'Error loading case',
       message: error.message
     });
+  }
+});
+
+// Reasoning API endpoint
+app.post('/api/reasoning', async (req, res) => {
+  const { caseId, facts } = req.body;
+  
+  if (!caseId && !facts) {
+    return res.status(400).json({ error: 'Either caseId or facts required' });
+  }
+
+  try {
+    const { spawn } = require('child_process');
+    const projectRoot = path.join(__dirname, '..', '..');
+    
+    let pythonArgs;
+    if (caseId) {
+      // Find the case XML file - match by id, caseNumber, or case_id
+      const caseRecord = caseDatabase.find(c => 
+        c.id === caseId || 
+        c.caseNumber === caseId || 
+        c.case_id === caseId
+      );
+      if (!caseRecord || !caseRecord.xmlFile) {
+        return res.status(404).json({ error: 'Case not found or no Akoma Ntoso file', searchedId: caseId });
+      }
+      pythonArgs = ['demo_reasoning.py', '--case', caseRecord.xmlFile, '--json'];
+    } else {
+      // Pass facts directly to reasoning engine
+      pythonArgs = ['demo_reasoning.py', '--facts', JSON.stringify(facts), '--json'];
+    }
+
+    const pythonProcess = spawn('py', pythonArgs, { cwd: projectRoot });
+    
+    let stdout = '';
+    let stderr = '';
+    
+    pythonProcess.stdout.on('data', (data) => { stdout += data.toString(); });
+    pythonProcess.stderr.on('data', (data) => { stderr += data.toString(); });
+    
+    pythonProcess.on('close', (code) => {
+      if (code !== 0) {
+        console.error('Reasoning error:', stderr);
+        return res.status(500).json({ error: 'Reasoning failed', details: stderr });
+      }
+      
+      try {
+        // Find JSON in output (between first { and last })
+        const jsonMatch = stdout.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          const result = JSON.parse(jsonMatch[0]);
+          res.json(result);
+        } else {
+          res.json({ raw_output: stdout });
+        }
+      } catch (parseError) {
+        res.json({ raw_output: stdout });
+      }
+    });
+    
+    pythonProcess.on('error', (err) => {
+      res.status(500).json({ error: 'Failed to start reasoning engine', details: err.message });
+    });
+    
+  } catch (error) {
+    console.error('Reasoning error:', error);
+    res.status(500).json({ error: error.message });
   }
 });
 

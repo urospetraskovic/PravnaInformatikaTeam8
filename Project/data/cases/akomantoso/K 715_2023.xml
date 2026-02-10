@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_715_filed2023_verdict2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_715_filed2023_verdict2020" />
+          <FRBRuri value="/akn/me/judgment/Case_K_715_filed2023_verdict2020" />
+          <FRBRdate date="2020-09-23" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_715_filed2023_verdict2020/srp@2020-09-23" />
+          <FRBRuri value="/akn/me/judgment/Case_K_715_filed2023_verdict2020/srp@2020-09-23" />
+          <FRBRdate date="2020-09-23" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_715_filed2023_verdict2020/srp@2020-09-23.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_715_filed2023_verdict2020/srp@2020-09-23.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI" />
+        <TLCPerson eId="sudija" href="/ontology/person/nada_rabrenović" showAs="Nada Rabrenović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="i d" />
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>715/23</brojPredmeta>
+        <datum>23.09.2020</datum>
+        <datumNormalizovan>2020-09-23</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Nada Rabrenović</sudija>
+        <optuzeni>i d</optuzeni>
+        <podaciORoditeljima>otac R., majka M.</podaciORoditeljima>
+        <prebivaliste>Podgorici</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>40,00</novcanaKazna>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 13.09.2019. godine, oko 23,38 časova, u Ulici dalmatinskoj, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, neovlašćeno pribavio tuđu platnu karticu, koju je, u namjeri da sebi pribavi protivpravnu imovinsku korist, upotrijebio, na način što je u označenoj ulici pronašao novčanik vlasništvo oštećene R. D. , u kojem novčaniku su se nalazile dvije kartice i to jedna NLB banke, a druga CKB banke, obje na ime oštećene, nakon čega je došao na benzinsku pumpu "Euro petrol", koja se nalazi u naselju Blok V, gdje je karticu NLB banke upotrijebio, tako što je sa istom kupio cigarete, vrijednosti 2,80 eura, u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene i </svjedok>
+          <svjedok>oštećena R.</svjedok>
+          <svjedok>oštećene R.</svjedok>
+          <svjedok>oštećene i</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>original i kopiju potvrde Hipotekarne banke AD Podgorica broj 0105-3779 od 17.11.2023. godine</dokaz>
+          <dokaz>izvod za račun Hipotekarne banke Ad Podgorica broj ... od 20.11.2023. godine i pročitao izvod iz kaznene evidencije na ime okrivljene T. S. izdat od strane Ministarstva pravde pod brojem ... od 16.01.2024. godine.
+Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</dokaz>
+          <dokaz>iskaz svjedoka oštećene R. D.</dokaz>
+          <dokaz>Dopis NLB banke djelovodni br. 101-390 od 28.11.2019. godine i Izvod iz registra kaznenih evidencija Ministarstva pravde</dokaz>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljene T. S. izdat od strane Ministarstva pravde pod brojem ... od 16.01.2024. godine.
+Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</dokaz>
+          <dokaz>svjedoka – oštećenu A. O.</dokaz>
+          <dokaz>Nalaz i mišljenje vještaka medicinske struke dr G. Ž. od 20.06.2020. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>38,00 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>3,50 EUR</iznos>
+          <iznos>2,99 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+          <iznos>3,00 EUR</iznos>
+          <iznos>2.99 EUR</iznos>
+          <iznos>15,30 EUR</iznos>
+          <iznos>2,80 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>34,45 EUR</iznos>
+          <iznos>154,00 EUR</iznos>
+        </iznosi>
+      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>6 (šest) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 715/23, sudija Nada Rabrenović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: i d, otac R., majka M., prebivalište: Podgorici, nezaposlen, razveden, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 13.09.2019. godine, oko 23,38 časova, u Ulici dalmatinskoj, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, neovlašćeno pribavio tuđu platnu karticu, koju je, u namjeri da sebi pribavi protivpravnu imovinsku korist, upotrijebio, na način što je u označenoj ulici pronašao novčanik vlasništvo oštećene R. D. , u kojem novčaniku su se nalazile dvije kartice i to jedna NLB banke, a druga CKB banke, obje na ime oštećene, nakon čega je došao na benzinsku pumpu "Euro petrol", koja se nalazi u naselju Blok V, gdje je karticu NLB banke upotrijebio, tako što je sa istom kupio cigarete, vrijednosti 2,80 eura, u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• original i kopiju potvrde Hipotekarne banke AD Podgorica broj 0105-3779 od 17.11.2023. godine</p>
+            <p>• izvod za račun Hipotekarne banke Ad Podgorica broj ... od 20.11.2023. godine i pročitao izvod iz kaznene evidencije na ime okrivljene T. S. izdat od strane Ministarstva pravde pod brojem ... od 16.01.2024. godine.
+Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</p>
+            <p>• iskaz svjedoka oštećene R. D.</p>
+            <p>• Dopis NLB banke djelovodni br. 101-390 od 28.11.2019. godine i Izvod iz registra kaznenih evidencija Ministarstva pravde</p>
+            <p>• izvod iz kaznene evidencije na ime okrivljene T. S. izdat od strane Ministarstva pravde pod brojem ... od 16.01.2024. godine.
+Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+          <p>Novčana kazna: 40,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

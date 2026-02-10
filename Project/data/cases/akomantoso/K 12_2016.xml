@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_12_filed2016_verdict2012">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_12_filed2016_verdict2012" />
+          <FRBRuri value="/akn/me/judgment/Case_K_12_filed2016_verdict2012" />
+          <FRBRdate date="2012-10-19" name="judgment" />
+          <FRBRauthor href="#kotoru" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_12_filed2016_verdict2012/srp@2012-10-19" />
+          <FRBRuri value="/akn/me/judgment/Case_K_12_filed2016_verdict2012/srp@2012-10-19" />
+          <FRBRdate date="2012-10-19" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_12_filed2016_verdict2012/srp@2012-10-19.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_12_filed2016_verdict2012/srp@2012-10-19.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u Kotoru" />
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="N.Đ." />
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru</sud>
+        <brojPredmeta>12/2016</brojPredmeta>
+        <datum>19.10.2012</datum>
+        <datumNormalizovan>2012-10-19</datumNormalizovan>
+        <godina>2012</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>N.Đ.</optuzeni>
+        <podaciORoditeljima>otac G., majka V.</podaciORoditeljima>
+        <zaposlenost>zaposlen kao taksista u B. i da je sredinom .. godine upoznao V. S.</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>, Što je, U periodu od .. do .. godine na teritoriji opštine B., B., U.i P. u namjeri da sebi pribavi protivpravnu imovinsku korist, nabavio lažne platne kartice brojeva ., . ., . , ., ., . ., a koje su navodno bile izdate od "C.e b. .", "C. S. .", "C. bank, NY", "F. card S., NA", koje je upotrijebio kao prave kartice, na način što je koristio za plaćanje robe i usluga, i to : - dana .. godine karticu br., navodno izdate od "C.bank, ." za plaćanje računa na benzinskoj stanici u P., jednog računa u iznosu od .€, sve na štetu „..“, - dana .. godine kartice br. , navodno izdate od "C. S. ." u pet navrata za plaćanje usluga u kazinu "M." B. u iznosima od . €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C.bank ." za plaćanje usluga u kazinu "M." u dva navrata u iznosu od . € i .€, a zatim i za plaćanje usluga kupovine goriva na benzinskoj stanici u B. u iznosu od . € i . €, na štetu „.“, - dana .. godine karticu br. ., navodno izdate od "C. bank ." za plaćanje računa u prodavnici računarske opreme "G.c." iz P. u iznosu od 1001,75 € na štetu „.anke“, - dana .. godine, karticu br. ., navodno izdate od "C. bank ." za plaćanje u četiri navrata za kupovinu proizvoda u CD shopu "Loud" u Ulcinju u iznosima od . sve na štetu „.anke“, - dana .. godine, karticu br. . navodno izdate od "C.." za plaćanje u dva navrata proizvoda kupljenih u prodavnici "R." u B.u iznosima .. €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C" za plaćanje u dva n</opisSlucaja>
+        <dokazi>
+          <dokaz>spise predmeta K. .</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>960,00 EUR</iznos>
+          <iznos>378,00 EUR</iznos>
+          <iznos>00 EUR</iznos>
+          <iznos>160,00 EUR</iznos>
+          <iznos>1001,75 EUR</iznos>
+          <iznos>1. EUR</iznos>
+          <iznos>120 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Jadranke Golub</zapisnicar>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>6 (šest) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru, 12/2016, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: N.Đ., otac G., majka V., zaposlen kao taksista u B. i da je sredinom .. godine upoznao V. S., neoženjen, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>, Što je, U periodu od .. do .. godine na teritoriji opštine B., B., U.i P. u namjeri da sebi pribavi protivpravnu imovinsku korist, nabavio lažne platne kartice brojeva ., . ., . , ., ., . ., a koje su navodno bile izdate od "C.e b. .", "C. S. .", "C. bank, NY", "F. card S., NA", koje je upotrijebio kao prave kartice, na način što je koristio za plaćanje robe i usluga, i to : - dana .. godine karticu br., navodno izdate od "C.bank, ." za plaćanje računa na benzinskoj stanici u P., jednog računa u iznosu od .€, sve na štetu „..“, - dana .. godine kartice br. , navodno izdate od "C. S. ." u pet navrata za plaćanje usluga u kazinu "M." B. u iznosima od . €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C.bank ." za plaćanje usluga u kazinu "M." u dva navrata u iznosu od . € i .€, a zatim i za plaćanje usluga kupovine goriva na benzinskoj stanici u B. u iznosu od . € i . €, na štetu „.“, - dana .. godine karticu br. ., navodno izdate od "C. bank ." za plaćanje računa u prodavnici računarske opreme "G.c." iz P. u iznosu od 1001,75 € na štetu „.anke“, - dana .. godine, karticu br. ., navodno izdate od "C. bank ." za plaćanje u četiri navrata za kupovinu proizvoda u CD shopu "Loud" u Ulcinju u iznosima od . sve na štetu „.anke“, - dana .. godine, karticu br. . navodno izdate od "C.." za plaćanje u dva navrata proizvoda kupljenih u prodavnici "R." u B.u iznosima .. €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C" za plaćanje u dva n</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• spise predmeta K. .</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 2 (dvije) godin</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

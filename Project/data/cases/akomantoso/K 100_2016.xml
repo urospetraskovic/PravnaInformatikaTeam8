@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_100_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_100_2016"/>
+          <FRBRuri value="/akn/me/judgment/K_100_2016"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#rožajama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_100_2016/srp@2016-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_100_2016/srp@2016-01-01"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_100_2016/srp@2016-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_100_2016/srp@2016-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/rožajama" showAs="Osnovni Sud u ROŽAJAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/osnovnog_suda" showAs="Osnovnog suda"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ROŽAJAMA</sud>
+        <brojPredmeta>100/16</brojPredmeta>
+        <datum>2016</datum>
+        <datumNormalizovan>2016-01-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Osnovnog suda</sudija>
+        <zapisnicar>Aide Luboder</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>dana 11.06.2016.godine, oko 16,40 časova, u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac u apoenu od 50 Eura, sa dva različita serijska broja S66515172255 i S66515172277, stavio u opticaj kao pravi, na način što je na kiosku DOO „NEAM“ Rožaje, vlasništvo M. D., kupio dvije paklice cigareta marke „Sobranie“ i dva pakovanja žvaka marke „Orbit“, koje je platio lažnom novčanicom, a prodavac- oštećena mu je vratila ostatak novca u iznosu od 43 Eura.</opisSlucaja>
+        <iznosi>
+          <iznos>85 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>848,00 EUR</iznos>
+          <iznos>15 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>48 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ROŽAJAMA, 100/16, sudija Osnovnog suda</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 11.06.2016.godine, oko 16,40 časova, u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, lažan novac u apoenu od 50 Eura, sa dva različita serijska broja S66515172255 i S66515172277, stavio u opticaj kao pravi, na način što je na kiosku DOO „NEAM“ Rožaje, vlasništvo M. D., kupio dvije paklice cigareta marke „Sobranie“ i dva pakovanja žvaka marke „Orbit“, koje je platio lažnom novčanicom, a prodavac- oštećena mu je vratila ostatak novca u iznosu od 43 Eura.</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

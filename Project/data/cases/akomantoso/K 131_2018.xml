@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_131_2018">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_131_2018"/>
+          <FRBRuri value="/akn/me/judgment/K_131_2018"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_131_2018/srp@2018-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_131_2018/srp@2018-01-01"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_131_2018/srp@2018-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_131_2018/srp@2018-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/tamara_spasojević" showAs="Tamara Spasojević"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>131/18</brojPredmeta>
+        <datum>2018</datum>
+        <datumNormalizovan>2018-01-01</datumNormalizovan>
+        <godina>2018</godina>
+        <sudija>Tamara Spasojević</sudija>
+        <zapisnicar>Zoricom Ivanović</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>10 (deset) mjesec</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>325,00 EUR</iznos>
+          <iznos>3,00 EUR</iznos>
+          <iznos>410,00 EUR</iznos>
+          <iznos>670,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>980,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>92,00 EUR</iznos>
+          <iznos>55,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 131/18, sudija Tamara Spasojević</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 10 (deset) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

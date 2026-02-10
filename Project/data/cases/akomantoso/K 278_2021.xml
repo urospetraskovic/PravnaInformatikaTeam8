@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_278_2021">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_278_2021"/>
+          <FRBRuri value="/akn/me/judgment/K_278_2021"/>
+          <FRBRdate date="2021-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_278_2021/srp@2021-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_278_2021/srp@2021-01-01"/>
+          <FRBRdate date="2021-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_278_2021/srp@2021-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_278_2021/srp@2021-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nadi_rabrenović" showAs="Nadi Rabrenović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>278/21</brojPredmeta>
+        <datum>2021</datum>
+        <datumNormalizovan>2021-01-01</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Nadi Rabrenović</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjesec</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>210,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>145,00 EUR</iznos>
+          <iznos>700,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>371,39 EUR</iznos>
+          <iznos>460,00 EUR</iznos>
+          <iznos>65,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 278/21, sudija Nadi Rabrenović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 6 (šest) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

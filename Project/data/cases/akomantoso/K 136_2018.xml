@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_136_filed2018_verdict2024">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_136_filed2018_verdict2024" />
+          <FRBRuri value="/akn/me/judgment/Case_K_136_filed2018_verdict2024" />
+          <FRBRdate date="2024-01-29" name="judgment" />
+          <FRBRauthor href="#bijelom_polju" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_136_filed2018_verdict2024/srp@2024-01-29" />
+          <FRBRuri value="/akn/me/judgment/Case_K_136_filed2018_verdict2024/srp@2024-01-29" />
+          <FRBRdate date="2024-01-29" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_136_filed2018_verdict2024/srp@2024-01-29.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_136_filed2018_verdict2024/srp@2024-01-29.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLjU" />
+        <TLCPerson eId="sudija" href="/ontology/person/draginja_bošković" showAs="Draginja Bošković" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="S.V." />
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLjU</sud>
+        <brojPredmeta>136/18</brojPredmeta>
+        <datum>29. 01. 2024</datum>
+        <datumNormalizovan>2024-01-29</datumNormalizovan>
+        <godina>2024</godina>
+        <sudija>Draginja Bošković</sudija>
+        <optuzeni>S.V.</optuzeni>
+        <podaciORoditeljima>otac M., majka D.</podaciORoditeljima>
+        <prebivaliste>mjestu rođenja</prebivaliste>
+        <bracniStatus>razveden</bracniStatus>
+        <obrazovanje>VSS</obrazovanje>
+        <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>548,50</novcanaKazna>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>- Neutvrđenog dana 2022. godine u B.P., neovlaščeno pribavio pravu platnu karticu oštećenog M.V., koju je držao i upotrijebio, na način što je u vremenu od 01. 10. 2022. godine, do dana 01. 11. 2022. godine, sa više bankomata u M. i P., putem sedam transakcija pribavio novčani iznos od 1.170,00 eura i putem šesnaest transakcija vršio uplate preko kladionice „V.“ P. u iznosu od 1.600,00 eura, te je tako na štetu oštećenog M.V., sebi pribavio protivpravnu imovinsku korist u iznosu od 2.770,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je njegovo djelo zabranjeno,</opisSlucaja>
+        <dokazi>
+          <dokaz>listing kartice promjena C.k.b.“</dokaz>
+          <dokaz>dopis C.k.b.“ br. ............... od 04. 11. 2022. godine</dokaz>
+          <dokaz>u svojstvu svjedoka -oštećenog M.V.</dokaz>
+          <dokaz>video zapisa izuzetog sa bankomata „C.k.b.“</dokaz>
+          <dokaz>video zapisu sa bankomata "CKB" b. "OTP" grupe</dokaz>
+          <dokaz>video zapisa. Pri tom</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>100,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>170,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>548,50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>770,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Mire Smolović</zapisnicar>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>1 (jedne) godin</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLjU, 136/18, sudija Draginja Bošković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: S.V., otac M., majka D., prebivalište: mjestu rođenja, razveden, ranije osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>- Neutvrđenog dana 2022. godine u B.P., neovlaščeno pribavio pravu platnu karticu oštećenog M.V., koju je držao i upotrijebio, na način što je u vremenu od 01. 10. 2022. godine, do dana 01. 11. 2022. godine, sa više bankomata u M. i P., putem sedam transakcija pribavio novčani iznos od 1.170,00 eura i putem šesnaest transakcija vršio uplate preko kladionice „V.“ P. u iznosu od 1.600,00 eura, te je tako na štetu oštećenog M.V., sebi pribavio protivpravnu imovinsku korist u iznosu od 2.770,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je njegovo djelo zabranjeno,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• listing kartice promjena C.k.b.“</p>
+            <p>• dopis C.k.b.“ br. ............... od 04. 11. 2022. godine</p>
+            <p>• u svojstvu svjedoka -oštećenog M.V.</p>
+            <p>• video zapisa izuzetog sa bankomata „C.k.b.“</p>
+            <p>• video zapisu sa bankomata "CKB" b. "OTP" grupe</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 18 mjeseci</p>
+          <p>Novčana kazna: 548,50 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

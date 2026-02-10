@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_626_filed2019_verdict2021">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_626_filed2019_verdict2021" />
+          <FRBRuri value="/akn/me/judgment/Case_K_626_filed2019_verdict2021" />
+          <FRBRdate date="2021-01-29" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_626_filed2019_verdict2021/srp@2021-01-29" />
+          <FRBRuri value="/akn/me/judgment/Case_K_626_filed2019_verdict2021/srp@2021-01-29" />
+          <FRBRdate date="2021-01-29" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_626_filed2019_verdict2021/srp@2021-01-29.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_626_filed2019_verdict2021/srp@2021-01-29.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici" />
+        <TLCPerson eId="sudija" href="/ontology/person/edina_kraja" showAs="Edina Kraja" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r" />
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>626/19</brojPredmeta>
+        <datum>29.01.2021</datum>
+        <datumNormalizovan>2021-01-29</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Edina Kraja</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac M., majka M.</podaciORoditeljima>
+        <prebivaliste>Podgorici</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>30,00</novcanaKazna>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 01.07.2020. godine, poslije 14,00 časova, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu platnu karticu, koju je neovlašćeno pribavio, upotrijebio na način, što je, iz prostorije firme "K." DOO, na Zabjelu, u Ul. x. j., čiji je zaposleni, neovlašćeno oduzeo platnu karticu, vlasništvo oštećenog N. B., izdatu od strane "NLB banke" AD Podgorica, broj partije 530-0001100022xxxx-xx, a zatim istu upotrijebio na bankomatu Hipotekarne banke, koji se nalazi u prodajnom objektu "Voli - Naš diskont" na Zabjelu i na taj način pribavio protivpravnu imovinsku korist u iznosu od 100,00 eura,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećenog B.</svjedok>
+          <svjedok>je s</svjedok>
+          <svjedok>oštećeni B.</svjedok>
+          <svjedok>oštećenog j</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>fotografije sa bankomata HPBN0009 Hipotekarne banke</dokaz>
+          <dokaz>CD sa fotografijama</dokaz>
+          <dokaz>iskaz svjedoka oštećenog B. N. dat u izviđaju na zapisniku Osnovnog državnog tužilaštva u Podgorici o saslušanju svjedoka Kt. br. 1208/20 od 08.09.2020. godine</dokaz>
+          <dokaz>dokumentaciju "NLB" banke</dokaz>
+          <dokaz>izvod iz registra kaznenih evidencija Ministarstva pravde KE 2167/2020 od 18.09.2020. godine.
+Svjedok oštećeni B. N. je u iskazu datom u izviđaju</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Edine Kraje</zapisnicar>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>6 (šest) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 626/19, sudija Edina Kraja</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac M., majka M., prebivalište: Podgorici, nezaposlen, oženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 01.07.2020. godine, poslije 14,00 časova, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu platnu karticu, koju je neovlašćeno pribavio, upotrijebio na način, što je, iz prostorije firme "K." DOO, na Zabjelu, u Ul. x. j., čiji je zaposleni, neovlašćeno oduzeo platnu karticu, vlasništvo oštećenog N. B., izdatu od strane "NLB banke" AD Podgorica, broj partije 530-0001100022xxxx-xx, a zatim istu upotrijebio na bankomatu Hipotekarne banke, koji se nalazi u prodajnom objektu "Voli - Naš diskont" na Zabjelu i na taj način pribavio protivpravnu imovinsku korist u iznosu od 100,00 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• fotografije sa bankomata HPBN0009 Hipotekarne banke</p>
+            <p>• CD sa fotografijama</p>
+            <p>• iskaz svjedoka oštećenog B. N. dat u izviđaju na zapisniku Osnovnog državnog tužilaštva u Podgorici o saslušanju svjedoka Kt. br. 1208/20 od 08.09.2020. godine</p>
+            <p>• dokumentaciju "NLB" banke</p>
+            <p>• izvod iz registra kaznenih evidencija Ministarstva pravde KE 2167/2020 od 18.09.2020. godine.
+Svjedok oštećeni B. N. je u iskazu datom u izviđaju</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 30,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

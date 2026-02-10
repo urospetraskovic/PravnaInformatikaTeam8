@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_280_2012">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_280_2012"/>
+          <FRBRuri value="/akn/me/judgment/K_280_2012"/>
+          <FRBRdate date="2012-01-01" name="judgment"/>
+          <FRBRauthor href="#cetinju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_280_2012/srp@2012-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_280_2012/srp@2012-01-01"/>
+          <FRBRdate date="2012-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_280_2012/srp@2012-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_280_2012/srp@2012-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/cetinju" showAs="Osnovni Sud u CETINJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ćupić_mariji" showAs="Ćupić Mariji"/>
+      </references>
+      <proprietary source="#court">
+        <sud>CETINJU</sud>
+        <brojPredmeta>280/12</brojPredmeta>
+        <datum>2012</datum>
+        <datumNormalizovan>2012-01-01</datumNormalizovan>
+        <godina>2012</godina>
+        <sudija>Ćupić Mariji</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Neutvrđenog dana u junu mjesecu 2011. godine, iako je znao da je pribavljanje lažnog novca u namjeri da se stavi u opticaj kao pravi zabranjeno, voljno pribavio lažan novac u ukupnom iznosu od 2.100,00 USD dolara, u namjeri da ga stavi u opticaj kao pravi, i to dvadeset jednu novčanicu u apoenima od po 100 USD dolara, serijskih brojeva: AD50711528D, AA12971527D, BB98971522A, AA17071522D, BB98971577A, AD02711528D, B87820132D, B25170921D, B25170921D, B25170921D, B25170921D, B87820132D, B63703169D, B63703169D, B63703169D, B63703169D, B80123132D, B80123132D, B80123132D, B80123132D, B80123132D, iako je u momentu pribavljanja znao da se radi o lažnom novcu, nakon čega ga je, u istoj namjeni, i svjesno držao na dnu ormara, ispod posteljine, u spavaćoj sobi koju koristi njegov otac - P. S. gdje je isti i pronađen prilikom pretresa porodične kuće, izvršenog dana 01. jula 2011. godine, od strane ovlašćenoh službenih lica Uprave policije - Ispostave Cetinje Kri. br. 568/11 od 01.07.2011. godine, </opisSlucaja>
+        <iznosi>
+          <iznos>000,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>871,50 EUR</iznos>
+          <iznos>71,50 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u CETINJU, 280/12, sudija Ćupić Mariji</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Neutvrđenog dana u junu mjesecu 2011. godine, iako je znao da je pribavljanje lažnog novca u namjeri da se stavi u opticaj kao pravi zabranjeno, voljno pribavio lažan novac u ukupnom iznosu od 2.100,00 USD dolara, u namjeri da ga stavi u opticaj kao pravi, i to dvadeset jednu novčanicu u apoenima od po 100 USD dolara, serijskih brojeva: AD50711528D, AA12971527D, BB98971522A, AA17071522D, BB98971577A, AD02711528D, B87820132D, B25170921D, B25170921D, B25170921D, B25170921D, B87820132D, B63703169D, B63703169D, B63703169D, B63703169D, B80123132D, B80123132D, B80123132D, B80123132D, B80123132D, iako je u momentu pribavljanja znao da se radi o lažnom novcu, nakon čega ga je, u istoj namjeni, i svjesno držao na dnu ormara, ispod posteljine, u spavaćoj sobi koju koristi njegov otac - P. S. gdje je isti i pronađen prilikom pretresa porodične kuće, izvršenog dana 01. jula 2011. godine, od strane ovlašćenoh službenih lica Uprave policije - Ispostave Cetinje Kri. br. 568/11 od 01.07.2011. godine, </p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

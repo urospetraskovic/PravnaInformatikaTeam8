@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_147_filed2018_verdict2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_147_filed2018_verdict2020" />
+          <FRBRuri value="/akn/me/judgment/Case_K_147_filed2018_verdict2020" />
+          <FRBRdate date="2020-10-23" name="judgment" />
+          <FRBRauthor href="#beranama" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_147_filed2018_verdict2020/srp@2020-10-23" />
+          <FRBRuri value="/akn/me/judgment/Case_K_147_filed2018_verdict2020/srp@2020-10-23" />
+          <FRBRdate date="2020-10-23" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_147_filed2018_verdict2020/srp@2020-10-23.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_147_filed2018_verdict2020/srp@2020-10-23.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/beranama" showAs="Osnovni Sud u Beranama" />
+        <TLCPerson eId="sudija" href="/ontology/person/dubravka_popović" showAs="Dubravka Popović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="P.D." />
+      </references>
+      <proprietary source="#court">
+        <sud>Beranama</sud>
+        <brojPredmeta>147/18</brojPredmeta>
+        <datum>23.10.2020</datum>
+        <datumNormalizovan>2020-10-23</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Dubravka Popović</sudija>
+        <optuzeni>P.D.</optuzeni>
+        <podaciORoditeljima>otac M., majka M.</podaciORoditeljima>
+        <prebivaliste>selu D</prebivaliste>
+        <zaposlenost>nezaposlena</zaposlenost>
+        <bracniStatus>udata</bracniStatus>
+        <obrazovanje>pismena</obrazovanje>
+        <ranijeOsudjivan>neosuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>8 (osam) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivpravnu imovinsku korist u naznačenim iznosima.</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećene P.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>Izveštaj Prve banke CG PJ B. sa tekućeg računa – promet za partiju ................ na ime P.V.a od 08.09.2020 godine</dokaz>
+          <dokaz>izvod iz KE za okrivljenu.
+Nakon sprovedenog dokaznog postupka</dokaz>
+          <dokaz>iskaz svjedoka oštećene P.V.e dat u postupku kod ODT u B.</dokaz>
+          <dokaz>izvještaj o podizanju novca i tom prilikom je upoznata da je dana 09.07.2020 godine sa njenog računa</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>390,00 EUR</iznos>
+          <iznos>408,00 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>8 (osam) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Beranama, 147/18, sudija Dubravka Popović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: P.D., otac M., majka M., prebivalište: selu D, nezaposlena, udata, neosuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivpravnu imovinsku korist u naznačenim iznosima.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Izveštaj Prve banke CG PJ B. sa tekućeg računa – promet za partiju ................ na ime P.V.a od 08.09.2020 godine</p>
+            <p>• izvod iz KE za okrivljenu.
+Nakon sprovedenog dokaznog postupka</p>
+            <p>• iskaz svjedoka oštećene P.V.e dat u postupku kod ODT u B.</p>
+            <p>• izvještaj o podizanju novca i tom prilikom je upoznata da je dana 09.07.2020 godine sa njenog računa</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka" />
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

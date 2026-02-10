@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_406_filed2011_verdict2011">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_406_filed2011_verdict2011" />
+          <FRBRuri value="/akn/me/judgment/Case_K_406_filed2011_verdict2011" />
+          <FRBRdate date="2011-11-24" name="judgment" />
+          <FRBRauthor href="#bijelom_polju" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_406_filed2011_verdict2011/srp@2011-11-24" />
+          <FRBRuri value="/akn/me/judgment/Case_K_406_filed2011_verdict2011/srp@2011-11-24" />
+          <FRBRdate date="2011-11-24" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_406_filed2011_verdict2011/srp@2011-11-24.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_406_filed2011_verdict2011/srp@2011-11-24.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom_polju" showAs="Osnovni Sud u BIJELOM POLJU" />
+        <TLCPerson eId="sudija" href="/ontology/person/rahmo_banda" showAs="Rahmo Banda" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="D.S." />
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM POLJU</sud>
+        <brojPredmeta>406/2011</brojPredmeta>
+        <datum>24.11.2011</datum>
+        <datumNormalizovan>2011-11-24</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Rahmo Banda</sudija>
+        <optuzeni>D.S.</optuzeni>
+        <podaciORoditeljima>otac P., majka S.</podaciORoditeljima>
+        <prebivaliste>mjestu rodjenja</prebivaliste>
+        <zaposlenost>nezaposlen</zaposlenost>
+        <bracniStatus>oženjen</bracniStatus>
+        <obrazovanje>SSS – tehničar prirodno matematički smjer</obrazovanje>
+        <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>Nepoznat</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>30</novcanaKazna>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>- neutvrdjenog dana u decembru mjesecu 2009.godine u Sarajevu pribavio lažan novac i to: šest novčanica u apoenu od 20 KM, istog serijskog slova i broja C3007738, jednu novčanicu u apoenu od 20 KM, serijskog slova i broja C3007628 i jednu novčanicu u apoenu od 50 KM, serijskog slova i broja D4197836, u namjeri da ih stavi u opticaj kao prave, koje lažne novčanice je dana 18.12.2009.godine u Sarajevu okrivljeni imao prilikom legitimisanja od strane ovlašenih policijskih službenika MUP-a Kantona Sarajevo – PS Centar, koje novčanice je tom prilikom odbacio od sebe,</opisSlucaja>
+        <svjedoci>
+          <svjedok>cijenio k</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>izvod iz KE na ime optuženog D.S.a</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime sina optuženog M.V.( L.)</dokaz>
+          <dokaz>izvod iz KE na ime optuženog S.N.izdat od MUP-a - Direkcija Policije</dokaz>
+          <dokaz>izvod iz KE na ime optuženog M.V.</dokaz>
+          <dokaz>iskaze svjedoka B. A…</dokaz>
+          <dokaz>potvrdu o privremenom oduzimanju predmeta br. 02/3 -1-1-195/09 od 18.12.2009.godine</dokaz>
+          <dokaz>nalaz i mišljenje vještaka dipl.kriminaliste K.a I.a od 03.06.2010.godine i izvršio uvid u izvod iz KE na ime optuženog D.S.a</dokaz>
+          <dokaz>iskaz svjedoka - vlasnika i ovlašćenog predstavnika D. '' M.C.'' iz Bijelog Polja H.E.a</dokaz>
+          <dokaz>zapisnik UP PJ Bijelo Polje o prepoznavanju lica od 19.02.2011.godine</dokaz>
+          <dokaz>potvrdu UP PJ Berane od 19.02.2011.godine o privremeno oduzetim predmetima od S.R.a</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>10. EUR</iznos>
+          <iznos>195,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>180,00 EUR</iznos>
+          <iznos>15,51 EUR</iznos>
+          <iznos>30 EUR</iznos>
+          <iznos>9,73 EUR</iznos>
+          <iznos>5.00 EUR</iznos>
+          <iznos>180 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>5. EUR</iznos>
+          <iznos>675,00 EUR</iznos>
+          <iznos>15.00 EUR</iznos>
+          <iznos>15. EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>195. EUR</iznos>
+          <iznos>1.550 EUR</iznos>
+          <iznos>1.675 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Popović Ljiljane</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM POLJU, 406/2011, sudija Rahmo Banda</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: D.S., otac P., majka S., prebivalište: mjestu rodjenja, nezaposlen, oženjen, ne osudjivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>- neutvrdjenog dana u decembru mjesecu 2009.godine u Sarajevu pribavio lažan novac i to: šest novčanica u apoenu od 20 KM, istog serijskog slova i broja C3007738, jednu novčanicu u apoenu od 20 KM, serijskog slova i broja C3007628 i jednu novčanicu u apoenu od 50 KM, serijskog slova i broja D4197836, u namjeri da ih stavi u opticaj kao prave, koje lažne novčanice je dana 18.12.2009.godine u Sarajevu okrivljeni imao prilikom legitimisanja od strane ovlašenih policijskih službenika MUP-a Kantona Sarajevo – PS Centar, koje novčanice je tom prilikom odbacio od sebe,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz KE na ime optuženog D.S.a</p>
+            <p>• medicinsku dokumentaciju na ime sina optuženog M.V.( L.)</p>
+            <p>• izvod iz KE na ime optuženog S.N.izdat od MUP-a - Direkcija Policije</p>
+            <p>• izvod iz KE na ime optuženog M.V.</p>
+            <p>• iskaze svjedoka B. A…</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Novčana kazna: 30 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_353_filed2014_verdict2022">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_353_filed2014_verdict2022" />
+          <FRBRuri value="/akn/me/judgment/Case_K_353_filed2014_verdict2022" />
+          <FRBRdate date="2022-04-20" name="judgment" />
+          <FRBRauthor href="#baru" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_353_filed2014_verdict2022/srp@2022-04-20" />
+          <FRBRuri value="/akn/me/judgment/Case_K_353_filed2014_verdict2022/srp@2022-04-20" />
+          <FRBRdate date="2022-04-20" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_353_filed2014_verdict2022/srp@2022-04-20.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_353_filed2014_verdict2022/srp@2022-04-20.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU" />
+        <TLCPerson eId="sudija" href="/ontology/person/ana_stanišić" showAs="Ana Stanišić" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="P. V." />
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>353/14</brojPredmeta>
+        <datum>20.04.2022</datum>
+        <datumNormalizovan>2022-04-20</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Ana Stanišić</sudija>
+        <optuzeni>P. V.</optuzeni>
+        <podaciORoditeljima>otac H., majka M.</podaciORoditeljima>
+        <godinaRodjenja>18.09.1987</godinaRodjenja>
+        <prebivaliste>neposrednoj blizini</prebivaliste>
+        <zaposlenost>zaposlen kao spasilac ispod hotela A.. On ga je pozvao putem telefona i rekao mu da ga sačeka na tom mjestu. Kada je došao na mjesto na kome je čekao P. on je istog prepoznao jer ga poznaje iz grada</zaposlenost>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>4 (četiri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 22.09.2021.godine u Baru svjestan svog djela, čije izvršenje je htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno nabavio, na način što je u U. protivpravno prisvojio novčanik, vlasništvo V. I., koji je našao, u kom se nalazila platna Visa Classic Debit kartica NLB Banke br. .... sa pin kodom, koju je upotrijebio na bankomatu u ulici M. T. br 24 u dva navrata i to u 20,52 časa i 20,55 časova, te po osnovu iste podigao novac u iznosu od 400,00 eura u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećeni V.</svjedok>
+          <svjedok>oštećenog V.</svjedok>
+          <svjedok>oštećenog I.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećenog V. I. iz prethodnog postupka dat na zapisniku kod ODT-a u Baru od 18.10.2021.godine i na glavnim pretresima od 06.12.2021.godine i od 12.01.2022.godine</dokaz>
+          <dokaz>zapisnik o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24.09.2021.godine sa izjavom držaoca</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+          <iznos>170,00 EUR</iznos>
+          <iznos>430,00 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Amirom Muslić</zapisnicar>
+      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 353/14, sudija Ana Stanišić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: P. V., otac H., majka M., prebivalište: neposrednoj blizini, zaposlen kao spasilac ispod hotela A.. On ga je pozvao putem telefona i rekao mu da ga sačeka na tom mjestu. Kada je došao na mjesto na kome je čekao P. on je istog prepoznao jer ga poznaje iz grada, neoženjen, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 22.09.2021.godine u Baru svjestan svog djela, čije izvršenje je htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno nabavio, na način što je u U. protivpravno prisvojio novčanik, vlasništvo V. I., koji je našao, u kom se nalazila platna Visa Classic Debit kartica NLB Banke br. .... sa pin kodom, koju je upotrijebio na bankomatu u ulici M. T. br 24 u dva navrata i to u 20,52 časa i 20,55 časova, te po osnovu iste podigao novac u iznosu od 400,00 eura u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećenog V. I. iz prethodnog postupka dat na zapisniku kod ODT-a u Baru od 18.10.2021.godine i na glavnim pretresima od 06.12.2021.godine i od 12.01.2022.godine</p>
+            <p>• zapisnik o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24.09.2021.godine sa izjavom držaoca</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 4 (četiri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

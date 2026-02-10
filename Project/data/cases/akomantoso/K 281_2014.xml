@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_281_filed2014_verdict2022">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_281_filed2014_verdict2022" />
+          <FRBRuri value="/akn/me/judgment/Case_K_281_filed2014_verdict2022" />
+          <FRBRdate date="2022-11-15" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_281_filed2014_verdict2022/srp@2022-11-15" />
+          <FRBRuri value="/akn/me/judgment/Case_K_281_filed2014_verdict2022/srp@2022-11-15" />
+          <FRBRdate date="2022-11-15" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_281_filed2014_verdict2022/srp@2022-11-15.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_281_filed2014_verdict2022/srp@2022-11-15.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI" />
+        <TLCPerson eId="sudija" href="/ontology/person/larisa_mijušković" showAs="Larisa Mijušković" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="Ć.M." />
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>281/14</brojPredmeta>
+        <datum>15.11.2022</datum>
+        <datumNormalizovan>2022-11-15</datumNormalizovan>
+        <godina>2022</godina>
+        <sudija>Larisa Mijušković</sudija>
+        <optuzeni>Ć.M.</optuzeni>
+        <podaciORoditeljima>otac D., majka I.</podaciORoditeljima>
+        <zaposlenost>zaposlena kao konobarica u piceriji M.G. koja se nalazi u B.I.C. br.</zaposlenost>
+        <bracniStatus>neudata</bracniStatus>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>ranije neosuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>4(četiri)mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 17.02.2022.godine, oko 14,30 časova, u Podgorici, u ul. Bulevar Ivana Crnojevića br.137, svjesna svog djela, čije je izvršenje htjela, znajući da je isto zabranjeno, tuđu pravu platnu karticu, koju je neovlašćeno pribavila, upotrijebila na način, što je od oštećenog N.D. uzela platnu karticu H. B. i istu fotografisala svojim mobilnim telefonom i to na šanku unutrašnjosti Ugostiteljskog objekta “M. G.”, a zatim proslijedila fotografije platne kartice jednoj osobi preko koje je izvršila kupovinu preko sajta . L. G.B. i na taj način pribavila protivpravnu imovinsku korist u iznosu od 255,26 eura,</opisSlucaja>
+        <dokazi>
+          <dokaz>izvod iz KE za okrivljenu</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičene Kt.br.559/22 od 14.04.2022.godine i navela da u cjelosti priznaje izvršenje krivičnog djela i svoju krivicu. Istakla je da je zaposlena kao konobarica u piceriji M.G. koja se nalazi u B.I.C. br.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>250,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>255,26 EUR</iznos>
+        </iznosi>
+      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>4(četiri)mjeseca</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 281/14, sudija Larisa Mijušković</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Ć.M., otac D., majka I., zaposlena kao konobarica u piceriji M.G. koja se nalazi u B.I.C. br., neudata, ranije neosuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 17.02.2022.godine, oko 14,30 časova, u Podgorici, u ul. Bulevar Ivana Crnojevića br.137, svjesna svog djela, čije je izvršenje htjela, znajući da je isto zabranjeno, tuđu pravu platnu karticu, koju je neovlašćeno pribavila, upotrijebila na način, što je od oštećenog N.D. uzela platnu karticu H. B. i istu fotografisala svojim mobilnim telefonom i to na šanku unutrašnjosti Ugostiteljskog objekta “M. G.”, a zatim proslijedila fotografije platne kartice jednoj osobi preko koje je izvršila kupovinu preko sajta . L. G.B. i na taj način pribavila protivpravnu imovinsku korist u iznosu od 255,26 eura,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz KE za okrivljenu</p>
+            <p>• zapisnik o saslušanju osumnjičene Kt.br.559/22 od 14.04.2022.godine i navela da u cjelosti priznaje izvršenje krivičnog djela i svoju krivicu. Istakla je da je zaposlena kao konobarica u piceriji M.G. koja se nalazi u B.I.C. br.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

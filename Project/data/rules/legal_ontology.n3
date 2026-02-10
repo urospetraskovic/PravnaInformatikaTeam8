@@ -1,0 +1,325 @@
+@prefix : <http://pravnainformatika.team8.me/rules#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix legal: <http://pravnainformatika.team8.me/legal#> .
+@prefix fact: <http://pravnainformatika.team8.me/facts#> .
+@prefix penalty: <http://pravnainformatika.team8.me/penalty#> .
+@prefix kzme: <http://pravnainformatika.team8.me/criminal-code-montenegro#> .
+
+# ==============================================================
+# Ontology for Criminal Code of Montenegro - Chapter 23
+# Crimes Against Payment System and Economic Operations
+# 
+# Project: Правна Информатика - Team 8
+# Format: RDF/N3 (Notation3)
+# ==============================================================
+
+# ==============================================================
+# Class Definitions
+# ==============================================================
+
+legal:CriminalOffense a owl:Class ;
+    rdfs:label "Кривично дјело"@sr ;
+    rdfs:label "Criminal Offense"@en .
+
+legal:Article a owl:Class ;
+    rdfs:label "Члан закона"@sr ;
+    rdfs:label "Legal Article"@en .
+
+legal:Penalty a owl:Class ;
+    rdfs:label "Казна"@sr ;
+    rdfs:label "Penalty"@en .
+
+legal:MitigatingFactor a owl:Class ;
+    rdfs:label "Олакшавајућа околност"@sr ;
+    rdfs:label "Mitigating Factor"@en .
+
+legal:AggravatingFactor a owl:Class ;
+    rdfs:label "Отежавајућа околност"@sr ;
+    rdfs:label "Aggravating Factor"@en .
+
+legal:Person a owl:Class ;
+    rdfs:label "Лице"@sr ;
+    rdfs:label "Person"@en .
+
+# ==============================================================
+# Property Definitions
+# ==============================================================
+
+legal:hasArticle a owl:ObjectProperty ;
+    rdfs:domain legal:CriminalOffense ;
+    rdfs:range legal:Article .
+
+legal:hasPenalty a owl:ObjectProperty ;
+    rdfs:domain legal:CriminalOffense ;
+    rdfs:range legal:Penalty .
+
+legal:penaltyMin a owl:DatatypeProperty ;
+    rdfs:domain legal:Penalty ;
+    rdfs:range xsd:decimal .
+
+legal:penaltyMax a owl:DatatypeProperty ;
+    rdfs:domain legal:Penalty ;
+    rdfs:range xsd:decimal .
+
+legal:penaltyUnit a owl:DatatypeProperty ;
+    rdfs:domain legal:Penalty ;
+    rdfs:range xsd:string .
+
+fact:amount a owl:DatatypeProperty ;
+    rdfs:range xsd:decimal .
+
+# ==============================================================
+# Article 258: Counterfeiting Money
+# ==============================================================
+
+kzme:Art258 a legal:Article ;
+    rdfs:label "Члан 258 - Фалсификовање новца"@sr ;
+    rdfs:label "Article 258 - Counterfeiting Money"@en ;
+    legal:sourceUri "/akn/me/act/criminal-code#art_258" .
+
+kzme:Art258_Para1 a legal:CriminalOffense ;
+    rdfs:label "Израда лажног новца"@sr ;
+    legal:hasArticle kzme:Art258 ;
+    legal:paragraph "1" ;
+    legal:description "Ко направи лажан новац у намјери да га стави у оптицај као прави или ко у истој намјери преиначи прави новац"@sr ;
+    legal:hasPenalty kzme:Penalty258_1 .
+
+kzme:Penalty258_1 a legal:Penalty ;
+    legal:penaltyMin 2 ;
+    legal:penaltyMax 12 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art258_Para2 a legal:CriminalOffense ;
+    rdfs:label "Прибављање/оптицај лажног новца"@sr ;
+    legal:hasArticle kzme:Art258 ;
+    legal:paragraph "2" ;
+    legal:description "Ко прибавља, држи или преноси лажан новац у намјери да га стави у оптицај као прави или ко лажан новац ставља у оптицај"@sr ;
+    legal:hasPenalty kzme:Penalty258_2 .
+
+kzme:Penalty258_2 a legal:Penalty ;
+    legal:penaltyMin 2 ;
+    legal:penaltyMax 10 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art258_Para3 a legal:CriminalOffense ;
+    rdfs:label "Квалификовани облик - износ >15.000€"@sr ;
+    legal:hasArticle kzme:Art258 ;
+    legal:paragraph "3" ;
+    legal:description "Ако је дјелом из ст. 1 и 2 овог члана направљен, преиначен, стављен у промет или прибављен лажан новац у износу који прелази петнаест хиљада еура"@sr ;
+    legal:amountThreshold 15000 ;
+    legal:hasPenalty kzme:Penalty258_3 .
+
+kzme:Penalty258_3 a legal:Penalty ;
+    legal:penaltyMin 5 ;
+    legal:penaltyMax 15 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+# ==============================================================
+# Article 260: Credit Card Fraud
+# ==============================================================
+
+kzme:Art260 a legal:Article ;
+    rdfs:label "Члан 260 - Злоупотреба платних картица"@sr ;
+    rdfs:label "Article 260 - Credit Card Fraud"@en ;
+    legal:sourceUri "/akn/me/act/criminal-code#art_260" .
+
+kzme:Art260_Para1 a legal:CriminalOffense ;
+    rdfs:label "Основни облик злоупотребе картица"@sr ;
+    legal:hasArticle kzme:Art260 ;
+    legal:paragraph "1" ;
+    legal:description "Ко направи лажну платну картицу или ко преиначи праву платну картицу у намјери да је употријеби као праву"@sr ;
+    legal:hasPenalty kzme:Penalty260_1 .
+
+kzme:Penalty260_1 a legal:Penalty ;
+    legal:penaltyMin 0 ;
+    legal:penaltyMax 3 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art260_Para2 a legal:CriminalOffense ;
+    rdfs:label "Злоупотреба са имовинском коришћу"@sr ;
+    legal:hasArticle kzme:Art260 ;
+    legal:paragraph "2" ;
+    legal:description "Ако је учинилац дјела из става 1 овог члана употребом картице прибавио противправну имовинску корист"@sr ;
+    legal:hasPenalty kzme:Penalty260_2 .
+
+kzme:Penalty260_2 a legal:Penalty ;
+    legal:penaltyMin 0.5 ;
+    legal:penaltyMax 5 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art260_Para3 a legal:CriminalOffense ;
+    rdfs:label "Имовинска корист >3.000€"@sr ;
+    legal:hasArticle kzme:Art260 ;
+    legal:paragraph "3" ;
+    legal:amountThreshold 3000 ;
+    legal:hasPenalty kzme:Penalty260_3 .
+
+kzme:Penalty260_3 a legal:Penalty ;
+    legal:penaltyMin 1 ;
+    legal:penaltyMax 8 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art260_Para4 a legal:CriminalOffense ;
+    rdfs:label "Имовинска корист >30.000€"@sr ;
+    legal:hasArticle kzme:Art260 ;
+    legal:paragraph "4" ;
+    legal:amountThreshold 30000 ;
+    legal:hasPenalty kzme:Penalty260_4 .
+
+kzme:Penalty260_4 a legal:Penalty ;
+    legal:penaltyMin 2 ;
+    legal:penaltyMax 10 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+# ==============================================================
+# Article 268: Money Laundering
+# ==============================================================
+
+kzme:Art268 a legal:Article ;
+    rdfs:label "Члан 268 - Прање новца"@sr ;
+    rdfs:label "Article 268 - Money Laundering"@en ;
+    legal:sourceUri "/akn/me/act/criminal-code#art_268" .
+
+kzme:Art268_Para1 a legal:CriminalOffense ;
+    rdfs:label "Основни облик прања новца"@sr ;
+    legal:hasArticle kzme:Art268 ;
+    legal:paragraph "1" ;
+    legal:hasPenalty kzme:Penalty268_1 .
+
+kzme:Penalty268_1 a legal:Penalty ;
+    legal:penaltyMin 0.5 ;
+    legal:penaltyMax 5 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+kzme:Art268_Para3 a legal:CriminalOffense ;
+    rdfs:label "Прање новца >40.000€"@sr ;
+    legal:hasArticle kzme:Art268 ;
+    legal:paragraph "3" ;
+    legal:amountThreshold 40000 ;
+    legal:hasPenalty kzme:Penalty268_3 .
+
+kzme:Penalty268_3 a legal:Penalty ;
+    legal:penaltyMin 1 ;
+    legal:penaltyMax 10 ;
+    legal:penaltyUnit "година затвора"@sr .
+
+# ==============================================================
+# Mitigating Factors
+# ==============================================================
+
+legal:Confession a legal:MitigatingFactor ;
+    rdfs:label "Признање кривице"@sr ;
+    legal:factPredicate fact:priznaje_krivicu .
+
+legal:FirstOffense a legal:MitigatingFactor ;
+    rdfs:label "Раније неосуђиван"@sr ;
+    legal:factPredicate fact:ranije_neosudivan .
+
+legal:Restitution a legal:MitigatingFactor ;
+    rdfs:label "Накнада штете"@sr ;
+    legal:factPredicate fact:nadoknadio_stetu .
+
+legal:Cooperation a legal:MitigatingFactor ;
+    rdfs:label "Сарадња са истрагом"@sr ;
+    legal:factPredicate fact:saradjuje_sa_istragom .
+
+# ==============================================================
+# Aggravating Factors
+# ==============================================================
+
+legal:PriorConvictions a legal:AggravatingFactor ;
+    rdfs:label "Раније осуђиван"@sr ;
+    legal:factPredicate fact:ranije_osudivan .
+
+legal:OrganizedCrime a legal:AggravatingFactor ;
+    rdfs:label "Члан организоване групе"@sr ;
+    legal:factPredicate fact:clan_organizovane_grupe .
+
+# ==============================================================
+# Rules in N3 Logic Format
+# ==============================================================
+
+# Rule 258/1: Making counterfeit money
+{
+    ?X fact:pravi_lazan_novac true .
+    ?X fact:namjera_stavljanja_u_opticaj true .
+} => {
+    ?X legal:kriv_po_clanu kzme:Art258_Para1 .
+    ?X legal:penalty_min 2 .
+    ?X legal:penalty_max 12 .
+} .
+
+# Rule 258/2: Distributing counterfeit money
+{
+    ?X fact:pribavlja_lazan_novac true .
+    ?X fact:namjera_stavljanja_u_opticaj true .
+} => {
+    ?X legal:kriv_po_clanu kzme:Art258_Para2 .
+    ?X legal:penalty_min 2 .
+    ?X legal:penalty_max 10 .
+} .
+
+{
+    ?X fact:stavlja_lazan_novac_u_opticaj true .
+} => {
+    ?X legal:kriv_po_clanu kzme:Art258_Para2 .
+    ?X legal:penalty_min 2 .
+    ?X legal:penalty_max 10 .
+} .
+
+# Rule 260 Credit card rules...
+{
+    ?X fact:zloupotrebljava_karticu true .
+    ?X fact:pribavio_imovinsku_korist true .
+    ?X fact:iznos_imovinske_koristi ?Amount .
+    ?Amount > 3000 .
+    ?Amount <= 30000 .
+} => {
+    ?X legal:kriv_po_clanu kzme:Art260_Para3 .
+    ?X legal:penalty_min 1 .
+    ?X legal:penalty_max 8 .
+} .
+
+# Mitigating factors
+{
+    ?X fact:priznaje_krivicu true .
+} => {
+    ?X legal:olaksavajuca_okolnost legal:Confession .
+} .
+
+{
+    ?X fact:ranije_osudivan false .
+} => {
+    ?X legal:olaksavajuca_okolnost legal:FirstOffense .
+} .
+
+{
+    ?X fact:nadoknadio_stetu true .
+} => {
+    ?X legal:olaksavajuca_okolnost legal:Restitution .
+} .
+
+# Aggravating factors
+{
+    ?X fact:ranije_osudivan true .
+} => {
+    ?X legal:otezavajuca_okolnost legal:PriorConvictions .
+} .
+
+{
+    ?X fact:clan_organizovane_grupe true .
+} => {
+    ?X legal:otezavajuca_okolnost legal:OrganizedCrime .
+} .
+
+# Sentence reduction with multiple mitigating factors
+{
+    ?X legal:olaksavajuca_okolnost ?F1 .
+    ?X legal:olaksavajuca_okolnost ?F2 .
+    ?F1 != ?F2 .
+} => {
+    ?X legal:smanjenje_kazne_dozvoljeno true .
+} .

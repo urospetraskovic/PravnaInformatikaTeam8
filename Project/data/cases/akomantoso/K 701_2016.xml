@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_701_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_701_2016"/>
+          <FRBRuri value="/akn/me/judgment/K_701_2016"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_701_2016/srp@2016-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_701_2016/srp@2016-01-01"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_701_2016/srp@2016-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_701_2016/srp@2016-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nepoznato" showAs="Nepoznato"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>701/16</brojPredmeta>
+        <datum>2016</datum>
+        <datumNormalizovan>2016-01-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Nepoznato</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>4 (četiri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Neutvrđenog dana krajem februara 2013. godine u Golubovcima - Opština Podgorica, svjestan svog djela čije je izvršenje htio znajući da je njegovo djelo zabranjeno, lažan novac koji je primio kao pravi, pa saznavši da je lažan stavio u opticaj, na način što je od M. M. primio kao pravu novčanicu u apoenu od 50 eura, serijskog broja T00909878643, pa je saznavši da je novčanica lažna, stavio u opticaj i u trgovinskoj radnji "Avanti" u mjestu Tomića ub kupio robu u vrijednosti 5,39 eura, koju je platio navedenom lažnom novčanicom,</opisSlucaja>
+        <iznosi>
+          <iznos>45,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>44,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>5,39 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>4,00 EUR</iznos>
+          <iznos>6 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 701/16, sudija Nepoznato</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Neutvrđenog dana krajem februara 2013. godine u Golubovcima - Opština Podgorica, svjestan svog djela čije je izvršenje htio znajući da je njegovo djelo zabranjeno, lažan novac koji je primio kao pravi, pa saznavši da je lažan stavio u opticaj, na način što je od M. M. primio kao pravu novčanicu u apoenu od 50 eura, serijskog broja T00909878643, pa je saznavši da je novčanica lažna, stavio u opticaj i u trgovinskoj radnji "Avanti" u mjestu Tomića ub kupio robu u vrijednosti 5,39 eura, koju je platio navedenom lažnom novčanicom,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 4 (četiri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

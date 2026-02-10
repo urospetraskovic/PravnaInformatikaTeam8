@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_193_filed2015_verdict2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_193_filed2015_verdict2020" />
+          <FRBRuri value="/akn/me/judgment/Case_K_193_filed2015_verdict2020" />
+          <FRBRdate date="2020-03-16" name="judgment" />
+          <FRBRauthor href="#kotoru" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_193_filed2015_verdict2020/srp@2020-03-16" />
+          <FRBRuri value="/akn/me/judgment/Case_K_193_filed2015_verdict2020/srp@2020-03-16" />
+          <FRBRdate date="2020-03-16" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_193_filed2015_verdict2020/srp@2020-03-16.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_193_filed2015_verdict2020/srp@2020-03-16.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU" />
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="R.M." />
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>193/2015</brojPredmeta>
+        <datum>16.03.2020</datum>
+        <datumNormalizovan>2020-03-16</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>R.M.</optuzeni>
+        <podaciORoditeljima>otac R., majka V.</podaciORoditeljima>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>VSS</obrazovanje>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>6 (.) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <novcanaKazna>70,00</novcanaKazna>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>u periodu od 22.09. do 18.11.2018.godine u T., upotrijebio tuđe prave platne kartice koje je neovlašćeno pribavio i time stekao protivpravnu imovinsku korist, na način što je sredstva sa pravih platnih kartica izdatih na ime A. A. iz R., B.V. iz R., P.F. iz R., Z.T. iz A., S.H. iz Nj., D.S. iz R. i B.P. iz H., uplaćivao preko internet naloga za online klađenje i odigravanje igara na sreću i koristio ih za klađenje preko svog naloga i naloga koje je otvorio na ime V. R., Dž.P. i Đ.P. na sajtu "Meridijanbet" DOO P., i tako upotrijebio prave platne kartice imenovanih, do čijih podataka je došao kao recepcioner u hotelu "Splendido" u T., u kojem su kao gosti boravila navedena lica, tako što je dana 22.09.2018.godine u tri navrata upotrijebio karticu broj 521324-xxxxxx-9798 izdatu na ime P.F. i izvršio prenos sredstava u iznosu od 10,100 i1.000 eura preko svog naloga, dana 29.09.2018.godine upotrijebio karticu broj 454818-xxx-xxx-6018 izdatu na ime Z.T. i izvršio prenos sredstava u iznosu od 1.000,oo eura preko naloga Dž.P., dana 01.10.2018. godine u dva navrata upotrijebio karticu broj 548674-xxx-xxx-7311 izdatu na ime D.S. i izvršio prenos sredstava u iznosu od 10.00 eura i od 1.000,oo eura i dana 04.10.2018.godine iznos od 500,oo eura i 1.000 eura preko naloga Dž.P., dana 02.10.2018.godine u dva navrata upotrijebio karticu broj 540187-xxxxxx-1659 izdatu na ime S.H. i izvršio prenos sredstava u iznosu od 10,00 eura i 1.000,oo eura, i dana 04.10.2018.godine iznos od 10.00 eura i </opisSlucaja>
+        <dokazi>
+          <dokaz>zapisnik o pregovaranju od 13.02.2020.godine</dokaz>
+          <dokaz>zapisnik o priznanju krivice od 13.02.2020.god
+.sačinjen pred ODT K.</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>500 EUR</iznos>
+          <iznos>10.00 EUR</iznos>
+          <iznos>1.000 EUR</iznos>
+          <iznos>70,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Aleksandre Čolan</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>6 (.) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 193/2015, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: R.M., otac R., majka V., neoženjen</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>u periodu od 22.09. do 18.11.2018.godine u T., upotrijebio tuđe prave platne kartice koje je neovlašćeno pribavio i time stekao protivpravnu imovinsku korist, na način što je sredstva sa pravih platnih kartica izdatih na ime A. A. iz R., B.V. iz R., P.F. iz R., Z.T. iz A., S.H. iz Nj., D.S. iz R. i B.P. iz H., uplaćivao preko internet naloga za online klađenje i odigravanje igara na sreću i koristio ih za klađenje preko svog naloga i naloga koje je otvorio na ime V. R., Dž.P. i Đ.P. na sajtu "Meridijanbet" DOO P., i tako upotrijebio prave platne kartice imenovanih, do čijih podataka je došao kao recepcioner u hotelu "Splendido" u T., u kojem su kao gosti boravila navedena lica, tako što je dana 22.09.2018.godine u tri navrata upotrijebio karticu broj 521324-xxxxxx-9798 izdatu na ime P.F. i izvršio prenos sredstava u iznosu od 10,100 i1.000 eura preko svog naloga, dana 29.09.2018.godine upotrijebio karticu broj 454818-xxx-xxx-6018 izdatu na ime Z.T. i izvršio prenos sredstava u iznosu od 1.000,oo eura preko naloga Dž.P., dana 01.10.2018. godine u dva navrata upotrijebio karticu broj 548674-xxx-xxx-7311 izdatu na ime D.S. i izvršio prenos sredstava u iznosu od 10.00 eura i od 1.000,oo eura i dana 04.10.2018.godine iznos od 500,oo eura i 1.000 eura preko naloga Dž.P., dana 02.10.2018.godine u dva navrata upotrijebio karticu broj 540187-xxxxxx-1659 izdatu na ime S.H. i izvršio prenos sredstava u iznosu od 10,00 eura i 1.000,oo eura, i dana 04.10.2018.godine iznos od 10.00 eura i </p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o pregovaranju od 13.02.2020.godine</p>
+            <p>• zapisnik o priznanju krivice od 13.02.2020.god
+.sačinjen pred ODT K.</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+          <p>Novčana kazna: 70,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

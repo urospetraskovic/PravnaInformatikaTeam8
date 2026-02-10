@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_44_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_44_2016"/>
+          <FRBRuri value="/akn/me/judgment/K_44_2016"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#rožajama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_44_2016/srp@2016-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_44_2016/srp@2016-01-01"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_44_2016/srp@2016-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_44_2016/srp@2016-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/rožajama" showAs="Osnovni Sud u ROŽAJAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/osnovnog_suda" showAs="Osnovnog suda"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ROŽAJAMA</sud>
+        <brojPredmeta>44/16</brojPredmeta>
+        <datum>2016</datum>
+        <datumNormalizovan>2016-01-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Osnovnog suda</sudija>
+        <zapisnicar>Aide Luboder</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>2 (dva) mjesec</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</opisSlucaja>
+        <iznosi>
+          <iznos>40,98 EUR</iznos>
+          <iznos>149,99 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>49,01 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ROŽAJAMA, 44/16, sudija Osnovnog suda</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 2 (dva) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

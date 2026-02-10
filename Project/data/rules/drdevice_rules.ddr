@@ -1,0 +1,324 @@
+%% ==============================================================
+%% DR-Device Rules - Criminal Code of Montenegro, Chapter 23
+%% Crimes Against Payment System and Economic Operations
+%% (Krivicna djela protiv platnog prometa i privrednog poslovanja)
+%% 
+%% Project: Pravna Informatika - Team 8
+%% Format: DR-Device Defeasible Logic Rules
+%% 
+%% Based on exercise format: Disposition + Sanction modeling
+%% Sanctions include: zatvor (imprisonment), novcana kazna (fine), oduzimanje (confiscation)
+%% ==============================================================
+
+%% Namespace declarations
+@prefix : <http://pravnainformatika.team8.me/rules#>.
+@prefix legal: <http://pravnainformatika.team8.me/legal#>.
+@prefix fact: <http://pravnainformatika.team8.me/facts#>.
+@prefix penalty: <http://pravnainformatika.team8.me/penalty#>.
+
+%% ==============================================================
+%% ARTICLE 258: COUNTERFEITING MONEY (Falsifikovanje novca)
+%% Clan 258 Krivicnog Zakonika Crne Gore
+%% ==============================================================
+
+%% Rule 258/1: Making counterfeit money (Pravljenje laznog novca)
+%% Disposition: pravi_lazan_novac AND namjera_stavljanja_u_opticaj
+%% Sanction: zatvor 2-12 godina
+rule_258_1:
+  fact:pravi_lazan_novac(?X) AND
+  fact:namjera_stavljanja_u_opticaj(?X)
+  =>
+  legal:kriv_po_clanu(?X, "258", "1"),
+  penalty:zatvor_min(?X, 2),
+  penalty:zatvor_max(?X, 12),
+  penalty:tip_sankcije(?X, "zatvor").
+
+rule_258_1_alt:
+  fact:preinacuje_pravi_novac(?X) AND
+  fact:namjera_stavljanja_u_opticaj(?X)
+  =>
+  legal:kriv_po_clanu(?X, "258", "1"),
+  penalty:zatvor_min(?X, 2),
+  penalty:zatvor_max(?X, 12),
+  penalty:tip_sankcije(?X, "zatvor").
+
+%% Rule 258/2: Distributing counterfeit money (Stavljanje u opticaj)
+%% Disposition: pribavlja/drzi/prenosi lazan novac OR stavlja u opticaj
+%% Sanction: zatvor 2-10 godina
+rule_258_2a:
+  fact:pribavlja_lazan_novac(?X) AND
+  fact:namjera_stavljanja_u_opticaj(?X)
+  =>
+  legal:kriv_po_clanu(?X, "258", "2"),
+  penalty:zatvor_min(?X, 2),
+  penalty:zatvor_max(?X, 10),
+  penalty:tip_sankcije(?X, "zatvor").
+
+rule_258_2b:
+  fact:stavlja_lazan_novac_u_opticaj(?X)
+  =>
+  legal:kriv_po_clanu(?X, "258", "2"),
+  penalty:zatvor_min(?X, 2),
+  penalty:zatvor_max(?X, 10),
+  penalty:tip_sankcije(?X, "zatvor").
+
+%% Rule 258/3: Qualified form - amount exceeds 15,000 EUR (Kvalifikovani oblik)
+%% Disposition: djelo iz st.1,2 AND iznos > 15000 EUR
+%% Sanction: zatvor 5-15 godina
+rule_258_3:
+  (fact:pravi_lazan_novac(?X) OR 
+   fact:stavlja_lazan_novac_u_opticaj(?X) OR
+   fact:pribavlja_lazan_novac(?X)) AND
+  fact:iznos_novca(?X, ?Amount) AND
+  greaterThan(?Amount, 15000)
+  =>
+  legal:kriv_po_clanu(?X, "258", "3"),
+  penalty:zatvor_min(?X, 5),
+  penalty:zatvor_max(?X, 15),
+  penalty:tip_sankcije(?X, "zatvor"),
+  legal:kvalifikovani_oblik(?X).
+
+%% Rule 258/4: Privileged form - received in good faith (Privilegovani oblik)
+%% Disposition: primio kao pravi, saznavsi da je lazan ga stavio u opticaj
+%% Sanction: novcana kazna ILI zatvor do 1 godine
+rule_258_4:
+  fact:primio_u_dobroj_vjeri(?X) AND
+  fact:stavlja_lazan_novac_u_opticaj(?X)
+  =>
+  legal:kriv_po_clanu(?X, "258", "4"),
+  penalty:zatvor_min(?X, 0),
+  penalty:zatvor_max(?X, 1),
+  penalty:novcana_kazna_moguca(?X),
+  penalty:tip_sankcije(?X, "zatvor_ili_novcana"),
+  legal:privilegovani_oblik(?X).
+
+%% Rule 258/5: Confiscation (Oduzimanje)
+%% Sanction: Lazan novac se oduzima
+rule_258_5:
+  fact:predmet_lazan_novac(?Money)
+  =>
+  legal:oduzima_se(?Money),
+  penalty:tip_sankcije(?Money, "oduzimanje").
+
+
+%% ==============================================================
+%% ARTICLE 260: CREDIT CARD FRAUD (Zloupotreba platnih kartica)
+%% Clan 260 KZ CG
+%% ==============================================================
+
+%% Rule 260/1: Basic credit card fraud
+%% Disposition: pravi/preinacava laznu karticu, ili neovlasceno pribavlja/koristi tudju
+%% Sanction: zatvor do 3 godine
+rule_260_1a:
+  fact:pravi_laznu_karticu(?X)
+  =>
+  legal:kriv_po_clanu(?X, "260", "1"),
+  penalty:zatvor_min(?X, 0),
+  penalty:zatvor_max(?X, 3),
+  penalty:tip_sankcije(?X, "zatvor").
+
+rule_260_1b:
+  fact:preinacuje_pravu_karticu(?X)
+  =>
+  legal:kriv_po_clanu(?X, "260", "1"),
+  penalty:zatvor_min(?X, 0),
+  penalty:zatvor_max(?X, 3),
+  penalty:tip_sankcije(?X, "zatvor").
+
+rule_260_1c:
+  fact:neovlasceno_pribavlja_karticu(?X)
+  =>
+  legal:kriv_po_clanu(?X, "260", "1"),
+  penalty:zatvor_min(?X, 0),
+  penalty:zatvor_max(?X, 3),
+  penalty:tip_sankcije(?X, "zatvor").
+
+rule_260_1d:
+  fact:upotrebljava_laznu_karticu(?X)
+  =>
+  legal:kriv_po_clanu(?X, "260", "1"),
+  penalty:zatvor_min(?X, 0),
+  penalty:zatvor_max(?X, 3),
+  penalty:tip_sankcije(?X, "zatvor").
+
+%% Rule 260/2: Credit card fraud with gain
+%% Disposition: zloupotreba kartice + imovinska korist
+%% Sanction: zatvor 6 mjeseci - 5 godina
+rule_260_2:
+  fact:zloupotrebljava_karticu(?X) AND
+  fact:pribavio_imovinsku_korist(?X, ?Amount) AND
+  lessThanOrEqual(?Amount, 3000)
+  =>
+  legal:kriv_po_clanu(?X, "260", "2"),
+  penalty:zatvor_min(?X, 0.5),
+  penalty:zatvor_max(?X, 5),
+  penalty:tip_sankcije(?X, "zatvor").
+
+%% Rule 260/3: Credit card fraud > 3,000 EUR
+%% Sanction: zatvor 1-8 godina
+rule_260_3:
+  fact:zloupotrebljava_karticu(?X) AND
+  fact:pribavio_imovinsku_korist(?X, ?Amount) AND
+  greaterThan(?Amount, 3000) AND
+  lessThanOrEqual(?Amount, 30000)
+  =>
+  legal:kriv_po_clanu(?X, "260", "3"),
+  penalty:zatvor_min(?X, 1),
+  penalty:zatvor_max(?X, 8),
+  penalty:tip_sankcije(?X, "zatvor").
+
+%% Rule 260/4: Credit card fraud > 30,000 EUR
+%% Sanction: zatvor 2-10 godina
+rule_260_4:
+  fact:zloupotrebljava_karticu(?X) AND
+  fact:pribavio_imovinsku_korist(?X, ?Amount) AND
+  greaterThan(?Amount, 30000)
+  =>
+  legal:kriv_po_clanu(?X, "260", "4"),
+  penalty:zatvor_min(?X, 2),
+  penalty:zatvor_max(?X, 10),
+  penalty:tip_sankcije(?X, "zatvor"),
+  legal:kvalifikovani_oblik(?X).
+
+
+
+%% ==============================================================
+%% MITIGATING FACTORS (Olaksavajuce okolnosti)
+%% ==============================================================
+
+rule_mitigating_confession:
+  fact:priznaje_krivicu(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "priznanje_krivice"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_first_offense:
+  NOT fact:ranije_osudivan(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "ranije_neosudjivan"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_restitution:
+  fact:nadoknadio_stetu(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "naknada_stete"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_cooperation:
+  fact:saradjuje_sa_istragom(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "saradnja_sa_istragom"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_small_amount:
+  fact:iznos_novca(?X, ?Amount) AND
+  lessThan(?Amount, 500)
+  =>
+  legal:olaksavajuca_okolnost(?X, "mali_iznos"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_young_adult:
+  fact:mladi_punoljetnik(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "mladi_punoljetnik"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_attempt:
+  fact:pokusaj(?X) AND
+  NOT fact:djelo_dovrseno(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "pokusaj"),
+  penalty:smanjenje_moguce(?X),
+  penalty:ublazavanje_za_pokusaj(?X).
+
+%% ==============================================================
+%% AGGRAVATING FACTORS (Otezavajuce okolnosti)
+%% ==============================================================
+
+rule_aggravating_prior:
+  fact:ranije_osudivan(?X)
+  =>
+  legal:otezavajuca_okolnost(?X, "ranije_osudivan"),
+  penalty:povecanje_moguce(?X).
+
+rule_aggravating_organized:
+  fact:clan_organizovane_grupe(?X)
+  =>
+  legal:otezavajuca_okolnost(?X, "organizovana_grupa"),
+  penalty:povecanje_moguce(?X).
+
+rule_aggravating_recidivism:
+  fact:ranije_osudivan(?X) AND
+  fact:istovrsno_djelo(?X)
+  =>
+  legal:otezavajuca_okolnost(?X, "povrat"),
+  penalty:povecanje_moguce(?X).
+
+rule_aggravating_large_amount:
+  fact:iznos_novca(?X, ?Amount) AND
+  greaterThan(?Amount, 15000)
+  =>
+  legal:otezavajuca_okolnost(?X, "veliki_iznos"),
+  penalty:povecanje_moguce(?X).
+
+rule_aggravating_multiple:
+  fact:visestruko_izvrsenje(?X)
+  =>
+  legal:otezavajuca_okolnost(?X, "visestruko_izvrsenje"),
+  penalty:povecanje_moguce(?X).
+
+%% ==============================================================
+%% SENTENCING RULES (Odmjeravanje kazne)
+%% ==============================================================
+
+%% Suspended sentence eligibility (Uslovna osuda - cl. 53 KZ CG)
+%% Moze se izreci za kaznu do 2 godine
+rule_suspended_sentence:
+  penalty:zatvor_max(?X, ?Max) AND
+  lessThanOrEqual(?Max, 2) AND
+  legal:olaksavajuca_okolnost(?X, ?_)
+  =>
+  legal:moguca_uslovna_osuda(?X).
+
+%% Sentence reduction (Ublazavanje kazne - cl. 45 KZ CG)
+rule_sentence_reduction:
+  legal:olaksavajuca_okolnost(?X, ?F1) AND
+  legal:olaksavajuca_okolnost(?X, ?F2) AND
+  notEqual(?F1, ?F2)
+  =>
+  legal:ublazavanje_kazne_dozvoljeno(?X).
+
+%% Sentence increase
+rule_sentence_increase:
+  legal:otezavajuca_okolnost(?X, ?_)
+  =>
+  legal:povecanje_kazne_preporuceno(?X).
+
+%% ==============================================================
+%% CONCURRENCE OF CRIMES (Sticaj - cl. 48 KZ CG)
+%% ==============================================================
+
+rule_sticaj:
+  legal:kriv_po_clanu(?X, ?Article1, ?Para1) AND
+  legal:kriv_po_clanu(?X, ?Article2, ?Para2) AND
+  notEqual(?Article1, ?Article2)
+  =>
+  legal:sticaj_krivicnih_djela(?X),
+  legal:izrice_se_jedinstvena_kazna(?X).
+
+%% ==============================================================
+%% META-RULES: RULE PRIORITY (Superiornost pravila)
+%% Qualified forms defeat basic forms
+%% ==============================================================
+
+superiority(rule_258_3, rule_258_1).
+superiority(rule_258_3, rule_258_2a).
+superiority(rule_258_3, rule_258_2b).
+superiority(rule_260_4, rule_260_3).
+superiority(rule_260_3, rule_260_2).
+superiority(rule_260_2, rule_260_1a).
+superiority(rule_260_2, rule_260_1b).
+superiority(rule_260_2, rule_260_1c).
+superiority(rule_260_2, rule_260_1d).
+
+%% END OF RULES

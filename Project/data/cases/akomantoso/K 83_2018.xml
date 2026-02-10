@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_83_2018">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_83_2018"/>
+          <FRBRuri value="/akn/me/judgment/K_83_2018"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_83_2018/srp@2018-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_83_2018/srp@2018-01-01"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_83_2018/srp@2018-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_83_2018/srp@2018-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/đuković_goranu" showAs="Đuković Goranu"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>83/18</brojPredmeta>
+        <datum>2018</datum>
+        <datumNormalizovan>2018-01-01</datumNormalizovan>
+        <godina>2018</godina>
+        <sudija>Đuković Goranu</sudija>
+        <zapisnicar>Sanje Radević</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjesec</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>U periodu od 07.10.2017. godine do 23.10.2017. godine, u P., svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno, tuđu platnu karticu koju je neovlašćeno pribavio upotrijebio na način što je sada pokojni V. R. kao lice zaposleno u preduzeću ''T.'' DOO dana 07.10.2017. godine neovlašćeno pribavio karticu za točenje goriva oštećenog preduzeća ''T." DOO izdatu od strane preduzeća ''P.'' DOO iz P., broj ..., a zatim istu prenio radi upotrebe okrivljenom B. A., koji je u periodu od 07.10.2017. godine do 23.10.2017. godine, više puta dnevno na benzinskim pumpama preduzeća ''P.'' DOO lociranim u ulici M. B., Z. i D. G. u P., tako neovlašćeno prenesenu karticu za gorivo upotrebljavao kupujući gorivo na navedenim pumpama, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.618,43 eura,</opisSlucaja>
+        <iznosi>
+          <iznos>210,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>554,85 EUR</iznos>
+          <iznos>60,50 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>359,12 EUR</iznos>
+          <iznos>618,43 EUR</iznos>
+          <iznos>704,46 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 83/18, sudija Đuković Goranu</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 07.10.2017. godine do 23.10.2017. godine, u P., svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno, tuđu platnu karticu koju je neovlašćeno pribavio upotrijebio na način što je sada pokojni V. R. kao lice zaposleno u preduzeću ''T.'' DOO dana 07.10.2017. godine neovlašćeno pribavio karticu za točenje goriva oštećenog preduzeća ''T." DOO izdatu od strane preduzeća ''P.'' DOO iz P., broj ..., a zatim istu prenio radi upotrebe okrivljenom B. A., koji je u periodu od 07.10.2017. godine do 23.10.2017. godine, više puta dnevno na benzinskim pumpama preduzeća ''P.'' DOO lociranim u ulici M. B., Z. i D. G. u P., tako neovlašćeno prenesenu karticu za gorivo upotrebljavao kupujući gorivo na navedenim pumpama, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.618,43 eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 6 (šest) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

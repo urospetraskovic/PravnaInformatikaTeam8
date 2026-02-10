@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_592_filed2022_verdict2021">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_592_filed2022_verdict2021" />
+          <FRBRuri value="/akn/me/judgment/Case_K_592_filed2022_verdict2021" />
+          <FRBRdate date="2021-03-31" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_592_filed2022_verdict2021/srp@2021-03-31" />
+          <FRBRuri value="/akn/me/judgment/Case_K_592_filed2022_verdict2021/srp@2021-03-31" />
+          <FRBRdate date="2021-03-31" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_592_filed2022_verdict2021/srp@2021-03-31.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_592_filed2022_verdict2021/srp@2021-03-31.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI" />
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r" />
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>592/22</brojPredmeta>
+        <datum>31.03.2021</datum>
+        <datumNormalizovan>2021-03-31</datumNormalizovan>
+        <godina>2021</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <optuzeni>u r</optuzeni>
+        <podaciORoditeljima>otac S., majka R.</podaciORoditeljima>
+        <prebivaliste>Podgorici, Ulica I</prebivaliste>
+        <zaposlenost>zaposlen na ovoj pumpi upoznao da na toj kartici nema sredstava za plaćanje</zaposlenost>
+        <bracniStatus>neudata</bracniStatus>
+        <obrazovanje>srednju školu</obrazovanje>
+        <ranijeOsudjivan>neosuđivana</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>U periodu od 19.07.2020. godine do 26.07.2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je u namjeri da upotrijebi platnu karticu, izdatu od Crnogorske Komercijalne banke, na ime P. K., po računu broj 51000000011823xxxx, iskoristila dostupnost iste i sa te kartice preuzela podatke o serijskom broju i CVV kodu, a zatim je u 12 navrata upotrijebila, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa email adrese m.l.60@gmail.com, preko mobilnog telefona 382/69 xxx-xxx izvršila 12 uspješnih transakcija na navedenoj internet platformi za klađenje i to dana 19.07.2020. godine u iznosu od 50,00 eura, dana 20.07.2020. godine u tri navrata u iznosima od 30,00 eura i dva puta po 100,00 eura, dana 21.07.2020. godine u dva navrata u iznosima od 120,00 eura i 50,00 eura, dana 22.07.2020. godine u tri navrata u iznosima od 30,00 eura, 80,00 eura i 60,00 eura, dana 23.07.2020. godine u iznosu od 30,00 eura, dana 25.07.2020. godine u iznosu od 50,00 eura i dana 26.07.2020. godine, iznos od 10,00 eura, čime je sebi pribavila protivpravnu imovinsku korist u iznosu od 710,00 eura, u kom iznosu je oštećeno privredno društvo "V." DOO, pretrpjelo materijalnu štetu.</opisSlucaja>
+        <svjedoci>
+          <svjedok>tvrdio d</svjedok>
+          <svjedok>je n</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>dopis "DOO V." br. 8494-1/2020 od 10.08.2020. godine</dokaz>
+          <dokaz>iskaz ovlašćenog predstavnika oštećenog privrednog društva "V. DOO" svjedoka A. M.</dokaz>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljene M. L.</dokaz>
+          <dokaz>svjedoka P. K.</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 23.09.2020. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 05.11.2020. godine</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 09.10.2020. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>200,00 EUR</iznos>
+          <iznos>167,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>635,50 EUR</iznos>
+          <iznos>0,19 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>120,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>710,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>802,50 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Marine Sekulić</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>3 (tri) mjeseca</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 592/22, sudija Nenad Vujanović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, otac S., majka R., prebivalište: Podgorici, Ulica I, zaposlen na ovoj pumpi upoznao da na toj kartici nema sredstava za plaćanje, neudata, neosuđivana</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 19.07.2020. godine do 26.07.2020. godine, u Podgorici, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je u namjeri da upotrijebi platnu karticu, izdatu od Crnogorske Komercijalne banke, na ime P. K., po računu broj 51000000011823xxxx, iskoristila dostupnost iste i sa te kartice preuzela podatke o serijskom broju i CVV kodu, a zatim je u 12 navrata upotrijebila, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa email adrese m.l.60@gmail.com, preko mobilnog telefona 382/69 xxx-xxx izvršila 12 uspješnih transakcija na navedenoj internet platformi za klađenje i to dana 19.07.2020. godine u iznosu od 50,00 eura, dana 20.07.2020. godine u tri navrata u iznosima od 30,00 eura i dva puta po 100,00 eura, dana 21.07.2020. godine u dva navrata u iznosima od 120,00 eura i 50,00 eura, dana 22.07.2020. godine u tri navrata u iznosima od 30,00 eura, 80,00 eura i 60,00 eura, dana 23.07.2020. godine u iznosu od 30,00 eura, dana 25.07.2020. godine u iznosu od 50,00 eura i dana 26.07.2020. godine, iznos od 10,00 eura, čime je sebi pribavila protivpravnu imovinsku korist u iznosu od 710,00 eura, u kom iznosu je oštećeno privredno društvo "V." DOO, pretrpjelo materijalnu štetu.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• dopis "DOO V." br. 8494-1/2020 od 10.08.2020. godine</p>
+            <p>• iskaz ovlašćenog predstavnika oštećenog privrednog društva "V. DOO" svjedoka A. M.</p>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljene M. L.</p>
+            <p>• svjedoka P. K.</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 23.09.2020. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

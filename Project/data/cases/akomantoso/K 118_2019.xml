@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_118_2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_118_2019"/>
+          <FRBRuri value="/akn/me/judgment/K_118_2019"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#bijelom"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_118_2019/srp@2019-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_118_2019/srp@2019-01-01"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_118_2019/srp@2019-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_118_2019/srp@2019-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom" showAs="Osnovni Sud u BIJELOM"/>
+        <TLCPerson eId="sudija" href="/ontology/person/dragan_mrdak" showAs="Dragan Mrdak"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM</sud>
+        <brojPredmeta>118/19</brojPredmeta>
+        <datum>2019</datum>
+        <datumNormalizovan>2019-01-01</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Dragan Mrdak</sudija>
+        <zapisnicar>Koviljke Lješnjak</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>2 (dva) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>3.692 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>119,00 EUR</iznos>
+          <iznos>3.537 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM, 118/19, sudija Dragan Mrdak</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 2 (dva) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

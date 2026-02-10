@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_4_2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_4_2019"/>
+          <FRBRuri value="/akn/me/judgment/K_4_2019"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#cetinju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_4_2019/srp@2019-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_4_2019/srp@2019-01-01"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_4_2019/srp@2019-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_4_2019/srp@2019-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/cetinju" showAs="Osnovni Sud u CETINJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ćupić_mariji" showAs="Ćupić Mariji"/>
+      </references>
+      <proprietary source="#court">
+        <sud>CETINJU</sud>
+        <brojPredmeta>4/19</brojPredmeta>
+        <datum>2019</datum>
+        <datumNormalizovan>2019-01-01</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Ćupić Mariji</sudija>
+        <zapisnicar>Mirko Boljević</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana, 13. novembra 2018. godine, u prodajnom objektu zv.“V.”, u ulici “X C.” u C., vlasništvo P. V. iz C., svjestan svog djela i njegove zabranjenosti čije je izvršenje htio, stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, neutvrđenog serijskog broja, na način što je navedenom lažnom novčanicom platio nekoliko kupljenih artikala u navedenom prodajnom objektu, a potom dana 18.11.2018.godine, oko 18,10 časova, u prodajnom objektu “S. k.”, u bulevaru „C. j.” u C., na prethodno opisani način ponovo stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, ser.br.X14302576621, te dana 22.11.2018.godine, u kući vlasništvo M. R., u naselju .. u C., gdje je privremeno boravio, držao lažan novac - jednu novčanicu u apoenu od 100,00 eura, serijskog broja U06527526055, s namjerom da ga stavi u opticaj kao pravi, za koje novčanice je tehničkom analizom utvrđeno da se radi o falsifikatima istog tipa i to EUA0100 P00007, koji je prepoznatljiv po odstupanju u odnosu </opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>740,00 EUR</iznos>
+          <iznos>9,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u CETINJU, 4/19, sudija Ćupić Mariji</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana, 13. novembra 2018. godine, u prodajnom objektu zv.“V.”, u ulici “X C.” u C., vlasništvo P. V. iz C., svjestan svog djela i njegove zabranjenosti čije je izvršenje htio, stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, neutvrđenog serijskog broja, na način što je navedenom lažnom novčanicom platio nekoliko kupljenih artikala u navedenom prodajnom objektu, a potom dana 18.11.2018.godine, oko 18,10 časova, u prodajnom objektu “S. k.”, u bulevaru „C. j.” u C., na prethodno opisani način ponovo stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, ser.br.X14302576621, te dana 22.11.2018.godine, u kući vlasništvo M. R., u naselju .. u C., gdje je privremeno boravio, držao lažan novac - jednu novčanicu u apoenu od 100,00 eura, serijskog broja U06527526055, s namjerom da ga stavi u opticaj kao pravi, za koje novčanice je tehničkom analizom utvrđeno da se radi o falsifikatima istog tipa i to EUA0100 P00007, koji je prepoznatljiv po odstupanju u odnosu </p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

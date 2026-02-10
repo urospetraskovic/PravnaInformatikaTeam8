@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_793_2011">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_793_2011"/>
+          <FRBRuri value="/akn/me/judgment/K_793_2011"/>
+          <FRBRdate date="2011-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_793_2011/srp@2011-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_793_2011/srp@2011-01-01"/>
+          <FRBRdate date="2011-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_793_2011/srp@2011-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_793_2011/srp@2011-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/maja_zeković" showAs="Maja Zeković"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>793/11</brojPredmeta>
+        <datum>2011</datum>
+        <datumNormalizovan>2011-01-01</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Maja Zeković</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>7 (sedam) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 11.11.2011. godine oko 07,30 časova u P.i, u Ul. O. R., upotrijebio lažnu platnu karticu, na način što je sa aparata za podizanje novca vlasništvo "P. B." AD karticom na čiju su magnetnu traku bili unijeti podaci sa kartice br.4921818551979233, u dva navrata podigao novac u iznosu od po 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</opisSlucaja>
+        <iznosi>
+          <iznos>126,50 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>1.200 EUR</iznos>
+          <iznos>310,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>200 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 793/11, sudija Maja Zeković</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.11.2011. godine oko 07,30 časova u P.i, u Ul. O. R., upotrijebio lažnu platnu karticu, na način što je sa aparata za podizanje novca vlasništvo "P. B." AD karticom na čiju su magnetnu traku bili unijeti podaci sa kartice br.4921818551979233, u dva navrata podigao novac u iznosu od po 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 7 (sedam) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

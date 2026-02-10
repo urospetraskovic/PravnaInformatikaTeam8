@@ -1,0 +1,48 @@
+{
+  "violated_rules": [
+    {
+      "rule_id": "rule_260_1",
+      "article": "260",
+      "paragraph": "1",
+      "description": "Основни облик злоупотребе картица",
+      "description_full": "Ко направи лажну платну картицу или ко преиначи праву платну картицу у намјери да је употријеби као праву, или ко такву лажну платну картицу или туђу праву платну картицу која је неовлашћено прибављена набави, држи или пренесе ради употребе или такву картицу употријеби",
+      "legal_reference": "Чл. 260 ст. 1 КЗ ЦГ"
+    },
+    {
+      "rule_id": "rule_260_2",
+      "article": "260",
+      "paragraph": "2",
+      "description": "Злоупотреба картица са имовинском коришћу",
+      "description_full": "Ако је учинилац дјела из става 1 овог члана употребом картице прибавио противправну имовинску корист",
+      "legal_reference": "Чл. 260 ст. 2 КЗ ЦГ"
+    }
+  ],
+  "applicable_penalties": [
+    {
+      "rule_id": "rule_260_1",
+      "penalty_min": 0,
+      "penalty_max": 3,
+      "penalty_unit": "година затвора",
+      "formatted": "0 до 3 година затвора"
+    },
+    {
+      "rule_id": "rule_260_2",
+      "penalty_min": 0.5,
+      "penalty_max": 5,
+      "penalty_unit": "година затвора",
+      "formatted": "0.5 до 5 година затвора"
+    }
+  ],
+  "mitigating_factors": [
+    "Раније неосуђиван"
+  ],
+  "aggravating_factors": [],
+  "recommendations": [
+    "Примјењив распон казне: 0.5 до 5 година затвора",
+    "Условна осуда може бити могућа"
+  ],
+  "confiscation": [],
+  "suspended_sentence_eligible": true,
+  "sentence_reduction_allowed": false,
+  "sentence_increase_recommended": false
+}

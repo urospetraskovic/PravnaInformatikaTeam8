@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_12_2014">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_12_2014"/>
+          <FRBRuri value="/akn/me/judgment/K_12_2014"/>
+          <FRBRdate date="2014-01-01" name="judgment"/>
+          <FRBRauthor href="#pljevljima"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_12_2014/srp@2014-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_12_2014/srp@2014-01-01"/>
+          <FRBRdate date="2014-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_12_2014/srp@2014-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_12_2014/srp@2014-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima" showAs="Osnovni Sud u PLJEVLJIMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/branku_pejoviću_uz_sudjelovanje_zapisničara_djondović_milenke" showAs="Branku Pejoviću uz sudjelovanje zapisničara Djondović Milenke"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PLJEVLJIMA</sud>
+        <brojPredmeta>12/14</brojPredmeta>
+        <datum>2014</datum>
+        <datumNormalizovan>2014-01-01</datumNormalizovan>
+        <godina>2014</godina>
+        <sudija>Branku Pejoviću uz sudjelovanje zapisničara Djondović Milenke</sudija>
+        <zapisnicar>Djondović Milenke</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>None</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</opisSlucaja>
+        <iznosi>
+          <iznos>50,00 EUR</iznos>
+          <iznos>27,50 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PLJEVLJIMA, 12/14, sudija Branku Pejoviću uz sudjelovanje zapisničara Djondović Milenke</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: None</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

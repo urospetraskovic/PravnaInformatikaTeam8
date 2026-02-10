@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_38_filed2017_verdict2011">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_38_filed2017_verdict2011" />
+          <FRBRuri value="/akn/me/judgment/Case_K_38_filed2017_verdict2011" />
+          <FRBRdate date="2011-09-15" name="judgment" />
+          <FRBRauthor href="#herceg_novom" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_38_filed2017_verdict2011/srp@2011-09-15" />
+          <FRBRuri value="/akn/me/judgment/Case_K_38_filed2017_verdict2011/srp@2011-09-15" />
+          <FRBRdate date="2011-09-15" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_38_filed2017_verdict2011/srp@2011-09-15.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_38_filed2017_verdict2011/srp@2011-09-15.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/herceg_novom" showAs="Osnovni Sud u HERCEG NOVOM" />
+        <TLCPerson eId="sudija" href="/ontology/person/šušić_lidija" showAs="Šušić Lidija" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="K.S." />
+      </references>
+      <proprietary source="#court">
+        <sud>HERCEG NOVOM</sud>
+        <brojPredmeta>38/2017</brojPredmeta>
+        <datum>15.09.2011</datum>
+        <datumNormalizovan>2011-09-15</datumNormalizovan>
+        <godina>2011</godina>
+        <sudija>Šušić Lidija</sudija>
+        <optuzeni>K.S.</optuzeni>
+        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260</clanKZ>
+        <kazna>2 (dva) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</opisSlucaja>
+        <iznosi>
+          <iznos>30 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Milović Tereze</zapisnicar>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>2 (dva) mjesec</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u HERCEG NOVOM, 38/2017, sudija Šušić Lidija</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: K.S.</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

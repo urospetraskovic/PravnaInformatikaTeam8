@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_177_2010">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_177_2010"/>
+          <FRBRuri value="/akn/me/judgment/K_177_2010"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#herceg"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_177_2010/srp@2010-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_177_2010/srp@2010-01-01"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_177_2010/srp@2010-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_177_2010/srp@2010-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/herceg" showAs="Osnovni Sud u HERCEG"/>
+        <TLCPerson eId="sudija" href="/ontology/person/porotnika_stanković_tereze" showAs="porotnika Stanković Tereze"/>
+      </references>
+      <proprietary source="#court">
+        <sud>HERCEG</sud>
+        <brojPredmeta>177/10</brojPredmeta>
+        <datum>2010</datum>
+        <datumNormalizovan>2010-01-01</datumNormalizovan>
+        <godina>2010</godina>
+        <sudija>porotnika Stanković Tereze</sudija>
+        <zapisnicar>PREDSJEDNIK VIJEĆA</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana ....2010 godine u 23,42 časa u B., Opština HN, upotrijebio lažnu platnu karticu UBS Card Centerr AG – Švajcarska br. ..., za koju je znao da je lažna,a na način što je istu ubacfio u bankomat “NLB M.” ... i nakon izvršene transakcije, sa bankomata podigao novac u iznosu od 600,000 eura i tako sebi pribavio protivpravnu imovinsku korist.</opisSlucaja>
+        <iznosi>
+          <iznos>200 EUR</iznos>
+          <iznos>600,000 EUR</iznos>
+          <iznos>600 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u HERCEG, 177/10, sudija porotnika Stanković Tereze</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana ....2010 godine u 23,42 časa u B., Opština HN, upotrijebio lažnu platnu karticu UBS Card Centerr AG – Švajcarska br. ..., za koju je znao da je lažna,a na način što je istu ubacfio u bankomat “NLB M.” ... i nakon izvršene transakcije, sa bankomata podigao novac u iznosu od 600,000 eura i tako sebi pribavio protivpravnu imovinsku korist.</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 3 (tri) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_192_2010">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_192_2010"/>
+          <FRBRuri value="/akn/me/judgment/K_192_2010"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#rožajama"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_192_2010/srp@2010-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_192_2010/srp@2010-01-01"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_192_2010/srp@2010-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_192_2010/srp@2010-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/rožajama" showAs="Osnovni Sud u ROŽAJAMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/porotnika_demić_refije" showAs="porotnika Demić Refije"/>
+      </references>
+      <proprietary source="#court">
+        <sud>ROŽAJAMA</sud>
+        <brojPredmeta>192/10</brojPredmeta>
+        <datum>2010</datum>
+        <datumNormalizovan>2010-01-01</datumNormalizovan>
+        <godina>2010</godina>
+        <sudija>porotnika Demić Refije</sudija>
+        <zapisnicar>Vesić Verice</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>None</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 16. 07. 2010. godine na Zelenoj pijaci u Rožajama stavio u opticaj jednu lažnu novčanicu u apoenu od 50,00 eura, serijski broj U77948546749, koju je primio kao pravu, pa saznavši da je lažna, kao prodavac na pijaci, kupcu M. S., vratio lažnu novčanicu zajedno sa ostalim novčanicama, kao razliku do 100,00 eura, koje mu je predhodno dao oštećeni,</opisSlucaja>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>600,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>25,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u ROŽAJAMA, 192/10, sudija porotnika Demić Refije</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 16. 07. 2010. godine na Zelenoj pijaci u Rožajama stavio u opticaj jednu lažnu novčanicu u apoenu od 50,00 eura, serijski broj U77948546749, koju je primio kao pravu, pa saznavši da je lažna, kao prodavac na pijaci, kupcu M. S., vratio lažnu novčanicu zajedno sa ostalim novčanicama, kao razliku do 100,00 eura, koje mu je predhodno dao oštećeni,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: None</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

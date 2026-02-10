@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Generated Facts File for DR-Device Reasoning
+  Case: 277/22
+  Generated: 2026-02-09T20:20:06.207529
+  
+  Project: Правна Информатика - Team 8
+-->
+<facts xmlns:ruleml="http://ruleml.org/spec"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!-- Case Metadata -->
+  <case>
+    <caseId>277/22</caseId>
+    <caseDate>2022-04-04</caseDate>
+    <court>PODGORICI</court>
+    <crimeType>falsifikovanje i zloupotreba kreditnih kartica</crimeType>
+    <article>čl. 260 st. 2</article>
+  </case>
+  
+  <defendant id="Okrivljeni1">
+    <initials>u r</initials>
+  </defendant>
+  
+  <!-- ========== ARTICLE 258: COUNTERFEIT MONEY FACTS ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>preinacuje_pravi_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pribavlja_lazan_novac</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>stavlja_lazan_novac_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>namjera_stavljanja_u_opticaj</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_novca</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== ARTICLE 260: CREDIT CARD FACTS ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pravi_laznu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>preinacuje_pravu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>neovlasceno_pribavlja_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>upotrebljava_laznu_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>zloupotrebljava_karticu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pribavio_imovinsku_korist</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">true</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_imovinske_koristi</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">300</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== ARTICLE 268: MONEY LAUNDERING FACTS ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>pranje_novca</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>iznos_pranja</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:integer">0</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== MITIGATING FACTORS ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>priznaje_krivicu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>ranije_osudivan</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>nadoknadio_stetu</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <ruleml:Atom>
+    <ruleml:Rel>saradjuje_sa_istragom</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+  <!-- ========== AGGRAVATING FACTORS ========== -->
+  
+  <ruleml:Atom>
+    <ruleml:Rel>clan_organizovane_grupe</ruleml:Rel>
+    <ruleml:Ind>Okrivljeni1</ruleml:Ind>
+    <ruleml:Data xsi:type="xs:boolean">false</ruleml:Data>
+  </ruleml:Atom>
+  
+</facts>

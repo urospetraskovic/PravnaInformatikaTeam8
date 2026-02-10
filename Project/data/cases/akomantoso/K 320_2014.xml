@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_320_2014">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_320_2014"/>
+          <FRBRuri value="/akn/me/judgment/K_320_2014"/>
+          <FRBRdate date="2014-01-01" name="judgment"/>
+          <FRBRauthor href="#nikšiću"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_320_2014/srp@2014-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_320_2014/srp@2014-01-01"/>
+          <FRBRdate date="2014-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_320_2014/srp@2014-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_320_2014/srp@2014-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ivan_perović" showAs="Ivan Perović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>320/14</brojPredmeta>
+        <datum>2014</datum>
+        <datumNormalizovan>2014-01-01</datumNormalizovan>
+        <godina>2014</godina>
+        <sudija>Ivan Perović</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>None</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>74,00 EUR</iznos>
+          <iznos>44,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 320/14, sudija Ivan Perović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: None</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

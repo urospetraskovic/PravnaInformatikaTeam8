@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_41_2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_41_2013"/>
+          <FRBRuri value="/akn/me/judgment/K_41_2013"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_41_2013/srp@2013-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_41_2013/srp@2013-01-01"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_41_2013/srp@2013-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_41_2013/srp@2013-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/jeleni_perović_kovačević" showAs="Jeleni Perović Kovačević"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>41/13</brojPredmeta>
+        <datum>2013</datum>
+        <datumNormalizovan>2013-01-01</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Jeleni Perović Kovačević</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>30 (trideset) dana</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>U januaru 2012. godine, u P, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što je prilikom predaje pazara u poslovnici H b, od strane službenice te banke, upoznat da se u pazaru nalazi falsifikovana novčanica u apoenu od 100 eura, serijskog broja V20387039962, nakon čega mu je službenica banke tu novčanicu i predala, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 18.05.2012. godine, kada je ista pronađena u njegovom vozilu, na graničnom prelazu K, od strane ovlašćenih službenika MUP-a Republike S,</opisSlucaja>
+        <iznosi>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 41/13, sudija Jeleni Perović Kovačević</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U januaru 2012. godine, u P, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što je prilikom predaje pazara u poslovnici H b, od strane službenice te banke, upoznat da se u pazaru nalazi falsifikovana novčanica u apoenu od 100 eura, serijskog broja V20387039962, nakon čega mu je službenica banke tu novčanicu i predala, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 18.05.2012. godine, kada je ista pronađena u njegovom vozilu, na graničnom prelazu K, od strane ovlašćenih službenika MUP-a Republike S,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 30 (trideset) dana</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

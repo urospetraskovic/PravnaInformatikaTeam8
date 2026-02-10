@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_730_2008">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_730_2008"/>
+          <FRBRuri value="/akn/me/judgment/K_730_2008"/>
+          <FRBRdate date="2008-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_730_2008/srp@2008-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_730_2008/srp@2008-01-01"/>
+          <FRBRdate date="2008-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_730_2008/srp@2008-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_730_2008/srp@2008-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/porotnika_lubarda_vojislava" showAs="porotnika Lubarda Vojislava"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>730/08</brojPredmeta>
+        <datum>2008</datum>
+        <datumNormalizovan>2008-01-01</datumNormalizovan>
+        <godina>2008</godina>
+        <sudija>porotnika Lubarda Vojislava</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>None</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Oslobađajuća</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>270,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>95,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 730/08, sudija porotnika Lubarda Vojislava</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Oslobađajuća</p>
+          <p>Kazna: None</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

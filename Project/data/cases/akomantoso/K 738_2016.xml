@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_738_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_738_2016"/>
+          <FRBRuri value="/akn/me/judgment/K_738_2016"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_738_2016/srp@2016-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_738_2016/srp@2016-01-01"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_738_2016/srp@2016-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_738_2016/srp@2016-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goranu_đukoviću" showAs="Goranu Đukoviću"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>738/16</brojPredmeta>
+        <datum>2016</datum>
+        <datumNormalizovan>2016-01-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>Goranu Đukoviću</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>4 (četiri) mjesec</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>800,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>200,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 738/16, sudija Goranu Đukoviću</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 4 (četiri) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

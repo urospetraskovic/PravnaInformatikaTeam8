@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_173_2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_173_2020"/>
+          <FRBRuri value="/akn/me/judgment/K_173_2020"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#baru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_173_2020/srp@2020-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_173_2020/srp@2020-01-01"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_173_2020/srp@2020-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_173_2020/srp@2020-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/baru" showAs="Osnovni Sud u BARU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/goran_šćepanović" showAs="Goran Šćepanović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BARU</sud>
+        <brojPredmeta>173/20</brojPredmeta>
+        <datum>2020</datum>
+        <datumNormalizovan>2020-01-01</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Goran Šćepanović</sudija>
+        <zapisnicar>Milijanom Minić</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Krajem decembra mjeseca 2019. godine, iz kuće oštećenog V. D. . , opština Bar, svjesna svog djela, čije je izvršenje htjela, iako je znala da je njeno djelo zabranjeno, neovlašćeno uzela bankovnu karticu Prve banke, broj ..... , izdatu na ime V. D. . , i istu upotrijebila i sebi pribavila protivpravnu imovinsku korist u iznosu od 980,00 eura, na način, što je iz fascikle na radnom stolu u sobi oštećenog V. D. uzela bankovnu karticu i pin kod, nakon čega je na bankomatu Komercijalne banke u Baru, dana 27.12.2019. godine u 15:46:59 časova podigla novčani iznos od 250,00 eura, na bankomatu Hipotekarne banke, dana 28.12.2019. godine u 19:53:59 časova podigla novčani iznos od 280,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 16:01:04 časova novčani iznos od 250,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 23:56:36 časova podigla novčani iznos od 150,00 eura i na bankomatu Crnogorske Komercijalne banke dana 30.12.2019. godine u 14:04:50 časova novčani iznos od </opisSlucaja>
+        <iznosi>
+          <iznos>18,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>280,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>154,00 EUR</iznos>
+          <iznos>900 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BARU, 173/20, sudija Goran Šćepanović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Krajem decembra mjeseca 2019. godine, iz kuće oštećenog V. D. . , opština Bar, svjesna svog djela, čije je izvršenje htjela, iako je znala da je njeno djelo zabranjeno, neovlašćeno uzela bankovnu karticu Prve banke, broj ..... , izdatu na ime V. D. . , i istu upotrijebila i sebi pribavila protivpravnu imovinsku korist u iznosu od 980,00 eura, na način, što je iz fascikle na radnom stolu u sobi oštećenog V. D. uzela bankovnu karticu i pin kod, nakon čega je na bankomatu Komercijalne banke u Baru, dana 27.12.2019. godine u 15:46:59 časova podigla novčani iznos od 250,00 eura, na bankomatu Hipotekarne banke, dana 28.12.2019. godine u 19:53:59 časova podigla novčani iznos od 280,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 16:01:04 časova novčani iznos od 250,00 eura, na bankomatu Ziraat banke dana 29.12.2019. godine u 23:56:36 časova podigla novčani iznos od 150,00 eura i na bankomatu Crnogorske Komercijalne banke dana 30.12.2019. godine u 14:04:50 časova novčani iznos od </p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

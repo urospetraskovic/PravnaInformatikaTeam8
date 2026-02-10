@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_314_filed2021_verdict2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_314_filed2021_verdict2013" />
+          <FRBRuri value="/akn/me/judgment/Case_K_314_filed2021_verdict2013" />
+          <FRBRdate date="2013-11-21" name="judgment" />
+          <FRBRauthor href="#kotoru_kao_nadležni_prvostepeni" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_314_filed2021_verdict2013/srp@2013-11-21" />
+          <FRBRuri value="/akn/me/judgment/Case_K_314_filed2021_verdict2013/srp@2013-11-21" />
+          <FRBRdate date="2013-11-21" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_314_filed2021_verdict2013/srp@2013-11-21.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_314_filed2021_verdict2013/srp@2013-11-21.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru_kao_nadležni_prvostepeni" showAs="Osnovni Sud u Kotoru kao nadležni prvostepeni" />
+        <TLCPerson eId="sudija" href="/ontology/person/danijela_samardžić" showAs="Danijela Samardžić" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="Đ.N." />
+      </references>
+      <proprietary source="#court">
+        <sud>Kotoru kao nadležni prvostepeni</sud>
+        <brojPredmeta>314/2021</brojPredmeta>
+        <datum>21.11.2013</datum>
+        <datumNormalizovan>2013-11-21</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Danijela Samardžić</sudija>
+        <optuzeni>Đ.N.</optuzeni>
+        <podaciORoditeljima>otac G., majka V.</podaciORoditeljima>
+        <bracniStatus>neoženjen</bracniStatus>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <novcanaKazna>55,00</novcanaKazna>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>, Što je, U periodu od 28.09.2012. do 22.10.2012. godine na teritoriji opštine Budva, u namjeri da sebi pribavi protivpravnu imovnsku korist, nabavio lažne platne kartice br. ..., ..., ..., ... i ..., od kojih je upotrebio kao prave kartice br. ..., ..., ... i ..., na način što je koristio ove kartice za plaćanje robe, i to : - dana 28.09.2012. godine, karticu br. ... za plaćanje u zlatari „C.“ tri računa u iznosima od 963,00 €, 421,00 € i 1.000,00 €, te jednom u butiku „E.m.“ Budva za plaćanje računa u iznosu od 138,00 €, sve na štetu „NLB Mobntenegro banke“, - dana 17.10.2012. godine, kartice br. ... i br. ... za plaćanje dva računa u PJ „Q.o.M.“ u iznosima od 2.000,00 € i 1.000,00 €, na štetu „CKB banke“, - dana 20.10.2012. godine, karticu br. ... za plaćanje četiri računa u butiku „C.“ u Budvi na iznose od 140,00 €, 100,00 €, 60,00 € i 180,00 €, kao i dva računa u „B.-k.s.“ u Budvi na iznose od 77,00 € i 65,00 €, na štetu „CKB banke“ te dva računa u kazinu „A.“ u iznosima od 2.000,00 € i 1.000,00 €.na štetu „A.B.“, - dana 21.10.2012. godine karticu br. 4408041013385491 za plaćanje tri računa u market „M.“ u B. na iznose od 2,20 €, 4,40 € i 5,00 €, na štetu „CKB banke“ kao i jedan račun u iznosu od 21,19 € u „M. marketu“ u Budvi, na štetu „A. banke“, - dana 22.10.2012. godine, karticu br. ... za plaćanje na benzinskoj stanici JPK u Petrovcu računa u iznosu 40,00 €, na štetu „CKB banke“, čime je za sebe pribavio protivpravnu imovinsku korist u ukupnom iznosu od 9.216,79 €, </opisSlucaja>
+        <dokazi>
+          <dokaz>pismene dokaze: dopis CKB br. 24935-2012 od 23.10.2012. godine sa slipovima sa potpisima okrivljenog izdatim prilikom vršenja transakcija koje se navode u dispozitivu</dokaz>
+          <dokaz>ovlašćenog predstavnika oštećene A.m. banke P.M.</dokaz>
+          <dokaz>potvrda o privremeno oduzetim predmetima Uprave policije PJ Budva od 05.11.2012. godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>5,00 EUR</iznos>
+          <iznos>140,00 EUR</iznos>
+          <iznos>50 EUR</iznos>
+          <iznos>963,00 EUR</iznos>
+          <iznos>216,79 EUR</iznos>
+          <iznos>021,19 EUR</iznos>
+          <iznos>138,00 EUR</iznos>
+          <iznos>180,00 EUR</iznos>
+          <iznos>10 EUR</iznos>
+          <iznos>400,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>21,19 EUR</iznos>
+          <iznos>2,20 EUR</iznos>
+          <iznos>421,00 EUR</iznos>
+          <iznos>55,00 EUR</iznos>
+          <iznos>1640,00 EUR</iznos>
+          <iznos>21.19 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+          <iznos>6.210 EUR</iznos>
+          <iznos>20 EUR</iznos>
+          <iznos>77,00 EUR</iznos>
+          <iznos>4,40 EUR</iznos>
+          <iznos>000,00 EUR</iznos>
+          <iznos>144,80 EUR</iznos>
+          <iznos>65,00 EUR</iznos>
+        </iznosi>
+        <zapisnicar>Jelene Marković</zapisnicar>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>3 (tri) mjeseca</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Kotoru kao nadležni prvostepeni, 314/2021, sudija Danijela Samardžić</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: Đ.N., otac G., majka V., neoženjen, osuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>, Što je, U periodu od 28.09.2012. do 22.10.2012. godine na teritoriji opštine Budva, u namjeri da sebi pribavi protivpravnu imovnsku korist, nabavio lažne platne kartice br. ..., ..., ..., ... i ..., od kojih je upotrebio kao prave kartice br. ..., ..., ... i ..., na način što je koristio ove kartice za plaćanje robe, i to : - dana 28.09.2012. godine, karticu br. ... za plaćanje u zlatari „C.“ tri računa u iznosima od 963,00 €, 421,00 € i 1.000,00 €, te jednom u butiku „E.m.“ Budva za plaćanje računa u iznosu od 138,00 €, sve na štetu „NLB Mobntenegro banke“, - dana 17.10.2012. godine, kartice br. ... i br. ... za plaćanje dva računa u PJ „Q.o.M.“ u iznosima od 2.000,00 € i 1.000,00 €, na štetu „CKB banke“, - dana 20.10.2012. godine, karticu br. ... za plaćanje četiri računa u butiku „C.“ u Budvi na iznose od 140,00 €, 100,00 €, 60,00 € i 180,00 €, kao i dva računa u „B.-k.s.“ u Budvi na iznose od 77,00 € i 65,00 €, na štetu „CKB banke“ te dva računa u kazinu „A.“ u iznosima od 2.000,00 € i 1.000,00 €.na štetu „A.B.“, - dana 21.10.2012. godine karticu br. 4408041013385491 za plaćanje tri računa u market „M.“ u B. na iznose od 2,20 €, 4,40 € i 5,00 €, na štetu „CKB banke“ kao i jedan račun u iznosu od 21,19 € u „M. marketu“ u Budvi, na štetu „A. banke“, - dana 22.10.2012. godine, karticu br. ... za plaćanje na benzinskoj stanici JPK u Petrovcu računa u iznosu 40,00 €, na štetu „CKB banke“, čime je za sebe pribavio protivpravnu imovinsku korist u ukupnom iznosu od 9.216,79 €, </p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• pismene dokaze: dopis CKB br. 24935-2012 od 23.10.2012. godine sa slipovima sa potpisima okrivljenog izdatim prilikom vršenja transakcija koje se navode u dispozitivu</p>
+            <p>• ovlašćenog predstavnika oštećene A.m. banke P.M.</p>
+            <p>• potvrda o privremeno oduzetim predmetima Uprave policije PJ Budva od 05.11.2012. godine</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 2 godin</p>
+          <p>Novčana kazna: 55,00 EUR</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

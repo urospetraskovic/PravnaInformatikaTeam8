@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_368_2020">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_368_2020"/>
+          <FRBRuri value="/akn/me/judgment/K_368_2020"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#nikšiću"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_368_2020/srp@2020-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_368_2020/srp@2020-01-01"/>
+          <FRBRdate date="2020-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_368_2020/srp@2020-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_368_2020/srp@2020-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/sava_mušikić" showAs="Sava Mušikić"/>
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>368/20</brojPredmeta>
+        <datum>2020</datum>
+        <datumNormalizovan>2020-01-01</datumNormalizovan>
+        <godina>2020</godina>
+        <sudija>Sava Mušikić</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 11.06.2020. godine u Nikšiću, svjestan svog djela i htio njegovo izvršenje, stavio u opticaj lažnu novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon čega je kusur vratio okrivljenom T. D. u,</opisSlucaja>
+        <iznosi>
+          <iznos>50 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>5 EUR</iznos>
+          <iznos>100,50 EUR</iznos>
+          <iznos>200,50 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 368/20, sudija Sava Mušikić</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 11.06.2020. godine u Nikšiću, svjestan svog djela i htio njegovo izvršenje, stavio u opticaj lažnu novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon čega je kusur vratio okrivljenom T. D. u,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

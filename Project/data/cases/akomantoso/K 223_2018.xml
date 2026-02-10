@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_223_2018">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_223_2018"/>
+          <FRBRuri value="/akn/me/judgment/K_223_2018"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_223_2018/srp@2018-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_223_2018/srp@2018-01-01"/>
+          <FRBRdate date="2018-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_223_2018/srp@2018-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_223_2018/srp@2018-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/nenad_vujanović" showAs="Nenad Vujanović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>223/18</brojPredmeta>
+        <datum>2018</datum>
+        <datumNormalizovan>2018-01-01</datumNormalizovan>
+        <godina>2018</godina>
+        <sudija>Nenad Vujanović</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 07.04.2017. godine, u Podgorici, u ul. Spasa Nikolića br. xx, u porodičnoj kući, svjestan svojih djela čija je izvršenja htio i svjestan da su njegova djela zabranjena, držao lažan novac, u namjeri da ga stavi u opticaj kao pravi, i neovlašćeno držao vatreno oružje i municiju čije je držanje građanima zabranjeno, na način što je, u dnevnoj sobi, u komodi, u bijeloj koverti, držao 30 lažnih novčanica u apoenu od po 500,00 eura, serijskih brojeva: X00196980833, X07110202565, X12066299183, X01003551140, X01089270200, X11287710794, X11782710974, X19673250905, X01003113740, X01003137140, X19046806922, X01003115540, X10445906909, X19871250905, X00091202168, X10095191948, X09930876203, X01003111850, X01003117340, X05100404141, X06011202665, X03400401251, X03602102069, X10445906459, X19006938083, X10796827133, X01082997533, X00091252163, X18006849083 i X11089710794, a u dvorištu kuće, ispod satelitske antene, suprotno čl. 5 st. 1 u vezi čl. 4 st. 2 tač. 2 Zakona o oružju, držao automatsko</opisSlucaja>
+        <iznosi>
+          <iznos>000,00 EUR</iznos>
+          <iznos>15.000 EUR</iznos>
+          <iznos>154,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>184,00 EUR</iznos>
+          <iznos>500 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 223/18, sudija Nenad Vujanović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 07.04.2017. godine, u Podgorici, u ul. Spasa Nikolića br. xx, u porodičnoj kući, svjestan svojih djela čija je izvršenja htio i svjestan da su njegova djela zabranjena, držao lažan novac, u namjeri da ga stavi u opticaj kao pravi, i neovlašćeno držao vatreno oružje i municiju čije je držanje građanima zabranjeno, na način što je, u dnevnoj sobi, u komodi, u bijeloj koverti, držao 30 lažnih novčanica u apoenu od po 500,00 eura, serijskih brojeva: X00196980833, X07110202565, X12066299183, X01003551140, X01089270200, X11287710794, X11782710974, X19673250905, X01003113740, X01003137140, X19046806922, X01003115540, X10445906909, X19871250905, X00091202168, X10095191948, X09930876203, X01003111850, X01003117340, X05100404141, X06011202665, X03400401251, X03602102069, X10445906459, X19006938083, X10796827133, X01082997533, X00091252163, X18006849083 i X11089710794, a u dvorištu kuće, ispod satelitske antene, suprotno čl. 5 st. 1 u vezi čl. 4 st. 2 tač. 2 Zakona o oružju, držao automatsko</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

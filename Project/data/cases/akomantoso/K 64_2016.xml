@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_64_filed2016_verdict2017">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_64_filed2016_verdict2017" />
+          <FRBRuri value="/akn/me/judgment/Case_K_64_filed2016_verdict2017" />
+          <FRBRdate date="2017-06-21" name="judgment" />
+          <FRBRauthor href="#nikšiću" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_64_filed2016_verdict2017/srp@2017-06-21" />
+          <FRBRuri value="/akn/me/judgment/Case_K_64_filed2016_verdict2017/srp@2017-06-21" />
+          <FRBRdate date="2017-06-21" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_64_filed2016_verdict2017/srp@2017-06-21.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_64_filed2016_verdict2017/srp@2017-06-21.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/nikšiću" showAs="Osnovni Sud u NIKŠIĆU" />
+        <TLCPerson eId="sudija" href="/ontology/person/vesna_kovačević" showAs="Vesna Kovačević" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u f" />
+      </references>
+      <proprietary source="#court">
+        <sud>NIKŠIĆU</sud>
+        <brojPredmeta>64/16</brojPredmeta>
+        <datum>21.06.2017</datum>
+        <datumNormalizovan>2017-06-21</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Vesna Kovačević</sudija>
+        <optuzeni>u f</optuzeni>
+        <prebivaliste>mjestu rodjenja </prebivaliste>
+        <zaposlenost>zaposlena kao frizerka u frizerskom salonu vlasništvo M.. V.. i da je tim mušterijama te novčanice usitnila tako što bi od njenog novca njima vratila kusur za izvršenu uslugu a ona uzela one novčanice koje su joj oni dali i kasnije bi joj tu novčanicu gazda ponovo usitnio a ukoliko gazde nije bilo</zaposlenost>
+        <bracniStatus>udata</bracniStatus>
+        <obrazovanje>pismena</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 15. IX 2015.godine u 17:14 časova u Nikšiću, svjesna svog djela i htjela njegovo izvršenje, lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura, serijskog broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu banknotu izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na kojem je novčanica uradjena, platila sirup za djecu u vrijednosti od 2,00 eura, koji je kupila u apoteci ''G.. D..' koja se nalazi u ulici R.. D. Dana 21.IX 2015.godine oko 10:06 časova u Nikšiću, svjesna svog djela i htjela njegovo izvršenje, lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura, serijskog broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu banknotu izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na kojem je novčanica uradjena, platila sirup i ampule za djecu, pantenol kremu i kremu za depilaciju u ukupnoj vrijednosti od 8,45 eura, koje je kupila u apoteci '' M..'' vlasništvo N.. V.. koja se nalazi u ulici Alekse Backovića,</opisSlucaja>
+        <svjedoci>
+          <svjedok>S.. M..</svjedok>
+          <svjedok>tako i</svjedok>
+          <svjedok>tako i </svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>novčanice u apoenima od 100</dokaz>
+          <dokaz>nalaz i mišljenje sudskog vještaka grafologa Veselinke Nikčević od 21.I 2016.godine.o vještačenju novčanica kao i navedenog vještaka neposredno saslušao na glavnom pretresu</dokaz>
+          <dokaz>nalaz i mišljenje sudskog vještaka ekonomsko-finansijske struke Milovana Perućice od 21.III 2016.godine i nalaz i mišljenje sudskog vještaka dr Nemanje Radojević od 19.VII.2016.godine</dokaz>
+          <dokaz>zapisnik o pretresanju pokretnih stvari – računara za automatsku obradu podataka i koji su sa računarom povezani Uprave policije – CB Nikšić broj 241/15-9327/1 od 29.IX 2015.godine</dokaz>
+          <dokaz>izvod iz registra kaznenih evidencija Ministarstva pravde KE broj 75/2016 od 17.III 2016.godine za optuženu S.. B.. .
+Svjedok S.. M.. je u svom iskazu u bitnom istakao da je zaposlen u apoteci »Melem« koja se nalazi u ul. Alekse Backović i obavlja poslove farmaceuta</dokaz>
+          <dokaz>svjedoke S.. M..</dokaz>
+          <dokaz>svjedoka J.. T..</dokaz>
+          <dokaz>na glavnom pretresu</dokaz>
+          <dokaz>izvještaj o video vještačenju Forenzičkog centra Danilovgrad – grupe za digitalnu obradu video i audiomaterijala broj 562/16 od 22.II 2016.godine</dokaz>
+          <dokaz>zapisnik o pretresanju pokretnih stvari – računara za automatsku obradu podataka i koji su sa računarom povezani Uprave policije – CB Nikšić broj 241/15-9327/3 od 29.IX 2015.godine</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>49,50 EUR</iznos>
+          <iznos>91,60 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>150,00 EUR</iznos>
+          <iznos>2,00 EUR</iznos>
+          <iznos>8,40 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>8,45 EUR</iznos>
+          <iznos>60,00 EUR</iznos>
+        </iznosi>
+      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <kazna>6 (šest) mjeseci</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u NIKŠIĆU, 64/16, sudija Vesna Kovačević</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u f, prebivalište: mjestu rodjenja , zaposlena kao frizerka u frizerskom salonu vlasništvo M.. V.. i da je tim mušterijama te novčanice usitnila tako što bi od njenog novca njima vratila kusur za izvršenu uslugu a ona uzela one novčanice koje su joj oni dali i kasnije bi joj tu novčanicu gazda ponovo usitnio a ukoliko gazde nije bilo, udata, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 15. IX 2015.godine u 17:14 časova u Nikšiću, svjesna svog djela i htjela njegovo izvršenje, lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura, serijskog broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu banknotu izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na kojem je novčanica uradjena, platila sirup za djecu u vrijednosti od 2,00 eura, koji je kupila u apoteci ''G.. D..' koja se nalazi u ulici R.. D. Dana 21.IX 2015.godine oko 10:06 časova u Nikšiću, svjesna svog djela i htjela njegovo izvršenje, lažan novac stavila u opticaj, na način što je novčanicom u apoenu od 100,00 eura, serijskog broja .., koja nije autentična banknota, a čije razlike su u odnosu na orginalnu banknotu izražene u kvalitetu štampe i mikroštampe i kvalitetu elemenata zaštite papira na kojem je novčanica uradjena, platila sirup i ampule za djecu, pantenol kremu i kremu za depilaciju u ukupnoj vrijednosti od 8,45 eura, koje je kupila u apoteci '' M..'' vlasništvo N.. V.. koja se nalazi u ulici Alekse Backovića,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• novčanice u apoenima od 100</p>
+            <p>• nalaz i mišljenje sudskog vještaka grafologa Veselinke Nikčević od 21.I 2016.godine.o vještačenju novčanica kao i navedenog vještaka neposredno saslušao na glavnom pretresu</p>
+            <p>• nalaz i mišljenje sudskog vještaka ekonomsko-finansijske struke Milovana Perućice od 21.III 2016.godine i nalaz i mišljenje sudskog vještaka dr Nemanje Radojević od 19.VII.2016.godine</p>
+            <p>• zapisnik o pretresanju pokretnih stvari – računara za automatsku obradu podataka i koji su sa računarom povezani Uprave policije – CB Nikšić broj 241/15-9327/1 od 29.IX 2015.godine</p>
+            <p>• izvod iz registra kaznenih evidencija Ministarstva pravde KE broj 75/2016 od 17.III 2016.godine za optuženu S.. B.. .
+Svjedok S.. M.. je u svom iskazu u bitnom istakao da je zaposlen u apoteci »Melem« koja se nalazi u ul. Alekse Backović i obavlja poslove farmaceuta</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

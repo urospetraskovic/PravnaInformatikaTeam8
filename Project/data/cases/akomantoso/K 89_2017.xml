@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_89_2017">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_89_2017"/>
+          <FRBRuri value="/akn/me/judgment/K_89_2017"/>
+          <FRBRdate date="2017-01-01" name="judgment"/>
+          <FRBRauthor href="#kotoru"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_89_2017/srp@2017-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_89_2017/srp@2017-01-01"/>
+          <FRBRdate date="2017-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_89_2017/srp@2017-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_89_2017/srp@2017-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/kotoru" showAs="Osnovni Sud u KOTORU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/danijeli_samardžić" showAs="Danijeli Samardžić"/>
+      </references>
+      <proprietary source="#court">
+        <sud>KOTORU</sud>
+        <brojPredmeta>89/17</brojPredmeta>
+        <datum>2017</datum>
+        <datumNormalizovan>2017-01-01</datumNormalizovan>
+        <godina>2017</godina>
+        <sudija>Danijeli Samardžić</sudija>
+        <zapisnicar>Vladimirke Popović</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>000,00 EUR</iznos>
+          <iznos>40,00 EUR</iznos>
+          <iznos>230,00 EUR</iznos>
+          <iznos>163,10 EUR</iznos>
+          <iznos>400 EUR</iznos>
+          <iznos>300,00 EUR</iznos>
+          <iznos>500,00 EUR</iznos>
+          <iznos>100 EUR</iznos>
+          <iznos>800 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u KOTORU, 89/17, sudija Danijeli Samardžić</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_71_2015">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_71_2015"/>
+          <FRBRuri value="/akn/me/judgment/K_71_2015"/>
+          <FRBRdate date="2015-01-01" name="judgment"/>
+          <FRBRauthor href="#cetinju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_71_2015/srp@2015-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_71_2015/srp@2015-01-01"/>
+          <FRBRdate date="2015-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_71_2015/srp@2015-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_71_2015/srp@2015-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/cetinju" showAs="Osnovni Sud u CETINJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ćupić_mariji" showAs="Ćupić Mariji"/>
+      </references>
+      <proprietary source="#court">
+        <sud>CETINJU</sud>
+        <brojPredmeta>71/15</brojPredmeta>
+        <datum>2015</datum>
+        <datumNormalizovan>2015-01-01</datumNormalizovan>
+        <godina>2015</godina>
+        <sudija>Ćupić Mariji</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>7 (sedam) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 30.03.2015.godine, u vremenskom intervalu od 21:11:28; 21:11:12 i 21:10:59. , u ulici „Jabučkoj“ b.b., u Cetinju, svjestan svog djela, čije je izvršenje htio i svjestan njegove zabranjenosti, upotrijebio prethodno nevlašćeno pribavljenu tudju, pravu platnu „Visa electron“ karticu, izdavaoca “Hipotekarne” banke br.40835680055215... vlasništvo oštećenog M. P. na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta „M. 1“, a potom ukucao zaštitni kod, koji je bio neodgovarajući, te bankomat navedenu karticu nije prihvatio, te potom dana 07.04.2015.godine, u vremenskom intervalu od 00:13:19; 00:13:37,00:13:47 i 00:14:00 časova, upotrijebio prethodno neovlašćeno pribavljenu tudju, pravu platnu „Visa“ karticu serijskog broja S8AC83.. izdavaoca “NLB” Montenegrobanke– br.41061811117095592... vlasništvo oštećenog M. S. iz Cetinja, na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta</opisSlucaja>
+        <iznosi>
+          <iznos>45,00 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>15 EUR</iznos>
+          <iznos>1500,00 EUR</iznos>
+          <iznos>69,50 EUR</iznos>
+          <iznos>1569,50 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u CETINJU, 71/15, sudija Ćupić Mariji</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 30.03.2015.godine, u vremenskom intervalu od 21:11:28; 21:11:12 i 21:10:59. , u ulici „Jabučkoj“ b.b., u Cetinju, svjestan svog djela, čije je izvršenje htio i svjestan njegove zabranjenosti, upotrijebio prethodno nevlašćeno pribavljenu tudju, pravu platnu „Visa electron“ karticu, izdavaoca “Hipotekarne” banke br.40835680055215... vlasništvo oštećenog M. P. na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta „M. 1“, a potom ukucao zaštitni kod, koji je bio neodgovarajući, te bankomat navedenu karticu nije prihvatio, te potom dana 07.04.2015.godine, u vremenskom intervalu od 00:13:19; 00:13:37,00:13:47 i 00:14:00 časova, upotrijebio prethodno neovlašćeno pribavljenu tudju, pravu platnu „Visa“ karticu serijskog broja S8AC83.. izdavaoca “NLB” Montenegrobanke– br.41061811117095592... vlasništvo oštećenog M. S. iz Cetinja, na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 7 (sedam) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

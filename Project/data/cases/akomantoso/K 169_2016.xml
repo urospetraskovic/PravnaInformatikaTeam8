@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_169_2016">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_169_2016"/>
+          <FRBRuri value="/akn/me/judgment/K_169_2016"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#bijelom"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_169_2016/srp@2016-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_169_2016/srp@2016-01-01"/>
+          <FRBRdate date="2016-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_169_2016/srp@2016-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_169_2016/srp@2016-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/bijelom" showAs="Osnovni Sud u BIJELOM"/>
+        <TLCPerson eId="sudija" href="/ontology/person/pojedinac_ivan_adamović" showAs="pojedinac Ivan Adamović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>BIJELOM</sud>
+        <brojPredmeta>169/16</brojPredmeta>
+        <datum>2016</datum>
+        <datumNormalizovan>2016-01-01</datumNormalizovan>
+        <godina>2016</godina>
+        <sudija>pojedinac Ivan Adamović</sudija>
+        <zapisnicar>Draginje Bošković</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258</clanKZ>
+        <kazna>7 (sedam) mjesec</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>-Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renault-Clio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,</opisSlucaja>
+        <iznosi>
+          <iznos>20,00 EUR</iznos>
+          <iznos>132,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>15,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>35,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u BIJELOM, 169/16, sudija pojedinac Ivan Adamović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>-Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renault-Clio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 7 (sedam) mjesec</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

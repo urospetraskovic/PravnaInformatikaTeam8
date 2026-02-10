@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_376_2010">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_376_2010"/>
+          <FRBRuri value="/akn/me/judgment/K_376_2010"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#podgorici"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_376_2010/srp@2010-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_376_2010/srp@2010-01-01"/>
+          <FRBRdate date="2010-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_376_2010/srp@2010-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_376_2010/srp@2010-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI"/>
+        <TLCPerson eId="sudija" href="/ontology/person/porotnika_bojanić_mladenke" showAs="porotnika Bojanić Mladenke"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>376/10</brojPredmeta>
+        <datum>2010</datum>
+        <datumNormalizovan>2010-01-01</datumNormalizovan>
+        <godina>2010</godina>
+        <sudija>porotnika Bojanić Mladenke</sudija>
+        <zapisnicar>Maraš Ane</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>6 (šest) mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>Dana 22.05.2009.godine u Podgorici, tudju pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je iskoristila odsustvo oštećene M.M. i iz bolničke sobe u prostorijama KC Crne Gore gdje se oštećena nalazila na liječenju, oduzela i prisvojila novčanik oštećene u kojem se nalazio novac u iznosu od 500,00 eura, lična dokumenta i bankovne kartice CKB banke, sve ukupne vrijednosti 505,00 eura, nakon čega je istog dana na Trgu Republike neovlašćeno upotrijebila tuđu karticu i to: karticu viza elektron broj . . . vlasništvo oštećene, tako što je u tri navrata sa terminala oznake S8AC8865 podigla ukupan iznos od 190,00 eura, a zatim je istog dana u ulici Moskovskoj neovlašćeno upotrijebila penzionersku Revolving karticu broj . . . vlasništvo oštećene i sa terminala broj S8AC8855 u tri navrata podigla novac u ukupnom iznosu od 80,00 eura, na koji način je sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 775,00 eur</opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>270,00 EUR</iznos>
+          <iznos>190,00 EUR</iznos>
+          <iznos>407,50 EUR</iznos>
+          <iznos>82,50 EUR</iznos>
+          <iznos>701,00 EUR</iznos>
+          <iznos>80 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>22,5 EUR</iznos>
+          <iznos>10 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 376/10, sudija porotnika Bojanić Mladenke</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 22.05.2009.godine u Podgorici, tudju pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je iskoristila odsustvo oštećene M.M. i iz bolničke sobe u prostorijama KC Crne Gore gdje se oštećena nalazila na liječenju, oduzela i prisvojila novčanik oštećene u kojem se nalazio novac u iznosu od 500,00 eura, lična dokumenta i bankovne kartice CKB banke, sve ukupne vrijednosti 505,00 eura, nakon čega je istog dana na Trgu Republike neovlašćeno upotrijebila tuđu karticu i to: karticu viza elektron broj . . . vlasništvo oštećene, tako što je u tri navrata sa terminala oznake S8AC8865 podigla ukupan iznos od 190,00 eura, a zatim je istog dana u ulici Moskovskoj neovlašćeno upotrijebila penzionersku Revolving karticu broj . . . vlasništvo oštećene i sa terminala broj S8AC8855 u tri navrata podigla novac u ukupnom iznosu od 80,00 eura, na koji način je sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 775,00 eur</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

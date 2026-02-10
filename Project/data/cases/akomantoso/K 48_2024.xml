@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+  <judgment name="Case_K_48_filed2024_verdict2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_filed2024_verdict2019" />
+          <FRBRuri value="/akn/me/judgment/Case_K_48_filed2024_verdict2019" />
+          <FRBRdate date="2019-02-13" name="judgment" />
+          <FRBRauthor href="#podgorici" />
+          <FRBRcountry value="me" />
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_filed2024_verdict2019/srp@2019-02-13" />
+          <FRBRuri value="/akn/me/judgment/Case_K_48_filed2024_verdict2019/srp@2019-02-13" />
+          <FRBRdate date="2019-02-13" name="judgment" />
+          <FRBRauthor href="#court" />
+          <FRBRlanguage language="srp" />
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/Case_K_48_filed2024_verdict2019/srp@2019-02-13.xml" />
+          <FRBRuri value="/akn/me/judgment/Case_K_48_filed2024_verdict2019/srp@2019-02-13.xml" />
+          <FRBRdate date="2026-02-08" name="generation" />
+          <FRBRauthor href="#system" />
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u PODGORICI" />
+        <TLCPerson eId="sudija" href="/ontology/person/nada_rabrenović" showAs="Nada Rabrenović" />
+        <TLCPerson eId="optuzeni" href="/ontology/person/defendant" showAs="u r" />
+      </references>
+      <proprietary source="#court">
+        <sud>PODGORICI</sud>
+        <brojPredmeta>48/24</brojPredmeta>
+        <datum>13.02.2019</datum>
+        <datumNormalizovan>2019-02-13</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Nada Rabrenović</sudija>
+        <optuzeni>u r</optuzeni>
+        <prebivaliste>Nikšiću</prebivaliste>
+        <zaposlenost>zaposlen u "Y. B." u Kotoru</zaposlenost>
+        <obrazovanje>pismen</obrazovanje>
+        <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>1 (jedne) godin</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja>U periodu od 12.10.2018. godine do 23.10.2018. godine, u Podgorici, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, na način što je, u namjeri da upotrijebi platnu karticu broj xxxxxxxxxxxxxxxxx, izdatu od E. banke AD Podgorica, vlasništvo oštećene Đ. I., iskoristio dostupnost iste i sa nje preuzeo podatke o serijskom broju i "pin kodu", a zatim je u četrnaest navrata upotrijebio, tako što je, sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa e-mail adresom .....XX@icloud.com, preko mobilnog telefona, čija je IP adresa XX.X.XX.XXX. izvršio četrnaest uspješnih transakcija na navedenom internet sajtu za klađenje i to: dana 12.10.2018. godine u iznosu od 10,00 eura; dana 13.10.2018. godine u iznosu od 10,00 eura; dana 14.10.2018. godine u iznosu od 5,00 eura; dana 22.10.2018. godine u iznosu od 5,00 eura i dana 23.10.2018. godine u iznosu od 80,00 eura, zatim četiri puta po 100,00 eura, dva puta po 10,00 eura, dva puta po 20,00 eura i jednom u iznosu od 50,00 eura, čime je pribavio protivpravnu imovinsku korist u iznosu od ukupno 620,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je isto zabranjeno,</opisSlucaja>
+        <svjedoci>
+          <svjedok>oštećena Đ.</svjedok>
+          <svjedok>oštećene Đ.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>Izvod prometa po računu broj XXX-XXXXXXXXXXXXXXX na ime Đ. I. za period od 15.08.2018. godine do 24.10.2018. godine</dokaz>
+          <dokaz>Dopis Hipotekarne banke broj 02-15524/2 od 14.11.2018. godine</dokaz>
+          <dokaz>Izvod iz Registra kaznenih evidencija Ministarstva pravde Osnovnog suda u Podgorici</dokaz>
+          <dokaz>izvještaj o transakcijama preko njene bankovne kartice gdje je konstatovano da je u kladionici Volcano dana 23.10.2018. godine sa njene platne debitne kartice uplaćeno vise uplata</dokaz>
+        </dokazi>
+        <iznosi>
+          <iznos>100,00 EUR</iznos>
+          <iznos>5,00 EUR</iznos>
+          <iznos>620,00 EUR</iznos>
+          <iznos>050,00 EUR</iznos>
+          <iznos>10,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>80,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <kazna>1 (jedne) godin</kazna>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PODGORICI, 48/24, sudija Nada Rabrenović</p>
+      </introduction>
+      <background>
+        <block name="podaciOOptuzenom">
+          <p>Optuženi: u r, prebivalište: Nikšiću, zaposlen u "Y. B." u Kotoru, neosuđivan</p>
+        </block>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>U periodu od 12.10.2018. godine do 23.10.2018. godine, u Podgorici, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, na način što je, u namjeri da upotrijebi platnu karticu broj xxxxxxxxxxxxxxxxx, izdatu od E. banke AD Podgorica, vlasništvo oštećene Đ. I., iskoristio dostupnost iste i sa nje preuzeo podatke o serijskom broju i "pin kodu", a zatim je u četrnaest navrata upotrijebio, tako što je, sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa e-mail adresom .....XX@icloud.com, preko mobilnog telefona, čija je IP adresa XX.X.XX.XXX. izvršio četrnaest uspješnih transakcija na navedenom internet sajtu za klađenje i to: dana 12.10.2018. godine u iznosu od 10,00 eura; dana 13.10.2018. godine u iznosu od 10,00 eura; dana 14.10.2018. godine u iznosu od 5,00 eura; dana 22.10.2018. godine u iznosu od 5,00 eura i dana 23.10.2018. godine u iznosu od 80,00 eura, zatim četiri puta po 100,00 eura, dva puta po 10,00 eura, dva puta po 20,00 eura i jednom u iznosu od 50,00 eura, čime je pribavio protivpravnu imovinsku korist u iznosu od ukupno 620,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je isto zabranjeno,</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Izvod prometa po računu broj XXX-XXXXXXXXXXXXXXX na ime Đ. I. za period od 15.08.2018. godine do 24.10.2018. godine</p>
+            <p>• Dopis Hipotekarne banke broj 02-15524/2 od 14.11.2018. godine</p>
+            <p>• Izvod iz Registra kaznenih evidencija Ministarstva pravde Osnovnog suda u Podgorici</p>
+            <p>• izvještaj o transakcijama preko njene bankovne kartice gdje je konstatovano da je u kladionici Volcano dana 23.10.2018. godine sa njene platne debitne kartice uplaćeno vise uplata</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>KRIV</p>
+          <p>Kazna: 6 (šest) mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

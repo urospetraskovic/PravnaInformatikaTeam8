@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_66_2013">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_66_2013"/>
+          <FRBRuri value="/akn/me/judgment/K_66_2013"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#cetinju"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_66_2013/srp@2013-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_66_2013/srp@2013-01-01"/>
+          <FRBRdate date="2013-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_66_2013/srp@2013-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_66_2013/srp@2013-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/cetinju" showAs="Osnovni Sud u CETINJU"/>
+        <TLCPerson eId="sudija" href="/ontology/person/mariji_ćupić" showAs="Mariji Ćupić"/>
+      </references>
+      <proprietary source="#court">
+        <sud>CETINJU</sud>
+        <brojPredmeta>66/13</brojPredmeta>
+        <datum>2013</datum>
+        <datumNormalizovan>2013-01-01</datumNormalizovan>
+        <godina>2013</godina>
+        <sudija>Mariji Ćupić</sudija>
+        <zapisnicar>None</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3(tri) mjeseca</kazna>
+        <uslovnaOsuda>Ne</uslovnaOsuda>
+        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <opisSlucaja>Dana 09. 04. 2013. godine, oko 23,30 časova, na raskrsnici magistralnih puteva Cetinje- Podgorica-Budva, iako je znao da je pribavljanje i posjedovanje lažnih platnih kartica zabranjeno, voljno držao dvije lažne platne-bankovne kartice za podizanje novca, navodno izdate od strane „NLB Montenegrobanke“, na njegovo ime, koje je prethodno pribavio od za sada nepoznatog lica, u namjeri da ih upotrebi kao prave, i to karticu broj 6224 0232 2315 2620, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 0602 2620, izdatoj od strane JP Morgan Chase Bank N.A, Colombus.Ohio-United States of America, i karticu broj 6224 0232 2315 5962, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 1781 5962, takođe izdatoj od strane JP Morgan Chase Bank N.A.,Colombus, Ohio-United States of America,</opisSlucaja>
+        <iznosi>
+          <iznos>30,00 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u CETINJU, 66/13, sudija Mariji Ćupić</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 09. 04. 2013. godine, oko 23,30 časova, na raskrsnici magistralnih puteva Cetinje- Podgorica-Budva, iako je znao da je pribavljanje i posjedovanje lažnih platnih kartica zabranjeno, voljno držao dvije lažne platne-bankovne kartice za podizanje novca, navodno izdate od strane „NLB Montenegrobanke“, na njegovo ime, koje je prethodno pribavio od za sada nepoznatog lica, u namjeri da ih upotrebi kao prave, i to karticu broj 6224 0232 2315 2620, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 0602 2620, izdatoj od strane JP Morgan Chase Bank N.A, Colombus.Ohio-United States of America, i karticu broj 6224 0232 2315 5962, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 1781 5962, takođe izdatoj od strane JP Morgan Chase Bank N.A.,Colombus, Ohio-United States of America,</p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Osuđujuća</p>
+          <p>Kazna: 3(tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

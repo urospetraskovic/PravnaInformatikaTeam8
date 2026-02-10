@@ -177,6 +177,11 @@
       color: #166534;
     }
 
+    .verdict-conditional {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
     .verdict-unknown {
       background: #f3f4f6;
       color: #6b7280;
@@ -598,11 +603,19 @@
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-guilty">0</div>
-              <div class="stat-text">Kriv</div>
+              <div class="stat-text">Zatvor</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="stat-conditional">0</div>
+              <div class="stat-text">Uslovna</div>
             </div>
             <div class="stat-item">
               <div class="stat-value" id="stat-acquitted">0</div>
               <div class="stat-text">Oslobođen</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" id="stat-opomena">0</div>
+              <div class="stat-text">Opomena</div>
             </div>
           </div>
         </div>
@@ -735,7 +748,7 @@
         const sentence = c.verdict?.sentence_description || 'Nepoznat';
         const articles = (c.legal?.articles_charged && c.legal.articles_charged.length > 0) ? c.legal.articles_charged : [];
         const evidence = (c.evidence?.documents?.length > 0) ? c.evidence.documents.join(', ') : ((c.evidence?.expert_findings?.length > 0) ? c.evidence.expert_findings.join(', ') : 'Nepoznat');
-        const verdict = c.verdict?.guilty ? 'KRIV' : (c.verdict?.acquitted ? 'OSLOBOĐEN' : 'NEPOZNAT');
+        const verdict = c.verdict?.guilty ? 'ZATVOR' : (c.verdict?.acquitted ? 'OSLOBOĐEN' : 'NEPOZNAT');
         
         return {
           id: caseId,
@@ -777,7 +790,9 @@
         document.getElementById('cases-count').textContent = `${allCases.length} predmeta`;
         document.getElementById('stat-total').textContent = stats.totalCases;
         document.getElementById('stat-guilty').textContent = stats.guiltyCount;
+        document.getElementById('stat-conditional').textContent = stats.conditionalCount || 0;
         document.getElementById('stat-acquitted').textContent = stats.acquittedCount;
+        document.getElementById('stat-opomena').textContent = stats.opomenaCount || 0;
       } catch (error) {
         console.error('Error loading cases:', error);
         document.getElementById('cases-list').innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626;">Greska: ${error.message}</div>`;
@@ -826,15 +841,17 @@
       try {
         list.innerHTML = displayedCases.map(caseData => {
           const verdictRaw = caseData.verdict || 'NEPOZNAT';
-          // Translate verdicts to Serbian
+          // Translate verdicts to Serbian display text
           let verdictText = verdictRaw;
-          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          if (verdictRaw === 'GUILTY') verdictText = 'ZATVOR';
           else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBOĐEN';
-          else if (verdictRaw === 'KRIV') verdictText = 'KRIV';
-          else if (verdictRaw === 'OSLOBOĐEN') verdictText = 'OSLOBOĐEN';
-          // Use 'guilty' or 'acquitted' class for styling - map Serbian verdicts to CSS classes
-          const verdictClass = (verdictRaw === 'KRIV' || verdictRaw === 'GUILTY') ? 'guilty' : 
-                              (verdictRaw === 'OSLOBOĐEN' || verdictRaw === 'ACQUITTED') ? 'acquitted' : 'unknown';
+          else if (verdictRaw === 'OSUĐUJUĆA') verdictText = 'ZATVOR';  // Convicting = guilty
+          else if (verdictRaw === 'USLOVNA OSUDA') verdictText = 'USLOVNA';  // Conditional
+          else if (verdictRaw === 'OSLOBAĐAJUĆA') verdictText = 'OSLOBOĐEN';
+          // Use CSS classes for styling
+          const verdictClass = (verdictRaw === 'KRIV' || verdictRaw === 'GUILTY' || verdictRaw === 'OSUĐUJUĆA') ? 'guilty' : 
+                              (verdictRaw === 'OSLOBOĐEN' || verdictRaw === 'ACQUITTED' || verdictRaw === 'OSLOBAĐAJUĆA') ? 'acquitted' : 
+                              (verdictRaw === 'USLOVNA OSUDA') ? 'conditional' : 'unknown';
           return `
             <div class="case-item ${selectedCaseId === caseData.id ? 'active' : ''}" onclick="selectCase('${caseData.id.replace(/'/g, "\\'")}')">
               <div class="case-id">${caseData.id}</div>
@@ -880,30 +897,27 @@
           const frbr = xmlDoc.querySelector('FRBRname')?.textContent || caseData.type;
           const court = xmlDoc.querySelector('background p')?.textContent || caseData.court;
           
-          // Extract all article references with numbers
-          const articleRefs = Array.from(xmlDoc.querySelectorAll('TLCReference')).map(ref => ref.getAttribute('showAs')).filter(a => a && a.includes('Clan'));
+          // Use articles from server response (includes clanKZ)
+          let guiltyArticles = caseData.articles || [];
           
-          // Extract the primary guilty article (the one in decision that matches the pattern for the specific crime)
-          let guiltyArticles = [];
-          const decisionText = xmlDoc.querySelector('decision p')?.textContent || '';
-          
-          // For falsification crimes, extract the main article (258-263)
-          const mainArticleMatch = decisionText.match(/(?:Clan|cl\.)\s*(\d+)\s*(?:st\.?\s*(\d+))?/);
-          if (mainArticleMatch) {
-            const articleNum = mainArticleMatch[1];
-            const stNum = mainArticleMatch[2];
-            guiltyArticles = [stNum ? `Clan ${articleNum} st.${stNum}` : `Clan ${articleNum}`];
-          } else if (articleRefs.length > 0) {
-            // If we can't find it in decision, use references but prefer the last one
-            guiltyArticles = [articleRefs[articleRefs.length - 1]];
-          } else if (caseData.articles && caseData.articles.length > 0) {
-            guiltyArticles = caseData.articles;
+          // Fallback: try to extract from XML if not in server data
+          if (guiltyArticles.length === 0) {
+            const articleRefs = Array.from(xmlDoc.querySelectorAll('TLCReference')).map(ref => ref.getAttribute('showAs')).filter(a => a && (a.includes('Clan') || a.includes('čl.')));
+            const decisionText = xmlDoc.querySelector('decision p')?.textContent || '';
+            const mainArticleMatch = decisionText.match(/(?:Clan|cl\.?|čl\.?)\s*(\d+)\s*(?:st\.?\s*(\d+))?/i);
+            if (mainArticleMatch) {
+              const articleNum = mainArticleMatch[1];
+              const stNum = mainArticleMatch[2];
+              guiltyArticles = [stNum ? `čl. ${articleNum} st. ${stNum}` : `čl. ${articleNum}`];
+            } else if (articleRefs.length > 0) {
+              guiltyArticles = [articleRefs[articleRefs.length - 1]];
+            }
           }
           
           const verdictRaw = caseData.verdict || 'UNKNOWN';
           // Translate verdicts to Serbian
           let verdictText = verdictRaw;
-          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          if (verdictRaw === 'GUILTY') verdictText = 'ZATVOR';
           else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBODJEN';
           const verdict = String(verdictRaw).toUpperCase();
           
@@ -919,20 +933,26 @@
 
           document.getElementById('content').innerHTML = `
             <div class="case-detail">
-              <div class="case-detail-header">
-                <div class="detail-title">${caseId}</div>
-                <div class="detail-meta">
-                  <div class="meta-item">
-                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-badge">${frbr}</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-badge">${caseData.year}</span>
+              <div class="case-detail-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                <div>
+                  <div class="detail-title">${caseId}</div>
+                  <div class="detail-meta">
+                    <div class="meta-item">
+                      <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-badge">${frbr}</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-badge">${caseData.year}</span>
+                    </div>
                   </div>
                 </div>
+                <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
+                  <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
+                </button>
               </div>
+              <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
 
               <div class="fields-grid">
                 <div class="field">
@@ -943,6 +963,11 @@
                 <div class="field">
                   <div class="field-label">Sudija</div>
                   <div class="field-value">${caseData.sudija || 'Nepoznat'}</div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label">Zapisničar</div>
+                  <div class="field-value">${caseData.zapisnicar || 'Nepoznat'}</div>
                 </div>
 
                 <div class="field">
@@ -993,7 +1018,7 @@
           const verdictRaw = caseData.verdict || 'NEPOZNAT';
           // Translate verdicts to Serbian
           let verdictText = verdictRaw;
-          if (verdictRaw === 'GUILTY') verdictText = 'KRIV';
+          if (verdictRaw === 'GUILTY') verdictText = 'ZATVOR';
           else if (verdictRaw === 'ACQUITTED') verdictText = 'OSLOBOĐEN';
           const verdict = String(verdictRaw).toUpperCase();
           
@@ -1008,20 +1033,26 @@
 
           document.getElementById('content').innerHTML = `
             <div class="case-detail">
-              <div class="case-detail-header">
-                <div class="detail-title">${caseData.id}</div>
-                <div class="detail-meta">
-                  <div class="meta-item">
-                    <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-badge">${caseData.type}</span>
-                  </div>
-                  <div class="meta-item">
-                    <span class="meta-badge">${caseData.year}</span>
+              <div class="case-detail-header" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                <div>
+                  <div class="detail-title">${caseData.id}</div>
+                  <div class="detail-meta">
+                    <div class="meta-item">
+                      <span class="meta-badge verdict-${verdict.toLowerCase()}">${verdictText}</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-badge">${caseData.type}</span>
+                    </div>
+                    <div class="meta-item">
+                      <span class="meta-badge">${caseData.year}</span>
+                    </div>
                   </div>
                 </div>
+                <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
+                  <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
+                </button>
               </div>
+              <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
 
               <div class="fields-grid">
                 <div class="field">
@@ -1032,6 +1063,11 @@
                 <div class="field">
                   <div class="field-label">Sudija</div>
                   <div class="field-value">${caseData.sudija || 'Nepoznat'}</div>
+                </div>
+
+                <div class="field">
+                  <div class="field-label">Zapisničar</div>
+                  <div class="field-value">${caseData.zapisnicar || 'Nepoznat'}</div>
                 </div>
 
                 <div class="field">
@@ -1076,6 +1112,85 @@
             </div>
           `;
         });
+    }
+
+    async function runReasoning(caseId) {
+      const resultDiv = document.getElementById('reasoning-result');
+      if (!resultDiv) return;
+      
+      resultDiv.style.display = 'block';
+      resultDiv.innerHTML = '<div style="color: #666; padding: 15px; text-align: center;"><span style="animation: spin 1s linear infinite; display: inline-block;">⏳</span> Učitavanje pravnog rezonovanja...</div>';
+      
+      try {
+        const response = await fetch('/api/reasoning', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ caseId: caseId })
+        });
+        
+        const result = await response.json();
+        
+        if (result.error) {
+          resultDiv.innerHTML = `<div style="color: #dc2626; padding: 15px; background: #fef2f2; border-radius: 6px;">Greška: ${result.error}</div>`;
+          return;
+        }
+        
+        // Build reasoning display
+        let html = `
+          <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 20px;">
+            <h4 style="margin: 0 0 15px 0; color: #0369a1; display: flex; align-items: center; gap: 8px;">
+              <span>⚖️</span> Rezultati rezonovanja po pravilima
+            </h4>
+        `;
+        
+        // Violated rules
+        if (result.violated_rules && result.violated_rules.length > 0) {
+          html += `<div style="margin-bottom: 15px;"><strong style="color: #dc2626;">Prekršena pravila:</strong><ul style="margin: 8px 0; padding-left: 20px;">`;
+          result.violated_rules.forEach(rule => {
+            html += `<li style="margin: 4px 0;">${rule}</li>`;
+          });
+          html += '</ul></div>';
+        }
+        
+        // Penalty range
+        if (result.penalty_range && (result.penalty_range.min || result.penalty_range.max)) {
+          html += `<div style="margin-bottom: 15px;"><strong style="color: #7c3aed;">Raspon kazne:</strong> ${result.penalty_range.min || '?'} - ${result.penalty_range.max || '?'}</div>`;
+        }
+        
+        // Mitigating factors
+        if (result.mitigating_factors && result.mitigating_factors.length > 0) {
+          html += `<div style="margin-bottom: 15px;"><strong style="color: #059669;">Olakšavajuće okolnosti:</strong><ul style="margin: 8px 0; padding-left: 20px;">`;
+          result.mitigating_factors.forEach(f => {
+            html += `<li style="margin: 4px 0;">${f}</li>`;
+          });
+          html += '</ul></div>';
+        }
+        
+        // Aggravating factors
+        if (result.aggravating_factors && result.aggravating_factors.length > 0) {
+          html += `<div style="margin-bottom: 15px;"><strong style="color: #dc2626;">Otežavajuće okolnosti:</strong><ul style="margin: 8px 0; padding-left: 20px;">`;
+          result.aggravating_factors.forEach(f => {
+            html += `<li style="margin: 4px 0;">${f}</li>`;
+          });
+          html += '</ul></div>';
+        }
+        
+        // Actual sentence from case
+        if (result.actual_sentence) {
+          html += `<div style="margin-bottom: 15px; padding: 12px; background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 4px;"><strong style="color: #166534;">Stvarna izrečena kazna:</strong> ${result.actual_sentence}</div>`;
+        }
+        
+        // Recommendation
+        if (result.recommendation) {
+          html += `<div style="margin-top: 15px; padding: 12px; background: #fefce8; border-left: 4px solid #facc15; border-radius: 4px;"><strong>Preporučena kazna:</strong> ${result.recommendation}</div>`;
+        }
+        
+        html += '</div>';
+        resultDiv.innerHTML = html;
+        
+      } catch (error) {
+        resultDiv.innerHTML = `<div style="color: #dc2626; padding: 15px; background: #fef2f2; border-radius: 6px;">Greška: ${error.message}</div>`;
+      }
     }
 
     loadCases();

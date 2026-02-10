@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_14_2019">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_14_2019"/>
+          <FRBRuri value="/akn/me/judgment/K_14_2019"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#pljevljima"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_14_2019/srp@2019-01-01"/>
+          <FRBRuri value="/akn/me/judgment/K_14_2019/srp@2019-01-01"/>
+          <FRBRdate date="2019-01-01" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_14_2019/srp@2019-01-01.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_14_2019/srp@2019-01-01.xml"/>
+          <FRBRdate date="2026-02-10" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/pljevljima" showAs="Osnovni Sud u PLJEVLJIMA"/>
+        <TLCPerson eId="sudija" href="/ontology/person/ljiljani_popović" showAs="Ljiljani Popović"/>
+      </references>
+      <proprietary source="#court">
+        <sud>PLJEVLJIMA</sud>
+        <brojPredmeta>14/19</brojPredmeta>
+        <datum>2019</datum>
+        <datumNormalizovan>2019-01-01</datumNormalizovan>
+        <godina>2019</godina>
+        <sudija>Ljiljani Popović</sudija>
+        <zapisnicar>Krvavac Mirjane</zapisnicar>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <kazna>3 (tri) mjeseca</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <opisSlucaja></opisSlucaja>
+        <iznosi>
+          <iznos>10,00 EUR</iznos>
+          <iznos>20,00 EUR</iznos>
+          <iznos>130,00 EUR</iznos>
+          <iznos>50,00 EUR</iznos>
+          <iznos>100,00 EUR</iznos>
+          <iznos>30,00 EUR</iznos>
+          <iznos>27,50 EUR</iznos>
+        </iznosi>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u PLJEVLJIMA, 14/19, sudija Ljiljani Popović</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p></p>
+        </block>
+      </arguments>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna osuda</p>
+          <p>Kazna: 3 (tri) mjeseca</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
