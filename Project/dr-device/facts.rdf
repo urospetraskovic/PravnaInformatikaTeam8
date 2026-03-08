@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-        xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
-    <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
-        <lc:name>case 01</lc:name>
-        <lc:defendant>John</lc:defendant>
-        <lc:speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</lc:speed>
-	<lc:allowed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</lc:allowed_speed>
-	<lc:driving_on>town_road</lc:driving_on>
-	<lc:caused_accident>yes</lc:caused_accident>
-    </lc:case>
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:lc="http://informatika.ftn.uns.ac.rs/legal-case.rdf#">
+  <lc:case rdf:about="http://informatika.ftn.uns.ac.rs/legal-case.rdf#case01">
+    <lc:defendant>Okrivljeni</lc:defendant>
+    <lc:article>260</lc:article>
+    <lc:amount_over_15000>no</lc:amount_over_15000>
+    <lc:amount_over_3000>no</lc:amount_over_3000>
+    <lc:amount_over_30000>no</lc:amount_over_30000>
+    <lc:gained_profit>no</lc:gained_profit>
+    <lc:confession>yes</lc:confession>
+    <lc:prior_conviction>no</lc:prior_conviction>
+    <lc:remorse>yes</lc:remorse>
+    <lc:restitution>no</lc:restitution>
+    <lc:has_children>yes</lc:has_children>
+    <lc:cooperation>no</lc:cooperation>
+    <lc:organized_crime>no</lc:organized_crime>
+  </lc:case>
 </rdf:RDF>

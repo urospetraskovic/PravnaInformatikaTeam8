@@ -991,7 +991,7 @@
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Primijenjeni članovi</div>
+                  <div class="field-label">Primenjeni članovi</div>
                   <div class="field-value">
                     <div class="articles-list">
                       ${articlesHtml}
@@ -1091,7 +1091,7 @@
                 </div>
 
                 <div class="field" style="grid-column: 1 / -1;">
-                  <div class="field-label">Primijenjeni članovi</div>
+                  <div class="field-label">Primenjeni članovi</div>
                   <div class="field-value">
                     <div class="articles-list">
                       ${articlesHtml}
@@ -1144,16 +1144,17 @@
           <div style="font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
             
             <!-- HEADER -->
-            <div style="background: #2c3e50; color: white; padding: 16px 20px;">
+            <div style="background: #2c3e50; color: white; padding: 16px 20px; cursor: pointer; user-select: none;" onclick="const body = this.nextElementSibling; const arrow = this.querySelector('.collapse-arrow'); if (body.style.display === 'none') { body.style.display = 'block'; arrow.textContent = '▼'; } else { body.style.display = 'none'; arrow.textContent = '▶'; }">
               <div style="display: flex; justify-content: space-between; align-items: center;">
                 <div>
                   <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">Pravno rezonovanje</div>
                   <div style="font-size: 1.3em; font-weight: 600; margin-top: 2px;">Predmet ${result.case_number || 'N/A'}</div>
                 </div>
-                <div style="text-align: right;">
+                <div style="display: flex; align-items: center; gap: 10px;">
                   <div style="font-size: 0.8em; padding: 4px 12px; background: rgba(255,255,255,0.15); border-radius: 4px;">
                     ${isAcquittal ? 'OSLOBAĐAJUĆA' : (result.verdict || 'PRESUDA')}
                   </div>
+                  <span class="collapse-arrow" style="font-size: 0.9em; opacity: 0.7;">▼</span>
                 </div>
               </div>
             </div>
@@ -1166,7 +1167,7 @@
               <div style="text-align: center; padding: 25px; background: #f8f9fa; border-radius: 6px; margin-bottom: 20px; border: 1px solid #e9ecef;">
                 <div style="font-size: 1.2em; font-weight: 600; color: #2c3e50; margin-bottom: 8px;">Optuženi je oslobođen optužbe</div>
                 <div style="color: #666; font-size: 0.9em;">
-                  ${legal.verdict_reason || 'Krivično djelo nije dokazano ili ne postoji krivična odgovornost'}
+                  ${legal.verdict_reason || 'Krivično delo nije dokazano ili ne postoji krivična odgovornost'}
                 </div>
                 ${legal.legal_principle ? `<div style="margin-top: 12px; padding: 8px; background: white; border-radius: 4px; color: #555; font-size: 0.85em; font-style: italic; border: 1px solid #e9ecef;">"${legal.legal_principle}"</div>` : ''}
               </div>
@@ -1223,7 +1224,7 @@
                   ${meta.court_clerk ? `<div><span style="color: #888;">Zapisničar:</span> <strong style="color: #333;">${meta.court_clerk}</strong></div>` : ''}
                   ${meta.date ? `<div><span style="color: #888;">Datum:</span> <strong style="color: #333;">${meta.date}</strong></div>` : ''}
                   ${meta.prior_convictions ? `<div><span style="color: #888;">Ranije osuđivan:</span> <strong style="color: #333;">${meta.prior_convictions}</strong></div>` : ''}
-                  ${meta.crime_type ? `<div><span style="color: #888;">Tip djela:</span> <strong style="color: #333;">${meta.crime_type}</strong></div>` : ''}
+                  ${meta.crime_type ? `<div><span style="color: #888;">Tip dela:</span> <strong style="color: #333;">${meta.crime_type}</strong></div>` : ''}
                   ${legal.prosecutor ? `<div><span style="color: #888;">Tužilac:</span> <strong style="color: #333;">${legal.prosecutor}</strong></div>` : ''}
                   ${(legal.defense_attorney && !legal.defense_attorney.toLowerCase().includes('okrivljen') && !legal.defense_attorney.toLowerCase().includes('optužen')) ? `<div><span style="color: #888;">Branilac:</span> <strong style="color: #333;">${legal.defense_attorney}</strong></div>` : ''}
                 </div>
@@ -1232,7 +1233,7 @@
               <!-- LEGAL ARTICLES -->
               ${result.articles && result.articles.length > 0 ? `
               <div style="margin-bottom: 15px;">
-                <div style="font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 0.8em;">Primijenjeni članovi KZ:</div>
+                <div style="font-weight: 600; color: #2c3e50; margin-bottom: 8px; font-size: 0.8em;">Primenjeni članovi KZ:</div>
                 <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                   ${result.articles.map(a => `<span style="background: #e9ecef; color: #2c3e50; padding: 5px 12px; border-radius: 4px; font-size: 0.85em; font-weight: 500;">${a}</span>`).join('')}
                 </div>
@@ -1252,7 +1253,7 @@
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px;">
                 ${facts.witnesses?.length > 0 ? `
                 <div style="padding: 10px; border: 1px solid #e9ecef; border-radius: 6px;">
-                  <div style="font-weight: 600; color: #2c3e50; margin-bottom: 6px; font-size: 0.8em;">Svjedoci (${facts.witnesses.length})</div>
+                  <div style="font-weight: 600; color: #2c3e50; margin-bottom: 6px; font-size: 0.8em;">Svedoci (${facts.witnesses.length})</div>
                   <div style="font-size: 0.8em; color: #555;">
                     ${facts.witnesses.map(w => `<div style="padding: 2px 0;">• ${w}</div>`).join('')}
                   </div>
@@ -1273,6 +1274,85 @@
               ${result.has_archive ? `
               <div style="text-align: center; padding: 8px; font-size: 0.75em; color: #666;">
                 <span style="background: #f0f0f0; padding: 3px 8px; border-radius: 3px;">Podaci obogaćeni iz arhive</span>
+              </div>
+              ` : ''}
+              
+              <!-- DR-DEVICE DEFEASIBLE REASONING -->
+              ${result.dr_device_reasoning && result.dr_device_reasoning.status === 'success' ? `
+              <div style="margin-top: 15px; padding: 15px; border: 1px solid #e9ecef; border-radius: 8px; background: #f8f9fa;">
+                <div style="font-weight: 700; color: #2c3e50; margin-bottom: 12px; font-size: 0.9em; display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 1.1em;">⚖️</span> DR-Device — Defeasible Reasoning
+                </div>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 12px;">
+                  ${result.dr_device_reasoning.guilt_label ? `
+                  <div style="padding: 10px; background: white; border-radius: 6px; border: 1px solid #e9ecef;">
+                    <div style="font-size: 0.7em; color: #666; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Utvrđena krivica</div>
+                    <div style="font-size: 0.9em; color: #2c3e50; font-weight: 600; margin-top: 3px;">${result.dr_device_reasoning.guilt_label}</div>
+                  </div>
+                  ` : ''}
+                  
+                  <div style="padding: 10px; background: white; border-radius: 6px; border: 1px solid #e9ecef;">
+                    <div style="font-size: 0.7em; color: #666; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Raspon kazne</div>
+                    <div style="font-size: 0.9em; color: #2c3e50; font-weight: 600; margin-top: 3px;">
+                      ${result.dr_device_reasoning.penalty_min_months != null ? result.dr_device_reasoning.penalty_min_months + ' mes.' : '30 dana'} 
+                      – 
+                      ${result.dr_device_reasoning.penalty_max_months != null ? result.dr_device_reasoning.penalty_max_months + ' mes.' : 'N/A'}
+                    </div>
+                  </div>
+                </div>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
+                  <span style="padding: 4px 10px; border-radius: 4px; font-size: 0.75em; font-weight: 600;
+                    ${result.dr_device_reasoning.has_mitigating ? 
+                      'background: #e9ecef; color: #2c3e50; border: 1px solid #ced4da;' : 
+                      'background: #f8f9fa; color: #adb5bd; border: 1px solid #dee2e6;'}">
+                    ${result.dr_device_reasoning.has_mitigating ? '✓' : '✗'} Olakšavajuće okolnosti
+                  </span>
+                  <span style="padding: 4px 10px; border-radius: 4px; font-size: 0.75em; font-weight: 600;
+                    ${result.dr_device_reasoning.has_aggravating ? 
+                      'background: #e9ecef; color: #2c3e50; border: 1px solid #ced4da;' : 
+                      'background: #f8f9fa; color: #adb5bd; border: 1px solid #dee2e6;'}">
+                    ${result.dr_device_reasoning.has_aggravating ? '✓' : '✗'} Otežavajuće okolnosti
+                  </span>
+                  <span style="padding: 4px 10px; border-radius: 4px; font-size: 0.75em; font-weight: 600;
+                    ${result.dr_device_reasoning.mitigation_allowed ? 
+                      'background: #e9ecef; color: #2c3e50; border: 1px solid #ced4da;' : 
+                      'background: #f8f9fa; color: #adb5bd; border: 1px solid #dee2e6;'}">
+                    ${result.dr_device_reasoning.mitigation_allowed ? '✓' : '✗'} Ublažavanje dozvoljeno
+                  </span>
+                  <span style="padding: 4px 10px; border-radius: 4px; font-size: 0.75em; font-weight: 600;
+                    ${result.dr_device_reasoning.suspended_sentence_possible ? 
+                      'background: #e9ecef; color: #2c3e50; border: 1px solid #ced4da;' : 
+                      'background: #f8f9fa; color: #adb5bd; border: 1px solid #dee2e6;'}">
+                    ${result.dr_device_reasoning.suspended_sentence_possible ? '✓' : '✗'} Uslovna osuda
+                  </span>
+                </div>
+                
+                ${result.dr_device_reasoning.proof_chain && result.dr_device_reasoning.proof_chain.length > 0 ? `
+                <details style="margin-top: 8px;">
+                  <summary style="cursor: pointer; font-size: 0.8em; color: #495057; font-weight: 600;">
+                    Lanac dokaza (${result.dr_device_reasoning.proof_chain.length} zaključaka)
+                  </summary>
+                  <div style="margin-top: 8px; padding: 8px; background: white; border-radius: 4px; border: 1px solid #e9ecef; font-size: 0.8em;">
+                    ${result.dr_device_reasoning.proof_chain.map(p => `
+                      <div style="padding: 4px 0; border-bottom: 1px solid #f0f0f0;">
+                        <strong style="color: #2c3e50;">${p.conclusion || ''}</strong> 
+                        <span style="color: #888;">← pravilo ${p.rule || '?'}</span>
+                        ${p.had_blocked_attackers ? `<span style="color: #c00; font-size: 0.85em;"> (blokirano: ${p.blocked_rule || '?'})</span>` : ''}
+                      </div>
+                    `).join('')}
+                  </div>
+                </details>
+                ` : ''}
+                
+                <div style="margin-top: 8px; font-size: 0.7em; color: #888;">
+                  Defeasible reasoning putem DR-Device (CLIPS) • ${result.dr_device_reasoning.proven_conclusions?.length || 0} zaključaka dokazano
+                </div>
+              </div>
+              ` : result.dr_device_reasoning && result.dr_device_reasoning.status === 'error' ? `
+              <div style="margin-top: 10px; padding: 8px 12px; background: #fef2f2; border: 1px solid #fcc; border-radius: 6px; font-size: 0.8em; color: #991b1b;">
+                DR-Device: ${result.dr_device_reasoning.reason || 'Greška'}
               </div>
               ` : ''}
               

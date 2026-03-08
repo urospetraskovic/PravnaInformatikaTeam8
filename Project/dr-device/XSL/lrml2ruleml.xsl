@@ -17,7 +17,7 @@
         <RuleML>
             <xsl:attribute name="proof">proof.ruleml</xsl:attribute>
             <xsl:attribute name="rdf_export">export.rdf</xsl:attribute>
-            <xsl:attribute name="rdf_export_classes">is_speeding_on_town_road_lv3_with_accident is_speeding_on_town_road_lv1 is_speeding_on_town_road_lv2 to_pay_min to_pay_max max_imprisonment is_speeding_on_town_road_lv3 to_pay</xsl:attribute>
+            <xsl:attribute name="rdf_export_classes">guilty_258_basic guilty_258_qualified guilty_260_basic guilty_260_gain guilty_260_high guilty_260_very_high has_mitigating has_aggravating mitigation_allowed suspended_sentence_possible to_imprison_min to_imprison_max</xsl:attribute>
             <xsl:attribute name="rdf_import">&quot;facts.rdf&quot;</xsl:attribute>
             <xsl:apply-templates select="lrml:Statements"/>
         </RuleML>

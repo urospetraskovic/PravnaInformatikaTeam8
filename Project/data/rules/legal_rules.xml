@@ -633,6 +633,302 @@
       </lrml:Rule>
     </lrml:ConstitutiveStatement>
 
+    <!-- ========== SENTENCING MITIGATION RULES (čl. 42, 45, 46, 47 KZ CG) ========== -->
+
+    <!-- Rule 21: General sentencing - čl. 42 KZ CG -->
+    <lrml:ConstitutiveStatement key="rule_odmjeravanje_cl42">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Суд ће учиниоцу кривичног дјела одмјерити казну у границама које су законом прописане за то дјело, имајући у виду сврху кажњавања и узимајући у обзир све олакшавајуће и отежавајуће околности (чл. 42 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>MinKazna</ruleml:Var>
+              <ruleml:Var>MaxKazna</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>olaksavajuca_okolnost</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>Okolnost</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>kazna_blize_minimumu</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_42"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 22: Sentence mitigation eligibility - čl. 45 KZ CG -->
+    <lrml:ConstitutiveStatement key="rule_ublazavanje_cl45">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Суд може учиниоцу кривичног дјела изрећи казну испод границе прописане законом кад утврди да постоје нарочито олакшавајуће околности и оцијени да се и са ублаженом казном може постићи сврха кажњавања (чл. 45 ст. 3 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>olaksavajuca_okolnost</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>Faktor1</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>olaksavajuca_okolnost</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>Faktor2</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>razliciti</ruleml:Rel>
+              <ruleml:Var>Faktor1</ruleml:Var>
+              <ruleml:Var>Faktor2</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>ublazavanje_dozvoljeno</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_45"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 23: Mitigation limits for min 5+ years - čl. 46 st. 1 tač. 1 -->
+    <lrml:ConstitutiveStatement key="rule_ublazavanje_cl46_tac1">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Ако је за кривично дјело као најмања мјера казне прописан затвор од пет или више година, казна се може ублажити до двије године затвора (чл. 46 ст. 1 тач. 1 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>ublazavanje_dozvoljeno</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora_min_godina</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>ublazena_kazna_min</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_46__para_1__point_1"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 24: Mitigation limits for min 3+ years - čl. 46 st. 1 tač. 2 -->
+    <lrml:ConstitutiveStatement key="rule_ublazavanje_cl46_tac2">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Ако је за кривично дјело као најмања мјера казне прописан затвор од три или више година, казна се може ублажити до једне године затвора (чл. 46 ст. 1 тач. 2 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>ublazavanje_dozvoljeno</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora_min_godina</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>ublazena_kazna_min</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_46__para_1__point_2"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 25: Mitigation limits for min 2 years - čl. 46 st. 1 tač. 3 -->
+    <lrml:ConstitutiveStatement key="rule_ublazavanje_cl46_tac3">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Ако је за кривично дјело као најмања мјера казне прописан затвор од двије године, казна се може ублажити до шест мјесеци затвора (чл. 46 ст. 1 тач. 3 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>ublazavanje_dozvoljeno</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora_min_godina</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>ublazena_kazna_min</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">6_mjeseci</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_46__para_1__point_3"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 26: Mitigation limits for min 1 year - čl. 46 st. 1 tač. 4 -->
+    <lrml:ConstitutiveStatement key="rule_ublazavanje_cl46_tac4">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Ако је за кривично дјело као најмања мјера казне прописан затвор од једне године, казна се може ублажити до три мјесеца затвора (чл. 46 ст. 1 тач. 4 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>ublazavanje_dozvoljeno</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora_min_godina</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>ublazena_kazna_min</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3_mjeseca</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_46__para_1__point_4"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 27: Release from punishment for damage reparation - čl. 47 st. 3 -->
+    <lrml:ConstitutiveStatement key="rule_oslobodjenje_cl47">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Суд може ослободити од казне учиниоца кривичног дјела за које је прописана казна затвора до пет година, ако послије извршеног кривичног дјела отклони посљедице дјела или надокнади штету проузроковану кривичним дјелом (чл. 47 ст. 3 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>nadoknadio_stetu</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>kazna_zatvora</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>Min</ruleml:Var>
+              <ruleml:Var>Max</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>oslobodjenje_od_kazne_moguce</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_47__para_3"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 28: Suspended sentence - čl. 52-54 KZ CG -->
+    <lrml:ConstitutiveStatement key="rule_uslovna_osuda_cl52">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Условном осудом суд утврђује казну и истовремено одређује да се она неће извршити ако осуђени за вријеме које одреди суд не учини ново кривично дјело. Може се изрећи кад суд утврди казну затвора у трајању до двије године (чл. 52 КЗ ЦГ).
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel>utvrdjena_kazna_mjeseci</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+              <ruleml:Var>Mjeseci</ruleml:Var>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>mjeseci_manje_od</ruleml:Rel>
+              <ruleml:Var>Mjeseci</ruleml:Var>
+              <ruleml:Data xsi:type="xs:integer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">24</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel>ima_olaksavajuce_okolnosti</ruleml:Rel>
+              <ruleml:Var>Okrivljeni</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>moguca_uslovna_osuda</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+      <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_52"/>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 29: Remorse as mitigating factor -->
+    <lrml:ConstitutiveStatement key="rule_mitigating_remorse">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Изражено кајање окривљеног је олакшавајућа околност.
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>izrazeno_kajanje</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>olaksavajuca_okolnost</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">kajanje</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+    </lrml:ConstitutiveStatement>
+
+    <!-- Rule 30: Family circumstances as mitigating factor -->
+    <lrml:ConstitutiveStatement key="rule_mitigating_family">
+      <lrml:Rule>
+        <lrml:Paraphrase>
+          Породичне прилике (отац/мајка дјеце) су олакшавајућа околност коју суд узима у обзир при одмјеравању казне.
+        </lrml:Paraphrase>
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>ima_djecu</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>olaksavajuca_okolnost</ruleml:Rel>
+            <ruleml:Var>Okrivljeni</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">porodicne_prilike</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:then>
+      </lrml:Rule>
+    </lrml:ConstitutiveStatement>
+
   </lrml:Statements>
   
 </lrml:LegalRuleML>

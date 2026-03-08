@@ -1,450 +1,748 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lrml:LegalRuleML xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://docs.oasis-open.org/legalruleml/ns/v1.0/ xsd-compact/lrml-compact.xsd" xmlns:ruleml="http://ruleml.org/spec">
-	<lrml:Statements>
-		<lrml:PrescriptiveStatement key="ps1">
-			<ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>70</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps2">
-			<ruleml:Rule key=":rule2" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&lt;=</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>50</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps3">
-			<ruleml:Rule key=":rule3" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>80</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps4">
-			<ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps5">
-			<ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>100</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">no</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps6">
-			<ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv2</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps7">
-			<ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv3</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Negation>
-						<ruleml:Atom>
-							<ruleml:Rel>is_speeding_on_town_road_lv1</ruleml:Rel>
-							<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-						</ruleml:Atom>
-					</ruleml:Negation>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		<lrml:PrescriptiveStatement key="ps8">
-			<ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
-				<ruleml:if>
-					<ruleml:And>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:hasSpeed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Var type="hasSpeed">Speed</ruleml:Var>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:allowed_speed"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:int">50</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Expr>
-								<ruleml:Fun>&gt;</ruleml:Fun>
-								<ruleml:Var>Speed</ruleml:Var>
-								<ruleml:Ind>100</ruleml:Ind>
-							</ruleml:Expr>
-						</ruleml:Atom>		
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:driving_on"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">town_road</ruleml:Data>
-						</ruleml:Atom>
-						<ruleml:Atom>
-							<ruleml:Rel iri="lc:caused_accident"/>
-							<ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
-							<ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
-						</ruleml:Atom>
-					</ruleml:And>
-				</ruleml:if>
-				<ruleml:then>
-					<ruleml:Atom>
-						<ruleml:Rel>is_speeding_on_town_road_lv3_with_accident</ruleml:Rel>
-						<ruleml:Var type=":defendant">Defendant</ruleml:Var>
-					</ruleml:Atom>
-				</ruleml:then>
-			</ruleml:Rule>
-		</lrml:PrescriptiveStatement>
-		
-		<lrml:PenaltyStatement key="pen1">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>10000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen2">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>10000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen3">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>20000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen4">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>20000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen5">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>40000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen6">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":max_imprisonment"/>
-							<ruleml:Var>Days</ruleml:Var>
-							<ruleml:Ind>30</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen7">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":max_imprisonment"/>
-							<ruleml:Var>Days</ruleml:Var>
-							<ruleml:Ind>60</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen8">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_min"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>40000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:PenaltyStatement key="pen9">
-			<lrml:SuborderList>
-				<lrml:Obligation>
-						<ruleml:Atom>
-							<ruleml:Rel iri=":to_pay_max"/>
-							<ruleml:Var>Money</ruleml:Var>
-							<ruleml:Ind>60000</ruleml:Ind>
-						</ruleml:Atom>
-						
-				</lrml:Obligation>
-			</lrml:SuborderList>
-		</lrml:PenaltyStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen1"/>
-				<lrml:toPrescriptiveStatement keyref="#ps1"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen2"/>
-				<lrml:toPrescriptiveStatement keyref="#ps3"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen3"/>
-				<lrml:toPrescriptiveStatement keyref="#ps3"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen4"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen5"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen6"/>
-				<lrml:toPrescriptiveStatement keyref="#ps5"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen7"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen8"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:ReparationStatement>
-			<lrml:Reparation>
-				<lrml:appliesPenalty keyref="#pen9"/>
-				<lrml:toPrescriptiveStatement keyref="#ps8"/>
-			</lrml:Reparation>
-		</lrml:ReparationStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps2" over="#ps3"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps3"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps4"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps3" over="#ps6"/>
-		</lrml:OverrideStatement>
-		<lrml:OverrideStatement>
-			<lrml:Override under="#ps1" over="#ps7"/>
-		</lrml:OverrideStatement>
-	</lrml:Statements>
+<!--
+  DR-Device LegalRuleML Rulebase
+  Criminal Code of Montenegro - Chapter XXIII
+  Crimes Against Payment System and Economic Operations
+  
+  Project: Правна Информатика - Team 8
+  
+  Articles: 258 (Counterfeiting Money), 260 (Credit Card Fraud)
+  Sentencing: čl. 42, 45, 46, 47, 52 KZ CG
+  
+  22 Defeasible Rules + 11 Penalties + 11 Reparations + 6 Overrides
+-->
+<lrml:LegalRuleML
+    xmlns:lrml="http://docs.oasis-open.org/legalruleml/ns/v1.0/"
+    xmlns:ruleml="http://ruleml.org/spec"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <lrml:Statements>
+
+    <!-- ================================================================== -->
+    <!-- ARTICLE 258: COUNTERFEITING MONEY (Falsifikovanje novca)           -->
+    <!-- ================================================================== -->
+
+    <!-- Rule 1: Art. 258 basic - making/distributing counterfeit money
+         Penalty: 2-12 years imprisonment -->
+    <lrml:PrescriptiveStatement key="ps1">
+      <ruleml:Rule key=":rule1" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:article"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">258</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_258_basic</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 2: Art. 258 st.3 qualified form - amount > 15000 EUR
+         Penalty: 5-15 years imprisonment (overrides basic) -->
+    <lrml:PrescriptiveStatement key="ps2">
+      <ruleml:Rule key=":rule2" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">258</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_15000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_258_qualified</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 3: Negation - qualified form defeats basic for Art. 258 -->
+    <lrml:PrescriptiveStatement key="ps3">
+      <ruleml:Rule key=":rule3" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">258</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_15000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>guilty_258_basic</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- ================================================================== -->
+    <!-- ARTICLE 260: CREDIT CARD FRAUD (Falsifikovanje kreditnih kartica)  -->
+    <!-- ================================================================== -->
+
+    <!-- Rule 4: Art. 260 st.1 basic - making/using fake cards
+         Penalty: up to 3 years imprisonment -->
+    <lrml:PrescriptiveStatement key="ps4">
+      <ruleml:Rule key=":rule4" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:article"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_260_basic</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 5: Art. 260 st.2 - card fraud with material gain
+         Penalty: 6 months - 5 years imprisonment -->
+    <lrml:PrescriptiveStatement key="ps5">
+      <ruleml:Rule key=":rule5" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:gained_profit"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_260_gain</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 6: Negation - gain form defeats basic for Art. 260 -->
+    <lrml:PrescriptiveStatement key="ps6">
+      <ruleml:Rule key=":rule6" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:gained_profit"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>guilty_260_basic</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 7: Art. 260 st.3 - card fraud with gain > 3000 EUR
+         Penalty: 1-8 years imprisonment -->
+    <lrml:PrescriptiveStatement key="ps7">
+      <ruleml:Rule key=":rule7" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_3000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_260_high</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 8: Negation - high gain defeats basic gain for Art. 260 -->
+    <lrml:PrescriptiveStatement key="ps8">
+      <ruleml:Rule key=":rule8" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_3000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>guilty_260_gain</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 9: Art. 260 st.4 - card fraud with gain > 30000 EUR
+         Penalty: 2-10 years imprisonment -->
+    <lrml:PrescriptiveStatement key="ps9">
+      <ruleml:Rule key=":rule9" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_30000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>guilty_260_very_high</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 10: Negation - very high gain defeats high gain for Art. 260 -->
+    <lrml:PrescriptiveStatement key="ps10">
+      <ruleml:Rule key=":rule10" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:And>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:article"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">260</ruleml:Data>
+            </ruleml:Atom>
+            <ruleml:Atom>
+              <ruleml:Rel iri="lc:amount_over_30000"/>
+              <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+              <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+            </ruleml:Atom>
+          </ruleml:And>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>guilty_260_high</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- ================================================================== -->
+    <!-- MITIGATING FACTORS (Olakšavajuće okolnosti - čl. 42 KZ CG)        -->
+    <!-- ================================================================== -->
+
+    <!-- Rule 11: Confession as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps11">
+      <ruleml:Rule key=":rule11" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:confession"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 12: First offense (no prior convictions) as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps12">
+      <ruleml:Rule key=":rule12" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:prior_conviction"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">no</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 13: Restitution as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps13">
+      <ruleml:Rule key=":rule13" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:restitution"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 14: Remorse as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps14">
+      <ruleml:Rule key=":rule14" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:remorse"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 15: Family circumstances (has children) as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps15">
+      <ruleml:Rule key=":rule15" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:has_children"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 16: Cooperation with investigation as mitigating factor -->
+    <lrml:PrescriptiveStatement key="ps16">
+      <ruleml:Rule key=":rule16" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:cooperation"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- ================================================================== -->
+    <!-- AGGRAVATING FACTORS (Otežavajuće okolnosti)                        -->
+    <!-- ================================================================== -->
+
+    <!-- Rule 17: Prior convictions as aggravating factor -->
+    <lrml:PrescriptiveStatement key="ps17">
+      <ruleml:Rule key=":rule17" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:prior_conviction"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_aggravating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 18: Organized crime as aggravating factor -->
+    <lrml:PrescriptiveStatement key="ps18">
+      <ruleml:Rule key=":rule18" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel iri="lc:organized_crime"/>
+            <ruleml:Var type="lc:defendant">Defendant</ruleml:Var>
+            <ruleml:Data xsi:type="xs:string">yes</ruleml:Data>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>has_aggravating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- ================================================================== -->
+    <!-- DEFEASIBLE SENTENCING RULES (čl. 45, 46, 47, 52 KZ CG)            -->
+    <!-- Mitigation vs Aggravation - conflicting rules with overrides       -->
+    <!-- ================================================================== -->
+
+    <!-- Rule 19: Mitigating factors allow sentence reduction (čl. 45 KZ CG)
+         IF defendant has mitigating factors THEN sentence mitigation allowed -->
+    <lrml:PrescriptiveStatement key="ps19">
+      <ruleml:Rule key=":rule19" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>mitigation_allowed</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 20: Aggravating factors BLOCK sentence reduction
+         IF defendant has aggravating factors THEN NOT sentence mitigation allowed
+         This rule is SUPERIOR to rule 19 (override below) -->
+    <lrml:PrescriptiveStatement key="ps20">
+      <ruleml:Rule key=":rule20" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>has_aggravating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>mitigation_allowed</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 21: Mitigating factors enable suspended sentence (čl. 52 KZ CG)
+         IF defendant has mitigating factors THEN suspended sentence possible -->
+    <lrml:PrescriptiveStatement key="ps21">
+      <ruleml:Rule key=":rule21" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>has_mitigating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Atom>
+            <ruleml:Rel>suspended_sentence_possible</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- Rule 22: Aggravating factors BLOCK suspended sentence
+         IF defendant has aggravating factors THEN NOT suspended sentence possible
+         This rule is SUPERIOR to rule 21 (override below) -->
+    <lrml:PrescriptiveStatement key="ps22">
+      <ruleml:Rule key=":rule22" closure="universal" strength="defeasible">
+        <ruleml:if>
+          <ruleml:Atom>
+            <ruleml:Rel>has_aggravating</ruleml:Rel>
+            <ruleml:Var>Defendant</ruleml:Var>
+          </ruleml:Atom>
+        </ruleml:if>
+        <ruleml:then>
+          <ruleml:Negation>
+            <ruleml:Atom>
+              <ruleml:Rel>suspended_sentence_possible</ruleml:Rel>
+              <ruleml:Var>Defendant</ruleml:Var>
+            </ruleml:Atom>
+          </ruleml:Negation>
+        </ruleml:then>
+      </ruleml:Rule>
+    </lrml:PrescriptiveStatement>
+
+    <!-- ================================================================== -->
+    <!-- PENALTY STATEMENTS (Kaznene odredbe)                               -->
+    <!-- ================================================================== -->
+
+    <!-- Art. 258 basic: 2-12 years = 24-144 months -->
+    <lrml:PenaltyStatement key="pen1">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_min"/>
+        <ruleml:Ind>24</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <lrml:PenaltyStatement key="pen2">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>144</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- Art. 258 qualified: 5-15 years = 60-180 months -->
+    <lrml:PenaltyStatement key="pen3">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_min"/>
+        <ruleml:Ind>60</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <lrml:PenaltyStatement key="pen4">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>180</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- Art. 260 basic: up to 3 years = 0-36 months -->
+    <lrml:PenaltyStatement key="pen5">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>36</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- Art. 260 gain: 6 months - 5 years = 6-60 months -->
+    <lrml:PenaltyStatement key="pen6">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_min"/>
+        <ruleml:Ind>6</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <lrml:PenaltyStatement key="pen7">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>60</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- Art. 260 high (>3000 EUR): 1-8 years = 12-96 months -->
+    <lrml:PenaltyStatement key="pen8">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_min"/>
+        <ruleml:Ind>12</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <lrml:PenaltyStatement key="pen9">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>96</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- Art. 260 very high (>30000 EUR): 2-10 years = 24-120 months -->
+    <lrml:PenaltyStatement key="pen10">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_min"/>
+        <ruleml:Ind>24</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <lrml:PenaltyStatement key="pen11">
+      <ruleml:Atom>
+        <ruleml:Rel iri=":to_imprison_max"/>
+        <ruleml:Ind>120</ruleml:Ind>
+      </ruleml:Atom>
+    </lrml:PenaltyStatement>
+
+    <!-- ================================================================== -->
+    <!-- REPARATION STATEMENTS (linking penalties to rules)                  -->
+    <!-- ================================================================== -->
+
+    <!-- Art. 258 basic penalties linked to ps1 (guilty_258_basic) -->
+    <lrml:ReparationStatement key="rep1">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen1"/>
+        <lrml:toPrescriptiveStatement keyref="#ps1"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <lrml:ReparationStatement key="rep2">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen2"/>
+        <lrml:toPrescriptiveStatement keyref="#ps1"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- Art. 258 qualified penalties linked to ps2 (guilty_258_qualified) -->
+    <lrml:ReparationStatement key="rep3">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen3"/>
+        <lrml:toPrescriptiveStatement keyref="#ps2"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <lrml:ReparationStatement key="rep4">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen4"/>
+        <lrml:toPrescriptiveStatement keyref="#ps2"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- Art. 260 basic penalty linked to ps4 (guilty_260_basic) -->
+    <lrml:ReparationStatement key="rep5">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen5"/>
+        <lrml:toPrescriptiveStatement keyref="#ps4"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- Art. 260 gain penalties linked to ps5 (guilty_260_gain) -->
+    <lrml:ReparationStatement key="rep6">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen6"/>
+        <lrml:toPrescriptiveStatement keyref="#ps5"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <lrml:ReparationStatement key="rep7">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen7"/>
+        <lrml:toPrescriptiveStatement keyref="#ps5"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- Art. 260 high penalties linked to ps7 (guilty_260_high) -->
+    <lrml:ReparationStatement key="rep8">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen8"/>
+        <lrml:toPrescriptiveStatement keyref="#ps7"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <lrml:ReparationStatement key="rep9">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen9"/>
+        <lrml:toPrescriptiveStatement keyref="#ps7"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- Art. 260 very high penalties linked to ps9 (guilty_260_very_high) -->
+    <lrml:ReparationStatement key="rep10">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen10"/>
+        <lrml:toPrescriptiveStatement keyref="#ps9"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <lrml:ReparationStatement key="rep11">
+      <lrml:Reparation>
+        <lrml:appliesPenalty keyref="#pen11"/>
+        <lrml:toPrescriptiveStatement keyref="#ps9"/>
+      </lrml:Reparation>
+    </lrml:ReparationStatement>
+
+    <!-- ================================================================== -->
+    <!-- OVERRIDE STATEMENTS (Superiority / Defeasibility relations)        -->
+    <!-- Format: under="#psX" is SUPERIOR to over="#psY"                    -->
+    <!-- ================================================================== -->
+
+    <!-- Art. 258: qualified form negation (ps3) defeats basic (ps1) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps1" under="#ps3"/>
+    </lrml:OverrideStatement>
+
+    <!-- Art. 260: gain form negation (ps6) defeats basic (ps4) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps4" under="#ps6"/>
+    </lrml:OverrideStatement>
+
+    <!-- Art. 260: high gain negation (ps8) defeats basic gain (ps5) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps5" under="#ps8"/>
+    </lrml:OverrideStatement>
+
+    <!-- Art. 260: very high gain negation (ps10) defeats high gain (ps7) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps7" under="#ps10"/>
+    </lrml:OverrideStatement>
+
+    <!-- Sentencing: aggravating (ps20) blocks mitigation (ps19) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps19" under="#ps20"/>
+    </lrml:OverrideStatement>
+
+    <!-- Sentencing: aggravating (ps22) blocks suspended sentence (ps21) -->
+    <lrml:OverrideStatement>
+      <lrml:Override over="#ps21" under="#ps22"/>
+    </lrml:OverrideStatement>
+
+  </lrml:Statements>
+
 </lrml:LegalRuleML>

@@ -231,6 +231,24 @@ rule_mitigating_attempt:
   penalty:smanjenje_moguce(?X),
   penalty:ublazavanje_za_pokusaj(?X).
 
+rule_mitigating_remorse:
+  fact:izrazeno_kajanje(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "kajanje"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_family:
+  fact:ima_djecu(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "porodicne_prilike"),
+  penalty:smanjenje_moguce(?X).
+
+rule_mitigating_poor:
+  fact:lose_imovno_stanje(?X)
+  =>
+  legal:olaksavajuca_okolnost(?X, "lose_imovno_stanje"),
+  penalty:smanjenje_moguce(?X).
+
 %% ==============================================================
 %% AGGRAVATING FACTORS (Otezavajuce okolnosti)
 %% ==============================================================
@@ -271,22 +289,122 @@ rule_aggravating_multiple:
 %% SENTENCING RULES (Odmjeravanje kazne)
 %% ==============================================================
 
-%% Suspended sentence eligibility (Uslovna osuda - cl. 53 KZ CG)
-%% Moze se izreci za kaznu do 2 godine
+%% === GENERAL SENTENCING - čl. 42 KZ CG ===
+%% Sud odmjerava kaznu u granicama propisanim zakonom,
+%% uzimajuci u obzir olaksavajuce i otezavajuce okolnosti
+
+%% Suspended sentence eligibility (Uslovna osuda - cl. 52-54 KZ CG)
+%% Moze se izreci kad sud utvrdi kaznu do 2 godine
 rule_suspended_sentence:
-  penalty:zatvor_max(?X, ?Max) AND
-  lessThanOrEqual(?Max, 2) AND
+  penalty:utvrdjena_kazna_mjeseci(?X, ?Months) AND
+  lessThanOrEqual(?Months, 24) AND
   legal:olaksavajuca_okolnost(?X, ?_)
   =>
-  legal:moguca_uslovna_osuda(?X).
+  legal:moguca_uslovna_osuda(?X),
+  legal:primjena_cl52(?X).
 
-%% Sentence reduction (Ublazavanje kazne - cl. 45 KZ CG)
+%% === SENTENCE MITIGATION - čl. 45 KZ CG (Ublazavanje kazne) ===
+%% Sud moze izreci kaznu ispod granice propisane zakonom kad:
+%% 1) zakon predvidja da se ucinilac moze blaze kazniti
+%% 2) zakon predvidja oslobodjenje, a sud ga ne oslobodi
+%% 3) utvrdi narocito olaksavajuce okolnosti
+
+%% Ublazavanje allowed when 2+ different mitigating factors exist
+rule_ublazavanje_eligible:
+  legal:olaksavajuca_okolnost(?X, ?F1) AND
+  legal:olaksavajuca_okolnost(?X, ?F2) AND
+  notEqual(?F1, ?F2) AND
+  NOT legal:otezavajuca_okolnost(?X, "ranije_osudivan")
+  =>
+  legal:ublazavanje_kazne_dozvoljeno(?X),
+  legal:primjena_cl45(?X).
+
+%% Ublazavanje also allowed with single strong mitigating factor + no aggravating
+rule_ublazavanje_eligible_strong:
+  legal:olaksavajuca_okolnost(?X, "priznanje_krivice") AND
+  legal:olaksavajuca_okolnost(?X, "ranije_neosudjivan") AND
+  NOT legal:otezavajuca_okolnost(?X, ?_)
+  =>
+  legal:ublazavanje_kazne_dozvoljeno(?X),
+  legal:narocito_olaksavajuce(?X),
+  legal:primjena_cl45(?X).
+
+%% === MITIGATION LIMITS - čl. 46 KZ CG (Granice ublazavanja) ===
+
+%% čl. 46 st. 1 tac. 1: min >= 5 godina -> moze do 2 godine
+rule_ublazavanje_46_1:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, ?Min) AND
+  greaterThanOrEqual(?Min, 5)
+  =>
+  penalty:ublazena_kazna_min(?X, 2),
+  legal:primjena_cl46_tac1(?X).
+
+%% čl. 46 st. 1 tac. 2: min >= 3 godina -> moze do 1 godine
+rule_ublazavanje_46_2:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, ?Min) AND
+  greaterThanOrEqual(?Min, 3) AND
+  lessThan(?Min, 5)
+  =>
+  penalty:ublazena_kazna_min(?X, 1),
+  legal:primjena_cl46_tac2(?X).
+
+%% čl. 46 st. 1 tac. 3: min = 2 godine -> moze do 6 mjeseci
+%% THIS IS THE KEY RULE for art. 258 st. 1 and 258 st. 2 cases!
+rule_ublazavanje_46_3:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, 2)
+  =>
+  penalty:ublazena_kazna_min(?X, 0.5),
+  legal:primjena_cl46_tac3(?X).
+
+%% čl. 46 st. 1 tac. 4: min = 1 godina -> moze do 3 mjeseca
+rule_ublazavanje_46_4:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, 1)
+  =>
+  penalty:ublazena_kazna_min(?X, 0.25),
+  legal:primjena_cl46_tac4(?X).
+
+%% čl. 46 st. 1 tac. 5: min < 1 godina -> moze do 30 dana
+rule_ublazavanje_46_5:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, ?Min) AND
+  lessThan(?Min, 1) AND
+  greaterThan(?Min, 0)
+  =>
+  penalty:ublazena_kazna_min(?X, 0.083),
+  legal:primjena_cl46_tac5(?X).
+
+%% čl. 46 st. 1 tac. 6: min unspecified -> novcana kazna umjesto zatvora
+rule_ublazavanje_46_6:
+  legal:ublazavanje_kazne_dozvoljeno(?X) AND
+  penalty:zatvor_min(?X, 0)
+  =>
+  penalty:novcana_kazna_moguca(?X),
+  legal:primjena_cl46_tac6(?X).
+
+%% === RELEASE FROM PUNISHMENT - čl. 47 KZ CG ===
+
+%% čl. 47 st. 3: Oslobodjenje od kazne za restituciju
+%% Ucinilac djela za koje je propisana kazna do 5 godina,
+%% koji nadoknadi stetu, moze biti oslobodjen od kazne
+rule_oslobodjenje_restitucija:
+  fact:nadoknadio_stetu(?X) AND
+  penalty:zatvor_max(?X, ?Max) AND
+  lessThanOrEqual(?Max, 5)
+  =>
+  legal:oslobodjenje_od_kazne_moguce(?X),
+  legal:primjena_cl47(?X).
+
+%% Sentence reduction with multiple mitigating factors (general)
 rule_sentence_reduction:
   legal:olaksavajuca_okolnost(?X, ?F1) AND
   legal:olaksavajuca_okolnost(?X, ?F2) AND
   notEqual(?F1, ?F2)
   =>
-  legal:ublazavanje_kazne_dozvoljeno(?X).
+  legal:smanjenje_kazne_dozvoljeno(?X).
 
 %% Sentence increase
 rule_sentence_increase:
@@ -309,6 +427,7 @@ rule_sticaj:
 %% ==============================================================
 %% META-RULES: RULE PRIORITY (Superiornost pravila)
 %% Qualified forms defeat basic forms
+%% Ublazavanje rules defeat basic sentencing
 %% ==============================================================
 
 superiority(rule_258_3, rule_258_1).
@@ -320,5 +439,18 @@ superiority(rule_260_2, rule_260_1a).
 superiority(rule_260_2, rule_260_1b).
 superiority(rule_260_2, rule_260_1c).
 superiority(rule_260_2, rule_260_1d).
+
+%% Ublazavanje rules override basic penalty minimums
+superiority(rule_ublazavanje_46_1, rule_258_3).
+superiority(rule_ublazavanje_46_3, rule_258_1).
+superiority(rule_ublazavanje_46_3, rule_258_2a).
+superiority(rule_ublazavanje_46_3, rule_258_2b).
+superiority(rule_ublazavanje_46_4, rule_260_3).
+
+%% More specific mitigation rules override less specific
+superiority(rule_ublazavanje_46_1, rule_ublazavanje_46_2).
+superiority(rule_ublazavanje_46_2, rule_ublazavanje_46_3).
+superiority(rule_ublazavanje_46_3, rule_ublazavanje_46_4).
+superiority(rule_ublazavanje_46_4, rule_ublazavanje_46_5).
 
 %% END OF RULES
