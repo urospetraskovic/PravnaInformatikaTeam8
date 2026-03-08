@@ -1,26 +1,9 @@
 {
-  "name": "montenegrian-legal-cbr",
+  "name": "pravna-informatika-project",
   "version": "1.0.0",
-  "description": "Web UI for Montenegrian Legal Case-Based Reasoning System",
-  "main": "src/web/server.js",
+  "description": "Pravna Informatika - Team 8 Project",
   "scripts": {
-    "start": "node src/web/server.js",
-    "dev": "node src/web/server.js"
-  },
-  "keywords": [
-    "legal",
-    "case-based-reasoning",
-    "montenegro",
-    "precedent"
-  ],
-  "author": "Pravna Informatika Team 8",
-  "license": "MIT",
-  "dependencies": {
-    "@xmldom/xmldom": "^0.8.11",
-    "express": "^4.18.2",
-    "open": "^11.0.0"
-  },
-  "engines": {
-    "node": ">=14.0.0"
+    "start": "cd web && npm start",
+    "install-deps": "cd web && npm install"
   }
 }

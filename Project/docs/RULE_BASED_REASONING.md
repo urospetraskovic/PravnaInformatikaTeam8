@@ -14,7 +14,7 @@
 
 ### Локација фајлова
 ```
-data/rules/
+rule_reasoning/rules/
 ├── legal_rules.xml      # 20 правила у LegalRuleML формату
 ├── rulebase.lrml        # Копија за DR-Device
 ├── drdevice_rules.ddr   # DR-Device Defeasible Logic правила
@@ -89,7 +89,7 @@ data/rules/
 ## Задатак 4: NLP екстракција чињеница
 
 ### Скрипта за екстракцију
-**Фајл**: [extract_legal_facts.py](extract_legal_facts.py)
+**Фајл**: `scripts/demo_reasoning.py` (NLP екстракција је интегрисана у главну скрипту)
 
 ### Функционалности
 
@@ -139,10 +139,10 @@ data/rules/
 
 ```powershell
 # Екстракција из једног случаја
-py extract_legal_facts.py --single "data/cases/akomantoso/Case_K_277_22.xml"
+py scripts/demo_reasoning.py --mode single --case "data/cases/akomantoso/Case_K_277_22.xml"
 
 # Групна обрада свих случајева
-py extract_legal_facts.py --cases "data/cases/akomantoso" --output "data/rules/extracted_facts"
+py scripts/demo_reasoning.py --mode batch
 ```
 
 ### Генерисани facts.xml формат
@@ -180,27 +180,27 @@ py extract_legal_facts.py --cases "data/cases/akomantoso" --output "data/rules/e
 ## Задатак 5: Расуђивање по правилима
 
 ### Скрипта за расуђивање
-**Фајл**: [reasoning_engine.py](reasoning_engine.py)
+**Фајл**: интегрисано у `scripts/demo_reasoning.py`
 
 ### Демо скрипта
-**Фајл**: [demo_reasoning.py](demo_reasoning.py)
+**Фајл**: `scripts/demo_reasoning.py`
 
 ### Режими рада
 
 #### 1. Интерактивни режим
 ```powershell
-py demo_reasoning.py --mode interactive
+py scripts/demo_reasoning.py --mode interactive
 ```
 Омогућава ручни унос чињеница кроз конзолни интерфејс.
 
 #### 2. Појединачни случај
 ```powershell
-py demo_reasoning.py --mode single --case "data/cases/akomantoso/Case_K_277_22.xml"
+py scripts/demo_reasoning.py --mode single --case "data/cases/akomantoso/Case_K_277_22.xml"
 ```
 
 #### 3. Групна обрада
 ```powershell
-py demo_reasoning.py --mode batch
+py scripts/demo_reasoning.py --mode batch
 ```
 
 ### Пример излаза
@@ -250,7 +250,7 @@ py demo_reasoning.py --mode batch
 1. Инсталирајте Java 8
 2. Преузмите DR-Device са: http://dr-device.2i2c.eu/
 3. Поставите `DR_DEVICE_PATH` environment variable
-4. Користите правила из `data/rules/drdevice_rules.ddr`
+4. Користите правила из `rule_reasoning/rules/drdevice_rules.ddr`
 
 Ако DR-Device није доступан, систем аутоматски користи Python reasoning engine.
 
@@ -260,22 +260,23 @@ py demo_reasoning.py --mode batch
 
 ```
 Project/
-├── extract_legal_facts.py    # NLP екстракција чињеница
-├── reasoning_engine.py       # Engine за расуђивање
-├── demo_reasoning.py         # Демо скрипта
+├── scripts/
+│   └── demo_reasoning.py         # Демо скрипта + NLP екстракција + расуђивање
+├── rule_reasoning/
+│   ├── dr-device/                # DR-Device алат
+│   └── rules/
+│       ├── legal_rules.xml       # LegalRuleML правила
+│       ├── drdevice_rules.ddr    # Prolog-style правила
+│       ├── legal_ontology.n3     # RDF онтологија
+│       ├── facts.xml             # Шаблон чињеница
+│       ├── facts_example.xml     # Пример чињеница
+│       └── output/               # Резултати расуђивања
 ├── data/
-│   ├── rules/
-│   │   ├── legal_rules.xml       # LegalRuleML правила
-│   │   ├── rulebase.lrml         # DR-Device правила
-│   │   ├── drdevice_rules.ddr    # Prolog-style правила
-│   │   ├── legal_ontology.n3     # RDF онтологија
-│   │   ├── facts.xml             # Шаблон чињеница
-│   │   ├── facts_example.xml     # Пример чињеница
-│   │   └── output/               # Резултати расуђивања
 │   └── cases/
-│       └── akomantoso/           # 100+ Akoma Ntoso случајева
+│       └── akomantoso/           # 127 Akoma Ntoso случајева
+├── web/                          # Express веб апликација
 └── docs/
-    └── DR_DEVICE_SETUP.md        # Упутство за DR-Device
+    └── RULE_BASED_REASONING.md   # Овај документ
 ```
 
 ---
@@ -285,17 +286,17 @@ Project/
 ### Покрените демо са примером:
 ```powershell
 cd Project
-py demo_reasoning.py --mode single --case "data\cases\akomantoso\Case_K_277_22.xml"
+py scripts/demo_reasoning.py --mode single --case "data\cases\akomantoso\Case_K_277_22.xml"
 ```
 
 ### Интерактивни тест:
 ```powershell
-py demo_reasoning.py --mode interactive
+py scripts/demo_reasoning.py --mode interactive
 ```
 
 ### Групна обрада:
 ```powershell
-py demo_reasoning.py --mode batch
+py scripts/demo_reasoning.py --mode batch
 ```
 
 ---

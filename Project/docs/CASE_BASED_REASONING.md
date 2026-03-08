@@ -42,7 +42,7 @@
 ## Структура пројекта
 
 ```
-presude-cbr/
+case_reasoning/presude-cbr/
 ├── pom.xml                              # Maven конфигурација (jCOLIBRI 3.2)
 ├── src/main/java/
 │   ├── cbr/CbrApplication.java          # Главна CBR апликација
@@ -64,7 +64,7 @@ presude-cbr/
 
 ### Компајлирање и покретање
 ```bash
-cd presude-cbr
+cd case_reasoning/presude-cbr
 mvn compile exec:java -Dexec.mainClass="cbr.CbrApplication"
 ```
 
@@ -85,11 +85,11 @@ java -cp target/presude-cbr-1.0.0.jar cbr.CbrApplication
 
 ## Екстракција података
 
-Скрипта `extract_cases_to_csv.py` аутоматски парсира свих 127 Akomanotoso XML докумената
+Скрипта `scripts/extract_cases_to_csv.py` аутоматски парсира свих 127 Akomanotoso XML докумената
 из `data/cases/akomantoso/` и генерише CSV фајл за CBR систем.
 
 ```bash
-python extract_cases_to_csv.py
+python scripts/extract_cases_to_csv.py
 ```
 
 ## Образложење функција сличности
