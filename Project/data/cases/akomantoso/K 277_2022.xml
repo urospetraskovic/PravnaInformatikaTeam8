@@ -48,7 +48,7 @@
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>30,00</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 16. juna 2021. godine, u Podgorici, svjesna svog djela čije izvršenje je htjela, znajući da je njeno djelo zabranjeno, upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je platnu karticu - Mastercard debitnu karticu Addiko bank AD Podgorica broj 535505_7404, koja je bila izdata oštećenoj Ž. M., a koju je prethodno od iste neovlašćeno oduzela i prisvojila u junu 2021. godine, upotrijebila na bankomatu Crnogorske komercijalne banke AD Podgorica, koji se nalazi u Tržnom centru "Mall of Montenegro", u Bulevaru Save Kovačevića br. 74, te u 15,45 časova sa računa oštećene broj 9001334139 otvorenog u Addiko bank AD Podgorica podigla novac u iznosu od 200,00 eura, a u 15,46 časova novac u iznosu od 100,00 eura, te na taj način sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 300,00 eura</opisSlucaja>
         <svjedoci>
           <svjedok>oštećene Ž.</svjedok>
@@ -67,7 +67,7 @@ Utvrđujući da li postoji dovoljno dokaza o krivici okrivljene za predmetno kri
           <iznos>30,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Marine Sekulić</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
       </proprietary>

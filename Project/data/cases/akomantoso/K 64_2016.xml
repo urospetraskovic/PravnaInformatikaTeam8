@@ -78,9 +78,10 @@ Svjedok S.. M.. je u svom iskazu u bitnom istakao da je zaposlen u apoteci »Mel
           <iznos>8,45 EUR</iznos>
           <iznos>60,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <zapisnicar>Rade Nikolić</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

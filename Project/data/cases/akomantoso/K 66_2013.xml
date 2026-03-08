@@ -35,7 +35,8 @@
         <datumNormalizovan>2013-01-01</datumNormalizovan>
         <godina>2013</godina>
         <sudija>Mariji Ćupić</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Aleksandre Martinović</zapisnicar>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>3(tri) mjeseca</kazna>
@@ -45,6 +46,11 @@
         <iznosi>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvoda iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>iskaza svjedoka K</dokaz>
+        </dokazi>
+        <prebivaliste>Cetinju</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -57,6 +63,14 @@ Osnovni Sud u CETINJU, 66/13, sudija Mariji Ćupić</p>
           <p>Dana 09. 04. 2013. godine, oko 23,30 časova, na raskrsnici magistralnih puteva Cetinje- Podgorica-Budva, iako je znao da je pribavljanje i posjedovanje lažnih platnih kartica zabranjeno, voljno držao dvije lažne platne-bankovne kartice za podizanje novca, navodno izdate od strane „NLB Montenegrobanke“, na njegovo ime, koje je prethodno pribavio od za sada nepoznatog lica, u namjeri da ih upotrebi kao prave, i to karticu broj 6224 0232 2315 2620, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 0602 2620, izdatoj od strane JP Morgan Chase Bank N.A, Colombus.Ohio-United States of America, i karticu broj 6224 0232 2315 5962, na čijoj su magnetnoj traci unijeti podaci koji pripadaju kartici broj 4782 0020 1781 5962, takođe izdatoj od strane JP Morgan Chase Bank N.A.,Colombus, Ohio-United States of America,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz kaznene evidencije na ime okrivljenog</p>
+            <p>• iskaza svjedoka K</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

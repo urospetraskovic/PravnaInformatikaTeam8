@@ -46,7 +46,7 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>, Što je, U periodu od .. do .. godine na teritoriji opštine B., B., U.i P. u namjeri da sebi pribavi protivpravnu imovinsku korist, nabavio lažne platne kartice brojeva ., . ., . , ., ., . ., a koje su navodno bile izdate od "C.e b. .", "C. S. .", "C. bank, NY", "F. card S., NA", koje je upotrijebio kao prave kartice, na način što je koristio za plaćanje robe i usluga, i to : - dana .. godine karticu br., navodno izdate od "C.bank, ." za plaćanje računa na benzinskoj stanici u P., jednog računa u iznosu od .€, sve na štetu „..“, - dana .. godine kartice br. , navodno izdate od "C. S. ." u pet navrata za plaćanje usluga u kazinu "M." B. u iznosima od . €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C.bank ." za plaćanje usluga u kazinu "M." u dva navrata u iznosu od . € i .€, a zatim i za plaćanje usluga kupovine goriva na benzinskoj stanici u B. u iznosu od . € i . €, na štetu „.“, - dana .. godine karticu br. ., navodno izdate od "C. bank ." za plaćanje računa u prodavnici računarske opreme "G.c." iz P. u iznosu od 1001,75 € na štetu „.anke“, - dana .. godine, karticu br. ., navodno izdate od "C. bank ." za plaćanje u četiri navrata za kupovinu proizvoda u CD shopu "Loud" u Ulcinju u iznosima od . sve na štetu „.anke“, - dana .. godine, karticu br. . navodno izdate od "C.." za plaćanje u dva navrata proizvoda kupljenih u prodavnici "R." u B.u iznosima .. €, sve na štetu „..“, - dana .. godine, karticu br. . navodno izdate od "C" za plaćanje u dva n</opisSlucaja>
         <dokazi>
           <dokaz>spise predmeta K. .</dokaz>
@@ -61,9 +61,10 @@
           <iznos>120 EUR</iznos>
         </iznosi>
         <zapisnicar>Jadranke Golub</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <prebivaliste>Podgorici</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>

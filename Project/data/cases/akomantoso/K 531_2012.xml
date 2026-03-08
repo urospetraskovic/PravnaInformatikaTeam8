@@ -40,12 +40,12 @@
         <podaciORoditeljima>otac Milorada, majka Brankice</podaciORoditeljima>
         <bracniStatus>neudata</bracniStatus>
         <obrazovanje>SSS</obrazovanje>
-        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>novčana kazna 500 eura</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>dana 19.06.2014. godine u prisustvu zamjenika ODT Kotor Žarka Pajkovića, i okrivljenih, donio je i javno objavio dana 20.06.2014.godine sljedeću</opisSlucaja>
         <svjedoci>
           <svjedok>Porobić B</svjedok>
@@ -66,7 +66,7 @@ Svjedok Porobić Branka je izjavila da je kritičnog dana oko 15h</dokaz>
           <iznos>100,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Ana</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

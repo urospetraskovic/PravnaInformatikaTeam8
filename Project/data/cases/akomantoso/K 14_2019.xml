@@ -36,12 +36,15 @@
         <godina>2019</godina>
         <sudija>Ljiljani Popović</sudija>
         <zapisnicar>Krvavac Mirjane</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,-</opisSlucaja>
         <iznosi>
           <iznos>10,00 EUR</iznos>
           <iznos>20,00 EUR</iznos>
@@ -51,6 +54,17 @@
           <iznos>30,00 EUR</iznos>
           <iznos>27,50 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka-oštećene A</dokaz>
+          <dokaz>iskaza svjedoka-oštećene A</dokaz>
+          <dokaz>iskaz svjedoka-oštećene i u cjelosti ga prihvatio kao objektivan</dokaz>
+          <dokaz>video zapisa br</dokaz>
+          <dokaz>video zapisa izuzetog od CKB banke o podizanju novca na bankomatu dana 08</dokaz>
+          <dokaz>video zapisa izdovjeni su ključne fotografije-frejmovi na kojima je vršeno dodatno poboljša</dokaz>
+          <dokaz>video zapisa CKB banke dana 08</dokaz>
+          <dokaz>video zapisa nesumnjivo je utvrđeno da je optuženi K</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -60,9 +74,23 @@ Osnovni Sud u PLJEVLJIMA, 14/19, sudija Ljiljani Popović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 08.09.2018.godine u ranim jutarnjim satima oko 03,50 časova u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno tuđu pravu platnu karticu vlasništvo oštećene A. A. izdatu od strane C. k. b.-F. P. a koju je neovlašćeno pribavio, upotrijebio i njenom upotrebom pribavio protivpravnu imovinsku korist u iznosu od 130,00 € na način što je naznačenu karticu koja se zajedno sa zapisanim PIN kodom za podizanje novca sa bankomata nalazila u novčaniku oštećene u kombi vozilu parkiranom iza zgrade SDK u P. oduzeo, izvršio podizanje novca na bankomatu C. k. b. u P. u naznačenom iznosu a zatim je vratio u kombi vozilo oštetivši na taj način A. A.za iznos od 130,00 €,-</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka-oštećene A</p>
+            <p>• iskaza svjedoka-oštećene A</p>
+            <p>• iskaz svjedoka-oštećene i u cjelosti ga prihvatio kao objektivan</p>
+            <p>• video zapisa br</p>
+            <p>• video zapisa izuzetog od CKB banke o podizanju novca na bankomatu dana 08</p>
+            <p>• video zapisa izdovjeni su ključne fotografije-frejmovi na kojima je vršeno dodatno poboljša</p>
+            <p>• video zapisa CKB banke dana 08</p>
+            <p>• video zapisa nesumnjivo je utvrđeno da je optuženi K</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

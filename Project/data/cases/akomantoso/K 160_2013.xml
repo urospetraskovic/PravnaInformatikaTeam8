@@ -45,7 +45,7 @@
         <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 49</clanKZ>
-        <kazna>Nepoznat</kazna>
+        <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>1.248,50</novcanaKazna>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -79,7 +79,7 @@ Optuženi T. D.o uzavršnoj riječi je izjavio</dokaz>
           <iznos>40,00 EUR</iznos>
           <iznos>248,50 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <zapisnicar>Popović Ljiljane</zapisnicar><vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

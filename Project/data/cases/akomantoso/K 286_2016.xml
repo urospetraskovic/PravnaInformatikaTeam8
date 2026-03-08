@@ -69,9 +69,10 @@ Svjedok S. N. je u svom iskazu navela da je kritičnog dana radila u svom kiosku
           <iznos>100,00 EUR</iznos>
           <iznos>100,50 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <zapisnicar>Rade Nikolić</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

@@ -58,9 +58,10 @@
           <iznos>50,00 EUR</iznos>
           <iznos>255,26 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>4(četiri)mjeseca</kazna>
+        <zapisnicar>Maraš Ane</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

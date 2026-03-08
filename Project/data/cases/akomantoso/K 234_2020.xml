@@ -36,11 +36,12 @@
         <godina>2020</godina>
         <sudija>pojedincu Dubravki Popović</sudija>
         <zapisnicar>Dijane Đurišić</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>None</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivprav</opisSlucaja>
         <iznosi>
           <iznos>20,00 EUR</iznos>
@@ -52,6 +53,12 @@
           <iznos>200,00 EUR</iznos>
           <iznos>70,00 EUR</iznos>
         </iznosi>
+        <ranijeOsudjivan>Ne</ranijeOsudjivan>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećene P</dokaz>
+          <dokaz>video nadzora utvrđeno da je novac sa njenog računa sa bankomata Prve banke u ova tri dana p</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -64,6 +71,14 @@ Osnovni Sud u BERANAMA, 234/20, sudija pojedincu Dubravki Popović</p>
           <p>U periodu od početka j. mjeseca 2020 godine do početka septembra mjeseca 2020 godine, u svojoj porodčnoj kući u selu D.R.a, opština B., sposobna da shvati značaj svoga djela i upravlja svojim postupcima i svjesna zabranjenosti svoga djela čije je izvršenje htjela, neovlašćeno pribavila i držala tuđu platnu karticu D. M. C. Prve banke broj .........., izdatu na ime njene snahe oštećene P.V.e sa kojom živi u istoj kući, a koju je bez njenog znanja u više navrata upotrijebila iako je znala da je tuđa i da je neovlašćeno pribavljena, na način što je ubacivala u bankomat Prve banke u ul. M. Z. u B. gdje je potom ukucavala pin kod i to dana 09.07.2020 godine u 11,28 časova kada je u dva navrata podigla novac u ukupnom iznosu od ............€, nakon čega je dana 19.08.2020 godine u 12,06 časova sa istog bankomata podigla novac u iznosu od ..........€, dok je dana 24.08.2020 godine u 09,57 časova sa istog bankomata podigla novac u iznosu od .......... € i na taj način sebi pribavila protivprav</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećene P</p>
+            <p>• video nadzora utvrđeno da je novac sa njenog računa sa bankomata Prve banke u ova tri dana p</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

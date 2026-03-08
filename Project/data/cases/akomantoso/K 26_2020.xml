@@ -36,18 +36,21 @@
         <godina>2020</godina>
         <sudija>za istragu</sudija>
         <zapisnicar>None</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 ( šest ) mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana 07.03.2020. godine u Herceg Novom stavljao lažni novac u opticaj, na način što je oko 11 časova na benzinskoj pumpi '' Eko petrol '' u Igalu u vozilu '' Suzuki '' tip '' Spalsh '' reg. oznaka. HN ... , koje je iznajmio u renta car agenciji, natočio goriva u vrijednosti od 10,00 € i za navedenu uslugu dao novčanicu u apoenu od 50,00 € , ser.broj S61771315652 koja je falsifikat što se pokazalo provjerom na aparatu, da bi istog dana oko 12,00 časova pokušao da stavi u opticaj još jednu falsifikovanu novčanicu u apoenu od 50,00 € u maloprodajnom objektu u naselju Đenovići koja posluje u okviru preduzeća '' Tomanović komerc '' a za koju novčanicu je radnik u navedenoj prodavnici posumnjao da je falsifikat o čemu je obavjestio okrivljenog, koji je potom uzeo spornu novčanicu i napustio lice mjesta i sa istim vozilom se udaljio u nepoznatom pravcu, dok je u iznajmljenom apartmanu u kojem je bio privremeno smješten sa prijateljicom Cibina Olgom pronađeno i oduzeto 5 falsifikovanih novčanica u apoenima od po 50,00 € od čega su dvije novčanice sa istim serijskim brojem S61771315552, a ostale tri takođe sa istim serijskim brojem S61771315612, pri čemu je bio svjestan svoga djela i htio njegovo izvršenje,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>10,00 EUR</iznos>
           <iznos>700 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -57,7 +60,7 @@ Osnovni Sud u HERCEG, 26/20, sudija za istragu</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 07.03.2020. godine u Herceg Novom stavljao lažni novac u opticaj, na način što je oko 11 časova na benzinskoj pumpi '' Eko petrol '' u Igalu u vozilu '' Suzuki '' tip '' Spalsh '' reg. oznaka. HN ... , koje je iznajmio u renta car agenciji, natočio goriva u vrijednosti od 10,00 € i za navedenu uslugu dao novčanicu u apoenu od 50,00 € , ser.broj S61771315652 koja je falsifikat što se pokazalo provjerom na aparatu, da bi istog dana oko 12,00 časova pokušao da stavi u opticaj još jednu falsifikovanu novčanicu u apoenu od 50,00 € u maloprodajnom objektu u naselju Đenovići koja posluje u okviru preduzeća '' Tomanović komerc '' a za koju novčanicu je radnik u navedenoj prodavnici posumnjao da je falsifikat o čemu je obavjestio okrivljenog, koji je potom uzeo spornu novčanicu i napustio lice mjesta i sa istim vozilom se udaljio u nepoznatom pravcu, dok je u iznajmljenom apartmanu u kojem je bio privremeno smješten sa prijateljicom Cibina Olgom pronađeno i oduzeto 5 falsifikovanih novčanica u apoenima od po 50,00 € od čega su dvije novčanice sa istim serijskim brojem S61771315552, a ostale tri takođe sa istim serijskim brojem S61771315612, pri čemu je bio svjestan svoga djela i htio njegovo izvršenje,</p>
         </block>
       </arguments>
       <decision>

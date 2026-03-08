@@ -35,9 +35,10 @@
         <datumNormalizovan>2013-01-01</datumNormalizovan>
         <godina>2013</godina>
         <sudija>Jeleni Perović Kovačević</sudija>
-        <zapisnicar>SUDIJA
-
-Slađana Vlahović Jelena Perović Kovačević</zapisnicar>
+        <zapisnicar>Slađana Vlahović</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -56,6 +57,10 @@ Slađana Vlahović Jelena Perović Kovačević</zapisnicar>
           <iznos>027,65 EUR</iznos>
           <iznos>129.49 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka Jovanović Jelene dat na zapisnik pred ODT-om Podgorica Kt</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -68,6 +73,13 @@ Osnovni Sud u PODGORICI, 2/13, sudija Jeleni Perović Kovačević</p>
           <p>Dana 04.novembra 2012. godine, u Podgorici, svjestan svog djela čije je izvršenje htio iako je znao da je njegovo djelo zabranjeno, upotrijebio kao pravu lažnu platnu karticu navodno izdatu od NLB Montenegrobanka AD Podgorica, a na koju su unijeti podaci sa originalne kartice vlasništvo Chase banke iz Sjedinjenih Američkih Država, na način što je u Poslovnom centru Delta City u radnji Grifon computers ovom karticom br.43885760xxxxxxxx u 15:06h i 15:21 h kupio dva lap topa, televizor marke Toshiba u ukupnom iznosu od 2.009,4 eura da bi nakon toga u marketu Voli 5 u ulici Ilije Milačića br.x, u 16:23h i 16:25h koristeći istu platnu karticu kupio robu u ukupnom iznosu od 189,58 eura, i time sebi pribavio protivpravnu imovinsku korist u označenim iznosima</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka Jovanović Jelene dat na zapisnik pred ODT-om Podgorica Kt</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

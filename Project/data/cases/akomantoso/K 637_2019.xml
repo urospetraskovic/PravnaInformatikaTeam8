@@ -47,7 +47,7 @@
         <clanKZ>čl. 260 st. 1</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 12. juna 2023. godine, u PG, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, u više navrata, tuđu pravu platnu karticu, koju je neovlašćeno pribavila, upotrijebila, na način što je platnu karticu "CKB banke" broja ……, vlasništvo oštećenog M.M., koju je oštećeni zaboravio u pekari "S.", u Ul. S.J.P., u 10,44 časa upotrijebila prilikom plaćanja računa od 4,00 eura u navedenoj pekari, nakon čega je u 10,58 časova, platnu karticu ponovo upotrijebila i njome platila vožnju u iznosu od 3,95 eura, taksi udruženju "N.T.", da bi istog dana ponovo upotrijebila karticu prilikom plaćanja računa u marketu "I.C.", u iznosu od 11,78 eura, pa nakon što je oštećeni pozvao banku, kartica je bila blokirana, da bi okrivljena u 13,25 časova, u pekari "D. 11" u Bul. P. Ć. .. ponovo karticu upotrijebila kako bi platila iznos od 32,00 eura, koji nije bio plaćen zbog blokade kartice, nakon čega je na istom mjestu ponovo u 13,26 časova, upotrijebila karticu radi plaćanja računa od 15,00 eura, koji račun takođe nije bio plaćen, da bi u 19,00 časova karticu upotrijebila za plaćanje iznosa od 1,20 eura na "Jugopetrol" benzinskoj stanici, koja transakcija je bila neuspješna,</opisSlucaja>
         <svjedoci>
           <svjedok>sud j</svjedok>
@@ -74,9 +74,10 @@ Saslušan na glavnom pretresu svjedok oštećeni M.M. je ponovio navode iznijete
           <iznos>3,95 EUR</iznos>
           <iznos>1,20 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>3 (tri) mjeseca</kazna>
+        <zapisnicar>Anđele Mitrović</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

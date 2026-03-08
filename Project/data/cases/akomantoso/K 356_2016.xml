@@ -35,13 +35,14 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>Kovačević Vesna</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Nikolić Rade</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</opisSlucaja>
         <iznosi>
           <iznos>40,00 EUR</iznos>
           <iznos>20,00 EUR</iznos>
@@ -53,6 +54,13 @@
           <iznos>200,00 EUR</iznos>
           <iznos>0 EUR</iznos>
         </iznosi>
+        <ranijeOsudjivan>Ne</ranijeOsudjivan>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljene</dokaz>
+          <dokaz>izvoda iz kaznene evidencije</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
+        <prebivaliste>Podgorici</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -62,9 +70,17 @@ Osnovni Sud u NIKŠIĆU, 356/16, sudija Kovačević Vesna</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljene</p>
+            <p>• izvoda iz kaznene evidencije</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

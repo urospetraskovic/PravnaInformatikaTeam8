@@ -40,6 +40,7 @@
         <bracniStatus>razveden</bracniStatus>
         <obrazovanje>VSS</obrazovanje>
         <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258 st. 2</clanKZ>
         <kazna>7 (sedam) mjeseci</kazna>
@@ -83,9 +84,7 @@ Sud nije proveo dokaz - izvršio uvid u CD video zapis sa kamere pijace u K</dok
           <iznos>4,50 EUR</iznos>
           <iznos>000,00 EUR</iznos>
         </iznosi>
-        <zapisnicar>Sudija
-
-Ana</zapisnicar>
+        <zapisnicar>Ana</zapisnicar>
         <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>7 (sedam) mjeseci</kazna>

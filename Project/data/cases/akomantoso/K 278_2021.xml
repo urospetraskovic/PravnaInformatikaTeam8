@@ -40,8 +40,8 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>dana 16.02.2022. godine, u prisustvu zastupnika optužbe M.J., državnog tužioca u Osnovnom državnom tužilaštvu u Podgorici i okrivljenih N.1H. i V.Ž., donio je i dana 17.02.2022. godine, javno objavio P R E S U D U OKRIVLJENI: 1. N.1H., JMB: ..., od oca A.1 i majke N.1, rođene K., rođen 0..0..19... godine u B.P., sa prebivalištem u P. - Ulica ..., državljanin Crne Gore, završio srednju trgovinsku školu, zaposlen u restoranu &quot;P. V...t&quot;, oženjen, nema djecu, lošeg imovnog stanja, osuđivan Presudom Osnovnog suda u Bijelom Polju, K.br. 436/11 od 16.12.2011.godine, zbog krivičnog djela iz čl. 220 st. 1 KZCG, na novčanu kaznu u iznosu od 700,00 eura, 2. V.Ž., JMB: ..., od oca R. i majke M., rođene K.1, rođen 0..1..19... godine, u B., sa prebivalištem u P. - Ulica ..., državljanin Crne Gore, završio srednju trgovinsku školu, zaposlen u firmi &quot;N...k&quot;, oženjen, nema djecu, srednjeg imovnog stanja, neosuđivan, K r i v i s u, Zato što su, i to: 1. Okrivljeni N.1H., Dana 04.03.2021.godine, oko 23,00 časa, u P., svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, upotrijebio tuđu pravu platnu karticu koja je novlašćeno pribavljena, na način što je iskoristio dostupnost podataka platne kartice br. 4105590030004754 izdate od N.. banke, vlasništvo oštećenog pravnog lica &quot;N. s. m.&quot; DOO Podgorica, čija fotografija je prethodno bila objavljena kao izgubljena na društvenoj mreži &quot;Fa...ok&quot; na stranici &quot;P. vremeplov&quot; i sa iste preuzeo podatke o broju kartice, datumu njenog važenja i CCV broj, a zatim je upotrijebio tako što je izvršio transakciju i sa navedene kartice na svoj korisnički nalog &quot;v...er&quot; registrovan na sajtu za online klađenje www.vo...et.me uplatio novčani iznos od 145,00 eura, u kojem iznosu je sebi pribavio protivpravnu imovinsku korist, a oštećenom pravnom licu &quot;N. s. m.&quot; DOO P. pričinio štetu, 2. Okrivljeni V.Ž., U noći između 4. i 5. marta 2021. godine, u vremenskom periodu od 23,00 časa do 00,30 časova, u P., svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, upotrijebio tuđu pravu platnu karticu koja je neovlašćeno pribavljena, na način što je iskoristio dostupnost podataka platne kartice br. 4105590030004754 izdate od N.. banke, vlasništvo oštećenog pravnog lica &quot;N. s. m.&quot; DOO P., čija fotografija je prethodno bila objavljena kao izgubljena na društvenoj mreži &quot;F...ok&quot; na stranici &quot;P. vremeplov&quot; i sa iste preuzeo podatke o broju kartice, datumu njenog važenja i CCV broj, a zatim je upotrijebio i uspješno izvršio tri tansakcije i sa navedene kartice na svoj korisnički nalog &quot;ž...o1991&quot; registrovan na sajtu za online klađenje www.vo...et.me uplatio novac u iznosima i to dva puta po 20,00 eura i jednom od 25,00 eura, odnosno ukupno 65,00 eura, u kojem iznosu je sebi pribavio protivpravnu imovinsku korist a oštećenom pravnom licu &quot;N. s. m.&quot; DOO P. pričinio štetu,</opisSlucaja>
         <iznosi>
           <iznos>210,00 EUR</iznos>
           <iznos>20,00 EUR</iznos>
@@ -54,6 +54,13 @@
           <iznos>460,00 EUR</iznos>
           <iznos>65,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka J</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+          <dokaz>iskaza svjedoka - ovlašćenog predstavnika oštećenog DOO &quot;N</dokaz>
+          <dokaz>iskaza svjedoka M</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +70,19 @@ Osnovni Sud u PODGORICI, 278/21, sudija Nadi Rabrenović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 16.02.2022. godine, u prisustvu zastupnika optužbe M.J., državnog tužioca u Osnovnom državnom tužilaštvu u Podgorici i okrivljenih N.1H. i V.Ž., donio je i dana 17.02.2022. godine, javno objavio P R E S U D U OKRIVLJENI: 1. N.1H., JMB: ..., od oca A.1 i majke N.1, rođene K., rođen 0..0..19... godine u B.P., sa prebivalištem u P. - Ulica ..., državljanin Crne Gore, završio srednju trgovinsku školu, zaposlen u restoranu &quot;P. V...t&quot;, oženjen, nema djecu, lošeg imovnog stanja, osuđivan Presudom Osnovnog suda u Bijelom Polju, K.br. 436/11 od 16.12.2011.godine, zbog krivičnog djela iz čl. 220 st. 1 KZCG, na novčanu kaznu u iznosu od 700,00 eura, 2. V.Ž., JMB: ..., od oca R. i majke M., rođene K.1, rođen 0..1..19... godine, u B., sa prebivalištem u P. - Ulica ..., državljanin Crne Gore, završio srednju trgovinsku školu, zaposlen u firmi &quot;N...k&quot;, oženjen, nema djecu, srednjeg imovnog stanja, neosuđivan, K r i v i s u, Zato što su, i to: 1. Okrivljeni N.1H., Dana 04.03.2021.godine, oko 23,00 časa, u P., svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, upotrijebio tuđu pravu platnu karticu koja je novlašćeno pribavljena, na način što je iskoristio dostupnost podataka platne kartice br. 4105590030004754 izdate od N.. banke, vlasništvo oštećenog pravnog lica &quot;N. s. m.&quot; DOO Podgorica, čija fotografija je prethodno bila objavljena kao izgubljena na društvenoj mreži &quot;Fa...ok&quot; na stranici &quot;P. vremeplov&quot; i sa iste preuzeo podatke o broju kartice, datumu njenog važenja i CCV broj, a zatim je upotrijebio tako što je izvršio transakciju i sa navedene kartice na svoj korisnički nalog &quot;v...er&quot; registrovan na sajtu za online klađenje www.vo...et.me uplatio novčani iznos od 145,00 eura, u kojem iznosu je sebi pribavio protivpravnu imovinsku korist, a oštećenom pravnom licu &quot;N. s. m.&quot; DOO P. pričinio štetu, 2. Okrivljeni V.Ž., U noći između 4. i 5. marta 2021. godine, u vremenskom periodu od 23,00 časa do 00,30 časova, u P., svjestan svog djela čije je izvršenje htio znajući da je isto zabranjeno, upotrijebio tuđu pravu platnu karticu koja je neovlašćeno pribavljena, na način što je iskoristio dostupnost podataka platne kartice br. 4105590030004754 izdate od N.. banke, vlasništvo oštećenog pravnog lica &quot;N. s. m.&quot; DOO P., čija fotografija je prethodno bila objavljena kao izgubljena na društvenoj mreži &quot;F...ok&quot; na stranici &quot;P. vremeplov&quot; i sa iste preuzeo podatke o broju kartice, datumu njenog važenja i CCV broj, a zatim je upotrijebio i uspješno izvršio tri tansakcije i sa navedene kartice na svoj korisnički nalog &quot;ž...o1991&quot; registrovan na sajtu za online klađenje www.vo...et.me uplatio novac u iznosima i to dva puta po 20,00 eura i jednom od 25,00 eura, odnosno ukupno 65,00 eura, u kojem iznosu je sebi pribavio protivpravnu imovinsku korist a oštećenom pravnom licu &quot;N. s. m.&quot; DOO P. pričinio štetu,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka J</p>
+            <p>• iskaz svjedoka M</p>
+            <p>• iskaza svjedoka - ovlašćenog predstavnika oštećenog DOO &quot;N</p>
+            <p>• iskaza svjedoka M</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

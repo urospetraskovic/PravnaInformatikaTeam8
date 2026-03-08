@@ -39,13 +39,15 @@
         <optuzeni>u r</optuzeni>
         <prebivaliste>Podgorici</prebivaliste>
         <bracniStatus>udata</bracniStatus>
-        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <ranijeOsudjivan>ne</ranijeOsudjivan>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>osnovna</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 4 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>27,50</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 28.08.2016.godine u Nikšiću u naselju Kapino Polje, u porodičnoj kući D.. M.., u kojoj je boravila oštećena R.. O.., svjesna djela i htjela njegovo izvršenje, neovlašćeno pribavila tudju pravu platnu – Visa karticu za račun broj ..-..., vlasništvo oštećene R.. O.., koji se vodi kod „Societe Generale Montenegro“, a potom je navedenog dana neovlašćeno upotrijebila u dva navrata i to u 11:33 časova i u 11:36 časova, tako što je sa bankomata – CKB instaliranog u ulici Njegoševa, podigla novčane iznose od 300,oo € i 100,oo € i na taj način za sebe, a na štetu imovine oštećene R..O.., pribavila protivpravnu imovinsku korist u iznosu od 400,oo €</opisSlucaja>
         <dokazi>
           <dokaz>promet za partiju broj .... od 15.11.2016.godine i pročitao izvod iz kaznene evidencije na ime okrivljene.
@@ -67,7 +69,7 @@ Ocjenom navoda optužbe</dokaz>
           <iznos>100,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Krvavac Mirjane</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
       </proprietary>

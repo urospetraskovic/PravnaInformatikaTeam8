@@ -34,12 +34,14 @@
         <datum>11.9.2014</datum>
         <datumNormalizovan>2014-09-11</datumNormalizovan>
         <godina>2014</godina>
-        <sudija>Nepoznat</sudija>
+        <sudija>Camić Zahit</sudija>
         <optuzeni>M. M.</optuzeni>
         <podaciORoditeljima>otac N., majka S.</podaciORoditeljima>
         <prebivaliste>Tutinu u ul</prebivaliste>
         <bracniStatus>neoženjen</bracniStatus>
-        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <ranijeOsudjivan>da</ranijeOsudjivan>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>2 (dvije) godin</kazna>
@@ -66,7 +68,7 @@
           <iznos>45,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Burdžović Adisom</zapisnicar>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>2 (dvije) godin</kazna>
       </proprietary>

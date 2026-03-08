@@ -35,18 +35,29 @@
         <datumNormalizovan>2015-01-01</datumNormalizovan>
         <godina>2015</godina>
         <sudija>Željki Jovović</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Danijele Rajković</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>30 (trideset) dana</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 09. jula 2015. godine, u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, iako je znao da je načinjen lažan novac, to nije prijavio, na način što nije prijavio da je načinjena lažna novčanica u apoenu od 100 eura, serijskog broja N15075191271, koju je dobio od neidentifikovanog lica, a za koju je znao da je lažna,</opisSlucaja>
         <iznosi>
           <iznos>100 EUR</iznos>
           <iznos>100,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>Uvjerenje iz kaznene evidencije na ime okrivljenog M</dokaz>
+          <dokaz>Uvjerenja iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>Potvrdu o privremeno oduzetim predmetima Uprave policije Centar bezbjednosti Podgorica Ku</dokaz>
+          <dokaz>Službenu zabilješku Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
+        <prebivaliste>Spužu</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -59,6 +70,16 @@ Osnovni Sud u PODGORICI, 638/15, sudija Željki Jovović</p>
           <p>Dana 09. jula 2015. godine, u Podgorici, svjestan svog djela čije je izvršenje htio i svjestan da je njegovo djelo zabranjeno, iako je znao da je načinjen lažan novac, to nije prijavio, na način što nije prijavio da je načinjena lažna novčanica u apoenu od 100 eura, serijskog broja N15075191271, koju je dobio od neidentifikovanog lica, a za koju je znao da je lažna,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Uvjerenje iz kaznene evidencije na ime okrivljenog M</p>
+            <p>• Uvjerenja iz kaznene evidencije na ime okrivljenog</p>
+            <p>• Potvrdu o privremeno oduzetim predmetima Uprave policije Centar bezbjednosti Podgorica Ku</p>
+            <p>• Službenu zabilješku Uprave policije Centar bjezbednosti Podgorica Stanica policije za javni red i mir Ku</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

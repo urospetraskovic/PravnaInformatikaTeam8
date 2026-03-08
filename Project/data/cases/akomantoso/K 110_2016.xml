@@ -35,13 +35,15 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>mr Sanja Mirović</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Škrelja Milene</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>dana 08.11.2016.godine u prisustvu zastupnika optužbe Državnog tužioca u Ulcinju Faruka Resulbegovića,a u odsustvu okrivljenog i njegovog branioca,donio je i istog dana javno objavio P R E S U D U Okrivljeni M.S., JMBG xxxxxxxxxxxxxxx, od oca V. i majke V., rodjene J., rodjen xxxxxxxxxxx godine na C., sa prebivalištem u B. – ul.x. P. br. x, službenik SO B. – nadzornik,razveden,otac dvoje mldb.djece,pismen, sa završenom srednjom školom, srednjeg imovnog stanja, državljanin Crne Gore,neosuđivan K r i v je Zato što je dana 09.04.2016. godine, oko 15,00 časova u ulici xx.N. na zelenoj pijaci u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, lažan novac i to: tri novčanice u apoenima od po 100,00 eura, serijskih brojeva Sxxxxxxxxxxxxx, Sxxxxxxxxxxxxxx i Sxxxxxxxxxxxxxx, koje je primio kao prave, pa saznavši da su lažne, jednu od predmetnih novčanica stavio u opticaj na način što je predao M.G., prilikom plaćanja robe u iznosu od 25,00 eura,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>100 EUR</iznos>
@@ -50,6 +52,14 @@
           <iznos>100,00 EUR</iznos>
           <iznos>300 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog M</dokaz>
+          <dokaz>izvoda iz kaznene evidencije generisanog kroz PRIS Osnovnog suda u Ulcinju proizilazi da okrivljeni M</dokaz>
+          <dokaz>izvoda iz kaznene evidencije</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije OB Ulcinj Ku</dokaz>
+          <dokaz>iskaz svjedoka G</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -59,9 +69,20 @@ Osnovni Sud u ULCINJU, 110/16, sudija mr Sanja Mirović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 08.11.2016.godine u prisustvu zastupnika optužbe Državnog tužioca u Ulcinju Faruka Resulbegovića,a u odsustvu okrivljenog i njegovog branioca,donio je i istog dana javno objavio P R E S U D U Okrivljeni M.S., JMBG xxxxxxxxxxxxxxx, od oca V. i majke V., rodjene J., rodjen xxxxxxxxxxx godine na C., sa prebivalištem u B. – ul.x. P. br. x, službenik SO B. – nadzornik,razveden,otac dvoje mldb.djece,pismen, sa završenom srednjom školom, srednjeg imovnog stanja, državljanin Crne Gore,neosuđivan K r i v je Zato što je dana 09.04.2016. godine, oko 15,00 časova u ulici xx.N. na zelenoj pijaci u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, lažan novac i to: tri novčanice u apoenima od po 100,00 eura, serijskih brojeva Sxxxxxxxxxxxxx, Sxxxxxxxxxxxxxx i Sxxxxxxxxxxxxxx, koje je primio kao prave, pa saznavši da su lažne, jednu od predmetnih novčanica stavio u opticaj na način što je predao M.G., prilikom plaćanja robe u iznosu od 25,00 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije za okrivljenog M</p>
+            <p>• izvoda iz kaznene evidencije generisanog kroz PRIS Osnovnog suda u Ulcinju proizilazi da okrivljeni M</p>
+            <p>• izvoda iz kaznene evidencije</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije OB Ulcinj Ku</p>
+            <p>• iskaz svjedoka G</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

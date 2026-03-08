@@ -35,12 +35,14 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>pojedinac Rade Ćetković</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Edine Kraje</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 19.07.2016. godine, u ul. N. M. i K. N. u Pg, svjestan svog djela čije izvršenje je htio znajući da je isto zabranjeno, na bankomatu C. k. banke upotrijebio dvije prave platne kartice, vlasništvo oštećene S. J. , koje je prethodno neovlašćeno pribavio tako što ih je našao na ulici i uzeo radi upotrebe, pa je platnu karticu broj 4174654394593814 i kraticu broj 5320945103601512 ubacio u bankomat i ukucao pin kod, sa namjerom da podigne novac sa računa oštećene, u čemu nije uspio,</opisSlucaja>
         <iznosi>
           <iznos>15 EUR</iznos>
@@ -49,6 +51,21 @@
           <iznos>30,00 EUR</iznos>
           <iznos>104,50 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>nalaz i mišljenje vještaka informaciono tehničke struke nije dao odgovor na pitanje koje je bilo potrebno pojasniti</dokaz>
+          <dokaz>nalaza i mišljenja vještaka informaciono - tehničke struke M</dokaz>
+          <dokaz>nalaza i mišljenja vještaka informaciono – tehničke struke</dokaz>
+          <dokaz>iskaza svjedoka oštećene S</dokaz>
+          <dokaz>Iskaz svjedoka oštećene S</dokaz>
+          <dokaz>iskaza svjedoka oštećene</dokaz>
+          <dokaz>video nadzora ulaza iste poslovnice</dokaz>
+          <dokaz>video snimak kamera koje se nalaze na bankomatima u poslovnicama CKB u ul</dokaz>
+          <dokaz>video nadzora ulaza u poslovnicu u ul</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljenog</dokaz>
+          <dokaz>medicinske dokumentacije na ime okrivljenog i to: Uputa ljekaru specijalisti - D</dokaz>
+          <dokaz>medicinska dokumentacija ne predlaže kako bi se dovela u sumnju uračunjljivost okrivljenog u vrijeme izv</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -61,6 +78,24 @@ Osnovni Sud u PODGORICI, 499/16, sudija pojedinac Rade Ćetković</p>
           <p>Dana 19.07.2016. godine, u ul. N. M. i K. N. u Pg, svjestan svog djela čije izvršenje je htio znajući da je isto zabranjeno, na bankomatu C. k. banke upotrijebio dvije prave platne kartice, vlasništvo oštećene S. J. , koje je prethodno neovlašćeno pribavio tako što ih je našao na ulici i uzeo radi upotrebe, pa je platnu karticu broj 4174654394593814 i kraticu broj 5320945103601512 ubacio u bankomat i ukucao pin kod, sa namjerom da podigne novac sa računa oštećene, u čemu nije uspio,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• nalaz i mišljenje vještaka informaciono tehničke struke nije dao odgovor na pitanje koje je bilo potrebno pojasniti</p>
+            <p>• nalaza i mišljenja vještaka informaciono - tehničke struke M</p>
+            <p>• nalaza i mišljenja vještaka informaciono – tehničke struke</p>
+            <p>• iskaza svjedoka oštećene S</p>
+            <p>• Iskaz svjedoka oštećene S</p>
+            <p>• iskaza svjedoka oštećene</p>
+            <p>• video nadzora ulaza iste poslovnice</p>
+            <p>• video snimak kamera koje se nalaze na bankomatima u poslovnicama CKB u ul</p>
+            <p>• video nadzora ulaza u poslovnicu u ul</p>
+            <p>• medicinsku dokumentaciju na ime okrivljenog</p>
+            <p>• medicinske dokumentacije na ime okrivljenog i to: Uputa ljekaru specijalisti - D</p>
+            <p>• medicinska dokumentacija ne predlaže kako bi se dovela u sumnju uračunjljivost okrivljenog u vrijeme izv</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

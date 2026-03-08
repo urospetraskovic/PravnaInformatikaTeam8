@@ -41,7 +41,7 @@
         <kazna>8 (osam)  mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 06.06.2011.godine, u odsustvu okrivljenih, a u prisustvu njihovih branilaca po službenoj dužnosti advokata R.M. i M.L., te zamjenika ODT Samardžić Nikole, donio je i javno objavio slijedeću P R E S U D U 1.Okrivljeni: E.E.D., 2.Okrivljeni M.S., Kr i v i s u Što su : Dana 01 septembra 2010 godine u Herceg Novom, u namjeri pribavljanja protivpravne imovinske koristi, lažne platne kartice upotrijebili kao prave, tako što su sa bankomata oštećene – “P” banke Crne Gore br.ATM S7EI1704 u vremenu od 19,12 sati do 20,08 sati okrivljeni E. E. u 6 navrata podigao novac po 100 eura, tako što je upotrebom lažne platne kartice sa računa sa kojeg se novac podiže platnom karticom br.4921819944479477 u 3 navrata podigao po 100 eura, te lažnim platnim karticama, čiji je originalni broj 4921828145031268, broj 4462725003123010 i broj 4921827808462976 po jednom podigao po 100 eura, a okrivljeni M.S. sa istog bankomata u 5 navrata podigao po 100 eura, odnosno ukupno 500 eura, na način što je u 2 navrata upotrijebio lažnu platnu karticu čiji je originalni broj 4921817026035548 podigavrši po 100 eura, 2 puta upotrijebio karticu čiji je originalni broj 4921817476855049 podigavši po 100 eura i jednom upotrijebio lažnu platnu karticu čiji je originalni broj 4921828145031268 podigavši 100 eura, te okrivljeni M. S. u 19,43 sati sa bankomata oštećene ATM TID S7EI701 podigao u 2 navrata po 100 eura upotrebivši lažne platne kartice čiji su originalni brojevi 4921817476855049 i br.4921817093117427 čime su na opisani način za sebe pribavili protivpravnu imovinsku korist i to okrivljeni E.E. D. u iznosu od 600 eura, a okrivljeni M.S.u iznosu od 700 eura,</opisSlucaja>
         <iznosi>
           <iznos>600,00 EUR</iznos>
           <iznos>600 EUR</iznos>
@@ -54,6 +54,9 @@
           <iznos>160 EUR</iznos>
           <iznos>500 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaza svjedoka S</dokaz>
+        </dokazi>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +66,16 @@ Osnovni Sud u HERCEG, 31/11, sudija porotnika Medved Zdravka</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 06.06.2011.godine, u odsustvu okrivljenih, a u prisustvu njihovih branilaca po službenoj dužnosti advokata R.M. i M.L., te zamjenika ODT Samardžić Nikole, donio je i javno objavio slijedeću P R E S U D U 1.Okrivljeni: E.E.D., 2.Okrivljeni M.S., Kr i v i s u Što su : Dana 01 septembra 2010 godine u Herceg Novom, u namjeri pribavljanja protivpravne imovinske koristi, lažne platne kartice upotrijebili kao prave, tako što su sa bankomata oštećene – “P” banke Crne Gore br.ATM S7EI1704 u vremenu od 19,12 sati do 20,08 sati okrivljeni E. E. u 6 navrata podigao novac po 100 eura, tako što je upotrebom lažne platne kartice sa računa sa kojeg se novac podiže platnom karticom br.4921819944479477 u 3 navrata podigao po 100 eura, te lažnim platnim karticama, čiji je originalni broj 4921828145031268, broj 4462725003123010 i broj 4921827808462976 po jednom podigao po 100 eura, a okrivljeni M.S. sa istog bankomata u 5 navrata podigao po 100 eura, odnosno ukupno 500 eura, na način što je u 2 navrata upotrijebio lažnu platnu karticu čiji je originalni broj 4921817026035548 podigavrši po 100 eura, 2 puta upotrijebio karticu čiji je originalni broj 4921817476855049 podigavši po 100 eura i jednom upotrijebio lažnu platnu karticu čiji je originalni broj 4921828145031268 podigavši 100 eura, te okrivljeni M. S. u 19,43 sati sa bankomata oštećene ATM TID S7EI701 podigao u 2 navrata po 100 eura upotrebivši lažne platne kartice čiji su originalni brojevi 4921817476855049 i br.4921817093117427 čime su na opisani način za sebe pribavili protivpravnu imovinsku korist i to okrivljeni E.E. D. u iznosu od 600 eura, a okrivljeni M.S.u iznosu od 700 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaza svjedoka S</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

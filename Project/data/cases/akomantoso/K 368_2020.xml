@@ -36,6 +36,9 @@
         <godina>2020</godina>
         <sudija>Sava Mušikić</sudija>
         <zapisnicar>None</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -51,6 +54,14 @@
           <iznos>200,50 EUR</iznos>
           <iznos>35,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>uvjerenje iz kaznene evidencije na ime optuženog od 11</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na ime optuženog od 11</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafološke struke br</dokaz>
+          <dokaz>nalaza i mišljenja vještaka grafološke struke br</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
+        <prebivaliste>Nikšiću</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,6 +74,16 @@ Osnovni Sud u NIKŠIĆU, 368/20, sudija Sava Mušikić</p>
           <p>Dana 11.06.2020. godine u Nikšiću, svjestan svog djela i htio njegovo izvršenje, stavio u opticaj lažnu novčanicu u apoenu od 50,00 € serijskog broja -----------------, na način što je navedenu novčanicu, za koju je znao da je lažna, predao maloljetnom A. S. tražeći od njega da mu u obližnjoj prodavnici, plaćajući tom novčanicom, kupi cigarete i flašu „Coca Cole“, pa je mldb A. S. u prodavnici – kiosku „M.“, vlasništvo S. N. u ulici G. , kupio četiri kutije cigareta i jednu flašu „Coca Cole“, koje je S. N. platio lažnom novčanicom nakon čega je kusur vratio okrivljenom T. D. u,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• uvjerenje iz kaznene evidencije na ime optuženog od 11</p>
+            <p>• uvjerenja iz kaznene evidencije na ime optuženog od 11</p>
+            <p>• nalaz i mišljenje vještaka grafološke struke br</p>
+            <p>• nalaza i mišljenja vještaka grafološke struke br</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

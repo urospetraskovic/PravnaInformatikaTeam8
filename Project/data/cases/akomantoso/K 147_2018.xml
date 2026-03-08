@@ -69,9 +69,10 @@ Nakon sprovedenog dokaznog postupka</dokaz>
           <iznos>100,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>8 (osam) mjeseci</kazna>
+        <zapisnicar>samostalnog referenta Milice Milanović</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

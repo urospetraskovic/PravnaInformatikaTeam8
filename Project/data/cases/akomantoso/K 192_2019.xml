@@ -36,12 +36,14 @@
         <godina>2019</godina>
         <sudija>Nepoznato</sudija>
         <zapisnicar>None</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 11.10.2019. g.,u prisustvu državnog tužioca ODT K.Ž.P. i branioca okrivljenog, advokata S.J.,po zamjeničkom punomoćju advokata D. Đ. a u odsustvu okrivljenog Đ.,kome se sudi u odsustvu, shodno rješenju ovog suda Kv.br. 118/18 od 20.04.2018. g.,dana 18.10.2019. g je donio i javno objavio sljedeću P R E S U D U Okrivljeni O.Đ.JMBG., od oca R.i majke D., rođene B., rođen 19.02.1982. g. u N., stalno nastanjen u K., D. bb ili H.N.I., G, državljanin CG., carinik, neoženjen, bez djece, sa završenom SSS, srednjeg imovnog stanja, ranije osuđivan zbog krivičnog djela iz čl. 388 st. 1 KZ CG na kaznu zatvora u trajanju od tri mjeseca, protiv kojeg se ne vodi postupak za drugo krivično djelo, K r i v j e, Što je, Dana 31.07.2013. g.u naselju D. u K.,u marketu &quot;R.&quot;, koji posluje u okviru DOO &quot;M.&quot; CG, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije je izvršenje htio, stavio u opticaj lažan novac, i to novčanicu od 200,00 eura, ser. broj Y10039903224, na način što je istu predao kasirki S.A. prilikom plaćanja računa za obavljenu kupovinu u marketu,</opisSlucaja>
         <iznosi>
           <iznos>10 EUR</iznos>
           <iznos>50,00 EUR</iznos>
@@ -49,6 +51,23 @@
           <iznos>200 EUR</iznos>
           <iznos>200,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog od 05</dokaz>
+          <dokaz>izvještaj o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB C</dokaz>
+          <dokaz>izvještaja o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB CG br</dokaz>
+          <dokaz>zapisnik o prepoznavanju ODT K</dokaz>
+          <dokaz>zapisnika o prepoznavanju ODT K</dokaz>
+          <dokaz>zapisnik o prepoznavanju predstavlja pravno nevaljan dokaz</dokaz>
+          <dokaz>iskaz svjedoka A</dokaz>
+          <dokaz>iskaza svjedoka V</dokaz>
+          <dokaz>iskaz svjedoka N</dokaz>
+          <dokaz>video snimak u spisima</dokaz>
+          <dokaz>video nadzora</dokaz>
+          <dokaz>video nadzor koji imaju na kasi</dokaz>
+          <dokaz>video nadzor sa kase</dokaz>
+          <dokaz>službenu zabilješku od 02</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -58,9 +77,29 @@ Osnovni Sud u KOTORU, 192/19, sudija Nepoznato</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 11.10.2019. g.,u prisustvu državnog tužioca ODT K.Ž.P. i branioca okrivljenog, advokata S.J.,po zamjeničkom punomoćju advokata D. Đ. a u odsustvu okrivljenog Đ.,kome se sudi u odsustvu, shodno rješenju ovog suda Kv.br. 118/18 od 20.04.2018. g.,dana 18.10.2019. g je donio i javno objavio sljedeću P R E S U D U Okrivljeni O.Đ.JMBG., od oca R.i majke D., rođene B., rođen 19.02.1982. g. u N., stalno nastanjen u K., D. bb ili H.N.I., G, državljanin CG., carinik, neoženjen, bez djece, sa završenom SSS, srednjeg imovnog stanja, ranije osuđivan zbog krivičnog djela iz čl. 388 st. 1 KZ CG na kaznu zatvora u trajanju od tri mjeseca, protiv kojeg se ne vodi postupak za drugo krivično djelo, K r i v j e, Što je, Dana 31.07.2013. g.u naselju D. u K.,u marketu &quot;R.&quot;, koji posluje u okviru DOO &quot;M.&quot; CG, pri čemu je bio uračunljiv i svjestan svog djela i njegove zabranjenosti, a čije je izvršenje htio, stavio u opticaj lažan novac, i to novčanicu od 200,00 eura, ser. broj Y10039903224, na način što je istu predao kasirki S.A. prilikom plaćanja računa za obavljenu kupovinu u marketu,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije za okrivljenog od 05</p>
+            <p>• izvještaj o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB C</p>
+            <p>• izvještaja o tehničkoj analizi novca Nacionalnog centra za analizu novčanica - trezor CB CG br</p>
+            <p>• zapisnik o prepoznavanju ODT K</p>
+            <p>• zapisnika o prepoznavanju ODT K</p>
+            <p>• zapisnik o prepoznavanju predstavlja pravno nevaljan dokaz</p>
+            <p>• iskaz svjedoka A</p>
+            <p>• iskaza svjedoka V</p>
+            <p>• iskaz svjedoka N</p>
+            <p>• video snimak u spisima</p>
+            <p>• video nadzora</p>
+            <p>• video nadzor koji imaju na kasi</p>
+            <p>• video nadzor sa kase</p>
+            <p>• službenu zabilješku od 02</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

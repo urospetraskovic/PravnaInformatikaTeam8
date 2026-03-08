@@ -41,13 +41,18 @@
         <kazna>1 (jedne) godin</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 01.07.2016.godine u prisustvu zastupnika optužbe državnog tužioca kod ODT u Baru D. B., optuženog M. F., njegovog branioca S. P., advokata iz Bara i branioca po službenoj dužnosti optuženog H. G., N. S., advokata iz B., a u odsustvu optuženog H. G., dana 06.07.2016.godine donio je i javno objavio P R E S U D U I Optuženi, H. G., od oca M. i majke S., rodjene Š., rodjen u P., sa prebivalištem u R. K., po zanimanju keramičar, oženjen, pismen, sa završenom osnovnom školom, lošeg imovnog stanja, K r i v je Zato što je, Dana 21.06.2012.godine u pekari &quot;Montenegro II&quot; u naselju Čeluga u Baru, svjestan svog djela i htio je njegovo izvršenje, iako je znao da je njegovo djelo zabranjeno, stavio u opticaj lažan novac - novčanicu u apoenu od 50 eura, serijskog broja X-, na način što je istu predao prilikom plaćanja cijene za dvije pice u navedenoj pekari,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>50 EUR</iznos>
           <iznos>952,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka T</dokaz>
+          <dokaz>iskaza svjedoka T</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -57,9 +62,17 @@ Osnovni Sud u BARU, 34/14, sudija Tamara Spasojević</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 01.07.2016.godine u prisustvu zastupnika optužbe državnog tužioca kod ODT u Baru D. B., optuženog M. F., njegovog branioca S. P., advokata iz Bara i branioca po službenoj dužnosti optuženog H. G., N. S., advokata iz B., a u odsustvu optuženog H. G., dana 06.07.2016.godine donio je i javno objavio P R E S U D U I Optuženi, H. G., od oca M. i majke S., rodjene Š., rodjen u P., sa prebivalištem u R. K., po zanimanju keramičar, oženjen, pismen, sa završenom osnovnom školom, lošeg imovnog stanja, K r i v je Zato što je, Dana 21.06.2012.godine u pekari &quot;Montenegro II&quot; u naselju Čeluga u Baru, svjestan svog djela i htio je njegovo izvršenje, iako je znao da je njegovo djelo zabranjeno, stavio u opticaj lažan novac - novčanicu u apoenu od 50 eura, serijskog broja X-, na način što je istu predao prilikom plaćanja cijene za dvije pice u navedenoj pekari,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka T</p>
+            <p>• iskaza svjedoka T</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

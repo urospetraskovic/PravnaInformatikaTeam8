@@ -35,7 +35,8 @@
         <datumNormalizovan>2012-01-01</datumNormalizovan>
         <godina>2012</godina>
         <sudija>Ćupić Mariji</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Martinović Aleksandre</zapisnicar>
+                <zaposlenost>student</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
@@ -51,6 +52,27 @@
           <iznos>30,00 EUR</iznos>
           <iznos>2,00 EUR</iznos>
         </iznosi>
+        <ranijeOsudjivan>Da</ranijeOsudjivan>
+        <dokazi>
+          <dokaz>izvoda iz kaznene evidencije na njegovo ime</dokaz>
+          <dokaz>iskaza svjedoka S</dokaz>
+          <dokaz>iskaza svjedoka R</dokaz>
+          <dokaz>iskaza svjedoka B</dokaz>
+          <dokaz>iskaza svjedoka M</dokaz>
+          <dokaz>iskaza svjedoka P</dokaz>
+          <dokaz>iskaza svjedoka Ž</dokaz>
+          <dokaz>iskaza svjedoka K</dokaz>
+          <dokaz>iskaza svjedoka F</dokaz>
+          <dokaz>iskaza svjedoka V</dokaz>
+          <dokaz>iskaza svjedoka - ovlašćenih policijskih službenika Uprave policije S</dokaz>
+          <dokaz>iskaza svjedoka je da se radilo o novčanicama za koje je bilo uočljivo da nijesu prave</dokaz>
+          <dokaz>iskaz svjedoka P</dokaz>
+          <dokaz>iskaza svjedoka - ovlašćenih policijskih službenika</dokaz>
+          <dokaz>fotodokumentaciju UP Ispostave Cetinje broj 94/11 od 01</dokaz>
+          <dokaz>fotodokumentacije UP Ispostave Cetinje broj 94/11 od 01</dokaz>
+          <dokaz>medicinske dokumentacije kao i medicinske dokumentacije svježijeg datuma - avgust-septembar 2013</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,6 +85,29 @@ Osnovni Sud u CETINJU, 280/12, sudija Ćupić Mariji</p>
           <p>Neutvrđenog dana u junu mjesecu 2011. godine, iako je znao da je pribavljanje lažnog novca u namjeri da se stavi u opticaj kao pravi zabranjeno, voljno pribavio lažan novac u ukupnom iznosu od 2.100,00 USD dolara, u namjeri da ga stavi u opticaj kao pravi, i to dvadeset jednu novčanicu u apoenima od po 100 USD dolara, serijskih brojeva: AD50711528D, AA12971527D, BB98971522A, AA17071522D, BB98971577A, AD02711528D, B87820132D, B25170921D, B25170921D, B25170921D, B25170921D, B87820132D, B63703169D, B63703169D, B63703169D, B63703169D, B80123132D, B80123132D, B80123132D, B80123132D, B80123132D, iako je u momentu pribavljanja znao da se radi o lažnom novcu, nakon čega ga je, u istoj namjeni, i svjesno držao na dnu ormara, ispod posteljine, u spavaćoj sobi koju koristi njegov otac - P. S. gdje je isti i pronađen prilikom pretresa porodične kuće, izvršenog dana 01. jula 2011. godine, od strane ovlašćenoh službenih lica Uprave policije - Ispostave Cetinje Kri. br. 568/11 od 01.07.2011. godine, </p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz kaznene evidencije na njegovo ime</p>
+            <p>• iskaza svjedoka S</p>
+            <p>• iskaza svjedoka R</p>
+            <p>• iskaza svjedoka B</p>
+            <p>• iskaza svjedoka M</p>
+            <p>• iskaza svjedoka P</p>
+            <p>• iskaza svjedoka Ž</p>
+            <p>• iskaza svjedoka K</p>
+            <p>• iskaza svjedoka F</p>
+            <p>• iskaza svjedoka V</p>
+            <p>• iskaza svjedoka - ovlašćenih policijskih službenika Uprave policije S</p>
+            <p>• iskaza svjedoka je da se radilo o novčanicama za koje je bilo uočljivo da nijesu prave</p>
+            <p>• iskaz svjedoka P</p>
+            <p>• iskaza svjedoka - ovlašćenih policijskih službenika</p>
+            <p>• fotodokumentaciju UP Ispostave Cetinje broj 94/11 od 01</p>
+            <p>• fotodokumentacije UP Ispostave Cetinje broj 94/11 od 01</p>
+            <p>• medicinske dokumentacije kao i medicinske dokumentacije svježijeg datuma - avgust-septembar 2013</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

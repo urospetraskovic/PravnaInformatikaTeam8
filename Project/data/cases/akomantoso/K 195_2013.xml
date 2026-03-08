@@ -35,12 +35,15 @@
         <datumNormalizovan>2013-01-01</datumNormalizovan>
         <godina>2013</godina>
         <sudija>Jovović Željki uz učešće Rajković Danijele kao zapisničara</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Rajković Danijele</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od 21. do 24. novembra 2012. godine, u Podgorici, u ulici Admirala Zmajevića, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, u više navrata, upotrijebio tuđu pravu platnu karticu "Visa" izdatu od strane "Atlas banke" iz Podgorice, koju je neovlašćeno pribavio, na način što je istu uzimao iz novčanika svoje djevojke - oštećene J. M., da bi je zatim upotrijebio dana 21. 11. 2012. godine, tako što je sa bankomata Podgoričke banke, podigao novac u iznosu od 300 eura, te dana 24. 11. 2012. godine, sa istog bankomata, u dva navrata podigao novac u iznosu od po 300,00 eura i jednom u iznosu od 90,00 eura, i na taj način sebi pribavio protivpravnu imovinsku korist u označenim iznosima,</opisSlucaja>
         <iznosi>
           <iznos>000,00 EUR</iznos>
@@ -54,6 +57,14 @@
           <iznos>30,00 EUR</iznos>
           <iznos>900,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvoda iz kaznene evidencije</dokaz>
+          <dokaz>video zapis predmetnog dogadjaja i pročitao izvještaj Uprave policije PJ Podgorice iz kazne</dokaz>
+          <dokaz>video zapis predmetnog dogadjaja</dokaz>
+          <dokaz>video zapis i uvodom u izvod &quot;Atlas banke &quot; Podgorica br</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
+        <prebivaliste>Podgorici</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +77,16 @@ Osnovni Sud u PODGORICI, 195/13, sudija Jovović Željki uz učešće Rajković 
           <p>U periodu od 21. do 24. novembra 2012. godine, u Podgorici, u ulici Admirala Zmajevića, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, u više navrata, upotrijebio tuđu pravu platnu karticu "Visa" izdatu od strane "Atlas banke" iz Podgorice, koju je neovlašćeno pribavio, na način što je istu uzimao iz novčanika svoje djevojke - oštećene J. M., da bi je zatim upotrijebio dana 21. 11. 2012. godine, tako što je sa bankomata Podgoričke banke, podigao novac u iznosu od 300 eura, te dana 24. 11. 2012. godine, sa istog bankomata, u dva navrata podigao novac u iznosu od po 300,00 eura i jednom u iznosu od 90,00 eura, i na taj način sebi pribavio protivpravnu imovinsku korist u označenim iznosima,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz kaznene evidencije</p>
+            <p>• video zapis predmetnog dogadjaja i pročitao izvještaj Uprave policije PJ Podgorice iz kazne</p>
+            <p>• video zapis predmetnog dogadjaja</p>
+            <p>• video zapis i uvodom u izvod &quot;Atlas banke &quot; Podgorica br</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

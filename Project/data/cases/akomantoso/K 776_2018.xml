@@ -35,12 +35,15 @@
         <datumNormalizovan>2018-01-01</datumNormalizovan>
         <godina>2018</godina>
         <sudija>Nadi Rabrenović</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Anđele Mitrović</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od 12.10.2018. godine do 23.10.2018. godine, u Podgorici, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, na način što je, u namjeri da upotrijebi platnu karticu broj xxxxxxxxxxxxxxxxx, izdatu od E. banke AD Podgorica, vlasništvo oštećene Đ. I., iskoristio dostupnost iste i sa nje preuzeo podatke o serijskom broju i "pin kodu", a zatim je u četrnaest navrata upotrijebio, tako što je, sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa e-mail adresom .....XX@icloud.com, preko mobilnog telefona, čija je IP adresa XX.X.XX.XXX. izvršio četrnaest uspješnih transakcija na navedenom internet sajtu za klađenje i to: dana 12.10.2018. godine u iznosu od 10,00 eura; dana 13.10.2018. godine u iznosu od 10,00 eura; dana 14.10.2018. godine u iznosu od 5,00 eura; dana 22.10.2018. godine u iznosu od 5,00 eura i dana 23.10.2018. godine u iznosu od 80,00 eura, zatim četiri puta po 100,00 eura, dva puta po 10,00 eura, dva puta po 20,00 eura</opisSlucaja>
         <iznosi>
           <iznos>10,00 EUR</iznos>
@@ -53,6 +56,10 @@
           <iznos>30,00 EUR</iznos>
           <iznos>620,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećene Đ</dokaz>
+        </dokazi>
+        <prebivaliste>Nikšiću</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -65,6 +72,13 @@ Osnovni Sud u PODGORICI, 776/18, sudija Nadi Rabrenović</p>
           <p>U periodu od 12.10.2018. godine do 23.10.2018. godine, u Podgorici, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, na način što je, u namjeri da upotrijebi platnu karticu broj xxxxxxxxxxxxxxxxx, izdatu od E. banke AD Podgorica, vlasništvo oštećene Đ. I., iskoristio dostupnost iste i sa nje preuzeo podatke o serijskom broju i "pin kodu", a zatim je u četrnaest navrata upotrijebio, tako što je, sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa e-mail adresom .....XX@icloud.com, preko mobilnog telefona, čija je IP adresa XX.X.XX.XXX. izvršio četrnaest uspješnih transakcija na navedenom internet sajtu za klađenje i to: dana 12.10.2018. godine u iznosu od 10,00 eura; dana 13.10.2018. godine u iznosu od 10,00 eura; dana 14.10.2018. godine u iznosu od 5,00 eura; dana 22.10.2018. godine u iznosu od 5,00 eura i dana 23.10.2018. godine u iznosu od 80,00 eura, zatim četiri puta po 100,00 eura, dva puta po 10,00 eura, dva puta po 20,00 eura</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećene Đ</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

@@ -40,8 +40,8 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</opisSlucaja>
         <iznosi>
           <iznos>30 EUR</iznos>
         </iznosi>
@@ -54,7 +54,7 @@ Osnovni Sud u HERCEG, 136/11, sudija Leković Branislavu</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</p>
         </block>
       </arguments>
       <decision>

@@ -36,6 +36,9 @@
         <godina>2010</godina>
         <sudija>porotnika Stanković Tereze</sudija>
         <zapisnicar>PREDSJEDNIK VIJEĆA</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>pismen</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>3 (tri) mjesec</kazna>
@@ -47,6 +50,12 @@
           <iznos>600,000 EUR</iznos>
           <iznos>600 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije po mjestu rodjenja koje se nalaze u inostranstvu</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima UP PJ B</dokaz>
+          <dokaz>iskaz svjedoka - predstavnika oštećene NLB M</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -59,6 +68,15 @@ Osnovni Sud u HERCEG, 177/10, sudija porotnika Stanković Tereze</p>
           <p>Dana ....2010 godine u 23,42 časa u B., Opština HN, upotrijebio lažnu platnu karticu UBS Card Centerr AG – Švajcarska br. ..., za koju je znao da je lažna,a na način što je istu ubacfio u bankomat “NLB M.” ... i nakon izvršene transakcije, sa bankomata podigao novac u iznosu od 600,000 eura i tako sebi pribavio protivpravnu imovinsku korist.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije po mjestu rodjenja koje se nalaze u inostranstvu</p>
+            <p>• potvrdu o privremeno oduzetim predmetima UP PJ B</p>
+            <p>• iskaz svjedoka - predstavnika oštećene NLB M</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

@@ -35,13 +35,16 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>Vesna Kovačević</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Rade Nikolić</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>2 (dvije) godin</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana 06.10.2015.godine u Nikšiću, u objektu diskonta stočne hrane „Baćović“ koji se nalazi u ul.Partizanski put, svjestan svog djela i htio njegovo izvršenje stavio u opticaj lažan novac, novčanicu u apoenu od 100,00 eura, serijskog br. ..., na način što je radniku u navedenom diskontu B.. M.. na ime plaćanja dijela duga koji je imao od ranije za kupovinu robe u navedenom diskontu predao predmetnu novčanicu,</opisSlucaja>
         <iznosi>
           <iznos>10 EUR</iznos>
           <iznos>40,00 EUR</iznos>
@@ -54,6 +57,13 @@
           <iznos>40 EUR</iznos>
           <iznos>200.00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog pa čak i za isto krivično djelo</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije CB Nikšić od 06</dokaz>
+          <dokaz>nalaza i mišljenja vještaka grafologa Kontić Mile koji je nalaz cijenio kao jasan</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
+        <prebivaliste>Nikšiću</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +73,18 @@ Osnovni Sud u NIKŠIĆU, 395/16, sudija Vesna Kovačević</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 06.10.2015.godine u Nikšiću, u objektu diskonta stočne hrane „Baćović“ koji se nalazi u ul.Partizanski put, svjestan svog djela i htio njegovo izvršenje stavio u opticaj lažan novac, novčanicu u apoenu od 100,00 eura, serijskog br. ..., na način što je radniku u navedenom diskontu B.. M.. na ime plaćanja dijela duga koji je imao od ranije za kupovinu robe u navedenom diskontu predao predmetnu novčanicu,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog pa čak i za isto krivično djelo</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije CB Nikšić od 06</p>
+            <p>• nalaza i mišljenja vještaka grafologa Kontić Mile koji je nalaz cijenio kao jasan</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

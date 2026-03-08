@@ -61,9 +61,10 @@ U Službenoj zabilješci Uprave policije Centar bjezbednosti Podgorica Stanica p
           <iznos>100 EUR</iznos>
           <iznos>100,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <zapisnicar>Danijele Rajković</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

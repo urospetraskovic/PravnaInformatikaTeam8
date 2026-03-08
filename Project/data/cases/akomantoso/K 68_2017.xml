@@ -36,18 +36,34 @@
         <godina>2017</godina>
         <sudija>Sanji Čakanović</sudija>
         <zapisnicar>Jadranke Golub</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>7 ( sedam ) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana, lo.o2.2ol7. godine i dana, 11.o2.2ol7. godine u B., pri čemu je bio uračunljiv, svjestan svoga djela, čije izvršenje je htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana, lo.o2.2ol7. godine oko 2o,45 časova u prodavnici &quot;M.i M. - V. R.&quot;, lažnu novčanicu od loo eura serijskog broja S35765426626, predao na kasi prilikom kupovine u marketu, nakon čega je dana, 11.o2.2ol7. godine oko o9,45 časova u poljoprivrednoj apoteci &quot;A. B.&quot;, lažnu novčanicu od loo eura serijskog broja S3576542o996 predao na kasi prilikom kupovine.</opisSlucaja>
         <iznosi>
           <iznos>100 EUR</iznos>
           <iznos>13,30 EUR</iznos>
           <iznos>100,00 EUR</iznos>
           <iznos>10,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Bud</dokaz>
+          <dokaz>zapisnika o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Bud</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+          <dokaz>iskaza svjedoka M</dokaz>
+          <dokaz>video zapisom iz poljoprivredne apoteke A</dokaz>
+          <dokaz>video zapisom iz prodavnice M</dokaz>
+          <dokaz>video zapis iz poljoprivredne apoteke A</dokaz>
+          <dokaz>video zapis iz prodavnice M</dokaz>
+          <dokaz>video zapisa utvrdjuje da je upravo okrivljeni predao novčanicu u iznosu od loo</dokaz>
+          <dokaz>medicinske dokumentacije ZIKS-a na njegovo ime</dokaz>
+          <dokaz>medicinska dokumentacija je provedena kao dokaz u dokaznom postupku</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -57,9 +73,26 @@ Osnovni Sud u KOTORU, 68/17, sudija Sanji Čakanović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana, lo.o2.2ol7. godine i dana, 11.o2.2ol7. godine u B., pri čemu je bio uračunljiv, svjestan svoga djela, čije izvršenje je htio, iako je znao da je njegovo djelo zabranjeno, lažan novac stavio u opticaj i to tako što je prvo dana, lo.o2.2ol7. godine oko 2o,45 časova u prodavnici &quot;M.i M. - V. R.&quot;, lažnu novčanicu od loo eura serijskog broja S35765426626, predao na kasi prilikom kupovine u marketu, nakon čega je dana, 11.o2.2ol7. godine oko o9,45 časova u poljoprivrednoj apoteci &quot;A. B.&quot;, lažnu novčanicu od loo eura serijskog broja S3576542o996 predao na kasi prilikom kupovine.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Bud</p>
+            <p>• zapisnika o pretresanju stana i drugih prostorija UP Grupe za suzbijanje krivičnih djela privrednog kriminaliteta - Jug Bud</p>
+            <p>• iskaz svjedoka M</p>
+            <p>• iskaza svjedoka M</p>
+            <p>• video zapisom iz poljoprivredne apoteke A</p>
+            <p>• video zapisom iz prodavnice M</p>
+            <p>• video zapis iz poljoprivredne apoteke A</p>
+            <p>• video zapis iz prodavnice M</p>
+            <p>• video zapisa utvrdjuje da je upravo okrivljeni predao novčanicu u iznosu od loo</p>
+            <p>• medicinske dokumentacije ZIKS-a na njegovo ime</p>
+            <p>• medicinska dokumentacija je provedena kao dokaz u dokaznom postupku</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

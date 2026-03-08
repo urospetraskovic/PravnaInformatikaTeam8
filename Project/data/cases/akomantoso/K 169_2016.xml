@@ -36,6 +36,8 @@
         <godina>2016</godina>
         <sudija>pojedinac Ivan Adamović</sudija>
         <zapisnicar>Draginje Bošković</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>7 (sedam) mjesec</kazna>
@@ -52,6 +54,20 @@
           <iznos>5,00 EUR</iznos>
           <iznos>35,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>izvoda iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima</dokaz>
+          <dokaz>nalaz i mišljenje vještaka psihijatra dr G</dokaz>
+          <dokaz>nalaz i mišljenje vještaka psihijatra</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica Uprave policije CB Bijelo Polje od 07</dokaz>
+          <dokaz>zapisnika o prepoznavanju lica Uprave policije CB Bijelo Polje od 07</dokaz>
+          <dokaz>iskaz svjedoka N</dokaz>
+          <dokaz>iskaz svjedoka V</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljenog B</dokaz>
+          <dokaz>medicinske dokumentacije na njegovo ime koja je sadržana u medicinskom kartonu</dokaz>
+          <dokaz>medicinsku dokumentaciju u spisima</dokaz>
+        </dokazi>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -64,6 +80,24 @@ Osnovni Sud u BIJELOM, 169/16, sudija pojedinac Ivan Adamović</p>
           <p>-Pribavio lažan novac - 9 (devet) novčanica u apoenima od po 20,00 eura, istog serijskog broja (P73734420404/P66734423443), od kojih je, dana 29. 08. 2016. godine, tri novčanice stavio u opticaj kao prave, na način što je u vremenskom inervalu od 15:00h do 18:00h, u mjestu Podbišće, Lepenac i Krstac, opština Mojkovac, platio prodavcima maloljetnoj J.C.500 grama domaćeg proizvoda od dunja, N.M.jedan kilogram meda i V.R.jedan litar soka, nakon čega se svojim putničkim motornim vozilom marke "Renault-Clio", udaljio u pravcu Mojkovca i odbacio 6 (šest) preostalih novčanica, svjestan svog djela, čije izvršenje je htio i znajući da je njegovo djelo zabranjeno,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog</p>
+            <p>• izvoda iz kaznene evidencije na ime okrivljenog</p>
+            <p>• potvrdu o privremeno oduzetim predmetima</p>
+            <p>• nalaz i mišljenje vještaka psihijatra dr G</p>
+            <p>• nalaz i mišljenje vještaka psihijatra</p>
+            <p>• zapisnik o prepoznavanju lica Uprave policije CB Bijelo Polje od 07</p>
+            <p>• zapisnika o prepoznavanju lica Uprave policije CB Bijelo Polje od 07</p>
+            <p>• iskaz svjedoka N</p>
+            <p>• iskaz svjedoka V</p>
+            <p>• medicinsku dokumentaciju na ime okrivljenog B</p>
+            <p>• medicinske dokumentacije na njegovo ime koja je sadržana u medicinskom kartonu</p>
+            <p>• medicinsku dokumentaciju u spisima</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

@@ -197,7 +197,24 @@ function parseXMLFile(filePath) {
     
     // Override court with proprietary sud if available
     if (sud && sud !== 'Nepoznat') {
-      court = 'Osnovni Sud u ' + sud;
+      // Normalize court name - map raw XML values to proper city names
+      const courtMap = {
+        'podgoric': 'Podgorici', 'nikši': 'Nikšiću', 'niksic': 'Nikšiću',
+        'rožaj': 'Rožajama', 'rozaj': 'Rožajama', 'berana': 'Beranama',
+        'bar': 'Baru', 'kotor': 'Kotoru', 'cetinj': 'Cetinju',
+        'herceg': 'Herceg Novom', 'bijel': 'Bijelom Polju',
+        'pljevlj': 'Pljevljima', 'plav': 'Plavu', 'ulcinj': 'Ulcinju',
+        'danilovgrad': 'Danilovgradu', 'kolašin': 'Kolašinu', 'kolasin': 'Kolašinu',
+      };
+      const sudLower = sud.toLowerCase();
+      let normalizedSud = sud;
+      for (const [key, city] of Object.entries(courtMap)) {
+        if (sudLower.includes(key)) {
+          normalizedSud = city;
+          break;
+        }
+      }
+      court = 'Osnovni sud u ' + normalizedSud;
     }
     
     // Extract case description - prioritize opisSlucaja from proprietary
@@ -714,6 +731,255 @@ app.post('/api/reasoning', async (req, res) => {
     console.error('Reasoning error:', error);
     res.status(500).json({ error: error.message });
   }
+});
+
+// =============================================
+// CBR Similarity Reasoning (Case-Based Reasoning)
+// =============================================
+
+// Load CBR case base from CSV
+const cbrCsvPath = path.join(__dirname, '../../presude-cbr/src/main/resources/presude.csv');
+let cbrCases = [];
+
+function loadCbrCases() {
+  try {
+    if (!fs.existsSync(cbrCsvPath)) {
+      console.warn('⚠️  CBR CSV not found at', cbrCsvPath);
+      return;
+    }
+    const csvContent = fs.readFileSync(cbrCsvPath, 'utf8');
+    const lines = csvContent.trim().split('\n');
+    if (lines.length < 2) return;
+    
+    // Parse header (skip # prefix)
+    const header = lines[0].replace(/^#\s*/, '').split(';');
+    
+    for (let i = 1; i < lines.length; i++) {
+      const values = lines[i].split(';');
+      if (values.length < header.length) continue;
+      const row = {};
+      for (let j = 0; j < header.length; j++) {
+        row[header[j].trim()] = values[j]?.trim() || '';
+      }
+      cbrCases.push(row);
+    }
+    console.log(`📋 CBR case base loaded: ${cbrCases.length} cases`);
+  } catch (err) {
+    console.error('Error loading CBR CSV:', err.message);
+  }
+}
+loadCbrCases();
+
+// Similarity functions for different attribute types
+function exactMatch(a, b) {
+  if (!a || !b || a === 'nepoznat' || b === 'nepoznat') return 0.5;
+  return a.toLowerCase() === b.toLowerCase() ? 1.0 : 0.0;
+}
+
+function numericSimilarity(a, b, maxDiff) {
+  const na = parseFloat(a), nb = parseFloat(b);
+  if (isNaN(na) || isNaN(nb)) return 0.5;
+  const diff = Math.abs(na - nb);
+  return Math.max(0, 1.0 - diff / maxDiff);
+}
+
+function booleanSimilarity(a, b) {
+  if (!a || !b || a === 'nepoznat' || b === 'nepoznat') return 0.5;
+  return a.toLowerCase() === b.toLowerCase() ? 1.0 : 0.0;
+}
+
+// Compute weighted similarity between two CBR case records
+function computeSimilarity(queryCase, targetCase) {
+  const weights = {
+    tipKrivicnogDjela: 5.0,
+    clanKZ: 4.0,
+    ranijeOsudjivan: 3.0,
+    priznanje: 3.0,
+    pokusaj: 2.5,
+    saizvrsilastvo: 2.0,
+    zaposlenost: 1.5,
+    bracniStatus: 1.0,
+    obrazovanje: 1.0,
+    iznos: 4.0,
+    ukupanIznos: 4.0,
+    brojTransakcija: 1.5,
+    brojOkrivljenih: 1.0,
+    brojSvjedoka: 1.0,
+    brojDokaza: 1.5,
+  };
+
+  let totalWeight = 0;
+  let weightedSum = 0;
+
+  // Categorical attributes
+  for (const attr of ['tipKrivicnogDjela', 'clanKZ', 'zaposlenost', 'bracniStatus', 'obrazovanje']) {
+    const w = weights[attr] || 1.0;
+    totalWeight += w;
+    weightedSum += w * exactMatch(queryCase[attr], targetCase[attr]);
+  }
+
+  // Boolean attributes
+  for (const attr of ['ranijeOsudjivan', 'priznanje', 'pokusaj', 'saizvrsilastvo']) {
+    const w = weights[attr] || 1.0;
+    totalWeight += w;
+    weightedSum += w * booleanSimilarity(queryCase[attr], targetCase[attr]);
+  }
+
+  // Numeric attributes
+  const numericConfigs = [
+    ['iznos', 10000], ['ukupanIznos', 50000], ['brojTransakcija', 50],
+    ['brojOkrivljenih', 10], ['brojSvjedoka', 10], ['brojDokaza', 30],
+  ];
+  for (const [attr, maxDiff] of numericConfigs) {
+    const w = weights[attr] || 1.0;
+    totalWeight += w;
+    weightedSum += w * numericSimilarity(queryCase[attr], targetCase[attr], maxDiff);
+  }
+
+  return totalWeight > 0 ? weightedSum / totalWeight : 0;
+}
+
+app.post('/api/cbr-reasoning', (req, res) => {
+  const { caseId } = req.body;
+  if (!caseId) {
+    return res.status(400).json({ error: 'caseId is required' });
+  }
+  if (cbrCases.length === 0) {
+    return res.status(500).json({ error: 'CBR baza slučajeva nije učitana' });
+  }
+
+  // Find the query case in the case database
+  const caseRecord = caseDatabase.find(c =>
+    c.id === caseId || c.caseNumber === caseId || c.case_id === caseId
+  );
+  if (!caseRecord) {
+    return res.status(404).json({ error: 'Predmet nije pronađen' });
+  }
+
+  // Match query case to CBR CSV entry by case number
+  const queryBroj = caseRecord.caseNumber || caseRecord.case_number || '';
+  let queryCase = cbrCases.find(c => c.brojPredmeta === queryBroj);
+  
+  // Fallback: match by id
+  if (!queryCase) {
+    queryCase = cbrCases.find(c => c.id === String(caseRecord.csvIndex));
+  }
+  
+  // Fallback: build query from parsed XML fields if no CSV match
+  if (!queryCase) {
+    queryCase = {
+      tipKrivicnogDjela: caseRecord.crimeType || '',
+      clanKZ: caseRecord.article || '',
+      ranijeOsudjivan: caseRecord.priorConvictions || 'nepoznat',
+      zaposlenost: caseRecord.employment || 'nepoznat',
+      bracniStatus: caseRecord.maritalStatus || 'nepoznat',
+      obrazovanje: caseRecord.education || 'nepoznat',
+      iznos: String(caseRecord.amount || 0),
+      ukupanIznos: String(caseRecord.totalAmount || 0),
+      brojTransakcija: '0',
+      brojOkrivljenih: '1',
+      brojSvjedoka: '0',
+      brojDokaza: '0',
+      priznanje: 'nepoznat',
+      pokusaj: 'ne',
+      saizvrsilastvo: 'ne',
+    };
+  }
+
+  // Compute similarity to all other cases
+  const results = [];
+  for (const target of cbrCases) {
+    if (target.brojPredmeta === queryBroj) continue; // skip self
+    const similarity = computeSimilarity(queryCase, target);
+    results.push({ case: target, similarity });
+  }
+
+  // Sort by similarity descending, get top 5
+  results.sort((a, b) => b.similarity - a.similarity);
+  const topK = 5;
+  const similarCases = results.slice(0, topK).map(r => ({
+    brojPredmeta: r.case.brojPredmeta,
+    sud: r.case.sud,
+    tipKrivicnogDjela: r.case.tipKrivicnogDjela,
+    clanKZ: r.case.clanKZ,
+    vrstaPresude: r.case.vrstaPresude,
+    kaznaUMjesecima: parseFloat(r.case.kaznaUMjesecima) || 0,
+    uslovnaOsuda: r.case.uslovnaOsuda,
+    novcanaKazna: parseFloat(r.case.novcanaKazna) || 0,
+    iznos: parseFloat(r.case.iznos) || 0,
+    ukupanIznos: parseFloat(r.case.ukupanIznos) || 0,
+    ranijeOsudjivan: r.case.ranijeOsudjivan,
+    priznanje: r.case.priznanje,
+    zaposlenost: r.case.zaposlenost,
+    bracniStatus: r.case.bracniStatus,
+    obrazovanje: r.case.obrazovanje,
+    brojTransakcija: parseInt(r.case.brojTransakcija) || 0,
+    brojOkrivljenih: parseInt(r.case.brojOkrivljenih) || 0,
+    brojSvjedoka: parseInt(r.case.brojSvjedoka) || 0,
+    brojDokaza: parseInt(r.case.brojDokaza) || 0,
+    pokusaj: r.case.pokusaj,
+    saizvrsilastvo: r.case.saizvrsilastvo,
+    similarity: Math.round(r.similarity * 1000) / 10, // percentage with 1 decimal
+  }));
+
+  // Compute recommended sentence from weighted average of similar cases
+  let weightedSentence = 0, weightSum = 0;
+  for (const r of results.slice(0, topK)) {
+    const months = parseFloat(r.case.kaznaUMjesecima) || 0;
+    if (months > 0) {
+      weightedSentence += r.similarity * months;
+      weightSum += r.similarity;
+    }
+  }
+  const recommendedMonths = weightSum > 0 ? Math.round(weightedSentence / weightSum * 10) / 10 : null;
+
+  // Count verdict types in similar cases
+  const verdictCounts = {};
+  for (const sc of similarCases) {
+    const v = sc.vrstaPresude || 'nepoznato';
+    verdictCounts[v] = (verdictCounts[v] || 0) + 1;
+  }
+
+  // Determine if conditional sentence is likely
+  const conditionalCount = similarCases.filter(sc => sc.uslovnaOsuda === 'Da').length;
+
+  // Get the actual sentence of the query case
+  const actualSentenceMonths = parseFloat(queryCase.kaznaUMjesecima) || 0;
+  const actualUslovnaOsuda = queryCase.uslovnaOsuda || 'nepoznat';
+  const actualVrstaPresude = queryCase.vrstaPresude || 'nepoznat';
+  const actualNovcanaKazna = parseFloat(queryCase.novcanaKazna) || 0;
+
+  // Build explanation for conditional sentence likelihood
+  const conditionalNames = similarCases.filter(sc => sc.uslovnaOsuda === 'Da').map(sc => sc.brojPredmeta);
+  const nonConditionalNames = similarCases.filter(sc => sc.uslovnaOsuda !== 'Da').map(sc => sc.brojPredmeta);
+  const conditionalExplanation = `Od ${topK} najsličnijih predmeta, ${conditionalCount} ${conditionalCount === 1 ? 'je imao' : 'su imali'} uslovnu presudu` +
+    (conditionalNames.length > 0 ? ` (${conditionalNames.join(', ')})` : '') +
+    ` a ${topK - conditionalCount} ${topK - conditionalCount === 1 ? 'nije' : 'nisu'}` +
+    (nonConditionalNames.length > 0 ? ` (${nonConditionalNames.join(', ')})` : '') +
+    `. Verovatnoća = ${conditionalCount}/${topK} = ${Math.round(conditionalCount / topK * 100)}%.`;
+
+  res.json({
+    queryCase: {
+      brojPredmeta: queryBroj,
+      tipKrivicnogDjela: queryCase.tipKrivicnogDjela,
+      clanKZ: queryCase.clanKZ,
+      kaznaUMjesecima: actualSentenceMonths,
+      uslovnaOsuda: actualUslovnaOsuda,
+      vrstaPresude: actualVrstaPresude,
+      novcanaKazna: actualNovcanaKazna,
+      ranijeOsudjivan: queryCase.ranijeOsudjivan || 'nepoznat',
+      zaposlenost: queryCase.zaposlenost || 'nepoznat',
+      priznanje: queryCase.priznanje || 'nepoznat',
+    },
+    similarCases,
+    recommendation: {
+      kaznaUMjesecima: recommendedMonths,
+      verdictDistribution: verdictCounts,
+      conditionalSentenceLikelihood: Math.round(conditionalCount / topK * 100),
+      conditionalExplanation,
+    },
+    totalCasesCompared: results.length,
+  });
 });
 
 // Serve static files AFTER API routes

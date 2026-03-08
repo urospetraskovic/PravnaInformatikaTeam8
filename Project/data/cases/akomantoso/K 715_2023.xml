@@ -48,7 +48,7 @@
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>40,00</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 13.09.2019. godine, oko 23,38 časova, u Ulici dalmatinskoj, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, neovlašćeno pribavio tuđu platnu karticu, koju je, u namjeri da sebi pribavi protivpravnu imovinsku korist, upotrijebio, na način što je u označenoj ulici pronašao novčanik vlasništvo oštećene R. D. , u kojem novčaniku su se nalazile dvije kartice i to jedna NLB banke, a druga CKB banke, obje na ime oštećene, nakon čega je došao na benzinsku pumpu "Euro petrol", koja se nalazi u naselju Blok V, gdje je karticu NLB banke upotrijebio, tako što je sa istom kupio cigarete, vrijednosti 2,80 eura, u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</opisSlucaja>
         <svjedoci>
           <svjedok>oštećene i </svjedok>
@@ -85,9 +85,10 @@ Svjedok – oštećena A. O. je na saslušanja na glavnom pretresu</dokaz>
           <iznos>34,45 EUR</iznos>
           <iznos>154,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <zapisnicar>Marine Perović</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

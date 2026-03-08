@@ -35,7 +35,10 @@
         <datumNormalizovan>2013-01-01</datumNormalizovan>
         <godina>2013</godina>
         <sudija>Jovović Željki</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Rajković Danijele</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
@@ -46,6 +49,15 @@
           <iznos>100 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvoda iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije te izvještaj Uprave policije PJ Podgorica iz kaznene evidencije</dokaz>
+          <dokaz>iskaza svjedoka N</dokaz>
+          <dokaz>službenu zabilješku Uprave policije Ispostave Danilovgrad od 05</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca Centralne banke Crne Gore</dokaz>
+          <dokaz>izvještaja o ekspertizi sumnjivog novca br</dokaz>
+        </dokazi>
+        <prebivaliste>Podgorici Donji</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -58,6 +70,18 @@ Osnovni Sud u PODGORICI, 87/13, sudija Jovović Željki</p>
           <p>U drugoj polovini decembra 2010. godine u Podgorici, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što mu je supruga N.B. predala novčanicu u apoenu od 100 eura serijskog broja 13493318596, za koju mu je rekla da je falsifikovana i stavljena u opticaj u pekari „Tonino“ u Podgorici, gdje je zaposlena kao prodavač, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 05.06.2012, godine kada je ista pronađena u njegovom poslovnom objektu u Spužu od strane ovlašćenih službenika Uprave policije, pri čemu je bio svjestan svog djela i htio je njegovo izvršenje, znajući da je njegovo djelo zabranjeno.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz kaznene evidencije na ime okrivljenog</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije te izvještaj Uprave policije PJ Podgorica iz kaznene evidencije</p>
+            <p>• iskaza svjedoka N</p>
+            <p>• službenu zabilješku Uprave policije Ispostave Danilovgrad od 05</p>
+            <p>• izvještaj o ekspertizi sumnjivog novca Centralne banke Crne Gore</p>
+            <p>• izvještaja o ekspertizi sumnjivog novca br</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

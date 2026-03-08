@@ -36,11 +36,12 @@
         <godina>2018</godina>
         <sudija>Đuković Goranu</sudija>
         <zapisnicar>Sanje Radević</zapisnicar>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od 07.10.2017. godine do 23.10.2017. godine, u P., svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno, tuđu platnu karticu koju je neovlašćeno pribavio upotrijebio na način što je sada pokojni V. R. kao lice zaposleno u preduzeću ''T.'' DOO dana 07.10.2017. godine neovlašćeno pribavio karticu za točenje goriva oštećenog preduzeća ''T." DOO izdatu od strane preduzeća ''P.'' DOO iz P., broj ..., a zatim istu prenio radi upotrebe okrivljenom B. A., koji je u periodu od 07.10.2017. godine do 23.10.2017. godine, više puta dnevno na benzinskim pumpama preduzeća ''P.'' DOO lociranim u ulici M. B., Z. i D. G. u P., tako neovlašćeno prenesenu karticu za gorivo upotrebljavao kupujući gorivo na navedenim pumpama, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.618,43 eura,</opisSlucaja>
         <iznosi>
           <iznos>210,00 EUR</iznos>
@@ -52,6 +53,14 @@
           <iznos>618,43 EUR</iznos>
           <iznos>704,46 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>nalaza i mišljenja vještaka ekonomsko-finansijske struke N</dokaz>
+          <dokaz>zapisnik o saslušanju i da li je njegov potpis na zapisniku okrivljeni je potvrdio</dokaz>
+          <dokaz>zapisnik o saslušanju okrivljeni je odgovorio &quot;zato što me gospodin tužilac pitao da li ostajete pri iskazu koji ste dali</dokaz>
+          <dokaz>fotodokumentaciju br</dokaz>
+          <dokaz>fotodokumentacije UPCB Podgorica br</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -64,6 +73,17 @@ Osnovni Sud u PODGORICI, 83/18, sudija Đuković Goranu</p>
           <p>U periodu od 07.10.2017. godine do 23.10.2017. godine, u P., svjestan svog djela čije je izvršenje htio i znajući da je njegovo djelo zabranjeno, tuđu platnu karticu koju je neovlašćeno pribavio upotrijebio na način što je sada pokojni V. R. kao lice zaposleno u preduzeću ''T.'' DOO dana 07.10.2017. godine neovlašćeno pribavio karticu za točenje goriva oštećenog preduzeća ''T." DOO izdatu od strane preduzeća ''P.'' DOO iz P., broj ..., a zatim istu prenio radi upotrebe okrivljenom B. A., koji je u periodu od 07.10.2017. godine do 23.10.2017. godine, više puta dnevno na benzinskim pumpama preduzeća ''P.'' DOO lociranim u ulici M. B., Z. i D. G. u P., tako neovlašćeno prenesenu karticu za gorivo upotrebljavao kupujući gorivo na navedenim pumpama, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.618,43 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• nalaza i mišljenja vještaka ekonomsko-finansijske struke N</p>
+            <p>• zapisnik o saslušanju i da li je njegov potpis na zapisniku okrivljeni je potvrdio</p>
+            <p>• zapisnik o saslušanju okrivljeni je odgovorio &quot;zato što me gospodin tužilac pitao da li ostajete pri iskazu koji ste dali</p>
+            <p>• fotodokumentaciju br</p>
+            <p>• fotodokumentacije UPCB Podgorica br</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

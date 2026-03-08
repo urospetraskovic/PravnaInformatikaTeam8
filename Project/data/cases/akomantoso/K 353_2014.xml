@@ -72,7 +72,7 @@
           <iznos>000,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Amirom Muslić</zapisnicar>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

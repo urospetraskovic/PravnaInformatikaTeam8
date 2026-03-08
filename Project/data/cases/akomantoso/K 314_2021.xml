@@ -41,12 +41,13 @@
         <bracniStatus>neoženjen</bracniStatus>
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
+                <zaposlenost>student</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>55,00</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>, Što je, U periodu od 28.09.2012. do 22.10.2012. godine na teritoriji opštine Budva, u namjeri da sebi pribavi protivpravnu imovnsku korist, nabavio lažne platne kartice br. ..., ..., ..., ... i ..., od kojih je upotrebio kao prave kartice br. ..., ..., ... i ..., na način što je koristio ove kartice za plaćanje robe, i to : - dana 28.09.2012. godine, karticu br. ... za plaćanje u zlatari „C.“ tri računa u iznosima od 963,00 €, 421,00 € i 1.000,00 €, te jednom u butiku „E.m.“ Budva za plaćanje računa u iznosu od 138,00 €, sve na štetu „NLB Mobntenegro banke“, - dana 17.10.2012. godine, kartice br. ... i br. ... za plaćanje dva računa u PJ „Q.o.M.“ u iznosima od 2.000,00 € i 1.000,00 €, na štetu „CKB banke“, - dana 20.10.2012. godine, karticu br. ... za plaćanje četiri računa u butiku „C.“ u Budvi na iznose od 140,00 €, 100,00 €, 60,00 € i 180,00 €, kao i dva računa u „B.-k.s.“ u Budvi na iznose od 77,00 € i 65,00 €, na štetu „CKB banke“ te dva računa u kazinu „A.“ u iznosima od 2.000,00 € i 1.000,00 €.na štetu „A.B.“, - dana 21.10.2012. godine karticu br. 4408041013385491 za plaćanje tri računa u market „M.“ u B. na iznose od 2,20 €, 4,40 € i 5,00 €, na štetu „CKB banke“ kao i jedan račun u iznosu od 21,19 € u „M. marketu“ u Budvi, na štetu „A. banke“, - dana 22.10.2012. godine, karticu br. ... za plaćanje na benzinskoj stanici JPK u Petrovcu računa u iznosu 40,00 €, na štetu „CKB banke“, čime je za sebe pribavio protivpravnu imovinsku korist u ukupnom iznosu od 9.216,79 €, </opisSlucaja>
         <dokazi>
           <dokaz>pismene dokaze: dopis CKB br. 24935-2012 od 23.10.2012. godine sa slipovima sa potpisima okrivljenog izdatim prilikom vršenja transakcija koje se navode u dispozitivu</dokaz>
@@ -82,9 +83,10 @@
           <iznos>65,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Jelene Marković</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>3 (tri) mjeseca</kazna>
+        <prebivaliste>Kotoru</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>

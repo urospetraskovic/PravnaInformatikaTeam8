@@ -35,7 +35,10 @@
         <datumNormalizovan>2018-01-01</datumNormalizovan>
         <godina>2018</godina>
         <sudija>Nenad Vujanović</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Nataše Paunović</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -51,6 +54,33 @@
           <iznos>184,00 EUR</iznos>
           <iznos>500 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljenog D</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na ime okrivljenog D</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na ime okrivljenog izdatog od strane Osnovnog suda u Podgorici pod brojem KE 69</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije CB Podgorica br</dokaz>
+          <dokaz>nalaz i mišljenje vještaka neuropsihijatra dr S</dokaz>
+          <dokaz>nalaza i mišljenja vještaka neuropsihijatra dr S</dokaz>
+          <dokaz>nalaz i mišljenje vještaka neuropsihijatra prof dr S</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 08</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka pred ODT-om u Podgorici od 09</dokaz>
+          <dokaz>zapisnik o pretresanju stana i drugih prostorija Uprave policije br</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 09</dokaz>
+          <dokaz>zapisnika o pretresanju stana i drugih prostorija Uprave policije br</dokaz>
+          <dokaz>iskaza svjedoka L</dokaz>
+          <dokaz>iskaza svjedoka nesumnjivo se zaključuje</dokaz>
+          <dokaz>fotodokumentaciju Uprave policije CB Podgorica br</dokaz>
+          <dokaz>fotodokumentacije Uprave policije CB Podgorica br</dokaz>
+          <dokaz>fotodokumentacije</dokaz>
+          <dokaz>izvještaj o balističkom vještačenju Forenzičkog centra u Danilovgradu-Grupe za balistiku br</dokaz>
+          <dokaz>izvještaja o balističkom vještačenju Forenzičkog centra u Danilovgradu-Grupa za balistiku br</dokaz>
+          <dokaz>izvještaj o balističkom vještačenju iz koga je nesumnjivo utvrdjena vrsta navedenog oružja i municije i njegova klasifikaci</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljenog D</dokaz>
+          <dokaz>medicinsku dokumentaciju može zaključiti da boluje i da je liječen od teških tjelesnih bolesti stanja na</dokaz>
+          <dokaz>medicinske dokumentacije i neposrednog pregleda okrivljenog</dokaz>
+          <dokaz>medicinske dokumentacije na ime okrivljenog</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,6 +93,36 @@ Osnovni Sud u PODGORICI, 223/18, sudija Nenad Vujanović</p>
           <p>Dana 07.04.2017. godine, u Podgorici, u ul. Spasa Nikolića br. xx, u porodičnoj kući, svjestan svojih djela čija je izvršenja htio i svjestan da su njegova djela zabranjena, držao lažan novac, u namjeri da ga stavi u opticaj kao pravi, i neovlašćeno držao vatreno oružje i municiju čije je držanje građanima zabranjeno, na način što je, u dnevnoj sobi, u komodi, u bijeloj koverti, držao 30 lažnih novčanica u apoenu od po 500,00 eura, serijskih brojeva: X00196980833, X07110202565, X12066299183, X01003551140, X01089270200, X11287710794, X11782710974, X19673250905, X01003113740, X01003137140, X19046806922, X01003115540, X10445906909, X19871250905, X00091202168, X10095191948, X09930876203, X01003111850, X01003117340, X05100404141, X06011202665, X03400401251, X03602102069, X10445906459, X19006938083, X10796827133, X01082997533, X00091252163, X18006849083 i X11089710794, a u dvorištu kuće, ispod satelitske antene, suprotno čl. 5 st. 1 u vezi čl. 4 st. 2 tač. 2 Zakona o oružju, držao automatsko</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljenog D</p>
+            <p>• uvjerenja iz kaznene evidencije na ime okrivljenog D</p>
+            <p>• uvjerenja iz kaznene evidencije na ime okrivljenog izdatog od strane Osnovnog suda u Podgorici pod brojem KE 69</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije CB Podgorica br</p>
+            <p>• nalaz i mišljenje vještaka neuropsihijatra dr S</p>
+            <p>• nalaza i mišljenja vještaka neuropsihijatra dr S</p>
+            <p>• nalaz i mišljenje vještaka neuropsihijatra prof dr S</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 08</p>
+            <p>• zapisnik o saslušanju svjedoka pred ODT-om u Podgorici od 09</p>
+            <p>• zapisnik o pretresanju stana i drugih prostorija Uprave policije br</p>
+            <p>• zapisnik o saslušanju svjedoka od 09</p>
+            <p>• zapisnika o pretresanju stana i drugih prostorija Uprave policije br</p>
+            <p>• iskaza svjedoka L</p>
+            <p>• iskaza svjedoka nesumnjivo se zaključuje</p>
+            <p>• fotodokumentaciju Uprave policije CB Podgorica br</p>
+            <p>• fotodokumentacije Uprave policije CB Podgorica br</p>
+            <p>• fotodokumentacije</p>
+            <p>• izvještaj o balističkom vještačenju Forenzičkog centra u Danilovgradu-Grupe za balistiku br</p>
+            <p>• izvještaja o balističkom vještačenju Forenzičkog centra u Danilovgradu-Grupa za balistiku br</p>
+            <p>• izvještaj o balističkom vještačenju iz koga je nesumnjivo utvrdjena vrsta navedenog oružja i municije i njegova klasifikaci</p>
+            <p>• medicinsku dokumentaciju na ime okrivljenog D</p>
+            <p>• medicinsku dokumentaciju može zaključiti da boluje i da je liječen od teških tjelesnih bolesti stanja na</p>
+            <p>• medicinske dokumentacije i neposrednog pregleda okrivljenog</p>
+            <p>• medicinske dokumentacije na ime okrivljenog</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

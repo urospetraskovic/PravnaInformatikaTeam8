@@ -52,9 +52,10 @@
           <iznos>50 EUR</iznos>
           <iznos>50,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>4 (četiri) mjesec</kazna>
+        <zapisnicar>Radević Sanja</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

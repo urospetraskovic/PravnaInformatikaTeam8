@@ -36,11 +36,12 @@
         <godina>2021</godina>
         <sudija>Nenad Vujanović</sudija>
         <zapisnicar>None</zapisnicar>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>7 (sedam) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</opisSlucaja>
         <iznosi>
           <iznos>30,00 EUR</iznos>
@@ -53,6 +54,12 @@
           <iznos>586,00 EUR</iznos>
           <iznos>134,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljenog P</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na ime okrivljenog P</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 06</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -65,6 +72,15 @@ Osnovni Sud u PODGORICI, 663/21, sudija Nenad Vujanović</p>
           <p>Dana 30.03.2021. godine u P., svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu platnu karticu koju je neovlašćeno pribavio, na način što je u namjeri da upotrijebi platnu karticu, izdatu od CK banke, na ime oštećene, pokojne V.L., po računu broj 510...74, iskoristio dostupnost iste i sa te kartice preuzeo podatke o serijskom broju i CVV kodu, a zatim je u šest navrata upotrijebio, tako što je sa svog naloga, registrovanog na sajtu za online klađenje www.vol...k...e.me, sa email adrese p...s...c2@gmail.com, preko mobilnog telefona +382...94 izvršio šest uspješnih transakcija na navedenoj internet platformi za klađenje, i to 30.03.2021.godine u iznosu od 50,00 eura, iznosu od 50,00 eura, iznosu od 100,00 eura, iznosu od 134,00 eura, iznosu od 152,00 eura i u iznosu od 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 586,00 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljenog P</p>
+            <p>• uvjerenja iz kaznene evidencije na ime okrivljenog P</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 06</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

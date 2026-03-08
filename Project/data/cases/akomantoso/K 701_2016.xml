@@ -35,7 +35,9 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>Nepoznato</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>samostalnog referenta Danijele Rajković</zapisnicar>
+                <obrazovanje>osnovna</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
@@ -53,6 +55,11 @@
           <iznos>6 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>Uvjerenje iz kaznene evidencije na ime okrivljenog M</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -65,6 +72,14 @@ Osnovni Sud u PODGORICI, 701/16, sudija Nepoznato</p>
           <p>Neutvrđenog dana krajem februara 2013. godine u Golubovcima - Opština Podgorica, svjestan svog djela čije je izvršenje htio znajući da je njegovo djelo zabranjeno, lažan novac koji je primio kao pravi, pa saznavši da je lažan stavio u opticaj, na način što je od M. M. primio kao pravu novčanicu u apoenu od 50 eura, serijskog broja T00909878643, pa je saznavši da je novčanica lažna, stavio u opticaj i u trgovinskoj radnji "Avanti" u mjestu Tomića ub kupio robu u vrijednosti 5,39 eura, koju je platio navedenom lažnom novčanicom,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Uvjerenje iz kaznene evidencije na ime okrivljenog M</p>
+            <p>• iskaz svjedoka M</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

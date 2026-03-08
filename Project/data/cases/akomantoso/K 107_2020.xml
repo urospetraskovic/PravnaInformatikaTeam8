@@ -48,7 +48,7 @@
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>27,50</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od 17.08.2021.godine do 20.11.2021.godine u Pljevljima, svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno upotrijebila tuđu platnu karticu koju je neovlašćeno pribavila, na način što je u namjeri da upotrijebi platnu karticu izdatu od C. K. b. na ime S. Z. po računu br..... iskoristila dostupnost iste i tu karticu upotrijebila šest puta podižući novac i to: dana 17.08.2021.godine iznos od 200,00 €, dana 31.08.2021.godine iznos od 500,00 €, dana 02.09.2021.godine iznos od 500,00 €, dana 28.10.2021.godine iznos od 50,00 €, dana 09.11.2021.godine iznos od 150,00 € i dana 20.11.2021.godine iznos od 300,00 €, čime je sebi pribavila protivpravnu imovinsku korist u iznosu od 1.700,00 € u kom iznosu je oštećeni S. Z. pretrpio materijalnu štetu,-</opisSlucaja>
         <svjedoci>
           <svjedok>oštećeni ž</svjedok>
@@ -76,7 +76,7 @@ Optužena priznaje da je za novčanu naknadu od 120</dokaz>
           <iznos>250,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Krvavac Mirjane</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>3 (tri) mjeseca</kazna>
       </proprietary>

@@ -45,7 +45,7 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>1 (jedne) godin</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U periodu od 12.10.2018. godine do 23.10.2018. godine, u Podgorici, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, na način što je, u namjeri da upotrijebi platnu karticu broj xxxxxxxxxxxxxxxxx, izdatu od E. banke AD Podgorica, vlasništvo oštećene Đ. I., iskoristio dostupnost iste i sa nje preuzeo podatke o serijskom broju i "pin kodu", a zatim je u četrnaest navrata upotrijebio, tako što je, sa svog naloga, registrovanog na sajtu za online klađenje www.volcanokladionice.me, sa e-mail adresom .....XX@icloud.com, preko mobilnog telefona, čija je IP adresa XX.X.XX.XXX. izvršio četrnaest uspješnih transakcija na navedenom internet sajtu za klađenje i to: dana 12.10.2018. godine u iznosu od 10,00 eura; dana 13.10.2018. godine u iznosu od 10,00 eura; dana 14.10.2018. godine u iznosu od 5,00 eura; dana 22.10.2018. godine u iznosu od 5,00 eura i dana 23.10.2018. godine u iznosu od 80,00 eura, zatim četiri puta po 100,00 eura, dva puta po 10,00 eura, dva puta po 20,00 eura i jednom u iznosu od 50,00 eura, čime je pribavio protivpravnu imovinsku korist u iznosu od ukupno 620,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je isto zabranjeno,</opisSlucaja>
         <svjedoci>
           <svjedok>oštećena Đ.</svjedok>
@@ -68,9 +68,11 @@
           <iznos>80,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>1 (jedne) godin</kazna>
+        <zapisnicar>Marine Sekulić</zapisnicar>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>

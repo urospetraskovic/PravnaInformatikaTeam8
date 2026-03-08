@@ -35,7 +35,8 @@
         <datumNormalizovan>2015-01-01</datumNormalizovan>
         <godina>2015</godina>
         <sudija>Ćupić Mariji</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Martinović Aleksandre</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>7 (sedam) mjesec</kazna>
@@ -51,6 +52,29 @@
           <iznos>1569,50 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvoda iz Kaznene evidencije koji glasi na njegovo ime)</dokaz>
+          <dokaz>nalaza i mišljenja vještaka neuropsihijatra dr G</dokaz>
+          <dokaz>nalaz i mišljenje vještaka neuropsihijatra dr G</dokaz>
+          <dokaz>iskaz svjedoka – oštećenog M</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+          <dokaz>iskaz svjedoka P</dokaz>
+          <dokaz>iskaz svjedoka K</dokaz>
+          <dokaz>iskaza svjedoka – oštećenih M</dokaz>
+          <dokaz>video nadzora bezbjednosne kamere bankomata</dokaz>
+          <dokaz>video snimaka sa video nadzora kod tog bankomata</dokaz>
+          <dokaz>video nadzora bezbjednosti bankomata kamere za dan 07</dokaz>
+          <dokaz>video snimak sa ovog bankomata ( koji je lociran u ul</dokaz>
+          <dokaz>video snimaka sa video nadzora bezbjednosne kamere bankomata vlasništvo CKB banke</dokaz>
+          <dokaz>fotodokumentaciju Uprave policije – Odjeljenja bezbjednosti Cetinje broj 61/15 od 02</dokaz>
+          <dokaz>fotodokumentacije Uprave policije – Odjeljenja bezbjednosti Cetinje broj 61/15 od 02</dokaz>
+          <dokaz>fotodokumentacijom</dokaz>
+          <dokaz>fotodokumentaciju i službenu zabilješku ) sud je ocijenio kao vjerodostojne i poklonio im je vjer</dokaz>
+          <dokaz>službenu zabilješku Ku</dokaz>
+          <dokaz>službenu zabilješku ) sud je ocijenio kao vjerodostojne i poklonio im je vjeru</dokaz>
+          <dokaz>medicinska dokumentacija koja bi govorila o manifestnim znacima apstinencijalne krize u vrijeme izvršenj</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,6 +87,32 @@ Osnovni Sud u CETINJU, 71/15, sudija Ćupić Mariji</p>
           <p>Dana 30.03.2015.godine, u vremenskom intervalu od 21:11:28; 21:11:12 i 21:10:59. , u ulici „Jabučkoj“ b.b., u Cetinju, svjestan svog djela, čije je izvršenje htio i svjestan njegove zabranjenosti, upotrijebio prethodno nevlašćeno pribavljenu tudju, pravu platnu „Visa electron“ karticu, izdavaoca “Hipotekarne” banke br.40835680055215... vlasništvo oštećenog M. P. na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta „M. 1“, a potom ukucao zaštitni kod, koji je bio neodgovarajući, te bankomat navedenu karticu nije prihvatio, te potom dana 07.04.2015.godine, u vremenskom intervalu od 00:13:19; 00:13:37,00:13:47 i 00:14:00 časova, upotrijebio prethodno neovlašćeno pribavljenu tudju, pravu platnu „Visa“ karticu serijskog broja S8AC83.. izdavaoca “NLB” Montenegrobanke– br.41061811117095592... vlasništvo oštećenog M. S. iz Cetinja, na način što je istu ubacio u bankomat “Crnogorske komercijalne” banke, koji se nalazi kod poslovnog objekta</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz Kaznene evidencije koji glasi na njegovo ime)</p>
+            <p>• nalaza i mišljenja vještaka neuropsihijatra dr G</p>
+            <p>• nalaz i mišljenje vještaka neuropsihijatra dr G</p>
+            <p>• iskaz svjedoka – oštećenog M</p>
+            <p>• iskaz svjedoka M</p>
+            <p>• iskaz svjedoka P</p>
+            <p>• iskaz svjedoka K</p>
+            <p>• iskaza svjedoka – oštećenih M</p>
+            <p>• video nadzora bezbjednosne kamere bankomata</p>
+            <p>• video snimaka sa video nadzora kod tog bankomata</p>
+            <p>• video nadzora bezbjednosti bankomata kamere za dan 07</p>
+            <p>• video snimak sa ovog bankomata ( koji je lociran u ul</p>
+            <p>• video snimaka sa video nadzora bezbjednosne kamere bankomata vlasništvo CKB banke</p>
+            <p>• fotodokumentaciju Uprave policije – Odjeljenja bezbjednosti Cetinje broj 61/15 od 02</p>
+            <p>• fotodokumentacije Uprave policije – Odjeljenja bezbjednosti Cetinje broj 61/15 od 02</p>
+            <p>• fotodokumentacijom</p>
+            <p>• fotodokumentaciju i službenu zabilješku ) sud je ocijenio kao vjerodostojne i poklonio im je vjer</p>
+            <p>• službenu zabilješku Ku</p>
+            <p>• službenu zabilješku ) sud je ocijenio kao vjerodostojne i poklonio im je vjeru</p>
+            <p>• medicinska dokumentacija koja bi govorila o manifestnim znacima apstinencijalne krize u vrijeme izvršenj</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

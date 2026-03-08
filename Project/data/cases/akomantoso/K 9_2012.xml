@@ -42,7 +42,7 @@
         <zaposlenost>nezaposlena</zaposlenost>
         <bracniStatus>neudata</bracniStatus>
         <obrazovanje>SSS</obrazovanje>
-        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -63,7 +63,7 @@
           <iznos>30,00 EUR</iznos>
           <iznos>27,99 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <zapisnicar>Mirosave Lekić</zapisnicar><vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

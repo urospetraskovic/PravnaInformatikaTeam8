@@ -47,7 +47,7 @@
         <clanKZ>čl. 258 st. 2</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>I Okrivljena J. L.: - dana 29.07.2023. godine, u Nj., P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je oko 17,00 časova na štandu oštećenog privrednog društva “M.” DOO, na kojem radi J. M., predala falsifikovanu novčanicu u apoenu od 200,00 eura serijskog broj UA... i pravu novčanicu od 5,00 eura, radi kupovine dva pakovanja vakum pršute, 1l lozove rakije, 1l vina, jednu teglu meda, jednu teglu suvog voća, dvije drvene frule i dva drvena ukrasa u obliku sove, pa nakon što joj je J. M. predao kupljene stvari čija ukupna cijena je bila 65,00 eura, istovremeno joj je vratio kusur u iznosu od 140,00 eura, - dana 29.07.2023. godine, u P., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je u večernjim časovima u prodavnici “Sexy shop” koja posluje u okviru privrednog društva “Svetlyuchny Company” predala falsifikovanu novčanicu u apoenu od 500,00 eura serijskog broja X... radi kupovine dva vibratora, parfema, spreja, kapi, aksesoar za sado mazo i dvije analne kupe, pa je nakon što joj je radnica A. Y. predala kupljene stvari čija je ukupna vrijednost 315,00 eura, vratila joj je kusur u iznosu od 185,00 eura, - dana 30.07.2023. godine, oko 01,30 časova na teritoriji P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, držala lažan novac u namjeri da ga stavi u promet, na način što </opisSlucaja>
         <svjedoci>
           <svjedok>je u </svjedok>
@@ -87,9 +87,10 @@
           <iznos>15 EUR</iznos>
           <iznos>65,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>4 (četiri) mjeseca</kazna>
+        <zapisnicar>Nataše Paunović</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

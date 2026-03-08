@@ -35,7 +35,9 @@
         <datumNormalizovan>2011-01-01</datumNormalizovan>
         <godina>2011</godina>
         <sudija>Maja Zeković</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Andrijane Janković</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>7 (sedam) mjeseci</kazna>
@@ -54,6 +56,16 @@
           <iznos>200 EUR</iznos>
           <iznos>800,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije PJ Podgorice Ku</dokaz>
+          <dokaz>nalaz i mišljenje vještaka informaciono tehničke struke M</dokaz>
+          <dokaz>nalaza i mišljenja vještaka informaciono tehničke struke M</dokaz>
+          <dokaz>nalaz vještaka informaciono tehničke struke</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+          <dokaz>službenu zabilješku Uprave policije</dokaz>
+          <dokaz>službenu zabilješku Ku</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +78,19 @@ Osnovni Sud u PODGORICI, 793/11, sudija Maja Zeković</p>
           <p>Dana 11.11.2011. godine oko 07,30 časova u P.i, u Ul. O. R., upotrijebio lažnu platnu karticu, na način što je sa aparata za podizanje novca vlasništvo "P. B." AD karticom na čiju su magnetnu traku bili unijeti podaci sa kartice br.4921818551979233, u dva navrata podigao novac u iznosu od po 100,00 eura, čime je sebi pribavio protivpravnu imovinsku korist u iznosu od 200,00 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije PJ Podgorice Ku</p>
+            <p>• nalaz i mišljenje vještaka informaciono tehničke struke M</p>
+            <p>• nalaza i mišljenja vještaka informaciono tehničke struke M</p>
+            <p>• nalaz vještaka informaciono tehničke struke</p>
+            <p>• iskaz svjedoka M</p>
+            <p>• službenu zabilješku Uprave policije</p>
+            <p>• službenu zabilješku Ku</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

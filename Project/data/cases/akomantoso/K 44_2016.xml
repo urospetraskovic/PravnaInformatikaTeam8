@@ -36,11 +36,13 @@
         <godina>2016</godina>
         <sudija>Osnovnog suda</sudija>
         <zapisnicar>Aide Luboder</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>2 (dva) mjesec</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</opisSlucaja>
         <iznosi>
           <iznos>40,98 EUR</iznos>
@@ -49,6 +51,16 @@
           <iznos>49,01 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog</dokaz>
+          <dokaz>zapisnika o pretresanju stana i drugih prostorija</dokaz>
+          <dokaz>iskaz okrivljenog i sve izvedene dokaze kako pojedinačno</dokaz>
+          <dokaz>iskaza svjedoka - oštećenog I</dokaz>
+          <dokaz>iskaza svjedoka Dž</dokaz>
+          <dokaz>fotodokumentaciju OB Rožaje br</dokaz>
+          <dokaz>fotodokumentacije Uprave policije se vidi da su fotografisani računi pronadjeni kod okrivljenog</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -61,6 +73,19 @@ Osnovni Sud u ROŽAJAMA, 44/16, sudija Osnovnog suda</p>
           <p>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog</p>
+            <p>• zapisnika o pretresanju stana i drugih prostorija</p>
+            <p>• iskaz okrivljenog i sve izvedene dokaze kako pojedinačno</p>
+            <p>• iskaza svjedoka - oštećenog I</p>
+            <p>• iskaza svjedoka Dž</p>
+            <p>• fotodokumentaciju OB Rožaje br</p>
+            <p>• fotodokumentacije Uprave policije se vidi da su fotografisani računi pronadjeni kod okrivljenog</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

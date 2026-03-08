@@ -36,12 +36,14 @@
         <godina>2011</godina>
         <sudija>porotnika Pešić Miljana</sudija>
         <zapisnicar>Popović Ljiljane</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>None</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 14.04.2011. godine, u prisustvu zamjenika ODT iz Bijelog Polja Šćepanović Vesne, optuženih S.N.i M.V., branioca obojice optuženih J.S.a adv. iz Bijelog Polja i ošećenih D.V.a i S.R.a, a u odsustvu uredno obaviještenog oštećenog H.E.a, koji je ovlašćeni predstavnik D. '' M.C.'' iz B.Polja, istog dana donio je i javno objavio, P R E S U D U Optuženi S.N.A, od oca P. i majke S. rodjene V., rodjen ....godine u Beogradu, živi u mjestu rodjenja Ul. S.M.81 A, Srbin, državljanin Srbije, pismen, završio Srednju školu, neoženjen, vojsku nije služio, lošeg imovnog stanja, ne osudjivan. Optuženi M.V.A, od oca M. i majke O. rodjene N., rodjen ....godine u Pirotu, živi u mjestu rodjenja Ul. S.S.br. 50/38, Srbin, državljanin Srbije, pismen, završio Srednju Školu, oženjen, otac dvoje maloljetno djece od kojih jedno boluje od cerebralne paralize, vojsku služio u Nišu 2000-te godine, lošeg imovnog stanja, ne osudjivan. K r i v i s u Što su : Optuženi S.N.a 1. - dana 18.02.2011.godine oko 20,43 h, na graničnom prelazu Dračenovac, Opština Rožaje, prenio iz Srbije u Crnu Goru, lažan novac - 5. novčanica u apoenima od po 200,00 eura, serijskih brojeva X00452407123, X1648390854, Y10331327605, X00452408243 i X00452407842, u namjeri da ih stavi u opticaj kao pravi, da bi istog dana oko 22,30 h, jednu od tih novčanica od 200,00 eura, ser.broja X00452408243, stavio u opticaj u K. '' L. - D'' u Beranama, Vl. D.V.a, plaćajući sa njom robu u vrijednosti od 5,00 eura, kojom prilikom mu je radnik u K. vratio kusur u iznosu od 195,00 eura, a nakon čega je u Bijelom Polju, oko 24,00 h, u maloprodajnom objektu D. '' M.C.'' iz Bijelog Polja, koji se nalazi u ul. Nedeljka Merdovića, vl. H.E.a, stavio u opticaj drugu novčanicu od 200,00 eura, ser.broja X01648390854, iako je znao da su novčanice lažne,</opisSlucaja>
         <iznosi>
           <iznos>1.550 EUR</iznos>
           <iznos>20 EUR</iznos>
@@ -54,6 +56,16 @@
           <iznos>675,00 EUR</iznos>
           <iznos>1.675 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>zapisnika o prepoznavanju lica UP - PJ Bijelo Polje od 19</dokaz>
+          <dokaz>iskaz svjedoka - vlasnika i ovlašćenog predstavnika D</dokaz>
+          <dokaz>iskaza svjedoka - oštećenog D</dokaz>
+          <dokaz>iskaza svjedoka S</dokaz>
+          <dokaz>službenu zabilješku UP PJ Berane od 19</dokaz>
+          <dokaz>službenu zabilješku UP PJ Bijelo Polje br</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime sina optuženog M</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +75,22 @@ Osnovni Sud u BIJELOM, 140/11, sudija porotnika Pešić Miljana</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 14.04.2011. godine, u prisustvu zamjenika ODT iz Bijelog Polja Šćepanović Vesne, optuženih S.N.i M.V., branioca obojice optuženih J.S.a adv. iz Bijelog Polja i ošećenih D.V.a i S.R.a, a u odsustvu uredno obaviještenog oštećenog H.E.a, koji je ovlašćeni predstavnik D. '' M.C.'' iz B.Polja, istog dana donio je i javno objavio, P R E S U D U Optuženi S.N.A, od oca P. i majke S. rodjene V., rodjen ....godine u Beogradu, živi u mjestu rodjenja Ul. S.M.81 A, Srbin, državljanin Srbije, pismen, završio Srednju školu, neoženjen, vojsku nije služio, lošeg imovnog stanja, ne osudjivan. Optuženi M.V.A, od oca M. i majke O. rodjene N., rodjen ....godine u Pirotu, živi u mjestu rodjenja Ul. S.S.br. 50/38, Srbin, državljanin Srbije, pismen, završio Srednju Školu, oženjen, otac dvoje maloljetno djece od kojih jedno boluje od cerebralne paralize, vojsku služio u Nišu 2000-te godine, lošeg imovnog stanja, ne osudjivan. K r i v i s u Što su : Optuženi S.N.a 1. - dana 18.02.2011.godine oko 20,43 h, na graničnom prelazu Dračenovac, Opština Rožaje, prenio iz Srbije u Crnu Goru, lažan novac - 5. novčanica u apoenima od po 200,00 eura, serijskih brojeva X00452407123, X1648390854, Y10331327605, X00452408243 i X00452407842, u namjeri da ih stavi u opticaj kao pravi, da bi istog dana oko 22,30 h, jednu od tih novčanica od 200,00 eura, ser.broja X00452408243, stavio u opticaj u K. '' L. - D'' u Beranama, Vl. D.V.a, plaćajući sa njom robu u vrijednosti od 5,00 eura, kojom prilikom mu je radnik u K. vratio kusur u iznosu od 195,00 eura, a nakon čega je u Bijelom Polju, oko 24,00 h, u maloprodajnom objektu D. '' M.C.'' iz Bijelog Polja, koji se nalazi u ul. Nedeljka Merdovića, vl. H.E.a, stavio u opticaj drugu novčanicu od 200,00 eura, ser.broja X01648390854, iako je znao da su novčanice lažne,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnika o prepoznavanju lica UP - PJ Bijelo Polje od 19</p>
+            <p>• iskaz svjedoka - vlasnika i ovlašćenog predstavnika D</p>
+            <p>• iskaza svjedoka - oštećenog D</p>
+            <p>• iskaza svjedoka S</p>
+            <p>• službenu zabilješku UP PJ Berane od 19</p>
+            <p>• službenu zabilješku UP PJ Bijelo Polje br</p>
+            <p>• medicinsku dokumentaciju na ime sina optuženog M</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

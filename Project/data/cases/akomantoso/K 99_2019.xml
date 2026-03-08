@@ -45,7 +45,7 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 19.septembra 2020.godine, u P., u ulici S..., svjesna svog djela čije je izvršenje htjela i svjesna da je njeno djelo zabranjeno, tuđu pravu platnu karticu, koju je neovlašćeno pribavila, upotrijebila i upotrebom kartice pribavila protivpravnu imovinsku korist, na način što je iz torbe i bez znanja oštećene V. Đ., uzela njenu platnu karticu “M. card” broj ... ... ..., izdatu od “xxx” banke, čiji je pin kod znala, i na bankomatu H.. banke, sa računa oštećene, podigla novac i to: u 00:59:07 časova 100,00 eura, a u 00:59:51 časova 50,00 eura, te tako pribavila protivpravnu imovinsku korist u ukupnom iznosu od 150,00 eura.</opisSlucaja>
         <dokazi>
           <dokaz>12 fotografija video nadzora bankomata „H. banke“ od 19.septembra 2020.godine u vremenu od 00:58:29 do 00:59:38 časova</dokaz>
@@ -62,9 +62,11 @@ Ocjenom navoda optužbe</dokaz>
           <iznos>100,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
+        <zapisnicar>Nataše Paunović</zapisnicar>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>

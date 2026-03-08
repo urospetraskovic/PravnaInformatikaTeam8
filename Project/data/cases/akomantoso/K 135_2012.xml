@@ -45,7 +45,7 @@
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258 st. 4</clanKZ>
-        <kazna>Nepoznat</kazna>
+        <kazna>sudska opomena</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>700,00</novcanaKazna>
         <vrstaPresude>Sudska opomena</vrstaPresude>
@@ -95,7 +95,7 @@ Naime iz iskaza svjedoka B. R.a proizilazi da je od M.D.kupio polovni kompjuter 
           <iznos>20,00 EUR</iznos>
           <iznos>7 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Sudska opomena</vrstaPresude>
+      <zapisnicar>Ljiljane Joksimović</zapisnicar><vrstaPresude>Sudska opomena</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

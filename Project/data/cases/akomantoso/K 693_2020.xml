@@ -36,16 +36,25 @@
         <godina>2020</godina>
         <sudija>Rade Ćetković</sudija>
         <zapisnicar>Edine Kraje</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 01.07.2020. godine, poslije 14,00 časova, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu platnu karticu, koju je neovlašćeno pribavio, upotrijebio na način, što je, iz prostorije firme "K." DOO, na Zabjelu, u Ul. x. j., čiji je zaposleni, neovlašćeno oduzeo platnu karticu, vlasništvo oštećenog N. B., izdatu od strane "NLB banke" AD Podgorica, broj partije 530-0001100022xxxx-xx, a zatim istu upotrijebio na bankomatu Hipotekarne banke, koji se nalazi u prodajnom objektu "Voli - Naš diskont" na Zabjelu i na taj način pribavio protivpravnu imovinsku korist u iznosu od 100,00 eura,</opisSlucaja>
         <iznosi>
           <iznos>100,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećenog B</dokaz>
+          <dokaz>Iskaz svjedoka oštećenog je sud prihvatio u potpunosti</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
+        <prebivaliste>Podgorici</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -58,6 +67,14 @@ Osnovni Sud u PODGORICI, 693/20, sudija Rade Ćetković</p>
           <p>Dana 01.07.2020. godine, poslije 14,00 časova, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu platnu karticu, koju je neovlašćeno pribavio, upotrijebio na način, što je, iz prostorije firme "K." DOO, na Zabjelu, u Ul. x. j., čiji je zaposleni, neovlašćeno oduzeo platnu karticu, vlasništvo oštećenog N. B., izdatu od strane "NLB banke" AD Podgorica, broj partije 530-0001100022xxxx-xx, a zatim istu upotrijebio na bankomatu Hipotekarne banke, koji se nalazi u prodajnom objektu "Voli - Naš diskont" na Zabjelu i na taj način pribavio protivpravnu imovinsku korist u iznosu od 100,00 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećenog B</p>
+            <p>• Iskaz svjedoka oštećenog je sud prihvatio u potpunosti</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

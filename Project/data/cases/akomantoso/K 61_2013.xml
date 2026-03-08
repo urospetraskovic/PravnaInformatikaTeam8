@@ -46,7 +46,7 @@
         <clanKZ>čl. 258 st. 2</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 04. i 05. avgusta 2015. godine u Herceg Novom, u više navrata stavio i pokušao da stavi u opticaj falsifikovane novčanice u apoenima od 100 eura, na način da je dana 04. avgusta 2015. godine u večernjim časovima na šetalištu u Igalu na četiri štanda za prodaju sladoleda i sokova, koji pripadaju preduzetniku R.D. iz Herceg Novog, u opticaj stavio ukupno 4 falsifikovane novčanice u apoenima od po 100 eura,od kojih su tri imale serijski broj X21263392991 i jedna serijski broj X17327677772, tako što je na svakom štandu radnicama naručene proizvode plaćao tim novčanicama i uzimao kusur, a zatim dana 05. avgusta 2015. godine oko 20:30 časova na kiosku AD "Štampa" u Zelenici pokušao da stavi u opticaj lažnu novčanicu od 100 eura tako što je radnici M.B. zatražio kutiju cigareta "Marlboro" i za nju dao novčanicu u iznosu od 100 eura, a kada je radnica provjerom na aparatu u kiosk utvrdila da se radi o falsifikovanoj novčanici koja nema predviđene elemente zaštite, istu uzeo da navodno pogleda o čemu se radi, a zatim se udaljio od kioska i novčanicu ponio sa sobom, pri čemu je bio svjestan svoga djela i htio njegovo izvršenje,</opisSlucaja>
         <svjedoci>
           <svjedok>svjedoka N.</svjedok>
@@ -59,9 +59,14 @@
           <iznos>50,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Mrdak Ljiljane</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>4 (četiri) mjeseca</kazna>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog izdat od Policijske uprave u Kruševcu od 19</dokaz>
+          <dokaz>iskaza svjedoka Ć</dokaz>
+          <dokaz>službenu zabilješku OB-i Kolašin od 09</dokaz>
+        </dokazi>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -79,6 +84,15 @@ Osnovni Sud u HERCEG NOVOM, 61/13, sudija Milović Tereza</p>
           <p>Dana 04. i 05. avgusta 2015. godine u Herceg Novom, u više navrata stavio i pokušao da stavi u opticaj falsifikovane novčanice u apoenima od 100 eura, na način da je dana 04. avgusta 2015. godine u večernjim časovima na šetalištu u Igalu na četiri štanda za prodaju sladoleda i sokova, koji pripadaju preduzetniku R.D. iz Herceg Novog, u opticaj stavio ukupno 4 falsifikovane novčanice u apoenima od po 100 eura,od kojih su tri imale serijski broj X21263392991 i jedna serijski broj X17327677772, tako što je na svakom štandu radnicama naručene proizvode plaćao tim novčanicama i uzimao kusur, a zatim dana 05. avgusta 2015. godine oko 20:30 časova na kiosku AD "Štampa" u Zelenici pokušao da stavi u opticaj lažnu novčanicu od 100 eura tako što je radnici M.B. zatražio kutiju cigareta "Marlboro" i za nju dao novčanicu u iznosu od 100 eura, a kada je radnica provjerom na aparatu u kiosk utvrdila da se radi o falsifikovanoj novčanici koja nema predviđene elemente zaštite, istu uzeo da navodno pogleda o čemu se radi, a zatim se udaljio od kioska i novčanicu ponio sa sobom, pri čemu je bio svjestan svoga djela i htio njegovo izvršenje,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog izdat od Policijske uprave u Kruševcu od 19</p>
+            <p>• iskaza svjedoka Ć</p>
+            <p>• službenu zabilješku OB-i Kolašin od 09</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>KRIV</p>

@@ -57,6 +57,9 @@
         <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>2 (dva) mjesec</kazna>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime okrivljenog</dokaz>
+        </dokazi>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -74,6 +77,13 @@ Osnovni Sud u BIJELOM POLJU, 215/20, sudija Mira Smolović</p>
           <p>-U periodu od marta 2014. godine do kraja januara 2018. godine sposoban da shvati značaj svog djela i da upravlja svojim postupcima i svjestan svog djela čije je izvršenje htio, znajućio da je isto zabranjeno neovlašćeno držao i upotrebljavao platnu karticu za točenje goriva br. 7005737700014910522, koja mu je predata od strane ovlašćenog lica u privrednom društvu DOO "C.ZA E.I.a" P. na način što karticu nije predao M.Z.radi korišćenja u službene svrhe već je sa tako neovlašćeno pribavljenom karticom na benzinskoj pumpi "P.C.G." u Bijelom Polju točio gorivo za sopstvene potrebe i tako upotrebom kartice sebi, na štetu ošećenog DOO "C.ZA E.I.a" Podgorica, pribavio protivpravnu imovinsku korist u ukupnom iznosu od 2.782,12 eura.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime okrivljenog</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>KRIV</p>

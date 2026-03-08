@@ -36,16 +36,18 @@
         <godina>2022</godina>
         <sudija>Rade Ćetković</sudija>
         <zapisnicar>Edine Kraje</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>dana 27.10.2022. godine donio je P R E S U D U Optuženi: 1. M. P., JMB ..., od oca M. i majke V., rođene V., rođen ... godine u P., sa prebivalištem u D. - S. bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, monter, neoženjen, bez djece, pismen, završio srednju školu, srednjeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K. br. 232/21 od 09.07.2021. godine zbog krivičnog djela nepostupanje po zdravstvenim propisima za suzbijanje opasne zarazne bolesti iz čl. 287 Krivičnog zakonika Crne Gore (uslovna osuda), protiv kojeg se ne vodi postupak za drugo krivično djelo, lišen slobode u periodu od 15.02.2022. godine u 12.13 časova do 16.02.2022. godine u 10.05 časova, 2. V. D., JMB ..., sa nadimkom D., od oca G. i majke K., rođene L., rođen 01.12.2000. godine u P., sa prebivalištem u P. - Ul. Ž. F. bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, student, neoženjen, bez djece, pismen, završio srednju školu, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo, lišen slobode u periodu od 30.11.2021. godine u 15.00 časova do 01.12.2021. godine u 13.30 časova, 3. S. R., JMB ..., od oca R. i majke V., rođene O., rođena ... godine u P., sa prebivalištem u P. - D. bb, državljanka Crne Gore, razumije crnogorski jezik, koji je i njen jezik, pekarka, neudata, bez djece, pismena, završila srednju školu, srednjeg imovnog stanja, neosuđivana, protiv koje se ne vodi postupak za drugo krivično djelo, lišena slobode u perioodu od 30.11.2021. godine u 14.50 časova do 01.12.2021. godine u 14.00 časova. Krivi su Što su: Dana 16. novembra 2021. godine, na teritoriji Glavnog grada Podgorica, svjesni svog djela čije su izvršenje htjeli, znajući da je njihovo djelo zabranjeno, pribavili i držali lažan novac - novčanicu u apoenu od 50,00 eura serijskog broja UU1186165444, a potom označenu novčanicu kao lažan novac stavili u opticaj, na način što je označenog dana okrivljeni P. M. predmetnu novčanicu prodao okrivljenom D. V. za iznos od 20,00 eura, sa namjerom da se tako lažna novčanica stavi u promet, nakon čega je okrivljeni D. V. istog dana predmetnu novčanicu predao okrivljenoj S. R., koja je potom znajući da se radi o falsifikatu, zaposlenoj radnici na trafici TS 131 na Autobuskoj stanici, na Trgu golootočkih žrtava, vlasništvo &quot;Tabacco S Press&quot;, predala istu prilikom kupovine artikla sa te trafike, te time lažnu novačnicu stavila u promet,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>20,00 EUR</iznos>
         </iznosi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -55,7 +57,7 @@ Osnovni Sud u PODGORICI, 362/22, sudija Rade Ćetković</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 27.10.2022. godine donio je P R E S U D U Optuženi: 1. M. P., JMB ..., od oca M. i majke V., rođene V., rođen ... godine u P., sa prebivalištem u D. - S. bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, monter, neoženjen, bez djece, pismen, završio srednju školu, srednjeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K. br. 232/21 od 09.07.2021. godine zbog krivičnog djela nepostupanje po zdravstvenim propisima za suzbijanje opasne zarazne bolesti iz čl. 287 Krivičnog zakonika Crne Gore (uslovna osuda), protiv kojeg se ne vodi postupak za drugo krivično djelo, lišen slobode u periodu od 15.02.2022. godine u 12.13 časova do 16.02.2022. godine u 10.05 časova, 2. V. D., JMB ..., sa nadimkom D., od oca G. i majke K., rođene L., rođen 01.12.2000. godine u P., sa prebivalištem u P. - Ul. Ž. F. bb, državljanin Crne Gore, razumije crnogorski jezik, koji je i njegov jezik, student, neoženjen, bez djece, pismen, završio srednju školu, srednjeg imovnog stanja, neosuđivan, protiv kojeg se ne vodi postupak za drugo krivično djelo, lišen slobode u periodu od 30.11.2021. godine u 15.00 časova do 01.12.2021. godine u 13.30 časova, 3. S. R., JMB ..., od oca R. i majke V., rođene O., rođena ... godine u P., sa prebivalištem u P. - D. bb, državljanka Crne Gore, razumije crnogorski jezik, koji je i njen jezik, pekarka, neudata, bez djece, pismena, završila srednju školu, srednjeg imovnog stanja, neosuđivana, protiv koje se ne vodi postupak za drugo krivično djelo, lišena slobode u perioodu od 30.11.2021. godine u 14.50 časova do 01.12.2021. godine u 14.00 časova. Krivi su Što su: Dana 16. novembra 2021. godine, na teritoriji Glavnog grada Podgorica, svjesni svog djela čije su izvršenje htjeli, znajući da je njihovo djelo zabranjeno, pribavili i držali lažan novac - novčanicu u apoenu od 50,00 eura serijskog broja UU1186165444, a potom označenu novčanicu kao lažan novac stavili u opticaj, na način što je označenog dana okrivljeni P. M. predmetnu novčanicu prodao okrivljenom D. V. za iznos od 20,00 eura, sa namjerom da se tako lažna novčanica stavi u promet, nakon čega je okrivljeni D. V. istog dana predmetnu novčanicu predao okrivljenoj S. R., koja je potom znajući da se radi o falsifikatu, zaposlenoj radnici na trafici TS 131 na Autobuskoj stanici, na Trgu golootočkih žrtava, vlasništvo &quot;Tabacco S Press&quot;, predala istu prilikom kupovine artikla sa te trafike, te time lažnu novačnicu stavila u promet,</p>
         </block>
       </arguments>
       <decision>

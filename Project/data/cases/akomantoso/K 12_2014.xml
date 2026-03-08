@@ -36,9 +36,12 @@
         <godina>2014</godina>
         <sudija>Branku Pejoviću uz sudjelovanje zapisničara Djondović Milenke</sudija>
         <zapisnicar>Djondović Milenke</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
-        <kazna>None</kazna>
+        <kazna>30 dana</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
         <opisSlucaja>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</opisSlucaja>
@@ -46,6 +49,10 @@
           <iznos>50,00 EUR</iznos>
           <iznos>27,50 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka - oštećenog smatrajući da je oštećeni objektivno svjedočio</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -58,6 +65,13 @@ Osnovni Sud u PLJEVLJIMA, 12/14, sudija Branku Pejoviću uz sudjelovanje zapisni
           <p>dana 26.11.2013. godine u 11,11 časova u ul. u P. upotrebio pravu bankomat karticu br... sa brojem PIN koda, vlasništvo oštećenog V. M., koju karticu je prethodno neovlašćeno pribavio dok je sjedio u kući oštećenog, te sa bankomata Atlas banke AD - Filijala u P., oznake... , upotrebom kartice podigao 50,00 eura i time sebi pribavio protivpravnu imovinsku korist, a potom karticu sa PIN kodom uništio,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka - oštećenog smatrajući da je oštećeni objektivno svjedočio</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

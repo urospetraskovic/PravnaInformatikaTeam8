@@ -38,7 +38,7 @@
         <zapisnicar>Vesić Verice</zapisnicar>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
-        <kazna>None</kazna>
+        <kazna>45 dana</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
         <opisSlucaja>Dana 16. 07. 2010. godine na Zelenoj pijaci u Rožajama stavio u opticaj jednu lažnu novčanicu u apoenu od 50,00 eura, serijski broj U77948546749, koju je primio kao pravu, pa saznavši da je lažna, kao prodavac na pijaci, kupcu M. S., vratio lažnu novčanicu zajedno sa ostalim novčanicama, kao razliku do 100,00 eura, koje mu je predhodno dao oštećeni,</opisSlucaja>
@@ -51,6 +51,13 @@
           <iznos>100,00 EUR</iznos>
           <iznos>150,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>nalaz i mišljenje vještaka grafologa Nikčević Veselinke koji je dat po naredbi Istražnog sudije ovog suda od 6</dokaz>
+          <dokaz>nalaza i mišljenja vještaka grafologa Nikčević Veselinke od 6</dokaz>
+          <dokaz>iskaz svjedoka M</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
+        <prebivaliste>Rožajama</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,6 +70,15 @@ Osnovni Sud u ROŽAJAMA, 192/10, sudija porotnika Demić Refije</p>
           <p>Dana 16. 07. 2010. godine na Zelenoj pijaci u Rožajama stavio u opticaj jednu lažnu novčanicu u apoenu od 50,00 eura, serijski broj U77948546749, koju je primio kao pravu, pa saznavši da je lažna, kao prodavac na pijaci, kupcu M. S., vratio lažnu novčanicu zajedno sa ostalim novčanicama, kao razliku do 100,00 eura, koje mu je predhodno dao oštećeni,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• nalaz i mišljenje vještaka grafologa Nikčević Veselinke koji je dat po naredbi Istražnog sudije ovog suda od 6</p>
+            <p>• nalaza i mišljenja vještaka grafologa Nikčević Veselinke od 6</p>
+            <p>• iskaz svjedoka M</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

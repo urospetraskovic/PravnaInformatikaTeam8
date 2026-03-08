@@ -79,7 +79,7 @@
           <iznos>000,00 EUR</iznos>
           <iznos>840,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <zapisnicar>Nikolić Rade</zapisnicar><vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

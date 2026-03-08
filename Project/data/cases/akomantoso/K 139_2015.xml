@@ -48,7 +48,7 @@
         <clanKZ>čl. 239</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 11.12.2023. godine oko 10:30 časova u katedrali S..P. u B., bio svjestan djela i htio njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, otuđio tuđu pokretnu stvar - novčanik oštećenog P. P., u kojem se nalazila bankovna kartica Hipotekarne banke za bezgotovinsko plaćanje kao i novac u iznosu od 30,00 eura i 1.000 albanskih leka, nakon čega se svojim vozilom odvezao u pravcu Budve gdje je pomenutu platnu karticu oštećenoga P. više puta upotrijebio prilikom kupovine različite vrste proizvoda u firmi »M. c.«, kojom prilikom je potrošio iznos od 215,75 eura;</opisSlucaja>
         <svjedoci>
           <svjedok>cijenio k</svjedok>
@@ -89,7 +89,7 @@ Iz iskaza svjedoka oštećenog P. P. utvrđeno je da se dana 11.12.2023.godine</
           <iznos>20,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Natašom Lalović</zapisnicar>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
       </proprietary>

@@ -36,16 +36,19 @@
         <godina>2022</godina>
         <sudija>Rade Ćetković</sudija>
         <zapisnicar>Edine Kraje</zapisnicar>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>1 (jedne) godin</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Tokom oktobra 2021. godine, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, pribavio i držao lažan novac - novčanicu u apoenu od 50 eura serijskog broja UU1186165444, a potom označenu novčanicu kao lažan novac stavio u opticaj dana 25.11.2021. godine, na način što je novčanicu predao izvjesnoj B. koja je potom, istog dana u Pekari "As", koja se nalazi u Podgorici, u blizini TC "Gintaš" tom novčanicom ne znajući da se radi o falsifikatu, zaposlenoj radnici u označenoj pekari, za izvršene usluge predala navedenu novčanicu,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>50 EUR</iznos>
         </iznosi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>

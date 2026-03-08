@@ -409,7 +409,7 @@ class ArchiveFactsExtractor:
     
     def _extract_actual_sentence(self, text: str):
         """Extract the actual sentence given by the court"""
-        # Look for "USLOVNA OSUDA" or "USLOVNU OSUDU"
+        # Look for "USLOVNA OSUDA/PRESUDA" or "USLOVNU OSUDU/PRESUDU"
         if re.search(r'USLOVN[UAO]\s+OSUD[UAO]', text, re.IGNORECASE):
             self.extracted_facts['sentence_type'] = 'uslovna_osuda'
             # Extract the conditional sentence details
@@ -420,15 +420,15 @@ class ArchiveFactsExtractor:
                 unit = m.group(2).lower()
                 if 'mjesec' in unit or 'mesec' in unit:
                     self.extracted_facts['sentence_months'] = num
-                    self.extracted_facts['actual_sentence_text'] = f"Uslovna osuda: {num} meseci zatvora"
+                    self.extracted_facts['actual_sentence_text'] = f"Uslovna presuda: {num} meseci zatvora"
                 elif 'godin' in unit or 'leto' in unit:
                     self.extracted_facts['sentence_months'] = num * 12
-                    self.extracted_facts['actual_sentence_text'] = f"Uslovna osuda: {num} god. zatvora"
+                    self.extracted_facts['actual_sentence_text'] = f"Uslovna presuda: {num} god. zatvora"
                 elif 'dan' in unit:
                     self.extracted_facts['sentence_months'] = round(num / 30, 1)
-                    self.extracted_facts['actual_sentence_text'] = f"Uslovna osuda: {num} dana zatvora"
+                    self.extracted_facts['actual_sentence_text'] = f"Uslovna presuda: {num} dana zatvora"
             else:
-                self.extracted_facts['actual_sentence_text'] = 'Uslovna osuda'
+                self.extracted_facts['actual_sentence_text'] = 'Uslovna presuda'
             
             # Extract probation period
             m2 = re.search(r'(?:rok[u]?\s+(?:od\s+)?|u\s+roku\s+od\s+)(\d+)\s*\(?(\w+)\)?\s*(?:,|\s+)?(?:po\s+pravnosna|ne\s+u[čc]ini|od\s+dana)', text, re.IGNORECASE)
@@ -437,8 +437,8 @@ class ArchiveFactsExtractor:
                 prob_unit = m2.group(2).lower()
                 if 'godin' in prob_unit:
                     self.extracted_facts['probation_years'] = prob_num
-                    prev = self.extracted_facts.get('actual_sentence_text', 'Uslovna osuda')
-                    self.extracted_facts['actual_sentence_text'] = f"{prev}, rok provere {prob_num} godina"
+                    prev = self.extracted_facts.get('actual_sentence_text', 'Uslovna presuda')
+                    self.extracted_facts['actual_sentence_text'] = f"{prev}, rok provere {prob_num} godine"
         
         # Look for effective prison sentence: "Na kaznu zatvora u trajanju od X"
         elif re.search(r'O\s*S\s*U\s*[ĐD]\s*U\s*J\s*E', text):
@@ -908,11 +908,11 @@ class SentenceCalculator:
         is_conditional = self.case_facts.get_fact('conditional_sentence', False)
         archive_sentence_text = archive_facts.get('actual_sentence_text', '')
         
-        # Prefer archive-extracted sentence text (has uslovna osuda prefix etc.)
+        # Prefer archive-extracted sentence text (has uslovna presuda prefix etc.)
         if archive_sentence_text:
             display_sentence = archive_sentence_text
         elif is_conditional and raw_sentence and raw_sentence != 'N/A':
-            display_sentence = f"Uslovna osuda: {raw_sentence}"
+            display_sentence = f"Uslovna presuda: {raw_sentence}"
         elif raw_sentence and raw_sentence not in ('N/A', 'Nepoznat', 'None', ''):
             display_sentence = raw_sentence
         else:
@@ -966,22 +966,17 @@ class SentenceCalculator:
             'has_archive': self.case_facts.has_archive() if hasattr(self.case_facts, 'has_archive') else False,
         }
         
-        # If acquittal, clear penalties and set appropriate values
+        # If acquittal, note it but STILL apply rules to see what they would recommend
         if is_acquittal:
-            analysis['penalty_range'] = {'min': 'N/A', 'max': 'N/A', 'note': 'Oslobađajuća presuda'}
-            analysis['violated_rules'] = ['Optuženi je oslobođen - krivično delo nije dokazano']
-            analysis['recommendation'] = 'Oslobođen - nema kazne'
-            # Add acquittal reason
+            analysis['actual_verdict_note'] = 'Optuženi je u stvarnom postupku oslobođen od optužbe'
             if self.case_facts.get_fact('verdict_reason'):
                 analysis['legal_analysis']['verdict_reason'] = self.case_facts.get_fact('verdict_reason')
-            return analysis
+            # Do NOT return early - continue with rule-based reasoning below
         
         # If judicial warning (sudska opomena), set actual sentence accordingly
         if 'opomena' in verdict_lower:
             analysis['actual_sentence'] = 'Sudska opomena'
-            analysis['recommendation'] = 'Sudska opomena'
-            analysis['penalty_range'] = {'min': 'N/A', 'max': 'N/A', 'note': 'Sudska opomena'}
-            return analysis
+            # Still continue with rule-based reasoning
         
         # Analyze each article
         for article in self.case_facts.get_fact('articles', []):
@@ -1149,11 +1144,7 @@ class SentenceCalculator:
     
     def _identify_mitigating_factors(self, analysis: Dict):
         """Identify mitigating factors from case facts based on drdevice_rules.ddr and čl. 42 KZ CG"""
-        verdict = self.case_facts.get_fact('verdict', '').lower()
-        
-        # If acquitted, no factors needed
-        if 'oslobod' in verdict or 'oslobađ' in verdict:
-            return
+        # Note: We apply rules even for acquittals to show what rules would recommend
         
         archive = self.case_facts.get_fact('archive_facts', {})
         
@@ -1208,11 +1199,7 @@ class SentenceCalculator:
     
     def _identify_aggravating_factors(self, analysis: Dict):
         """Identify aggravating factors from case facts based on drdevice_rules.ddr"""
-        verdict = self.case_facts.get_fact('verdict', '').lower()
-        
-        # If acquitted, no aggravating factors
-        if 'oslobod' in verdict or 'oslobađ' in verdict:
-            return
+        # Note: We apply rules even for acquittals to show what rules would recommend
         
         # Prior convictions (ranije_osudivan)
         if self.case_facts.get_fact('previously_convicted'):
@@ -1268,18 +1255,13 @@ class SentenceCalculator:
             tač. 5: general min   -> can go down to 30 days
             tač. 6: prison min   -> can impose fine instead
         - čl. 47: Full release from punishment (in exceptional cases with restitution)
-        - čl. 52: Uslovna osuda (suspended sentence) when sentence ≤ 2 years
+        - čl. 52: Uslovna presuda (suspended sentence) when sentence ≤ 2 years
         """
         
         verdict = self.case_facts.get_fact('verdict', '').lower()
         
-        # If acquitted, no sentence
-        if 'oslobod' in verdict:
-            return 'Oslobođen - nema kazne'
-        
-        # If judicial warning
-        if 'opomena' in verdict:
-            return 'Sudska opomena'
+        # Note: Even for acquittals and opomena, we continue with rule-based reasoning
+        # to show what the rules would recommend - we don't short-circuit here
         
         penalty_range = analysis['penalty_range']
         if penalty_range['min'] == 'N/A':
@@ -1393,7 +1375,7 @@ class SentenceCalculator:
             rec_years = min_years + (range_span * base_factor)
             rec_years = max(min_years, min(max_years, rec_years))
         
-        # === STEP 5: Check for Uslovna osuda (čl. 52) ===
+        # === STEP 5: Check for Uslovna presuda (čl. 52) ===
         # Suspended sentence possible when: rec ≤ 2 years AND mitigating factors exist
         uslovna_osuda = False
         probation_years = 2
@@ -1408,7 +1390,7 @@ class SentenceCalculator:
                 probation_years = 3
             
             analysis.setdefault('reasoning_steps', []).append(
-                f'čl. 52: Uslovna osuda moguća (kazna ≤ 2 godine, olakšavajuće okolnosti)')
+                f'čl. 52: Uslovna presuda moguća (kazna ≤ 2 godine, olakšavajuće okolnosti)')
         
         # Archive explicitly noted suspended sentence
         if archive.get('suspended_sentence_articles', False) and rec_years <= 2:
@@ -1416,7 +1398,7 @@ class SentenceCalculator:
         
         # === STEP 6: Format final recommendation ===
         if uslovna_osuda:
-            return f'Uslovna osuda: {self._format_years(rec_years)}, rok provere {probation_years} godina (čl. 52)'
+            return f'Uslovna presuda: {self._format_years(rec_years)}, rok provere {probation_years} godine (čl. 52)'
         
         return self._format_years(rec_years)
     
@@ -1502,11 +1484,16 @@ class SentenceCalculator:
         archive = self.case_facts.get_fact('archive_facts', {})
         actual_text = archive.get('actual_sentence_text', actual)
         
+        # Note acquittal status
+        if analysis.get('acquittal'):
+            lines.append("NAPOMENA: Optuženi je u stvarnom postupku oslobođen od optužbe.")
+            lines.append("Rezonovanje po pravilima se ipak primenjuje da bi se videlo šta pravila kažu:")
+        
         if actual_text and actual_text != 'N/A' and recommendation != 'N/A':
-            lines.append(f"Preporučena kazna: {recommendation}")
+            lines.append(f"Preporučena kazna (po pravilima): {recommendation}")
             lines.append(f"Stvarna kazna: {actual_text}")
         elif recommendation != 'N/A':
-            lines.append(f"Preporučena kazna: {recommendation}")
+            lines.append(f"Preporučena kazna (po pravilima): {recommendation}")
         
         return lines
 
@@ -1883,7 +1870,7 @@ class DrDeviceReasoner:
         if results.get('mitigation_allowed'):
             lines.append("Ublažavanje kazne: dozvoljeno (čl. 45 KZ CG)")
         if results.get('suspended_sentence_possible'):
-            lines.append("Uslovna osuda: moguća (čl. 52 KZ CG)")
+            lines.append("Uslovna presuda: moguća (čl. 52 KZ CG)")
         
         min_m = results.get('penalty_min_months')
         max_m = results.get('penalty_max_months')

@@ -48,7 +48,7 @@
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>30,00</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 01.07.2020. godine, poslije 14,00 časova, u Podgorici, svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu platnu karticu, koju je neovlašćeno pribavio, upotrijebio na način, što je, iz prostorije firme "K." DOO, na Zabjelu, u Ul. x. j., čiji je zaposleni, neovlašćeno oduzeo platnu karticu, vlasništvo oštećenog N. B., izdatu od strane "NLB banke" AD Podgorica, broj partije 530-0001100022xxxx-xx, a zatim istu upotrijebio na bankomatu Hipotekarne banke, koji se nalazi u prodajnom objektu "Voli - Naš diskont" na Zabjelu i na taj način pribavio protivpravnu imovinsku korist u iznosu od 100,00 eura,</opisSlucaja>
         <svjedoci>
           <svjedok>oštećenog B.</svjedok>
@@ -69,7 +69,7 @@ Svjedok oštećeni B. N. je u iskazu datom u izviđaju</dokaz>
           <iznos>100,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Edine Kraje</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
       </proprietary>

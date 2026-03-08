@@ -36,12 +36,14 @@
         <godina>2019</godina>
         <sudija>Dragan Mrdak</sudija>
         <zapisnicar>Koviljke Lješnjak</zapisnicar>
+                <obrazovanje>VSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>2 (dva) mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 13. 06. 2019. godine, između državnog tužioca ODT-a u Bijelom Polju Đalović Vladana i okrivljenih H.M. i B.I. , donio je dana 28. 06. 2019. godine, P R E S U D U Okrivljeni: H.M., JMBG - ....... od oca V. i majke Đ. rođene O., rođena ...... godine u V..., sa prebivalištem u naselju M.i, opština S-BiH, državljanka BiH, pismena, sa završenom VSS, razumije crnogorski jezik, razvedena, majka maloljetnog djeteta, srednjeg imovnog stanja, neosuđivana, B.I., JMBG - ., od oca R. i majke N. rođene R., rođen ....... godine u P., . S., sa prebivalištem u S., državljanin Republike S. i BiH, pismen, sa završenom SSS, zaposlen u preduzeću ''E.s'' S., vlasnik preduzeća '' S.M.'' u B. – M.razumije crnogorski jezik, oženjen, otac dvoje djece, srednjeg imovnog stanja, neosuđivan, K r i v i s u Zato što su: 1. Dana 26.04.2019.godine, oko 21:15h, u ul. “Voja Lješnjaka”, opština Bijelo Polje, sposobni da shvate značaj svog djela i da upravljaju svojim postupcima i svjesni svog djela čije su izvršenje htjeli, znajući da je isto zabranjeno, zajedno, po prethodnom dogovoru, ostvarujući zajedničku odluku, stavili u opticaj lažan novac – jednu novčanicu u apoenu od 50 € serijskog broja SE.., kod koje postoje odstupanja u odnosu na originalnu novčanicu u pogledu papira, štampe, vodenog žiga, holograma i smaragdnog broja, koju su primili kao pravu, pa saznavši da je lažna stavili je u opticaj, na način što je B.I dovezao H.M. do ispred marketa “P.” vozilom “M.” kabriolet, sive boje, reg.oznaka J......, dao joj predmetnu novčanicu, koju je H.M., prilikom kupovine ženskih čarapa-unihopki i dječije kreme, predala prodavačici M.H., 2. Dana 29.04.2019.godine, oko 00:50h, u UO “.”, u Podgorici, sposobni da shvate značaj svog djela i da upravljaju svojim postupcima i svjesni svog djela čije su izvršenje htjeli, znajući da je isto zabranjeno, zajedno, po prethodnom dogovoru, ostvarujući zajedničku odluku, stavili u opticaj lažan novac– jednu novčanicu u apoenu od 50€ serijskog broja SB., kod koje postoje odstupanja u odnosu na originalnu novčanicu u pogledu papira, štampe, vodenog žiga, holograma i smaragdnog broja, koju su primili kao pravu, pa saznavši da je lažna stavili je u opticaj, na način što je B.I., nakon što su popili piće u tom ugostiteljskom objektu, prilikom plaćanja računa predao predmetnu novčanicu konobaru S.E.</opisSlucaja>
         <iznosi>
           <iznos>3.692 EUR</iznos>
           <iznos>50 EUR</iznos>
@@ -49,6 +51,10 @@
           <iznos>119,00 EUR</iznos>
           <iznos>3.537 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>zapisnika o saslušanju okrivljenih i sporazuma o priznanju krivice</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -58,9 +64,16 @@ Osnovni Sud u BIJELOM, 118/19, sudija Dragan Mrdak</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 13. 06. 2019. godine, između državnog tužioca ODT-a u Bijelom Polju Đalović Vladana i okrivljenih H.M. i B.I. , donio je dana 28. 06. 2019. godine, P R E S U D U Okrivljeni: H.M., JMBG - ....... od oca V. i majke Đ. rođene O., rođena ...... godine u V..., sa prebivalištem u naselju M.i, opština S-BiH, državljanka BiH, pismena, sa završenom VSS, razumije crnogorski jezik, razvedena, majka maloljetnog djeteta, srednjeg imovnog stanja, neosuđivana, B.I., JMBG - ., od oca R. i majke N. rođene R., rođen ....... godine u P., . S., sa prebivalištem u S., državljanin Republike S. i BiH, pismen, sa završenom SSS, zaposlen u preduzeću ''E.s'' S., vlasnik preduzeća '' S.M.'' u B. – M.razumije crnogorski jezik, oženjen, otac dvoje djece, srednjeg imovnog stanja, neosuđivan, K r i v i s u Zato što su: 1. Dana 26.04.2019.godine, oko 21:15h, u ul. “Voja Lješnjaka”, opština Bijelo Polje, sposobni da shvate značaj svog djela i da upravljaju svojim postupcima i svjesni svog djela čije su izvršenje htjeli, znajući da je isto zabranjeno, zajedno, po prethodnom dogovoru, ostvarujući zajedničku odluku, stavili u opticaj lažan novac – jednu novčanicu u apoenu od 50 € serijskog broja SE.., kod koje postoje odstupanja u odnosu na originalnu novčanicu u pogledu papira, štampe, vodenog žiga, holograma i smaragdnog broja, koju su primili kao pravu, pa saznavši da je lažna stavili je u opticaj, na način što je B.I dovezao H.M. do ispred marketa “P.” vozilom “M.” kabriolet, sive boje, reg.oznaka J......, dao joj predmetnu novčanicu, koju je H.M., prilikom kupovine ženskih čarapa-unihopki i dječije kreme, predala prodavačici M.H., 2. Dana 29.04.2019.godine, oko 00:50h, u UO “.”, u Podgorici, sposobni da shvate značaj svog djela i da upravljaju svojim postupcima i svjesni svog djela čije su izvršenje htjeli, znajući da je isto zabranjeno, zajedno, po prethodnom dogovoru, ostvarujući zajedničku odluku, stavili u opticaj lažan novac– jednu novčanicu u apoenu od 50€ serijskog broja SB., kod koje postoje odstupanja u odnosu na originalnu novčanicu u pogledu papira, štampe, vodenog žiga, holograma i smaragdnog broja, koju su primili kao pravu, pa saznavši da je lažna stavili je u opticaj, na način što je B.I., nakon što su popili piće u tom ugostiteljskom objektu, prilikom plaćanja računa predao predmetnu novčanicu konobaru S.E.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnika o saslušanju okrivljenih i sporazuma o priznanju krivice</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

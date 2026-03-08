@@ -40,7 +40,7 @@
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 11.12.2023. godine oko 10:30 časova u katedrali S..P. u B., bio svjestan djela i htio njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, otuđio tuđu pokretnu stvar - novčanik oštećenog P. P., u kojem se nalazila bankovna kartica Hipotekarne banke za bezgotovinsko plaćanje kao i novac u iznosu od 30,00 eura i 1.000 albanskih leka, nakon čega se svojim vozilom odvezao u pravcu Budve gdje je pomenutu platnu karticu oštećenoga P. više puta upotrijebio prilikom kupovine različite vrste proizvoda u firmi »M. c.«, kojom prilikom je potrošio iznos od 215,75 eura;</opisSlucaja>
         <iznosi>
           <iznos>10 EUR</iznos>
@@ -54,6 +54,10 @@
           <iznos>12,50 EUR</iznos>
           <iznos>29,31 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaza svjedoka oštećenog P</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +70,13 @@ Osnovni Sud u BARU, 13/24, sudija Tamara Spasojević</p>
           <p>Dana 11.12.2023. godine oko 10:30 časova u katedrali S..P. u B., bio svjestan djela i htio njegovo izvršenje iako je znao da je njegovo djelo zabranjeno, otuđio tuđu pokretnu stvar - novčanik oštećenog P. P., u kojem se nalazila bankovna kartica Hipotekarne banke za bezgotovinsko plaćanje kao i novac u iznosu od 30,00 eura i 1.000 albanskih leka, nakon čega se svojim vozilom odvezao u pravcu Budve gdje je pomenutu platnu karticu oštećenoga P. više puta upotrijebio prilikom kupovine različite vrste proizvoda u firmi »M. c.«, kojom prilikom je potrošio iznos od 215,75 eura;</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaza svjedoka oštećenog P</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

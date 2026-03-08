@@ -35,13 +35,16 @@
         <datumNormalizovan>2008-01-01</datumNormalizovan>
         <godina>2008</godina>
         <sudija>porotnika Lubarda Vojislava</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Andrijane Janković</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>None</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Oslobađajuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 15.04.2010.godine, nakon tajnog vijećanja i glasanja donio je, a dana 19.04.2010.godine i javno objavio P R E S U D U OPTUŽENI: R.M., od oca M. i majke D., rodjene K., rodjen.... godine u K., sa prebivalištem u Ul. ..., završio srednju školu, nezaposlen, razveden, otac dvoje mldb. djece, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u P. K.br.07/159 od 05.05.2009. godine zbog krivičnog djela iz člana 220 st.2 u vezi čl.35 KZCG na kaznu zatvora u trajanju od tri mjeseca i presudom Osnovnog suda u P. K.br.08/1943 od 08.10.2009. godine za krivično djelo iz člana 339 st.1 KZCG na trideset dana zatvora uslovno na jednu godinu dana. Na osnovu čl.363 tač.3 i čl. 203 Zakonika o krivičnom postupku CG. OSLOBADJA SE OD OPTUŽBE Kojom je predstavljeno da je: Dana 11.05.2007. godine, u P. stavio u opticaj lažan novac kao pravi, na način što je lažnu novčanicu u apoenu od 100,00 eura serijskog broja S00347138413 predao blagajnici u kazinu - &quot;K.&quot;, vlasništvo preduzeća &quot;K. &quot;DOO P., prilikom uplate dopune za igre na sreću na aparatima,</opisSlucaja>
         <iznosi>
           <iznos>20,00 EUR</iznos>
           <iznos>10,00 EUR</iznos>
@@ -54,6 +57,13 @@
           <iznos>95,00 EUR</iznos>
           <iznos>5 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>nalaza i mišljenja vještaka grafološke struke od 16</dokaz>
+          <dokaz>nalaza i mišljenja vještaka grafološke struke N</dokaz>
+          <dokaz>nalaz i mišljenje vještaka grafološke struke kao stručan i jasan</dokaz>
+          <dokaz>video nadzor</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +73,19 @@ Osnovni Sud u PODGORICI, 730/08, sudija porotnika Lubarda Vojislava</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 15.04.2010.godine, nakon tajnog vijećanja i glasanja donio je, a dana 19.04.2010.godine i javno objavio P R E S U D U OPTUŽENI: R.M., od oca M. i majke D., rodjene K., rodjen.... godine u K., sa prebivalištem u Ul. ..., završio srednju školu, nezaposlen, razveden, otac dvoje mldb. djece, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u P. K.br.07/159 od 05.05.2009. godine zbog krivičnog djela iz člana 220 st.2 u vezi čl.35 KZCG na kaznu zatvora u trajanju od tri mjeseca i presudom Osnovnog suda u P. K.br.08/1943 od 08.10.2009. godine za krivično djelo iz člana 339 st.1 KZCG na trideset dana zatvora uslovno na jednu godinu dana. Na osnovu čl.363 tač.3 i čl. 203 Zakonika o krivičnom postupku CG. OSLOBADJA SE OD OPTUŽBE Kojom je predstavljeno da je: Dana 11.05.2007. godine, u P. stavio u opticaj lažan novac kao pravi, na način što je lažnu novčanicu u apoenu od 100,00 eura serijskog broja S00347138413 predao blagajnici u kazinu - &quot;K.&quot;, vlasništvo preduzeća &quot;K. &quot;DOO P., prilikom uplate dopune za igre na sreću na aparatima,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• nalaza i mišljenja vještaka grafološke struke od 16</p>
+            <p>• nalaza i mišljenja vještaka grafološke struke N</p>
+            <p>• nalaz i mišljenje vještaka grafološke struke kao stručan i jasan</p>
+            <p>• video nadzor</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Oslobađajuća</p>

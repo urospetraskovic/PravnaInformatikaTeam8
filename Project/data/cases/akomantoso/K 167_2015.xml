@@ -36,12 +36,14 @@
         <godina>2015</godina>
         <sudija>Dubravki Popović</sudija>
         <zapisnicar>Djurišić Dijane</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
-        <kazna>None</kazna>
+        <kazna>1 godine</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana ... godine, oko ... časova u kiosku ,,Š“ u ul. ,,S.S.“ u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 €, serijskog broja U ... za koju je znao da je lažna na način što je prilikom kupovine cigareta marke ,, P.“ i ,,D.“ i elektronske dopune od 10 €, platio prodavačici K.S. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časa, u kiosku str. ,,S.“ vlasništvo oštećenog R.S., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja U ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,, P.“ , cigareta ,,B.“ i 500 gr. kafe, platio oštećenom R.S., ovom falsifikovanom novčanicom . Dana ... godine, oko ... . časova, u kiosku DOO ,, M.L.“ vlasništvo oštećene S.D., u ul. M.Z., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja Z ...., za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,,A.b.“, i marke ,,V.“i kafe ,,B.“,platio prodavačici R.S. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časova u prodavnici ,, M.k.“ vlasništvo oštećenog P.M., u ul. P., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja V..., za koju je znao da je lažna, na način što je prilikom kupovine jedne flaše viskija ,,C.r.,“ platio prodavcu Z.B. ovom falsifikovanom novčanicom . Dana ... godine, oko ... časova, u kiosku Str. M. “II, vlasništvo oštećenog M.Ž., u ul. M.Z., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 € serijskog broja V ..., za koju je znao da je lažna, na način što je prilikom kupovine jedne dopune od 5 € i cigareta platio prodavcu B.Z. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časova u kiosku DOO ,,K.,“ vlasništvo oštećenog R. V., u ul. D.V., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja S ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke V., kafe marke B. i muškog parfema marke F., platio prodavcu D.Ž. ovom falsifikovanom novčanicom .</opisSlucaja>
         <iznosi>
           <iznos>1.200 EUR</iznos>
           <iznos>28 EUR</iznos>
@@ -54,6 +56,24 @@
           <iznos>5,00 EUR</iznos>
           <iznos>200 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvještaja o tehničkoj analizi novčanica koje su predmet postupka</dokaz>
+          <dokaz>nalaza i mišljenja vještaka D</dokaz>
+          <dokaz>zapisnik o prepoznavanju lica Kt</dokaz>
+          <dokaz>zapisnik o prepoznavanju</dokaz>
+          <dokaz>zapisnika o prepoznavanju lica ODT-a u Beranama Kt</dokaz>
+          <dokaz>iskaza svjedoka K</dokaz>
+          <dokaz>iskaz svjedoka K</dokaz>
+          <dokaz>iskaza svjedoka R</dokaz>
+          <dokaz>iskaza svjedoka Z</dokaz>
+          <dokaz>iskaza svjedoka B</dokaz>
+          <dokaz>iskaza svjedoka D</dokaz>
+          <dokaz>iskaza svjedoka V</dokaz>
+          <dokaz>video zapis sa objekta DOO K</dokaz>
+          <dokaz>video nadzora u kome je radio</dokaz>
+          <dokaz>video zapisu sa objekta DOO K</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +83,30 @@ Osnovni Sud u BERANAMA, 167/15, sudija Dubravki Popović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana ... godine, oko ... časova u kiosku ,,Š“ u ul. ,,S.S.“ u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 €, serijskog broja U ... za koju je znao da je lažna na način što je prilikom kupovine cigareta marke ,, P.“ i ,,D.“ i elektronske dopune od 10 €, platio prodavačici K.S. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časa, u kiosku str. ,,S.“ vlasništvo oštećenog R.S., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja U ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,, P.“ , cigareta ,,B.“ i 500 gr. kafe, platio oštećenom R.S., ovom falsifikovanom novčanicom . Dana ... godine, oko ... . časova, u kiosku DOO ,, M.L.“ vlasništvo oštećene S.D., u ul. M.Z., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja Z ...., za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke ,,A.b.“, i marke ,,V.“i kafe ,,B.“,platio prodavačici R.S. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časova u prodavnici ,, M.k.“ vlasništvo oštećenog P.M., u ul. P., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja V..., za koju je znao da je lažna, na način što je prilikom kupovine jedne flaše viskija ,,C.r.,“ platio prodavcu Z.B. ovom falsifikovanom novčanicom . Dana ... godine, oko ... časova, u kiosku Str. M. “II, vlasništvo oštećenog M.Ž., u ul. M.Z., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac - jednu novčanicu u apoenu od 200 € serijskog broja V ..., za koju je znao da je lažna, na način što je prilikom kupovine jedne dopune od 5 € i cigareta platio prodavcu B.Z. ovom falsifikovanom novčanicom. Dana ... godine, oko ... časova u kiosku DOO ,,K.,“ vlasništvo oštećenog R. V., u ul. D.V., u B., svjestan svoga djela čije je izvršenje htio, stavio u opticaj lažan novac- jednu novčanicu u apoenu od 200 € serijskog broja S ... za koju je znao da je lažna, na način što je prilikom kupovine cigareta marke V., kafe marke B. i muškog parfema marke F., platio prodavcu D.Ž. ovom falsifikovanom novčanicom .</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvještaja o tehničkoj analizi novčanica koje su predmet postupka</p>
+            <p>• nalaza i mišljenja vještaka D</p>
+            <p>• zapisnik o prepoznavanju lica Kt</p>
+            <p>• zapisnik o prepoznavanju</p>
+            <p>• zapisnika o prepoznavanju lica ODT-a u Beranama Kt</p>
+            <p>• iskaza svjedoka K</p>
+            <p>• iskaz svjedoka K</p>
+            <p>• iskaza svjedoka R</p>
+            <p>• iskaza svjedoka Z</p>
+            <p>• iskaza svjedoka B</p>
+            <p>• iskaza svjedoka D</p>
+            <p>• iskaza svjedoka V</p>
+            <p>• video zapis sa objekta DOO K</p>
+            <p>• video nadzora u kome je radio</p>
+            <p>• video zapisu sa objekta DOO K</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

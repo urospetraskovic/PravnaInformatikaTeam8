@@ -35,13 +35,13 @@
         <datumNormalizovan>2023-01-01</datumNormalizovan>
         <godina>2023</godina>
         <sudija>Goranu Đukoviću</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Sanja Radević</zapisnicar>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>dana 24.05.2024. godine, u prisustvu državnog tužioca u Osnovnom državnom tužilaštvu u Podgorici M. M., okrivljene L. J. i njenog branioca po službenoj dužnosti, adv. K. I., po zamjeničkom punomoćju adv. V. M., te okrivljenog M. A. i njegovog branioca po službenoj dužnosti adv. V. B., dana 03.06.2024. godine, donio je i javno objavio P R E S U D U Okrivljeni: 1.J. L., JMB ..., od oca V. i majke M., rođene B., rođena ... godine u B., sa prebivalištem u B., R. S., ul. V. M. br. ..., državljanka R. S., govori srpskim jezikom, razumije crnogorski jezik, razvedena, majka jednog djeteta, sa završenim Ekonomskim fakultetom, po zanimanju tehničarka izrade za urbanističko tehničke uslove u “Gradskoj ćistoći” u Beogradu, lošeg imovnog stanja, neosuđivana, protiv koje se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju sudije za istragu Osnovnog suda u Podgorici Kri.br. ./23 od 01.08.2023 godine, koji se računa od 30.07.2023 godine od 05,40 časova, 2.A. M., JMB ..., od oca T. i majke S., rođene V., rođenog ... godine u Z., R. S., sa prebivalištem u B., R. S., ulica P. br. ..., državljanin B. i H. i R. S., govori srpskim jezikom, razumije crnogorski jezik, oženjen, otac četvoro djece, sa završenom srednjom školom, po zanimanju radnik obezbjeđenja i zanatlija, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K.br. .../2016, koja je postala pravosnažna dana 09.01.2018 godine, a kojom mu je zbog izvršenja krivičnog djela teška djela protiv bezbjednosti javnog saobraćaja iz čl. 348 st.3 u vezi st.1 u vezi čl. 339 st.3 KZ CG izrečena uslovna osuda tako što mu je prethodno utvrđena kazna zatvora u trajanju od 4 (četiri) mjeseca i istovremeno određeno da se ista neće izvršiti ukoliko u roku od 2 (dvije) godine od dana pravosnažnosti presude ne učini novo krivično djelo, protiv koga se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju sudije za istragu Osnovnog suda u Podgorici Kri.br. .../23 od 01.08.2023 godine, koji se računa od 30.07.2023 godine od 06,15 časova, KRIVI SU Zato što su: I Okrivljena J. L.: - dana 29.07.2023. godine, u Nj., P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je oko 17,00 časova na štandu oštećenog privrednog društva “M.” DOO, na kojem radi J. M., predala falsifikovanu novčanicu u apoenu od 200,00 eura serijskog broj UA... i pravu novčanicu od 5,00 eura, radi kupovine dva pakovanja vakum pršute, 1l lozove rakije, 1l vina, jednu teglu meda, jednu teglu suvog voća, dvije drvene frule i dva drvena ukrasa u obliku sove, pa nakon što joj je J. M. predao kupljene stvari čija ukupna cijena je bila 65,00 eura, istovremeno joj je vratio kusur u iznosu od 140,00 eura, - dana 29.07.2023. godine, u P., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je u večernjim časovima u prodavnici “Sexy shop” koja posluje u okviru privrednog društva “Svetlyuchny Company” predala falsifikovanu novčanicu u apoenu od 500,00 eura serijskog broja X... radi kupovine dva vibratora, parfema, spreja, kapi, aksesoar za sado mazo i dvije analne kupe, pa je nakon što joj je radnica A. Y. predala kupljene stvari čija je ukupna vrijednost 315,00 eura, vratila joj je kusur u iznosu od 185,00 eura, - dana 30.07.2023. godine, oko 01,30 časova na teritoriji P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, držala lažan novac u namjeri da ga stavi u promet, na način što je sa okrivljenim A. M., koji je upravljao putničkim motornim vozilo marke “Škoda Fabia” registarskih oznaka BG...BN, krenula prema Budvi kako bi novac stavila u dalji promet, kojom prilikom su zaustavljeni i kontrolisani od strane službenika Uprave policije, pa je okrivljena J. L. službenicima saopštila i predala dvije falsifikovane novčanice u apoenima od po 500,00 eura serijskih brojeva X... i X...,</opisSlucaja>
         <iznosi>
           <iznos>10,00 EUR</iznos>
           <iznos>000,80 EUR</iznos>
@@ -54,6 +54,26 @@
           <iznos>5,00 EUR</iznos>
           <iznos>315,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>potvrdu o privremeno oduzetim predmetima</dokaz>
+          <dokaz>potvrdu o privremeno oduzetim predmetima Uprave policije OB Podgorica - Stanice kriminalističke policije za suzbijanje e</dokaz>
+          <dokaz>nalaza i mišljenja vještaka psihijatra od 19</dokaz>
+          <dokaz>nalaza i mišljenja vještaka psihijatra dr Lj</dokaz>
+          <dokaz>nalaza i mišljenja vještaka psihijatra dr L</dokaz>
+          <dokaz>iskaza svjedoka oštećenog J</dokaz>
+          <dokaz>iskaz svjedoka oštećenog</dokaz>
+          <dokaz>iskaza svjedoka A</dokaz>
+          <dokaz>iskaz svjedoka A</dokaz>
+          <dokaz>video nadzora predat policiji</dokaz>
+          <dokaz>video nadzora i isti dostavio policiji</dokaz>
+          <dokaz>Fotodokumentaciju Uprave policije broj</dokaz>
+          <dokaz>Fotodokumentacijom Uprave policije broj</dokaz>
+          <dokaz>fotodokumentacije Uprave policije broj</dokaz>
+          <dokaz>službenu zabilješku Uprave policije OB Podgorica od 30</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljene L</dokaz>
+          <dokaz>medicinske dokumentacije na ime okrivljene L</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +83,32 @@ Osnovni Sud u PODGORICI, 637/23, sudija Goranu Đukoviću</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 24.05.2024. godine, u prisustvu državnog tužioca u Osnovnom državnom tužilaštvu u Podgorici M. M., okrivljene L. J. i njenog branioca po službenoj dužnosti, adv. K. I., po zamjeničkom punomoćju adv. V. M., te okrivljenog M. A. i njegovog branioca po službenoj dužnosti adv. V. B., dana 03.06.2024. godine, donio je i javno objavio P R E S U D U Okrivljeni: 1.J. L., JMB ..., od oca V. i majke M., rođene B., rođena ... godine u B., sa prebivalištem u B., R. S., ul. V. M. br. ..., državljanka R. S., govori srpskim jezikom, razumije crnogorski jezik, razvedena, majka jednog djeteta, sa završenim Ekonomskim fakultetom, po zanimanju tehničarka izrade za urbanističko tehničke uslove u “Gradskoj ćistoći” u Beogradu, lošeg imovnog stanja, neosuđivana, protiv koje se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju sudije za istragu Osnovnog suda u Podgorici Kri.br. ./23 od 01.08.2023 godine, koji se računa od 30.07.2023 godine od 05,40 časova, 2.A. M., JMB ..., od oca T. i majke S., rođene V., rođenog ... godine u Z., R. S., sa prebivalištem u B., R. S., ulica P. br. ..., državljanin B. i H. i R. S., govori srpskim jezikom, razumije crnogorski jezik, oženjen, otac četvoro djece, sa završenom srednjom školom, po zanimanju radnik obezbjeđenja i zanatlija, lošeg imovnog stanja, osuđivan presudom Osnovnog suda u Podgorici K.br. .../2016, koja je postala pravosnažna dana 09.01.2018 godine, a kojom mu je zbog izvršenja krivičnog djela teška djela protiv bezbjednosti javnog saobraćaja iz čl. 348 st.3 u vezi st.1 u vezi čl. 339 st.3 KZ CG izrečena uslovna osuda tako što mu je prethodno utvrđena kazna zatvora u trajanju od 4 (četiri) mjeseca i istovremeno određeno da se ista neće izvršiti ukoliko u roku od 2 (dvije) godine od dana pravosnažnosti presude ne učini novo krivično djelo, protiv koga se ne vodi postupak za drugo krivično djelo, u pritvoru po rješenju sudije za istragu Osnovnog suda u Podgorici Kri.br. .../23 od 01.08.2023 godine, koji se računa od 30.07.2023 godine od 06,15 časova, KRIVI SU Zato što su: I Okrivljena J. L.: - dana 29.07.2023. godine, u Nj., P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je oko 17,00 časova na štandu oštećenog privrednog društva “M.” DOO, na kojem radi J. M., predala falsifikovanu novčanicu u apoenu od 200,00 eura serijskog broj UA... i pravu novčanicu od 5,00 eura, radi kupovine dva pakovanja vakum pršute, 1l lozove rakije, 1l vina, jednu teglu meda, jednu teglu suvog voća, dvije drvene frule i dva drvena ukrasa u obliku sove, pa nakon što joj je J. M. predao kupljene stvari čija ukupna cijena je bila 65,00 eura, istovremeno joj je vratio kusur u iznosu od 140,00 eura, - dana 29.07.2023. godine, u P., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, lažan novac stavila u promet, na način što je u večernjim časovima u prodavnici “Sexy shop” koja posluje u okviru privrednog društva “Svetlyuchny Company” predala falsifikovanu novčanicu u apoenu od 500,00 eura serijskog broja X... radi kupovine dva vibratora, parfema, spreja, kapi, aksesoar za sado mazo i dvije analne kupe, pa je nakon što joj je radnica A. Y. predala kupljene stvari čija je ukupna vrijednost 315,00 eura, vratila joj je kusur u iznosu od 185,00 eura, - dana 30.07.2023. godine, oko 01,30 časova na teritoriji P. C., svjesna svog djela čije je izvršenje htjela i znajući da je njeno djelo zabranjeno, držala lažan novac u namjeri da ga stavi u promet, na način što je sa okrivljenim A. M., koji je upravljao putničkim motornim vozilo marke “Škoda Fabia” registarskih oznaka BG...BN, krenula prema Budvi kako bi novac stavila u dalji promet, kojom prilikom su zaustavljeni i kontrolisani od strane službenika Uprave policije, pa je okrivljena J. L. službenicima saopštila i predala dvije falsifikovane novčanice u apoenima od po 500,00 eura serijskih brojeva X... i X...,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• potvrdu o privremeno oduzetim predmetima</p>
+            <p>• potvrdu o privremeno oduzetim predmetima Uprave policije OB Podgorica - Stanice kriminalističke policije za suzbijanje e</p>
+            <p>• nalaza i mišljenja vještaka psihijatra od 19</p>
+            <p>• nalaza i mišljenja vještaka psihijatra dr Lj</p>
+            <p>• nalaza i mišljenja vještaka psihijatra dr L</p>
+            <p>• iskaza svjedoka oštećenog J</p>
+            <p>• iskaz svjedoka oštećenog</p>
+            <p>• iskaza svjedoka A</p>
+            <p>• iskaz svjedoka A</p>
+            <p>• video nadzora predat policiji</p>
+            <p>• video nadzora i isti dostavio policiji</p>
+            <p>• Fotodokumentaciju Uprave policije broj</p>
+            <p>• Fotodokumentacijom Uprave policije broj</p>
+            <p>• fotodokumentacije Uprave policije broj</p>
+            <p>• službenu zabilješku Uprave policije OB Podgorica od 30</p>
+            <p>• medicinsku dokumentaciju na ime okrivljene L</p>
+            <p>• medicinske dokumentacije na ime okrivljene L</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

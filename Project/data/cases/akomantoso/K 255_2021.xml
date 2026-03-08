@@ -54,6 +54,19 @@
           <iznos>400,00 EUR</iznos>
           <iznos>200,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>zapisnik o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24</dokaz>
+          <dokaz>zapisnika o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24</dokaz>
+          <dokaz>iskaz svjedoka oštećenog V</dokaz>
+          <dokaz>iskaz svjedoka D</dokaz>
+          <dokaz>iskaza svjedoka oštećenog I</dokaz>
+          <dokaz>iskaza svjedoka D</dokaz>
+          <dokaz>video nadzorne kamere sa bankomata NLB Banke u ulici M</dokaz>
+          <dokaz>video nadzor i na tim snimcima vidjeli su da je V</dokaz>
+          <dokaz>video nadzor kamere sa bankomata NBL banke u Baru</dokaz>
+          <dokaz>video nadzor vidio je da je neko lice uzelo sa betona ispred marketa S</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +79,22 @@ Osnovni Sud u BARU, 255/21, sudija Tamara Spasojević</p>
           <p>Dana 22.09.2021.godine u Baru svjestan svog djela, čije izvršenje je htio, znajući da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno nabavio, na način što je u U. protivpravno prisvojio novčanik, vlasništvo V. I., koji je našao, u kom se nalazila platna Visa Classic Debit kartica NLB Banke br. .... sa pin kodom, koju je upotrijebio na bankomatu u ulici M. T. br 24 u dva navrata i to u 20,52 časa i 20,55 časova, te po osnovu iste podigao novac u iznosu od 400,00 eura u kom iznosu je sebi pribavio protivpravnu imovinsku korist,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• zapisnik o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24</p>
+            <p>• zapisnika o pretresanju Uprave policije OB Ulcinj UBD 675/21 od 24</p>
+            <p>• iskaz svjedoka oštećenog V</p>
+            <p>• iskaz svjedoka D</p>
+            <p>• iskaza svjedoka oštećenog I</p>
+            <p>• iskaza svjedoka D</p>
+            <p>• video nadzorne kamere sa bankomata NLB Banke u ulici M</p>
+            <p>• video nadzor i na tim snimcima vidjeli su da je V</p>
+            <p>• video nadzor kamere sa bankomata NBL banke u Baru</p>
+            <p>• video nadzor vidio je da je neko lice uzelo sa betona ispred marketa S</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

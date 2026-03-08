@@ -35,17 +35,21 @@
         <datumNormalizovan>2013-01-01</datumNormalizovan>
         <godina>2013</godina>
         <sudija>Jeleni Perović Kovačević</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Slađane Vlahović</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>30 (trideset) dana</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>U januaru 2012. godine, u P, svjestan svog djela čije je izvršenje htio, znajući da je njegovo djelo zabranjeno, saznao da je lažan novac stavljen u opticaj, pa to nije prijavio, na način što je prilikom predaje pazara u poslovnici H b, od strane službenice te banke, upoznat da se u pazaru nalazi falsifikovana novčanica u apoenu od 100 eura, serijskog broja V20387039962, nakon čega mu je službenica banke tu novčanicu i predala, pa imajući u vidu to saznanje novčanicu nije prijavio nadležnom državnom organu, već je istu držao kod sebe, sve do dana 18.05.2012. godine, kada je ista pronađena u njegovom vozilu, na graničnom prelazu K, od strane ovlašćenih službenika MUP-a Republike S,</opisSlucaja>
         <iznosi>
           <iznos>50,00 EUR</iznos>
           <iznos>100 EUR</iznos>
         </iznosi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>

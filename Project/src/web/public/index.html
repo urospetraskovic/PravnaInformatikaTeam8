@@ -948,11 +948,17 @@
                     </div>
                   </div>
                 </div>
-                <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
-                  <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
-                </button>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
+                    <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
+                  </button>
+                  <button onclick="runSimilarityReasoning('${caseData.id}')" class="btn-cbr" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(16,185,129,0.3)';">
+                    <span style="font-size: 1.2em;">🔍</span> Rasuđivanje po sličnosti
+                  </button>
+                </div>
               </div>
               <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
+              <div id="cbr-result" style="margin: 20px 0; display: none;"></div>
 
               <div class="fields-grid">
                 <div class="field">
@@ -1048,11 +1054,17 @@
                     </div>
                   </div>
                 </div>
-                <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
-                  <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
-                </button>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <button onclick="runReasoning('${caseData.id}')" class="btn-reasoning" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(37,99,235,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(37,99,235,0.3)';">
+                    <span style="font-size: 1.2em;">⚖️</span> Rezonovanje po pravilima
+                  </button>
+                  <button onclick="runSimilarityReasoning('${caseData.id}')" class="btn-cbr" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(16,185,129,0.3)';">
+                    <span style="font-size: 1.2em;">🔍</span> Rasuđivanje po sličnosti
+                  </button>
+                </div>
               </div>
               <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
+              <div id="cbr-result" style="margin: 20px 0; display: none;"></div>
 
               <div class="fields-grid">
                 <div class="field">
@@ -1355,6 +1367,242 @@
                 DR-Device: ${result.dr_device_reasoning.reason || 'Greška'}
               </div>
               ` : ''}
+              
+            </div>
+          </div>
+        `;
+        
+        resultDiv.innerHTML = html;
+        
+      } catch (error) {
+        resultDiv.innerHTML = `<div style="color: #c00; padding: 15px; background: #fff5f5; border-radius: 6px;">Greška: ${error.message}</div>`;
+      }
+    }
+
+    async function runSimilarityReasoning(caseId) {
+      const resultDiv = document.getElementById('cbr-result');
+      if (!resultDiv) return;
+      
+      resultDiv.style.display = 'block';
+      resultDiv.innerHTML = '<div style="color: #666; padding: 15px; text-align: center;">Traženje sličnih predmeta...</div>';
+      
+      try {
+        const response = await fetch('/api/cbr-reasoning', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ caseId: caseId })
+        });
+        
+        const result = await response.json();
+        
+        if (result.error) {
+          resultDiv.innerHTML = `<div style="color: #c00; padding: 15px; background: #fff5f5; border-radius: 6px; border: 1px solid #fcc;">Greška: ${result.error}</div>`;
+          return;
+        }
+        
+        const rec = result.recommendation || {};
+        const qc = result.queryCase || {};
+        const verdictDist = rec.verdictDistribution || {};
+        const verdictEntries = Object.entries(verdictDist);
+        
+        // Compute difference between recommended and actual
+        const recMonths = rec.kaznaUMjesecima;
+        const actualMonths = qc.kaznaUMjesecima || 0;
+        let diffText = '';
+        if (recMonths != null && actualMonths > 0) {
+          const diff = Math.round((recMonths - actualMonths) * 10) / 10;
+          if (diff > 0) diffText = '<span style="color: #dc2626; font-size: 0.75em;">(CBR preporučuje +' + diff + ' mes. više)</span>';
+          else if (diff < 0) diffText = '<span style="color: #059669; font-size: 0.75em;">(CBR preporučuje ' + diff + ' mes. manje)</span>';
+          else diffText = '<span style="color: #666; font-size: 0.75em;">(isto kao izrečena)</span>';
+        }
+
+        // Verdict color helper
+        function verdictStyle(v) {
+          if (v === 'uslovna') return 'background: #fef9c3; color: #854d0e; border: 1px solid #fde047;';
+          if (v === 'osudjujuca') return 'background: #fef2f2; color: #991b1b; border: 1px solid #fca5a5;';
+          if (v === 'oslobadjajuca') return 'background: #ecfdf5; color: #065f46; border: 1px solid #6ee7b7;';
+          return 'background: #f3f4f6; color: #374151; border: 1px solid #d1d5db;';
+        }
+
+        // Translate labels
+        function translateLabel(key) {
+          const map = {
+            ranijeOsudjivan: 'Ranije osuđivan', priznanje: 'Priznanje', zaposlenost: 'Zaposlenost',
+            bracniStatus: 'Bračni status', obrazovanje: 'Obrazovanje', pokusaj: 'Pokušaj',
+            saizvrsilastvo: 'Saizvršilaštvo', iznos: 'Iznos (€)', ukupanIznos: 'Ukupan iznos (€)',
+            brojTransakcija: 'Br. transakcija', brojOkrivljenih: 'Br. okrivljenih',
+            brojSvjedoka: 'Br. svedoka', brojDokaza: 'Br. dokaza', novcanaKazna: 'Novčana kazna (€)',
+          };
+          return map[key] || key;
+        }
+        
+        let html = `
+          <div style="font-family: 'Segoe UI', system-ui, sans-serif; background: #fff; border: 1px solid #d1fae5; border-radius: 8px; overflow: hidden;">
+            
+            <!-- HEADER -->
+            <div style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%); color: white; padding: 16px 20px; cursor: pointer; user-select: none;" onclick="const body = this.nextElementSibling; const arrow = this.querySelector('.collapse-arrow'); if (body.style.display === 'none') { body.style.display = 'block'; arrow.textContent = '▼'; } else { body.style.display = 'none'; arrow.textContent = '▶'; }">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <div style="font-size: 0.75em; opacity: 0.8; text-transform: uppercase; letter-spacing: 1px;">Rasuđivanje po sličnosti (CBR)</div>
+                  <div style="font-size: 1.3em; font-weight: 600; margin-top: 2px;">Predmet ${qc.brojPredmeta || 'N/A'}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <div style="font-size: 0.8em; padding: 4px 12px; background: rgba(255,255,255,0.15); border-radius: 4px;">
+                    ${result.totalCasesCompared || 0} predmeta upoređeno
+                  </div>
+                  <span class="collapse-arrow" style="font-size: 0.9em; opacity: 0.7;">▼</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- MAIN CONTENT -->
+            <div style="padding: 20px;">
+              
+              <!-- RECOMMENDATION SUMMARY -->
+              <table style="width: 100%; border-collapse: collapse; margin-bottom: 16px;">
+                <tr>
+                  <td style="padding: 12px; text-align: center; border: 1px solid #d1fae5; background: #ecfdf5;">
+                    <div style="font-size: 0.7em; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px;">Preporučena kazna (CBR)</div>
+                    <div style="font-size: 1.3em; font-weight: 700; color: #065f46; margin-top: 4px;">${recMonths != null ? recMonths + ' meseci' : 'N/A'}</div>
+                    <div style="margin-top: 4px;">${diffText}</div>
+                  </td>
+                  <td style="padding: 12px; text-align: center; border: 1px solid #d1fae5; background: #f0fdf4;">
+                    <div style="font-size: 0.7em; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px;">Izrečena kazna (stvarna)</div>
+                    <div style="font-size: 1.3em; font-weight: 700; color: #374151; margin-top: 4px;">${actualMonths > 0 ? actualMonths + ' meseci' : 'N/A'}</div>
+                    <div style="font-size: 0.75em; color: #666; margin-top: 4px;">${qc.vrstaPresude ? '<span style="padding: 2px 8px; border-radius: 3px; ' + verdictStyle(qc.vrstaPresude) + '">' + qc.vrstaPresude + '</span>' : ''} ${qc.uslovnaOsuda === 'Da' ? '(uslovna)' : ''}</div>
+                  </td>
+                  <td style="padding: 12px; text-align: center; border: 1px solid #d1fae5; background: #ecfdf5;">
+                    <div style="font-size: 0.7em; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px;">Verovatnoća uslovne presude</div>
+                    <div style="font-size: 1.3em; font-weight: 700; color: #065f46; margin-top: 4px;">${rec.conditionalSentenceLikelihood != null ? rec.conditionalSentenceLikelihood + '%' : 'N/A'}</div>
+                  </td>
+                  <td style="padding: 12px; text-align: center; border: 1px solid #d1fae5; background: #f0fdf4;">
+                    <div style="font-size: 0.7em; color: #065f46; text-transform: uppercase; letter-spacing: 0.5px;">Distribucija presuda</div>
+                    <div style="font-size: 0.9em; font-weight: 600; color: #065f46; margin-top: 4px;">
+                      ${verdictEntries.map(([k,v]) => '<span style="padding: 2px 6px; border-radius: 3px; margin: 2px; display: inline-block; ' + verdictStyle(k) + '">' + k + ': ' + v + '</span>').join(' ') || 'N/A'}
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- EXPLANATION -->
+              ${rec.conditionalExplanation ? `
+              <div style="padding: 10px 14px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; margin-bottom: 16px; font-size: 0.82em; color: #92400e;">
+                <strong>ℹ️ Objašnjenje verovatnoće uslovne presude:</strong> ${rec.conditionalExplanation}
+              </div>
+              ` : ''}
+              
+              <!-- SIMILAR CASES TABLE -->
+              <div style="font-weight: 600; color: #065f46; margin-bottom: 10px; font-size: 0.85em;">Top 5 najsličnijih predmeta:</div>
+              <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.82em;">
+                  <thead>
+                    <tr style="background: #ecfdf5;">
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Sličnost</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Br. predmeta</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Sud</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Tip dela</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Član KZ</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Presuda</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Kazna (meseci)</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Uslovna</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Novčana (€)</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Iznos (€)</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Ranije osuđ.</th>
+                      <th style="padding: 8px 10px; text-align: left; border: 1px solid #d1fae5; color: #065f46;">Priznanje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${(result.similarCases || []).map((sc, i) => {
+                      const barWidth = Math.max(5, sc.similarity);
+                      return '<tr>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;"><div style="display: flex; align-items: center; gap: 6px;"><div style="width: 50px; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden;"><div style="width: ' + barWidth + '%; height: 100%; background: #10b981; border-radius: 3px;"></div></div><strong>' + sc.similarity + '%</strong></div></td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5; font-weight: 600;">' + (sc.brojPredmeta || '') + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.sud || '') + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.tipKrivicnogDjela || '') + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.clanKZ || '') + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;"><span style="padding: 2px 8px; border-radius: 3px; font-size: 0.9em; ' + verdictStyle(sc.vrstaPresude) + '">' + (sc.vrstaPresude || '') + '</span></td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5; font-weight: 600;">' + (sc.kaznaUMjesecima || 0) + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;"><span style="padding: 2px 8px; border-radius: 3px; font-size: 0.9em; ' + (sc.uslovnaOsuda === 'Da' ? 'background: #fef9c3; color: #854d0e; border: 1px solid #fde047;' : 'background: #f3f4f6; color: #374151;') + '">' + (sc.uslovnaOsuda || '') + '</span></td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.novcanaKazna || 0) + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.iznos || 0) + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.ranijeOsudjivan || '') + '</td>' +
+                        '<td style="padding: 8px 10px; border: 1px solid #d1fae5;">' + (sc.priznanje || '') + '</td>' +
+                      '</tr>';
+                    }).join('')}
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- EXPANDABLE DETAILS PER SIMILAR CASE -->
+              <details style="margin-top: 12px;">
+                <summary style="cursor: pointer; font-size: 0.82em; color: #065f46; font-weight: 600; padding: 6px 0;">
+                  📋 Detaljne informacije o sličnim predmetima
+                </summary>
+                <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 10px;">
+                  ${(result.similarCases || []).map((sc, i) => {
+                    const details = [
+                      {label: 'Sud', value: sc.sud},
+                      {label: 'Tip dela', value: sc.tipKrivicnogDjela},
+                      {label: 'Član KZ', value: sc.clanKZ},
+                      {label: 'Zaposlenost', value: sc.zaposlenost},
+                      {label: 'Bračni status', value: sc.bracniStatus},
+                      {label: 'Obrazovanje', value: sc.obrazovanje},
+                      {label: 'Ranije osuđivan', value: sc.ranijeOsudjivan},
+                      {label: 'Priznanje', value: sc.priznanje},
+                      {label: 'Pokušaj', value: sc.pokusaj},
+                      {label: 'Saizvršilaštvo', value: sc.saizvrsilastvo},
+                      {label: 'Iznos (€)', value: sc.iznos},
+                      {label: 'Ukupan iznos (€)', value: sc.ukupanIznos},
+                      {label: 'Br. transakcija', value: sc.brojTransakcija},
+                      {label: 'Br. okrivljenih', value: sc.brojOkrivljenih},
+                      {label: 'Br. svedoka', value: sc.brojSvjedoka},
+                      {label: 'Br. dokaza', value: sc.brojDokaza},
+                      {label: 'Novčana kazna (€)', value: sc.novcanaKazna},
+                    ];
+                    return '<div style="padding: 12px; border: 1px solid #d1fae5; border-radius: 6px; background: #fff;">' +
+                      '<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">' +
+                        '<div style="font-weight: 700; color: #065f46;">Predmet ' + sc.brojPredmeta + ' <span style="font-weight: 400; color: #666;">— ' + sc.sud + '</span></div>' +
+                        '<div style="display: flex; gap: 8px; align-items: center;">' +
+                          '<span style="padding: 2px 8px; border-radius: 3px; font-size: 0.85em; ' + verdictStyle(sc.vrstaPresude) + '">' + (sc.vrstaPresude || '') + '</span>' +
+                          '<strong style="color: #065f46;">' + sc.similarity + '% sličnosti</strong>' +
+                        '</div>' +
+                      '</div>' +
+                      '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 4px 12px; font-size: 0.82em;">' +
+                        details.map(d => '<div><span style="color: #888;">' + d.label + ':</span> <strong style="color: #333;">' + (d.value != null ? d.value : 'N/A') + '</strong></div>').join('') +
+                        '<div><span style="color: #888;">Kazna:</span> <strong style="color: #333;">' + (sc.kaznaUMjesecima || 0) + ' meseci' + (sc.uslovnaOsuda === 'Da' ? ' (uslovna)' : '') + '</strong></div>' +
+                      '</div>' +
+                    '</div>';
+                  }).join('')}
+                </div>
+              </details>
+
+              <!-- HOW CBR WORKS -->
+              <details style="margin-top: 10px;">
+                <summary style="cursor: pointer; font-size: 0.82em; color: #065f46; font-weight: 600; padding: 6px 0;">
+                  ❓ Kako funkcioniše rasuđivanje po sličnosti?
+                </summary>
+                <div style="margin-top: 8px; padding: 12px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.82em; color: #475569; line-height: 1.6;">
+                  <p style="margin: 0 0 8px 0;"><strong>Rasuđivanje po sličnosti (Case-Based Reasoning — CBR)</strong> analizira bazu od ${result.totalCasesCompared || 0} sudskih predmeta i pronalazi 5 najsličnijih na osnovu sledećih atributa:</p>
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 10px;">
+                    <div>• <strong>Tip krivičnog dela</strong> (težina: 5.0) — da li je u pitanju falsifikovanje novca ili zloupotreba platnih kartica. Predmeti istog tipa su mnogo sličniji.</div>
+                    <div>• <strong>Član KZ</strong> (težina: 4.0) — konkretni član Krivičnog zakonika (npr. čl. 258, čl. 260 st. 2). Različiti stavovi istog člana nose različite kazne.</div>
+                    <div>• <strong>Iznos / Ukupan iznos</strong> (težina: 4.0) — visina štete u evrima. Prevara od 20€ i prevara od 2000€ su potpuno različiti slučajevi po težini.</div>
+                    <div>• <strong>Ranije osuđivan</strong> (težina: 3.0) — da li je okrivljeni ranije osuđivan (recidivist). Povratnici po pravilu dobijaju strožije kazne.</div>
+                    <div>• <strong>Priznanje</strong> (težina: 3.0) — da li je okrivljeni priznao krivično delo. Priznanje se obično tretira kao olakšavajuća okolnost.</div>
+                    <div>• <strong>Pokušaj</strong> (težina: 2.5) — da li je delo ostalo u pokušaju (nije dovršeno). Pokušaj se po zakonu kažnjava lakše od dovršenog dela.</div>
+                    <div>• <strong>Saizvršilaštvo</strong> (težina: 2.0) — da li je delo izvršeno sa više lica zajedno. Utiče na kvalifikaciju dela i visinu kazne.</div>
+                    <div>• <strong>Br. transakcija / dokaza</strong> (težina: 1.5) — broj pojedinačnih radnji i dokaza, ukazuje na obim kriminalne aktivnosti.</div>
+                    <div>• <strong>Zaposlenost</strong> (težina: 1.5) — da li je okrivljeni zaposlen. Može uticati na odmeru kazne kao lična okolnost.</div>
+                    <div>• <strong>Bračni status / Obrazovanje</strong> (težina: 1.0) — lične okolnosti okrivljenog koje sud uzima u obzir pri odmeravanju kazne.</div>
+                  </div>
+                  <p style="margin: 0 0 8px 0;"><strong>Preporučena kazna</strong> se računa kao ponderisani prosek kazni svih 5 sličnih predmeta, gde predmeti sa većom sličnošću imaju veći uticaj na konačnu preporuku.</p>
+                  <p style="margin: 0;"><strong>Verovatnoća uslovne presude</strong> = procenat od 5 najsličnijih predmeta koji su imali uslovnu presudu. Npr. ako su 3 od 5 sličnih predmeta završili uslovnom presudom, verovatnoća je 60%. Ovo pomaže advokatu/sudiji da proceni da li je uslovna presuda realna opcija za dati predmet.</p>
+                </div>
+              </details>
+              
+              <div style="margin-top: 12px; font-size: 0.7em; color: #888; text-align: center;">
+                Rasuđivanje po sličnosti (CBR) • Weighted K-Nearest Neighbors • ${qc.tipKrivicnogDjela || ''} — ${qc.clanKZ || ''}
+              </div>
               
             </div>
           </div>

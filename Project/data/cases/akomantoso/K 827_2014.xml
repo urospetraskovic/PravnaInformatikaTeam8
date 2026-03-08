@@ -78,9 +78,10 @@ Ocjenom navoda optužbe</dokaz>
           <iznos>30,00 EUR</iznos>
           <iznos>000,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>8 (osam) mjeseci</kazna>
+        <zapisnicar>Rajković Danijele</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

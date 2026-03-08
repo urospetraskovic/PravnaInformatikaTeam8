@@ -37,7 +37,8 @@
         <godina>2011</godina>
         <sudija>Šušić Lidija</sudija>
         <optuzeni>K.S.</optuzeni>
-        <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+        <ranijeOsudjivan>da</ranijeOsudjivan>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260</clanKZ>
         <kazna>2 (dva) mjesec</kazna>
@@ -51,6 +52,12 @@
         <vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <kazna>2 (dva) mjesec</kazna>
+        <dokazi>
+          <dokaz>izvoda iz kaznene evidencije Ministarstva pravde proizilazi da okrivljeni T</dokaz>
+          <dokaz>video zapis sa kamere bankomata CKB banke u Zelenici na dan 20</dokaz>
+          <dokaz>video zapisom sa kamere bankomata CKB banke u Zelenici</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -68,6 +75,15 @@ Osnovni Sud u HERCEG NOVOM, 38/2017, sudija Šušić Lidija</p>
           <p>Dana 25.04.2011 godine u Bijeloj, opština Herceg Novi, neovlašćeno pribavila tuđu pravu platnu karticu Crnogorske komercijalne banke, na način što je istu uzela iz novčanika bez znanja i odobrenja oštećene N.M., sa kojom je zajedno radila u prodavnici „Novito“ br.101 i u 17,50 časova istu je upotrebila na bankomatu u Bijeloj, tako što je ukucala pin kod koji je predhodno našla sa karticom i sa računa oštećene podigla iznos od 600,oo eura, a nakon upotrebe karticu je ponovo vratila u novčanik u kome se ranije nalazila i tako sebi pribavila protivpravnu imovinsku korist u navedenom iznosu,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvoda iz kaznene evidencije Ministarstva pravde proizilazi da okrivljeni T</p>
+            <p>• video zapis sa kamere bankomata CKB banke u Zelenici na dan 20</p>
+            <p>• video zapisom sa kamere bankomata CKB banke u Zelenici</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Kazna: 6 (šest) mjeseci</p>

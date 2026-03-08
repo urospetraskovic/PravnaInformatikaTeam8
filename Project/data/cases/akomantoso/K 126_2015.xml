@@ -41,11 +41,12 @@
         <bracniStatus>razveden</bracniStatus>
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258 st. 4</clanKZ>
         <kazna>5 (pet) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>dana 09.04.2016. godine, oko 15,00 časova u ulici xx.N. na zelenoj pijaci u U., svjestan svoga djela čije izvršenje je htio i znajući da je njegovo djelo zabranjeno, lažan novac i to: tri novčanice u apoenima od po 100,00 eura, serijskih brojeva Sxxxxxxxxxxxxx, Sxxxxxxxxxxxxxx i Sxxxxxxxxxxxxxx, koje je primio kao prave, pa saznavši da su lažne, jednu od predmetnih novčanica stavio u opticaj na način što je predao M.G., prilikom plaćanja robe u iznosu od 25,00 eura,</opisSlucaja>
         <svjedoci>
           <svjedok>Gjeta M</svjedok>
@@ -66,9 +67,10 @@ Svjedok G.M. je u svom iskazu izjavila da privremeno boravi u Ulcinju</dokaz>
           <iznos>50,00 EUR</iznos>
           <iznos>100,00 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Uslovna osuda</vrstaPresude>
+      <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>5 (pet) mjeseci</kazna>
+        <zapisnicar>Škrelja Milene</zapisnicar>
       </proprietary>
     </meta>
     <judgmentBody>

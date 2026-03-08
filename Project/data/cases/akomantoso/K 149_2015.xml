@@ -35,13 +35,13 @@
         <datumNormalizovan>2015-01-01</datumNormalizovan>
         <godina>2015</godina>
         <sudija>Momirki Tešić</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Ana-Marije Petković</zapisnicar>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>8 ( osam ) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana ... godine oko 02,00 časa u hotelu &quot;S MB&quot; u T, lažni novac - četiri novčanice u apoenu od ... €, ser. br...., br. A ..., br. E.. i br. E ..., stavio u opticaj, na način što je prilikom plaćanja usluga boravka u navedenom hotelu predao ove novčanice recepcioneru hotela G G iz T kako bi platio račun u uznosu od 321,00 €, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</opisSlucaja>
         <iznosi>
           <iznos>000,00 EUR</iznos>
           <iznos>321,00 EUR</iznos>
@@ -54,6 +54,15 @@
           <iznos>4,00 EUR</iznos>
           <iznos>70 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaza svjedoka G G</dokaz>
+          <dokaz>grafološko vještačenje - izvještaj br</dokaz>
+          <dokaz>izvještaj o ekspertizi sumnjivog novca br</dokaz>
+          <dokaz>izvještaja o ekspertizi sumnjivog novca br</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljenog od</dokaz>
+          <dokaz>medicinsku dokumentaciju na ime okrivljenog od 19</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +72,21 @@ Osnovni Sud u KOTORU, 149/15, sudija Momirki Tešić</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana ... godine oko 02,00 časa u hotelu &quot;S MB&quot; u T, lažni novac - četiri novčanice u apoenu od ... €, ser. br...., br. A ..., br. E.. i br. E ..., stavio u opticaj, na način što je prilikom plaćanja usluga boravka u navedenom hotelu predao ove novčanice recepcioneru hotela G G iz T kako bi platio račun u uznosu od 321,00 €, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije je izvršenje htio,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaza svjedoka G G</p>
+            <p>• grafološko vještačenje - izvještaj br</p>
+            <p>• izvještaj o ekspertizi sumnjivog novca br</p>
+            <p>• izvještaja o ekspertizi sumnjivog novca br</p>
+            <p>• medicinsku dokumentaciju na ime okrivljenog od</p>
+            <p>• medicinsku dokumentaciju na ime okrivljenog od 19</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

@@ -36,6 +36,8 @@
         <godina>2023</godina>
         <sudija>Radomir Kljajević</sudija>
         <zapisnicar>None</zapisnicar>
+                <obrazovanje>VSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
@@ -54,6 +56,13 @@
           <iznos>150,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaza svjedoka – oštećenog M</dokaz>
+          <dokaz>video zapisa izuzetog sa bankomata „C</dokaz>
+          <dokaz>video zapisu sa bankomata &quot;CKB&quot; b</dokaz>
+          <dokaz>video zapisa</dokaz>
+        </dokazi>
+        <bracniStatus>razveden/razvedena</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +75,16 @@ Osnovni Sud u BIJELOM, 58/23, sudija Radomir Kljajević</p>
           <p>- Neutvrđenog dana 2022. godine u B.P., neovlaščeno pribavio pravu platnu karticu oštećenog M.V., koju je držao i upotrijebio, na način što je u vremenu od 01. 10. 2022. godine, do dana 01. 11. 2022. godine, sa više bankomata u M. i P., putem sedam transakcija pribavio novčani iznos od 1.170,00 eura i putem šesnaest transakcija vršio uplate preko kladionice „V.“ P. u iznosu od 1.600,00 eura, te je tako na štetu oštećenog M.V., sebi pribavio protivpravnu imovinsku korist u iznosu od 2.770,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je njegovo djelo zabranjeno,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaza svjedoka – oštećenog M</p>
+            <p>• video zapisa izuzetog sa bankomata „C</p>
+            <p>• video zapisu sa bankomata &quot;CKB&quot; b</p>
+            <p>• video zapisa</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

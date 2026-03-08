@@ -36,11 +36,13 @@
         <godina>2010</godina>
         <sudija>porotnika Bojanić Mladenke</sudija>
         <zapisnicar>Maraš Ane</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 22.05.2009.godine u Podgorici, tudju pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je iskoristila odsustvo oštećene M.M. i iz bolničke sobe u prostorijama KC Crne Gore gdje se oštećena nalazila na liječenju, oduzela i prisvojila novčanik oštećene u kojem se nalazio novac u iznosu od 500,00 eura, lična dokumenta i bankovne kartice CKB banke, sve ukupne vrijednosti 505,00 eura, nakon čega je istog dana na Trgu Republike neovlašćeno upotrijebila tuđu karticu i to: karticu viza elektron broj . . . vlasništvo oštećene, tako što je u tri navrata sa terminala oznake S8AC8865 podigla ukupan iznos od 190,00 eura, a zatim je istog dana u ulici Moskovskoj neovlašćeno upotrijebila penzionersku Revolving karticu broj . . . vlasništvo oštećene i sa terminala broj S8AC8855 u tri navrata podigla novac u ukupnom iznosu od 80,00 eura, na koji način je sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 775,00 eur</opisSlucaja>
         <iznosi>
           <iznos>10,00 EUR</iznos>
@@ -54,6 +56,17 @@
           <iznos>22,5 EUR</iznos>
           <iznos>10 EUR</iznos>
         </iznosi>
+        <ranijeOsudjivan>Ne</ranijeOsudjivan>
+        <dokazi>
+          <dokaz>nalaza i mišljenja vještaka ekonomsko finansijske struke M</dokaz>
+          <dokaz>nalaz i mišljenje vještaka komercijalne struke D</dokaz>
+          <dokaz>nalaz i mišljenje vještaka ekonomsko finansijske struke M</dokaz>
+          <dokaz>nalaza i mišljenja vještaka komercijalne struke D</dokaz>
+          <dokaz>iskaz svjedoka oštećene M</dokaz>
+          <dokaz>iskaza svjedoka oštećene M</dokaz>
+          <dokaz>iskaz svjedokaR</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +79,19 @@ Osnovni Sud u PODGORICI, 376/10, sudija porotnika Bojanić Mladenke</p>
           <p>Dana 22.05.2009.godine u Podgorici, tudju pokretnu stvar oduzela drugom u namjeri da njenim prisvajanjem sebi pribavi protivpravnu imovinsku korist, na način što je iskoristila odsustvo oštećene M.M. i iz bolničke sobe u prostorijama KC Crne Gore gdje se oštećena nalazila na liječenju, oduzela i prisvojila novčanik oštećene u kojem se nalazio novac u iznosu od 500,00 eura, lična dokumenta i bankovne kartice CKB banke, sve ukupne vrijednosti 505,00 eura, nakon čega je istog dana na Trgu Republike neovlašćeno upotrijebila tuđu karticu i to: karticu viza elektron broj . . . vlasništvo oštećene, tako što je u tri navrata sa terminala oznake S8AC8865 podigla ukupan iznos od 190,00 eura, a zatim je istog dana u ulici Moskovskoj neovlašćeno upotrijebila penzionersku Revolving karticu broj . . . vlasništvo oštećene i sa terminala broj S8AC8855 u tri navrata podigla novac u ukupnom iznosu od 80,00 eura, na koji način je sebi pribavila protivpravnu imovinsku korist u ukupnom iznosu od 775,00 eur</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• nalaza i mišljenja vještaka ekonomsko finansijske struke M</p>
+            <p>• nalaz i mišljenje vještaka komercijalne struke D</p>
+            <p>• nalaz i mišljenje vještaka ekonomsko finansijske struke M</p>
+            <p>• nalaza i mišljenja vještaka komercijalne struke D</p>
+            <p>• iskaz svjedoka oštećene M</p>
+            <p>• iskaza svjedoka oštećene M</p>
+            <p>• iskaz svjedokaR</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

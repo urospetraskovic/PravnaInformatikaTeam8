@@ -42,11 +42,12 @@
         <bracniStatus>neoženjen</bracniStatus>
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>dana 03.10.2015.godine, na „Jugopetrol AD“ benzinskoj stanici u Rožajama, u uračunljivom stanju, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio i to Eko business karticu za gorivo, serijskog broja 7000000000006802, izdatu na ime Uprave za nekretnine Podgorica, a kojom je zadužen I. S., kao korisnik službenog vozila marke „Voleks“ reg oznaka PG CG 611, na način što je bez ovlašćena korisnika kartice I. S., iz njegove sobe u porodičnoj kući oduzeo navedenu karticu, a zatim je na benzinskoj stanici upotrebio, tako što je točio gorivo u putnička motorna vozila u iznosima od 49,01 Eura i 60,00 Eura u 13:41 h, i u iznosu od 40,98 Eura, u 13:46 h, a račune za kupljeno gorivo je plaćao navedenom karticom, pribavljajući na taj način protivpravnu imovinsku korist u iznosu od 149,99 Eura,</opisSlucaja>
         <svjedoci>
           <svjedok>sud j</svjedok>
@@ -64,7 +65,7 @@
           <iznos>60,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Marine Sekulić</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>6 (šest) mjeseci</kazna>
       </proprietary>

@@ -36,17 +36,28 @@
         <godina>2014</godina>
         <sudija>Ivan Perović</sudija>
         <zapisnicar>None</zapisnicar>
+                <zaposlenost>nezaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>None</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>Dana 18.04.2014.g., u ul.Nj---j u Nikšiću, svjestan svog djela čije izvršenje je htio, protivno odredbama čl.10a st.2, čl.11, čl.24 Zakona o oružju CG, na javnom mjestu, u svom putničkom motornom vozilu marke A--i A6 reg.br.NK BS 0--, neovlašćeno nosio pištolj marke M---r, model 90, kal.9mm, P---M, bez fabričkog broja i 15 komada pištoljskih metaka kalibra 9mm koje je metke neovlašćeno nabavio,</opisSlucaja>
         <iznosi>
           <iznos>74,00 EUR</iznos>
           <iznos>44,00 EUR</iznos>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije za okrivljenog izdat od Ministarstva pravde Crne Gore</dokaz>
+          <dokaz>IZVODA iz kaznene evidencije za okrivljenog izdatim od Ministarstva pravde Crne Gore proizilazi da je Pe--ć</dokaz>
+          <dokaz>izvoda iz kaznene evidencije</dokaz>
+          <dokaz>službenu zabilješku UP CB Nikšić Ku</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
+        <prebivaliste>Nikšiću</prebivaliste>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -56,9 +67,19 @@ Osnovni Sud u NIKŠIĆU, 320/14, sudija Ivan Perović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 18.04.2014.g., u ul.Nj---j u Nikšiću, svjestan svog djela čije izvršenje je htio, protivno odredbama čl.10a st.2, čl.11, čl.24 Zakona o oružju CG, na javnom mjestu, u svom putničkom motornom vozilu marke A--i A6 reg.br.NK BS 0--, neovlašćeno nosio pištolj marke M---r, model 90, kal.9mm, P---M, bez fabričkog broja i 15 komada pištoljskih metaka kalibra 9mm koje je metke neovlašćeno nabavio,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije za okrivljenog izdat od Ministarstva pravde Crne Gore</p>
+            <p>• IZVODA iz kaznene evidencije za okrivljenog izdatim od Ministarstva pravde Crne Gore proizilazi da je Pe--ć</p>
+            <p>• izvoda iz kaznene evidencije</p>
+            <p>• službenu zabilješku UP CB Nikšić Ku</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

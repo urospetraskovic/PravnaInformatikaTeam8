@@ -36,12 +36,15 @@
         <godina>2013</godina>
         <sudija>Elici Pantović</sudija>
         <zapisnicar>Nerminom Nikočević</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>VSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
-        <kazna>None</kazna>
+        <kazna>1 (jedne) godine</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Oslobađajuća</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <opisSlucaja>dana 15.08.2013.godine P R E S U D U Optuženi Z. P., od oca S. i majke G. rođene B., rođen ...godine, u B., opština S. V., sa prebivalištem u A. ul. ... , JMBG ..., državljanin Republike Srbije, oženjen, otac jednog maloljetnog djeteta, pismen, diplomirani ekonomista, zaposlen, obavlja poslove trenera ženskog rukometnog kluba A., srednjeg imovnog stanja, neosuđivan, Na osnovu člana 373. stav 1. tačka 2. ZKP OSLOBAĐA SE OD OPTUŽBE da je: dana 24.jula 2013.godine, oko 11,00 časova u marketu DOO „D. M.“ u M., opština P., stavio u opticaj jednu lažnu banknotu – novčanicu u apoenu od 200,00 €, serijskog broja ..., na način što ju je rasitnio za četiri novčanice u apoenima od po 50,00 € kod kasirke D. Đ., iako je znao da je novčanica falsifikovana – lažna,</opisSlucaja>
         <iznosi>
           <iznos>10 EUR</iznos>
           <iznos>10,00 EUR</iznos>
@@ -54,6 +57,15 @@
           <iznos>370,00 EUR</iznos>
           <iznos>100,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>potvrdu o privremeno oduzetim predmetima broj Sl</dokaz>
+          <dokaz>iskaz svjedoka Đ</dokaz>
+          <dokaz>video nadzor</dokaz>
+          <dokaz>video nadzorom</dokaz>
+          <dokaz>video nadzorm</dokaz>
+          <dokaz>video nadzor i da to svaki kupac može da primijeti</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -63,9 +75,21 @@ Osnovni Sud u PLAVU, 32/13, sudija Elici Pantović</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>dana 15.08.2013.godine P R E S U D U Optuženi Z. P., od oca S. i majke G. rođene B., rođen ...godine, u B., opština S. V., sa prebivalištem u A. ul. ... , JMBG ..., državljanin Republike Srbije, oženjen, otac jednog maloljetnog djeteta, pismen, diplomirani ekonomista, zaposlen, obavlja poslove trenera ženskog rukometnog kluba A., srednjeg imovnog stanja, neosuđivan, Na osnovu člana 373. stav 1. tačka 2. ZKP OSLOBAĐA SE OD OPTUŽBE da je: dana 24.jula 2013.godine, oko 11,00 časova u marketu DOO „D. M.“ u M., opština P., stavio u opticaj jednu lažnu banknotu – novčanicu u apoenu od 200,00 €, serijskog broja ..., na način što ju je rasitnio za četiri novčanice u apoenima od po 50,00 € kod kasirke D. Đ., iako je znao da je novčanica falsifikovana – lažna,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• potvrdu o privremeno oduzetim predmetima broj Sl</p>
+            <p>• iskaz svjedoka Đ</p>
+            <p>• video nadzor</p>
+            <p>• video nadzorom</p>
+            <p>• video nadzorm</p>
+            <p>• video nadzor i da to svaki kupac može da primijeti</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Oslobađajuća</p>

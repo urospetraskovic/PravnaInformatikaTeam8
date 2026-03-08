@@ -35,15 +35,16 @@
         <datumNormalizovan>2018-01-01</datumNormalizovan>
         <godina>2018</godina>
         <sudija>Momirki Tešić</sudija>
-        <zapisnicar>Sudija
-
-Ana</zapisnicar>
+        <zapisnicar>Ana</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
-        <opisSlucaja></opisSlucaja>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <opisSlucaja>Dana 11.06.2018. godine u T., upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, izdatu od strane &quot;H.b.&quot;, na ime N. L., na način što je sa istom prvo pokušao da izvrši podizanje novca i to u 22:55 časova iznos od 100,00 eura, na POS terminalu &quot;E. b.&quot;, a nakon nekoliko minuta i iznos od 50,00 eura na POS terminalu &quot;S. G. b.&quot;, u čemu nije uspio, zbog čega su ovi pokušaji na POS terminalima evidentirani kao &quot;neuspješne transakcije&quot;, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio,</opisSlucaja>
         <iznosi>
           <iznos>310,00 EUR</iznos>
           <iznos>300,00 EUR</iznos>
@@ -51,6 +52,15 @@ Ana</zapisnicar>
           <iznos>100,00 EUR</iznos>
           <iznos>200,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećenih L</dokaz>
+          <dokaz>iskaza svjedoka oštećenih L</dokaz>
+          <dokaz>iskaza svjedoka oštećenih sud je utvrdio da je L</dokaz>
+          <dokaz>iskaza svjedoka oštećenih</dokaz>
+          <dokaz>video snimak nadzornih kamera &quot;Erste banke&quot;</dokaz>
+          <dokaz>video snimak nadzornih kamera &quot;E</dokaz>
+          <dokaz>službenu zabilješku UP OB Tivat br</dokaz>
+        </dokazi>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -60,9 +70,22 @@ Osnovni Sud u KOTORU, 261/18, sudija Momirki Tešić</p>
       </introduction>
       <arguments>
         <block name="opisSlucaja">
-          <p></p>
+          <p>Dana 11.06.2018. godine u T., upotrijebio tuđu pravu platnu karticu koju je neovlašćeno pribavio, izdatu od strane &quot;H.b.&quot;, na ime N. L., na način što je sa istom prvo pokušao da izvrši podizanje novca i to u 22:55 časova iznos od 100,00 eura, na POS terminalu &quot;E. b.&quot;, a nakon nekoliko minuta i iznos od 50,00 eura na POS terminalu &quot;S. G. b.&quot;, u čemu nije uspio, zbog čega su ovi pokušaji na POS terminalima evidentirani kao &quot;neuspješne transakcije&quot;, pri čemu je bio uračunljiv, svjestan svoga djela i njegove zabranjenosti, a čije izvršenje je htio,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećenih L</p>
+            <p>• iskaza svjedoka oštećenih L</p>
+            <p>• iskaza svjedoka oštećenih sud je utvrdio da je L</p>
+            <p>• iskaza svjedoka oštećenih</p>
+            <p>• video snimak nadzornih kamera &quot;Erste banke&quot;</p>
+            <p>• video snimak nadzornih kamera &quot;E</p>
+            <p>• službenu zabilješku UP OB Tivat br</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

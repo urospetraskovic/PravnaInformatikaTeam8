@@ -36,6 +36,8 @@
         <godina>2019</godina>
         <sudija>Ćupić Mariji</sudija>
         <zapisnicar>Mirko Boljević</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -54,6 +56,22 @@
           <iznos>740,00 EUR</iznos>
           <iznos>9,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije Ministarstva unutrašnjih poslova – Sektora za analitiku</dokaz>
+          <dokaz>izvoda iz kaznene evidencije Ministarstva unutrašnjih poslova – Sektora za analitiku</dokaz>
+          <dokaz>iskaza svjedoka - oštećenog P</dokaz>
+          <dokaz>iskaza svjedoka Z</dokaz>
+          <dokaz>video zapis sa video nadzora bezbjedonosnih kamera instaliranih u poslovnom objektu “S</dokaz>
+          <dokaz>video zapisa sa video nadzora bezbjedonosnih kamera instaliranih u poslovnom objektu “S</dokaz>
+          <dokaz>fotodokumentacijom; izvještaj Centralne Banke Crne Gore o izvršenoj tehničkoj analizi novca broj</dokaz>
+          <dokaz>fotodokumentaciju Uprave policije OB Cetinje broj 83/18 od 22</dokaz>
+          <dokaz>fotodokumentacijom</dokaz>
+          <dokaz>fotodokumentacijom; izvještaja Centralne Banke Crne Gore o izvršenoj tehničkoj analizi novca broj</dokaz>
+          <dokaz>fotodokumentacije Uprave policije OB Cetinje broj 83/18 od 22</dokaz>
+          <dokaz>fotodokumentacija</dokaz>
+          <dokaz>fotodokumentaciju koja je kompatibilna sa provedenim dokazima</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +84,25 @@ Osnovni Sud u CETINJU, 4/19, sudija Ćupić Mariji</p>
           <p>Dana, 13. novembra 2018. godine, u prodajnom objektu zv.“V.”, u ulici “X C.” u C., vlasništvo P. V. iz C., svjestan svog djela i njegove zabranjenosti čije je izvršenje htio, stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, neutvrđenog serijskog broja, na način što je navedenom lažnom novčanicom platio nekoliko kupljenih artikala u navedenom prodajnom objektu, a potom dana 18.11.2018.godine, oko 18,10 časova, u prodajnom objektu “S. k.”, u bulevaru „C. j.” u C., na prethodno opisani način ponovo stavio u opticaj lažan novac-jednu novčanicu u apoenu od 100,00 eura, ser.br.X14302576621, te dana 22.11.2018.godine, u kući vlasništvo M. R., u naselju .. u C., gdje je privremeno boravio, držao lažan novac - jednu novčanicu u apoenu od 100,00 eura, serijskog broja U06527526055, s namjerom da ga stavi u opticaj kao pravi, za koje novčanice je tehničkom analizom utvrđeno da se radi o falsifikatima istog tipa i to EUA0100 P00007, koji je prepoznatljiv po odstupanju u odnosu </p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije Ministarstva unutrašnjih poslova – Sektora za analitiku</p>
+            <p>• izvoda iz kaznene evidencije Ministarstva unutrašnjih poslova – Sektora za analitiku</p>
+            <p>• iskaza svjedoka - oštećenog P</p>
+            <p>• iskaza svjedoka Z</p>
+            <p>• video zapis sa video nadzora bezbjedonosnih kamera instaliranih u poslovnom objektu “S</p>
+            <p>• video zapisa sa video nadzora bezbjedonosnih kamera instaliranih u poslovnom objektu “S</p>
+            <p>• fotodokumentacijom; izvještaj Centralne Banke Crne Gore o izvršenoj tehničkoj analizi novca broj</p>
+            <p>• fotodokumentaciju Uprave policije OB Cetinje broj 83/18 od 22</p>
+            <p>• fotodokumentacijom</p>
+            <p>• fotodokumentacijom; izvještaja Centralne Banke Crne Gore o izvršenoj tehničkoj analizi novca broj</p>
+            <p>• fotodokumentacije Uprave policije OB Cetinje broj 83/18 od 22</p>
+            <p>• fotodokumentacija</p>
+            <p>• fotodokumentaciju koja je kompatibilna sa provedenim dokazima</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

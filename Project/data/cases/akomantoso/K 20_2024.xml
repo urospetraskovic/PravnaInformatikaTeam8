@@ -36,15 +36,32 @@
         <godina>2024</godina>
         <sudija>Milica Ćetković</sudija>
         <zapisnicar>None</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 19.04.2024. godine, oko 13,30 časova, u mjestu S., u D., svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu pravu platnu karticu upotrijebio, na način što je platnu karticu “CKB” banke Visa debit broj ****..., vlasništvo oštećenog I.a G.a, koju je neovlašćeno pribavio tako što je pronašao na ulici i uzeo radi upotrebe, sa namjerom da plati račun u M.u “O.”, u čemu nije uspio.</opisSlucaja>
         <iznosi>
           <iznos>30,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>uvjerenje iz kaznene evidencije na ime okrivljenog D</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na ime okrivljenog D</dokaz>
+          <dokaz>uvjerenja iz kaznene evidencije na njegovo ime</dokaz>
+          <dokaz>zapisnik o saslušanju osumnjičenog od 13</dokaz>
+          <dokaz>zapisnik o saslušanju svjedoka od 14</dokaz>
+          <dokaz>iskaza svjedoka oštećenog I</dokaz>
+          <dokaz>video nadzor objekta “O</dokaz>
+          <dokaz>video zapis za navedeni dan i vrijeme</dokaz>
+          <dokaz>video zapis nije bilo moguće izuzeti</dokaz>
+          <dokaz>fotodokumentacije</dokaz>
+          <dokaz>fotodokumentacija koja se nalazi u spisima predmeta pohranjena na CD-u</dokaz>
+          <dokaz>službenu zabilješku Uprave policije OB Danilovgrad</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -57,6 +74,24 @@ Osnovni Sud u DANILOVGRADU, 20/24, sudija Milica Ćetković</p>
           <p>Dana 19.04.2024. godine, oko 13,30 časova, u mjestu S., u D., svjestan svog djela, čije je izvršenje htio, znajući da je isto zabranjeno, tuđu pravu platnu karticu upotrijebio, na način što je platnu karticu “CKB” banke Visa debit broj ****..., vlasništvo oštećenog I.a G.a, koju je neovlašćeno pribavio tako što je pronašao na ulici i uzeo radi upotrebe, sa namjerom da plati račun u M.u “O.”, u čemu nije uspio.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• uvjerenje iz kaznene evidencije na ime okrivljenog D</p>
+            <p>• uvjerenja iz kaznene evidencije na ime okrivljenog D</p>
+            <p>• uvjerenja iz kaznene evidencije na njegovo ime</p>
+            <p>• zapisnik o saslušanju osumnjičenog od 13</p>
+            <p>• zapisnik o saslušanju svjedoka od 14</p>
+            <p>• iskaza svjedoka oštećenog I</p>
+            <p>• video nadzor objekta “O</p>
+            <p>• video zapis za navedeni dan i vrijeme</p>
+            <p>• video zapis nije bilo moguće izuzeti</p>
+            <p>• fotodokumentacije</p>
+            <p>• fotodokumentacija koja se nalazi u spisima predmeta pohranjena na CD-u</p>
+            <p>• službenu zabilješku Uprave policije OB Danilovgrad</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

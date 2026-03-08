@@ -41,6 +41,7 @@
         <bracniStatus>razveden</bracniStatus>
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
+                <zaposlenost>nezaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260</clanKZ>
         <kazna>Nepoznat</kazna>
@@ -67,7 +68,7 @@
           <iznos>10.000 EUR</iznos>
           <iznos>3,95 EUR</iznos>
         </iznosi>
-      <zapisnicar /><vrstaPresude>Osuđujuća</vrstaPresude>
+      <zapisnicar>Fatić Momirke</zapisnicar><vrstaPresude>Osuđujuća</vrstaPresude>
         <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>

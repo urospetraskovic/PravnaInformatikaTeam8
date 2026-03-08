@@ -36,6 +36,8 @@
         <godina>2019</godina>
         <sudija>Goran Šćepanović</sudija>
         <zapisnicar>None</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
@@ -54,6 +56,14 @@
           <iznos>5,00 EUR</iznos>
           <iznos>600,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>izvod iz kaznene evidencije na ime optuženog Ministarstva pravde KE br</dokaz>
+          <dokaz>izvoda iz kaznene evidencije na ime optuženog Ministarstva pravde KE br</dokaz>
+          <dokaz>nalaza i mišljenja vještaka finansijske strukeD</dokaz>
+          <dokaz>zapisnik o uviđaju UP CB Bar od 04</dokaz>
+          <dokaz>zapisnika o uviđaju Uprave policije CB Bar utvrdio da su na vozilu oštećenog otvorena vrata bez vidnih oštećenja u pred</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -66,6 +76,17 @@ Osnovni Sud u BARU, 26/19, sudija Goran Šćepanović</p>
           <p>Tokom noći 02./03.januara 2019.godine, u vremenskom periodu od 01,00 časova do 06,33 časova, na parking prostoru u ulici Vojvode Maše Đurovića, u Baru, i u ul. Dinastije Petrovića u Baru, svjestan svog djela čije je izvršenje htio, iako je znao da je njegovo djelo zabranjeno, oduzeo tuđe pokretne stvari, u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist u iznosu većem od 150,00 eura, i upotrijebio pravu platnu karticu koju je neovlašćeno pribavio i upotrebom iste pribavio protivpravnu imovinsku korist u iznosu od 600,00 eura, na način što je otvorio vrata od putničkog motornog vozila marke ,,VW Passat“, reg.oznaka, vlasništvo O. S. , te ušao u unutrašnjost vozila, izvršio premetačinu i iz unutrašnjosti vozila oduzeo novčani iznos od ukupno 29,00 eura, platnenu torbu crne boje, novčane vrijednosti od 10,00 eura u kojoj se nalazio novčanik, novčane vrijednost od 10,00 eura, u kojem su se nalazila lična dokumenta i kartica CKB banke, zatim je iz ladice ispred s</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• izvod iz kaznene evidencije na ime optuženog Ministarstva pravde KE br</p>
+            <p>• izvoda iz kaznene evidencije na ime optuženog Ministarstva pravde KE br</p>
+            <p>• nalaza i mišljenja vještaka finansijske strukeD</p>
+            <p>• zapisnik o uviđaju UP CB Bar od 04</p>
+            <p>• zapisnika o uviđaju Uprave policije CB Bar utvrdio da su na vozilu oštećenog otvorena vrata bez vidnih oštećenja u pred</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Osuđujuća</p>

@@ -35,12 +35,13 @@
         <datumNormalizovan>2016-01-01</datumNormalizovan>
         <godina>2016</godina>
         <sudija>Goranu Đukoviću</sudija>
-        <zapisnicar>None</zapisnicar>
+        <zapisnicar>Maraš Ane</zapisnicar>
+                <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>4 (četiri) mjesec</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</opisSlucaja>
         <iznosi>
           <iznos>10,00 EUR</iznos>
@@ -52,6 +53,18 @@
           <iznos>30,00 EUR</iznos>
           <iznos>200,00 EUR</iznos>
         </iznosi>
+        <dokazi>
+          <dokaz>iskaz svjedoka oštećene B</dokaz>
+          <dokaz>iskaz svjedoka oštećene Bl Ml</dokaz>
+          <dokaz>iskaza svjedoka oštećene B</dokaz>
+          <dokaz>video nadzora</dokaz>
+          <dokaz>fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17</dokaz>
+          <dokaz>fotodokumentacije UP CB Podgorica broj 59-28-244-74/134 od 17</dokaz>
+          <dokaz>fotodokumentacija sačinjena povodom fotografisanja jakne oduzete od M</dokaz>
+          <dokaz>fotodokumentacije UP CB Podgorica broj 59-28-244-74/134</dokaz>
+          <dokaz>službenu zabilješku UP CB Podgorica Ku</dokaz>
+        </dokazi>
+        <bracniStatus>neoženjen/neudata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -64,6 +77,21 @@ Osnovni Sud u PODGORICI, 738/16, sudija Goranu Đukoviću</p>
           <p>Dana 04.11.2015.godine, oko 19,00 časova, na Trgu G. žrtava, u P., svjestan svog djela čije je izvršenje htio, znajući da je isto zabranjeno, tudju platnu karticu koju je neovlašćeno pribavio, upotrijebio na način što je, u naselju G. G. u P., pronašao i prisvojio novčanik vlasništvo oštećene B. M., kojom prilikom je iz istog uzeo platnu karticu La Rata sa brojem koda ....******...., izdatu od S. G. M. banke, vlasništvo oštećene i listicu na kojoj je bio upisan pin kode za ovu karticu i navedenu karticu upotrijebio tako što je na bankomatu E. banke na Trgu G. žrtava ubacio ovu platnu karticu, ukucao pin kod za istu, nakon čega je obavio pet transakcija, na koji način je pribavio protivpravnu imovinsku korist u ukupnom iznosu od 800,00 eura,</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka oštećene B</p>
+            <p>• iskaz svjedoka oštećene Bl Ml</p>
+            <p>• iskaza svjedoka oštećene B</p>
+            <p>• video nadzora</p>
+            <p>• fotodokumentaciju UP CB Podgorica broj 59-28-244-74/134 od 17</p>
+            <p>• fotodokumentacije UP CB Podgorica broj 59-28-244-74/134 od 17</p>
+            <p>• fotodokumentacija sačinjena povodom fotografisanja jakne oduzete od M</p>
+            <p>• fotodokumentacije UP CB Podgorica broj 59-28-244-74/134</p>
+            <p>• službenu zabilješku UP CB Podgorica Ku</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

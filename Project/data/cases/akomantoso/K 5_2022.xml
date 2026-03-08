@@ -36,11 +36,12 @@
         <godina>2022</godina>
         <sudija>Marija Ćupić</sudija>
         <zapisnicar>Aleksandre Martinović</zapisnicar>
+                <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
         <clanKZ>čl. 260 st. 2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>Dana, 05. marta 2021. godine, u C. svjesna svog djela čije je izvršenje htjela, znajući da je njeno djelo zabranjeno, tuđu pravu platnu karticu koju je neovlašćeno pribavila upotrijebila, pa je tako sebi pribavila protivpravnu imovinsku korist, na način što je platnu karticu br. ........... izdatu od "N...M..... banke", na ime J. N. iz P. koju je oštećeni bio izgubio, a čija je fotografija bila objavljena na društvenoj mreži "F........", upotrijebila tako što je na internet platformi za klađenje "M....." otvorila nalog, na ime svoje tetke K. N. i u dva navrata, u 00:11:25 časova i u 00:30:01 časova, iskoristivši podatke sa navedene kartice oštećenog, izvršila uplate od po 3,00 eura, čime je sebi pribavila protivpravnu imovinsku korist u iznosu od ukupno 6,00 eura, u kojem iznosu je pričinila materijalnu štetu oštećenom J. N.</opisSlucaja>
         <iznosi>
           <iznos>300,00 EUR</iznos>
@@ -50,6 +51,14 @@
           <iznos>6,00 EUR</iznos>
           <iznos>200,00 EUR</iznos>
         </iznosi>
+        <ranijeOsudjivan>Ne</ranijeOsudjivan>
+        <dokazi>
+          <dokaz>iskaz svjedoka - oštećenog J</dokaz>
+          <dokaz>iskaz svjedoka J</dokaz>
+          <dokaz>iskaza svjedoka - oštećenog J</dokaz>
+          <dokaz>iskaza svjedoka J</dokaz>
+        </dokazi>
+        <bracniStatus>oženjen/udata</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
@@ -62,6 +71,16 @@ Osnovni Sud u CETINJU, 5/22, sudija Marija Ćupić</p>
           <p>Dana, 05. marta 2021. godine, u C. svjesna svog djela čije je izvršenje htjela, znajući da je njeno djelo zabranjeno, tuđu pravu platnu karticu koju je neovlašćeno pribavila upotrijebila, pa je tako sebi pribavila protivpravnu imovinsku korist, na način što je platnu karticu br. ........... izdatu od "N...M..... banke", na ime J. N. iz P. koju je oštećeni bio izgubio, a čija je fotografija bila objavljena na društvenoj mreži "F........", upotrijebila tako što je na internet platformi za klađenje "M....." otvorila nalog, na ime svoje tetke K. N. i u dva navrata, u 00:11:25 časova i u 00:30:01 časova, iskoristivši podatke sa navedene kartice oštećenog, izvršila uplate od po 3,00 eura, čime je sebi pribavila protivpravnu imovinsku korist u iznosu od ukupno 6,00 eura, u kojem iznosu je pričinila materijalnu štetu oštećenom J. N.</p>
         </block>
       </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• iskaz svjedoka - oštećenog J</p>
+            <p>• iskaz svjedoka J</p>
+            <p>• iskaza svjedoka - oštećenog J</p>
+            <p>• iskaza svjedoka J</p>
+          </tblock>
+        </block>
+      </motivation>
       <decision>
         <block name="odluka">
           <p>Uslovna osuda</p>

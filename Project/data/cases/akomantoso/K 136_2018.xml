@@ -47,7 +47,7 @@
         <kazna>1 (jedne) godin</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>548,50</novcanaKazna>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>- Neutvrđenog dana 2022. godine u B.P., neovlaščeno pribavio pravu platnu karticu oštećenog M.V., koju je držao i upotrijebio, na način što je u vremenu od 01. 10. 2022. godine, do dana 01. 11. 2022. godine, sa više bankomata u M. i P., putem sedam transakcija pribavio novčani iznos od 1.170,00 eura i putem šesnaest transakcija vršio uplate preko kladionice „V.“ P. u iznosu od 1.600,00 eura, te je tako na štetu oštećenog M.V., sebi pribavio protivpravnu imovinsku korist u iznosu od 2.770,00 eura, pri čemu je bio svjestan svog djela i htio njegovo izvršenje, znajući da je njegovo djelo zabranjeno,</opisSlucaja>
         <dokazi>
           <dokaz>listing kartice promjena C.k.b.“</dokaz>
@@ -73,7 +73,7 @@
           <iznos>30,00 EUR</iznos>
         </iznosi>
         <zapisnicar>Mire Smolović</zapisnicar>
-        <vrstaPresude>Uslovna osuda</vrstaPresude>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <kazna>1 (jedne) godin</kazna>
       </proprietary>
