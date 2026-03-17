@@ -567,12 +567,60 @@
       padding: 10px;
       border-radius: 4px;
     }
+
+    .reasoning-panel {
+      width: 100%;
+      display: none;
+      padding: 24px;
+      overflow-y: auto;
+      background: #f8fafc;
+    }
+
+    .reasoning-card {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .reasoning-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .reasoning-grid label {
+      display: block;
+      font-size: 0.82em;
+      color: #475569;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .reasoning-grid input,
+    .reasoning-grid select,
+    .reasoning-grid textarea {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 0.95em;
+    }
+
+    .reasoning-grid textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
   </style>
 </head>
 <body>
   <div class="nav-tabs">
     <button class="nav-button active" onclick="showPanel('cases')">📋 Presude</button>
     <button class="nav-button" onclick="showPanel('glava23')">📖 Glava 23 - Krivični kodeks</button>
+    <button class="nav-button" onclick="showPanel('reasoning')">⚖️ Rasuđivanje</button>
   </div>
 
   <div class="app-wrapper">
@@ -635,6 +683,138 @@
       <div id="glava-articles-container"></div>
     </div>
 
+    <!-- User Input Reasoning Panel -->
+    <div id="reasoning-panel" class="panel reasoning-panel">
+      <div class="reasoning-card">
+        <h2 style="color: #0f172a; margin-bottom: 4px;">Unos novog slučaja</h2>
+        <p style="color: #64748b; font-size: 0.92em; margin-bottom: 14px;">
+          Unesite činjenično stanje, pokrenite rasuđivanje po pravilima i po sličnosti, zatim izaberite presudu i sankciju i sačuvajte slučaj.
+        </p>
+
+        <div class="reasoning-grid">
+          <div>
+            <label for="input-case-number">Broj predmeta</label>
+            <input id="input-case-number" type="text" placeholder="npr. NOVI-001" />
+          </div>
+          <div>
+            <label for="input-crime-type">Tip krivičnog dela</label>
+            <select id="input-crime-type">
+              <option value="falsifikovanje novca">Falsifikovanje novca</option>
+              <option value="falsifikovanje i zloupotreba kreditnih kartica">Falsifikovanje i zloupotreba kreditnih kartica</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-article">Član KZ</label>
+            <input id="input-article" type="text" placeholder="npr. čl. 258 st. 2" />
+          </div>
+          <div>
+            <label for="input-amount">Iznos (EUR)</label>
+            <input id="input-amount" type="number" min="0" step="0.01" value="0" />
+          </div>
+          <div>
+            <label for="input-total-amount">Ukupan iznos (EUR)</label>
+            <input id="input-total-amount" type="number" min="0" step="0.01" value="0" />
+          </div>
+          <div>
+            <label for="input-prior">Ranije osuđivan</label>
+            <select id="input-prior">
+              <option value="ne">Ne</option>
+              <option value="da">Da</option>
+              <option value="nepoznat">Nepoznato</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-confession">Priznanje</label>
+            <select id="input-confession">
+              <option value="ne">Ne</option>
+              <option value="da">Da</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-attempt">Pokušaj</label>
+            <select id="input-attempt">
+              <option value="ne">Ne</option>
+              <option value="da">Da</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-cooffending">Saizvršilaštvo</label>
+            <select id="input-cooffending">
+              <option value="ne">Ne</option>
+              <option value="da">Da</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-employment">Zaposlenost</label>
+            <select id="input-employment">
+              <option value="nepoznat">Nepoznato</option>
+              <option value="zaposlen">Zaposlen</option>
+              <option value="nezaposlen">Nezaposlen</option>
+              <option value="student">Student</option>
+              <option value="penzioner">Penzioner</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-marital">Bračni status</label>
+            <select id="input-marital">
+              <option value="nepoznat">Nepoznato</option>
+              <option value="neozenjen">Neoženjen/neudata</option>
+              <option value="ozenjen">Oženjen/udata</option>
+              <option value="razveden">Razveden/a</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-education">Obrazovanje</label>
+            <select id="input-education">
+              <option value="nepoznat">Nepoznato</option>
+              <option value="osnovna">Osnovna</option>
+              <option value="SSS">SSS</option>
+              <option value="VSS">VSS</option>
+              <option value="pismen">Pismen</option>
+            </select>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="input-description">Opis slučaja</label>
+            <textarea id="input-description" placeholder="Unesite činjenično stanje..."></textarea>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
+          <button onclick="runReasoningFromInput()" class="nav-button" style="background: #1e40af; color: #fff; border-color: #1e40af;">Rasuđivanje po pravilima</button>
+          <button onclick="runCbrFromInput()" class="nav-button" style="background: #065f46; color: #fff; border-color: #065f46;">Rasuđivanje po slučajevima</button>
+        </div>
+
+        <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
+          <h3 style="font-size: 1em; color: #0f172a; margin-bottom: 8px;">Izbor konačne odluke i čuvanje slučaja</h3>
+          <div class="reasoning-grid">
+            <div>
+              <label for="input-selected-verdict">Izabrana vrsta presude</label>
+              <select id="input-selected-verdict">
+                <option value="osudjujuca">Osuđujuća</option>
+                <option value="uslovna">Uslovna</option>
+                <option value="oslobadjajuca">Oslobađajuća</option>
+              </select>
+            </div>
+            <div>
+              <label for="input-selected-sanction">Sankcija (meseci)</label>
+              <input id="input-selected-sanction" type="number" min="0" step="1" value="0" />
+            </div>
+            <div>
+              <label for="input-selected-fine">Novčana kazna (EUR)</label>
+              <input id="input-selected-fine" type="number" min="0" step="0.01" value="0" />
+            </div>
+          </div>
+          <div style="margin-top: 12px;">
+            <button onclick="saveNewCaseFromInput()" class="nav-button" style="background: #334155; color: #fff; border-color: #334155;">Sačuvaj novi slučaj u bazi</button>
+          </div>
+        </div>
+
+        <div id="reasoning-input-rule-result" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-cbr-result" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-save-result" style="display: none; margin-top: 10px;"></div>
+      </div>
+    </div>
+
   <script>
 
     // Glava 23 article data will be loaded from XML
@@ -648,13 +828,24 @@
     function showPanel(panelName) {
       currentPanel = panelName;
       const glava23Sidebar = document.getElementById('glava23-sidebar');
+      const casesPanel = document.getElementById('cases-panel');
+      const reasoningPanel = document.getElementById('reasoning-panel');
       
       document.querySelectorAll('.nav-button').forEach(btn => btn.classList.remove('active'));
       
       if (panelName === 'glava23') {
+        casesPanel.style.display = 'flex';
+        reasoningPanel.style.display = 'none';
         glava23Sidebar.classList.add('active');
         document.querySelectorAll('.nav-button')[1]?.classList.add('active');
+      } else if (panelName === 'reasoning') {
+        casesPanel.style.display = 'none';
+        reasoningPanel.style.display = 'block';
+        glava23Sidebar.classList.remove('active');
+        document.querySelectorAll('.nav-button')[2]?.classList.add('active');
       } else {
+        casesPanel.style.display = 'flex';
+        reasoningPanel.style.display = 'none';
         glava23Sidebar.classList.remove('active');
         document.querySelectorAll('.nav-button')[0]?.classList.add('active');
       }
@@ -1625,6 +1816,172 @@
         
       } catch (error) {
         resultDiv.innerHTML = `<div style="color: #c00; padding: 15px; background: #fff5f5; border-radius: 6px;">Greška: ${error.message}</div>`;
+      }
+    }
+
+    function collectReasoningInput() {
+      const brojPredmeta = document.getElementById('input-case-number').value.trim() || `NOVI-${Date.now()}`;
+      const tipKrivicnogDjela = document.getElementById('input-crime-type').value;
+      const clanKZ = document.getElementById('input-article').value.trim() || (tipKrivicnogDjela.includes('kartica') ? 'čl. 260' : 'čl. 258');
+      const iznos = parseFloat(document.getElementById('input-amount').value || '0');
+      const ukupanIznos = parseFloat(document.getElementById('input-total-amount').value || '0');
+      const ranijeOsudjivan = document.getElementById('input-prior').value;
+      const priznanje = document.getElementById('input-confession').value;
+      const pokusaj = document.getElementById('input-attempt').value;
+      const saizvrsilastvo = document.getElementById('input-cooffending').value;
+      const zaposlenost = document.getElementById('input-employment').value;
+      const bracniStatus = document.getElementById('input-marital').value;
+      const obrazovanje = document.getElementById('input-education').value;
+      const opis = document.getElementById('input-description').value.trim();
+
+      return {
+        brojPredmeta,
+        tipKrivicnogDjela,
+        clanKZ,
+        iznos,
+        ukupanIznos,
+        ranijeOsudjivan,
+        priznanje,
+        pokusaj,
+        saizvrsilastvo,
+        zaposlenost,
+        bracniStatus,
+        obrazovanje,
+        opis,
+      };
+    }
+
+    async function runReasoningFromInput() {
+      const ruleResultDiv = document.getElementById('reasoning-input-rule-result');
+      const input = collectReasoningInput();
+      ruleResultDiv.style.display = 'block';
+      ruleResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Pokretanje rasuđivanja po pravilima...</div>';
+
+      const facts = {
+        case_number: input.brojPredmeta,
+        articles: [input.clanKZ],
+        crime_type: input.tipKrivicnogDjela,
+        case_description: input.opis,
+        amounts: [`${input.iznos} EUR`, `${input.ukupanIznos} EUR`],
+        previously_convicted: input.ranijeOsudjivan === 'da',
+        confession: input.priznanje === 'da',
+        defendant: 'Korisnik sistema',
+        archive_facts: {
+          confession: input.priznanje === 'da',
+          remorse: false,
+          restitution: false,
+          has_children: false,
+        }
+      };
+
+      try {
+        const response = await fetch('/api/reasoning', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ facts })
+        });
+        const result = await response.json();
+
+        if (result.error) {
+          ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${result.error}</div>`;
+          return;
+        }
+
+        const recommendation = result.recommendation || 'N/A';
+        ruleResultDiv.innerHTML = `
+          <div style="padding: 12px; border: 1px solid #bfdbfe; border-radius: 6px; background: #eff6ff;">
+            <div style="font-weight: 700; color: #1e3a8a; margin-bottom: 6px;">Rezultat rasuđivanja po pravilima</div>
+            <div style="font-size: 0.92em; color: #1e40af;">Preporučena sankcija: <strong>${recommendation}</strong></div>
+            <div style="font-size: 0.85em; color: #475569; margin-top: 6px;">Primenjeni članci: ${(result.articles || []).join(', ') || 'N/A'}</div>
+          </div>`;
+      } catch (err) {
+        ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
+      }
+    }
+
+    async function runCbrFromInput() {
+      const cbrResultDiv = document.getElementById('reasoning-input-cbr-result');
+      const input = collectReasoningInput();
+      cbrResultDiv.style.display = 'block';
+      cbrResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Pokretanje rasuđivanja po slučajevima...</div>';
+
+      const query = {
+        brojPredmeta: input.brojPredmeta,
+        tipKrivicnogDjela: input.tipKrivicnogDjela,
+        clanKZ: input.clanKZ,
+        iznos: input.iznos,
+        ukupanIznos: input.ukupanIznos,
+        ranijeOsudjivan: input.ranijeOsudjivan,
+        priznanje: input.priznanje,
+        pokusaj: input.pokusaj,
+        saizvrsilastvo: input.saizvrsilastvo,
+        zaposlenost: input.zaposlenost,
+        bracniStatus: input.bracniStatus,
+        obrazovanje: input.obrazovanje,
+      };
+
+      try {
+        const response = await fetch('/api/cbr-reasoning-input', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query })
+        });
+        const result = await response.json();
+
+        if (result.error) {
+          cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${result.error}</div>`;
+          return;
+        }
+
+        const rec = result.recommendation || {};
+        const topCases = (result.similarCases || []).slice(0, 3);
+        cbrResultDiv.innerHTML = `
+          <div style="padding: 12px; border: 1px solid #bbf7d0; border-radius: 6px; background: #f0fdf4;">
+            <div style="font-weight: 700; color: #166534; margin-bottom: 6px;">Rezultat rasuđivanja po slučajevima</div>
+            <div style="font-size: 0.92em; color: #166534;">Preporučena kazna: <strong>${rec.kaznaUMjesecima != null ? rec.kaznaUMjesecima + ' meseci' : 'N/A'}</strong></div>
+            <div style="font-size: 0.85em; color: #475569; margin-top: 4px;">Verovatnoća uslovne presude: <strong>${rec.conditionalSentenceLikelihood != null ? rec.conditionalSentenceLikelihood + '%' : 'N/A'}</strong></div>
+            <div style="margin-top: 8px; font-size: 0.85em; color: #14532d;">Najslikčniji predmeti: ${topCases.map(c => `${c.brojPredmeta} (${c.similarity}%)`).join(', ') || 'N/A'}</div>
+          </div>`;
+      } catch (err) {
+        cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
+      }
+    }
+
+    async function saveNewCaseFromInput() {
+      const saveResultDiv = document.getElementById('reasoning-input-save-result');
+      const input = collectReasoningInput();
+      const selectedVerdict = document.getElementById('input-selected-verdict').value;
+      const selectedSanctionMonths = parseFloat(document.getElementById('input-selected-sanction').value || '0');
+      const selectedFine = parseFloat(document.getElementById('input-selected-fine').value || '0');
+
+      saveResultDiv.style.display = 'block';
+      saveResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Čuvanje novog slučaja...</div>';
+
+      try {
+        const response = await fetch('/api/cases/user', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            input,
+            decision: {
+              vrstaPresude: selectedVerdict,
+              kaznaUMjesecima: selectedSanctionMonths,
+              novcanaKazna: selectedFine,
+              uslovnaOsuda: selectedVerdict === 'uslovna' ? 'Da' : 'Ne',
+            }
+          })
+        });
+        const result = await response.json();
+
+        if (!response.ok || result.error) {
+          saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${result.error || 'Neuspešno čuvanje'}</div>`;
+          return;
+        }
+
+        const savedXmlLine = result.xmlFile ? `<div style="margin-top: 6px; font-size: 0.85em; color: #14532d;">Sačuvan XML: <strong>${result.xmlFile}</strong></div>` : '';
+        saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #bbf7d0; border-radius: 6px; background: #f0fdf4; color: #166534;">Slučaj je sačuvan i biće korišćen u narednim CBR rasuđivanjima.${savedXmlLine}</div>`;
+      } catch (err) {
+        saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
       }
     }
 

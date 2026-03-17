@@ -40,6 +40,7 @@ app.use(express.json()); // Parse JSON request bodies
 // Load case database from XML files - try akomantoso_new first, fallback to akomantoso
 const casesDir = path.join(__dirname, '../data/cases/akomantoso_new');
 const casesDirFallback = path.join(__dirname, '../data/cases/akomantoso');
+const userCasesFile = path.join(__dirname, '../data/cases/user_cases.json');
 let caseDatabase = [];
 
 function parseXMLFile(filePath) {
@@ -770,6 +771,27 @@ function loadCbrCases() {
 }
 loadCbrCases();
 
+function loadUserCbrCases() {
+  try {
+    if (!fs.existsSync(userCasesFile)) return;
+    const raw = fs.readFileSync(userCasesFile, 'utf8');
+    const stored = JSON.parse(raw);
+    if (!Array.isArray(stored)) return;
+
+    for (const entry of stored) {
+      if (entry && entry.cbrRecord) {
+        cbrCases.push(entry.cbrRecord);
+      }
+    }
+    if (stored.length > 0) {
+      console.log(`🧠 Loaded ${stored.length} user-entered cases into CBR memory`);
+    }
+  } catch (err) {
+    console.error('Error loading user-entered cases:', err.message);
+  }
+}
+loadUserCbrCases();
+
 // Similarity functions for different attribute types
 function exactMatch(a, b) {
   if (!a || !b || a === 'nepoznat' || b === 'nepoznat') return 0.5;
@@ -824,6 +846,216 @@ function numericSimilarity(a, b, maxDiff) {
 function booleanSimilarity(a, b) {
   if (!a || !b || a === 'nepoznat' || b === 'nepoznat') return 0.5;
   return a.toLowerCase() === b.toLowerCase() ? 1.0 : 0.0;
+}
+
+function normalizeCbrQuery(raw = {}) {
+  return {
+    brojPredmeta: String(raw.brojPredmeta || `NOVI-${Date.now()}`),
+    tipKrivicnogDjela: String(raw.tipKrivicnogDjela || ''),
+    clanKZ: String(raw.clanKZ || ''),
+    iznos: String(raw.iznos ?? 0),
+    ukupanIznos: String(raw.ukupanIznos ?? raw.iznos ?? 0),
+    ranijeOsudjivan: String(raw.ranijeOsudjivan || 'nepoznat'),
+    uslovnaOsuda: String(raw.uslovnaOsuda || 'Ne'),
+    vrstaPresude: String(raw.vrstaPresude || 'nepoznat'),
+    zaposlenost: String(raw.zaposlenost || 'nepoznat'),
+    bracniStatus: String(raw.bracniStatus || 'nepoznat'),
+    kaznaUMjesecima: String(raw.kaznaUMjesecima ?? 0),
+    novcanaKazna: String(raw.novcanaKazna ?? 0),
+    obrazovanje: String(raw.obrazovanje || 'nepoznat'),
+    brojTransakcija: String(raw.brojTransakcija ?? 0),
+    brojOkrivljenih: String(raw.brojOkrivljenih ?? 1),
+    brojSvjedoka: String(raw.brojSvjedoka ?? 0),
+    brojDokaza: String(raw.brojDokaza ?? 0),
+    priznanje: String(raw.priznanje || 'ne'),
+    pokusaj: String(raw.pokusaj || 'ne'),
+    saizvrsilastvo: String(raw.saizvrsilastvo || 'ne'),
+  };
+}
+
+function escapeXml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function parseCaseIdentity(rawCaseNumber = '') {
+  const now = new Date();
+  const fallbackYear = now.getFullYear();
+  const raw = String(rawCaseNumber || '').trim();
+
+  let broj = '';
+  let year = fallbackYear;
+
+  let match = raw.match(/(\d+)\s*\/\s*(\d{2,4})/);
+  if (!match) {
+    match = raw.match(/(\d+)[^\d]+(\d{2,4})/);
+  }
+
+  if (match) {
+    broj = match[1];
+    const parsedYear = parseInt(match[2], 10);
+    if (!Number.isNaN(parsedYear)) {
+      if (parsedYear > 99 && parsedYear < 2100) {
+        year = parsedYear;
+      } else if (parsedYear <= 99) {
+        year = (parsedYear <= 30 ? 2000 : 1900) + parsedYear;
+      }
+    }
+  } else {
+    const digits = raw.match(/\d+/);
+    broj = digits ? digits[0] : String(now.getTime()).slice(-6);
+  }
+
+  if (!broj) {
+    broj = String(now.getTime()).slice(-6);
+  }
+
+  return {
+    broj,
+    year,
+    fileBase: `K ${broj}_${year}`,
+    judgmentName: `K_${broj}_${year}`,
+    fallbackCaseNumber: `${broj}/${String(year).slice(-2)}`,
+  };
+}
+
+function normalizeVerdictLabel(vrstaPresude = '') {
+  const v = String(vrstaPresude || '').toLowerCase().trim();
+  if (v === 'uslovna' || v === 'uslovna osuda' || v === 'uslovna presuda') return 'Uslovna presuda';
+  if (v === 'oslobadjajuca' || v === 'oslobađajuća' || v === 'oslobađajuca') return 'Oslobađajuća';
+  if (v === 'osudjujuca' || v === 'osuđujuća' || v === 'osuđujuca') return 'Osuđujuća';
+  if (v === 'sudska opomena' || v === 'opomena') return 'Sudska opomena';
+  return 'Osuđujuća';
+}
+
+function formatSentence(decision = {}) {
+  const months = parseFloat(decision.kaznaUMjesecima);
+  const fine = parseFloat(decision.novcanaKazna);
+
+  if (!Number.isNaN(months) && months > 0) {
+    const n = Number.isInteger(months) ? String(months) : String(months);
+    return `${n} mjeseci`;
+  }
+  if (!Number.isNaN(fine) && fine > 0) {
+    return `novčana kazna ${fine} EUR`;
+  }
+  return 'Nije navedeno';
+}
+
+function buildAkomaNtosoCaseXml(input, decision, identity) {
+  const now = new Date();
+  const isoDate = now.toISOString().slice(0, 10);
+  const caseNumber = String(input.brojPredmeta || identity.fallbackCaseNumber);
+  const verdict = normalizeVerdictLabel(decision.vrstaPresude);
+  const sentence = formatSentence(decision);
+  const uslovna = String(decision.uslovnaOsuda || 'Ne');
+  const sudMjesto = String(input.sud || 'Podgorici').trim();
+  const sudUpper = sudMjesto.toUpperCase();
+  const sudLabel = `Osnovni Sud u ${sudUpper}`;
+  const tipDjela = String(input.tipKrivicnogDjela || '').trim();
+  const clanKZ = String(input.clanKZ || '').trim();
+  const opis = String(input.opis || 'Nije navedeno').trim();
+  const zaposlenost = String(input.zaposlenost || 'nepoznat');
+  const obrazovanje = String(input.obrazovanje || 'nepoznat');
+  const ranijeOsudjivan = String(input.ranijeOsudjivan || 'nepoznat');
+  const bracniStatus = String(input.bracniStatus || 'nepoznat');
+  const ukupanIznos = parseFloat(input.ukupanIznos ?? input.iznos ?? 0);
+  const fine = parseFloat(decision.novcanaKazna ?? 0);
+  const cleanUkupanIznos = Number.isNaN(ukupanIznos) ? 0 : ukupanIznos;
+  const cleanFine = Number.isNaN(fine) ? 0 : fine;
+
+  return `<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="${escapeXml(identity.judgmentName)}">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/${escapeXml(identity.judgmentName)}"/>
+          <FRBRuri value="/akn/me/judgment/${escapeXml(identity.judgmentName)}"/>
+          <FRBRdate date="${escapeXml(isoDate)}" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/${escapeXml(identity.judgmentName)}/srp@${escapeXml(isoDate)}"/>
+          <FRBRuri value="/akn/me/judgment/${escapeXml(identity.judgmentName)}/srp@${escapeXml(isoDate)}"/>
+          <FRBRdate date="${escapeXml(isoDate)}" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/${escapeXml(identity.judgmentName)}/srp@${escapeXml(isoDate)}.xml"/>
+          <FRBRuri value="/akn/me/judgment/${escapeXml(identity.judgmentName)}/srp@${escapeXml(isoDate)}.xml"/>
+          <FRBRdate date="${escapeXml(isoDate)}" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/${escapeXml(sudMjesto.toLowerCase().replace(/\s+/g, '_'))}" showAs="${escapeXml(sudLabel)}"/>
+        <TLCPerson eId="sudija" href="/ontology/person/korisnicki_unos" showAs="Korisnički unos"/>
+      </references>
+      <proprietary source="#court">
+        <sud>${escapeXml(sudUpper)}</sud>
+        <brojPredmeta>${escapeXml(caseNumber)}</brojPredmeta>
+        <datum>${identity.year}</datum>
+        <datumNormalizovan>${escapeXml(isoDate)}</datumNormalizovan>
+        <godina>${identity.year}</godina>
+        <sudija>Korisnički unos</sudija>
+        <zapisnicar>Korisnički unos</zapisnicar>
+        <zaposlenost>${escapeXml(zaposlenost)}</zaposlenost>
+        <obrazovanje>${escapeXml(obrazovanje)}</obrazovanje>
+        <ranijeOsudjivan>${escapeXml(ranijeOsudjivan)}</ranijeOsudjivan>
+        <tipKrivicnogDjela>${escapeXml(tipDjela)}</tipKrivicnogDjela>
+        <clanKZ>${escapeXml(clanKZ)}</clanKZ>
+        <kazna>${escapeXml(sentence)}</kazna>
+        <uslovnaOsuda>${escapeXml(uslovna)}</uslovnaOsuda>
+        <vrstaPresude>${escapeXml(verdict)}</vrstaPresude>
+        <novcanaKazna>${escapeXml(String(cleanFine))}</novcanaKazna>
+        <opisSlucaja>${escapeXml(opis)}</opisSlucaja>
+        <iznosi>
+          <iznos>${escapeXml(String(cleanUkupanIznos).replace('.', ','))} EUR</iznos>
+        </iznosi>
+        <dokazi>
+          <dokaz>Korisnički unos činjenica kroz web formu</dokaz>
+        </dokazi>
+        <bracniStatus>${escapeXml(bracniStatus)}</bracniStatus>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija Korisnički unos</p>
+      </introduction>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>${escapeXml(opis)}</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Korisnički unos činjenica kroz web formu</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>${escapeXml(verdict)}</p>
+          <p>Kazna: ${escapeXml(sentence)}</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: ${escapeXml(tipDjela)} (${escapeXml(clanKZ)} Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>`;
 }
 
 // Compute weighted similarity between two CBR case records
@@ -1018,6 +1250,161 @@ app.post('/api/cbr-reasoning', (req, res) => {
     },
     totalCasesCompared: results.length,
   });
+});
+
+app.post('/api/cbr-reasoning-input', (req, res) => {
+  const queryRaw = req.body?.query;
+  if (!queryRaw) {
+    return res.status(400).json({ error: 'query is required' });
+  }
+  if (cbrCases.length === 0) {
+    return res.status(500).json({ error: 'CBR baza slučajeva nije učitana' });
+  }
+
+  const queryCase = normalizeCbrQuery(queryRaw);
+  const queryBroj = queryCase.brojPredmeta;
+
+  const results = [];
+  for (const target of cbrCases) {
+    const similarity = computeSimilarity(queryCase, target);
+    results.push({ case: target, similarity });
+  }
+
+  results.sort((a, b) => b.similarity - a.similarity);
+  const topK = Math.min(5, results.length);
+  const similarCases = results.slice(0, topK).map(r => ({
+    brojPredmeta: r.case.brojPredmeta,
+    sud: formatCourtName(r.case.sud),
+    tipKrivicnogDjela: r.case.tipKrivicnogDjela,
+    clanKZ: r.case.clanKZ,
+    vrstaPresude: displayVerdict(r.case.vrstaPresude),
+    kaznaUMjesecima: parseFloat(r.case.kaznaUMjesecima) || 0,
+    uslovnaOsuda: r.case.uslovnaOsuda,
+    novcanaKazna: parseFloat(r.case.novcanaKazna) || 0,
+    iznos: parseFloat(r.case.iznos) || 0,
+    ukupanIznos: parseFloat(r.case.ukupanIznos) || 0,
+    ranijeOsudjivan: r.case.ranijeOsudjivan,
+    priznanje: r.case.priznanje,
+    zaposlenost: r.case.zaposlenost,
+    bracniStatus: r.case.bracniStatus,
+    obrazovanje: r.case.obrazovanje,
+    brojTransakcija: parseInt(r.case.brojTransakcija) || 0,
+    brojOkrivljenih: parseInt(r.case.brojOkrivljenih) || 0,
+    brojSvjedoka: parseInt(r.case.brojSvjedoka) || 0,
+    brojDokaza: parseInt(r.case.brojDokaza) || 0,
+    pokusaj: r.case.pokusaj,
+    saizvrsilastvo: r.case.saizvrsilastvo,
+    similarity: Math.round(r.similarity * 1000) / 10,
+  }));
+
+  let weightedSentence = 0;
+  let weightSum = 0;
+  for (const r of results.slice(0, topK)) {
+    const months = parseFloat(r.case.kaznaUMjesecima) || 0;
+    if (months > 0) {
+      weightedSentence += r.similarity * months;
+      weightSum += r.similarity;
+    }
+  }
+  const recommendedMonths = weightSum > 0 ? Math.round((weightedSentence / weightSum) * 10) / 10 : null;
+
+  const verdictCounts = {};
+  for (const sc of similarCases) {
+    const v = sc.vrstaPresude || 'nepoznato';
+    verdictCounts[v] = (verdictCounts[v] || 0) + 1;
+  }
+  const conditionalCount = similarCases.filter(sc => sc.uslovnaOsuda === 'Da').length;
+
+  res.json({
+    queryCase: {
+      brojPredmeta: queryBroj,
+      tipKrivicnogDjela: queryCase.tipKrivicnogDjela,
+      clanKZ: queryCase.clanKZ,
+      kaznaUMjesecima: parseFloat(queryCase.kaznaUMjesecima) || 0,
+      uslovnaOsuda: queryCase.uslovnaOsuda || 'nepoznat',
+      vrstaPresude: displayVerdict(queryCase.vrstaPresude || 'nepoznat'),
+      novcanaKazna: parseFloat(queryCase.novcanaKazna) || 0,
+      ranijeOsudjivan: queryCase.ranijeOsudjivan || 'nepoznat',
+      zaposlenost: queryCase.zaposlenost || 'nepoznat',
+      priznanje: queryCase.priznanje || 'nepoznat',
+    },
+    similarCases,
+    recommendation: {
+      kaznaUMjesecima: recommendedMonths,
+      verdictDistribution: verdictCounts,
+      conditionalSentenceLikelihood: Math.round((conditionalCount / Math.max(topK, 1)) * 100),
+      conditionalExplanation: `Od ${topK} najsličnijih predmeta, ${conditionalCount} ${conditionalCount === 1 ? 'je imao' : 'su imali'} uslovnu presudu.`
+    },
+    totalCasesCompared: results.length,
+  });
+});
+
+app.post('/api/cases/user', (req, res) => {
+  const input = req.body?.input;
+  const decision = req.body?.decision;
+  if (!input || !decision) {
+    return res.status(400).json({ error: 'input and decision are required' });
+  }
+
+  const cbrRecord = {
+    id: String(cbrCases.length + 1000),
+    sud: 'Korisnički unos',
+    ...normalizeCbrQuery({
+      ...input,
+      vrstaPresude: decision.vrstaPresude,
+      uslovnaOsuda: decision.uslovnaOsuda,
+      kaznaUMjesecima: decision.kaznaUMjesecima,
+      novcanaKazna: decision.novcanaKazna,
+    })
+  };
+
+  const userEntry = {
+    savedAt: new Date().toISOString(),
+    input,
+    decision,
+    cbrRecord,
+  };
+
+  try {
+    const identity = parseCaseIdentity(input.brojPredmeta || cbrRecord.brojPredmeta);
+    const xmlFileName = `${identity.fileBase}.xml`;
+    const xmlPath = path.join(casesDirFallback, xmlFileName);
+
+    if (!fs.existsSync(casesDirFallback)) {
+      fs.mkdirSync(casesDirFallback, { recursive: true });
+    }
+    if (fs.existsSync(xmlPath)) {
+      return res.status(409).json({ error: `Predmet već postoji: ${xmlFileName}` });
+    }
+
+    const xmlContent = buildAkomaNtosoCaseXml(input, decision, identity);
+    fs.writeFileSync(xmlPath, xmlContent, 'utf8');
+
+    const parsedCase = parseXMLFile(xmlPath);
+    if (parsedCase) {
+      const existingIndex = caseDatabase.findIndex(c => c.case_id === parsedCase.case_id);
+      if (existingIndex >= 0) {
+        caseDatabase[existingIndex] = parsedCase;
+      } else {
+        caseDatabase.push(parsedCase);
+      }
+    }
+
+    let current = [];
+    if (fs.existsSync(userCasesFile)) {
+      const raw = fs.readFileSync(userCasesFile, 'utf8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) current = parsed;
+    }
+    userEntry.xmlFile = xmlFileName;
+    current.push(userEntry);
+    fs.writeFileSync(userCasesFile, JSON.stringify(current, null, 2), 'utf8');
+
+    cbrCases.push(cbrRecord);
+    res.json({ status: 'success', message: 'Case saved', cbrRecord, xmlFile: xmlFileName });
+  } catch (err) {
+    res.status(500).json({ error: `Save failed: ${err.message}` });
+  }
 });
 
 // Serve static files AFTER API routes

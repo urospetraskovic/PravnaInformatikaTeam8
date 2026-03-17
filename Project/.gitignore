@@ -24,6 +24,12 @@ rule_reasoning/rules/output/
 # IDE
 .vscode/
 *.code-workspace
+**/.classpath
+**/.project
+**/.settings/
+
+# Java/Maven build output
+**/target/
 
 # OS
 Thumbs.db
