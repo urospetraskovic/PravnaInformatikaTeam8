@@ -1,0 +1,62 @@
+[
+  {
+    "savedAt": "2026-03-18T13:10:27.058Z",
+    "input": {
+      "brojSvjedoka": 2,
+      "okrivljeni": "L.S.",
+      "svjedoci": "M.N.\nP.R.",
+      "brojOkrivljenih": 1,
+      "brojDokaza": 3,
+      "tipKrivicnogDjela": "falsifikovanje i zloupotreba kreditnih kartica",
+      "ranijeOsudjivan": "ne",
+      "dokazi": "Video nadzor\nIzvod banke\nVjestacenje kartice",
+      "iznos": 740,
+      "priznanje": "da",
+      "pokusaj": "ne",
+      "bracniStatus": "ozenjen",
+      "opis": "Dana 05.03.2026. u Podgorici okrivljeni je upotrijebio falsifikovanu platnu karticu u dvije transakcije i pribavio protivpravnu imovinsku korist od 1480 EUR.",
+      "datumPresude": "2026-03-18",
+      "saizvrsilastvo": "ne",
+      "brojPredmeta": "912/26",
+      "ukupanIznos": 1480,
+      "clanKZ": "cl. 260 st. 2",
+      "obrazovanje": "SSS",
+      "sud": "Podgorici",
+      "sudija": "Ana Vukovic",
+      "brojTransakcija": 2,
+      "zapisnicar": "Milan Radovic",
+      "zaposlenost": "zaposlen"
+    },
+    "decision": {
+      "uslovnaOsuda": "Da",
+      "novcanaKazna": 300,
+      "kaznaUMjesecima": 8,
+      "vrstaPresude": "uslovna"
+    },
+    "cbrRecord": {
+      "id": "1127",
+      "sud": "Podgorici",
+      "brojPredmeta": "912/26",
+      "tipKrivicnogDjela": "falsifikovanje i zloupotreba kreditnih kartica",
+      "clanKZ": "cl. 260 st. 2",
+      "iznos": "740",
+      "ukupanIznos": "1480",
+      "ranijeOsudjivan": "ne",
+      "uslovnaOsuda": "Da",
+      "vrstaPresude": "uslovna",
+      "zaposlenost": "zaposlen",
+      "bracniStatus": "ozenjen",
+      "kaznaUMjesecima": "8",
+      "novcanaKazna": "300",
+      "obrazovanje": "SSS",
+      "brojTransakcija": "2",
+      "brojOkrivljenih": "1",
+      "brojSvjedoka": "2",
+      "brojDokaza": "3",
+      "priznanje": "da",
+      "pokusaj": "ne",
+      "saizvrsilastvo": "ne"
+    },
+    "xmlFile": "K 912_2026.xml"
+  }
+]

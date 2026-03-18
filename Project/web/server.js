@@ -948,14 +948,14 @@ function formatSentence(decision = {}) {
 
 function buildAkomaNtosoCaseXml(input, decision, identity) {
   const now = new Date();
-  const isoDate = now.toISOString().slice(0, 10);
+  const inputDate = String(input.datumPresude || '').trim();
+  const isoDate = /^\d{4}-\d{2}-\d{2}$/.test(inputDate) ? inputDate : now.toISOString().slice(0, 10);
   const caseNumber = String(input.brojPredmeta || identity.fallbackCaseNumber);
   const verdict = normalizeVerdictLabel(decision.vrstaPresude);
   const sentence = formatSentence(decision);
   const uslovna = String(decision.uslovnaOsuda || 'Ne');
   const sudMjesto = String(input.sud || 'Podgorici').trim();
-  const sudUpper = sudMjesto.toUpperCase();
-  const sudLabel = `Osnovni Sud u ${sudUpper}`;
+  const sudLabel = `Osnovni Sud u ${sudMjesto}`;
   const tipDjela = String(input.tipKrivicnogDjela || '').trim();
   const clanKZ = String(input.clanKZ || '').trim();
   const opis = String(input.opis || 'Nije navedeno').trim();
@@ -963,10 +963,46 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
   const obrazovanje = String(input.obrazovanje || 'nepoznat');
   const ranijeOsudjivan = String(input.ranijeOsudjivan || 'nepoznat');
   const bracniStatus = String(input.bracniStatus || 'nepoznat');
+  const sudija = String(input.sudija || 'Korisnički unos').trim();
+  const zapisnicar = String(input.zapisnicar || 'Korisnički unos').trim();
+  const okrivljeni = String(input.okrivljeni || 'Korisnički unos').trim();
+  const brojTransakcija = parseInt(input.brojTransakcija ?? 0, 10);
+  const brojOkrivljenih = parseInt(input.brojOkrivljenih ?? 1, 10);
+  const brojSvjedoka = parseInt(input.brojSvjedoka ?? 0, 10);
+  const brojDokaza = parseInt(input.brojDokaza ?? 0, 10);
   const ukupanIznos = parseFloat(input.ukupanIznos ?? input.iznos ?? 0);
   const fine = parseFloat(decision.novcanaKazna ?? 0);
   const cleanUkupanIznos = Number.isNaN(ukupanIznos) ? 0 : ukupanIznos;
   const cleanFine = Number.isNaN(fine) ? 0 : fine;
+
+  const parseListInput = (value) =>
+    String(value || '')
+      .split(/\r?\n|;/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+  const witnessList = parseListInput(input.svjedoci);
+  const evidenceList = parseListInput(input.dokazi);
+
+  const computedWitnesses = witnessList.length > 0
+    ? witnessList
+    : Array.from({ length: Math.max(0, Number.isNaN(brojSvjedoka) ? 0 : brojSvjedoka) }, (_, idx) => `Svjedok ${idx + 1}`);
+
+  const computedEvidence = evidenceList.length > 0
+    ? evidenceList
+    : Array.from({ length: Math.max(0, Number.isNaN(brojDokaza) ? 0 : brojDokaza) }, (_, idx) => `Dokaz ${idx + 1}`);
+
+  const witnessXml = computedWitnesses.length > 0
+    ? computedWitnesses.map((name) => `          <svjedok>${escapeXml(name)}</svjedok>`).join('\n')
+    : '          <svjedok>Nije navedeno</svjedok>';
+
+  const evidenceXml = computedEvidence.length > 0
+    ? computedEvidence.map((item) => `          <dokaz>${escapeXml(item)}</dokaz>`).join('\n')
+    : '          <dokaz>Nije navedeno</dokaz>';
+
+  const motivationEvidenceXml = computedEvidence.length > 0
+    ? computedEvidence.map((item) => `            <p>• ${escapeXml(item)}</p>`).join('\n')
+    : '            <p>• Nije navedeno</p>';
 
   return `<?xml version="1.0" encoding="utf-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -996,21 +1032,28 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
       </identification>
       <references source="#court">
         <TLCOrganization eId="court" href="/ontology/organization/me/${escapeXml(sudMjesto.toLowerCase().replace(/\s+/g, '_'))}" showAs="${escapeXml(sudLabel)}"/>
-        <TLCPerson eId="sudija" href="/ontology/person/korisnicki_unos" showAs="Korisnički unos"/>
+        <TLCPerson eId="sudija" href="/ontology/person/sudija_korisnicki_unos" showAs="${escapeXml(sudija)}"/>
+        <TLCPerson eId="zapisnicar" href="/ontology/person/zapisnicar_korisnicki_unos" showAs="${escapeXml(zapisnicar)}"/>
+        <TLCPerson eId="defendant" href="/ontology/person/okrivljeni_korisnicki_unos" showAs="${escapeXml(okrivljeni)}"/>
       </references>
       <proprietary source="#court">
-        <sud>${escapeXml(sudUpper)}</sud>
+        <sud>${escapeXml(sudMjesto)}</sud>
         <brojPredmeta>${escapeXml(caseNumber)}</brojPredmeta>
-        <datum>${identity.year}</datum>
+        <datum>${escapeXml(isoDate)}</datum>
         <datumNormalizovan>${escapeXml(isoDate)}</datumNormalizovan>
         <godina>${identity.year}</godina>
-        <sudija>Korisnički unos</sudija>
-        <zapisnicar>Korisnički unos</zapisnicar>
+        <sudija>${escapeXml(sudija)}</sudija>
+        <zapisnicar>${escapeXml(zapisnicar)}</zapisnicar>
+        <okrivljeni>${escapeXml(okrivljeni)}</okrivljeni>
         <zaposlenost>${escapeXml(zaposlenost)}</zaposlenost>
         <obrazovanje>${escapeXml(obrazovanje)}</obrazovanje>
         <ranijeOsudjivan>${escapeXml(ranijeOsudjivan)}</ranijeOsudjivan>
         <tipKrivicnogDjela>${escapeXml(tipDjela)}</tipKrivicnogDjela>
         <clanKZ>${escapeXml(clanKZ)}</clanKZ>
+        <brojTransakcija>${escapeXml(String(Number.isNaN(brojTransakcija) ? 0 : brojTransakcija))}</brojTransakcija>
+        <brojOkrivljenih>${escapeXml(String(Number.isNaN(brojOkrivljenih) ? 1 : brojOkrivljenih))}</brojOkrivljenih>
+        <brojSvjedoka>${escapeXml(String(Number.isNaN(brojSvjedoka) ? 0 : brojSvjedoka))}</brojSvjedoka>
+        <brojDokaza>${escapeXml(String(Number.isNaN(brojDokaza) ? 0 : brojDokaza))}</brojDokaza>
         <kazna>${escapeXml(sentence)}</kazna>
         <uslovnaOsuda>${escapeXml(uslovna)}</uslovnaOsuda>
         <vrstaPresude>${escapeXml(verdict)}</vrstaPresude>
@@ -1019,8 +1062,11 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
         <iznosi>
           <iznos>${escapeXml(String(cleanUkupanIznos).replace('.', ','))} EUR</iznos>
         </iznosi>
+        <svjedoci>
+${witnessXml}
+        </svjedoci>
         <dokazi>
-          <dokaz>Korisnički unos činjenica kroz web formu</dokaz>
+${evidenceXml}
         </dokazi>
         <bracniStatus>${escapeXml(bracniStatus)}</bracniStatus>
       </proprietary>
@@ -1028,8 +1074,13 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
     <judgmentBody>
       <introduction>
         <p>U IME CRNE GORE
-${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija Korisnički unos</p>
+${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija ${escapeXml(sudija)}</p>
       </introduction>
+      <background>
+        <p>Okrivljeni: ${escapeXml(okrivljeni)}</p>
+        <p>Zapisničar: ${escapeXml(zapisnicar)}</p>
+        <p>Datum odluke: ${escapeXml(isoDate)}</p>
+      </background>
       <arguments>
         <block name="opisSlucaja">
           <p>${escapeXml(opis)}</p>
@@ -1038,7 +1089,7 @@ ${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija Korisnički unos</p>
       <motivation>
         <block name="dokazi">
           <tblock>
-            <p>• Korisnički unos činjenica kroz web formu</p>
+${motivationEvidenceXml}
           </tblock>
         </block>
       </motivation>
@@ -1348,7 +1399,7 @@ app.post('/api/cases/user', (req, res) => {
 
   const cbrRecord = {
     id: String(cbrCases.length + 1000),
-    sud: 'Korisnički unos',
+    sud: String(input.sud || 'Korisnički unos'),
     ...normalizeCbrQuery({
       ...input,
       vrstaPresude: decision.vrstaPresude,

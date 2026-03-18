@@ -697,6 +697,26 @@
             <input id="input-case-number" type="text" placeholder="npr. NOVI-001" />
           </div>
           <div>
+            <label for="input-court">Sud (mjesto)</label>
+            <input id="input-court" type="text" placeholder="npr. Podgorici" value="Podgorici" />
+          </div>
+          <div>
+            <label for="input-judge">Sudija</label>
+            <input id="input-judge" type="text" placeholder="Ime i prezime sudije" />
+          </div>
+          <div>
+            <label for="input-clerk">Zapisničar</label>
+            <input id="input-clerk" type="text" placeholder="Ime i prezime zapisničara" />
+          </div>
+          <div>
+            <label for="input-defendant">Okrivljeni (ime/inicijali)</label>
+            <input id="input-defendant" type="text" placeholder="npr. A.B." />
+          </div>
+          <div>
+            <label for="input-decision-date">Datum odluke</label>
+            <input id="input-decision-date" type="date" />
+          </div>
+          <div>
             <label for="input-crime-type">Tip krivičnog dela</label>
             <select id="input-crime-type">
               <option value="falsifikovanje novca">Falsifikovanje novca</option>
@@ -772,6 +792,30 @@
               <option value="VSS">VSS</option>
               <option value="pismen">Pismen</option>
             </select>
+          </div>
+          <div>
+            <label for="input-transactions">Broj transakcija</label>
+            <input id="input-transactions" type="number" min="0" step="1" value="0" />
+          </div>
+          <div>
+            <label for="input-defendants-count">Broj okrivljenih</label>
+            <input id="input-defendants-count" type="number" min="1" step="1" value="1" />
+          </div>
+          <div>
+            <label for="input-witness-count">Broj svjedoka</label>
+            <input id="input-witness-count" type="number" min="0" step="1" value="0" />
+          </div>
+          <div>
+            <label for="input-evidence-count">Broj dokaza</label>
+            <input id="input-evidence-count" type="number" min="0" step="1" value="0" />
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="input-witnesses">Svjedoci (po jedan u redu)</label>
+            <textarea id="input-witnesses" placeholder="npr. M.N.\nP.Q."></textarea>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label for="input-evidence">Dokazi (po jedan u redu)</label>
+            <textarea id="input-evidence" placeholder="npr. Izvod sa računa\nSnimak nadzorne kamere"></textarea>
           </div>
           <div style="grid-column: 1 / -1;">
             <label for="input-description">Opis slučaja</label>
@@ -1821,6 +1865,11 @@
 
     function collectReasoningInput() {
       const brojPredmeta = document.getElementById('input-case-number').value.trim() || `NOVI-${Date.now()}`;
+      const sud = document.getElementById('input-court').value.trim();
+      const sudija = document.getElementById('input-judge').value.trim();
+      const zapisnicar = document.getElementById('input-clerk').value.trim();
+      const okrivljeni = document.getElementById('input-defendant').value.trim();
+      const datumPresude = document.getElementById('input-decision-date').value;
       const tipKrivicnogDjela = document.getElementById('input-crime-type').value;
       const clanKZ = document.getElementById('input-article').value.trim() || (tipKrivicnogDjela.includes('kartica') ? 'čl. 260' : 'čl. 258');
       const iznos = parseFloat(document.getElementById('input-amount').value || '0');
@@ -1832,10 +1881,21 @@
       const zaposlenost = document.getElementById('input-employment').value;
       const bracniStatus = document.getElementById('input-marital').value;
       const obrazovanje = document.getElementById('input-education').value;
+      const brojTransakcija = parseInt(document.getElementById('input-transactions').value || '0', 10);
+      const brojOkrivljenih = parseInt(document.getElementById('input-defendants-count').value || '1', 10);
+      const brojSvjedoka = parseInt(document.getElementById('input-witness-count').value || '0', 10);
+      const brojDokaza = parseInt(document.getElementById('input-evidence-count').value || '0', 10);
+      const svjedoci = document.getElementById('input-witnesses').value.trim();
+      const dokazi = document.getElementById('input-evidence').value.trim();
       const opis = document.getElementById('input-description').value.trim();
 
       return {
         brojPredmeta,
+        sud,
+        sudija,
+        zapisnicar,
+        okrivljeni,
+        datumPresude,
         tipKrivicnogDjela,
         clanKZ,
         iznos,
@@ -1847,14 +1907,63 @@
         zaposlenost,
         bracniStatus,
         obrazovanje,
+        brojTransakcija,
+        brojOkrivljenih,
+        brojSvjedoka,
+        brojDokaza,
+        svjedoci,
+        dokazi,
         opis,
       };
+    }
+
+    function validateReasoningInput(input) {
+      const missing = [];
+      if (!input.sud) missing.push('Sud (mjesto)');
+      if (!input.sudija) missing.push('Sudija');
+      if (!input.zapisnicar) missing.push('Zapisničar');
+      if (!input.okrivljeni) missing.push('Okrivljeni');
+      if (!input.datumPresude) missing.push('Datum odluke');
+      if (!input.clanKZ) missing.push('Član KZ');
+      if (!input.opis) missing.push('Opis slučaja');
+
+      const numericChecks = [
+        ['Iznos (EUR)', input.iznos, 0],
+        ['Ukupan iznos (EUR)', input.ukupanIznos, 0],
+        ['Broj transakcija', input.brojTransakcija, 0],
+        ['Broj okrivljenih', input.brojOkrivljenih, 1],
+        ['Broj svjedoka', input.brojSvjedoka, 0],
+        ['Broj dokaza', input.brojDokaza, 0],
+      ];
+
+      for (const [name, value, min] of numericChecks) {
+        if (Number.isNaN(value) || value < min) {
+          return `${name} nije validan.`;
+        }
+      }
+
+      if (input.ukupanIznos < input.iznos) {
+        return 'Ukupan iznos mora biti veći ili jednak pojedinačnom iznosu.';
+      }
+
+      if (missing.length > 0) {
+        return `Obavezna polja: ${missing.join(', ')}`;
+      }
+
+      return null;
     }
 
     async function runReasoningFromInput() {
       const ruleResultDiv = document.getElementById('reasoning-input-rule-result');
       const input = collectReasoningInput();
+      const validationError = validateReasoningInput(input);
       ruleResultDiv.style.display = 'block';
+
+      if (validationError) {
+        ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${validationError}</div>`;
+        return;
+      }
+
       ruleResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Pokretanje rasuđivanja po pravilima...</div>';
 
       const facts = {
@@ -1865,7 +1974,8 @@
         amounts: [`${input.iznos} EUR`, `${input.ukupanIznos} EUR`],
         previously_convicted: input.ranijeOsudjivan === 'da',
         confession: input.priznanje === 'da',
-        defendant: 'Korisnik sistema',
+        defendant: input.okrivljeni,
+        decision_date: input.datumPresude,
         archive_facts: {
           confession: input.priznanje === 'da',
           remorse: false,
@@ -1902,7 +2012,14 @@
     async function runCbrFromInput() {
       const cbrResultDiv = document.getElementById('reasoning-input-cbr-result');
       const input = collectReasoningInput();
+      const validationError = validateReasoningInput(input);
       cbrResultDiv.style.display = 'block';
+
+      if (validationError) {
+        cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${validationError}</div>`;
+        return;
+      }
+
       cbrResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Pokretanje rasuđivanja po slučajevima...</div>';
 
       const query = {
@@ -1918,6 +2035,10 @@
         zaposlenost: input.zaposlenost,
         bracniStatus: input.bracniStatus,
         obrazovanje: input.obrazovanje,
+        brojTransakcija: input.brojTransakcija,
+        brojOkrivljenih: input.brojOkrivljenih,
+        brojSvjedoka: input.brojSvjedoka,
+        brojDokaza: input.brojDokaza,
       };
 
       try {
@@ -1950,11 +2071,18 @@
     async function saveNewCaseFromInput() {
       const saveResultDiv = document.getElementById('reasoning-input-save-result');
       const input = collectReasoningInput();
+      const validationError = validateReasoningInput(input);
       const selectedVerdict = document.getElementById('input-selected-verdict').value;
       const selectedSanctionMonths = parseFloat(document.getElementById('input-selected-sanction').value || '0');
       const selectedFine = parseFloat(document.getElementById('input-selected-fine').value || '0');
 
       saveResultDiv.style.display = 'block';
+
+      if (validationError) {
+        saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${validationError}</div>`;
+        return;
+      }
+
       saveResultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc;">Čuvanje novog slučaja...</div>';
 
       try {
@@ -1985,6 +2113,7 @@
       }
     }
 
+    document.getElementById('input-decision-date').value = new Date().toISOString().slice(0, 10);
     loadCases();
   </script>
 </body>

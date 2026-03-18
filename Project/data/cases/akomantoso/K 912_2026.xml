@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_912_2026">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_912_2026"/>
+          <FRBRuri value="/akn/me/judgment/K_912_2026"/>
+          <FRBRdate date="2026-03-18" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_912_2026/srp@2026-03-18"/>
+          <FRBRuri value="/akn/me/judgment/K_912_2026/srp@2026-03-18"/>
+          <FRBRdate date="2026-03-18" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_912_2026/srp@2026-03-18.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_912_2026/srp@2026-03-18.xml"/>
+          <FRBRdate date="2026-03-18" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/sudija_korisnicki_unos" showAs="Ana Vukovic"/>
+        <TLCPerson eId="zapisnicar" href="/ontology/person/zapisnicar_korisnicki_unos" showAs="Milan Radovic"/>
+        <TLCPerson eId="defendant" href="/ontology/person/okrivljeni_korisnicki_unos" showAs="L.S."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>912/26</brojPredmeta>
+        <datum>2026-03-18</datum>
+        <datumNormalizovan>2026-03-18</datumNormalizovan>
+        <godina>2026</godina>
+        <sudija>Ana Vukovic</sudija>
+        <zapisnicar>Milan Radovic</zapisnicar>
+        <okrivljeni>L.S.</okrivljeni>
+        <zaposlenost>zaposlen</zaposlenost>
+        <obrazovanje>SSS</obrazovanje>
+        <ranijeOsudjivan>ne</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
+        <clanKZ>čl. 260 st. 2</clanKZ>
+        <brojTransakcija>2</brojTransakcija>
+        <brojOkrivljenih>1</brojOkrivljenih>
+        <brojSvjedoka>2</brojSvjedoka>
+        <brojDokaza>3</brojDokaza>
+        <kazna>8 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <novcanaKazna>300</novcanaKazna>
+        <opisSlucaja>Dana 05.03.2026. u Podgorici okrivljeni je upotrijebio falsifikovanu platnu karticu u dvije transakcije i pribavio protivpravnu imovinsku korist od 1480 EUR.</opisSlucaja>
+        <iznosi>
+          <iznos>1480 EUR</iznos>
+        </iznosi>
+        <svjedoci>
+          <svjedok>M.N.</svjedok>
+          <svjedok>P.R.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>Video nadzor</dokaz>
+          <dokaz>Izvod banke</dokaz>
+          <dokaz>Vjestacenje kartice</dokaz>
+        </dokazi>
+        <bracniStatus>ozenjen</bracniStatus>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE
+Osnovni Sud u Podgorici, 912/26, sudija Ana Vukovic</p>
+      </introduction>
+      <background>
+        <p>Okrivljeni: L.S.</p>
+        <p>Zapisničar: Milan Radovic</p>
+        <p>Datum odluke: 2026-03-18</p>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Dana 05.03.2026. u Podgorici okrivljeni je upotrijebio falsifikovanu platnu karticu u dvije transakcije i pribavio protivpravnu imovinsku korist od 1480 EUR.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Video nadzor</p>
+            <p>• Izvod banke</p>
+            <p>• Vjestacenje kartice</p>
+          </tblock>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Uslovna presuda</p>
+          <p>Kazna: 8 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (cl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>
