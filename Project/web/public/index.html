@@ -826,6 +826,7 @@
         <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px;">
           <button onclick="runReasoningFromInput()" class="nav-button" style="background: #1e40af; color: #fff; border-color: #1e40af;">Rasuđivanje po pravilima</button>
           <button onclick="runCbrFromInput()" class="nav-button" style="background: #065f46; color: #fff; border-color: #065f46;">Rasuđivanje po slučajevima</button>
+          <button onclick="runDecisionSupportFromInput()" class="nav-button" style="background: #7c3aed; color: #fff; border-color: #7c3aed;">Pokreni oba i predloži odluku</button>
         </div>
 
         <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
@@ -855,6 +856,7 @@
 
         <div id="reasoning-input-rule-result" style="display: none; margin-top: 14px;"></div>
         <div id="reasoning-input-cbr-result" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-decision-proposal" style="display: none; margin-top: 14px;"></div>
         <div id="reasoning-input-save-result" style="display: none; margin-top: 10px;"></div>
       </div>
     </div>
@@ -868,6 +870,130 @@
     let selectedCaseId = null;
     let availableTypes = [];
     let currentPanel = 'cases';
+    let latestInputRuleReasoning = null;
+    let latestInputCbrReasoning = null;
+
+    function normalizeVerdictValue(value) {
+      const verdict = String(value || '').toLowerCase();
+      if (verdict.includes('oslob')) return 'oslobadjajuca';
+      if (verdict.includes('uslov')) return 'uslovna';
+      return 'osudjujuca';
+    }
+
+    function extractMonthsFromRuleRecommendation(result) {
+      if (!result) return null;
+      const candidates = [
+        result.recommendation,
+        result.actual_sentence,
+        result.dr_device_reasoning?.recommended_sentence,
+      ];
+
+      for (const candidate of candidates) {
+        const text = String(candidate || '');
+        const match = text.match(/(\d+(?:[.,]\d+)?)\s*(mesec|mjesec|month)/i);
+        if (match) {
+          return parseFloat(match[1].replace(',', '.'));
+        }
+      }
+      return null;
+    }
+
+    function formatTopSimilarCases(cases) {
+      const list = Array.isArray(cases) ? cases.slice(0, 3) : [];
+      if (list.length === 0) {
+        return 'Nema pronađenih sličnih predmeta.';
+      }
+      return list.map(c => `${c.brojPredmeta} (${c.similarity}%) - ${c.vrstaPresude}, ${c.kaznaUMjesecima || 0} mes.`).join('<br/>');
+    }
+
+    function updateDecisionProposalPanel() {
+      const proposalDiv = document.getElementById('reasoning-input-decision-proposal');
+      if (!proposalDiv) return;
+
+      proposalDiv.style.display = 'block';
+
+      if (!latestInputRuleReasoning && !latestInputCbrReasoning) {
+        proposalDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #334155;">Pokrenite rasuđivanje po pravilima i po slučajevima da bi sistem predložio vrstu presude i sankciju.</div>';
+        return;
+      }
+
+      if (!latestInputRuleReasoning || !latestInputCbrReasoning) {
+        const missing = !latestInputRuleReasoning ? 'rasuđivanje po pravilima' : 'rasuđivanje po slučajevima';
+        proposalDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fde68a; border-radius: 6px; background: #fffbeb; color: #92400e;">Za kompletan predlog odluke potrebno je pokrenuti i ${missing}.</div>`;
+        return;
+      }
+
+      const rule = latestInputRuleReasoning;
+      const cbr = latestInputCbrReasoning;
+      const cbrRec = cbr.recommendation || {};
+
+      const ruleVerdictRaw = String(rule.verdict || '');
+      const ruleIsAcquittal = Boolean(rule.acquittal) || ruleVerdictRaw.toLowerCase().includes('oslob');
+      const cbrConditional = Number(cbrRec.conditionalSentenceLikelihood || 0);
+      const ruleRecommendationText = String(rule.recommendation || '').toLowerCase();
+
+      let proposedVerdict = 'osudjujuca';
+      if (ruleIsAcquittal) {
+        proposedVerdict = 'oslobadjajuca';
+      } else if (ruleRecommendationText.includes('uslov') || cbrConditional >= 60) {
+        proposedVerdict = 'uslovna';
+      }
+
+      const ruleMonths = extractMonthsFromRuleRecommendation(rule);
+      const cbrMonths = Number(cbrRec.kaznaUMjesecima);
+      const validRuleMonths = Number.isFinite(ruleMonths) ? ruleMonths : null;
+      const validCbrMonths = Number.isFinite(cbrMonths) ? cbrMonths : null;
+
+      let proposedMonths = 0;
+      if (proposedVerdict === 'oslobadjajuca') {
+        proposedMonths = 0;
+      } else if (validRuleMonths != null && validCbrMonths != null) {
+        proposedMonths = Math.round((validRuleMonths + validCbrMonths) / 2);
+      } else if (validRuleMonths != null) {
+        proposedMonths = Math.round(validRuleMonths);
+      } else if (validCbrMonths != null) {
+        proposedMonths = Math.round(validCbrMonths);
+      }
+
+      const selectedVerdictEl = document.getElementById('input-selected-verdict');
+      const selectedSanctionEl = document.getElementById('input-selected-sanction');
+      if (selectedVerdictEl) selectedVerdictEl.value = proposedVerdict;
+      if (selectedSanctionEl) selectedSanctionEl.value = Math.max(0, proposedMonths);
+
+      const verdictLabelMap = {
+        osudjujuca: 'Osuđujuća',
+        uslovna: 'Uslovna',
+        oslobadjajuca: 'Oslobađajuća',
+      };
+
+      const legalReasonText = rule.legal_analysis?.verdict_reason || rule.legal_analysis?.legal_principle || 'Nije dostupno detaljno obrazloženje iz rule reasoning-a.';
+      const appliedArticles = (rule.articles || []).join(', ') || 'N/A';
+
+      proposalDiv.innerHTML = `
+        <div style="padding: 14px; border: 1px solid #c7d2fe; border-radius: 8px; background: #eef2ff;">
+          <div style="font-weight: 700; color: #312e81; margin-bottom: 8px;">Predlog vrste presude i sankcije (na osnovu oba rasuđivanja)</div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-bottom: 10px;">
+            <div style="padding: 10px; background: #fff; border: 1px solid #c7d2fe; border-radius: 6px;">
+              <div style="font-size: 0.8em; color: #475569;">Predložena vrsta presude</div>
+              <div style="font-size: 1.05em; font-weight: 700; color: #1e1b4b;">${verdictLabelMap[proposedVerdict]}</div>
+            </div>
+            <div style="padding: 10px; background: #fff; border: 1px solid #c7d2fe; border-radius: 6px;">
+              <div style="font-size: 0.8em; color: #475569;">Predložena sankcija</div>
+              <div style="font-size: 1.05em; font-weight: 700; color: #1e1b4b;">${proposedMonths} meseci</div>
+            </div>
+          </div>
+          <div style="padding: 10px; background: #fff; border: 1px solid #c7d2fe; border-radius: 6px; margin-bottom: 8px;">
+            <div style="font-weight: 600; color: #1e3a8a; margin-bottom: 4px;">Obrazloženje iz rasuđivanja po pravilima</div>
+            <div style="font-size: 0.9em; color: #334155;">Primenjene zakonske odredbe: <strong>${appliedArticles}</strong></div>
+            <div style="font-size: 0.9em; color: #334155; margin-top: 4px;">${legalReasonText}</div>
+          </div>
+          <div style="padding: 10px; background: #fff; border: 1px solid #c7d2fe; border-radius: 6px;">
+            <div style="font-weight: 600; color: #166534; margin-bottom: 4px;">Uvid u slične slučajeve (CBR)</div>
+            <div style="font-size: 0.9em; color: #334155;">${formatTopSimilarCases(cbr.similarCases)}</div>
+            <div style="font-size: 0.85em; color: #475569; margin-top: 4px;">${cbrRec.conditionalExplanation || ''}</div>
+          </div>
+        </div>`;
+    }
 
     function showPanel(panelName) {
       currentPanel = panelName;
@@ -1961,6 +2087,8 @@
 
       if (validationError) {
         ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${validationError}</div>`;
+        latestInputRuleReasoning = null;
+        updateDecisionProposalPanel();
         return;
       }
 
@@ -1994,6 +2122,8 @@
 
         if (result.error) {
           ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${result.error}</div>`;
+          latestInputRuleReasoning = null;
+          updateDecisionProposalPanel();
           return;
         }
 
@@ -2004,8 +2134,14 @@
             <div style="font-size: 0.92em; color: #1e40af;">Preporučena sankcija: <strong>${recommendation}</strong></div>
             <div style="font-size: 0.85em; color: #475569; margin-top: 6px;">Primenjeni članci: ${(result.articles || []).join(', ') || 'N/A'}</div>
           </div>`;
+        latestInputRuleReasoning = result;
+        updateDecisionProposalPanel();
+        return result;
       } catch (err) {
         ruleResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
+        latestInputRuleReasoning = null;
+        updateDecisionProposalPanel();
+        return null;
       }
     }
 
@@ -2017,6 +2153,8 @@
 
       if (validationError) {
         cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${validationError}</div>`;
+        latestInputCbrReasoning = null;
+        updateDecisionProposalPanel();
         return;
       }
 
@@ -2051,6 +2189,8 @@
 
         if (result.error) {
           cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${result.error}</div>`;
+          latestInputCbrReasoning = null;
+          updateDecisionProposalPanel();
           return;
         }
 
@@ -2063,9 +2203,34 @@
             <div style="font-size: 0.85em; color: #475569; margin-top: 4px;">Verovatnoća uslovne presude: <strong>${rec.conditionalSentenceLikelihood != null ? rec.conditionalSentenceLikelihood + '%' : 'N/A'}</strong></div>
             <div style="margin-top: 8px; font-size: 0.85em; color: #14532d;">Najslikčniji predmeti: ${topCases.map(c => `${c.brojPredmeta} (${c.similarity}%)`).join(', ') || 'N/A'}</div>
           </div>`;
+        latestInputCbrReasoning = result;
+        updateDecisionProposalPanel();
+        return result;
       } catch (err) {
         cbrResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
+        latestInputCbrReasoning = null;
+        updateDecisionProposalPanel();
+        return null;
       }
+    }
+
+    async function runDecisionSupportFromInput() {
+      const proposalDiv = document.getElementById('reasoning-input-decision-proposal');
+      if (proposalDiv) {
+        proposalDiv.style.display = 'block';
+        proposalDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #334155;">Pokretanje oba tipa rasuđivanja i priprema predloga odluke...</div>';
+      }
+
+      const ruleResult = await runReasoningFromInput();
+      const cbrResult = await runCbrFromInput();
+      if (!ruleResult || !cbrResult) {
+        updateDecisionProposalPanel();
+        return;
+      }
+
+      latestInputRuleReasoning = ruleResult;
+      latestInputCbrReasoning = cbrResult;
+      updateDecisionProposalPanel();
     }
 
     async function saveNewCaseFromInput() {
@@ -2114,6 +2279,7 @@
     }
 
     document.getElementById('input-decision-date').value = new Date().toISOString().slice(0, 10);
+    updateDecisionProposalPanel();
     loadCases();
   </script>
 </body>
