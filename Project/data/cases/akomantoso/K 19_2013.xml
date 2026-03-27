@@ -43,7 +43,7 @@
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 2</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>2 (dva) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>50,00</novcanaKazna>
@@ -109,7 +109,7 @@ Sud je cijenio iskaz oštećene - svjedoka J.M.</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

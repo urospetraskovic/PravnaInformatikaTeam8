@@ -44,7 +44,7 @@
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 75</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -124,7 +124,7 @@ Osnovni Sud u PLAVU, 120/14, sudija Elica Pantović</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 75 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

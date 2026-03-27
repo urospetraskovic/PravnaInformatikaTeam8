@@ -18,11 +18,6 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <lrml:Statements>
-
-    <!-- ================================================================== -->
-    <!-- ARTICLE 258: COUNTERFEITING MONEY (Falsifikovanje novca)           -->
-    <!-- ================================================================== -->
-
     <!-- Rule 1: Art. 258 basic - making/distributing counterfeit money
          Penalty: 2-12 years imprisonment -->
     <lrml:PrescriptiveStatement key="ps1">

@@ -159,23 +159,19 @@ def extract_sentence_months(kazna_text):
     if not kazna_text:
         return 0
     kazna_lower = kazna_text.lower()
-
     # Check for "novčana kazna" (monetary fine only, no prison)
     if "novčan" in kazna_lower or "novcan" in kazna_lower:
         return 0
-
     # Try to find years
     years = 0
     year_match = re.search(r"(\d+)\s*(?:\([^)]*\))?\s*godin", kazna_lower)
     if year_match:
         years = int(year_match.group(1))
-
     # Try to find months
     months = 0
     month_match = re.search(r"(\d+)\s*(?:\([^)]*\))?\s*mjesec", kazna_lower)
     if month_match:
         months = int(month_match.group(1))
-
     # Try to find days
     days = 0
     day_match = re.search(r"(\d+)\s*(?:\([^)]*\))?\s*dan", kazna_lower)

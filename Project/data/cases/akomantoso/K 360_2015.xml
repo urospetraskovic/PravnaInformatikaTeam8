@@ -44,7 +44,7 @@
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>osuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258 st. 2</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>8 mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -109,7 +109,7 @@ Osnovni Sud u Kotoru kao nadležni prvostepeni, 360/2015, sudija Danijela Samard
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

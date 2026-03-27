@@ -100,12 +100,12 @@ public class CbrApplication implements StandardCBRApplication {
         slicnostClana.setSimilarity("čl. 258", "čl. 258 st. 4", 0.5);
         slicnostClana.setSimilarity("čl. 258 st. 2", "čl. 258 st. 4", 0.4);
         // Unutar clana 260 (zloupotreba platnih kartica)
-        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 1", 0.8);
-        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 2", 0.7);
-        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 3", 0.6);
         slicnostClana.setSimilarity("čl. 260 st. 1", "čl. 260 st. 2", 0.7);
         slicnostClana.setSimilarity("čl. 260 st. 1", "čl. 260 st. 3", 0.5);
         slicnostClana.setSimilarity("čl. 260 st. 2", "čl. 260 st. 3", 0.6);
+        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 1", 0.8);
+        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 2", 0.7);
+        slicnostClana.setSimilarity("čl. 260", "čl. 260 st. 3", 0.6);
         // Izmedju clanova 258 i 260 (razlicita krivicna djela iste glave)
         slicnostClana.setSimilarity("čl. 258", "čl. 260", 0.2);
         slicnostClana.setSimilarity("čl. 258", "čl. 260 st. 1", 0.2);
@@ -169,10 +169,10 @@ public class CbrApplication implements StandardCBRApplication {
         ));
         slicnostZaposlenosti.setSimilarity("zaposlen", "nezaposlen", 0.3);
         slicnostZaposlenosti.setSimilarity("zaposlen", "student", 0.3);
-        slicnostZaposlenosti.setSimilarity("zaposlen", "penzioner", 0.5);
+        slicnostZaposlenosti.setSimilarity("zaposlen", "penzioner", 0.2);
         slicnostZaposlenosti.setSimilarity("nezaposlen", "student", 0.6);
+        slicnostZaposlenosti.setSimilarity("student", "penzioner", 0.1);
         slicnostZaposlenosti.setSimilarity("nezaposlen", "penzioner", 0.4);
-        slicnostZaposlenosti.setSimilarity("student", "penzioner", 0.3);
         slicnostZaposlenosti.setSimilarity("zaposlen", "nepoznat", 0.3);
         slicnostZaposlenosti.setSimilarity("nezaposlen", "nepoznat", 0.3);
         slicnostZaposlenosti.setSimilarity("student", "nepoznat", 0.3);

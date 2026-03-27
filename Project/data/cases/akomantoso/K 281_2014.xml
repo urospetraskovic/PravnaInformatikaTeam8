@@ -43,7 +43,7 @@
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>ranije neosuđivana</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 2</clanKZ>
+        <clanKZ>260.1</clanKZ>
         <kazna>4(četiri)mjeseca</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -95,7 +95,7 @@ Osnovni Sud u PODGORICI, 281/14, sudija Larisa Mijušković</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.1 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

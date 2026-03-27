@@ -44,7 +44,7 @@
         <obrazovanje>Srednju Školu</obrazovanje>
         <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>Nepoznat</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Oslobađajuća</vrstaPresude>
@@ -120,7 +120,7 @@ Osnovni Sud u BIJELOM POLJU, 42/2014, sudija Rahmo Banda</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

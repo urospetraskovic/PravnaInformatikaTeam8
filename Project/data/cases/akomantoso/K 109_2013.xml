@@ -43,7 +43,7 @@
                 <zaposlenost>nezaposlen</zaposlenost>
                 <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>2 (dvije) godin</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>70</novcanaKazna>
@@ -109,7 +109,7 @@ Osnovni Sud u ROŽAJAMA, 109/13</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

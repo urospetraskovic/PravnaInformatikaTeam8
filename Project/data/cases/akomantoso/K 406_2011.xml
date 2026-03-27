@@ -44,7 +44,7 @@
         <obrazovanje>SSS – tehničar prirodno matematički smjer</obrazovanje>
         <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>30</novcanaKazna>
@@ -129,7 +129,7 @@ Osnovni Sud u BIJELOM POLJU, 406/2011, sudija Rahmo Banda</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

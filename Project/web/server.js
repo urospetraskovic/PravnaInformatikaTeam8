@@ -43,6 +43,136 @@ const casesDirFallback = path.join(__dirname, '../data/cases/akomantoso');
 const userCasesFile = path.join(__dirname, '../data/cases/user_cases.json');
 let caseDatabase = [];
 
+function normalizeLegalArticleText(value) {
+  return String(value || '')
+    .replace(/član/gi, 'čl.')
+    .replace(/clan/gi, 'čl.')
+    .replace(/cl\./gi, 'čl.')
+    .replace(/stav/gi, 'st.')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function pickMainArticleByCrimeType(typeText) {
+  const value = String(typeText || '').toLowerCase();
+  if (value.includes('kreditn') || value.includes('kartic') || value.includes('bezgotovinsk')) return 260;
+  if (value.includes('novca') || value.includes('novac')) return 258;
+  return null;
+}
+
+function extractCanonicalArticleRef(rawText, forcedMainArticle = null) {
+  const text = normalizeLegalArticleText(rawText);
+  if (!text) return null;
+
+  let article = null;
+  let stav = null;
+  
+  // Directly match 258.4 or 260.2 format
+  const dotMatch = text.match(/\b(258|260)\.(\d{1,2})\b/);
+  if (dotMatch) {
+    article = parseInt(dotMatch[1], 10);
+    stav = parseInt(dotMatch[2], 10);
+  } else {
+    const explicitArticle = text.match(/(?:čl\.?)\s*(\d{2,3})/i);
+    if (explicitArticle) {
+      article = parseInt(explicitArticle[1], 10);
+    }
+  
+    if (!article) {
+      const safeArticle = text.match(/\b(258|260)\b/);
+      if (safeArticle) {
+        article = parseInt(safeArticle[1], 10);
+      }
+    }
+  }
+
+  if (!article && forcedMainArticle) {
+    article = forcedMainArticle;
+  }
+  if (!article) return null;
+
+  if (article !== 258 && article !== 260) {
+    return null;
+  }
+
+  if (!stav) {
+    const explicitStav = text.match(/(?:st\.?)\s*(\d{1,2})/i);
+    if (explicitStav) {
+      stav = parseInt(explicitStav[1], 10);
+    }
+  }
+
+  // Handles broken OCR-like forms such as "258. čl. 2".
+  if (!stav) {
+    const brokenPattern = text.match(/\b(258|260)\b[^\d]{0,12}čl\.?\s*(\d{1,2})/i);
+    if (brokenPattern) {
+      stav = parseInt(brokenPattern[2], 10);
+    }
+  }
+
+  if (!stav) {
+    const numbers = (text.match(/\d+/g) || []).map((n) => parseInt(n, 10));
+    if (numbers.length >= 2 && (numbers[0] === 258 || numbers[0] === 260) && numbers[1] > 0 && numbers[1] <= 10) {
+      stav = numbers[1];
+    }
+  }
+
+  const label = stav ? `${article}.${stav}` : `${article}`;
+  return { article, stav, label };
+}
+
+function buildAppliedArticles({ clanKZ, tipKrivicnogDjela, references = [], bodyRefs = [], decisionPs = [] }) {
+  const forcedMainArticle = pickMainArticleByCrimeType(tipKrivicnogDjela);
+  const candidates = [];
+
+  if (clanKZ) {
+    candidates.push(clanKZ);
+  }
+
+  for (let i = 0; i < (references ? references.length : 0); i++) {
+    const ref = references[i];
+    const showAs = ref && ref.getAttribute ? ref.getAttribute('showAs') : '';
+    if (showAs) candidates.push(showAs);
+  }
+
+  for (let i = 0; i < (bodyRefs ? bodyRefs.length : 0); i++) {
+    const ref = bodyRefs[i];
+    const href = (ref && ref.getAttribute ? ref.getAttribute('href') : '') || '';
+    const hrefMatch = href.match(/art_(\d+)(?:__para_(\d+))?/i);
+    if (hrefMatch) {
+      const article = parseInt(hrefMatch[1], 10);
+      const stav = hrefMatch[2] ? parseInt(hrefMatch[2], 10) : null;
+      if (article === 258 || article === 260) {
+        candidates.push(stav ? `${article}.${stav}` : `${article}`);
+      }
+    }
+  }
+
+  for (let i = 0; i < (decisionPs ? decisionPs.length : 0); i++) {
+    const p = decisionPs[i];
+    const text = (p && p.textContent) ? p.textContent : '';
+    if (text) candidates.push(text);
+  }
+
+  const seen = new Set();
+  const result = [];
+
+  for (const candidate of candidates) {
+    const parsed = extractCanonicalArticleRef(candidate, forcedMainArticle);
+    if (!parsed) continue;
+    const key = `${parsed.article}-${parsed.stav || 0}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    result.push(parsed.label);
+  }
+
+  if (result.length === 0 && forcedMainArticle) {
+    result.push(`${forcedMainArticle}`);
+  }
+
+  return result;
+}
+
 function parseXMLFile(filePath) {
   try {
     const xmlContent = fs.readFileSync(filePath, 'utf8');
@@ -251,52 +381,9 @@ function parseXMLFile(filePath) {
       }
     }
     
-    // Get articles referenced
+    // Get article references and normalize them to exact "čl. X st. Y" when possible.
     const references = meta.getElementsByTagNameNS('*', 'TLCReference');
-    const articles = [];
-    
-    // First priority: Use clanKZ from proprietary section (most reliable)
-    if (clanKZ) {
-      // Format: "čl. 260 st. 2" or "Član 258" etc.
-      articles.push(clanKZ);
-    }
-    
-    // Fallback: Check TLCReference elements
-    if (articles.length === 0) {
-      for (let i = 0; i < references.length; i++) {
-        const ref = references[i];
-        const showAs = ref.getAttribute('showAs');
-        if (showAs && (showAs.includes('Član') || showAs.includes('члан') || showAs.includes('Clan') || showAs.includes('čl.'))) {
-          articles.push(showAs);
-        }
-      }
-    }
-    
-    // Additional fallback: Derive article from crime type
-    if (articles.length === 0 && tipKrivicnogDjela) {
-      const lowerType = tipKrivicnogDjela.toLowerCase();
-      if (lowerType.includes('kreditn') || lowerType.includes('kartic')) {
-        articles.push('čl. 260 KZ'); // Credit card fraud
-      } else if (lowerType.includes('novca') || lowerType.includes('novac')) {
-        articles.push('čl. 258 KZ'); // Money counterfeiting
-      }
-    }
-    
-    // Also check ref elements in body for article references
     const bodyRefs = body.getElementsByTagNameNS('*', 'ref');
-    for (let i = 0; i < bodyRefs.length; i++) {
-      const ref = bodyRefs[i];
-      const href = ref.getAttribute('href') || '';
-      if (href.includes('art_')) {
-        const artMatch = href.match(/art_(\d+)/);
-        if (artMatch) {
-          const artNum = `Član ${artMatch[1]}`;
-          if (!articles.includes(artNum)) {
-            articles.push(artNum);
-          }
-        }
-      }
-    }
     
     // Get decision/conclusions
     const decisionElement = body.getElementsByTagNameNS('*', 'decision')[0] || 
@@ -346,6 +433,14 @@ function parseXMLFile(filePath) {
         }
       }
     }
+
+    const articles = buildAppliedArticles({
+      clanKZ,
+      tipKrivicnogDjela,
+      references,
+      bodyRefs,
+      decisionPs,
+    });
     
     // If we have uslovnaOsuda set, reflect it
     if (uslovnaOsuda && sentenceText === 'Nije navedeno') {
@@ -562,11 +657,35 @@ app.get('/api/glava23', (req, res) => {
       const heading = article.getElementsByTagNameNS('*', 'heading')[0]?.textContent || 'Nepoznat';
       const paragraphs = article.getElementsByTagNameNS('*', 'paragraph');
       const content = [];
+      const paragraphItems = [];
       
       for (let j = 0; j < paragraphs.length; j++) {
-        const p = paragraphs[j].getElementsByTagNameNS('*', 'p')[0];
-        if (p) {
-          content.push(p.textContent);
+        const paragraph = paragraphs[j];
+        const paraNum = paragraph.getElementsByTagNameNS('*', 'num')[0]?.textContent?.trim() || '';
+        const pNodes = paragraph.getElementsByTagNameNS('*', 'p');
+        const paraId = paragraph.getAttribute('eId') || (eId ? `${eId}__para_${j + 1}` : `para_${j + 1}`);
+
+        if (pNodes.length > 0) {
+          const paraTextParts = [];
+          for (let k = 0; k < pNodes.length; k++) {
+            const text = (pNodes[k].textContent || '').trim();
+            if (text) {
+              paraTextParts.push(text);
+              content.push(paraNum ? `${paraNum} ${text}` : text);
+            }
+          }
+          const paraText = paraTextParts.join(' ').trim();
+          if (paraText) {
+            paragraphItems.push({ eId: paraId, num: paraNum, text: paraText });
+          }
+          continue;
+        }
+
+        // Fallback for paragraphs that do not use explicit <p> nodes.
+        const rawText = (paragraph.textContent || '').trim();
+        if (rawText) {
+          content.push(rawText);
+          paragraphItems.push({ eId: paraId, num: paraNum, text: rawText });
         }
       }
       
@@ -574,6 +693,7 @@ app.get('/api/glava23', (req, res) => {
         eId: eId,
         num: articleNum,
         heading: heading,
+        paragraphs: paragraphItems,
         content: content.join('\n\n')
       });
     }

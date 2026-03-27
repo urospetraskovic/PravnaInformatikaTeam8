@@ -1,128 +1,129 @@
 # id;sud;brojPredmeta;tipKrivicnogDjela;clanKZ;iznos;ranijeOsudjivan;uslovnaOsuda;vrstaPresude;zaposlenost;bracniStatus;kaznaUMjesecima;novcanaKazna;obrazovanje;ukupanIznos;brojTransakcija;brojOkrivljenih;brojSvjedoka;brojDokaza;priznanje;pokusaj;saizvrsilastvo
-0;Rožaje;100/10;falsifikovanje novca;čl. 258;848.0;ne;Ne;oslobadjajuca;nezaposlen;neozenjen;6.0;848.0;SSS;2192.0;18;1;1;10;ne;ne;ne
-1;Rožaje;100/16;falsifikovanje novca;čl. 258;848.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;1331.0;10;1;0;7;ne;ne;ne
-2;Pljevlja;107/20;zloupotreba platnih kartica;čl. 260 st. 2;700.0;ne;Da;uslovna;zaposlen;razveden;3.0;27.5;osnovna;2297.5;9;1;2;4;da;ne;ne
-3;Rožaje;109/13;falsifikovanje novca;čl. 258;100.0;da;Ne;osudjujuca;nezaposlen;neozenjen;24.0;70.0;SSS;459.0;7;1;0;7;ne;ne;ne
-4;Ulcinj;110/16;falsifikovanje novca;čl. 258;300.0;ne;Da;uslovna;zaposlen;razveden;3.0;0.0;nepoznat;650.0;6;1;0;5;ne;ne;ne
-5;Bijelo Polje;118/19;falsifikovanje novca;čl. 258;119.0;ne;Ne;osudjujuca;nepoznat;razveden;2.0;0.0;VSS;226.229;5;2;0;1;da;ne;da
-6;Plav;120/14;falsifikovanje novca;čl. 75;670.0;ne;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;pismen;3360.0;18;2;1;10;ne;ne;ne
-7;Ulcinj;126/15;falsifikovanje novca;čl. 258 st. 4;300.0;ne;Da;uslovna;zaposlen;razveden;5.0;0.0;pismen;650.0;6;1;1;4;ne;ne;ne
-8;Pljevlja;12/14;zloupotreba platnih kartica;čl. 260 st. 2;50.0;da;Ne;osudjujuca;zaposlen;ozenjen;1.0;0.0;SSS;77.5;2;1;0;1;ne;ne;ne
-9;Kotor;12/2016;zloupotreba platnih kartica;čl. 260 st. 2;1001.75;da;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;2620.75;6;1;0;1;ne;ne;ne
-10;Podgorica;12/22;falsifikovanje novca;čl. 258;50.0;ne;Da;uslovna;nepoznat;neozenjen;12.0;0.0;SSS;100.0;2;1;0;0;ne;ne;ne
-11;Bar;131/18;zloupotreba platnih kartica;čl. 260 st. 2;980.0;nepoznat;Da;uslovna;nepoznat;razveden;10.0;0.0;nepoznat;2715.0;10;20;0;32;ne;ne;da
-12;Bijelo Polje;135/12;falsifikovanje novca;čl. 258 st. 4;700.0;ne;Ne;nepoznat;nezaposlen;neozenjen;0.0;700.0;SSS;2170.45;21;1;3;10;ne;ne;ne
-13;Herceg Novi;136/11;zloupotreba platnih kartica;čl. 260 st. 2;30.0;nepoznat;Da;uslovna;nepoznat;nepoznat;6.0;0.0;nepoznat;30.0;1;2;0;0;ne;ne;da
-14;Bijelo Polje;136/18;zloupotreba platnih kartica;čl. 260 st. 2;770.0;da;Da;uslovna;nepoznat;razveden;12.0;548.5;VSS;3588.5;12;1;0;6;ne;ne;ne
-15;Bar;139/15;zloupotreba platnih kartica;čl. 239;217.75;ne;Da;uslovna;nezaposlen;razveden;6.0;0.0;pismen;1252.25;19;1;5;6;ne;ne;ne
-16;Bar;13/24;zloupotreba platnih kartica;čl. 260 st. 2;215.75;nepoznat;Da;uslovna;nepoznat;razveden;4.0;0.0;nepoznat;433.36;10;1;0;1;ne;ne;ne
-17;Bijelo Polje;140/11;falsifikovanje novca;čl. 258;675.0;da;Ne;osudjujuca;nepoznat;neozenjen;0.0;0.0;SSS;1113.735;10;2;0;7;ne;ne;ne
-18;Berane;147/18;zloupotreba platnih kartica;čl. 260 st. 2;408.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;8.0;0.0;pismen;1233.0;8;1;1;4;ne;ne;ne
-19;Kotor;149/15;falsifikovanje novca;čl. 258;321.0;nepoznat;Ne;osudjujuca;nepoznat;ozenjen;8.0;0.0;nepoznat;809.0;9;1;0;6;ne;ne;ne
-20;Pljevlja;14/19;zloupotreba platnih kartica;čl. 260 st. 2;130.0;da;Da;uslovna;nezaposlen;neozenjen;3.0;0.0;SSS;367.5;7;2;0;8;ne;ne;da
-21;Bijelo Polje;160/2013;falsifikovanje novca;čl. 49;500.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;pismen;1468.75;10;1;4;8;ne;ne;ne
-22;Berane;167/15;falsifikovanje novca;čl. 258;700.0;ne;Ne;osudjujuca;zaposlen;ozenjen;12.0;0.0;nepoznat;1572.3;10;1;0;15;ne;ne;ne
-23;Bijelo Polje;169/16;falsifikovanje novca;čl. 258;132.0;da;Ne;osudjujuca;nepoznat;nepoznat;7.0;0.0;SSS;367.0;8;1;0;12;ne;ne;ne
-24;Herceg Novi;171/2015;falsifikovanje novca;čl. 258;700.0;ne;Da;uslovna;zaposlen;neozenjen;7.0;0.0;SSS;790.0;4;1;0;1;ne;da;ne
-25;Bar;173/20;zloupotreba platnih kartica;čl. 260 st. 2;900.0;da;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;nepoznat;1822.0;10;1;0;8;ne;ne;ne
-26;Herceg Novi;177/10;zloupotreba platnih kartica;čl. 260 st. 2;600.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;3.0;0.0;pismen;1400.0;3;1;0;3;ne;ne;ne
-27;Kotor;182/19;falsifikovanje novca;čl. 258;200.0;ne;Ne;osudjujuca;nezaposlen;razveden;6.0;0.0;nepoznat;775.2;10;1;0;22;ne;ne;ne
-28;Kotor;184/13;zloupotreba platnih kartica;čl. 260 st. 2;1640.0;da;Ne;osudjujuca;nepoznat;neozenjen;3.0;0.0;SSS;2291.39;9;1;0;2;ne;ne;ne
-29;Rožaje;192/10;falsifikovanje novca;čl. 258;600.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;1.5;0.0;nepoznat;950.0;7;2;0;3;ne;ne;da
-30;Kotor;192/19;falsifikovanje novca;čl. 258;200.0;ne;Ne;osudjujuca;nepoznat;neozenjen;6.0;0.0;SSS;465.0;5;1;0;14;ne;ne;ne
-31;Kotor;193/2015;zloupotreba platnih kartica;čl. 260;500.0;ne;Ne;osudjujuca;nepoznat;neozenjen;6.0;70.0;VSS;691.0;6;1;0;2;da;ne;ne
-32;Podgorica;195/13;zloupotreba platnih kartica;čl. 260 st. 2;1019.7;ne;Da;uslovna;zaposlen;razveden;6.0;0.0;SSS;4549.7;9;1;0;4;ne;ne;ne
-33;Bijelo Polje;19/2013;zloupotreba platnih kartica;čl. 260 st. 2;50.0;ne;Da;uslovna;nepoznat;ozenjen;2.0;50.0;SSS;165.0;7;1;0;5;ne;ne;ne
-34;Herceg Novi;204/2016;zloupotreba platnih kartica;čl. 260 st. 2;700.0;ne;Da;uslovna;nezaposlen;ozenjen;1.0;0.0;pismen;4465.3;18;1;2;10;ne;ne;ne
-35;Kotor;204/19;zloupotreba platnih kartica;čl. 260 st. 2;415.0;nepoznat;Ne;osudjujuca;nepoznat;ozenjen;3.0;0.0;nepoznat;1184.0;10;5;0;14;ne;ne;da
-36;Danilovgrad;20/24;zloupotreba platnih kartica;čl. 260 st. 2;30.0;nepoznat;Da;uslovna;zaposlen;ozenjen;3.0;0.0;SSS;30.0;1;1;0;12;ne;da;ne
-37;Bijelo Polje;215/20;zloupotreba platnih kartica;čl. 260;782.12;ne;Ne;osudjujuca;nepoznat;ozenjen;2.0;0.0;SSS;1042.12;3;1;0;1;ne;ne;ne
-38;Podgorica;223/18;falsifikovanje novca;čl. 258;500.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;6.0;0.0;SSS;1383.0;6;1;0;24;ne;ne;ne
-39;Berane;234/20;zloupotreba platnih kartica;čl. 260 st. 2;408.0;ne;Da;uslovna;nezaposlen;ozenjen;0.0;0.0;nepoznat;1233.0;8;1;0;2;ne;ne;ne
-40;Kotor;23/2017;falsifikovanje novca;čl. 258 st. 2;200.0;da;Ne;oslobadjajuca;zaposlen;neozenjen;6.0;0.0;SSS;465.0;5;1;2;4;ne;ne;ne
-41;Kotor;245/2019;zloupotreba platnih kartica;čl. 260 st. 2;300.0;ne;Ne;osudjujuca;nepoznat;ozenjen;6.0;0.0;pismen;660.0;6;1;2;1;ne;da;ne
-42;Bar;255/21;zloupotreba platnih kartica;čl. 260 st. 2;430.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;4.0;0.0;nepoznat;1555.0;9;1;0;10;ne;ne;ne
-43;Kotor;261/18;zloupotreba platnih kartica;čl. 260 st. 2;310.0;ne;Da;uslovna;zaposlen;nepoznat;4.0;0.0;SSS;960.0;5;1;0;7;ne;da;ne
-44;Bar;26/19;zloupotreba platnih kartica;čl. 260 st. 2;600.0;da;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;1620.0;10;1;0;5;ne;ne;ne
-45;Herceg Novi;26/20;falsifikovanje novca;čl. 258;700.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;790.0;4;1;0;0;ne;da;ne
-46;Kotor;272/17;falsifikovanje novca;čl. 258 st. 2;200.0;nepoznat;Ne;osudjujuca;zaposlen;razveden;7.0;0.0;VSS;671.6800000000001;13;1;5;10;ne;ne;ne
-47;Podgorica;277/22;zloupotreba platnih kartica;čl. 260 st. 2;300.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;30.0;SSS;690.5;5;1;1;3;da;ne;ne
-48;Podgorica;278/21;zloupotreba platnih kartica;čl. 260 st. 2;700.0;nepoznat;Da;uslovna;nepoznat;ozenjen;6.0;0.0;nepoznat;2096.39;10;2;0;4;ne;ne;ne
-49;Cetinje;280/12;falsifikovanje novca;čl. 258;871.5;da;Ne;osudjujuca;student;ozenjen;3.0;0.0;nepoznat;1785.0;6;1;0;17;ne;ne;ne
-50;Podgorica;281/14;zloupotreba platnih kartica;čl. 260 st. 2;255.26;ne;Ne;osudjujuca;zaposlen;neozenjen;4.0;0.0;pismen;560.26;4;1;0;2;ne;ne;ne
-51;Nikšić;286/16;falsifikovanje novca;čl. 258 st. 2;200.5;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;541.0;7;1;2;4;ne;ne;ne
-52;Podgorica;2/13;zloupotreba platnih kartica;čl. 260 st. 2;2000.0;da;Ne;osudjujuca;nezaposlen;razveden;6.0;0.0;SSS;5268.47;10;1;0;1;ne;ne;ne
-53;Bijelo Polje;314/09;falsifikovanje novca;čl. 258;984.0;ne;Ne;oslobadjajuca;nezaposlen;razveden;2.0;30.0;VSS;3787.729;24;1;5;8;ne;ne;ne
-54;Kotor;314/2021;zloupotreba platnih kartica;čl. 260 st. 2;1640.0;da;Da;uslovna;student;neozenjen;3.0;55.0;SSS;4801.97;25;1;0;3;ne;ne;ne
-55;Herceg Novi;31/11;zloupotreba platnih kartica;čl. 260 st. 2;700.0;nepoznat;Ne;osudjujuca;nepoznat;nepoznat;8.0;0.0;nepoznat;3611.3;10;2;0;1;ne;ne;ne
-56;Nikšić;320/14;falsifikovanje novca;čl. 258;74.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;0.0;0.0;SSS;148.0;3;1;0;4;ne;ne;ne
-57;Kotor;328/2019;zloupotreba platnih kartica;čl. 260 st. 1;0.0;da;Ne;osudjujuca;nepoznat;neozenjen;6.0;0.0;SSS;0.0;0;1;1;5;ne;ne;ne
-58;Ulcinj;32/12;falsifikovanje novca;čl. 258 st. 4;100.0;ne;Ne;oslobadjajuca;zaposlen;neozenjen;6.0;0.0;pismen;247.0;5;1;3;1;ne;ne;ne
-59;Plav;32/13;falsifikovanje novca;čl. 258;500.0;ne;Ne;oslobadjajuca;zaposlen;ozenjen;12.0;0.0;VSS;1735.0;10;2;0;6;ne;ne;ne
-60;Kotor;331/15;zloupotreba platnih kartica;čl. 260 st. 2;0.0;ne;Ne;osudjujuca;nepoznat;neozenjen;5.0;0.0;SSS;0.0;0;1;0;6;ne;ne;ne
-61;Kotor;343/2020;zloupotreba platnih kartica;čl. 260 st. 3;840.0;ne;Ne;osudjujuca;zaposlen;ozenjen;3.0;0.0;VSS;3944.1;13;3;5;4;ne;ne;ne
-62;Bijelo Polje;344/09;falsifikovanje novca;čl. 258;750.0;da;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;1524.5;10;2;0;8;ne;ne;da
-63;Bar;34/14;falsifikovanje novca;čl. 258;952.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;12.0;0.0;nepoznat;1082.0;4;1;0;2;ne;ne;ne
-64;Bar;353/14;zloupotreba platnih kartica;čl. 260 st. 2;430.0;ne;Ne;osudjujuca;zaposlen;neozenjen;4.0;0.0;SSS;1555.0;9;1;3;2;ne;ne;ne
-65;Nikšić;356/16;zloupotreba platnih kartica;čl. 260 st. 2;400.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;0.0;nepoznat;1117.5;8;1;0;2;ne;ne;ne
-66;Kotor;360/2015;falsifikovanje novca;čl. 258 st. 2;300.0;da;Ne;osudjujuca;zaposlen;neozenjen;8.0;0.0;SSS;457.0;5;1;2;5;ne;ne;ne
-67;Podgorica;362/22;falsifikovanje novca;čl. 258;50.0;nepoznat;Da;uslovna;zaposlen;neozenjen;6.0;0.0;nepoznat;70.0;2;3;0;0;ne;ne;ne
-68;Nikšić;368/20;falsifikovanje novca;čl. 258;200.5;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;541.0;7;1;0;4;ne;ne;ne
-69;Bar;375/07;falsifikovanje novca;čl. 258;700.0;da;Ne;osudjujuca;zaposlen;razveden;3.0;0.0;SSS;1550.0;7;1;0;7;ne;ne;ne
-70;Podgorica;376/10;zloupotreba platnih kartica;čl. 260 st. 2;701.0;ne;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;SSS;1803.5;10;1;0;7;ne;ne;ne
-71;Berane;377/11;falsifikovanje novca;čl. 258;700.0;ne;Ne;osudjujuca;zaposlen;ozenjen;12.0;0.0;pismen;2093.65;21;1;2;10;ne;ne;ne
-72;Podgorica;387/18;falsifikovanje novca;čl. 258 st. 2;895.0;ne;Da;uslovna;zaposlen;razveden;4.0;0.0;pismen;3333.67;19;1;2;10;ne;ne;ne
-73;Kotor;389/2016;falsifikovanje novca;čl. 258;650.0;da;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;nepoznat;1650.0;5;1;1;1;ne;ne;ne
-74;Herceg Novi;38/2017;zloupotreba platnih kartica;čl. 260;30.0;da;Ne;osudjujuca;zaposlen;razveden;2.0;0.0;nepoznat;30.0;1;2;0;3;ne;ne;da
-75;Nikšić;395/16;falsifikovanje novca;čl. 258;700.0;ne;Ne;osudjujuca;nezaposlen;razveden;24.0;0.0;SSS;1771.5;9;1;0;3;ne;ne;ne
-76;Kotor;399/15;falsifikovanje novca;čl. 258 st. 4;200.0;ne;Ne;osudjujuca;zaposlen;neozenjen;1.5;0.0;nepoznat;1106.0;12;1;2;2;ne;ne;ne
-77;Bijelo Polje;406/2011;falsifikovanje novca;čl. 258;675.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;6.0;30.0;SSS;2188.465;23;1;1;10;ne;ne;ne
-78;Podgorica;41/13;falsifikovanje novca;čl. 258;100.0;ne;Da;uslovna;zaposlen;ozenjen;1.0;0.0;SSS;150.0;2;1;0;0;ne;ne;ne
-79;Bijelo Polje;42/2014;falsifikovanje novca;čl. 258;925.0;ne;Ne;oslobadjajuca;nezaposlen;neozenjen;0.0;0.0;SSS;2395.65;15;1;3;10;ne;ne;da
-80;Kotor;42/22;falsifikovanje novca;čl. 258;650.0;ne;Ne;osudjujuca;zaposlen;nepoznat;3.0;0.0;nepoznat;1650.0;5;1;0;4;ne;ne;ne
-81;Rožaje;43/22;zloupotreba platnih kartica;čl. 260;149.99;ne;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;329.98;5;1;1;3;ne;ne;ne
-82;Rožaje;44/16;zloupotreba platnih kartica;čl. 260 st. 2;149.99;ne;Da;uslovna;nepoznat;neozenjen;2.0;0.0;SSS;329.98;5;1;0;7;ne;ne;ne
-83;Podgorica;48/24;zloupotreba platnih kartica;čl. 260 st. 2;620.0;ne;Da;uslovna;zaposlen;razveden;12.0;0.0;pismen;965.0;9;1;2;4;ne;ne;ne
-84;Podgorica;499/16;zloupotreba platnih kartica;čl. 260 st. 2;134.5;da;Da;uslovna;nepoznat;ozenjen;6.0;0.0;SSS;384.0;5;1;0;12;ne;da;ne
-85;Cetinje;4/19;falsifikovanje novca;čl. 258;740.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;1424.0;9;1;0;13;ne;ne;ne
-86;Kotor;503/2012;falsifikovanje novca;čl. 258;100.0;da;Ne;osudjujuca;zaposlen;neozenjen;8.0;0.0;SSS;223.3;4;1;1;10;ne;ne;ne
-87;Podgorica;51/22;zloupotreba platnih kartica;čl. 260 st. 2;140.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;140.0;SSS;563.16;11;1;2;7;ne;ne;ne
-88;Kotor;531/2012;falsifikovanje novca;čl. 258;100.0;ne;Da;uslovna;nepoznat;neozenjen;0;0.0;SSS;205.0;3;1;4;4;ne;ne;ne
-89;Bijelo Polje;58/23;zloupotreba platnih kartica;čl. 260 st. 2;770.0;ne;Ne;osudjujuca;nepoznat;razveden;6.0;0.0;VSS;2918.5;9;1;0;4;ne;ne;ne
-90;Podgorica;592/22;zloupotreba platnih kartica;čl. 260 st. 2;802.5;ne;Ne;osudjujuca;zaposlen;neozenjen;3.0;0.0;SSS;2965.19;13;1;2;7;ne;ne;ne
-91;Cetinje;5/22;zloupotreba platnih kartica;čl. 260 st. 2;300.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;0.0;nepoznat;659.0;6;1;0;4;ne;ne;ne
-92;Herceg Novi;61/13;falsifikovanje novca;čl. 258 st. 2;400.0;ne;Da;uslovna;nezaposlen;neozenjen;4.0;0.0;SSS;1040.0;5;1;1;3;ne;da;ne
-93;Podgorica;626/19;zloupotreba platnih kartica;čl. 260 st. 2;100.0;ne;Da;uslovna;nezaposlen;ozenjen;6.0;30.0;SSS;130.0;2;1;4;5;ne;ne;ne
-94;Podgorica;637/2019;zloupotreba platnih kartica;čl. 260 st. 1;40.0;ne;Da;uslovna;zaposlen;razveden;3.0;0.0;SSS;107.92999999999999;7;1;4;6;ne;da;ne
-95;Podgorica;637/23;falsifikovanje novca;čl. 258;315.0;nepoznat;Da;uslovna;nepoznat;razveden;4.0;0.0;nepoznat;654.3;9;2;0;17;ne;ne;ne
-96;Podgorica;638/15;falsifikovanje novca;čl. 258;100.0;ne;Da;uslovna;nezaposlen;neozenjen;1.0;0.0;SSS;230.0;3;1;0;4;ne;ne;ne
-97;Nikšić;64/16;falsifikovanje novca;čl. 258 st. 2;150.0;ne;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;pismen;529.95;10;21;3;10;ne;ne;ne
-98;Podgorica;663/21;zloupotreba platnih kartica;čl. 260 st. 2;586.0;da;Da;uslovna;nepoznat;ozenjen;7.0;0.0;nepoznat;2152.0;9;1;0;3;ne;ne;ne
-99;Cetinje;66/13;zloupotreba platnih kartica;čl. 260 st. 2;30.0;da;Ne;osudjujuca;nepoznat;nepoznat;3.0;0.0;nepoznat;30.0;1;1;0;2;ne;ne;ne
-100;Kotor;68/17;falsifikovanje novca;čl. 258;100.0;da;Ne;osudjujuca;nepoznat;neozenjen;7.0;0.0;SSS;223.3;4;1;0;11;ne;ne;ne
-101;Podgorica;691/11;zloupotreba platnih kartica;čl. 239 st. 1;600.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;1.1;0.0;SSS;2900.0;16;2;1;10;ne;ne;ne
-102;Podgorica;693/20;zloupotreba platnih kartica;čl. 260 st. 2;100.0;ne;Da;uslovna;nezaposlen;ozenjen;6.0;0.0;SSS;130.0;2;1;0;2;ne;ne;ne
-103;Kotor;69/2018;zloupotreba platnih kartica;čl. 260 st. 1;310.0;da;Da;uslovna;nepoznat;nepoznat;3.0;0.0;SSS;960.0;5;1;5;1;ne;da;ne
-104;Podgorica;701/16;falsifikovanje novca;čl. 258;50.0;da;Ne;osudjujuca;nepoznat;neozenjen;4.0;0.0;osnovna;239.39;9;1;0;2;ne;ne;ne
-105;Podgorica;715/23;zloupotreba platnih kartica;čl. 260 st. 2;154.0;ne;Da;uslovna;nezaposlen;razveden;6.0;40.0;pismen;507.03000000000003;16;1;4;7;ne;ne;ne
-106;Cetinje;71/15;zloupotreba platnih kartica;čl. 260 st. 2;1569.5;nepoznat;Ne;osudjujuca;nezaposlen;neozenjen;7.0;0.0;nepoznat;3244.0;7;1;0;20;ne;ne;ne
-107;Podgorica;730/08;falsifikovanje novca;čl. 258;270.0;da;Ne;oslobadjajuca;nezaposlen;razveden;0.0;0.0;SSS;675.0;10;1;0;4;ne;ne;ne
-108;Podgorica;738/16;zloupotreba platnih kartica;čl. 260 st. 2;800.0;da;Da;uslovna;nepoznat;neozenjen;4.0;0.0;nepoznat;1740.0;8;1;0;9;ne;ne;ne
-109;Podgorica;76/16;falsifikovanje novca;čl. 258 st. 2;50.0;ne;Ne;osudjujuca;nepoznat;neozenjen;4.0;50.0;SSS;100.0;2;1;0;0;ne;ne;ne
-110;Podgorica;776/18;zloupotreba platnih kartica;čl. 260 st. 2;620.0;ne;Da;uslovna;zaposlen;nepoznat;6.0;0.0;SSS;965.0;9;1;0;1;ne;ne;ne
-111;Podgorica;787/20;zloupotreba platnih kartica;čl. 260 st. 2;500.0;ne;Da;uslovna;nezaposlen;nepoznat;1.0;0.0;SSS;830.0;5;1;0;4;ne;ne;ne
-112;Podgorica;793/11;zloupotreba platnih kartica;čl. 260 st. 2;800.0;nepoznat;Ne;osudjujuca;zaposlen;ozenjen;7.0;0.0;SSS;1717.7;10;1;0;7;ne;ne;ne
-113;Podgorica;822/18;falsifikovanje novca;čl. 258 st. 4;100.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;30.0;SSS;230.0;3;1;0;3;ne;ne;ne
-114;Podgorica;827/14;zloupotreba platnih kartica;čl. 260 st. 2;1019.7;ne;Ne;osudjujuca;zaposlen;razveden;8.0;30.0;pismen;5339.7;12;1;1;6;ne;ne;ne
-115;Podgorica;83/18;zloupotreba platnih kartica;čl. 260 st. 2;704.46;da;Da;uslovna;nepoznat;ozenjen;6.0;0.0;nepoznat;3137.36;8;1;0;5;ne;ne;ne
-116;Kolašin;84/2014;falsifikovanje novca;čl. 258;500.0;nepoznat;Da;uslovna;zaposlen;ozenjen;4.0;0.0;pismen;740.0;4;1;1;6;ne;ne;ne
-117;Podgorica;851/20;zloupotreba platnih kartica;čl. 260 st. 2;412.0;ne;Ne;osudjujuca;nepoznat;neozenjen;3.0;30.0;SSS;854.0;4;1;0;3;ne;ne;ne
-118;Bar;86/22;zloupotreba platnih kartica;čl. 260;750.66;nepoznat;Ne;osudjujuca;nezaposlen;razveden;0.0;10.0;pismen;818.91;8;1;0;6;ne;ne;ne
-119;Podgorica;87/13;falsifikovanje novca;čl. 258;100.0;da;Ne;osudjujuca;nezaposlen;nepoznat;3.0;0.0;SSS;130.0;2;1;0;6;ne;ne;ne
-120;Kotor;89/17;zloupotreba platnih kartica;čl. 260 st. 2;800.0;nepoznat;Da;uslovna;nepoznat;ozenjen;3.0;0.0;nepoznat;2583.1;9;3;0;4;ne;ne;ne
-121;Bar;89/23;zloupotreba platnih kartica;čl. 260 st. 2;980.0;da;Ne;osudjujuca;nezaposlen;neozenjen;4.0;40.0;pismen;5119.0;18;1;0;3;ne;ne;ne
-122;Nikšić;8/22;zloupotreba platnih kartica;čl. 4 st. 2;400.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;27.5;osnovna;1117.5;8;1;0;3;ne;ne;ne
-123;Podgorica;954/20;zloupotreba platnih kartica;čl. 260 st. 2;802.5;ne;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;2025.19;10;1;0;7;ne;ne;ne
-124;Podgorica;984/20;zloupotreba platnih kartica;čl. 260 st. 2;228.83;nepoznat;Da;uslovna;nepoznat;neozenjen;6.0;0.0;nepoznat;363.63;10;2;0;4;ne;ne;da
-125;Podgorica;99/19;zloupotreba platnih kartica;čl. 260 st. 2;500.0;ne;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;SSS;830.0;5;1;0;5;ne;ne;ne
-126;Berane;9/12;zloupotreba platnih kartica;čl. 260;220.64;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;458.93;12;2;0;0;ne;ne;da
+0;Rožaje;100/10;falsifikovanje novca;258.2;848.0;ne;Ne;oslobadjajuca;nezaposlen;neozenjen;6.0;848.0;SSS;2192.0;18;1;1;10;ne;ne;ne
+1;Rožaje;100/16;falsifikovanje novca;258.2;848.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;1331.0;10;1;0;7;ne;ne;ne
+2;Pljevlja;107/20;zloupotreba platnih kartica;260.2;700.0;ne;Da;uslovna;zaposlen;razveden;3.0;27.5;osnovna;2297.5;9;1;2;4;da;ne;ne
+3;Rožaje;109/13;falsifikovanje novca;258.2;100.0;da;Ne;osudjujuca;nezaposlen;neozenjen;24.0;70.0;SSS;459.0;7;1;0;7;ne;ne;ne
+4;Ulcinj;110/16;falsifikovanje novca;258.4;300.0;ne;Da;uslovna;zaposlen;razveden;3.0;0.0;nepoznat;650.0;6;1;0;5;ne;ne;ne
+5;Bijelo Polje;118/19;falsifikovanje novca;258.4;119.0;ne;Ne;osudjujuca;nepoznat;razveden;2.0;0.0;VSS;226.229;5;2;0;1;da;ne;da
+6;Plav;120/14;falsifikovanje novca;258.2;670.0;ne;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;pismen;3360.0;18;2;1;10;ne;ne;ne
+7;Ulcinj;126/15;falsifikovanje novca;258.4;300.0;ne;Da;uslovna;zaposlen;razveden;5.0;0.0;pismen;650.0;6;1;1;4;ne;ne;ne
+8;Pljevlja;12/14;zloupotreba platnih kartica;260.2;50.0;da;Ne;osudjujuca;zaposlen;ozenjen;1.0;0.0;SSS;77.5;2;1;0;1;ne;ne;ne
+9;Kotor;12/2016;zloupotreba platnih kartica;260.2;1001.75;da;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;2620.75;6;1;0;1;ne;ne;ne
+10;Podgorica;12/22;falsifikovanje novca;258.2;50.0;ne;Da;uslovna;nepoznat;neozenjen;12.0;0.0;SSS;100.0;2;1;0;0;ne;ne;ne
+11;Bar;131/18;zloupotreba platnih kartica;260.2;980.0;nepoznat;Da;uslovna;nepoznat;razveden;10.0;0.0;nepoznat;2715.0;10;20;0;32;ne;ne;da
+12;Bijelo Polje;135/12;falsifikovanje novca;258.4;700.0;ne;Ne;nepoznat;nezaposlen;neozenjen;0.0;700.0;SSS;2170.45;21;1;3;10;ne;ne;ne
+13;Herceg Novi;136/11;zloupotreba platnih kartica;260.2;30.0;nepoznat;Da;uslovna;nepoznat;nepoznat;6.0;0.0;nepoznat;30.0;1;2;0;0;ne;ne;da
+14;Bijelo Polje;136/18;zloupotreba platnih kartica;260.2;770.0;da;Da;uslovna;nepoznat;razveden;12.0;548.5;VSS;3588.5;12;1;0;6;ne;ne;ne
+15;Bar;139/15;zloupotreba platnih kartica;260.2;217.75;ne;Da;uslovna;nezaposlen;razveden;6.0;0.0;pismen;1252.25;19;1;5;6;ne;ne;ne
+16;Bar;13/24;zloupotreba platnih kartica;260.1;215.75;nepoznat;Da;uslovna;nepoznat;razveden;4.0;0.0;nepoznat;433.36;10;1;0;1;ne;ne;ne
+17;Bijelo Polje;140/11;falsifikovanje novca;258.2;675.0;da;Ne;osudjujuca;nepoznat;neozenjen;0.0;0.0;SSS;1113.735;10;2;0;7;ne;ne;ne
+18;Berane;147/18;zloupotreba platnih kartica;260.2;408.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;8.0;0.0;pismen;1233.0;8;1;1;4;ne;ne;ne
+19;Kotor;149/15;falsifikovanje novca;258.2;321.0;nepoznat;Ne;osudjujuca;nepoznat;ozenjen;8.0;0.0;nepoznat;809.0;9;1;0;6;ne;ne;ne
+20;Pljevlja;14/19;zloupotreba platnih kartica;260.2;130.0;da;Da;uslovna;nezaposlen;neozenjen;3.0;0.0;SSS;367.5;7;2;0;8;ne;ne;da
+21;Bijelo Polje;160/2013;falsifikovanje novca;258.2;500.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;pismen;1468.75;10;1;4;8;ne;ne;ne
+22;Berane;167/15;falsifikovanje novca;258.2;700.0;ne;Ne;osudjujuca;zaposlen;ozenjen;12.0;0.0;nepoznat;1572.3;10;1;0;15;ne;ne;ne
+23;Bijelo Polje;169/16;falsifikovanje novca;258.2;132.0;da;Ne;osudjujuca;nepoznat;nepoznat;7.0;0.0;SSS;367.0;8;1;0;12;ne;ne;ne
+24;Herceg Novi;171/2015;falsifikovanje novca;258.2;700.0;ne;Da;uslovna;zaposlen;neozenjen;7.0;0.0;SSS;790.0;4;1;0;1;ne;da;ne
+25;Bar;173/20;zloupotreba platnih kartica;260.2;900.0;da;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;nepoznat;1822.0;10;1;0;8;ne;ne;ne
+26;Herceg Novi;177/10;zloupotreba platnih kartica;260.2;600.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;3.0;0.0;pismen;1400.0;3;1;0;3;ne;ne;ne
+27;Kotor;182/19;falsifikovanje novca;258.2;200.0;ne;Ne;osudjujuca;nezaposlen;razveden;6.0;0.0;nepoznat;775.2;10;1;0;22;ne;ne;ne
+28;Kotor;184/13;zloupotreba platnih kartica;260.2;1640.0;da;Ne;osudjujuca;nepoznat;neozenjen;3.0;0.0;SSS;2291.39;9;1;0;2;ne;ne;ne
+29;Rožaje;192/10;falsifikovanje novca;258.2;600.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;1.5;0.0;nepoznat;950.0;7;2;0;3;ne;ne;da
+30;Kotor;192/19;falsifikovanje novca;258.2;200.0;ne;Ne;osudjujuca;nepoznat;neozenjen;6.0;0.0;SSS;465.0;5;1;0;14;ne;ne;ne
+31;Kotor;193/2015;zloupotreba platnih kartica;260.2;500.0;ne;Ne;osudjujuca;nepoznat;neozenjen;6.0;70.0;VSS;691.0;6;1;0;2;da;ne;ne
+32;Podgorica;195/13;zloupotreba platnih kartica;260.2;1019.7;ne;Da;uslovna;zaposlen;razveden;6.0;0.0;SSS;4549.7;9;1;0;4;ne;ne;ne
+33;Bijelo Polje;19/2013;zloupotreba platnih kartica;260.2;50.0;ne;Da;uslovna;nepoznat;ozenjen;2.0;50.0;SSS;165.0;7;1;0;5;ne;ne;ne
+34;Herceg Novi;204/2016;zloupotreba platnih kartica;260.2;700.0;ne;Da;uslovna;nezaposlen;ozenjen;1.0;0.0;pismen;4465.3;18;1;2;10;ne;ne;ne
+35;Kotor;204/19;zloupotreba platnih kartica;260.1;415.0;nepoznat;Ne;osudjujuca;nepoznat;ozenjen;3.0;0.0;nepoznat;1184.0;10;5;0;14;ne;ne;da
+36;Danilovgrad;20/24;zloupotreba platnih kartica;260.1;30.0;nepoznat;Da;uslovna;zaposlen;ozenjen;3.0;0.0;SSS;30.0;1;1;0;12;ne;da;ne
+37;Bijelo Polje;215/20;zloupotreba platnih kartica;260.2;782.12;ne;Ne;osudjujuca;nepoznat;ozenjen;2.0;0.0;SSS;1042.12;3;1;0;1;ne;ne;ne
+38;Podgorica;223/18;falsifikovanje novca;258.2;500.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;6.0;0.0;SSS;1383.0;6;1;0;24;ne;ne;ne
+39;Berane;234/20;zloupotreba platnih kartica;260.2;408.0;ne;Da;uslovna;nezaposlen;ozenjen;0.0;0.0;nepoznat;1233.0;8;1;0;2;ne;ne;ne
+40;Kotor;23/2017;falsifikovanje novca;258.5;200.0;da;Ne;oslobadjajuca;zaposlen;neozenjen;6.0;0.0;SSS;465.0;5;1;2;4;ne;ne;ne
+41;Kotor;245/2019;zloupotreba platnih kartica;260.2;300.0;ne;Ne;osudjujuca;nepoznat;ozenjen;6.0;0.0;pismen;660.0;6;1;2;1;ne;da;ne
+42;Bar;255/21;zloupotreba platnih kartica;260.2;430.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;4.0;0.0;nepoznat;1555.0;9;1;0;10;ne;ne;ne
+43;Kotor;261/18;zloupotreba platnih kartica;260.1;310.0;ne;Da;uslovna;zaposlen;nepoznat;4.0;0.0;SSS;960.0;5;1;0;7;ne;da;ne
+44;Bar;26/19;zloupotreba platnih kartica;260.2;600.0;da;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;1620.0;10;1;0;5;ne;ne;ne
+45;Herceg Novi;26/20;falsifikovanje novca;258.2;700.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;790.0;4;1;0;0;ne;da;ne
+46;Kotor;272/17;falsifikovanje novca;258.2;200.0;nepoznat;Ne;osudjujuca;zaposlen;razveden;7.0;0.0;VSS;671.6800000000001;13;1;5;10;ne;ne;ne
+47;Podgorica;277/22;zloupotreba platnih kartica;260.2;300.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;30.0;SSS;690.5;5;1;1;3;da;ne;ne
+48;Podgorica;278/21;zloupotreba platnih kartica;260.2;700.0;nepoznat;Da;uslovna;nepoznat;ozenjen;6.0;0.0;nepoznat;2096.39;10;2;0;4;ne;ne;ne
+49;Cetinje;280/12;falsifikovanje novca;258.2;871.5;da;Ne;osudjujuca;student;ozenjen;3.0;0.0;nepoznat;1785.0;6;1;0;17;ne;ne;ne
+50;Podgorica;281/14;zloupotreba platnih kartica;260.1;255.26;ne;Ne;osudjujuca;zaposlen;neozenjen;4.0;0.0;pismen;560.26;4;1;0;2;ne;ne;ne
+51;Nikšić;286/16;falsifikovanje novca;258.2;200.5;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;541.0;7;1;2;4;ne;ne;ne
+52;Podgorica;2/13;zloupotreba platnih kartica;260.2;2000.0;da;Ne;osudjujuca;nezaposlen;razveden;6.0;0.0;SSS;5268.47;10;1;0;1;ne;ne;ne
+53;Bijelo Polje;314/09;falsifikovanje novca;258.4;984.0;ne;Ne;oslobadjajuca;nezaposlen;razveden;2.0;30.0;VSS;3787.729;24;1;5;8;ne;ne;ne
+54;Kotor;314/2021;zloupotreba platnih kartica;260.2;1640.0;da;Da;uslovna;student;neozenjen;3.0;55.0;SSS;4801.97;25;1;0;3;ne;ne;ne
+55;Herceg Novi;31/11;zloupotreba platnih kartica;260.2;700.0;nepoznat;Ne;osudjujuca;nepoznat;nepoznat;8.0;0.0;nepoznat;3611.3;10;2;0;1;ne;ne;ne
+56;Nikšić;320/14;falsifikovanje novca;258.2;74.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;0.0;0.0;SSS;148.0;3;1;0;4;ne;ne;ne
+57;Kotor;328/2019;zloupotreba platnih kartica;260.2;0.0;da;Ne;osudjujuca;nepoznat;neozenjen;6.0;0.0;SSS;0.0;0;1;1;5;ne;ne;ne
+58;Ulcinj;32/12;falsifikovanje novca;258.2;100.0;ne;Ne;oslobadjajuca;zaposlen;neozenjen;6.0;0.0;pismen;247.0;5;1;3;1;ne;ne;ne
+59;Plav;32/13;falsifikovanje novca;258.2;500.0;ne;Ne;oslobadjajuca;zaposlen;ozenjen;12.0;0.0;VSS;1735.0;10;2;0;6;ne;ne;ne
+60;Kotor;331/15;zloupotreba platnih kartica;260.1;0.0;ne;Ne;osudjujuca;nepoznat;neozenjen;5.0;0.0;SSS;0.0;0;1;0;6;ne;ne;ne
+61;Kotor;343/2020;zloupotreba platnih kartica;260.2;840.0;ne;Ne;osudjujuca;zaposlen;ozenjen;3.0;0.0;VSS;3944.1;13;3;5;4;ne;ne;ne
+62;Bijelo Polje;344/09;falsifikovanje novca;258.2;750.0;da;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;1524.5;10;2;0;8;ne;ne;da
+63;Bar;34/14;falsifikovanje novca;258.2;952.0;nepoznat;Ne;osudjujuca;nepoznat;neozenjen;12.0;0.0;nepoznat;1082.0;4;1;0;2;ne;ne;ne
+64;Bar;353/14;zloupotreba platnih kartica;260.2;430.0;ne;Ne;osudjujuca;zaposlen;neozenjen;4.0;0.0;SSS;1555.0;9;1;3;2;ne;ne;ne
+65;Nikšić;356/16;zloupotreba platnih kartica;260.2;400.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;0.0;nepoznat;1117.5;8;1;0;2;ne;ne;ne
+66;Kotor;360/2015;falsifikovanje novca;258.4;300.0;da;Ne;osudjujuca;zaposlen;neozenjen;8.0;0.0;SSS;457.0;5;1;2;5;ne;ne;ne
+67;Podgorica;362/22;falsifikovanje novca;258.2;50.0;nepoznat;Da;uslovna;zaposlen;neozenjen;6.0;0.0;nepoznat;70.0;2;3;0;0;ne;ne;ne
+68;Nikšić;368/20;falsifikovanje novca;258.2;200.5;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;541.0;7;1;0;4;ne;ne;ne
+69;Bar;375/07;falsifikovanje novca;258.4;700.0;da;Ne;osudjujuca;zaposlen;razveden;3.0;0.0;SSS;1550.0;7;1;0;7;ne;ne;ne
+70;Podgorica;376/10;zloupotreba platnih kartica;260.5;701.0;ne;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;SSS;1803.5;10;1;0;7;ne;ne;ne
+71;Berane;377/11;falsifikovanje novca;258.4;700.0;ne;Ne;osudjujuca;zaposlen;ozenjen;12.0;0.0;pismen;2093.65;21;1;2;10;ne;ne;ne
+72;Podgorica;387/18;falsifikovanje novca;258.2;895.0;ne;Da;uslovna;zaposlen;razveden;4.0;0.0;pismen;3333.67;19;1;2;10;ne;ne;ne
+73;Kotor;389/2016;falsifikovanje novca;258.2;650.0;da;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;nepoznat;1650.0;5;1;1;1;ne;ne;ne
+74;Herceg Novi;38/2017;zloupotreba platnih kartica;260.2;30.0;da;Ne;osudjujuca;zaposlen;razveden;2.0;0.0;nepoznat;30.0;1;2;0;3;ne;ne;da
+75;Nikšić;395/16;falsifikovanje novca;258.2;700.0;ne;Ne;osudjujuca;nezaposlen;razveden;24.0;0.0;SSS;1771.5;9;1;0;3;ne;ne;ne
+76;Kotor;399/15;falsifikovanje novca;258.4;200.0;ne;Ne;osudjujuca;zaposlen;neozenjen;1.5;0.0;nepoznat;1106.0;12;1;2;2;ne;ne;ne
+77;Bijelo Polje;406/2011;falsifikovanje novca;258.2;675.0;ne;Ne;osudjujuca;nezaposlen;ozenjen;6.0;30.0;SSS;2188.465;23;1;1;10;ne;ne;ne
+78;Podgorica;41/13;falsifikovanje novca;258.4;100.0;ne;Da;uslovna;zaposlen;ozenjen;1.0;0.0;SSS;150.0;2;1;0;0;ne;ne;ne
+79;Bijelo Polje;42/2014;falsifikovanje novca;258.2;925.0;ne;Ne;oslobadjajuca;nezaposlen;neozenjen;0.0;0.0;SSS;2395.65;15;1;3;10;ne;ne;da
+80;Kotor;42/22;falsifikovanje novca;258.4;650.0;ne;Ne;osudjujuca;zaposlen;nepoznat;3.0;0.0;nepoznat;1650.0;5;1;0;4;ne;ne;ne
+81;Rožaje;43/22;zloupotreba platnih kartica;260.2;149.99;ne;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;329.98;5;1;1;3;ne;ne;ne
+82;Rožaje;44/16;zloupotreba platnih kartica;260.2;149.99;ne;Da;uslovna;nepoznat;neozenjen;2.0;0.0;SSS;329.98;5;1;0;7;ne;ne;ne
+83;Podgorica;48/24;zloupotreba platnih kartica;260.1;620.0;ne;Da;uslovna;zaposlen;razveden;12.0;0.0;pismen;965.0;9;1;2;4;ne;ne;ne
+84;Podgorica;499/16;zloupotreba platnih kartica;260.1;134.5;da;Da;uslovna;nepoznat;ozenjen;6.0;0.0;SSS;384.0;5;1;0;12;ne;da;ne
+85;Cetinje;4/19;falsifikovanje novca;258.2;740.0;ne;Ne;osudjujuca;zaposlen;neozenjen;6.0;0.0;nepoznat;1424.0;9;1;0;13;ne;ne;ne
+86;Kotor;503/2012;falsifikovanje novca;258.2;100.0;da;Ne;osudjujuca;zaposlen;neozenjen;8.0;0.0;SSS;223.3;4;1;1;10;ne;ne;ne
+87;Podgorica;51/22;zloupotreba platnih kartica;260.2;140.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;140.0;SSS;563.16;11;1;2;7;ne;ne;ne
+88;Kotor;531/2012;falsifikovanje novca;258.4;100.0;ne;Da;uslovna;nepoznat;neozenjen;0;0.0;SSS;205.0;3;1;4;4;ne;ne;ne
+89;Bijelo Polje;58/23;zloupotreba platnih kartica;260.2;770.0;ne;Ne;osudjujuca;nepoznat;razveden;6.0;0.0;VSS;2918.5;9;1;0;4;ne;ne;ne
+90;Podgorica;592/22;zloupotreba platnih kartica;260.2;802.5;ne;Ne;osudjujuca;zaposlen;neozenjen;3.0;0.0;SSS;2965.19;13;1;2;7;ne;ne;ne
+91;Cetinje;5/22;zloupotreba platnih kartica;260.2;300.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;0.0;nepoznat;659.0;6;1;0;4;ne;ne;ne
+92;Herceg Novi;61/13;falsifikovanje novca;258.4;400.0;ne;Da;uslovna;nezaposlen;neozenjen;4.0;0.0;SSS;1040.0;5;1;1;3;ne;da;ne
+93;Podgorica;626/19;zloupotreba platnih kartica;260.2;100.0;ne;Da;uslovna;nezaposlen;ozenjen;6.0;30.0;SSS;130.0;2;1;4;5;ne;ne;ne
+94;Podgorica;637/2019;zloupotreba platnih kartica;260.2;40.0;ne;Da;uslovna;zaposlen;razveden;3.0;0.0;SSS;107.92999999999999;7;1;4;6;ne;da;ne
+95;Podgorica;637/23;falsifikovanje novca;258.2;315.0;nepoznat;Da;uslovna;nepoznat;razveden;4.0;0.0;nepoznat;654.3;9;2;0;17;ne;ne;ne
+96;Podgorica;638/15;falsifikovanje novca;258.4;100.0;ne;Da;uslovna;nezaposlen;neozenjen;1.0;0.0;SSS;230.0;3;1;0;4;ne;ne;ne
+97;Nikšić;64/16;falsifikovanje novca;258.2;150.0;ne;Ne;osudjujuca;zaposlen;ozenjen;6.0;0.0;pismen;529.95;10;21;3;10;ne;ne;ne
+98;Podgorica;663/21;zloupotreba platnih kartica;260.2;586.0;da;Da;uslovna;nepoznat;ozenjen;7.0;0.0;nepoznat;2152.0;9;1;0;3;ne;ne;ne
+99;Cetinje;66/13;zloupotreba platnih kartica;260.1;30.0;da;Ne;osudjujuca;nepoznat;nepoznat;3.0;0.0;nepoznat;30.0;1;1;0;2;ne;ne;ne
+100;Kotor;68/17;falsifikovanje novca;258.2;100.0;da;Ne;osudjujuca;nepoznat;neozenjen;7.0;0.0;SSS;223.3;4;1;0;11;ne;ne;ne
+101;Podgorica;691/11;zloupotreba platnih kartica;260.5;600.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;1.1;0.0;SSS;2900.0;16;2;1;10;ne;ne;ne
+102;Podgorica;693/20;zloupotreba platnih kartica;260.2;100.0;ne;Da;uslovna;nezaposlen;ozenjen;6.0;0.0;SSS;130.0;2;1;0;2;ne;ne;ne
+103;Kotor;69/2018;zloupotreba platnih kartica;260.2;310.0;da;Da;uslovna;nepoznat;nepoznat;3.0;0.0;SSS;960.0;5;1;5;1;ne;da;ne
+104;Podgorica;701/16;falsifikovanje novca;258.4;50.0;da;Ne;osudjujuca;nepoznat;neozenjen;4.0;0.0;osnovna;239.39;9;1;0;2;ne;ne;ne
+105;Podgorica;715/23;zloupotreba platnih kartica;260.2;154.0;ne;Da;uslovna;nezaposlen;razveden;6.0;40.0;pismen;507.03000000000003;16;1;4;7;ne;ne;ne
+106;Cetinje;71/15;zloupotreba platnih kartica;260.1;1569.5;nepoznat;Ne;osudjujuca;nezaposlen;neozenjen;7.0;0.0;nepoznat;3244.0;7;1;0;20;ne;ne;ne
+107;Podgorica;730/08;falsifikovanje novca;258.2;270.0;da;Ne;oslobadjajuca;nezaposlen;razveden;0.0;0.0;SSS;675.0;10;1;0;4;ne;ne;ne
+108;Podgorica;738/16;zloupotreba platnih kartica;260.2;800.0;da;Da;uslovna;nepoznat;neozenjen;4.0;0.0;nepoznat;1740.0;8;1;0;9;ne;ne;ne
+109;Podgorica;76/16;falsifikovanje novca;258.2;50.0;ne;Ne;osudjujuca;nepoznat;neozenjen;4.0;50.0;SSS;100.0;2;1;0;0;ne;ne;ne
+110;Podgorica;776/18;zloupotreba platnih kartica;260.2;620.0;ne;Da;uslovna;zaposlen;nepoznat;6.0;0.0;SSS;965.0;9;1;0;1;ne;ne;ne
+111;Podgorica;787/20;zloupotreba platnih kartica;260.2;500.0;ne;Da;uslovna;nezaposlen;nepoznat;1.0;0.0;SSS;830.0;5;1;0;4;ne;ne;ne
+112;Podgorica;793/11;zloupotreba platnih kartica;260.2;800.0;nepoznat;Ne;osudjujuca;zaposlen;ozenjen;7.0;0.0;SSS;1717.7;10;1;0;7;ne;ne;ne
+113;Podgorica;822/18;falsifikovanje novca;258.2;100.0;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;30.0;SSS;230.0;3;1;0;3;ne;ne;ne
+114;Podgorica;827/14;zloupotreba platnih kartica;260.1;1019.7;ne;Ne;osudjujuca;zaposlen;razveden;8.0;30.0;pismen;5339.7;12;1;1;6;ne;ne;ne
+115;Podgorica;83/18;zloupotreba platnih kartica;260.2;704.46;da;Da;uslovna;nepoznat;ozenjen;6.0;0.0;nepoznat;3137.36;8;1;0;5;ne;ne;ne
+116;Kolašin;84/2014;falsifikovanje novca;258.4;500.0;nepoznat;Da;uslovna;zaposlen;ozenjen;4.0;0.0;pismen;740.0;4;1;1;6;ne;ne;ne
+117;Podgorica;851/20;zloupotreba platnih kartica;260.2;412.0;ne;Ne;osudjujuca;nepoznat;neozenjen;3.0;30.0;SSS;854.0;4;1;0;3;ne;ne;ne
+118;Bar;86/22;zloupotreba platnih kartica;260.2;750.66;nepoznat;Ne;osudjujuca;nezaposlen;razveden;0.0;10.0;pismen;818.91;8;1;0;6;ne;ne;ne
+119;Podgorica;87/13;falsifikovanje novca;258.4;100.0;da;Ne;osudjujuca;nezaposlen;nepoznat;3.0;0.0;SSS;130.0;2;1;0;6;ne;ne;ne
+120;Kotor;89/17;zloupotreba platnih kartica;260.3;800.0;nepoznat;Da;uslovna;nepoznat;ozenjen;3.0;0.0;nepoznat;2583.1;9;3;0;4;ne;ne;ne
+121;Bar;89/23;zloupotreba platnih kartica;260.2;980.0;da;Ne;osudjujuca;nezaposlen;neozenjen;4.0;40.0;pismen;5119.0;18;1;0;3;ne;ne;ne
+122;Nikšić;8/22;zloupotreba platnih kartica;260.2;400.0;ne;Da;uslovna;zaposlen;ozenjen;6.0;27.5;osnovna;1117.5;8;1;0;3;ne;ne;ne
+123;Podgorica;912/26;zloupotreba platnih kartica;čl. 260 st. 2;1480.0;ne;Da;uslovna;zaposlen;ozenjen;8.0;300.0;SSS;1480.0;1;1;2;3;ne;ne;ne
+124;Podgorica;954/20;zloupotreba platnih kartica;260.2;802.5;ne;Da;uslovna;zaposlen;neozenjen;6.0;0.0;SSS;2025.19;10;1;0;7;ne;ne;ne
+125;Podgorica;984/20;zloupotreba platnih kartica;260.2;228.83;nepoznat;Da;uslovna;nepoznat;neozenjen;6.0;0.0;nepoznat;363.63;10;2;0;4;ne;ne;da
+126;Podgorica;99/19;zloupotreba platnih kartica;260.2;500.0;ne;Da;uslovna;nezaposlen;neozenjen;6.0;0.0;SSS;830.0;5;1;0;5;ne;ne;ne
+127;Berane;9/12;zloupotreba platnih kartica;260.2;220.64;ne;Ne;osudjujuca;nezaposlen;neozenjen;6.0;0.0;SSS;458.93;12;2;0;0;ne;ne;da

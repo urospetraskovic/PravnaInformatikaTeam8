@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
-  <act name="criminal-code-chapter-23">
+<akomaNtoso xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xsi:schemaLocation="https://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part2-specs/schemas/akomantoso30.xsd">
+  <act name="Krivicni zakonik Crne Gore - Glava 23">
     <meta>
-      <identification source="#source">
+      <identification source="#pravna-informatika">
         <FRBRWork>
-          <FRBRthis value="/akn/me/act/criminal-code/chapter-23"/>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/!main"/>
           <FRBRuri value="/akn/me/act/criminal-code"/>
           <FRBRdate date="2003-12-25" name="enactment"/>
-          <FRBRauthor href="#skupstina"/>
+          <FRBRauthor href="#skupstina" as="#author"/>
           <FRBRcountry value="me"/>
+          <FRBRsubtype value="criminal-code"/>
+          <FRBRnumber value="23"/>
+          <FRBRname value="Glava dvadeset treca - Krivicna djela protiv platnog prometa i privrednog poslovanja"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023"/>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023/!main"/>
           <FRBRuri value="/akn/me/act/criminal-code/srp@2023"/>
           <FRBRdate date="2023-01-01" name="publication"/>
-          <FRBRauthor href="#skupstina"/>
+          <FRBRauthor href="#skupstina" as="#editor"/>
           <FRBRlanguage language="srp"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023.xml"/>
-          <FRBRuri value="/akn/me/act/criminal-code/srp@2023.xml"/>
+          <FRBRthis value="/akn/me/act/criminal-code/chapter-23/srp@2023/!main.xml"/>
+          <FRBRuri value="/akn/me/act/criminal-code/chapter-23/srp@2023/!main.akn"/>
           <FRBRdate date="2024-01-01" name="transform"/>
-          <FRBRauthor href="#pravna-informatika"/>
+          <FRBRauthor href="#pravna-informatika" as="#generator"/>
+          <FRBRformat value="xml"/>
         </FRBRManifestation>
       </identification>
-      <references source="#source">
+      <publication name="sl-list" date="2023-01-01" showAs="Sluzbeni list Crne Gore" number="2023"/>
+      <classification source="#pravna-informatika">
+        <keyword value="criminal-law" showAs="Krivicno pravo" dictionary="ME"/>
+        <keyword value="financial-crime" showAs="Krivicna djela protiv platnog prometa i privrednog poslovanja" dictionary="ME"/>
+      </classification>
+      <references source="#pravna-informatika">
+        <TLCRole eId="author" href="/akn/me/ontology/role/author" showAs="Author"/>
+        <TLCRole eId="editor" href="/akn/me/ontology/role/editor" showAs="Editor"/>
+        <TLCRole eId="generator" href="/akn/me/ontology/role/generator" showAs="Generator"/>
         <TLCOrganization eId="skupstina" href="/ontology/organization/me/skupstina" showAs="Skupstina Crne Gore"/>
         <TLCOrganization eId="pravna-informatika" href="/ontology/organization/me/pravna-informatika" showAs="Pravna Informatika Team 8"/>
       </references>

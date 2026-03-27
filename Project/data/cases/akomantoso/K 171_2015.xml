@@ -43,7 +43,7 @@
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
                 <obrazovanje>SSS</obrazovanje>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>7 (sedam) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <vrstaPresude>Uslovna presuda</vrstaPresude>
@@ -94,7 +94,7 @@ Osnovni Sud u HERCEG NOVOM, 171/2015, sudija Olja Petrović</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

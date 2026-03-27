@@ -37,7 +37,7 @@
         <sudija>Tamara Spasojević</sudija>
         <zapisnicar>Anom Stanišić</zapisnicar>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 2</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>4 (četiri) mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -104,7 +104,7 @@ Osnovni Sud u BARU, 255/21, sudija Tamara Spasojević</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

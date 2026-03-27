@@ -37,7 +37,7 @@
         <sudija>porotnika Demić Refije</sudija>
         <zapisnicar>Vesić Verice</zapisnicar>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>45 dana</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -88,7 +88,7 @@ Osnovni Sud u ROŽAJAMA, 192/10, sudija porotnika Demić Refije</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

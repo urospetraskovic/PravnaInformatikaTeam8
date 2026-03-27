@@ -23,10 +23,7 @@
   </lrml:Metadata>
 
   <lrml:Statements>
-    
-    <!-- ========== ARTICLE 258: COUNTERFEITING MONEY ========== -->
-    
-    <!-- Rule 1: Art. 258 st. 1 - Making counterfeit money -->
+    <!-- Rule 1: Art. 258 st. 1 -->
     <lrml:ConstitutiveStatement key="rule_258_1">
       <lrml:Rule>
         <lrml:Paraphrase>
@@ -62,7 +59,7 @@
       <lrml:LegalReference refersTo="/akn/me/act/criminal-code#art_258__para_1"/>
     </lrml:ConstitutiveStatement>
     
-    <!-- Rule 2: Art. 258 st. 2 - Distributing counterfeit money -->
+    <!-- Rule 2: Art. 258 st. 2 -  -->
     <lrml:ConstitutiveStatement key="rule_258_2">
       <lrml:Rule>
         <lrml:Paraphrase>

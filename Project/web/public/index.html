@@ -351,11 +351,13 @@
     .article-tag {
       background: #dbeafe;
       color: #1e40af;
+      display: inline-block;
       padding: 4px 10px;
       border-radius: 12px;
       font-size: 0.85em;
       font-weight: 600;
       cursor: pointer;
+      text-decoration: none;
       transition: all 0.2s;
     }
 
@@ -550,6 +552,12 @@
       color: #374151;
     }
 
+    .glava-article-paragraph {
+      margin: 8px 0;
+      padding: 4px 2px;
+      border-radius: 4px;
+    }
+
     .glava-article-heading {
       font-weight: 700;
       color: #1f2937;
@@ -562,10 +570,37 @@
       margin: 8px 0;
     }
 
-    .glava-article.highlighted {
-      background-color: #fef08a;
+    .glava-article.highlighted-container {
+      border: 1px solid #fde047;
+      background-color: #fefce8;
       padding: 10px;
       border-radius: 4px;
+    }
+
+    .glava-article.highlighted,
+    .glava-article-paragraph.highlighted {
+      background-color: #fef08a;
+      box-shadow: 0 0 8px 2px rgba(250, 204, 21, 0.6);
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #facc15;
+      transition: all 0.3s ease;
+    }
+
+    .glava-article.flash-highlight,
+    .glava-article-paragraph.flash-highlight {
+      animation: glavaFlashHighlight 2.5s ease;
+    }
+
+    @keyframes glavaFlashHighlight {
+      0% {
+        background-color: #fef08a;
+        box-shadow: 0 0 15px 4px rgba(250, 204, 21, 0.8);
+      }
+      100% {
+        background-color: #ffffff;
+        box-shadow: 0 0 0px 0px rgba(250, 204, 21, 0);
+      }
     }
 
     .reasoning-panel {
@@ -660,10 +695,6 @@
             <div class="stat-item">
               <div class="stat-value" id="stat-acquitted">0</div>
               <div class="stat-text">Oslobođen</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-value" id="stat-opomena">0</div>
-              <div class="stat-text">Opomena</div>
             </div>
           </div>
         </div>
@@ -1008,6 +1039,7 @@
         reasoningPanel.style.display = 'none';
         glava23Sidebar.classList.add('active');
         document.querySelectorAll('.nav-button')[1]?.classList.add('active');
+        loadGlava23AndShowArticle();
       } else if (panelName === 'reasoning') {
         casesPanel.style.display = 'none';
         reasoningPanel.style.display = 'block';
@@ -1021,71 +1053,156 @@
       }
     }
 
-    function navigateToArticle(articleNum) {
+    function flashGlavaArticle(articleElement) {
+      if (!articleElement) return;
+
+      articleElement.classList.add('highlighted', 'flash-highlight');
+      articleElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      setTimeout(() => {
+        articleElement.classList.remove('flash-highlight');
+        // Keep 'highlighted' class so it stays highlighted!
+      }, 2500);
+    }
+
+
+    function extractArticleTarget(articleText) {
+      const text = String(articleText || '').trim();
+      if (!text) return null;
+
+      let articleNum = null;
+      let paragraphNum = null;
+
+      const dotMatch = text.match(/\b(258|260)\.(\d{1,2})\b/);
+      if (dotMatch) {
+        articleNum = dotMatch[1];
+        paragraphNum = dotMatch[2];
+      }
+
+      if (!articleNum) {
+        const explicitArticleMatch = text.match(/(?:čl\.?|cl\.?|član|clan)\s*(\d{2,3})/i);
+        articleNum = explicitArticleMatch ? explicitArticleMatch[1] : null;
+      }
+
+      if (!articleNum) {
+        const fallbackArticleMatch = text.match(/\b(258|260)\b/);
+        if (fallbackArticleMatch) articleNum = fallbackArticleMatch[1];
+      }
+
+      if (!articleNum) return null;
+
+      if (!paragraphNum) {
+        const explicitParagraphMatch = text.match(/(?:st\.?|stav)\s*(\d{1,2})/i);
+        if (explicitParagraphMatch) {
+          paragraphNum = explicitParagraphMatch[1];
+        }
+      }
+
+      if (!paragraphNum) {
+        const brokenPatternMatch = text.match(/\b(258|260)\b[^\d]{0,12}(?:st\.?|stav)\s*(\d{1,2})/i);
+        if (brokenPatternMatch) {
+          paragraphNum = brokenPatternMatch[2];
+        }
+      }
+
+      if (!paragraphNum) {
+        const numbers = (text.match(/\d+/g) || []).map((n) => parseInt(n, 10));
+        if (numbers.length >= 2 && (numbers[0] === 258 || numbers[0] === 260) && numbers[1] > 0 && numbers[1] <= 10) {
+          paragraphNum = String(numbers[1]);
+        }
+      }
+
+      const label = paragraphNum ? `${articleNum}.${paragraphNum}` : `${articleNum}`;
+      return {
+        articleNum,
+        paragraphNum,
+        hash: paragraphNum ? `#art_${articleNum}__para_${paragraphNum}` : `#art_${articleNum}`,
+        label
+      };
+    }
+
+    function navigateToArticleFromEvent(event, articleNum, paragraphNum = null) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      navigateToArticle(articleNum, paragraphNum);
+    }
+
+    async function navigateToArticle(articleNum, paragraphNum = null, updateHash = true) {
       showPanel('glava23');
-      
-      // Load and display Glava 23 article
-      const articleId = `art_${articleNum}`;
-      const articleElement = document.getElementById(articleId);
-      
-      if (articleElement) {
-        // Article already in sidebar, just scroll to it
-        setTimeout(() => {
-          articleElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          articleElement.style.background = '#fef08a';
-          setTimeout(() => {
-            articleElement.style.background = 'white';
-          }, 2000);
-        }, 550);
-      } else {
-        // Load Glava 23 articles if not already loaded
-        loadGlava23AndShowArticle(articleNum);
+      await loadGlava23AndShowArticle(articleNum, paragraphNum);
+
+      if (updateHash) {
+        window.location.hash = paragraphNum ? `art_${articleNum}__para_${paragraphNum}` : `art_${articleNum}`;
       }
     }
 
     let glava23Articles = null; // Cache loaded articles
 
-    async function loadGlava23AndShowArticle(articleNum) {
-      if (!glava23Articles) {
-        try {
-          const response = await fetch('/api/glava23');
-          const data = await response.json();
-          glava23Articles = data.articles;
-        } catch (error) {
-          console.error('Error loading Glava 23:', error);
-          return;
-        }
-      }
-      
-      // Find and display the requested article
-      const article = glava23Articles.find(a => a.eId === `art_${articleNum}`);
-      
-      if (article) {
-        // Populate sidebar with articles
+    async function ensureGlava23Loaded() {
+      if (glava23Articles) return true;
+
+      try {
+        const response = await fetch('/api/glava23');
+        const data = await response.json();
+        glava23Articles = Array.isArray(data.articles) ? data.articles : [];
+        return true;
+      } catch (error) {
+        console.error('Error loading Glava 23:', error);
         const container = document.getElementById('glava-articles-container');
-        
-        // Show all articles but highlight the requested one
-        container.innerHTML = glava23Articles.map(a => `
-          <div class="glava-article ${a.eId === `art_${articleNum}` ? 'highlighted' : ''}" id="${a.eId}">
-            <div class="glava-article-number">${a.num || a.eId.replace('art_', 'Clan ')}</div>
-            <div class="glava-article-heading">${a.heading}</div>
-            <div class="glava-article-content">${a.content.replace(/\n/g, '<br/>')}</div>
+        if (container) {
+          container.innerHTML = '<div style="padding:12px; color:#991b1b;">Greška pri učitavanju Glave 23.</div>';
+        }
+        return false;
+      }
+    }
+
+    async function loadGlava23AndShowArticle(articleNum = null, paragraphNum = null) {
+      const loaded = await ensureGlava23Loaded();
+      if (!loaded) return;
+
+      const container = document.getElementById('glava-articles-container');
+      if (!container) return;
+
+      if (glava23Articles.length === 0) {
+        container.innerHTML = '<div style="padding:12px; color:#475569;">Nema članova za prikaz.</div>';
+        return;
+      }
+
+      const targetId = articleNum ? (paragraphNum ? `art_${articleNum}__para_${paragraphNum}` : `art_${articleNum}`) : null;
+
+      // Always render complete chapter; optionally highlight target article.
+      container.innerHTML = glava23Articles.map(a => `
+        <div class="glava-article ${targetId && (a.eId === targetId || targetId.startsWith(a.eId + '__')) ? 'highlighted-container' : ''}" id="${a.eId}">
+          <div class="glava-article-number">${a.num || a.eId.replace('art_', 'Clan ')}</div>
+          <div class="glava-article-heading">${a.heading || 'Nepoznat naslov'}</div>
+          <div class="glava-article-content">${Array.isArray(a.paragraphs) && a.paragraphs.length > 0
+            ? a.paragraphs.map(p => `<div class="glava-article-paragraph ${targetId && p.eId === targetId ? 'highlighted' : ''}" id="${p.eId}">${p.num ? `<strong>${p.num}</strong> ` : ''}${p.text || ''}</div>`).join('')
+            : (a.content || '').replace(/\n/g, '<br/>')}
           </div>
-        `).join('');
-        
-        // Scroll to requested article
+        </div>
+      `).join('');
+
+      if (targetId) {
         setTimeout(() => {
-          const element = document.getElementById(`art_${articleNum}`);
+          const element = document.getElementById(targetId);
           if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            element.style.background = '#fef08a';
-            setTimeout(() => {
-              element.style.background = 'white';
-            }, 2000);
+            flashGlavaArticle(element);
           }
         }, 550);
       }
     }
+
+    function handleHashArticleNavigation() {
+      const hash = (window.location.hash || '').replace('#', '').trim();
+      const match = hash.match(/^art_(\d+)(?:__para_(\d+))?$/i);
+      if (match) {
+        navigateToArticle(match[1], match[2] || null, false);
+      }
+    }
+
+    window.addEventListener('hashchange', handleHashArticleNavigation);
 
     // Helper function to transform raw case data to UI format
     function transformCaseData(rawCases) {
@@ -1153,7 +1270,6 @@
         document.getElementById('stat-guilty').textContent = stats.guiltyCount;
         document.getElementById('stat-conditional').textContent = stats.conditionalCount || 0;
         document.getElementById('stat-acquitted').textContent = stats.acquittedCount;
-        document.getElementById('stat-opomena').textContent = stats.opomenaCount || 0;
       } catch (error) {
         console.error('Error loading cases:', error);
         document.getElementById('cases-list').innerHTML = `<div style="padding: 20px; text-align: center; color: #dc2626;">Greska: ${error.message}</div>`;
@@ -1285,9 +1401,9 @@
           // Build articles with clickable links
           const articlesHtml = (guiltyArticles.length > 0 ? guiltyArticles : ['Nije navedeno']).map(article => {
             if (!article || article === 'Unknown') return `<span class="article-tag">Nije navedeno</span>`;
-            const articleMatch = article.match(/(\d+)/);
-            if (articleMatch) {
-              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Kliknite za pregled člana ${articleMatch[1]}">${article}</span>`;
+            const target = extractArticleTarget(article);
+            if (target) {
+              return `<a href="${target.hash}" class="article-tag clickable" onclick="navigateToArticleFromEvent(event, '${target.articleNum}', '${target.paragraphNum || ''}')" title="Kliknite za pregled ${target.label}">${target.label}</a>`;
             }
             return `<span class="article-tag">${article}</span>`;
           }).join('');
@@ -1391,9 +1507,9 @@
           
           const articlesHtml = (caseData.articles && caseData.articles.length > 0 ? caseData.articles : ['Nije navedeno']).map(article => {
             if (!article || article === 'Unknown') return `<span class="article-tag">Nije navedeno</span>`;
-            const articleMatch = article.match(/(\d+)/);
-            if (articleMatch) {
-              return `<span class="article-tag clickable" onclick="navigateToArticle('${articleMatch[1]}')" title="Kliknite za pregled člana ${articleMatch[1]}">${article}</span>`;
+            const target = extractArticleTarget(article);
+            if (target) {
+              return `<a href="${target.hash}" class="article-tag clickable" onclick="navigateToArticleFromEvent(event, '${target.articleNum}', '${target.paragraphNum || ''}')" title="Kliknite za pregled ${target.label}">${target.label}</a>`;
             }
             return `<span class="article-tag">${article}</span>`;
           }).join('');
@@ -2281,6 +2397,7 @@
     document.getElementById('input-decision-date').value = new Date().toISOString().slice(0, 10);
     updateDecisionProposalPanel();
     loadCases();
+    handleHashArticleNavigation();
   </script>
 </body>
 </html>

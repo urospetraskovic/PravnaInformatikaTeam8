@@ -42,7 +42,7 @@
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258 st. 2</clanKZ>
+        <clanKZ>258.5</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Oslobađajuća</vrstaPresude>
@@ -101,7 +101,7 @@ Osnovni Sud u Kotoru, 23/2017</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.5 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

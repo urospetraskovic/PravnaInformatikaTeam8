@@ -43,7 +43,7 @@
         <obrazovanje>OŠ</obrazovanje>
         <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258 st. 4</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>45 (četrdesetpet) dana</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -109,7 +109,7 @@ Osnovni Sud u Kotoru, 399/15/15, sudija Danijela Samardžić</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

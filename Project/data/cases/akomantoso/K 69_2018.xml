@@ -42,7 +42,7 @@
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>ranije osuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 1</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <novcanaKazna>1.200,00</novcanaKazna>
@@ -103,7 +103,7 @@ Osnovni Sud u Kotoru, 69/2018, sudija Momirka Tešić</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 1 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

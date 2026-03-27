@@ -40,7 +40,7 @@
                 <obrazovanje>SSS</obrazovanje>
                 <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -91,7 +91,7 @@ Osnovni Sud u PODGORICI, 87/13, sudija Jovović Željki</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

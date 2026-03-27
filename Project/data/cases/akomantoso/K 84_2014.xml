@@ -44,7 +44,7 @@
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>4 (četiri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <vrstaPresude>Uslovna presuda</vrstaPresude>
@@ -106,7 +106,7 @@ Osnovni Sud u Kolašinu kao prvostepeni krivični po predsjedniku suda Arsenu Po
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

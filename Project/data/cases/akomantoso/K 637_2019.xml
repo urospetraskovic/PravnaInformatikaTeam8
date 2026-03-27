@@ -44,7 +44,7 @@
         <obrazovanje>srednju školu</obrazovanje>
         <ranijeOsudjivan>ranije neosuđivana</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 1</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <vrstaPresude>Uslovna presuda</vrstaPresude>
@@ -116,7 +116,7 @@ Saslušan na glavnom pretresu svjedok oštećeni M.M. je ponovio navode iznijete
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 1 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

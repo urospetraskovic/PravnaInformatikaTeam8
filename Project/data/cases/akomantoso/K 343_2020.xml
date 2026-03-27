@@ -45,7 +45,7 @@
         <obrazovanje>VSS</obrazovanje>
         <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 3</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>3 (tri) mjeseca</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Osuđujuća</vrstaPresude>
@@ -116,7 +116,7 @@ Osnovni Sud u KOTORU, 343/2020, sudija Danijela Samardžić</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 3 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

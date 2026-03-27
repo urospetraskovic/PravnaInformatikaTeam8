@@ -43,7 +43,7 @@
         <obrazovanje>srednju školu</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260 st. 2</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>6 (šest) mjesec</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>140,00</novcanaKazna>
@@ -119,7 +119,7 @@ Zastupnik optužbe je na glavnom pretrresu odustao od predloga da se izvrši uvi
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 st. 2 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

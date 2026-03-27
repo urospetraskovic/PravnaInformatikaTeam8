@@ -40,7 +40,7 @@
                 <obrazovanje>SSS</obrazovanje>
                 <ranijeOsudjivan>da</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>None</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <vrstaPresude>Oslobađajuća</vrstaPresude>
@@ -95,7 +95,7 @@ Osnovni Sud u PODGORICI, 730/08, sudija porotnika Lubarda Vojislava</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

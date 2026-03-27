@@ -43,7 +43,7 @@
         <obrazovanje>srednju školu</obrazovanje>
         <ranijeOsudjivan>ranije neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 239 st. 1</clanKZ>
+        <clanKZ>260.5</clanKZ>
         <kazna>32 (tridesetdva) dana</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>2.000,00</novcanaKazna>
@@ -125,7 +125,7 @@ Osnovni Sud u PODGORICI, 691/11, sudija Larisa Mijušković</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 239 st. 1 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.5 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

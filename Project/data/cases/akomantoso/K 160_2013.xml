@@ -44,7 +44,7 @@
         <obrazovanje>pismen</obrazovanje>
         <ranijeOsudjivan>ne osudjivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 49</clanKZ>
+        <clanKZ>258.2</clanKZ>
         <kazna>6 (šest) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>1.248,50</novcanaKazna>
@@ -117,7 +117,7 @@ Osnovni Sud u BIJELOM POLJU, 160/2013, sudija Rahmo Banda</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 49 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

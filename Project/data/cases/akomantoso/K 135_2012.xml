@@ -44,11 +44,10 @@
         <obrazovanje>SSS</obrazovanje>
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258 st. 4</clanKZ>
-        <kazna>sudska opomena</kazna>
-        <uslovnaOsuda>Ne</uslovnaOsuda>
-        <novcanaKazna>700,00</novcanaKazna>
-        <vrstaPresude>Sudska opomena</vrstaPresude>
+        <clanKZ>258.4</clanKZ>
+        <kazna>uslovna presuda</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <opisSlucaja>-dana 30.10.2010 godine, u umjestu N., opština Bijelo Polje, u prodavnici DOO F." Bijelo Polje, lažan novac-jednu novčanicu u apoenu od 10 €, serijskog broja Y44157318922, koju je primio kao pravu, saznavši da je lažna, stavio u opticaj, na način što je istu prilikom kupovine cigareta od 0,70 €, predao prodavačici Lj.. Lj..,</opisSlucaja>
         <svjedoci>
           <svjedok>B. R.a</svjedok>
@@ -95,8 +94,8 @@ Naime iz iskaza svjedoka B. R.a proizilazi da je od M.D.kupio polovni kompjuter 
           <iznos>20,00 EUR</iznos>
           <iznos>7 EUR</iznos>
         </iznosi>
-      <zapisnicar>Ljiljane Joksimović</zapisnicar><vrstaPresude>Sudska opomena</vrstaPresude>
-        <uslovnaOsuda>Ne</uslovnaOsuda></proprietary>
+      <zapisnicar>Ljiljane Joksimović</zapisnicar><vrstaPresude>Uslovna presuda</vrstaPresude>
+        <uslovnaOsuda>Da</uslovnaOsuda></proprietary>
     </meta>
     <judgmentBody>
       <introduction>
@@ -135,7 +134,7 @@ Sud je cijeneći dokaze pojedinačno i u medjusobnoj povezanosti</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

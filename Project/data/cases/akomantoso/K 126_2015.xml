@@ -43,7 +43,7 @@
         <ranijeOsudjivan>neosuđivan</ranijeOsudjivan>
                 <zaposlenost>zaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258 st. 4</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>5 (pet) mjeseci</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <vrstaPresude>Uslovna presuda</vrstaPresude>
@@ -109,7 +109,7 @@ Svjedok G.M. je u svom iskazu izjavila da privremeno boravi u Ulcinju</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

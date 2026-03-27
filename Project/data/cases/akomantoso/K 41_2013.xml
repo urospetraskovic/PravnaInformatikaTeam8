@@ -40,7 +40,7 @@
                 <obrazovanje>SSS</obrazovanje>
                 <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>30 (trideset) dana</kazna>
         <uslovnaOsuda>Da</uslovnaOsuda>
         <vrstaPresude>Uslovna presuda</vrstaPresude>
@@ -71,7 +71,7 @@ Osnovni Sud u PODGORICI, 41/13, sudija Jeleni Perović Kovačević</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

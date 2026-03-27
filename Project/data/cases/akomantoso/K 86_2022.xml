@@ -43,7 +43,7 @@
         <ranijeOsudjivan>Nepoznat</ranijeOsudjivan>
                 <zaposlenost>nezaposlen</zaposlenost>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>Nepoznat</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>10.000</novcanaKazna>
@@ -106,7 +106,7 @@ Osnovni Sud u BARU, 86/22, sudija Aleksandra Leković</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

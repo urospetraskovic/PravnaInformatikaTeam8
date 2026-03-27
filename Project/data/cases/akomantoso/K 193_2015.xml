@@ -42,7 +42,7 @@
         <obrazovanje>VSS</obrazovanje>
         <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje i zloupotreba kreditnih kartica</tipKrivicnogDjela>
-        <clanKZ>čl. 260</clanKZ>
+        <clanKZ>260.2</clanKZ>
         <kazna>6 (.) mjeseci</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>70,00</novcanaKazna>
@@ -101,7 +101,7 @@ Osnovni Sud u KOTORU, 193/2015, sudija Danijela Samardžić</p>
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (čl. 260 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje i zloupotreba kreditnih kartica (260.2 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>

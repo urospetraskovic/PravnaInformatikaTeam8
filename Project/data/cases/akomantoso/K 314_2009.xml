@@ -44,7 +44,7 @@
         <obrazovanje>VSS</obrazovanje>
         <ranijeOsudjivan>neosuđivana</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
-        <clanKZ>čl. 258</clanKZ>
+        <clanKZ>258.4</clanKZ>
         <kazna>2 (dva) mjeseca</kazna>
         <uslovnaOsuda>Ne</uslovnaOsuda>
         <novcanaKazna>30,00</novcanaKazna>
@@ -134,7 +134,7 @@ Sud je cijeneći odbranu okrivljenog i dokaze pojedinačno i u medjusobnoj vezi<
     </judgmentBody>
     <conclusions>
       <block name="pravniOsnov">
-        <p>Krivično djelo: falsifikovanje novca (čl. 258 Krivičnog zakonika Crne Gore)</p>
+        <p>Krivično djelo: falsifikovanje novca (258.4 Krivičnog zakonika Crne Gore)</p>
       </block>
     </conclusions>
   </judgment>
