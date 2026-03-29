@@ -1060,17 +1060,35 @@ class SentenceCalculator:
         return analysis
     
     def _extract_article_number(self, article_str: str) -> Optional[str]:
-        """Extract article number from string like 'čl. 260' or 'Član 258'"""
-        match = re.search(r'(?:čl\.|Član)\s*(\d+)', article_str, re.IGNORECASE)
+        """Extract article number from formats like 'čl. 260 st. 2' or '258.2'."""
+        text = str(article_str or '').strip()
+
+        # Canonical legal text format: čl. 258 / clan 258
+        match = re.search(r'(?:čl\.?|cl\.?|član|clan)\s*(\d+)', text, re.IGNORECASE)
         if match:
             return match.group(1)
+
+        # Compact numeric format used by parsed XML values: 258.2 / 260.1
+        compact = re.search(r'\b(\d{2,3})(?:\.(\d{1,2}))?\b', text)
+        if compact:
+            return compact.group(1)
+
         return None
     
     def _extract_article_paragraph(self, article_str: str) -> Optional[str]:
-        """Extract paragraph number from string like 'čl. 260 st. 2'"""
-        match = re.search(r'st(?:av)?\.?\s*(\d+)', article_str, re.IGNORECASE)
+        """Extract paragraph number from formats like 'čl. 260 st. 2' or '258.2'."""
+        text = str(article_str or '').strip()
+
+        # Canonical legal text format: st. 2 / stav 2
+        match = re.search(r'st(?:av)?\.?\s*(\d+)', text, re.IGNORECASE)
         if match:
             return match.group(1)
+
+        # Compact numeric format: 258.2
+        compact = re.search(r'\b\d{2,3}\.(\d{1,2})\b', text)
+        if compact:
+            return compact.group(1)
+
         return None
     
     def _get_applicable_rules_for_article(self, article_num: str) -> List[Dict]:

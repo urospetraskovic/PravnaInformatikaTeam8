@@ -706,12 +706,16 @@ app.get('/api/glava23', (req, res) => {
 });
 
 // API: Get AkomaNtoso XML for a specific case
-app.get('/api/akomantoso/:caseId', (req, res) => {
-  const caseId = req.params.caseId;
+app.get('/api/akomantoso/:caseId(*)', (req, res) => {
+  const caseId = decodeURIComponent(req.params.caseId || '');
   const caseDir = path.join(__dirname, '../data/cases/akomantoso');
   
-  // Find the case file by searching for matching case_id in database
-  const caseRecord = caseDatabase.find(c => c.id === caseId);
+  // Find the case file by searching for matching id formats in database
+  const caseRecord = caseDatabase.find(c =>
+    c.id === caseId ||
+    c.caseNumber === caseId ||
+    c.case_id === caseId
+  );
   
   if (caseRecord && caseRecord.xmlFile) {
     try {
@@ -733,6 +737,13 @@ app.get('/api/akomantoso/:caseId', (req, res) => {
     if (match) {
       possibleFileNames.push(`K ${match[1]}_${match[2]}`);
       possibleFileNames.push(`K_${match[1]}_${match[2]}`);
+
+      // Handle short year IDs like 109/13 -> K 109_2013.xml
+      if (match[2].length === 2) {
+        const fullYear = `20${match[2]}`;
+        possibleFileNames.push(`K ${match[1]}_${fullYear}`);
+        possibleFileNames.push(`K_${match[1]}_${fullYear}`);
+      }
     }
   }
   

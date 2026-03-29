@@ -1360,7 +1360,7 @@
       if (!caseData) return;
 
       // Fetch AkomaNtoso XML to get the authoritative case data
-      fetch(`/api/akomantoso/${caseId}`)
+      fetch(`/api/akomantoso/${encodeURIComponent(caseId)}`)
         .then(response => {
           if (!response.ok) throw new Error('AkomaNtoso not found');
           return response.text();
