@@ -887,7 +887,7 @@
 
         <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
           <h3 style="font-size: 1em; color: #0f172a; margin-bottom: 8px;">Generisanje presude (ML/DL) + XML</h3>
-          <p style="color: #475569; font-size: 0.9em; margin-bottom: 10px;">Sistem kombinuje opis slučaja, rezultate rasuđivanja i mali LSTM model treniran na postojećim presudama kako bi generisao uvod, obrazloženje i dispozitiv. Presuda се аутоматски бележи у AkomaNtoso XML и додаје у базу.</p>
+          <p style="color: #475569; font-size: 0.9em; margin-bottom: 10px;">Sistem kombinuje opis slucaja, rezultate rasudjivanja i mali LSTM model treniran na postojecim presudama kako bi generisao uvod, obrazlozenje i dispozitiv. Presuda se automatski biljezi u AkomaNtoso XML i dodaje u bazu.</p>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
             <button onclick="generateJudgmentFromInput()" class="nav-button" style="background: #0ea5e9; color: #fff; border-color: #0ea5e9;">Generiši presudu i sačuvaj XML</button>
           </div>
@@ -2475,7 +2475,7 @@
         resultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
       }
     }
-    
+
     document.getElementById('input-decision-date').value = new Date().toISOString().slice(0, 10);
     updateDecisionProposalPanel();
     loadCases();
