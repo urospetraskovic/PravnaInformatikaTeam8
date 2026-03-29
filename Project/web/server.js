@@ -2,6 +2,14 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { DOMParser } = require('@xmldom/xmldom');
+let brain = null;
+try {
+  brain = require('brain.js');
+} catch (err) {
+  console.warn('⚠️  brain.js nije instaliran – generator će biti preskočen dok se ne instalira.');
+}
+
+const modelCachePath = path.join(__dirname, '../data/model/lstm-generator.json');
 const { execSync } = require('child_process');
 
 // Kill any existing process on the port before starting
@@ -1013,6 +1021,16 @@ function escapeXml(value) {
     .replace(/'/g, '&apos;');
 }
 
+function sanitizeForBrain(text = '') {
+  // brain.js LSTM puca na nekim znakovima poput "%"; ovde čistimo unos i korpus.
+  return String(text || '')
+    .replace(/%/g, ' percent ')
+    .replace(/[\r\n\t]+/g, ' ')
+    .replace(/[^\x20-\x7EćĆčČžŽšŠđĐ]/g, ' ') // zadržavamo osnovne latinične i sr/slova; ostalo uklanjamo
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function parseCaseIdentity(rawCaseNumber = '') {
   const now = new Date();
   const fallbackYear = now.getFullYear();
@@ -1038,11 +1056,21 @@ function parseCaseIdentity(rawCaseNumber = '') {
     }
   } else {
     const digits = raw.match(/\d+/);
-    broj = digits ? digits[0] : String(now.getTime()).slice(-6);
+    broj = digits ? digits[0] : '';
   }
 
+  // If broj is missing, compute sequential number for the year based on existing akomantoso files
   if (!broj) {
-    broj = String(now.getTime()).slice(-6);
+    broj = String(getNextSequentialCaseNumber(year));
+  }
+
+  // Enforce numeric and at most 4 digits per year; if longer, trim to 4
+  broj = broj.replace(/\D/g, '');
+  if (!broj) {
+    broj = String(getNextSequentialCaseNumber(year));
+  }
+  if (broj.length > 4) {
+    broj = broj.slice(0, 4);
   }
 
   return {
@@ -1052,6 +1080,28 @@ function parseCaseIdentity(rawCaseNumber = '') {
     judgmentName: `K_${broj}_${year}`,
     fallbackCaseNumber: `${broj}/${String(year).slice(-2)}`,
   };
+}
+
+function getNextSequentialCaseNumber(targetYear) {
+  try {
+    if (!fs.existsSync(casesDirFallback)) return 1;
+    const files = fs.readdirSync(casesDirFallback).filter(f => f.toLowerCase().endsWith('.xml'));
+    let maxNum = 0;
+    for (const file of files) {
+      const m = file.match(/K\s*(\d+)_(\d{4})\.xml/i);
+      if (m) {
+        const num = parseInt(m[1], 10);
+        const yr = parseInt(m[2], 10);
+        if (!Number.isNaN(num) && yr === targetYear && num > maxNum) {
+          maxNum = num;
+        }
+      }
+    }
+    return maxNum + 1;
+  } catch (err) {
+    console.warn('⚠️  Greška pri određivanju rednog broja slučaja:', err.message);
+    return Math.floor(Date.now() % 10000) || 1;
+  }
 }
 
 function normalizeVerdictLabel(vrstaPresude = '') {
@@ -1077,7 +1127,7 @@ function formatSentence(decision = {}) {
   return 'Nije navedeno';
 }
 
-function buildAkomaNtosoCaseXml(input, decision, identity) {
+function buildAkomaNtosoCaseXml(input, decision, identity, generated = {}) {
   const now = new Date();
   const inputDate = String(input.datumPresude || '').trim();
   const isoDate = /^\d{4}-\d{2}-\d{2}$/.test(inputDate) ? inputDate : now.toISOString().slice(0, 10);
@@ -1135,6 +1185,13 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
     ? computedEvidence.map((item) => `            <p>• ${escapeXml(item)}</p>`).join('\n')
     : '            <p>• Nije navedeno</p>';
 
+  const genIntro = String(generated.introduction || '').trim() || `U IME CRNE GORE — ${sudLabel}, predmet ${caseNumber}, sudija ${sudija}.`;
+  const genBackground = String(generated.background || '').trim() || `Opis činjeničnog stanja: ${opis}`;
+  const genMotivation = String(generated.motivation || '').trim() || 'Obrazloženje je sastavljeno na osnovu unetog opisa, primenjenih članova i dostupnih dokaza.';
+  const genDecision = String(generated.decision || '').trim() || `${verdict}: kazna ${sentence}.`;
+  const genSummary = String(generated.reasoningSummary || '').trim();
+  const generatorLabel = generated.generatorLabel || 'brainjs-lstm';
+
   return `<?xml version="1.0" encoding="utf-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <judgment name="${escapeXml(identity.judgmentName)}">
@@ -1190,6 +1247,8 @@ function buildAkomaNtosoCaseXml(input, decision, identity) {
         <vrstaPresude>${escapeXml(verdict)}</vrstaPresude>
         <novcanaKazna>${escapeXml(String(cleanFine))}</novcanaKazna>
         <opisSlucaja>${escapeXml(opis)}</opisSlucaja>
+        <generatedBy>${escapeXml(generatorLabel)}</generatedBy>
+        <generationNote>${escapeXml(genSummary || 'Generisano kombinovanjem opisa, pravila i sličnih presuda.')}</generationNote>
         <iznosi>
           <iznos>${escapeXml(String(cleanUkupanIznos).replace('.', ','))} EUR</iznos>
         </iznosi>
@@ -1204,10 +1263,10 @@ ${evidenceXml}
     </meta>
     <judgmentBody>
       <introduction>
-        <p>U IME CRNE GORE
-${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija ${escapeXml(sudija)}</p>
+        <p>${escapeXml(genIntro)}</p>
       </introduction>
       <background>
+        <p>${escapeXml(genBackground)}</p>
         <p>Okrivljeni: ${escapeXml(okrivljeni)}</p>
         <p>Zapisničar: ${escapeXml(zapisnicar)}</p>
         <p>Datum odluke: ${escapeXml(isoDate)}</p>
@@ -1223,10 +1282,13 @@ ${escapeXml(sudLabel)}, ${escapeXml(caseNumber)}, sudija ${escapeXml(sudija)}</p
 ${motivationEvidenceXml}
           </tblock>
         </block>
+        <block name="obrazlozenje">
+          <p>${escapeXml(genMotivation)}</p>
+        </block>
       </motivation>
       <decision>
         <block name="odluka">
-          <p>${escapeXml(verdict)}</p>
+          <p>${escapeXml(genDecision)}</p>
           <p>Kazna: ${escapeXml(sentence)}</p>
         </block>
       </decision>
@@ -1235,9 +1297,221 @@ ${motivationEvidenceXml}
       <block name="pravniOsnov">
         <p>Krivično djelo: ${escapeXml(tipDjela)} (${escapeXml(clanKZ)} Krivičnog zakonika Crne Gore)</p>
       </block>
+      <block name="generatorMeta">
+        <p>${escapeXml(genSummary || 'Generisano na osnovu opisa slučaja i rezultata rasuđivanja.')}</p>
+      </block>
     </conclusions>
   </judgment>
 </akomaNtoso>`;
+}
+
+// ===============================
+// Judgment generation (ML/DL lite)
+// ===============================
+let judgmentGenerator = null;
+let generatorReady = false;
+let generatorLastTrained = null;
+
+function loadGeneratorFromCache() {
+  try {
+    if (!fs.existsSync(modelCachePath)) return false;
+    const raw = fs.readFileSync(modelCachePath, 'utf8');
+    const parsed = JSON.parse(raw);
+    if (!parsed || !parsed.model || !parsed.lastTrained) return false;
+    const ageDays = (Date.now() - new Date(parsed.lastTrained).getTime()) / (1000 * 60 * 60 * 24);
+    if (ageDays > 30) return false; // retrain monthly
+    const lstm = new brain.recurrent.LSTM({ hiddenLayers: [64, 32], learningRate: 0.02 });
+    lstm.fromJSON(parsed.model);
+    judgmentGenerator = lstm;
+    generatorReady = true;
+    generatorLastTrained = parsed.lastTrained;
+    console.log(`🧠 LSTM generator učitan iz keša (starost ${ageDays.toFixed(1)} dana)`);
+    return true;
+  } catch (err) {
+    console.warn('⚠️  Učitavanje keširanog LSTM modela nije uspelo:', err.message);
+    return false;
+  }
+}
+
+function saveGeneratorToCache(lstm) {
+  try {
+    const dir = path.dirname(modelCachePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    const payload = {
+      lastTrained: new Date().toISOString(),
+      model: lstm.toJSON(),
+    };
+    fs.writeFileSync(modelCachePath, JSON.stringify(payload, null, 2), 'utf8');
+    generatorLastTrained = payload.lastTrained;
+    console.log('💾 LSTM model sačuvan u keš');
+  } catch (err) {
+    console.warn('⚠️  Čuvanje LSTM modela nije uspelo:', err.message);
+  }
+}
+
+function ensureGenerationModel() {
+  if (generatorReady) return;
+  if (!brain) {
+    console.warn('⚠️  brain.js nije dostupan, preskačem obuku generatora.');
+    return;
+  }
+  if (loadGeneratorFromCache()) return;
+  const corpus = caseDatabase
+    .map((c) => {
+      const base = [c.type, (c.articles || []).join(','), c.caseDescription || '', c.verdict, c.sentence || ''].join(' | ');
+      return sanitizeForBrain(base);
+    })
+    .filter((t) => t && t.length > 40);
+
+  if (corpus.length < 5) {
+    console.warn('⚠️  Premalo presuda za obuku LSTM modela, koristiće se šablonsko generisanje.');
+    return;
+  }
+
+  const lstm = new brain.recurrent.LSTM({ hiddenLayers: [64, 32], learningRate: 0.02 });
+  try {
+    lstm.train(corpus, { iterations: 40, log: false, errorThresh: 0.12 });
+    judgmentGenerator = lstm;
+    generatorReady = true;
+    saveGeneratorToCache(lstm);
+    console.log(`🧠 LSTM generator obučen na ${corpus.length} presuda`);
+  } catch (err) {
+    console.warn('⚠️  Obuka LSTM generatora nije uspela:', err.message);
+  }
+}
+
+function generateWithModel(prompt) {
+  try {
+    ensureGenerationModel();
+    if (!generatorReady || !judgmentGenerator) return null;
+    return String(judgmentGenerator.run(prompt) || '').replace(/\s+/g, ' ').trim();
+  } catch (err) {
+    console.warn('⚠️  Generisanje teksta nije uspelo:', err.message);
+    return null;
+  }
+}
+
+function isLowQualityGenerated(text = '') {
+  const t = String(text || '').trim();
+  if (t.length < 40) return true;
+  const words = t.split(/\s+/);
+  const unique = new Set(words.map((w) => w.toLowerCase()));
+  if (unique.size < 6) return true;
+  // Detect obvious repetition patterns like "prime" loops
+  const repeatedChunk = /(\b\w+\b)(?:\s+\1){3,}/i;
+  return repeatedChunk.test(t);
+}
+
+function extractMonthsFromText(text = '') {
+  const match = String(text).match(/(\d+(?:[.,]\d+)?)\s*(mesec|mjesec|month)/i);
+  return match ? parseFloat(match[1].replace(',', '.')) : null;
+}
+
+function deriveDecisionFromSignals(ruleReasoning = {}, cbrReasoning = {}, decisionOverride = {}) {
+  const cbrRec = cbrReasoning?.recommendation || {};
+  const ruleVerdictRaw = String(ruleReasoning.verdict || '');
+  const ruleRecommendationText = String(ruleReasoning.recommendation || '');
+  const ruleIsAcquittal = Boolean(ruleReasoning.acquittal) || ruleVerdictRaw.toLowerCase().includes('oslob');
+  const conditionalChance = Number(cbrRec.conditionalSentenceLikelihood || 0);
+
+  let verdict = 'osudjujuca';
+  if (decisionOverride.vrstaPresude) {
+    verdict = decisionOverride.vrstaPresude;
+  } else if (ruleIsAcquittal) {
+    verdict = 'oslobadjajuca';
+  } else if (ruleRecommendationText.toLowerCase().includes('uslov') || conditionalChance >= 60) {
+    verdict = 'uslovna';
+  }
+
+  const ruleMonths = extractMonthsFromText(ruleRecommendationText) || extractMonthsFromText(ruleReasoning.actual_sentence || '');
+  const cbrMonths = Number.isFinite(cbrRec.kaznaUMjesecima) ? Number(cbrRec.kaznaUMjesecima) : null;
+  let kazna = 0;
+  if (Number.isFinite(decisionOverride.kaznaUMjesecima)) {
+    kazna = decisionOverride.kaznaUMjesecima;
+  } else if (Number.isFinite(ruleMonths) && Number.isFinite(cbrMonths)) {
+    kazna = Math.round((ruleMonths + cbrMonths) / 2);
+  } else if (Number.isFinite(ruleMonths)) {
+    kazna = Math.round(ruleMonths);
+  } else if (Number.isFinite(cbrMonths)) {
+    kazna = Math.round(cbrMonths);
+  }
+
+  let novcana = Number.isFinite(decisionOverride.novcanaKazna) ? decisionOverride.novcanaKazna : 0;
+  if (!novcana && Number.isFinite(cbrRec.novcanaKazna)) {
+    novcana = Number(cbrRec.novcanaKazna);
+  }
+
+  return {
+    vrstaPresude: verdict,
+    kaznaUMjesecima: kazna,
+    novcanaKazna: novcana,
+    uslovnaOsuda: verdict === 'uslovna' ? 'Da' : (decisionOverride.uslovnaOsuda || 'Ne'),
+  };
+}
+
+function buildReasoningSummary(ruleReasoning = {}, cbrReasoning = {}) {
+  const applied = (ruleReasoning.articles || []).join(', ');
+  const rec = ruleReasoning.recommendation || 'n/a';
+  const cbrRec = cbrReasoning.recommendation || {};
+  const cbrText = cbrRec.kaznaUMjesecima != null ? `CBR kazna ${cbrRec.kaznaUMjesecima} mes, uslovna ${cbrRec.conditionalSentenceLikelihood || 0}%` : 'CBR n/a';
+  const similar = (cbrReasoning.similarCases || []).slice(0, 3).map((c) => c.brojPredmeta).filter(Boolean).join(', ');
+  return `Primenjeni članci: ${applied || 'n/a'}. Rule preporuka: ${rec}. ${cbrText}. Slični: ${similar || 'nema'}.`;
+}
+
+function generateNarrativeSections(input, decision, ruleReasoning = {}, cbrReasoning = {}) {
+  const summary = buildReasoningSummary(ruleReasoning, cbrReasoning);
+  const promptRaw = `${input.tipKrivicnogDjela || ''} | ${input.clanKZ || ''} | ${input.opis || ''} | presuda ${decision.vrstaPresude || ''} | kazna ${decision.kaznaUMjesecima || decision.novcanaKazna || ''} | ${summary}`;
+  const prompt = sanitizeForBrain(promptRaw);
+  const modelText = generateWithModel(prompt);
+  const useModel = modelText && !isLowQualityGenerated(modelText);
+
+  const listFromText = (value) => String(value || '').split(/\r?\n|;/).map((v) => v.trim()).filter(Boolean);
+  const evidences = listFromText(input.dokazi);
+
+  const decisionLine = decision.vrstaPresude === 'oslobadjajuca'
+    ? 'Okrivljeni se oslobađa optužbe.'
+    : `Okrivljeni se proglašava krivim i izriče se kazna ${decision.kaznaUMjesecima || 0} meseci${decision.uslovnaOsuda === 'Da' ? ' uslovno' : ''}.`;
+
+  return {
+    introduction: useModel ? modelText : `U ime Crne Gore ${input.sud || 'nadležni sud'} donosi presudu u predmetu ${input.brojPredmeta || 'NN'}.`,
+    background: input.opis || 'Nije naveden opis slučaja.',
+    motivation: useModel ? modelText : `Sud je uzeo u obzir dokaze (${evidences.slice(0, 3).join('; ') || 'nema dokaza'}) i primenio ${input.clanKZ || 'relevantne odredbe'} (${summary}).`,
+    decision: decisionLine,
+    reasoningSummary: summary,
+    generatorLabel: useModel ? 'brainjs-lstm' : 'template-fallback'
+  };
+}
+
+function validateUserInput(input = {}) {
+  const requiredFields = ['sud', 'sudija', 'zapisnicar', 'okrivljeni', 'datumPresude', 'clanKZ', 'opis'];
+  for (const field of requiredFields) {
+    if (!input[field]) {
+      return `${field} je obavezno polje`;
+    }
+  }
+
+  const numericChecks = [
+    ['iznos', 0],
+    ['ukupanIznos', 0],
+    ['brojTransakcija', 0],
+    ['brojOkrivljenih', 1],
+    ['brojSvjedoka', 0],
+    ['brojDokaza', 0],
+  ];
+  for (const [field, min] of numericChecks) {
+    const value = Number(input[field]);
+    if (Number.isNaN(value) || value < min) {
+      return `${field} mora biti broj >= ${min}`;
+    }
+  }
+
+  if (Number(input.ukupanIznos) < Number(input.iznos)) {
+    return 'Ukupan iznos mora biti veći ili jednak pojedinačnom iznosu.';
+  }
+
+  return null;
 }
 
 // Compute weighted similarity between two CBR case records
@@ -1586,6 +1860,99 @@ app.post('/api/cases/user', (req, res) => {
     res.json({ status: 'success', message: 'Case saved', cbrRecord, xmlFile: xmlFileName });
   } catch (err) {
     res.status(500).json({ error: `Save failed: ${err.message}` });
+  }
+});
+
+app.post('/api/generate-judgment', (req, res) => {
+  const input = req.body?.input || {};
+  const ruleReasoning = req.body?.ruleReasoning || {};
+  const cbrReasoning = req.body?.cbrReasoning || {};
+  const decisionOverride = req.body?.decisionOverride || {};
+
+  const validationError = validateUserInput(input);
+  if (validationError) {
+    return res.status(400).json({ error: validationError });
+  }
+
+  try {
+    const identity = parseCaseIdentity(input.brojPredmeta);
+    if (!fs.existsSync(casesDirFallback)) {
+      fs.mkdirSync(casesDirFallback, { recursive: true });
+    }
+
+    // If file exists, pick the next sequential number for that year
+    let fileBase = identity.fileBase;
+    let xmlPath = path.join(casesDirFallback, `${fileBase}.xml`);
+    if (fs.existsSync(xmlPath)) {
+      const nextNum = getNextSequentialCaseNumber(identity.year);
+      fileBase = `K ${nextNum}_${identity.year}`;
+      xmlPath = path.join(casesDirFallback, `${fileBase}.xml`);
+    }
+
+    const adjustedIdentity = {
+      ...identity,
+      fileBase,
+      judgmentName: fileBase.replace(/\s+/g, '_'),
+    };
+
+    const decision = deriveDecisionFromSignals(ruleReasoning, cbrReasoning, decisionOverride);
+    const sections = generateNarrativeSections(input, decision, ruleReasoning, cbrReasoning);
+    const xmlContent = buildAkomaNtosoCaseXml(input, decision, adjustedIdentity, sections);
+
+    fs.writeFileSync(xmlPath, xmlContent, 'utf8');
+
+    const parsedCase = parseXMLFile(xmlPath);
+    if (parsedCase) {
+      const existingIndex = caseDatabase.findIndex((c) => c.case_id === parsedCase.case_id);
+      if (existingIndex >= 0) {
+        caseDatabase[existingIndex] = parsedCase;
+      } else {
+        caseDatabase.push(parsedCase);
+      }
+    }
+
+    const cbrRecord = {
+      id: String(cbrCases.length + 1000),
+      sud: String(input.sud || 'Korisnički unos'),
+      ...normalizeCbrQuery({
+        ...input,
+        vrstaPresude: decision.vrstaPresude,
+        uslovnaOsuda: decision.uslovnaOsuda,
+        kaznaUMjesecima: decision.kaznaUMjesecima,
+        novcanaKazna: decision.novcanaKazna,
+      }),
+    };
+    cbrCases.push(cbrRecord);
+
+    let current = [];
+    if (fs.existsSync(userCasesFile)) {
+      const raw = fs.readFileSync(userCasesFile, 'utf8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) current = parsed;
+    }
+
+    current.push({
+      savedAt: new Date().toISOString(),
+      input,
+      decision,
+      ruleReasoning,
+      cbrReasoning,
+      sections,
+      xmlFile: path.basename(xmlPath),
+      generated: true,
+    });
+    fs.writeFileSync(userCasesFile, JSON.stringify(current, null, 2), 'utf8');
+
+    res.json({
+      status: 'success',
+      xmlFile: path.basename(xmlPath),
+      caseId: parsedCase?.id || adjustedIdentity.fileBase,
+      decision,
+      sections,
+      reasoningSummary: sections.reasoningSummary,
+    });
+  } catch (err) {
+    res.status(500).json({ error: `Generisanje nije uspelo: ${err.message}` });
   }
 });
 
