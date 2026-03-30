@@ -161,6 +161,8 @@ Opis da nam izvuce attribute, ono pravila I slicnost, treba mi da odredimo sta s
 
 
 
-
+takodje kada napravim novu presudu i za nju u mom pocetnom UI-ju aplikacije pokrenem rasudjivanje po slicnosti on mi kaze ovako Izrečena kazna (stvarna)
+N/A
+nepoznat , kaze mi da je izrecena kazna napoznata, znaci on ne moze da prepozna koja je kazna u toj presudi iz nekog razloga, a za sve ostale slucajeve koje nisam ja generisao u programu nego koji vec postoje kao akomantoso fajlovi ovde on moze da je procita C:\Users\Korisnik\Documents\GitHub\PravnaInformatikaTeam8\Project\data\cases\akomantoso, vidi u cemu se ovaj fajl razlikuje od ostalih C:\Users\Korisnik\Documents\GitHub\PravnaInformatikaTeam8\Project\data\cases\akomantoso\K 67_2026.xml ovaj
 
 

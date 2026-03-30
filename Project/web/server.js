@@ -2,14 +2,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { DOMParser } = require('@xmldom/xmldom');
-let brain = null;
-try {
-  brain = require('brain.js');
-} catch (err) {
-  console.warn('⚠️  brain.js nije instaliran – generator će biti preskočen dok se ne instalira.');
-}
-
-const modelCachePath = path.join(__dirname, '../data/model/lstm-generator.json');
 const { execSync } = require('child_process');
 
 // Kill any existing process on the port before starting
@@ -512,6 +504,7 @@ function parseXMLFile(filePath) {
       verdict: verdict,
       articles: articles,
       sentence: sentenceText,
+      sentenceMonths: (() => { const m = String(sentenceText || '').match(/(\d+)/); return m ? parseInt(m[1], 10) : 0; })(),
       defendant: defendant,
       keywords: keywords,
       caseDescription: caseDescription,
@@ -1021,20 +1014,166 @@ function escapeXml(value) {
     .replace(/'/g, '&apos;');
 }
 
-function sanitizeForBrain(text = '') {
-  // brain.js LSTM puca na nekim znakovima poput "%"; ovde čistimo unos i korpus.
-  return String(text || '')
-    .replace(/%/g, ' percent ')
-    .replace(/[\r\n\t]+/g, ' ')
-    .replace(/[^\x20-\x7EćĆčČžŽšŠđĐ]/g, ' ') // zadržavamo osnovne latinične i sr/slova; ostalo uklanjamo
-    .replace(/\s+/g, ' ')
-    .trim();
+// ===============================
+// Markov Chain Text Generator
+// ===============================
+// Trigram (order-2) word-level Markov chain trained on real court decisions
+// from the archive. This is a probabilistic ML model for text generation.
+
+class MarkovChain {
+  constructor(order = 2) {
+    this.order = order;
+    this.transitions = {};  // key: "word1 word2" -> { nextWord: count, ... }
+    this.starters = [];     // sentence-starting n-grams
+  }
+
+  train(texts) {
+    for (const text of texts) {
+      const words = text.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+      if (words.length < this.order + 1) continue;
+
+      // Record the first n-gram as a starter
+      this.starters.push(words.slice(0, this.order).join(' '));
+
+      for (let i = 0; i <= words.length - this.order - 1; i++) {
+        const key = words.slice(i, i + this.order).join(' ');
+        const next = words[i + this.order];
+        if (!this.transitions[key]) this.transitions[key] = {};
+        this.transitions[key][next] = (this.transitions[key][next] || 0) + 1;
+      }
+    }
+  }
+
+  _pickWeighted(options) {
+    const entries = Object.entries(options);
+    if (entries.length === 0) return null;
+    const total = entries.reduce((sum, [, count]) => sum + count, 0);
+    let r = Math.random() * total;
+    for (const [word, count] of entries) {
+      r -= count;
+      if (r <= 0) return word;
+    }
+    return entries[entries.length - 1][0];
+  }
+
+  generate(maxWords = 80, seed = null) {
+    // If seed provided, find the best matching starter
+    let current;
+    if (seed) {
+      const seedWords = seed.toLowerCase().split(/\s+/);
+      const match = this.starters.find(s => seedWords.some(sw => s.toLowerCase().includes(sw)));
+      current = match || this.starters[Math.floor(Math.random() * this.starters.length)];
+    } else {
+      if (this.starters.length === 0) return '';
+      current = this.starters[Math.floor(Math.random() * this.starters.length)];
+    }
+
+    const words = current.split(' ');
+    for (let i = 0; i < maxWords; i++) {
+      const key = words.slice(-this.order).join(' ');
+      const options = this.transitions[key];
+      if (!options) break;
+      const next = this._pickWeighted(options);
+      if (!next) break;
+      words.push(next);
+      // Stop at natural sentence end
+      if (words.length > 20 && next.endsWith('.')) break;
+    }
+    return words.join(' ');
+  }
+}
+
+// Section-specific Markov chains
+const markovModels = {
+  reasoning: new MarkovChain(2),
+  sentencing: new MarkovChain(2),
+  intro: new MarkovChain(2),
+};
+let markovTrained = false;
+
+function parseArchiveTextSections(text) {
+  const sections = { intro: '', facts: '', reasoning: '', sentencing: '' };
+
+  // Normalize whitespace
+  const lines = text.split(/\r?\n/);
+  const fullText = text.replace(/\r?\n/g, ' ').replace(/\s+/g, ' ');
+
+  // Find section boundaries
+  const presuduIdx = fullText.search(/P\s*R\s*E\s*S\s*U\s*D\s*U/i);
+  const obrazlozenjeIdx = fullText.search(/O\s*b\s*r\s*a\s*z\s*l\s*o\s*ž\s*e\s*nj?\s*e/i);
+  const uImeIdx = fullText.search(/U\s+IME\s+(CRNE\s+GORE|NARODA)/i);
+
+  // Intro: from "U IME" to "PRESUDU"
+  if (uImeIdx >= 0 && presuduIdx > uImeIdx) {
+    sections.intro = fullText.substring(uImeIdx, presuduIdx).trim();
+  }
+
+  // Sentencing: from "PRESUDU" to "Obrazloženje"
+  if (presuduIdx >= 0) {
+    const end = obrazlozenjeIdx > presuduIdx ? obrazlozenjeIdx : fullText.length;
+    sections.sentencing = fullText.substring(presuduIdx, end).trim();
+  }
+
+  // Reasoning: from "Obrazloženje" to end
+  if (obrazlozenjeIdx >= 0) {
+    const courtEndIdx = fullText.search(/OSNOVNI\s+SUD\s+U\s+\w+,?\s*dana/i);
+    const end = courtEndIdx > obrazlozenjeIdx ? courtEndIdx : fullText.length;
+    sections.reasoning = fullText.substring(obrazlozenjeIdx, end).trim();
+  }
+
+  return sections;
+}
+
+function trainMarkovModels() {
+  if (markovTrained) return;
+
+  const archiveDir = path.join(__dirname, '../archive/presude');
+  if (!fs.existsSync(archiveDir)) {
+    console.warn('⚠️  Archive directory not found, Markov models will not be trained.');
+    return;
+  }
+
+  const introTexts = [];
+  const reasoningTexts = [];
+  const sentencingTexts = [];
+  let fileCount = 0;
+
+  // Recursively read all .txt files from archive
+  function readDir(dir) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        readDir(fullPath);
+      } else if (entry.name.endsWith('.txt')) {
+        try {
+          const content = fs.readFileSync(fullPath, 'utf8');
+          const sections = parseArchiveTextSections(content);
+          if (sections.intro.length > 50) introTexts.push(sections.intro);
+          if (sections.reasoning.length > 100) reasoningTexts.push(sections.reasoning);
+          if (sections.sentencing.length > 50) sentencingTexts.push(sections.sentencing);
+          fileCount++;
+        } catch (err) { /* skip unreadable files */ }
+      }
+    }
+  }
+
+  readDir(archiveDir);
+
+  if (fileCount > 0) {
+    markovModels.intro.train(introTexts);
+    markovModels.reasoning.train(reasoningTexts);
+    markovModels.sentencing.train(sentencingTexts);
+    markovTrained = true;
+    console.log(`🧠 Markov chain modeli obučeni na ${fileCount} sudskih presuda (intro: ${introTexts.length}, reasoning: ${reasoningTexts.length}, sentencing: ${sentencingTexts.length})`);
+  }
 }
 
 function parseCaseIdentity(rawCaseNumber = '') {
   const now = new Date();
   const fallbackYear = now.getFullYear();
-  const raw = String(rawCaseNumber || '').trim();
+  // Strip leading "K" or "K " prefix before parsing numbers
+  const raw = String(rawCaseNumber || '').trim().replace(/^K\s*/i, '');
 
   let broj = '';
   let year = fallbackYear;
@@ -1190,7 +1329,7 @@ function buildAkomaNtosoCaseXml(input, decision, identity, generated = {}) {
   const genMotivation = String(generated.motivation || '').trim() || 'Obrazloženje je sastavljeno na osnovu unetog opisa, primenjenih članova i dostupnih dokaza.';
   const genDecision = String(generated.decision || '').trim() || `${verdict}: kazna ${sentence}.`;
   const genSummary = String(generated.reasoningSummary || '').trim();
-  const generatorLabel = generated.generatorLabel || 'brainjs-lstm';
+  const generatorLabel = generated.generatorLabel || 'markov-chain';
 
   return `<?xml version="1.0" encoding="utf-8"?>
 <akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1306,102 +1445,16 @@ ${motivationEvidenceXml}
 }
 
 // ===============================
-// Judgment generation (ML/DL lite)
+// Judgment generation (ML - Markov Chain)
 // ===============================
-let judgmentGenerator = null;
-let generatorReady = false;
-let generatorLastTrained = null;
 
-function loadGeneratorFromCache() {
-  try {
-    if (!fs.existsSync(modelCachePath)) return false;
-    const raw = fs.readFileSync(modelCachePath, 'utf8');
-    const parsed = JSON.parse(raw);
-    if (!parsed || !parsed.model || !parsed.lastTrained) return false;
-    const ageDays = (Date.now() - new Date(parsed.lastTrained).getTime()) / (1000 * 60 * 60 * 24);
-    if (ageDays > 30) return false; // retrain monthly
-    const lstm = new brain.recurrent.LSTM({ hiddenLayers: [64, 32], learningRate: 0.02 });
-    lstm.fromJSON(parsed.model);
-    judgmentGenerator = lstm;
-    generatorReady = true;
-    generatorLastTrained = parsed.lastTrained;
-    console.log(`🧠 LSTM generator učitan iz keša (starost ${ageDays.toFixed(1)} dana)`);
-    return true;
-  } catch (err) {
-    console.warn('⚠️  Učitavanje keširanog LSTM modela nije uspelo:', err.message);
-    return false;
-  }
-}
-
-function saveGeneratorToCache(lstm) {
-  try {
-    const dir = path.dirname(modelCachePath);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-    const payload = {
-      lastTrained: new Date().toISOString(),
-      model: lstm.toJSON(),
-    };
-    fs.writeFileSync(modelCachePath, JSON.stringify(payload, null, 2), 'utf8');
-    generatorLastTrained = payload.lastTrained;
-    console.log('💾 LSTM model sačuvan u keš');
-  } catch (err) {
-    console.warn('⚠️  Čuvanje LSTM modela nije uspelo:', err.message);
-  }
-}
-
-function ensureGenerationModel() {
-  if (generatorReady) return;
-  if (!brain) {
-    console.warn('⚠️  brain.js nije dostupan, preskačem obuku generatora.');
-    return;
-  }
-  if (loadGeneratorFromCache()) return;
-  const corpus = caseDatabase
-    .map((c) => {
-      const base = [c.type, (c.articles || []).join(','), c.caseDescription || '', c.verdict, c.sentence || ''].join(' | ');
-      return sanitizeForBrain(base);
-    })
-    .filter((t) => t && t.length > 40);
-
-  if (corpus.length < 5) {
-    console.warn('⚠️  Premalo presuda za obuku LSTM modela, koristiće se šablonsko generisanje.');
-    return;
-  }
-
-  const lstm = new brain.recurrent.LSTM({ hiddenLayers: [64, 32], learningRate: 0.02 });
-  try {
-    lstm.train(corpus, { iterations: 40, log: false, errorThresh: 0.12 });
-    judgmentGenerator = lstm;
-    generatorReady = true;
-    saveGeneratorToCache(lstm);
-    console.log(`🧠 LSTM generator obučen na ${corpus.length} presuda`);
-  } catch (err) {
-    console.warn('⚠️  Obuka LSTM generatora nije uspela:', err.message);
-  }
-}
-
-function generateWithModel(prompt) {
-  try {
-    ensureGenerationModel();
-    if (!generatorReady || !judgmentGenerator) return null;
-    return String(judgmentGenerator.run(prompt) || '').replace(/\s+/g, ' ').trim();
-  } catch (err) {
-    console.warn('⚠️  Generisanje teksta nije uspelo:', err.message);
-    return null;
-  }
-}
-
-function isLowQualityGenerated(text = '') {
-  const t = String(text || '').trim();
-  if (t.length < 40) return true;
-  const words = t.split(/\s+/);
-  const unique = new Set(words.map((w) => w.toLowerCase()));
-  if (unique.size < 6) return true;
-  // Detect obvious repetition patterns like "prime" loops
-  const repeatedChunk = /(\b\w+\b)(?:\s+\1){3,}/i;
-  return repeatedChunk.test(t);
+function generateMarkovText(section, seed, maxWords = 80) {
+  trainMarkovModels();
+  const model = markovModels[section];
+  if (!model || Object.keys(model.transitions).length === 0) return null;
+  const text = model.generate(maxWords, seed);
+  if (!text || text.split(/\s+/).length < 8) return null;
+  return text;
 }
 
 function extractMonthsFromText(text = '') {
@@ -1462,25 +1515,98 @@ function buildReasoningSummary(ruleReasoning = {}, cbrReasoning = {}) {
 
 function generateNarrativeSections(input, decision, ruleReasoning = {}, cbrReasoning = {}) {
   const summary = buildReasoningSummary(ruleReasoning, cbrReasoning);
-  const promptRaw = `${input.tipKrivicnogDjela || ''} | ${input.clanKZ || ''} | ${input.opis || ''} | presuda ${decision.vrstaPresude || ''} | kazna ${decision.kaznaUMjesecima || decision.novcanaKazna || ''} | ${summary}`;
-  const prompt = sanitizeForBrain(promptRaw);
-  const modelText = generateWithModel(prompt);
-  const useModel = modelText && !isLowQualityGenerated(modelText);
 
   const listFromText = (value) => String(value || '').split(/\r?\n|;/).map((v) => v.trim()).filter(Boolean);
   const evidences = listFromText(input.dokazi);
+  const witnesses = listFromText(input.svjedoci);
 
-  const decisionLine = decision.vrstaPresude === 'oslobadjajuca'
-    ? 'Okrivljeni se oslobađa optužbe.'
-    : `Okrivljeni se proglašava krivim i izriče se kazna ${decision.kaznaUMjesecima || 0} meseci${decision.uslovnaOsuda === 'Da' ? ' uslovno' : ''}.`;
+  const sudMjesto = String(input.sud || 'Podgorici').trim();
+  const sudLabel = `Osnovni sud u ${sudMjesto}`;
+  const verdictMap = { osudjujuca: 'Osuđujuća', uslovna: 'Uslovna presuda', oslobadjajuca: 'Oslobađajuća' };
+  const verdictLabel = verdictMap[decision.vrstaPresude] || 'Osuđujuća';
+
+  // Extract mitigating/aggravating factors from rule reasoning
+  const mitigating = (ruleReasoning.mitigating_factors || ruleReasoning.olaksavajuce || []);
+  const aggravating = (ruleReasoning.aggravating_factors || ruleReasoning.otezavajuce || []);
+  const appliedArticles = (ruleReasoning.articles || []).join(', ') || input.clanKZ || '';
+  const ruleRec = String(ruleReasoning.recommendation || '');
+
+  // CBR similar cases info
+  const cbrRec = cbrReasoning?.recommendation || {};
+  const similarCases = (cbrReasoning?.similarCases || []).slice(0, 3);
+  const similarCasesText = similarCases.map(c => `${c.brojPredmeta} (sličnost ${c.similarity}%, kazna ${c.kaznaUMjesecima} mj.)`).join('; ');
+
+  // --- Use Markov chain ML model to generate sentencing justification ---
+  // The Markov model generates legal phrasing learned from 129 real court decisions.
+  // We use it specifically for the sentencing section (generic legal formulas),
+  // NOT for case-specific facts (which would produce incoherent text).
+  const markovSentencing = generateMarkovText('sentencing', decision.uslovnaOsuda === 'Da' ? 'USLOVNU OSUDU' : 'kaznu zatvora', 60);
+  const usedMarkov = !!markovSentencing;
+
+  // Build introduction
+  const introduction = `U IME CRNE GORE, ${sudLabel}, po sudiji ${input.sudija || 'NN'}, uz učešće zapisničara ${input.zapisnicar || 'NN'}, u krivičnom predmetu protiv okrivljenog ${input.okrivljeni || 'NN'}, zbog krivičnog djela ${input.tipKrivicnogDjela || ''} iz ${input.clanKZ || ''} Krivičnog zakonika Crne Gore, nakon održanog glavnog pretresa, donio je dana ${input.datumPresude || 'NN'} sljedeću PRESUDU:`;
+
+  // Build background from case description
+  const background = input.opis || 'Nije naveden opis slučaja.';
+
+  // Build motivation - entirely case-specific using reasoning results
+  let motivationParts = [];
+
+  motivationParts.push(`Optuženom ${input.okrivljeni || 'NN'} stavljeno je na teret krivično djelo ${input.tipKrivicnogDjela || ''} iz ${appliedArticles || input.clanKZ || ''} Krivičnog zakonika Crne Gore.`);
+
+  motivationParts.push(`Sud je cijenio sve izvedene dokaze${evidences.length > 0 ? ' (' + evidences.join(', ') + ')' : ''} pojedinačno i u međusobnoj vezi, te utvrdio sljedeće činjenično stanje: ${input.opis || 'Nije navedeno.'}`);
+
+  if (witnesses.length > 0) {
+    motivationParts.push(`U dokaznom postupku saslušani su svjedoci: ${witnesses.join(', ')}.`);
+  }
+
+  motivationParts.push(`Cijeneći utvrđeno činjenično stanje, sud je našao da su se u radnjama okrivljenog stekla sva bitna obilježja krivičnog djela iz ${appliedArticles || input.clanKZ || ''} Krivičnog zakonika.`);
+
+  // Sentencing justification - mitigating/aggravating factors
+  if (mitigating.length > 0 || aggravating.length > 0) {
+    let sanctionParts = [`Prilikom odluke o krivičnoj sankciji, sud je u smislu čl. 42 st. 1 Krivičnog zakonika cijenio sve okolnosti koje su od uticaja na njen izbor i visinu.`];
+    if (mitigating.length > 0) {
+      sanctionParts.push(`Na strani okrivljenog, kao olakšavajuće okolnosti sud je cijenio: ${mitigating.join(', ')}.`);
+    }
+    if (aggravating.length > 0) {
+      sanctionParts.push(`Kao otežavajuće okolnosti sud je cijenio: ${aggravating.join(', ')}.`);
+    }
+    motivationParts.push(sanctionParts.join(' '));
+  }
+
+  if (ruleRec) {
+    motivationParts.push(`Na osnovu rasuđivanja po pravilima, preporuka je: ${ruleRec}.`);
+  }
+  if (similarCasesText) {
+    motivationParts.push(`Rasuđivanje po sličnim slučajevima (${similarCasesText}) dalo je preporučenu kaznu od ${cbrRec.kaznaUMjesecima != null ? cbrRec.kaznaUMjesecima + ' mjeseci' : 'N/A'}${cbrRec.conditionalSentenceLikelihood != null ? ', sa vjerovatnoćom uslovne presude ' + cbrRec.conditionalSentenceLikelihood + '%' : ''}.`);
+  }
+
+  // Markov-generated sentencing justification (ML-generated legal phrasing)
+  if (markovSentencing) {
+    motivationParts.push(markovSentencing);
+  }
+
+  motivationParts.push(`Imajući u vidu navedeno, odlučeno je kao u dispozitivu ove presude.`);
+  const motivation = motivationParts.join(' ');
+
+  // Build decision line
+  let decisionLine;
+  if (decision.vrstaPresude === 'oslobadjajuca') {
+    decisionLine = `Na osnovu člana 363 st. 1 tač. 3 ZKP-a, okrivljeni ${input.okrivljeni || 'NN'} se OSLOBAĐA od optužbe da je izvršio krivično djelo ${input.tipKrivicnogDjela || ''} iz ${input.clanKZ || ''} Krivičnog zakonika Crne Gore, jer nije dokazano da je izvršio djelo za koje je optužen.`;
+  } else if (decision.uslovnaOsuda === 'Da') {
+    const provjeraMonths = Math.max(12, (decision.kaznaUMjesecima || 0) * 2);
+    decisionLine = `Okrivljeni ${input.okrivljeni || 'NN'} proglašava se KRIVIM za krivično djelo ${input.tipKrivicnogDjela || ''} iz ${input.clanKZ || ''} Krivičnog zakonika Crne Gore, pa mu sud primjenom čl. 42, čl. 45, čl. 52, čl. 53 i čl. 54 Krivičnog zakonika izriče USLOVNU OSUDU kojom mu utvrđuje kaznu zatvora u trajanju od ${decision.kaznaUMjesecima || 0} mjeseci i istovremeno određuje da se ona neće izvršiti ako okrivljeni u roku od ${provjeraMonths} mjeseci od pravosnažnosti presude ne učini novo krivično djelo.${decision.novcanaKazna > 0 ? ` Okrivljenom se izriče i novčana kazna u iznosu od ${decision.novcanaKazna} EUR.` : ''}`;
+  } else {
+    decisionLine = `Okrivljeni ${input.okrivljeni || 'NN'} proglašava se KRIVIM za krivično djelo ${input.tipKrivicnogDjela || ''} iz ${input.clanKZ || ''} Krivičnog zakonika Crne Gore i OSUĐUJE SE na kaznu zatvora u trajanju od ${decision.kaznaUMjesecima || 0} mjeseci.${decision.novcanaKazna > 0 ? ` Okrivljenom se izriče i novčana kazna u iznosu od ${decision.novcanaKazna} EUR.` : ''}`;
+  }
 
   return {
-    introduction: useModel ? modelText : `U ime Crne Gore ${input.sud || 'nadležni sud'} donosi presudu u predmetu ${input.brojPredmeta || 'NN'}.`,
-    background: input.opis || 'Nije naveden opis slučaja.',
-    motivation: useModel ? modelText : `Sud je uzeo u obzir dokaze (${evidences.slice(0, 3).join('; ') || 'nema dokaza'}) i primenio ${input.clanKZ || 'relevantne odredbe'} (${summary}).`,
+    introduction,
+    background,
+    motivation,
     decision: decisionLine,
     reasoningSummary: summary,
-    generatorLabel: useModel ? 'brainjs-lstm' : 'template-fallback'
+    generatorLabel: usedMarkov ? 'markov-chain' : 'template-fallback'
   };
 }
 
@@ -1829,11 +1955,10 @@ app.post('/api/cases/user', (req, res) => {
     if (!fs.existsSync(casesDirFallback)) {
       fs.mkdirSync(casesDirFallback, { recursive: true });
     }
-    if (fs.existsSync(xmlPath)) {
-      return res.status(409).json({ error: `Predmet već postoji: ${xmlFileName}` });
-    }
+    const isUpdate = fs.existsSync(xmlPath);
 
-    const xmlContent = buildAkomaNtosoCaseXml(input, decision, identity);
+    const sections = generateNarrativeSections(input, decision);
+    const xmlContent = buildAkomaNtosoCaseXml(input, decision, identity, sections);
     fs.writeFileSync(xmlPath, xmlContent, 'utf8');
 
     const parsedCase = parseXMLFile(xmlPath);
@@ -1853,11 +1978,31 @@ app.post('/api/cases/user', (req, res) => {
       if (Array.isArray(parsed)) current = parsed;
     }
     userEntry.xmlFile = xmlFileName;
-    current.push(userEntry);
+    userEntry.sections = sections;
+    if (isUpdate) {
+      const existingIdx = current.findIndex(e => e.xmlFile === xmlFileName);
+      if (existingIdx >= 0) {
+        current[existingIdx] = userEntry;
+      } else {
+        current.push(userEntry);
+      }
+    } else {
+      current.push(userEntry);
+    }
     fs.writeFileSync(userCasesFile, JSON.stringify(current, null, 2), 'utf8');
 
-    cbrCases.push(cbrRecord);
-    res.json({ status: 'success', message: 'Case saved', cbrRecord, xmlFile: xmlFileName });
+    if (!isUpdate) {
+      cbrCases.push(cbrRecord);
+    } else {
+      const cbrIdx = cbrCases.findIndex(c => c.brojPredmeta === cbrRecord.brojPredmeta);
+      if (cbrIdx >= 0) {
+        cbrCases[cbrIdx] = cbrRecord;
+      } else {
+        cbrCases.push(cbrRecord);
+      }
+    }
+    const message = isUpdate ? 'Kazna je uspješno ažurirana' : 'Slučaj je uspješno sačuvan';
+    res.json({ status: 'success', message, isUpdate, cbrRecord, xmlFile: xmlFileName, sections });
   } catch (err) {
     res.status(500).json({ error: `Save failed: ${err.message}` });
   }
@@ -1961,7 +2106,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, async () => {
   console.log(`\n✅ Legal CBR Web UI running at http://localhost:${PORT}`);
-  console.log(`📊 Database loaded with ${caseDatabase.length} Montenegrian cases\n`);
+  console.log(`📊 Database loaded with ${caseDatabase.length} Montenegrian cases`);
+
+  // Train Markov chain models on archive court decisions
+  trainMarkovModels();
+  console.log('');
   
   // Auto-open browser
   try {
