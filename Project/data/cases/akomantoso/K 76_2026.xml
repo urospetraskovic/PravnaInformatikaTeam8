@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <judgment name="K_76_2026">
+    <meta>
+      <identification source="#court">
+        <FRBRWork>
+          <FRBRthis value="/akn/me/judgment/K_76_2026"/>
+          <FRBRuri value="/akn/me/judgment/K_76_2026"/>
+          <FRBRdate date="2026-03-31" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRcountry value="me"/>
+        </FRBRWork>
+        <FRBRExpression>
+          <FRBRthis value="/akn/me/judgment/K_76_2026/srp@2026-03-31"/>
+          <FRBRuri value="/akn/me/judgment/K_76_2026/srp@2026-03-31"/>
+          <FRBRdate date="2026-03-31" name="judgment"/>
+          <FRBRauthor href="#court"/>
+          <FRBRlanguage language="srp"/>
+        </FRBRExpression>
+        <FRBRManifestation>
+          <FRBRthis value="/akn/me/judgment/K_76_2026/srp@2026-03-31.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_76_2026/srp@2026-03-31.xml"/>
+          <FRBRdate date="2026-03-31" name="generation"/>
+          <FRBRauthor href="#system"/>
+        </FRBRManifestation>
+      </identification>
+      <references source="#court">
+        <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
+        <TLCPerson eId="sudija" href="/ontology/person/sudija_korisnicki_unos" showAs="Brock Lesnar"/>
+        <TLCPerson eId="zapisnicar" href="/ontology/person/zapisnicar_korisnicki_unos" showAs="John Wayne"/>
+        <TLCPerson eId="defendant" href="/ontology/person/okrivljeni_korisnicki_unos" showAs="U.P."/>
+      </references>
+      <proprietary source="#court">
+        <sud>Podgorici</sud>
+        <brojPredmeta>K 76/2026</brojPredmeta>
+        <datum>2026-03-31</datum>
+        <datumNormalizovan>2026-03-31</datumNormalizovan>
+        <godina>2026</godina>
+        <sudija>Brock Lesnar</sudija>
+        <zapisnicar>John Wayne</zapisnicar>
+        <okrivljeni>U.P.</okrivljeni>
+        <zaposlenost>zaposlen</zaposlenost>
+        <obrazovanje>VSS</obrazovanje>
+        <ranijeOsudjivan>ne</ranijeOsudjivan>
+        <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
+        <clanKZ>čl. 258 st. 4</clanKZ>
+        <brojTransakcija>1</brojTransakcija>
+        <brojOkrivljenih>1</brojOkrivljenih>
+        <brojSvjedoka>2</brojSvjedoka>
+        <brojDokaza>3</brojDokaza>
+        <kazna>3 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
+        <novcanaKazna>0</novcanaKazna>
+        <opisSlucaja>Optuženi U.P. se tereti da je u Podgorici, dana 2026-03-31, stavio u promet falsifikovani novac iz čl. 258 st. 4 Krivičnog zakonika Crne Gore u vrijednosti od 200 EUR. Okrivljeni ranije nije osuđivan. Okrivljeni je zaposlen. Okrivljeni je priznao izvršenje krivičnog djela. Saslušani su svjedoci: V.L., R.S.. Materijalni dokazi: Snimak kamere u Pecenjari &quot;Kod Brade&quot;, Fiskalni racun na kasi u Pecenjari Kod Brade, Otisak prska na salveti u pecenjari kod Brade.</opisSlucaja>
+        <generatedBy>markov-chain</generatedBy>
+        <generationNote>Primenjeni članci: čl. 258 st. 4. Rule preporuka: Uslovna presuda: 6 meseci, rok provere 2 godine (čl. 52). CBR kazna 5.3 mes, uslovna 20%. Slični: K 666/2026, K 666, 399/15.</generationNote>
+        <iznosi>
+          <iznos>200 EUR</iznos>
+        </iznosi>
+        <svjedoci>
+          <svjedok>V.L.</svjedok>
+          <svjedok>R.S.</svjedok>
+        </svjedoci>
+        <dokazi>
+          <dokaz>Snimak kamere u Pecenjari &quot;Kod Brade&quot;</dokaz>
+          <dokaz>Fiskalni racun na kasi u Pecenjari Kod Brade</dokaz>
+          <dokaz>Otisak prska na salveti u pecenjari kod Brade</dokaz>
+        </dokazi>
+        <bracniStatus>neozenjen</bracniStatus>
+      </proprietary>
+    </meta>
+    <judgmentBody>
+      <introduction>
+        <p>U IME CRNE GORE, Osnovni sud u Podgorici, po sudiji Brock Lesnar, uz učešće zapisničara John Wayne, u krivičnom predmetu protiv okrivljenog U.P., zbog krivičnog djela falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore, nakon održanog glavnog pretresa, donio je dana 2026-03-31 sljedeću PRESUDU:</p>
+      </introduction>
+      <background>
+        <p>Optuženi U.P. se tereti da je u Podgorici, dana 2026-03-31, stavio u promet falsifikovani novac iz čl. 258 st. 4 Krivičnog zakonika Crne Gore u vrijednosti od 200 EUR. Okrivljeni ranije nije osuđivan. Okrivljeni je zaposlen. Okrivljeni je priznao izvršenje krivičnog djela. Saslušani su svjedoci: V.L., R.S.. Materijalni dokazi: Snimak kamere u Pecenjari &quot;Kod Brade&quot;, Fiskalni racun na kasi u Pecenjari Kod Brade, Otisak prska na salveti u pecenjari kod Brade.</p>
+        <p>Okrivljeni: U.P.</p>
+        <p>Zapisničar: John Wayne</p>
+        <p>Datum odluke: 2026-03-31</p>
+      </background>
+      <arguments>
+        <block name="opisSlucaja">
+          <p>Optuženi U.P. se tereti da je u Podgorici, dana 2026-03-31, stavio u promet falsifikovani novac iz čl. 258 st. 4 Krivičnog zakonika Crne Gore u vrijednosti od 200 EUR. Okrivljeni ranije nije osuđivan. Okrivljeni je zaposlen. Okrivljeni je priznao izvršenje krivičnog djela. Saslušani su svjedoci: V.L., R.S.. Materijalni dokazi: Snimak kamere u Pecenjari &quot;Kod Brade&quot;, Fiskalni racun na kasi u Pecenjari Kod Brade, Otisak prska na salveti u pecenjari kod Brade.</p>
+        </block>
+      </arguments>
+      <motivation>
+        <block name="dokazi">
+          <tblock>
+            <p>• Snimak kamere u Pecenjari &quot;Kod Brade&quot;</p>
+            <p>• Fiskalni racun na kasi u Pecenjari Kod Brade</p>
+            <p>• Otisak prska na salveti u pecenjari kod Brade</p>
+          </tblock>
+        </block>
+        <block name="obrazlozenje">
+          <p>Optuženom U.P. stavljeno je na teret krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore. Sud je cijenio sve izvedene dokaze (Snimak kamere u Pecenjari &quot;Kod Brade&quot;, Fiskalni racun na kasi u Pecenjari Kod Brade, Otisak prska na salveti u pecenjari kod Brade) pojedinačno i u međusobnoj vezi, te utvrdio sljedeće činjenično stanje: Optuženi U.P. se tereti da je u Podgorici, dana 2026-03-31, stavio u promet falsifikovani novac iz čl. 258 st. 4 Krivičnog zakonika Crne Gore u vrijednosti od 200 EUR. Okrivljeni ranije nije osuđivan. Okrivljeni je zaposlen. Okrivljeni je priznao izvršenje krivičnog djela. Saslušani su svjedoci: V.L., R.S.. Materijalni dokazi: Snimak kamere u Pecenjari &quot;Kod Brade&quot;, Fiskalni racun na kasi u Pecenjari Kod Brade, Otisak prska na salveti u pecenjari kod Brade. U dokaznom postupku saslušani su svjedoci: V.L., R.S.. Cijeneći utvrđeno činjenično stanje, sud je našao da su se u radnjama okrivljenog stekla sva bitna obilježja krivičnog djela iz čl. 258 st. 4 Krivičnog zakonika. Prilikom odluke o krivičnoj sankciji, sud je u smislu čl. 42 st. 1 Krivičnog zakonika cijenio sve okolnosti koje su od uticaja na njen izbor i visinu. Na strani okrivljenog, kao olakšavajuće okolnosti sud je cijenio: Ranije neosudivan (čl. 42), Priznanje krivice (čl. 42), Mali iznos štete (ispod 500 EUR). Na osnovu rasuđivanja po pravilima, preporuka je: Uslovna presuda: 6 meseci, rok provere 2 godine (čl. 52). Rasuđivanje po sličnim slučajevima (K 666/2026 (sličnost 90.4%, kazna 4 mj.); K 666 (sličnost 84%, kazna 13 mj.); 399/15 (sličnost 83.2%, kazna 1.5 mj.)) dalo je preporučenu kaznu od 5.3 mjeseci, sa vjerovatnoćom uslovne presude 20%. P R E S U D U Optuženi T. D.O, od oca S. i njegove zabranjenosti, a čije izvršnje je htio. Imajući u vidu navedeno, odlučeno je kao u dispozitivu ove presude.</p>
+        </block>
+      </motivation>
+      <decision>
+        <block name="odluka">
+          <p>Okrivljeni U.P. proglašava se KRIVIM za krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore, pa mu sud primjenom čl. 42, čl. 45, čl. 52, čl. 53 i čl. 54 Krivičnog zakonika izriče USLOVNU OSUDU kojom mu utvrđuje kaznu zatvora u trajanju od 3 mjeseci i istovremeno određuje da se ona neće izvršiti ako okrivljeni u roku od 12 mjeseci od pravosnažnosti presude ne učini novo krivično djelo.</p>
+          <p>Kazna: 3 mjeseci</p>
+        </block>
+      </decision>
+    </judgmentBody>
+    <conclusions>
+      <block name="pravniOsnov">
+        <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
+      </block>
+      <block name="generatorMeta">
+        <p>Primenjeni članci: čl. 258 st. 4. Rule preporuka: Uslovna presuda: 6 meseci, rok provere 2 godine (čl. 52). CBR kazna 5.3 mes, uslovna 20%. Slični: K 666/2026, K 666, 399/15.</p>
+      </block>
+    </conclusions>
+  </judgment>
+</akomaNtoso>

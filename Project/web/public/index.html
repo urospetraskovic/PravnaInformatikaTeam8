@@ -688,7 +688,7 @@
   <div class="nav-tabs">
     <button class="nav-button active" onclick="showPanel('cases')">📋 Presude</button>
     <button class="nav-button" onclick="showPanel('glava23')">📖 Glava 23 - Krivični kodeks</button>
-    <button class="nav-button" onclick="showPanel('reasoning')">⚖️ Rasuđivanje</button>
+    <button class="nav-button" onclick="showPanel('reasoning')">⚖️ Nova presuda</button>
   </div>
 
   <div class="app-wrapper">
@@ -758,7 +758,7 @@
         <div class="reasoning-grid">
           <div>
             <label for="input-case-number">Broj predmeta</label>
-            <input id="input-case-number" type="text" placeholder="npr. K 123/26" />
+            <input id="input-case-number" type="text" placeholder="npr. 123/26" />
           </div>
           <div>
             <label for="input-court">Sud (mjesto)</label>
@@ -888,7 +888,10 @@
             <textarea id="input-evidence" placeholder="npr. Izvod sa računa\nSnimak nadzorne kamere"></textarea>
           </div>
           <div style="grid-column: 1 / -1;">
-            <label for="input-description">Opis slučaja</label>
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+              <label for="input-description" style="margin-bottom:0;">Opis slučaja</label>
+              <button id="btn-generate-description" onclick="generateCaseDescription()" style="padding:4px 12px; background:#7c3aed; color:#fff; border:none; border-radius:5px; cursor:pointer; font-size:0.82em; font-weight:600;">Generiši opis</button>
+            </div>
             <textarea id="input-description" placeholder="Unesite činjenično stanje..."></textarea>
           </div>
         </div>
@@ -898,6 +901,20 @@
           <button onclick="runCbrFromInput()" class="nav-button" style="background: #065f46; color: #fff; border-color: #065f46;">Rasuđivanje po slučajevima</button>
           <button onclick="runDecisionSupportFromInput()" class="nav-button" style="background: #7c3aed; color: #fff; border-color: #7c3aed;">Pokreni oba i predloži odluku</button>
         </div>
+
+        <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
+          <h3 style="font-size: 1em; color: #0f172a; margin-bottom: 8px;">Generisanje sudske odluke (ML/DL) + Akoma Ntoso XML</h3>
+          <p style="color: #475569; font-size: 0.9em; margin-bottom: 10px;">Na osnovu unijetog opisa slučaja i rezultata rasuđivanja, sistem generiše novu sudsku odluku korišćenjem Markov chain modela (trigram, mašinsko učenje) obučenog na 129 postojećih sudskih presuda. Model uči statističke obrasce sekvenci riječi iz pravih sudskih odluka i generiše obrazloženje po uzoru na njih. Odluka se automatski anotirana i predočena sudiji radi potvrde, a po potvrdi čuva u Akoma Ntoso XML formatu i dodaje u bazu slučajeva.</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button onclick="generateJudgmentFromInput()" class="nav-button" style="background: #0ea5e9; color: #fff; border-color: #0ea5e9;">Generiši presudu i sačuvaj XML</button>
+          </div>
+          <div id="generation-result" style="display: none; margin-top: 12px;"></div>
+        </div>
+
+        <div id="reasoning-input-rule-result" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-cbr-result" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-decision-proposal" style="display: none; margin-top: 14px;"></div>
+        <div id="reasoning-input-save-result" style="display: none; margin-top: 10px;"></div>
 
         <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
           <h3 style="font-size: 1em; color: #0f172a; margin-bottom: 8px;">Ručno dodjeljivanje kazne</h3>
@@ -923,22 +940,46 @@
             <button onclick="saveNewCaseFromInput()" class="nav-button" style="background: #334155; color: #fff; border-color: #334155;">Dodaj kaznu</button>
           </div>
         </div>
-
-        <div style="margin-top: 18px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
-          <h3 style="font-size: 1em; color: #0f172a; margin-bottom: 8px;">Generisanje sudske odluke (ML/DL) + Akoma Ntoso XML</h3>
-          <p style="color: #475569; font-size: 0.9em; margin-bottom: 10px;">Na osnovu unijetog opisa slučaja i rezultata rasuđivanja, sistem generiše novu sudsku odluku korišćenjem Markov chain modela (trigram, mašinsko učenje) obučenog na 129 postojećih sudskih presuda. Model uči statističke obrasce sekvenci riječi iz pravih sudskih odluka i generiše obrazloženje po uzoru na njih. Odluka se automatski anotira i čuva u Akoma Ntoso XML formatu i dodaje u bazu slučajeva za buduća rasuđivanja.</p>
-          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <button onclick="generateJudgmentFromInput()" class="nav-button" style="background: #0ea5e9; color: #fff; border-color: #0ea5e9;">Generiši presudu i sačuvaj XML</button>
-          </div>
-          <div id="generation-result" style="display: none; margin-top: 12px;"></div>
-        </div>
-
-        <div id="reasoning-input-rule-result" style="display: none; margin-top: 14px;"></div>
-        <div id="reasoning-input-cbr-result" style="display: none; margin-top: 14px;"></div>
-        <div id="reasoning-input-decision-proposal" style="display: none; margin-top: 14px;"></div>
-        <div id="reasoning-input-save-result" style="display: none; margin-top: 10px;"></div>
       </div>
     </div>
+
+  <!-- Judgment Confirmation Modal -->
+  <div id="judgment-modal" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.7); z-index:9999; overflow-y:auto; padding:24px; box-sizing:border-box;">
+    <div style="max-width:860px; margin:0 auto; background:#fff; border-radius:14px; box-shadow:0 20px 60px rgba(0,0,0,0.3); padding:32px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+        <h2 style="margin:0; color:#0f172a; font-size:1.3em;">⚖️ Odluka je spremna za potvrdu sudije</h2>
+        <button onclick="closeJudgmentModal()" style="background:none; border:none; font-size:1.5em; cursor:pointer; color:#64748b; padding:2px 8px; line-height:1;">✕</button>
+      </div>
+      <p style="color:#475569; margin:0 0 18px 0; font-size:0.93em;">Sistem je generisao presudu i predloženu sankciju na osnovu rasuđivanja. Pregledaj sadržaj ispod, izmijeni odluku po potrebi, a zatim potvrdi da bi sačuvao predmet.</p>
+      <div id="modal-recommendation" style="margin-bottom:16px;"></div>
+      <div id="modal-sections-preview" style="margin-bottom:18px; max-height:340px; overflow-y:auto;"></div>
+      <div style="padding:18px; border:1.5px solid #c7d2fe; border-radius:10px; background:#eef2ff; margin-bottom:20px;">
+        <div style="font-weight:700; color:#312e81; margin-bottom:12px; font-size:1em;">Odluka sudije</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:12px;">
+          <div>
+            <label style="font-size:0.85em; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Vrsta presude</label>
+            <select id="modal-verdict-type" style="width:100%; padding:9px 10px; border:1.5px solid #c7d2fe; border-radius:6px; font-size:0.95em; background:#fff;">
+              <option value="osudjujuca">Osuđujuća</option>
+              <option value="uslovna">Uslovna</option>
+              <option value="oslobadjajuca">Oslobađajuća</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:0.85em; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Sankcija (meseci)</label>
+            <input id="modal-sanction" type="number" min="0" step="1" value="0" style="width:100%; padding:9px 10px; border:1.5px solid #c7d2fe; border-radius:6px; font-size:0.95em; box-sizing:border-box;" />
+          </div>
+          <div>
+            <label style="font-size:0.85em; font-weight:600; color:#334155; display:block; margin-bottom:4px;">Novčana kazna (EUR)</label>
+            <input id="modal-fine" type="number" min="0" step="0.01" value="0" style="width:100%; padding:9px 10px; border:1.5px solid #c7d2fe; border-radius:6px; font-size:0.95em; box-sizing:border-box;" />
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:flex-end; flex-wrap:wrap;">
+        <button onclick="closeJudgmentModal()" style="padding:10px 22px; border:1.5px solid #cbd5e1; border-radius:8px; background:#fff; color:#334155; font-weight:600; cursor:pointer; font-size:0.95em;">Odustani</button>
+        <button id="modal-confirm-btn" onclick="confirmAndSaveJudgment()" style="padding:10px 28px; border:none; border-radius:8px; background:#0f172a; color:#fff; font-weight:700; cursor:pointer; font-size:0.95em;">✓ Potvrdi i sačuvaj</button>
+      </div>
+    </div>
+  </div>
 
   <script>
 
@@ -2267,10 +2308,6 @@
       if (!input.datumPresude) missing.push('Datum odluke');
       if (!input.clanKZ) missing.push('Član KZ');
       if (!input.opis) missing.push('Opis slučaja');
-      if (input.brojPredmeta && !input.brojPredmeta.toUpperCase().startsWith('K')) {
-        return 'Broj predmeta mora počinjati sa "K" (krivični predmet).';
-      }
-
       const numericChecks = [
         ['Iznos (EUR)', input.iznos, 0],
         ['Ukupan iznos (EUR)', input.ukupanIznos, 0],
@@ -2496,6 +2533,9 @@
 
         const savedXmlLine = result.xmlFile ? `<div style="margin-top: 6px; font-size: 0.85em; color: #14532d;">Sačuvan XML: <strong>${result.xmlFile}</strong></div>` : '';
         saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #bbf7d0; border-radius: 6px; background: #f0fdf4; color: #166534;">Slučaj je sačuvan i biće korišćen u narednim CBR rasuđivanjima.${savedXmlLine}</div>`;
+        const savedCaseName = result.xmlFile ? result.xmlFile.replace('.xml', '') : 'Novi slučaj';
+        showToast(`Slučaj "${savedCaseName}" je uspješno dodat!`, 'success', 5000);
+        await loadCases();
       } catch (err) {
         saveResultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
       }
@@ -2549,9 +2589,6 @@
       const resultDiv = document.getElementById('generation-result');
       const input = collectReasoningInput();
       const validationError = validateReasoningInput(input);
-      const selectedVerdict = document.getElementById('input-selected-verdict').value;
-      const selectedSanctionMonths = parseFloat(document.getElementById('input-selected-sanction').value || '0');
-      const selectedFine = parseFloat(document.getElementById('input-selected-fine').value || '0');
 
       resultDiv.style.display = 'block';
 
@@ -2571,7 +2608,7 @@
         }
       }
 
-      resultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #bae6fd; border-radius: 6px; background: #eff6ff; color: #0f172a;">Generisanje presude (ML/DL) i čuvanje XML-a...</div>';
+      resultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #bae6fd; border-radius: 6px; background: #eff6ff; color: #0f172a;">Generisanje pregleda presude (ML/DL)...</div>';
 
       try {
         const response = await fetch('/api/generate-judgment', {
@@ -2581,12 +2618,8 @@
             input,
             ruleReasoning: latestInputRuleReasoning,
             cbrReasoning: latestInputCbrReasoning,
-            decisionOverride: {
-              vrstaPresude: selectedVerdict,
-              kaznaUMjesecima: selectedSanctionMonths,
-              novcanaKazna: selectedFine,
-              uslovnaOsuda: selectedVerdict === 'uslovna' ? 'Da' : 'Ne',
-            }
+            decisionOverride: {},
+            previewOnly: true,
           })
         });
 
@@ -2597,20 +2630,140 @@
         }
 
         latestGeneratedJudgment = data;
-        if (data.decision) {
-          document.getElementById('input-selected-verdict').value = data.decision.vrstaPresude || selectedVerdict;
-          document.getElementById('input-selected-sanction').value = data.decision.kaznaUMjesecima ?? selectedSanctionMonths;
-          document.getElementById('input-selected-fine').value = data.decision.novcanaKazna ?? selectedFine;
-        }
-
-        resultDiv.innerHTML = renderGeneratedSections(data);
-        await loadCases();
+        resultDiv.innerHTML = '<div style="padding: 10px; border: 1px solid #bbf7d0; border-radius: 6px; background: #f0fdf4; color: #166534;">✓ Presuda je generisana. Prikazujem prozor za potvrdu sudije...</div>';
+        showJudgmentModal(data);
       } catch (err) {
         resultDiv.innerHTML = `<div style="padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; color: #991b1b;">Greška: ${err.message}</div>`;
       }
     }
 
+    function showJudgmentModal(data) {
+      const modal = document.getElementById('judgment-modal');
+      const sectionsDiv = document.getElementById('modal-sections-preview');
+      const recDiv = document.getElementById('modal-recommendation');
 
+      const sec = data.sections || {};
+      const dec = data.decision || {};
+      const verdictLabelMap = { osudjujuca: 'Osuđujuća', uslovna: 'Uslovna presuda', oslobadjajuca: 'Oslobađajuća' };
+      const recVerdictLabel = verdictLabelMap[dec.vrstaPresude] || dec.vrstaPresude || '—';
+
+      recDiv.innerHTML = `
+        <div style="padding:14px; border:1px solid #bbf7d0; border-radius:8px; background:#f0fdf4; margin-bottom:4px;">
+          <div style="font-weight:700; color:#166534; margin-bottom:10px;">Preporučena odluka sistema</div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:10px;">
+            <div style="padding:10px; background:#fff; border:1px solid #bbf7d0; border-radius:6px; text-align:center;">
+              <div style="font-size:0.78em; color:#475569; margin-bottom:2px;">Vrsta presude</div>
+              <div style="font-weight:700; color:#166534;">${recVerdictLabel}</div>
+            </div>
+            <div style="padding:10px; background:#fff; border:1px solid #bbf7d0; border-radius:6px; text-align:center;">
+              <div style="font-size:0.78em; color:#475569; margin-bottom:2px;">Preporučena kazna</div>
+              <div style="font-weight:700; color:#166534;">${dec.kaznaUMjesecima ?? 0} meseci</div>
+            </div>
+            ${dec.novcanaKazna > 0 ? `<div style="padding:10px; background:#fff; border:1px solid #bbf7d0; border-radius:6px; text-align:center;"><div style="font-size:0.78em; color:#475569; margin-bottom:2px;">Novčana kazna</div><div style="font-weight:700; color:#166534;">${dec.novcanaKazna} EUR</div></div>` : ''}
+          </div>
+          ${sec.reasoningSummary ? `<div style="margin-top:10px; font-size:0.85em; color:#374151; padding:8px; background:#fff; border-radius:5px;">${sec.reasoningSummary}</div>` : ''}
+        </div>`;
+
+      sectionsDiv.innerHTML = `
+        <div style="display:grid; gap:8px;">
+          <div style="padding:11px; border:1px solid #e2e8f0; border-radius:6px; background:#f8fafc;">
+            <div style="font-size:0.77em; color:#475569; font-weight:600; margin-bottom:3px;">UVOD</div>
+            <div style="font-size:0.9em; line-height:1.55; color:#1e293b;">${sec.introduction || '—'}</div>
+          </div>
+          <div style="padding:11px; border:1px solid #e2e8f0; border-radius:6px; background:#f8fafc;">
+            <div style="font-size:0.77em; color:#475569; font-weight:600; margin-bottom:3px;">ČINJENIČNO STANJE</div>
+            <div style="font-size:0.9em; line-height:1.55; color:#1e293b;">${sec.background || '—'}</div>
+          </div>
+          <div style="padding:11px; border:1px solid #e2e8f0; border-radius:6px; background:#f8fafc;">
+            <div style="font-size:0.77em; color:#475569; font-weight:600; margin-bottom:3px;">OBRAZLOŽENJE</div>
+            <div style="font-size:0.9em; line-height:1.55; color:#1e293b;">${sec.motivation || '—'}</div>
+          </div>
+        </div>`;
+
+      document.getElementById('modal-verdict-type').value = dec.vrstaPresude || 'osudjujuca';
+      document.getElementById('modal-sanction').value = dec.kaznaUMjesecima ?? 0;
+      document.getElementById('modal-fine').value = dec.novcanaKazna ?? 0;
+
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeJudgmentModal() {
+      document.getElementById('judgment-modal').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    async function confirmAndSaveJudgment() {
+      const modalVerdict = document.getElementById('modal-verdict-type').value;
+      const modalSanction = parseFloat(document.getElementById('modal-sanction').value || '0');
+      const modalFine = parseFloat(document.getElementById('modal-fine').value || '0');
+
+      const input = collectReasoningInput();
+      const confirmBtn = document.getElementById('modal-confirm-btn');
+      if (confirmBtn) { confirmBtn.disabled = true; confirmBtn.textContent = 'Čuvanje...'; }
+
+      try {
+        const response = await fetch('/api/generate-judgment', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            input,
+            ruleReasoning: latestInputRuleReasoning,
+            cbrReasoning: latestInputCbrReasoning,
+            decisionOverride: {
+              vrstaPresude: modalVerdict,
+              kaznaUMjesecima: modalSanction,
+              novcanaKazna: modalFine,
+              uslovnaOsuda: modalVerdict === 'uslovna' ? 'Da' : 'Ne',
+            },
+            previewOnly: false,
+          })
+        });
+
+        const data = await response.json();
+        closeJudgmentModal();
+
+        if (!response.ok || data.error) {
+          showToast(`Greška: ${data.error || 'Čuvanje nije uspelo'}`, 'error');
+          return;
+        }
+
+        latestGeneratedJudgment = data;
+        const resultDiv = document.getElementById('generation-result');
+        resultDiv.innerHTML = renderGeneratedSections(data);
+
+        await loadCases();
+
+        const caseNameDisplay = data.xmlFile ? data.xmlFile.replace('.xml', '') : (data.caseId || 'Novi slučaj');
+        showToast(`Slučaj "${caseNameDisplay}" je uspješno dodat!`, 'success', 5000);
+      } catch (err) {
+        closeJudgmentModal();
+        showToast(`Greška: ${err.message}`, 'error');
+      } finally {
+        if (confirmBtn) { confirmBtn.disabled = false; confirmBtn.textContent = '✓ Potvrdi i sačuvaj'; }
+      }
+    }
+
+    async function generateCaseDescription() {
+      const input = collectReasoningInput();
+      const btn = document.getElementById('btn-generate-description');
+      if (btn) { btn.disabled = true; btn.textContent = 'Generisanje...'; }
+      try {
+        const response = await fetch('/api/generate-description', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ input })
+        });
+        const data = await response.json();
+        if (data.description) {
+          document.getElementById('input-description').value = data.description;
+        }
+      } catch (err) {
+        showToast(`Greška pri generisanju opisa: ${err.message}`, 'error');
+      } finally {
+        if (btn) { btn.disabled = false; btn.textContent = 'Generiši opis'; }
+      }
+    }
 
     document.getElementById('input-decision-date').value = new Date().toISOString().slice(0, 10);
 
