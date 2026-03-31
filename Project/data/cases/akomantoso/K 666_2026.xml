@@ -6,96 +6,98 @@
         <FRBRWork>
           <FRBRthis value="/akn/me/judgment/K_666_2026"/>
           <FRBRuri value="/akn/me/judgment/K_666_2026"/>
-          <FRBRdate date="2026-03-30" name="judgment"/>
+          <FRBRdate date="2026-03-31" name="judgment"/>
           <FRBRauthor href="#court"/>
           <FRBRcountry value="me"/>
         </FRBRWork>
         <FRBRExpression>
-          <FRBRthis value="/akn/me/judgment/K_666_2026/srp@2026-03-30"/>
-          <FRBRuri value="/akn/me/judgment/K_666_2026/srp@2026-03-30"/>
-          <FRBRdate date="2026-03-30" name="judgment"/>
+          <FRBRthis value="/akn/me/judgment/K_666_2026/srp@2026-03-31"/>
+          <FRBRuri value="/akn/me/judgment/K_666_2026/srp@2026-03-31"/>
+          <FRBRdate date="2026-03-31" name="judgment"/>
           <FRBRauthor href="#court"/>
           <FRBRlanguage language="srp"/>
         </FRBRExpression>
         <FRBRManifestation>
-          <FRBRthis value="/akn/me/judgment/K_666_2026/srp@2026-03-30.xml"/>
-          <FRBRuri value="/akn/me/judgment/K_666_2026/srp@2026-03-30.xml"/>
-          <FRBRdate date="2026-03-30" name="generation"/>
+          <FRBRthis value="/akn/me/judgment/K_666_2026/srp@2026-03-31.xml"/>
+          <FRBRuri value="/akn/me/judgment/K_666_2026/srp@2026-03-31.xml"/>
+          <FRBRdate date="2026-03-31" name="generation"/>
           <FRBRauthor href="#system"/>
         </FRBRManifestation>
       </identification>
       <references source="#court">
         <TLCOrganization eId="court" href="/ontology/organization/me/podgorici" showAs="Osnovni Sud u Podgorici"/>
-        <TLCPerson eId="sudija" href="/ontology/person/sudija_korisnicki_unos" showAs="Boris Dumnic"/>
-        <TLCPerson eId="zapisnicar" href="/ontology/person/zapisnicar_korisnicki_unos" showAs="Nikola Telsa"/>
-        <TLCPerson eId="defendant" href="/ontology/person/okrivljeni_korisnicki_unos" showAs="U.B."/>
+        <TLCPerson eId="sudija" href="/ontology/person/sudija_korisnicki_unos" showAs="Brock Lesnar"/>
+        <TLCPerson eId="zapisnicar" href="/ontology/person/zapisnicar_korisnicki_unos" showAs="John Wayne"/>
+        <TLCPerson eId="defendant" href="/ontology/person/okrivljeni_korisnicki_unos" showAs="U.P."/>
       </references>
       <proprietary source="#court">
         <sud>Podgorici</sud>
-        <brojPredmeta>K 666</brojPredmeta>
-        <datum>2026-03-30</datum>
-        <datumNormalizovan>2026-03-30</datumNormalizovan>
+        <brojPredmeta>K 666/2026</brojPredmeta>
+        <datum>2026-03-31</datum>
+        <datumNormalizovan>2026-03-31</datumNormalizovan>
         <godina>2026</godina>
-        <sudija>Boris Dumnic</sudija>
-        <zapisnicar>Nikola Telsa</zapisnicar>
-        <okrivljeni>U.B.</okrivljeni>
+        <sudija>Brock Lesnar</sudija>
+        <zapisnicar>John Wayne</zapisnicar>
+        <okrivljeni>U.P.</okrivljeni>
         <zaposlenost>nepoznat</zaposlenost>
-        <obrazovanje>nepoznat</obrazovanje>
+        <obrazovanje>VSS</obrazovanje>
         <ranijeOsudjivan>ne</ranijeOsudjivan>
         <tipKrivicnogDjela>falsifikovanje novca</tipKrivicnogDjela>
         <clanKZ>čl. 258 st. 4</clanKZ>
-        <brojTransakcija>0</brojTransakcija>
+        <brojTransakcija>1</brojTransakcija>
         <brojOkrivljenih>1</brojOkrivljenih>
-        <brojSvjedoka>1</brojSvjedoka>
+        <brojSvjedoka>3</brojSvjedoka>
         <brojDokaza>1</brojDokaza>
-        <kazna>7 mjeseci</kazna>
-        <uslovnaOsuda>Ne</uslovnaOsuda>
-        <vrstaPresude>Osuđujuća</vrstaPresude>
+        <kazna>4 mjeseci</kazna>
+        <uslovnaOsuda>Da</uslovnaOsuda>
+        <vrstaPresude>Uslovna presuda</vrstaPresude>
         <novcanaKazna>0</novcanaKazna>
-        <opisSlucaja>Otiso u Tehnomaniju i hteo da uzme najnoviji lap top za lažne pare, nije uspeo u tome, obezbedjenje iz promenade ga je hitro preduhitrilo.</opisSlucaja>
+        <opisSlucaja>Optuzeni je osao u pekaru Royal na bulevaru oslbodjenja blizu liman parka tu kod mosta, potrosio je 50 eura na pecivo i sve je stukao u pekari na licu mesta, opustosio je celu pekaru i za to vreme su radnicu u pekari pozvali vlasti zbog sumnjive novcanice koju su uocili nakon cega je optuzeni bio priveden, bar nije bio gladan.</opisSlucaja>
         <generatedBy>markov-chain</generatedBy>
-        <generationNote>Primenjeni članci: čl. 258 st. 4. Rule preporuka: 2 godina 6 meseci. CBR kazna 8.8 mes, uslovna 20%. Slični: 395/16, 42/22, 100/16.</generationNote>
+        <generationNote>Primenjeni članci: n/a. Rule preporuka: n/a. CBR n/a. Slični: nema.</generationNote>
         <iznosi>
-          <iznos>2432 EUR</iznos>
+          <iznos>50 EUR</iznos>
         </iznosi>
         <svjedoci>
           <svjedok>V.L.</svjedok>
+          <svjedok>R.Z.</svjedok>
+          <svjedok>R.K.</svjedok>
         </svjedoci>
         <dokazi>
-          <dokaz>Snimak necega</dokaz>
+          <dokaz>Snimak kamere u pekari royal, fiskalni racun</dokaz>
         </dokazi>
         <bracniStatus>nepoznat</bracniStatus>
       </proprietary>
     </meta>
     <judgmentBody>
       <introduction>
-        <p>U IME CRNE GORE, Osnovni sud u Podgorici, po sudiji Boris Dumnic, uz učešće zapisničara Nikola Telsa, u krivičnom predmetu protiv okrivljenog U.B., zbog krivičnog djela falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore, nakon održanog glavnog pretresa, donio je dana 2026-03-30 sljedeću PRESUDU:</p>
+        <p>U IME CRNE GORE, Osnovni sud u Podgorici, po sudiji Brock Lesnar, uz učešće zapisničara John Wayne, u krivičnom predmetu protiv okrivljenog U.P., zbog krivičnog djela falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore, nakon održanog glavnog pretresa, donio je dana 2026-03-31 sljedeću PRESUDU:</p>
       </introduction>
       <background>
-        <p>Otiso u Tehnomaniju i hteo da uzme najnoviji lap top za lažne pare, nije uspeo u tome, obezbedjenje iz promenade ga je hitro preduhitrilo.</p>
-        <p>Okrivljeni: U.B.</p>
-        <p>Zapisničar: Nikola Telsa</p>
-        <p>Datum odluke: 2026-03-30</p>
+        <p>Optuzeni je osao u pekaru Royal na bulevaru oslbodjenja blizu liman parka tu kod mosta, potrosio je 50 eura na pecivo i sve je stukao u pekari na licu mesta, opustosio je celu pekaru i za to vreme su radnicu u pekari pozvali vlasti zbog sumnjive novcanice koju su uocili nakon cega je optuzeni bio priveden, bar nije bio gladan.</p>
+        <p>Okrivljeni: U.P.</p>
+        <p>Zapisničar: John Wayne</p>
+        <p>Datum odluke: 2026-03-31</p>
       </background>
       <arguments>
         <block name="opisSlucaja">
-          <p>Otiso u Tehnomaniju i hteo da uzme najnoviji lap top za lažne pare, nije uspeo u tome, obezbedjenje iz promenade ga je hitro preduhitrilo.</p>
+          <p>Optuzeni je osao u pekaru Royal na bulevaru oslbodjenja blizu liman parka tu kod mosta, potrosio je 50 eura na pecivo i sve je stukao u pekari na licu mesta, opustosio je celu pekaru i za to vreme su radnicu u pekari pozvali vlasti zbog sumnjive novcanice koju su uocili nakon cega je optuzeni bio priveden, bar nije bio gladan.</p>
         </block>
       </arguments>
       <motivation>
         <block name="dokazi">
           <tblock>
-            <p>• Snimak necega</p>
+            <p>• Snimak kamere u pekari royal, fiskalni racun</p>
           </tblock>
         </block>
         <block name="obrazlozenje">
-          <p>Optuženom U.B. stavljeno je na teret krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore. Sud je cijenio sve izvedene dokaze (Snimak necega) pojedinačno i u međusobnoj vezi, te utvrdio sljedeće činjenično stanje: Otiso u Tehnomaniju i hteo da uzme najnoviji lap top za lažne pare, nije uspeo u tome, obezbedjenje iz promenade ga je hitro preduhitrilo. U dokaznom postupku saslušani su svjedoci: V.L.. Cijeneći utvrđeno činjenično stanje, sud je našao da su se u radnjama okrivljenog stekla sva bitna obilježja krivičnog djela iz čl. 258 st. 4 Krivičnog zakonika. Prilikom odluke o krivičnoj sankciji, sud je u smislu čl. 42 st. 1 Krivičnog zakonika cijenio sve okolnosti koje su od uticaja na njen izbor i visinu. Na strani okrivljenog, kao olakšavajuće okolnosti sud je cijenio: Ranije neosudivan (čl. 42). Na osnovu rasuđivanja po pravilima, preporuka je: 2 godina 6 meseci. Rasuđivanje po sličnim slučajevima (395/16 (sličnost 83.2%, kazna 24 mj.); 42/22 (sličnost 83.1%, kazna 3 mj.); 100/16 (sličnost 82.8%, kazna 6 mj.)) dalo je preporučenu kaznu od 8.8 mjeseci, sa vjerovatnoćom uslovne presude 20%. P R E S U D U Optuženi G. V., ... , kao predmeta izvršenja krivičnog djela lažno prijavljivanje iz člana 339 st.1 KZCG kaznu zatvora u trajanju od 3 (tri) mjeseca koju je ovlašćeni službenik Uprave policije Crne Gore na kaznu zatvora u trajanju od ........ Imajući u vidu navedeno, odlučeno je kao u dispozitivu ove presude.</p>
+          <p>Optuženom U.P. stavljeno je na teret krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore. Sud je cijenio sve izvedene dokaze (Snimak kamere u pekari royal, fiskalni racun) pojedinačno i u međusobnoj vezi, te utvrdio sljedeće činjenično stanje: Optuzeni je osao u pekaru Royal na bulevaru oslbodjenja blizu liman parka tu kod mosta, potrosio je 50 eura na pecivo i sve je stukao u pekari na licu mesta, opustosio je celu pekaru i za to vreme su radnicu u pekari pozvali vlasti zbog sumnjive novcanice koju su uocili nakon cega je optuzeni bio priveden, bar nije bio gladan. U dokaznom postupku saslušani su svjedoci: V.L., R.Z., R.K.. Cijeneći utvrđeno činjenično stanje, sud je našao da su se u radnjama okrivljenog stekla sva bitna obilježja krivičnog djela iz čl. 258 st. 4 Krivičnog zakonika. PRESUDU Okrivljeni N.Đ., JMBG ., od majke V., rođene B., rođen .. godine zbog krivičnog djela teške krađe, kako je došlo do zloupotrebe kartica, Aksiomu su isplatili iznos od 4.300,00 eura, potvrda UP Budva o privremeno oduzetim predmetima UP Grupe za suzbijanje ekonomskog kriminala od 30.07.2023. Imajući u vidu navedeno, odlučeno je kao u dispozitivu ove presude.</p>
         </block>
       </motivation>
       <decision>
         <block name="odluka">
-          <p>Okrivljeni U.B. proglašava se KRIVIM za krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore i OSUĐUJE SE na kaznu zatvora u trajanju od 7 mjeseci.</p>
-          <p>Kazna: 7 mjeseci</p>
+          <p>Okrivljeni U.P. proglašava se KRIVIM za krivično djelo falsifikovanje novca iz čl. 258 st. 4 Krivičnog zakonika Crne Gore, pa mu sud primjenom čl. 42, čl. 45, čl. 52, čl. 53 i čl. 54 Krivičnog zakonika izriče USLOVNU OSUDU kojom mu utvrđuje kaznu zatvora u trajanju od 4 mjeseci i istovremeno određuje da se ona neće izvršiti ako okrivljeni u roku od 12 mjeseci od pravosnažnosti presude ne učini novo krivično djelo.</p>
+          <p>Kazna: 4 mjeseci</p>
         </block>
       </decision>
     </judgmentBody>
@@ -104,7 +106,7 @@
         <p>Krivično djelo: falsifikovanje novca (čl. 258 st. 4 Krivičnog zakonika Crne Gore)</p>
       </block>
       <block name="generatorMeta">
-        <p>Primenjeni članci: čl. 258 st. 4. Rule preporuka: 2 godina 6 meseci. CBR kazna 8.8 mes, uslovna 20%. Slični: 395/16, 42/22, 100/16.</p>
+        <p>Primenjeni članci: n/a. Rule preporuka: n/a. CBR n/a. Slični: nema.</p>
       </block>
     </conclusions>
   </judgment>

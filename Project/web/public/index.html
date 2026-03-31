@@ -1504,6 +1504,7 @@
                   <button onclick="runSimilarityReasoning('${caseData.id}')" class="btn-cbr" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(16,185,129,0.3)';">
                     <span style="font-size: 1.2em;">🔍</span> Rasuđivanje po sličnosti
                   </button>
+                  ${caseData.generatedBy ? `<button onclick="deleteCase('${caseData.id}')" style="background: #dc2626; color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px;">🗑️ Obriši predmet</button>` : ''}
                 </div>
               </div>
               <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
@@ -1616,6 +1617,7 @@
                   <button onclick="runSimilarityReasoning('${caseData.id}')" class="btn-cbr" style="background: linear-gradient(135deg, #065f46 0%, #10b981 100%); color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.3); transition: transform 0.2s, box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(16,185,129,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(16,185,129,0.3)';">
                     <span style="font-size: 1.2em;">🔍</span> Rasuđivanje po sličnosti
                   </button>
+                  ${caseData.generatedBy ? `<button onclick="deleteCase('${caseData.id}')" style="background: #dc2626; color: white; padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 8px;">🗑️ Obriši predmet</button>` : ''}
                 </div>
               </div>
               <div id="reasoning-result" style="margin: 20px 0; display: none;"></div>
@@ -1942,6 +1944,19 @@
         
       } catch (error) {
         resultDiv.innerHTML = `<div style="color: #c00; padding: 15px; background: #fff5f5; border-radius: 6px;">Greška: ${error.message}</div>`;
+      }
+    }
+
+    async function deleteCase(caseId) {
+      if (!confirm('Sigurno želite obrisati ovaj predmet? Ova akcija je nepovratna.')) return;
+      try {
+        const response = await fetch(`/api/cases/${encodeURIComponent(caseId)}`, { method: 'DELETE' });
+        const result = await response.json();
+        if (result.error) { alert('Greška: ' + result.error); return; }
+        await loadCases();
+        document.getElementById('case-detail').innerHTML = '<div style="color:#666;padding:20px;">Predmet je obrisan.</div>';
+      } catch (err) {
+        alert('Greška pri brisanju: ' + err.message);
       }
     }
 
