@@ -116,7 +116,7 @@ function trainMarkovModels() {
 
   const archiveDir = path.join(__dirname, '../../../archive/presude');
   if (!fs.existsSync(archiveDir)) {
-    console.warn('⚠️  Archive directory not found, Markov models will not be trained.');
+    console.warn(' Archive directory not found, Markov models will not be trained.');
     return;
   }
 
